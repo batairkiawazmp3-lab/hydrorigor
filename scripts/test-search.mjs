@@ -1,0 +1,182 @@
+import assert from 'node:assert/strict';
+import { access, readFile } from 'node:fs/promises';
+import { extname, join } from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { requiredPublicRoutes } from '../src/lib/navigation.ts';
+
+const projectRoot = fileURLToPath(new URL('../', import.meta.url));
+const distRoot = join(projectRoot, 'dist');
+const bundleRoot = join(distRoot, 'pagefind');
+const bundlePath = join(bundleRoot, 'pagefind.js');
+
+await access(bundlePath);
+
+const contentTypes = new Map([
+  ['.js', 'text/javascript'],
+  ['.json', 'application/json'],
+  ['.wasm', 'application/wasm'],
+]);
+const nativeFetch = globalThis.fetch;
+
+globalThis.fetch = async (input, init) => {
+  const rawUrl = typeof input === 'string'
+    ? input
+    : input instanceof URL
+      ? input.href
+      : input.url;
+
+  if (!rawUrl.startsWith('file:')) return nativeFetch(input, init);
+
+  const fileUrl = new URL(rawUrl);
+  fileUrl.search = '';
+
+  try {
+    const body = await readFile(fileURLToPath(fileUrl));
+    return new Response(body, {
+      status: 200,
+      headers: { 'content-type': contentTypes.get(extname(fileUrl.pathname)) ?? 'application/octet-stream' },
+    });
+  } catch {
+    return new Response(null, { status: 404 });
+  }
+};
+
+const normalizePath = (url) => new URL(url, 'https://hydrorigor.com').pathname;
+const routeFile = (route) => route === '/'
+  ? join(distRoot, 'index.html')
+  : join(distRoot, ...route.split('/').filter(Boolean), 'index.html');
+const readRoute = (route) => readFile(routeFile(route), 'utf8');
+const extractMeta = (html, name) => html.match(
+  new RegExp(`<meta name="${name}" content="([^"]+)"`),
+)?.[1];
+const extractAnchorPaths = (html) => [...html.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)]
+  .map(([, href]) => href)
+  .filter((href) => href.startsWith('/'))
+  .map(normalizePath);
+const loadResults = async (instance, query) => {
+  const response = await instance.search(query);
+  return Promise.all(response.results.map((result) => result.data()));
+};
+
+let search;
+
+try {
+  const routeDocuments = new Map();
+  const titles = new Set();
+  const descriptions = new Set();
+
+  for (const route of requiredPublicRoutes) {
+    const html = await readRoute(route);
+    const title = html.match(/<title>([^<]+)<\/title>/)?.[1];
+    const description = extractMeta(html, 'description');
+    const robots = extractMeta(html, 'robots');
+
+    assert.ok(title, `${route} does not have a title`);
+    assert.ok(description, `${route} does not have a meta description`);
+    assert.match(
+      html,
+      new RegExp(`<link rel="canonical" href="https://hydrorigor\\.com${route.replaceAll('/', '\\/')}"`),
+      `${route} does not self-canonicalize`,
+    );
+    assert.equal(
+      robots,
+      route === '/search/' ? 'noindex, nofollow' : 'index, follow',
+      `${route} has the wrong robots directive`,
+    );
+
+    if (route === '/search/') {
+      assert.doesNotMatch(html, /data-pagefind-body/);
+    } else {
+      assert.match(html, /data-pagefind-body/);
+    }
+
+    assert.ok(!titles.has(title), `${route} reuses the title “${title}”`);
+    assert.ok(!descriptions.has(description), `${route} reuses a meta description`);
+    titles.add(title);
+    descriptions.add(description);
+    routeDocuments.set(route, html);
+  }
+
+  for (const [route, html] of routeDocuments) {
+    for (const linkedPath of extractAnchorPaths(html)) {
+      assert.doesNotThrow(
+        () => routeFile(linkedPath),
+        `${route} contains an invalid internal link: ${linkedPath}`,
+      );
+      await assert.doesNotReject(
+        access(routeFile(linkedPath)),
+        `${route} links to missing static output: ${linkedPath}`,
+      );
+    }
+  }
+
+  await assert.rejects(
+    access(join(distRoot, 'nutrients', 'index.html')),
+    'the retired /nutrients/ landing was generated',
+  );
+
+  const sitemap = await readFile(join(distRoot, 'sitemap-0.xml'), 'utf8');
+  assert.match(sitemap, /<loc>https:\/\/hydrorigor\.com\/nutrients-water\/<\/loc>/);
+  for (const excludedPath of [
+    '/nutrients/',
+    '/search/',
+    '/404/',
+    '/systems/development-sample-system-article/',
+    '/reviews/development-sample-review/',
+    '/compare/development-sample-comparison/',
+  ]) {
+    assert.ok(
+      !sitemap.includes(`https://hydrorigor.com${excludedPath}`),
+      `${excludedPath} appeared in the sitemap`,
+    );
+  }
+
+  const pagefind = await import(pathToFileURL(bundlePath).href);
+  search = pagefind.createInstance({
+    basePath: `${pathToFileURL(bundleRoot).href}/`,
+    baseUrl: '/',
+    language: 'en',
+    noWorker: true,
+  });
+  await search.init();
+
+  const publicResults = await loadResults(search, 'beginner orientation');
+  assert.ok(
+    publicResults.some(({ url }) => normalizePath(url) === '/start/'),
+    'representative Pagefind query did not return the public Start Here page',
+  );
+
+  const excludedCases = [
+    ['sample fixture reservoir monitor', '/reviews/development-sample-review/'],
+    ['sample development system article', '/systems/development-sample-system-article/'],
+    ['fixture system alpha beta', '/compare/development-sample-comparison/'],
+    ['that channel runs dry', '/404/'],
+    ['static site search search terms', '/search/'],
+  ];
+
+  for (const [query, excludedPath] of excludedCases) {
+    const queryResults = await loadResults(search, query);
+    assert.ok(
+      queryResults.every(({ url }) => normalizePath(url) !== excludedPath),
+      `${excludedPath} appeared in Pagefind results`,
+    );
+  }
+
+  const publicStart = routeDocuments.get('/start/');
+  const excludedFixture = await readFile(
+    join(distRoot, 'reviews', 'development-sample-review', 'index.html'),
+    'utf8',
+  );
+  const excludedSearch = await readFile(join(distRoot, 'search', 'index.html'), 'utf8');
+
+  assert.match(publicStart, /data-pagefind-body/);
+  assert.doesNotMatch(excludedFixture, /data-pagefind-body/);
+  assert.doesNotMatch(excludedSearch, /data-pagefind-body/);
+
+  process.stdout.write(
+    `HydroRigor search smoke passed: ${requiredPublicRoutes.length} public routes verified; ${publicResults.length} result(s) for “beginner orientation”; drafts, 404, and search are excluded.\n`,
+  );
+} finally {
+  if (search) await search.destroy();
+  globalThis.fetch = nativeFetch;
+}

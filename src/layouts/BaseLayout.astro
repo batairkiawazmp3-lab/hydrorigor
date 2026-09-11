@@ -20,6 +20,7 @@ interface Props {
 }
 const { title, description, canonical, noindex, type, publishDate, updatedDate, image, jsonLd } = Astro.props;
 const structuredData = [buildWebsiteJsonLd(), ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
+const searchable = !noindex;
 ---
 <!doctype html>
 <html lang="en">
@@ -46,7 +47,7 @@ const structuredData = [buildWebsiteJsonLd(), ...(jsonLd ? (Array.isArray(jsonLd
   <body>
     <a class="hr-focus sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-3" href="#main-content">Skip to content</a>
     <SiteHeader />
-    <main id="main-content"><slot /></main>
+    <main id="main-content" data-pagefind-body={searchable ? true : undefined}><slot /></main>
     <SiteFooter />
   </body>
 </html>

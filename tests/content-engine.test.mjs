@@ -9,7 +9,11 @@ import {
   buildBreadcrumbJsonLd,
   serializeJsonLd,
 } from '../src/lib/structured-data.ts';
-import { sectionDefinitions } from '../src/lib/sections.ts';
+import {
+  articleCategoryValues,
+  getPublicSectionPath,
+  sectionDefinitions,
+} from '../src/lib/sections.ts';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
@@ -150,11 +154,13 @@ test('BreadcrumbList JSON-LD preserves visible order and absolute URLs', () => {
   );
 });
 
-test('route architecture exposes exactly the nine authorized M02 landings', () => {
+test('route architecture exposes the nine sections through the canonical public paths', () => {
   assert.deepEqual(
     sectionDefinitions.map(({ slug }) => slug),
-    ['systems', 'crops', 'nutrients', 'equipment', 'best', 'reviews', 'compare', 'problems', 'tools'],
+    ['systems', 'crops', 'nutrients-water', 'equipment', 'best', 'reviews', 'compare', 'problems', 'tools'],
   );
+  assert.ok(articleCategoryValues.includes('nutrients'));
+  assert.equal(getPublicSectionPath('nutrients'), '/nutrients-water/');
 });
 
 test('sitemap and robots rules exclude development fixtures', async () => {
@@ -167,6 +173,9 @@ test('sitemap and robots rules exclude development fixtures', async () => {
   }
   assert.equal(shouldIncludeInSitemap('/systems/'), true);
   assert.equal(shouldIncludeInSitemap('/404/'), false);
+  assert.equal(shouldIncludeInSitemap('/search/'), false);
+  assert.equal(shouldIncludeInSitemap('/nutrients/'), false);
+  assert.equal(shouldIncludeInSitemap('/nutrients-water/'), true);
 
   const robots = await read('public/robots.txt');
   assert.match(robots, /Sitemap: https:\/\/hydrorigor\.com\/sitemap-index\.xml/);

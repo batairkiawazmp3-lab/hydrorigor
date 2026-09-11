@@ -1,6 +1,7 @@
 import { SITE_ORIGIN } from './site.ts';
 
 export const DEVELOPMENT_FIXTURE_PREFIX = 'development-sample-';
+export const NON_INDEXABLE_PATHS = new Set(['/404/', '/search/', '/nutrients/']);
 
 interface IndexabilityInput {
   draft?: boolean | undefined;
@@ -15,5 +16,6 @@ export function shouldIncludeInSitemap(page: string): boolean {
   const pathname = new URL(page, SITE_ORIGIN).pathname;
   const segments = pathname.split('/').filter(Boolean);
 
-  return pathname !== '/404/' && !segments.some((segment) => segment.startsWith(DEVELOPMENT_FIXTURE_PREFIX));
+  return !NON_INDEXABLE_PATHS.has(pathname)
+    && !segments.some((segment) => segment.startsWith(DEVELOPMENT_FIXTURE_PREFIX));
 }

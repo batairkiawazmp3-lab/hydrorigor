@@ -8,20 +8,50 @@ interface Props {
 }
 
 const { section } = Astro.props;
+const pathname = `/${section.slug}/`;
 ---
 <BaseLayout title={`${section.title} — HydroRigor`} description={section.description}>
-  <section class="py-16 sm:py-20">
+  <section class="py-14 sm:py-20">
     <div class="hr-container">
       <Breadcrumbs items={[
         { name: 'Home', url: '/' },
-        { name: section.title, url: `/${section.slug}/` },
+        { name: section.title, url: pathname },
       ]} />
-      <div class="hr-reading">
-        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">M02 route foundation</p>
+      <div class="max-w-4xl">
+        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">{section.eyebrow}</p>
         <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{section.title}</h1>
-        <p class="mt-5 text-lg leading-8 text-slate">{section.description}</p>
-        <p class="mt-6 rounded-xl border border-hydro-deep/10 bg-white p-5 text-sm leading-6 text-slate">This M02 landing proves the route and SEO architecture. Production content and later-milestone features are intentionally not published here.</p>
+        <p class="mt-5 max-w-3xl text-lg leading-8 text-slate">{section.description}</p>
+        <p class="mt-6 max-w-3xl text-base leading-7 text-ink">{section.intro}</p>
       </div>
+
+      <div class="mt-12 grid gap-5 lg:grid-cols-3">
+        {section.groups.map((group) => (
+          <section class="rounded-2xl border border-hydro-deep/10 bg-white p-6 shadow-[0_10px_30px_rgb(11_61_59_/_0.04)]">
+            <h2 class="font-heading text-xl font-bold text-hydro-deep">{group.title}</h2>
+            <p class="mt-3 text-sm leading-6 text-slate">{group.description}</p>
+            <ul class="mt-5 grid gap-2 text-sm text-ink">
+              {group.topics.map((topic) => (
+                <li class="flex gap-2"><span aria-hidden="true" class="text-leaf-signal">●</span><span>{topic}</span></li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+
+      <aside class="mt-10 rounded-2xl border border-amber-measure/30 bg-mineral-sand p-6" aria-labelledby="availability-heading">
+        <h2 id="availability-heading" class="font-heading text-lg font-bold text-hydro-deep">What is available now</h2>
+        <p class="mt-2 max-w-4xl text-sm leading-6 text-ink">{section.availability}</p>
+      </aside>
+
+      <section class="mt-12" aria-labelledby="next-heading">
+        <h2 id="next-heading" class="font-heading text-2xl font-bold text-hydro-deep">Continue your path</h2>
+        <div class="mt-5 flex flex-wrap gap-3">
+          {section.nextSteps.map((item) => (
+            <a class="hr-focus rounded-lg border border-hydro-teal/25 bg-white px-4 py-3 text-sm font-bold text-hydro-deep no-underline hover:border-hydro-teal hover:text-hydro-teal" href={item.href}>{item.label}</a>
+          ))}
+          <a class="hr-focus rounded-lg bg-hydro-teal px-4 py-3 text-sm font-bold text-white no-underline hover:bg-hydro-deep" href="/search/">Search HydroRigor</a>
+        </div>
+      </section>
     </div>
   </section>
 </BaseLayout>
