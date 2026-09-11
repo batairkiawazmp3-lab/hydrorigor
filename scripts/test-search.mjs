@@ -117,6 +117,15 @@ try {
 
   const sitemap = await readFile(join(distRoot, 'sitemap-0.xml'), 'utf8');
   assert.match(sitemap, /<loc>https:\/\/hydrorigor\.com\/nutrients-water\/<\/loc>/);
+  for (const toolPath of [
+    '/tools/ph-ec-targets/',
+    '/tools/nutrient-mixing-calculator/',
+  ]) {
+    assert.ok(
+      sitemap.includes(`https://hydrorigor.com${toolPath}`),
+      `${toolPath} was missing from the sitemap`,
+    );
+  }
   for (const excludedPath of [
     '/nutrients/',
     '/search/',
@@ -144,6 +153,18 @@ try {
   assert.ok(
     publicResults.some(({ url }) => normalizePath(url) === '/start/'),
     'representative Pagefind query did not return the public Start Here page',
+  );
+
+  const targetResults = await loadResults(search, 'published reference ranges');
+  assert.ok(
+    targetResults.some(({ url }) => normalizePath(url) === '/tools/ph-ec-targets/'),
+    'Pagefind did not return the public pH/EC target reference',
+  );
+
+  const calculatorResults = await loadResults(search, 'manufacturer label dose');
+  assert.ok(
+    calculatorResults.some(({ url }) => normalizePath(url) === '/tools/nutrient-mixing-calculator/'),
+    'Pagefind did not return the public nutrient mixing calculator',
   );
 
   const excludedCases = [
@@ -174,7 +195,7 @@ try {
   assert.doesNotMatch(excludedSearch, /data-pagefind-body/);
 
   process.stdout.write(
-    `HydroRigor search smoke passed: ${requiredPublicRoutes.length} public routes verified; ${publicResults.length} result(s) for “beginner orientation”; drafts, 404, and search are excluded.\n`,
+    `HydroRigor search smoke passed: ${requiredPublicRoutes.length} public routes verified; Start Here and both M04 tools found; drafts, 404, and search are excluded.\n`,
   );
 } finally {
   if (search) await search.destroy();

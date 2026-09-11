@@ -1,0 +1,103 @@
+<form
+  id="nutrient-mixing-calculator"
+  class="rounded-2xl border border-hydro-deep/10 bg-white p-6 shadow-[var(--hr-shadow-soft)] sm:p-8"
+  novalidate
+>
+  <div class="grid gap-7 md:grid-cols-2">
+    <fieldset>
+      <legend class="font-heading text-lg font-bold text-hydro-deep">1. Reservoir volume</legend>
+      <label class="mt-4 block text-sm font-semibold text-ink" for="reservoir-volume">Volume</label>
+      <input
+        id="reservoir-volume"
+        class="hr-focus mt-2 w-full rounded-lg border border-hydro-deep/20 bg-white px-4 py-3 text-base"
+        name="reservoirVolume"
+        type="number"
+        inputmode="decimal"
+        min="0"
+        step="any"
+        required
+        aria-describedby="calculator-guidance calculator-status"
+      />
+      <label class="mt-4 block text-sm font-semibold text-ink" for="reservoir-unit">Volume unit</label>
+      <select id="reservoir-unit" class="hr-focus mt-2 w-full rounded-lg border border-hydro-deep/20 bg-white px-4 py-3" name="reservoirUnit">
+        <option value="liters">Liters</option>
+        <option value="us-gallons">US gallons</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend class="font-heading text-lg font-bold text-hydro-deep">2. Manufacturer label dose</legend>
+      <label class="mt-4 block text-sm font-semibold text-ink" for="label-dose">Dose printed on the label</label>
+      <input
+        id="label-dose"
+        class="hr-focus mt-2 w-full rounded-lg border border-hydro-deep/20 bg-white px-4 py-3 text-base"
+        name="labelDose"
+        type="number"
+        inputmode="decimal"
+        min="0"
+        step="any"
+        required
+        aria-describedby="calculator-guidance calculator-status"
+      />
+      <label class="mt-4 block text-sm font-semibold text-ink" for="dose-unit">Label dose unit</label>
+      <select id="dose-unit" class="hr-focus mt-2 w-full rounded-lg border border-hydro-deep/20 bg-white px-4 py-3" name="doseUnit">
+        <option value="ml-per-liter">mL per liter</option>
+        <option value="ml-per-us-gallon">mL per US gallon</option>
+      </select>
+    </fieldset>
+  </div>
+
+  <p id="calculator-guidance" class="mt-7 rounded-xl bg-water-mist p-4 text-sm leading-6 text-slate">
+    Use the actual dose printed by your nutrient manufacturer. Different products and formulations cannot share an assumed dose. Calculate every part of a multi-part nutrient separately.
+  </p>
+
+  <button class="hr-focus mt-6 rounded-lg bg-hydro-teal px-5 py-3 font-bold text-white hover:bg-hydro-deep" type="submit">Scale label dose</button>
+
+  <output
+    id="calculator-status"
+    class="mt-6 block min-h-16 rounded-xl border border-hydro-deep/10 bg-mineral-sand p-5 text-base leading-7 text-hydro-deep"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+  >Enter both positive values, then scale the label dose.</output>
+</form>
+
+<script>
+  import {
+    calculateNutrientMix,
+    formatMeasuredAmount,
+    type DoseUnit,
+    type ReservoirUnit,
+  } from '../../lib/tools/nutrient-mixing.ts';
+
+  const form = document.querySelector<HTMLFormElement>('#nutrient-mixing-calculator');
+  const status = document.querySelector<HTMLOutputElement>('#calculator-status');
+
+  if (form && status) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const values = new FormData(form);
+
+      try {
+        const result = calculateNutrientMix({
+          reservoirVolume: Number(values.get('reservoirVolume')),
+          reservoirUnit: String(values.get('reservoirUnit')) as ReservoirUnit,
+          labelDose: Number(values.get('labelDose')),
+          doseUnit: String(values.get('doseUnit')) as DoseUnit,
+        });
+        const milliliters = formatMeasuredAmount(result.totalMl);
+        const liters = result.totalMl >= 1000
+          ? ` (${formatMeasuredAmount(result.totalMl / 1000, 3)} L)`
+          : '';
+
+        status.textContent = `Scaled amount: ${milliliters} mL${liters}. Measure each nutrient part separately and follow the product instructions.`;
+        status.dataset.state = 'success';
+      } catch (error) {
+        status.textContent = error instanceof Error
+          ? error.message
+          : 'Enter positive finite numbers for volume and label dose.';
+        status.dataset.state = 'error';
+      }
+    });
+  }
+</script>

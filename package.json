@@ -11,6 +11,7 @@
     "lint": "node scripts/lint.mjs",
     "check": "astro check",
     "test": "node --test tests/*.test.mjs",
+    "test:data": "node scripts/validate-data.mjs",
     "build": "astro build && pagefind --site dist",
     "test:search": "node scripts/test-search.mjs",
     "preview": "astro preview"

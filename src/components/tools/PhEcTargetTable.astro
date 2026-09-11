@@ -1,0 +1,48 @@
+---
+import { hydroData, hydroSourceById } from '../../data/index.ts';
+
+const formatValue = (value: number) => Number.isInteger(value) ? value.toFixed(1) : String(value);
+const formatRange = (minimum: number, maximum: number) => (
+  minimum === maximum ? formatValue(minimum) : `${formatValue(minimum)}–${formatValue(maximum)}`
+);
+---
+<div class="overflow-x-auto rounded-2xl border border-hydro-deep/10 bg-white shadow-[var(--hr-shadow-soft)]">
+  <table class="w-full min-w-[54rem] border-collapse text-left text-sm">
+    <caption class="sr-only">Published hydroponic pH and EC reference ranges by crop and source context</caption>
+    <thead class="bg-hydro-deep text-white">
+      <tr>
+        <th class="px-5 py-4 font-heading" scope="col">Crop</th>
+        <th class="px-5 py-4 font-heading" scope="col">Published context</th>
+        <th class="px-5 py-4 font-heading" scope="col">pH</th>
+        <th class="px-5 py-4 font-heading" scope="col">EC</th>
+        <th class="px-5 py-4 font-heading" scope="col">Source</th>
+      </tr>
+    </thead>
+    <tbody>
+      {hydroData.cropTargets.map((target) => (
+        <tr class="border-t border-hydro-deep/10 align-top odd:bg-water-mist/35">
+          <th class="px-5 py-5 font-heading text-base text-hydro-deep" scope="row">
+            {target.crop}
+            {target.growthStage && <span class="mt-1 block font-body text-xs font-normal text-slate">{target.growthStage}</span>}
+          </th>
+          <td class="max-w-sm px-5 py-5 leading-6 text-slate">
+            <strong class="block text-ink">{target.systemContext}</strong>
+            <span class="mt-1 block">{target.contextNotes}</span>
+          </td>
+          <td class="px-5 py-5 font-mono font-semibold text-hydro-deep">{formatRange(target.phMin, target.phMax)}</td>
+          <td class="px-5 py-5 font-mono font-semibold text-hydro-deep">
+            {formatRange(target.ecMin, target.ecMax)} <span class="whitespace-nowrap">{target.ecUnit}</span>
+          </td>
+          <td class="px-5 py-5 leading-6 text-slate">
+            {target.sourceRefs.map((sourceId) => {
+              const source = hydroSourceById.get(sourceId);
+              if (!source) throw new Error(`Missing validated source ${sourceId}`);
+              return <a class="hr-focus block rounded-sm font-semibold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href={`#source-${source.id}`}>{source.publisher}</a>;
+            })}
+            <span class="mt-2 block text-xs">{target.evidenceNotes}</span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

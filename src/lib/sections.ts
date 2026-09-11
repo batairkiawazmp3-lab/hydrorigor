@@ -106,8 +106,8 @@ export const sectionDefinitions = [
     title: 'Nutrients and water',
     description: 'Build a clear mental model for nutrient solutions, water quality, pH, EC, and responsible measurement.',
     eyebrow: 'Understand the root-zone inputs',
-    intro: 'This section explains how to think about nutrients and water before later milestones add sourced crop targets or calculation tools.',
-    availability: 'No crop-specific pH/EC dataset or nutrient calculator is live. Those require separately authorized data and calculator work.',
+    intro: 'This section explains how to think about nutrients and water and links to the first source-supported reference and volume-scaling tool.',
+    availability: 'M04 adds a modest sourced pH/EC reference and a calculator that scales a manufacturer-provided label dose. It does not add crop recipes, EC prediction, or pH dosing.',
     groups: [
       {
         title: 'Water context',
@@ -128,7 +128,7 @@ export const sectionDefinitions = [
     nextSteps: [
       { label: 'Choose a system', href: '/systems/' },
       { label: 'Choose a crop', href: '/crops/' },
-      { label: 'See future tool boundaries', href: '/tools/' },
+      { label: 'Open the pH & EC reference', href: '/tools/ph-ec-targets/' },
     ],
   },
   {
@@ -296,19 +296,19 @@ export const sectionDefinitions = [
     slug: 'tools',
     navLabel: 'Tools',
     title: 'Hydroponic tools',
-    description: 'A future home for transparent references and calculators built from sourced data and tested formulas.',
+    description: 'Use a sourced crop pH/EC reference and a tested manufacturer label-dose volume scaler.',
     eyebrow: 'Use decision support responsibly',
-    intro: 'This section defines what HydroRigor tools must explain: inputs, units, assumptions, sources, limits, and calculation behavior.',
-    availability: 'No calculator or crop-target lookup is active in M03. M04 owns data and calculator implementation after separate authorization.',
+    intro: 'The first HydroRigor tools make their inputs, units, assumptions, sources, formula behavior, and limits visible.',
+    availability: 'M04 provides exactly two outputs: a five-crop source/context reference and a nutrient label-dose scaler. Neither supplies automatic crop dosing or product advice.',
     groups: [
       {
         title: 'Reference tools',
-        description: 'Future references will expose provenance and context instead of presenting unexplained target numbers.',
+        description: 'The pH and EC reference exposes provenance and context instead of presenting unexplained target numbers.',
         topics: ['Source-linked ranges', 'Units', 'Update history'],
       },
       {
         title: 'Calculation tools',
-        description: 'Future calculators will show assumptions and validate formulas with normal, boundary, and invalid inputs.',
+        description: 'The nutrient mixing calculator shows its assumptions and uses formula tests for normal, boundary, and invalid inputs.',
         topics: ['Visible assumptions', 'Formula tests', 'Input validation'],
       },
       {
@@ -318,9 +318,9 @@ export const sectionDefinitions = [
       },
     ],
     nextSteps: [
-      { label: 'Start with nutrients and water', href: '/nutrients-water/' },
+      { label: 'Open the pH & EC reference', href: '/tools/ph-ec-targets/' },
+      { label: 'Scale a label dose', href: '/tools/nutrient-mixing-calculator/' },
       { label: 'Review the editorial policy', href: '/editorial-policy/' },
-      { label: 'Browse current sections', href: '/start/' },
     ],
   },
 ] as const satisfies readonly SectionDefinitionShape[];

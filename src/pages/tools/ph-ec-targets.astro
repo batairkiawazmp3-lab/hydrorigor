@@ -1,0 +1,67 @@
+---
+import PhEcTargetTable from '../../components/tools/PhEcTargetTable.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
+import { hydroData } from '../../data/index.ts';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Hydroponic pH & EC target reference — HydroRigor"
+  description="Source-supported hydroponic pH and EC ranges for lettuce, basil, strawberry, tomato, and pepper with visible context."
+>
+  <article class="py-14 sm:py-20">
+    <div class="hr-container">
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Tools', url: '/tools/' },
+        { name: 'pH & EC target reference', url: '/tools/ph-ec-targets/' },
+      ]} />
+
+      <header class="max-w-4xl">
+        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Sourced crop reference</p>
+        <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">Hydroponic pH & EC target reference</h1>
+        <p class="mt-5 max-w-3xl text-lg leading-8 text-slate">Compare published reference ranges without collapsing different sources or growing contexts into one unsupported optimum.</p>
+      </header>
+
+      <section class="mt-10 grid gap-4 md:grid-cols-2" aria-labelledby="units-heading">
+        <div class="rounded-2xl border border-hydro-deep/10 bg-white p-6">
+          <h2 id="units-heading" class="font-heading text-xl font-bold text-hydro-deep">How units are shown</h2>
+          <p class="mt-3 text-sm leading-6 text-slate"><strong>pH</strong> is dimensionless. <strong>EC</strong> is electrical conductivity and every value here is displayed in millisiemens per centimeter (mS/cm). One dS/m is numerically equivalent to one mS/cm.</p>
+        </div>
+        <div class="rounded-2xl border border-amber-measure/30 bg-mineral-sand p-6">
+          <h2 class="font-heading text-xl font-bold text-hydro-deep">Read the context first</h2>
+          <p class="mt-3 text-sm leading-6 text-slate">A published range can vary with cultivar, growth stage, climate, system, source water, meter method, and nutrient formulation. These references are not universal guarantees or automatic dosing recommendations.</p>
+        </div>
+      </section>
+
+      <section class="mt-12" aria-labelledby="ranges-heading">
+        <h2 id="ranges-heading" class="font-heading text-2xl font-bold text-hydro-deep">Reported reference ranges</h2>
+        <p class="mt-3 max-w-3xl leading-7 text-slate">The {hydroData.cropTargets.length} records below cover five crops. Repeated crops intentionally preserve source or production context.</p>
+        <div class="mt-6"><PhEcTargetTable /></div>
+      </section>
+
+      <section class="mt-14" aria-labelledby="sources-heading">
+        <h2 id="sources-heading" class="font-heading text-2xl font-bold text-hydro-deep">Source records</h2>
+        <div class="mt-6 grid gap-5 lg:grid-cols-3">
+          {hydroData.sources.map((source) => (
+            <article id={`source-${source.id}`} class="scroll-mt-8 rounded-2xl border border-hydro-deep/10 bg-white p-6">
+              <p class="font-mono text-xs font-semibold tracking-[0.08em] text-hydro-teal uppercase">{source.sourceType.replaceAll('-', ' ')}</p>
+              <h3 class="mt-3 font-heading text-lg font-bold text-hydro-deep">{source.title}</h3>
+              <p class="mt-2 text-sm leading-6 text-slate">{source.publisher}{source.publicationYear ? ` · ${source.publicationYear}` : ''}</p>
+              {source.authors && <p class="mt-2 text-sm leading-6 text-slate"><strong>Authors:</strong> {source.authors.join(', ')}</p>}
+              <p class="mt-3 text-sm leading-6 text-slate"><strong>Locator:</strong> {source.locator}</p>
+              <p class="mt-2 text-sm leading-6 text-slate"><strong>Accessed:</strong> {source.accessedDate}</p>
+              <p class="mt-3 text-sm leading-6 text-slate">{source.evidenceScope}</p>
+              {source.notes && <p class="mt-3 text-xs leading-5 text-slate">{source.notes}</p>}
+              <a class="hr-focus mt-5 inline-flex rounded-sm font-bold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href={source.url} target="_blank" rel="noopener noreferrer">Open institutional source <span class="sr-only">: {source.title}</span> ↗</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <aside class="mt-12 rounded-2xl bg-hydro-deep p-7 text-white" aria-labelledby="not-dose-heading">
+        <h2 id="not-dose-heading" class="font-heading text-xl font-bold">A target is not a mixing dose</h2>
+        <p class="mt-3 max-w-4xl text-sm leading-6 text-white/[0.78]">Do not convert these EC values into an assumed fertilizer amount. Use your product's label instructions, account for source-water conditions, and verify the resulting solution with appropriate measurements.</p>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>

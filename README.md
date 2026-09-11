@@ -25,9 +25,10 @@ This repository is the single HydroRigor website project.
 
 ## Current status
 
-M01 — Foundation and M02 — Content Engine & SEO are accepted and merged into
-`main`. M03 — Core Information Architecture is accepted. M04 and later
-milestones are not started and not authorized.
+M01 — Foundation, M02 — Content Engine & SEO, and M03 — Core Information
+Architecture are accepted and merged into `main`. M04 — Data & Tools is
+implemented and locally validated on `m04-data-tools`, pending GitHub CI and
+independent audit. M05 and later milestones are not authorized.
 
 ## Local validation
 
@@ -36,6 +37,7 @@ npm.cmd ci
 npm.cmd run lint
 npm.cmd run check
 npm.cmd test
+npm.cmd run test:data
 npm.cmd run build
 npm.cmd run test:search
 ```

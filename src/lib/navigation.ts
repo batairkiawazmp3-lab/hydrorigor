@@ -18,6 +18,19 @@ export const searchLink = {
   description: 'Search the public HydroRigor information architecture.',
 } as const satisfies NavigationLink;
 
+export const toolNavigation = [
+  {
+    label: 'pH & EC Target Reference',
+    href: '/tools/ph-ec-targets/',
+    description: 'Compare source-supported crop pH and EC ranges with their published context.',
+  },
+  {
+    label: 'Nutrient Mixing Calculator',
+    href: '/tools/nutrient-mixing-calculator/',
+    description: 'Scale a manufacturer-provided label dose to a reservoir volume.',
+  },
+] as const satisfies readonly NavigationLink[];
+
 export const sectionNavigation = sectionDefinitions.map((section) => ({
   label: section.navLabel,
   href: `/${section.slug}/` as const,
@@ -61,7 +74,9 @@ export const trustNavigation = [
 export const requiredPublicRoutes = [
   '/',
   startLink.href,
-  ...sectionNavigation.map(({ href }) => href),
+  ...sectionNavigation.flatMap(({ href }) => (
+    href === '/tools/' ? [href, ...toolNavigation.map((tool) => tool.href)] : [href]
+  )),
   ...trustNavigation.map(({ href }) => href),
   searchLink.href,
 ] as const;

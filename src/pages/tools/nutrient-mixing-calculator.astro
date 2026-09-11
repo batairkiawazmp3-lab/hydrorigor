@@ -1,0 +1,54 @@
+---
+import NutrientMixingCalculator from '../../components/tools/NutrientMixingCalculator.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { US_GALLON_LITERS } from '../../lib/tools/nutrient-mixing.ts';
+---
+<BaseLayout
+  title="Nutrient mixing calculator — HydroRigor"
+  description="Scale a manufacturer-provided nutrient dose to a reservoir volume in liters or US gallons without inventing a formulation."
+>
+  <article class="py-14 sm:py-20">
+    <div class="hr-container">
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Tools', url: '/tools/' },
+        { name: 'Nutrient mixing calculator', url: '/tools/nutrient-mixing-calculator/' },
+      ]} />
+
+      <header class="max-w-4xl">
+        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Volume scaler · v1</p>
+        <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">Nutrient mixing calculator</h1>
+        <p class="mt-5 max-w-3xl text-lg leading-8 text-slate">Scale the dose printed on a nutrient product label to your reservoir volume. This calculator supplies no dose or product recommendation of its own.</p>
+      </header>
+
+      <div class="mt-10 grid gap-8 lg:grid-cols-[1.3fr_.7fr] lg:items-start">
+        <NutrientMixingCalculator />
+
+        <aside class="rounded-2xl border border-hydro-deep/10 bg-water-mist p-6" aria-labelledby="formula-heading">
+          <h2 id="formula-heading" class="font-heading text-xl font-bold text-hydro-deep">What the calculator does</h2>
+          <ol class="mt-4 grid gap-3 text-sm leading-6 text-slate">
+            <li><strong>1.</strong> Convert reservoir volume to liters.</li>
+            <li><strong>2.</strong> Convert the label dose to mL per liter.</li>
+            <li><strong>3.</strong> Multiply liters × mL/L.</li>
+          </ol>
+          <p class="mt-5 border-t border-hydro-deep/10 pt-5 font-mono text-xs leading-5 text-hydro-deep">1 US gallon = {US_GALLON_LITERS} liters</p>
+          <p class="mt-3 font-mono text-xs leading-5 text-hydro-deep">total concentrate mL = reservoir liters × label dose mL/L</p>
+        </aside>
+      </div>
+
+      <section class="mt-12 rounded-2xl border border-amber-measure/30 bg-mineral-sand p-7" aria-labelledby="limits-heading">
+        <h2 id="limits-heading" class="font-heading text-2xl font-bold text-hydro-deep">Limits and assumptions</h2>
+        <ul class="mt-5 grid gap-3 text-sm leading-6 text-slate md:grid-cols-2">
+          <li>Use the nutrient manufacturer's actual label dose for the specific product.</li>
+          <li>Different formulations cannot share an assumed dose.</li>
+          <li>Calculate each part of a multi-part nutrient separately and follow its mixing order.</li>
+          <li>The calculator scales volume only; it does not predict final EC.</li>
+          <li>It does not replace an EC meter, source-water assessment, or manufacturer instructions.</li>
+          <li>It does not formulate fertilizer, recommend crop dosing, diagnose a reservoir, or calculate pH adjustment.</li>
+        </ul>
+        <p class="mt-5 text-sm leading-6 text-slate">Calculation occurs only in your browser. No network request is needed and no input is stored.</p>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
