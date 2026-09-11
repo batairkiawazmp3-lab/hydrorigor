@@ -1,6 +1,6 @@
 # M04 Implementation Report
 
-Status: IMPLEMENTED_AND_LOCALLY_VALIDATED_PENDING_GITHUB_CI
+Status: IMPLEMENTED_AND_CI_VALIDATED_PENDING_CHATGPT_AUDIT
 
 ## Baseline and scope
 
@@ -70,5 +70,15 @@ accessibility, mobile navigation, and draft/search exclusions remain intact.
 No affiliate destination, merchant registry, price, rating, commercial schema,
 product recommendation, M05 implementation, production content, analytics,
 Search Console, deployment, Vercel connection, domain, or DNS action was added
-or performed. M04 is not accepted; GitHub CI and independent ChatGPT audit are
-still required.
+or performed. M04 is not accepted; independent ChatGPT audit is still required.
+
+## GitHub integration
+
+Implementation commit: `e155c1d0be674c8a1170bd689d29e7fb058641a0`.
+
+Pull request #4 is open from `m04-data-tools` into `main`:
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/4`.
+
+The implementation head passed both `ci / quality` and
+`governance / m00-governance` on push and pull-request events. The PR remains
+open and unmerged for independent ChatGPT audit.

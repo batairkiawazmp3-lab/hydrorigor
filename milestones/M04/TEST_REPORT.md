@@ -1,6 +1,6 @@
 # M04 Test Report
 
-Status: LOCAL_GATE_PASS_PENDING_GITHUB_CI
+Status: LOCAL_AND_GITHUB_CI_PASS_PENDING_CHATGPT_AUDIT
 
 Validation date: 2026-09-11
 
@@ -43,5 +43,13 @@ or commerce behavior.
 
 ## Pending
 
-GitHub Actions has not run on the M04 pull request yet. M04 remains pending both
-green CI and independent ChatGPT audit.
+GitHub Actions passed on implementation commit
+`e155c1d0be674c8a1170bd689d29e7fb058641a0`:
+
+- `ci / quality` (push): PASS.
+- `ci / quality` (pull request): PASS.
+- `governance / m00-governance` (push): PASS.
+- `governance / m00-governance` (pull request): PASS.
+
+M04 remains pending independent ChatGPT audit. The final documentation-only
+head must also remain green before handoff.

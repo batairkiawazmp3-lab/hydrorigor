@@ -1,6 +1,6 @@
 # M04 Specification — Data & Tools
 
-Status: IMPLEMENTED_PENDING_GITHUB_CI
+Status: READY_FOR_AUDIT
 
 ## Authorization and baseline
 

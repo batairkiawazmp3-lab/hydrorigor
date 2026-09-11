@@ -27,8 +27,8 @@ This repository is the single HydroRigor website project.
 
 M01 — Foundation, M02 — Content Engine & SEO, and M03 — Core Information
 Architecture are accepted and merged into `main`. M04 — Data & Tools is
-implemented and locally validated on `m04-data-tools`, pending GitHub CI and
-independent audit. M05 and later milestones are not authorized.
+implemented and CI-validated on `m04-data-tools`, pending independent audit in
+open pull request #4. M05 and later milestones are not authorized.
 
 ## Local validation
 

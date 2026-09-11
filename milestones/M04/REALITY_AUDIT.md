@@ -1,6 +1,6 @@
 # M04 Reality Audit
 
-Status: PENDING_GITHUB_CI_AND_INDEPENDENT_CHATGPT_AUDIT
+Status: PENDING_INDEPENDENT_CHATGPT_AUDIT
 
 M04 is implemented and its complete local gate passes. The crop values are tied
 to three live-verified university/extension sources through eight contextual
@@ -12,7 +12,9 @@ The two authorized outputs exist at `/tools/ph-ec-targets/` and
 assumptions, accessibility, sitemap, and search behavior are covered by the
 46-test suite plus dedicated data and search verification.
 
-M04 is not accepted. Pull-request creation, green GitHub Actions, and an
-independent ChatGPT reality audit remain required.
+Pull request #4 is open and unmerged. Its implementation head passed
+`ci / quality` and `governance / m00-governance` for both push and pull-request
+events. M04 is not accepted; an independent ChatGPT reality audit remains
+required.
 
 M05 remains NOT_STARTED and NOT_AUTHORIZED.
