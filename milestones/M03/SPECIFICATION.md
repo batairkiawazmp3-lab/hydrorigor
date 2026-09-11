@@ -1,6 +1,6 @@
 # M03 Specification — Core Information Architecture
 
-Status: IN_PROGRESS
+Status: READY_FOR_AUDIT
 
 ## Authorization and baseline
 

@@ -1,6 +1,6 @@
 # M03 Reality Audit
 
-Status: PENDING_GITHUB_CI_AND_CHATGPT_AUDIT
+Status: PENDING_CHATGPT_AUDIT
 
 ## Current evidence
 
@@ -13,11 +13,14 @@ Status: PENDING_GITHUB_CI_AND_CHATGPT_AUDIT
 - no generated/dependency output or credential-like value is tracked
 - no deployment, publishing, commercial, domain, analytics, or production
   service action occurred
+- pull request #3 is open and unmerged against `main`
+- `ci / quality` and `governance / m00-governance` passed for both push and
+  pull-request events on the implementation head
 
 ## Acceptance boundary
 
-M03 is not accepted. Pull-request creation, green GitHub Actions, and an
-independent ChatGPT reality audit remain required. This record must be updated
-with the final PR/check evidence before handoff.
+M03 is not accepted. An independent ChatGPT reality audit remains required.
+Pull request #3 must not be merged before that independent decision and
+subsequent explicit finalization authority.
 
 M04 remains NOT_STARTED and NOT_AUTHORIZED.

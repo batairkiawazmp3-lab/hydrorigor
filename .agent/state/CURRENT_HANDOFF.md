@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_GITHUB_CI
+READY_FOR_AUDIT
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -19,7 +19,14 @@ fast-forwarded to synchronized commit
 `m03-information-architecture` was created from that clean baseline.
 
 Exact milestone state:
-`M03 — Core Information Architecture: READY_FOR_GITHUB_CI`.
+`M03 — Core Information Architecture: READY_FOR_CHATGPT_M03_AUDIT`.
+
+Implementation commit:
+`f2aaee6ef86a68f7a57bbc5dd1a1c936a6f606bb`.
+
+Pull request #3:
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/3` (OPEN, unmerged,
+base `main`).
 
 ## Authorized scope
 Implement only M03 site information architecture: centralized accessible
@@ -55,6 +62,10 @@ SEO/indexability preservation, tests, reports, branch, pull request, and CI.
 - `npm run build`
 - `npm run test:search`
 - complete diff, generated-artifact, credential, destination, and scope audit
+- `git commit -m "feat(m03): build core information architecture"`
+- `git push --set-upstream origin m03-information-architecture`
+- `gh pr create --base main --head m03-information-architecture`
+- `gh pr checks 3 --watch`
 
 ## Passed checks
 
@@ -70,6 +81,9 @@ SEO/indexability preservation, tests, reports, branch, pull request, and CI.
 - `npm run test:search`: PASS, 17 routes and representative query verified;
   drafts, 404, and search excluded
 - no tracked generated/dependency output or credential-like values: PASS
+- implementation-head `ci / quality`: PASS on push and pull-request events
+- implementation-head `governance / m00-governance`: PASS on push and
+  pull-request events
 
 ## Failed checks
 The first M03 test run found one route-order mismatch in the centralized
@@ -77,19 +91,19 @@ definition. It was corrected and the complete local gate passes. No failure
 remains open.
 
 ## Known limitations
-GitHub synchronization, pull-request checks, and independent ChatGPT audit are
-pending. The M02 development fixtures remain draft/non-indexable and are not
-production content. Search-specific JavaScript is intentionally limited to
-`/search/`.
+Independent ChatGPT audit is pending. The M02 development fixtures remain
+draft/non-indexable and are not production content. Search-specific JavaScript
+is intentionally limited to `/search/`.
 
 ## Deferred work
 M04 is NOT_STARTED and NOT_AUTHORIZED. All M04+ data, calculator, commerce,
 production-content, analytics, deployment, domain, and service work is deferred.
 
 ## External side effects
-The npm registry was accessed for the declared Pagefind dependency. No
-production, publishing, affiliate, analytics, Search Console, domain, DNS, or
-deployment service was accessed or changed.
+The npm registry and authorized GitHub repository were accessed for the
+declared Pagefind dependency, branch push, pull request #3, and CI inspection.
+No production, publishing, affiliate, analytics, Search Console, domain, DNS,
+or deployment service was accessed or changed.
 
 ## Secrets accessed
 No project or production-service secrets accessed or added. GitHub CLI
@@ -100,7 +114,6 @@ workflow after this local handoff state.
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Commit and push `m03-information-architecture`, open a pull request into `main`,
-monitor every required GitHub Actions check to green, update this evidence with
-the PR/check results, and stop for independent ChatGPT audit without merging or
-starting M04.
+Perform the independent ChatGPT M03 audit using pull request #3 and the recorded
+local/GitHub evidence. Do not merge pull request #3, start M04, deploy, publish,
+or connect production services without new explicit authority.

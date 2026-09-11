@@ -1,6 +1,6 @@
 # M03 Test Report
 
-Status: LOCAL_GATE_PASS_GITHUB_CI_PENDING
+Status: LOCAL_AND_GITHUB_CI_PASS_CHATGPT_AUDIT_PENDING
 
 ## Environment
 
@@ -47,7 +47,16 @@ required-route list. The list was corrected to the authoritative public
 architecture order, and the complete source suite subsequently passed 28/28.
 No local failure remains open.
 
-## Pending validation
+## GitHub Actions
 
-GitHub Actions on the M03 pull request and the independent ChatGPT M03 reality
-audit remain pending. M03 is not accepted.
+Pull request #3 implementation head
+`f2aaee6ef86a68f7a57bbc5dd1a1c936a6f606bb` passed all four reported checks:
+
+- `ci / quality`: PASS on push
+- `ci / quality`: PASS on pull request
+- `governance / m00-governance`: PASS on push
+- `governance / m00-governance`: PASS on pull request
+
+This audit-handoff documentation update is subject to the same workflows when
+pushed. Independent ChatGPT M03 reality audit remains pending; M03 is not
+accepted.
