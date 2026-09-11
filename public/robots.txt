@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /systems/development-sample-system-article/
+Disallow: /reviews/development-sample-review/
+Disallow: /compare/development-sample-comparison/
+
+Sitemap: https://hydrorigor.com/sitemap-index.xml

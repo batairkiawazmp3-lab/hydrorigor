@@ -1,12 +1,15 @@
 # Current Milestone
 
-Milestone: M01 — Foundation
-Status: ACCEPTED
-Next milestone: M02 — Content Engine & SEO
-M01 build started: YES
-M02 authorization: NOT_GRANTED
-Synchronization and CI gate: CORRECTIVE_REVALIDATION_COMPLETE
-Independent ChatGPT reality audit: ACCEPTED
-Exact milestone state: M01 — Foundation: ACCEPTED
+Milestone: M02 — Content Engine & SEO
+Status: GITHUB_SYNC_AND_CI
+Previous milestone: M01 — Foundation: ACCEPTED
+Next milestone: M03
+M02 authorization: GRANTED
+M02 build started: YES
+M02 local validation: PASS
+M02 GitHub CI: PENDING
+M02 independent audit: PENDING
+Exact milestone state: M02 — Content Engine & SEO: READY_FOR_GITHUB_CI
 
-M02 has NOT started and requires explicit authorization before implementation.
+M03 and later milestones are NOT authorized. M02 must pass local validation,
+GitHub CI, and an independent ChatGPT reality audit before acceptance.

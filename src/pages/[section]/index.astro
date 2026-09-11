@@ -1,0 +1,18 @@
+---
+import SectionLanding from '../../components/content/SectionLanding.astro';
+import { sectionDefinitions, type SectionDefinition } from '../../lib/sections.ts';
+
+export function getStaticPaths() {
+  return sectionDefinitions.map((section) => ({
+    params: { section: section.slug },
+    props: { section },
+  }));
+}
+
+interface Props {
+  section: SectionDefinition;
+}
+
+const { section } = Astro.props;
+---
+<SectionLanding section={section} />

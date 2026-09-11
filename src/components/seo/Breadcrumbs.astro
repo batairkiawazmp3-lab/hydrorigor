@@ -1,0 +1,26 @@
+---
+import { buildBreadcrumbJsonLd, type BreadcrumbInput } from '../../lib/structured-data.ts';
+import JsonLd from './JsonLd.astro';
+
+interface Props {
+  items: BreadcrumbInput[];
+}
+
+const { items } = Astro.props;
+const structuredData = buildBreadcrumbJsonLd(items);
+---
+<nav class="mb-7" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap items-center gap-2 text-sm text-slate">
+    {items.map((item, index) => (
+      <li class="flex items-center gap-2">
+        {index > 0 && <span aria-hidden="true">/</span>}
+        {index === items.length - 1 ? (
+          <span aria-current="page" class="font-semibold text-hydro-deep">{item.name}</span>
+        ) : (
+          <a class="hr-focus rounded-sm underline decoration-hydro-teal/30 underline-offset-4 hover:decoration-hydro-teal" href={item.url}>{item.name}</a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+<JsonLd data={structuredData} />

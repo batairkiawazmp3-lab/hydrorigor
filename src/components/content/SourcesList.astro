@@ -1,0 +1,24 @@
+---
+import type { EditorialSource } from '../../content/schemas.ts';
+
+interface Props {
+  sources: EditorialSource[];
+}
+
+const { sources } = Astro.props;
+---
+<section class="mt-12 border-t border-hydro-deep/10 pt-8" aria-labelledby="sources-heading">
+  <h2 id="sources-heading" class="font-heading text-2xl font-bold text-hydro-deep">Sources and references</h2>
+  <ol class="mt-5 grid gap-4">
+    {sources.map((source) => (
+      <li class="rounded-xl border border-hydro-deep/10 bg-water-mist/35 p-4">
+        <a class="hr-focus rounded-sm font-semibold text-hydro-teal underline underline-offset-4" href={source.url}>{source.title}</a>
+        <p class="mt-1 text-sm text-slate">
+          {source.publisher}
+          {source.publishedDate && <> · Published <time datetime={source.publishedDate.toISOString().slice(0, 10)}>{source.publishedDate.toISOString().slice(0, 10)}</time></>}
+          {source.accessedDate && <> · Accessed <time datetime={source.accessedDate.toISOString().slice(0, 10)}>{source.accessedDate.toISOString().slice(0, 10)}</time></>}
+        </p>
+      </li>
+    ))}
+  </ol>
+</section>
