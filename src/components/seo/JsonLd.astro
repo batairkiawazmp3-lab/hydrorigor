@@ -1,0 +1,10 @@
+---
+import { serializeJsonLd } from '../../lib/structured-data.ts';
+
+interface Props {
+  data: object | object[];
+}
+
+const entries = Array.isArray(Astro.props.data) ? Astro.props.data : [Astro.props.data];
+---
+{entries.map((entry) => <script type="application/ld+json" is:inline set:html={serializeJsonLd(entry)} />)}

@@ -68,3 +68,57 @@ a {
     linear-gradient(90deg, rgb(11 61 59 / 0.06) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
+.hr-prose {
+  color: var(--color-ink);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.hr-prose > * + * {
+  margin-top: 1.25rem;
+}
+
+.hr-prose h2,
+.hr-prose h3 {
+  color: var(--color-hydro-deep);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hr-prose h2 {
+  margin-top: 2.5rem;
+  font-size: 1.75rem;
+}
+
+.hr-prose h3 {
+  margin-top: 2rem;
+  font-size: 1.35rem;
+}
+
+.hr-prose a {
+  color: var(--color-hydro-teal);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.hr-prose ul,
+.hr-prose ol {
+  padding-left: 1.5rem;
+}
+
+.hr-prose ul {
+  list-style: disc;
+}
+
+.hr-prose ol {
+  list-style: decimal;
+}
+
+.hr-prose blockquote {
+  border-left: 4px solid var(--color-leaf-signal);
+  padding-left: 1rem;
+  color: var(--color-slate);
+}

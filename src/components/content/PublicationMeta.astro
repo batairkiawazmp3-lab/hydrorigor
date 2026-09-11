@@ -1,0 +1,44 @@
+---
+interface Props {
+  author: string;
+  publishDate: Date;
+  updatedDate?: Date | undefined;
+  reviewer?: string | undefined;
+  testedBy?: string | undefined;
+}
+
+const { author, publishDate, updatedDate, reviewer, testedBy } = Astro.props;
+const dateFormatter = new Intl.DateTimeFormat('en', {
+  dateStyle: 'long',
+  timeZone: 'UTC',
+});
+const isoDay = (date: Date) => date.toISOString().slice(0, 10);
+---
+<dl class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate">
+  <div class="flex gap-2">
+    <dt class="font-semibold text-hydro-deep">Author</dt>
+    <dd>{author}</dd>
+  </div>
+  <div class="flex gap-2">
+    <dt class="font-semibold text-hydro-deep">Published</dt>
+    <dd><time datetime={isoDay(publishDate)}>{dateFormatter.format(publishDate)}</time></dd>
+  </div>
+  {updatedDate && (
+    <div class="flex gap-2">
+      <dt class="font-semibold text-hydro-deep">Updated</dt>
+      <dd><time datetime={isoDay(updatedDate)}>{dateFormatter.format(updatedDate)}</time></dd>
+    </div>
+  )}
+  {reviewer && (
+    <div class="flex gap-2">
+      <dt class="font-semibold text-hydro-deep">Reviewed by</dt>
+      <dd>{reviewer}</dd>
+    </div>
+  )}
+  {testedBy && (
+    <div class="flex gap-2">
+      <dt class="font-semibold text-hydro-deep">Tested by</dt>
+      <dd>{testedBy}</dd>
+    </div>
+  )}
+</dl>

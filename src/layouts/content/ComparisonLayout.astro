@@ -1,0 +1,73 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import AffiliateDisclosure from '../../components/content/AffiliateDisclosure.astro';
+import ContentProse from '../../components/content/ContentProse.astro';
+import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
+import PublicationMeta from '../../components/content/PublicationMeta.astro';
+import SourcesList from '../../components/content/SourcesList.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
+import BaseLayout from '../BaseLayout.astro';
+
+interface Props {
+  entry: CollectionEntry<'comparisons'>;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const pathname = `/compare/${data.route}/`;
+---
+<BaseLayout
+  title={`${data.title} — HydroRigor`}
+  description={data.description}
+  canonical={data.canonical}
+  noindex={data.draft}
+  type="article"
+  publishDate={data.publishDate}
+  updatedDate={data.updatedDate}
+>
+  <article class="py-14 sm:py-20">
+    <div class="hr-container">
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: 'Comparisons', url: '/compare/' },
+        { name: data.title, url: pathname },
+      ]} />
+      <div class="hr-reading">
+        <DevelopmentNotice draft={data.draft} />
+        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Comparison</p>
+        <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
+        <p class="mt-5 text-lg leading-8 text-slate">{data.description}</p>
+        <div class="mt-6"><PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} /></div>
+        <AffiliateDisclosure enabled={data.affiliateDisclosure} />
+
+        <section class="mt-10" aria-labelledby="items-heading">
+          <h2 id="items-heading" class="font-heading text-2xl font-bold text-hydro-deep">Compared items</h2>
+          <ul class="mt-4 flex flex-wrap gap-3">{data.comparedItemIds.map((item) => <li class="rounded-full bg-water-mist px-4 py-2 font-mono text-sm text-hydro-deep">{item}</li>)}</ul>
+        </section>
+
+        <section class="mt-10" aria-labelledby="criteria-heading">
+          <h2 id="criteria-heading" class="font-heading text-2xl font-bold text-hydro-deep">Comparison criteria</h2>
+          <dl class="mt-5 grid gap-4">{data.criteria.map((criterion) => (
+            <div class="rounded-xl border border-hydro-deep/10 bg-white p-5">
+              <dt class="font-heading font-bold text-hydro-deep">{criterion.name}</dt>
+              <dd class="mt-2 leading-7 text-slate">{criterion.description}</dd>
+            </div>
+          ))}</dl>
+        </section>
+
+        <section class="mt-10" aria-labelledby="conclusions-heading">
+          <h2 id="conclusions-heading" class="font-heading text-2xl font-bold text-hydro-deep">Use-case conclusions</h2>
+          <dl class="mt-5 grid gap-4">{data.useCaseConclusions.map((item) => (
+            <div class="rounded-xl border border-hydro-deep/10 bg-water-mist/50 p-5">
+              <dt class="font-heading font-bold text-hydro-deep">{item.useCase}</dt>
+              <dd class="mt-2 leading-7 text-slate">{item.conclusion}</dd>
+            </div>
+          ))}</dl>
+        </section>
+
+        <div class="mt-10"><ContentProse><slot /></ContentProse></div>
+        <SourcesList sources={data.sources} />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

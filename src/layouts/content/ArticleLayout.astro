@@ -1,0 +1,62 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import AffiliateDisclosure from '../../components/content/AffiliateDisclosure.astro';
+import ContentProse from '../../components/content/ContentProse.astro';
+import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
+import PublicationMeta from '../../components/content/PublicationMeta.astro';
+import SourcesList from '../../components/content/SourcesList.astro';
+import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
+import { getSectionDefinition } from '../../lib/sections.ts';
+import { buildArticleJsonLd } from '../../lib/structured-data.ts';
+import BaseLayout from '../BaseLayout.astro';
+
+interface Props {
+  entry: CollectionEntry<'articles'>;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const section = getSectionDefinition(data.category);
+const pathname = `/${data.category}/${data.route}/`;
+const articleJsonLd = buildArticleJsonLd({
+  headline: data.title,
+  description: data.description,
+  url: data.canonical ?? pathname,
+  author: data.author,
+  publishDate: data.publishDate,
+  updatedDate: data.updatedDate,
+  reviewer: data.reviewer,
+});
+const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : undefined;
+---
+<BaseLayout
+  title={`${data.title} — HydroRigor`}
+  description={data.description}
+  canonical={data.canonical}
+  noindex={data.draft}
+  type="article"
+  publishDate={data.publishDate}
+  updatedDate={data.updatedDate}
+  image={image}
+  jsonLd={articleJsonLd}
+>
+  <article class="py-14 sm:py-20">
+    <div class="hr-container">
+      <Breadcrumbs items={[
+        { name: 'Home', url: '/' },
+        { name: section.title, url: `/${section.slug}/` },
+        { name: data.title, url: pathname },
+      ]} />
+      <div class="hr-reading">
+        <DevelopmentNotice draft={data.draft} />
+        <h1 class="font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
+        <p class="mt-5 text-lg leading-8 text-slate">{data.description}</p>
+        <div class="mt-6"><PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} reviewer={data.reviewer} /></div>
+        <AffiliateDisclosure enabled={data.affiliateDisclosure} />
+        {data.hero && <img class="mt-8 h-auto w-full rounded-2xl" src={data.hero.src} alt={data.hero.alt} width={data.hero.width} height={data.hero.height} />}
+        <div class="mt-10"><ContentProse><slot /></ContentProse></div>
+        <SourcesList sources={data.sources} />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

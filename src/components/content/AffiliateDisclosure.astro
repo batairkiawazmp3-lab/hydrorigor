@@ -1,0 +1,12 @@
+---
+interface Props {
+  enabled: boolean;
+}
+
+const { enabled } = Astro.props;
+---
+{enabled && (
+  <aside class="my-7 rounded-xl border border-amber-measure/35 bg-mineral-sand p-4 text-sm leading-6 text-ink" aria-label="Affiliate disclosure">
+    This page is marked for an affiliate disclosure. Any future compensated link must use HydroRigor's separately authorized affiliate-link system and appropriate relationship attributes.
+  </aside>
+)}

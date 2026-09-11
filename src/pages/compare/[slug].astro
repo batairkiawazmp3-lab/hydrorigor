@@ -1,0 +1,20 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import ComparisonLayout from '../../layouts/content/ComparisonLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('comparisons');
+  return entries.map((entry) => ({
+    params: { slug: entry.data.route },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'comparisons'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<ComparisonLayout entry={entry}><Content /></ComparisonLayout>
