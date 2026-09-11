@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hydro-deep: #0b3d3b;
+  --color-hydro-teal: #16756f;
+  --color-leaf-signal: #6fa86b;
+  --color-water-mist: #eaf4f1;
+  --color-mineral-sand: #f4f1ea;
+  --color-ink: #172126;
+  --color-slate: #556266;
+  --color-amber-measure: #c9872d;
+
+  --font-heading: "Manrope", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: light;
+  --hr-max-width: 75rem;
+  --hr-reading-width: 47.5rem;
+  --hr-radius-card: 0.875rem;
+  --hr-radius-control: 0.625rem;
+  --hr-shadow-soft: 0 18px 50px rgb(11 61 59 / 0.08);
+}
+
+html {
+  background: var(--color-mineral-sand);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 88% 4%, rgb(111 168 107 / 0.14), transparent 25rem),
+    linear-gradient(180deg, #ffffff 0%, var(--color-mineral-sand) 55%, #ffffff 100%);
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgb(22 117 111 / 0.22);
+}
+
+.hr-container {
+  width: min(calc(100% - 2rem), var(--hr-max-width));
+  margin-inline: auto;
+}
+
+.hr-reading {
+  width: min(100%, var(--hr-reading-width));
+}
+
+.hr-focus:focus-visible {
+  outline: 3px solid var(--color-amber-measure);
+  outline-offset: 3px;
+}
+
+.hr-grid-lines {
+  background-image:
+    linear-gradient(rgb(11 61 59 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(11 61 59 / 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

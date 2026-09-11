@@ -1,0 +1,20 @@
+---
+import BrandMark from './BrandMark.astro';
+const nav = [
+  ['Systems', '#systems'],
+  ['Crops', '#crops'],
+  ['Tools', '#tools'],
+  ['About', '#about'],
+];
+---
+<header class="border-b border-hydro-deep/10 bg-white/[0.88] backdrop-blur">
+  <div class="hr-container flex min-h-18 items-center justify-between gap-6">
+    <BrandMark />
+    <nav aria-label="Primary navigation" class="hidden items-center gap-6 md:flex">
+      {nav.map(([label, href]) => (
+        <a class="hr-focus rounded-md px-1 py-2 text-sm font-semibold text-slate no-underline hover:text-hydro-teal" href={href}>{label}</a>
+      ))}
+    </nav>
+    <a class="hr-focus rounded-[10px] bg-hydro-teal px-4 py-2.5 text-sm font-bold text-white no-underline transition hover:bg-hydro-deep" href="#start">Start here</a>
+  </div>
+</header>

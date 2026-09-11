@@ -1,0 +1,24 @@
+# Dependencies / build
+node_modules/
+dist/
+.astro/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Test artifacts
+coverage/
+playwright-report/
+test-results/
+
+# Local agent scratch
+.agent/tmp/

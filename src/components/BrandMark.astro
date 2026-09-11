@@ -1,0 +1,16 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+<a class="hr-focus inline-flex items-center gap-3 rounded-lg no-underline" href="/" aria-label="HydroRigor home">
+  <svg class="h-9 w-9 shrink-0" viewBox="0 0 40 40" role="img" aria-label="HydroRigor symbol">
+    <rect width="40" height="40" rx="11" fill="#0B3D3B" />
+    <path d="M11 11v18M11 20h12M23 11v18M23 15c5 0 7 2 7 5s-2 5-7 5" fill="none" stroke="#EAF4F1" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M23 27c2 0 4 1.1 5.5 3" fill="none" stroke="#6FA86B" stroke-width="2.2" stroke-linecap="round" />
+  </svg>
+  {compact ? null : (
+    <span class="font-heading text-xl font-bold tracking-[-0.035em] text-hydro-deep">HydroRigor</span>
+  )}
+</a>
