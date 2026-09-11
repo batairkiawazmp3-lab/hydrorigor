@@ -34,24 +34,24 @@ const pathname = `/reviews/${data.route}/`;
       ]} />
       <div class="hr-reading">
         <DevelopmentNotice draft={data.draft} />
-        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Sample editorial review · {data.productId}</p>
+        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Editorial review</p>
         <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
         <p class="mt-5 text-lg leading-8 text-slate">{data.description}</p>
         <div class="mt-6"><PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} testedBy={data.testedBy} /></div>
         <AffiliateDisclosure enabled={data.affiliateDisclosure} />
 
         <section class="mt-10 rounded-2xl border border-hydro-deep/10 bg-water-mist p-6" aria-labelledby="verdict-heading">
-          <h2 id="verdict-heading" class="font-heading text-2xl font-bold text-hydro-deep">Fixture verdict</h2>
+          <h2 id="verdict-heading" class="font-heading text-2xl font-bold text-hydro-deep">Verdict</h2>
           <p class="mt-3 leading-7 text-ink">{data.verdict}</p>
         </section>
 
         <div class="mt-8 grid gap-5 sm:grid-cols-2">
           <section class="rounded-2xl border border-hydro-deep/10 bg-white p-6">
-            <h2 class="font-heading text-xl font-bold text-hydro-deep">Pros structure</h2>
+            <h2 class="font-heading text-xl font-bold text-hydro-deep">Pros</h2>
             <ul class="mt-4 list-disc space-y-2 pl-5 text-slate">{data.pros.map((item) => <li>{item}</li>)}</ul>
           </section>
           <section class="rounded-2xl border border-hydro-deep/10 bg-white p-6">
-            <h2 class="font-heading text-xl font-bold text-hydro-deep">Cons structure</h2>
+            <h2 class="font-heading text-xl font-bold text-hydro-deep">Cons</h2>
             <ul class="mt-4 list-disc space-y-2 pl-5 text-slate">{data.cons.map((item) => <li>{item}</li>)}</ul>
           </section>
         </div>

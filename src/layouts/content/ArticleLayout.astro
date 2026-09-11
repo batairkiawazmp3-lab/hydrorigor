@@ -49,8 +49,7 @@ const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : undefined
       ]} />
       <div class="hr-reading">
         <DevelopmentNotice draft={data.draft} />
-        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Sample article</p>
-        <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
+        <h1 class="font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
         <p class="mt-5 text-lg leading-8 text-slate">{data.description}</p>
         <div class="mt-6"><PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} reviewer={data.reviewer} /></div>
         <AffiliateDisclosure enabled={data.affiliateDisclosure} />

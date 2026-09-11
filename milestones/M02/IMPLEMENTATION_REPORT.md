@@ -1,6 +1,6 @@
 # M02 Implementation Report
 
-Status: IMPLEMENTED_AND_VALIDATED_PENDING_CHATGPT_AUDIT
+Status: CORRECTED_AND_LOCALLY_VALIDATED_PENDING_GITHUB_CI_AND_CHATGPT_REAUDIT
 
 ## Baseline and scope
 
@@ -29,7 +29,25 @@ Status: IMPLEMENTED_AND_VALIDATED_PENDING_CHATGPT_AUDIT
   non-indexable development fixtures, and `robots.txt` exclusions.
 - Updated the accepted M01 base layout without changing its accessible header
   navigation behavior.
-- Added ten M02 regression tests; the five existing M01 tests remain intact.
+- Added eleven M02 regression tests; the five existing M01 tests remain intact.
+
+## Independent audit corrective pass
+
+The first independent M02 audit rejected hardcoded development-fixture wording
+in otherwise reusable rendering components. The focused correction:
+
+- removed `Sample article` from the article layout;
+- changed the review layout to `Editorial review`, `Verdict`, `Pros`, and
+  `Cons`;
+- changed the comparison layout to `Comparison` and `Compared items`;
+- changed the shared draft notice to the generic `Draft · Noindex` and
+  `This unpublished page is excluded from production indexing.`; and
+- added regression coverage that keeps fixture wording out of reusable layouts
+  while requiring all three fixture MDX entries to retain explicit SAMPLE and
+  development labels.
+
+Fixture identity remains in fixture content rather than reusable UI. No schema,
+commerce, rating, affiliate, production, or M03 behavior was added.
 
 ## Content integrity
 
@@ -49,9 +67,10 @@ and the complete local gate then passed.
 
 The required local gate passes. Detailed command evidence is in
 `milestones/M02/TEST_REPORT.md`. Pull request #2 is open from
-`m02-content-engine` into `main`, and both GitHub workflow families passed on
-the implementation head. Independent ChatGPT acceptance has not been claimed,
-and this pull request must not be merged before that audit decision.
+`m02-content-engine` into `main`. Both GitHub workflow families passed before
+the corrective pass; corrective-head CI revalidation and independent ChatGPT
+re-audit remain pending. Acceptance has not been claimed, and this pull request
+must not be merged before a new audit decision.
 
 ## Explicitly deferred
 

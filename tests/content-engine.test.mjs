@@ -175,6 +175,27 @@ test('sitemap and robots rules exclude development fixtures', async () => {
   assert.match(robots, /Disallow: \/compare\/development-sample-comparison\//);
 });
 
+test('reusable content layouts use production-neutral labels and a generic draft notice', async () => {
+  const articleLayout = await read('src/layouts/content/ArticleLayout.astro');
+  const reviewLayout = await read('src/layouts/content/ReviewLayout.astro');
+  const comparisonLayout = await read('src/layouts/content/ComparisonLayout.astro');
+  const draftNotice = await read('src/components/content/DevelopmentNotice.astro');
+
+  assert.doesNotMatch(articleLayout, /Sample article/i);
+  assert.doesNotMatch(reviewLayout, /Sample editorial review|Fixture verdict|Pros structure|Cons structure/i);
+  assert.match(reviewLayout, />Editorial review<\/p>/);
+  assert.match(reviewLayout, />Verdict<\/h2>/);
+  assert.match(reviewLayout, />Pros<\/h2>/);
+  assert.match(reviewLayout, />Cons<\/h2>/);
+  assert.doesNotMatch(comparisonLayout, /Sample comparison|Fixture identifiers/i);
+  assert.match(comparisonLayout, />Comparison<\/p>/);
+  assert.match(comparisonLayout, />Compared items<\/h2>/);
+
+  assert.doesNotMatch(draftNotice, /sample development fixture|validate the M02 content engine/i);
+  assert.match(draftNotice, /Draft · Noindex/);
+  assert.match(draftNotice, /This unpublished page is excluded from production indexing\./);
+});
+
 test('sample content is draft-only and contains no affiliate destinations', async () => {
   const files = [
     'src/content/articles/development-sample-system-article.mdx',
@@ -185,7 +206,8 @@ test('sample content is draft-only and contains no affiliate destinations', asyn
 
   for (const file of files) {
     const content = await read(file);
-    assert.match(content, /SAMPLE|sample/);
+    assert.match(content, /^title:\s*["']SAMPLE\b/im);
+    assert.match(content, /development/i);
     assert.match(content, /draft: true/);
     assert.match(content, /affiliateDisclosure: false/);
     assert.doesNotMatch(content, affiliateDestination);
