@@ -1,6 +1,6 @@
 # M01 Implementation Report
 
-Status: CORRECTIVE_PASS_LOCALLY_VALIDATED_PENDING_GITHUB_CI
+Status: CORRECTIVE_PASS_VALIDATED_PENDING_CHATGPT_REAUDIT
 
 ## Implemented
 
@@ -43,5 +43,6 @@ findings are corrected in this pass.
 
 Corrective local validation completed on Node v24.18.0 and npm 11.16.0. `npm
 ci`, lint, Astro diagnostics, 5/5 unit tests, and the production build all pass.
-Pull request #1 must rerun GitHub CI on the corrective commit before the M01
-re-audit. M01 is not accepted and M02 is not authorized.
+The corrective `ci / quality` and `governance / m00-governance` checks pass for
+both push and pull-request events on pull request #1. Independent ChatGPT
+re-audit remains required; M01 is not accepted and M02 is not authorized.

@@ -1,6 +1,6 @@
 # M01 Test Report
 
-Status: CORRECTIVE_LOCAL_GATE_PASS / GITHUB_CI_PENDING
+Status: CORRECTIVE_LOCAL_AND_GITHUB_CI_PASS / CHATGPT_REAUDIT_PENDING
 
 ## Environment
 
@@ -49,7 +49,7 @@ Pull request #1 from `m01-foundation` into `main` is open at:
 
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/1`
 
-The previous branch head passed these checks for both branch push and
+The corrective branch head passed these checks for both branch push and
 pull-request events:
 
 - `ci / quality`: PASS
@@ -67,10 +67,9 @@ The `quality` job repeated the required gate using:
 - `npm run build`
 
 The corrective commit removes lockfile generation from CI so a missing
-`package-lock.json` now causes `npm ci` to fail naturally. GitHub CI must rerun
-on the corrective branch head before re-audit.
+`package-lock.json` now causes `npm ci` to fail naturally.
 
 ## Gate
 
-The corrective local gate is complete. Corrective GitHub CI and the independent
-ChatGPT re-audit remain pending. M02 remains unauthorized.
+The corrective local and GitHub CI gates are complete. The independent ChatGPT
+re-audit remains pending. M02 remains unauthorized.

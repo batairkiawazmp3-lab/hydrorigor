@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_TEST
+READY_FOR_AUDIT
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -13,10 +13,11 @@ READY_FOR_TEST
 M01 — Foundation
 
 ## Source commit / working-tree state
-The `m01-foundation` working tree contains the locally validated M01 corrective
-pass based on commit `a445f98`. Pull request #1 remains open and unmerged.
+The corrective `m01-foundation` branch tip is pushed to `origin` and backs open
+pull request #1 into `main`. The working tree is clean after this final handoff
+update is committed.
 
-Exact milestone state: `M01_CORRECTIVE_PASS_PENDING_GITHUB_CI`.
+Exact milestone state: `READY_FOR_CHATGPT_M01_REAUDIT`.
 
 ## Authorized scope
 Complete only M01 GitHub synchronization and CI validation. Do not merge the
@@ -54,9 +55,13 @@ production services, or change affiliate accounts.
 - production build: PASS, 2 static pages generated
 
 ## Corrective audit findings
-- hidden mobile navigation: RESOLVED LOCALLY
-- CI lockfile-generation fallback: RESOLVED LOCALLY
-- stale M01 specification status: RESOLVED LOCALLY
+- hidden mobile navigation: RESOLVED AND CI-VALIDATED
+- CI lockfile-generation fallback: RESOLVED AND CI-VALIDATED
+- stale M01 specification status: RESOLVED AND CI-VALIDATED
+
+## GitHub Actions checks
+- `ci / quality`: PASS on push and pull-request events
+- `governance / m00-governance`: PASS on push and pull-request events
 
 ## Failed checks
 None.
@@ -66,7 +71,7 @@ None.
   the full application gate still passed
 - the repository's required-status-check branch-protection configuration is not
   available through the current GitHub plan/API response
-- corrective GitHub CI and the independent ChatGPT re-audit remain pending
+- the independent ChatGPT re-audit remains pending
 
 ## Deferred work
 All M02 and production work remains unauthorized.
@@ -85,6 +90,6 @@ files. No project or production-service secrets were accessed or added.
 Not deployed; deployment is explicitly unauthorized.
 
 ## Exact next-agent instruction
-Commit and push the M01 corrective pass to `m01-foundation`, monitor every
-GitHub Actions check on pull request #1 to green, update this handoff to
-`READY_FOR_AUDIT`, and stop without merging or authorizing M02.
+ChatGPT should re-audit the corrected M01 implementation, reports, and green
+pull request #1 checks, then accept, reject, or block M01. Do not merge the pull
+request or authorize M02 unless that independent re-audit accepts M01.

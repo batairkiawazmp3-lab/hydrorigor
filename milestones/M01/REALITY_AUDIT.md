@@ -1,6 +1,6 @@
 # M01 Reality Audit
 
-Status: REJECTED_CORRECTIVE_PASS_PENDING_CI
+Status: PENDING_CHATGPT_REAUDIT
 
 The first independent ChatGPT audit rejected M01 because the primary navigation
 was hidden on mobile, CI could generate a missing lockfile, and the M01
@@ -11,6 +11,8 @@ JavaScript, removes CI lockfile generation, and sets the specification to
 `READY_FOR_AUDIT`. Local validation on Node v24.18.0 passes, including `npm ci`,
 lint, Astro diagnostics, 5/5 tests, and the production build.
 
-Corrective GitHub CI and an independent ChatGPT re-audit remain required.
+The corrective `ci / quality` and `governance / m00-governance` checks now pass
+for both push and pull-request events. Only the independent ChatGPT re-audit
+remains required.
 
 M02 remains unauthorized.
