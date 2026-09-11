@@ -1,6 +1,6 @@
 # M01 Specification — Foundation
 
-Status: NOT_STARTED
+Status: READY_FOR_AUDIT
 
 ## Objective
 

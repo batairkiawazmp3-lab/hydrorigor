@@ -1,14 +1,16 @@
 # M01 Reality Audit
 
-Status: PENDING_CHATGPT_AUDIT
+Status: REJECTED_CORRECTIVE_PASS_PENDING_CI
 
-The source foundation is present. Local validation on Node v24.18.0 passed on
-2026-09-11, including `npm ci`, lint, Astro diagnostics, 4/4 unit tests, and the
-production build. Pull request #1 exists from `m01-foundation` into `main`, and
-its `ci / quality` and `governance / m00-governance` checks pass.
+The first independent ChatGPT audit rejected M01 because the primary navigation
+was hidden on mobile, CI could generate a missing lockfile, and the M01
+specification still said `NOT_STARTED`.
 
-The implementation agent's local and GitHub synchronization/CI gates are
-complete. M01 must not be marked accepted until ChatGPT audits the actual
-repository and CI state.
+The corrective pass keeps the navigation visible and wrapping on mobile without
+JavaScript, removes CI lockfile generation, and sets the specification to
+`READY_FOR_AUDIT`. Local validation on Node v24.18.0 passes, including `npm ci`,
+lint, Astro diagnostics, 5/5 tests, and the production build.
+
+Corrective GitHub CI and an independent ChatGPT re-audit remain required.
 
 M02 remains unauthorized.

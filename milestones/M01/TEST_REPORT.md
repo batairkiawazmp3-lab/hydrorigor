@@ -1,6 +1,6 @@
 # M01 Test Report
 
-Status: LOCAL_AND_GITHUB_CI_PASS / CHATGPT_AUDIT_PENDING
+Status: CORRECTIVE_LOCAL_GATE_PASS / GITHUB_CI_PENDING
 
 ## Environment
 
@@ -31,12 +31,14 @@ The dependency-free HydroRigor lint script reported that source lint checks pass
 PASS — 0 errors / 0 warnings / 0 hints across 11 files
 
 ### `npm test`
-PASS — 4/4 tests
+PASS — 5/5 tests
 
 1. approved HydroRigor palette tokens present
 2. Manrope / Inter / IBM Plex Mono font setup present
 3. homepage preserves M01 scope boundary and contains no affiliate destinations
 4. skip link and primary-navigation accessibility hooks present
+5. primary navigation is visible, full-width, and wrapping at the mobile
+   breakpoint, with no base `hidden` class
 
 ### `npm run build`
 PASS — static production build completed; `/index.html` and `/404.html` generated
@@ -47,7 +49,8 @@ Pull request #1 from `m01-foundation` into `main` is open at:
 
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/1`
 
-The following checks passed for both the branch push and pull-request events:
+The previous branch head passed these checks for both branch push and
+pull-request events:
 
 - `ci / quality`: PASS
 - `governance / m00-governance`: PASS
@@ -63,7 +66,11 @@ The `quality` job repeated the required gate using:
 - `npm test`
 - `npm run build`
 
+The corrective commit removes lockfile generation from CI so a missing
+`package-lock.json` now causes `npm ci` to fail naturally. GitHub CI must rerun
+on the corrective branch head before re-audit.
+
 ## Gate
 
-The local and GitHub CI gates are complete. M01 remains unaccepted until ChatGPT
-completes the independent reality audit. M02 remains unauthorized.
+The corrective local gate is complete. Corrective GitHub CI and the independent
+ChatGPT re-audit remain pending. M02 remains unauthorized.
