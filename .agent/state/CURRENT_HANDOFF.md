@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_AUDIT
+ACCEPTED
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -19,10 +19,15 @@ M02 — Content Engine & SEO
 The first independent M02 audit rejected fixture-only wording in reusable
 layouts and the generic draft notice. Corrective commit
 `b5382c9c51142ad040a9b8c3e3332bbd896ae814` is pushed with the full local gate
-and all four GitHub checks passing. Independent re-audit remains pending.
+and all four GitHub checks passing. The independent ChatGPT M02 re-audit result
+is ACCEPTED. The acceptance-state documentation commit, final CI, pull-request
+merge, and local `main` synchronization remain pending.
 
 Exact milestone state:
-`M02 — Content Engine & SEO: READY_FOR_CHATGPT_M02_REAUDIT`.
+`M02 — Content Engine & SEO: ACCEPTED`.
+
+M03 status: `NOT_STARTED`.
+M03 authorization: `NOT_AUTHORIZED`.
 
 ## Authorized scope
 Implement only the typed content collections, development fixtures, static
@@ -87,6 +92,7 @@ tests defined in `milestones/M02/SPECIFICATION.md`.
 - corrective `npm run build`: PASS, 14 static pages and sitemap generated
 - corrective-head `ci / quality`: PASS on push and PR events
 - corrective-head `governance / m00-governance`: PASS on push and PR events
+- independent ChatGPT M02 re-audit: ACCEPTED
 
 ## Failed checks
 An initial Astro 7.3.0 build failed because an internal logger export used by
@@ -94,18 +100,21 @@ the asset plugin was unavailable. Astro was updated within the approved 7.3.x
 line to 7.3.2; the complete local gate then passed. No failure remains open.
 
 The first independent ChatGPT M02 audit rejected reusable components that
-hardcoded sample/fixture wording. That finding is corrected locally and awaits
-corrective-head CI plus independent re-audit.
+hardcoded sample/fixture wording. That finding was corrected; corrective-head
+CI and independent re-audit both subsequently passed, and no audit finding
+remains open.
 
 ## Known limitations
-Independent ChatGPT re-audit is pending. The sample pages are intentionally
-draft development fixtures, not production editorial content. M02 intentionally
-does not include search, commerce schema, ratings, product data, or production
+The acceptance-state documentation CI, pull-request merge, and local `main`
+synchronization are pending. The sample pages are intentionally draft
+development fixtures, not production editorial content. M02 intentionally does
+not include search, commerce schema, ratings, product data, or production
 service integrations.
 
 ## Deferred work
-All M03+ features and all production, affiliate, data, calculator, search, and
-service-connection work remain unauthorized.
+M03 is NOT_STARTED and NOT_AUTHORIZED. All M03+ features and all production,
+affiliate, data, calculator, search, and service-connection work remain
+unauthorized.
 
 ## External side effects
 The npm registry and authorized GitHub repository were accessed for declared
@@ -122,7 +131,7 @@ project or production-service secrets were accessed or added.
 Not deployed; deployment is explicitly unauthorized.
 
 ## Exact next-agent instruction
-Independently re-audit the focused correction and complete pull request #2 diff
-against `milestones/M02/SPECIFICATION.md`. Accept or reject M02 explicitly. Do
-not merge pull request #2, start M03, deploy, publish, or connect production
-services without separate authorization.
+Commit and push this final M02 acceptance record, wait for all GitHub Actions
+checks, merge pull request #2 without force only when green, then synchronize
+and verify local `main`. Do not start M03, deploy, publish, or connect production
+services.

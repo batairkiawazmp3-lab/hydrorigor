@@ -1,6 +1,6 @@
 # M02 Implementation Report
 
-Status: CORRECTED_AND_VALIDATED_PENDING_CHATGPT_REAUDIT
+Status: ACCEPTED
 
 ## Baseline and scope
 
@@ -68,9 +68,11 @@ and the complete local gate then passed.
 The required local gate passes. Detailed command evidence is in
 `milestones/M02/TEST_REPORT.md`. Pull request #2 is open from
 `m02-content-engine` into `main`. Both GitHub workflow families passed on the
-corrective implementation head for push and pull-request events. Independent
-ChatGPT re-audit remains pending. Acceptance has not been claimed, and this
-pull request must not be merged before a new audit decision.
+corrective implementation head for push and pull-request events. The
+independent ChatGPT M02 re-audit result is ACCEPTED. The acceptance-state
+documentation head must pass GitHub Actions before pull request #2 is merged.
+
+Exact milestone state: `M02 — Content Engine & SEO: ACCEPTED`.
 
 ## Explicitly deferred
 

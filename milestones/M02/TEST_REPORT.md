@@ -1,6 +1,6 @@
 # M02 Test Report
 
-Status: CORRECTIVE_LOCAL_AND_GITHUB_CI_PASS_CHATGPT_REAUDIT_PENDING
+Status: LOCAL_AND_GITHUB_CI_PASS
 
 Validation date: 2026-09-11
 
@@ -79,4 +79,7 @@ Corrective implementation commit
 - pull-request event — `ci / quality`: PASS
 - pull-request event — `governance / m00-governance`: PASS
 
-Independent ChatGPT M02 re-audit remains pending.
+Independent ChatGPT M02 re-audit: ACCEPTED.
+
+The acceptance-state documentation head must retain green `ci / quality` and
+`governance / m00-governance` checks before pull request #2 is merged.
