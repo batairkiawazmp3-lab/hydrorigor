@@ -1,6 +1,6 @@
 # M03 Test Report
 
-Status: LOCAL_AND_GITHUB_CI_PASS_CHATGPT_AUDIT_PENDING
+Status: PASS_ACCEPTED
 
 ## Environment
 
@@ -57,6 +57,6 @@ Pull request #3 implementation head
 - `governance / m00-governance`: PASS on push
 - `governance / m00-governance`: PASS on pull request
 
-This audit-handoff documentation update is subject to the same workflows when
-pushed. Independent ChatGPT M03 reality audit remains pending; M03 is not
-accepted.
+The audit-handoff documentation update is subject to the same workflows when
+pushed. ChatGPT's independent M03 reality audit result is `ACCEPTED`; the test
+evidence remains unchanged and no test failure is open.

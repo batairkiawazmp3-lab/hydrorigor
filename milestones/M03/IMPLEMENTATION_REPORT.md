@@ -1,6 +1,6 @@
 # M03 Implementation Report
 
-Status: IMPLEMENTED_AND_VALIDATED_PENDING_CHATGPT_AUDIT
+Status: ACCEPTED
 
 ## Baseline and reconciliation
 
@@ -71,7 +71,9 @@ for push and pull-request events:
 - `ci / quality`: PASS (push and pull request)
 - `governance / m00-governance`: PASS (push and pull request)
 
-The pull request remains open and unmerged for independent ChatGPT audit.
+ChatGPT subsequently completed the independent M03 reality audit with result
+`ACCEPTED`. Pull request #3 is the authorized M03 integration path and may be
+merged only after the final acceptance-documentation head is green.
 
 ## Content and side-effect integrity
 
@@ -80,3 +82,5 @@ commercial recommendations, fake testing claims, calculator logic, crop-target
 data, analytics, production integration, or framework hydration. No deployment,
 publishing, Vercel, domain, DNS, affiliate, analytics, Search Console, or other
 production-service action occurred. M04 and later work remain unauthorized.
+
+Exact milestone state: `M03 — Core Information Architecture: ACCEPTED`.

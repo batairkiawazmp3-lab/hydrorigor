@@ -26,9 +26,8 @@ This repository is the single HydroRigor website project.
 ## Current status
 
 M01 — Foundation and M02 — Content Engine & SEO are accepted and merged into
-`main`. M03 — Core Information Architecture is implemented and CI-validated on
-`m03-information-architecture`, pending independent ChatGPT audit. M04 and later
-milestones are not authorized.
+`main`. M03 — Core Information Architecture is accepted. M04 and later
+milestones are not started and not authorized.
 
 ## Local validation
 

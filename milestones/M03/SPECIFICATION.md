@@ -1,6 +1,6 @@
 # M03 Specification — Core Information Architecture
 
-Status: READY_FOR_AUDIT
+Status: ACCEPTED
 
 ## Authorization and baseline
 
@@ -97,4 +97,4 @@ or contact channels are permitted.
 - existing M01/M02 behavior and tests remain green
 - no generated build, dependency, or Pagefind output is tracked
 - M03 reports and handoff match repository reality
-- M03 remains pending independent ChatGPT audit
+- independent ChatGPT M03 audit result is ACCEPTED

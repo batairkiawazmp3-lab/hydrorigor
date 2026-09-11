@@ -1,6 +1,10 @@
 # M03 Reality Audit
 
-Status: PENDING_CHATGPT_AUDIT
+Status: ACCEPTED
+
+Independent ChatGPT audit result: ACCEPTED
+
+Exact milestone state: `M03 — Core Information Architecture: ACCEPTED`
 
 ## Current evidence
 
@@ -17,10 +21,11 @@ Status: PENDING_CHATGPT_AUDIT
 - `ci / quality` and `governance / m00-governance` passed for both push and
   pull-request events on the implementation head
 
-## Acceptance boundary
+## Acceptance result
 
-M03 is not accepted. An independent ChatGPT reality audit remains required.
-Pull request #3 must not be merged before that independent decision and
-subsequent explicit finalization authority.
+ChatGPT independently audited the M03 implementation and evidence and returned
+`ACCEPTED`. Final synchronization through pull request #3 is authorized only
+after its final documentation head passes all required GitHub Actions checks.
+This acceptance does not authorize M04 implementation or any production action.
 
 M04 remains NOT_STARTED and NOT_AUTHORIZED.
