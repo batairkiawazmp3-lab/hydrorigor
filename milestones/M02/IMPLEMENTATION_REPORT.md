@@ -1,6 +1,6 @@
 # M02 Implementation Report
 
-Status: IMPLEMENTED_AND_LOCALLY_VALIDATED_PENDING_GITHUB_CI
+Status: IMPLEMENTED_AND_VALIDATED_PENDING_CHATGPT_AUDIT
 
 ## Baseline and scope
 
@@ -48,8 +48,10 @@ and the complete local gate then passed.
 ## Validation state
 
 The required local gate passes. Detailed command evidence is in
-`milestones/M02/TEST_REPORT.md`. GitHub synchronization and CI remain pending;
-independent ChatGPT acceptance has not been claimed.
+`milestones/M02/TEST_REPORT.md`. Pull request #2 is open from
+`m02-content-engine` into `main`, and both GitHub workflow families passed on
+the implementation head. Independent ChatGPT acceptance has not been claimed,
+and this pull request must not be merged before that audit decision.
 
 ## Explicitly deferred
 

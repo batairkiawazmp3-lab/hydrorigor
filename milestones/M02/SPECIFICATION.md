@@ -1,6 +1,6 @@
 # M02 Specification — Content Engine & SEO
 
-Status: IN_PROGRESS
+Status: READY_FOR_AUDIT
 
 ## Authorization
 

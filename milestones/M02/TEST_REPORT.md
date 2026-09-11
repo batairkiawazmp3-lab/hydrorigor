@@ -1,6 +1,6 @@
 # M02 Test Report
 
-Status: LOCAL_GATE_PASS_GITHUB_CI_PENDING
+Status: LOCAL_AND_GITHUB_CI_PASS_CHATGPT_AUDIT_PENDING
 
 Validation date: 2026-09-11
 
@@ -55,5 +55,14 @@ The five M01 shell/accessibility tests also pass unchanged.
 
 ## GitHub CI
 
-Pending branch push and pull-request creation. This report will be updated from
-the final pull-request head after GitHub Actions completes.
+Pull request: `#2` (`m02-content-engine` into `main`)
+
+Implementation commit `871dfd5c6f9179f4bff6911d90b6a602542be76b`:
+
+- push event — `ci / quality`: PASS
+- push event — `governance / m00-governance`: PASS
+- pull-request event — `ci / quality`: PASS
+- pull-request event — `governance / m00-governance`: PASS
+
+The handoff documentation update is also required to retain these green checks
+before work stops. Independent ChatGPT M02 audit remains pending.
