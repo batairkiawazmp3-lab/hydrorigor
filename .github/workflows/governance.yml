@@ -1,0 +1,44 @@
+name: governance
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  m00-governance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Verify required governance files
+        shell: bash
+        run: |
+          set -euo pipefail
+          required=(
+            "AGENTS.md"
+            "CHATGPT.md"
+            "docs/AUTOMATION_MODE.md"
+            "docs/DEVELOPMENT_RULES.md"
+            "docs/HANDOFF_PROTOCOL.md"
+            "docs/GIT_WORKFLOW.md"
+            "docs/QUALITY_GATES.md"
+            "docs/SECURITY_AND_CONTENT_INTEGRITY.md"
+            ".agent/state/CURRENT_MILESTONE.md"
+            ".agent/state/CURRENT_HANDOFF.md"
+            "milestones/M00/SPECIFICATION.md"
+            "milestones/M00/IMPLEMENTATION_REPORT.md"
+            "milestones/M00/TEST_REPORT.md"
+            "milestones/M00/REALITY_AUDIT.md"
+            "milestones/M01/SPECIFICATION.md"
+            "milestones/M01/AUTHORIZATION.md"
+          )
+
+          for file in "${required[@]}"; do
+            test -f "$file" || { echo "Missing required file: $file"; exit 1; }
+          done
+
+          echo "M00 governance baseline present."

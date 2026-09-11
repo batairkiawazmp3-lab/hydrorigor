@@ -1,0 +1,9 @@
+{
+  "project": "HydroRigor",
+  "milestone": "M00",
+  "governance_model": "ChatGPT supervisor/auditor + Codex primary builder",
+  "authoritative_local_path": "D:\\hydrorigor",
+  "remote_repository": "batairkiawazmp3-lab/hydrorigor",
+  "strategy_file": "docs/reference/HydroRigor_Master_Strategy.xlsx",
+  "status": "M00_ACCEPTED_M01_SETUP_ACTIVE"
+}
