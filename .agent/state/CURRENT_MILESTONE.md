@@ -1,20 +1,16 @@
 # Current Milestone
 
-Milestone: M02 — Content Engine & SEO
-Status: ACCEPTED
-Previous milestone: M01 — Foundation: ACCEPTED
-Next milestone: M03 — NOT_STARTED
-M02 authorization: GRANTED
-M02 build started: YES
-M02 local validation: PASS
-M02 corrective local validation: PASS
-M02 corrective GitHub CI: PASS
-M02 independent audit: ACCEPTED
-M02 finalization: ACCEPTANCE_DOCUMENTATION_CI_AND_MERGE_PENDING
-M03 status: NOT_STARTED
-M03 authorization: NOT_AUTHORIZED
-Exact milestone state: M02 — Content Engine & SEO: ACCEPTED
+Milestone: M03 — Core Information Architecture
+Status: GITHUB_CI_PENDING
+Previous milestone: M02 — Content Engine & SEO: ACCEPTED AND MERGED
+M03 authorization: GRANTED
+M03 build started: YES
+M03 local validation: PASS
+M03 GitHub CI: PENDING
+M03 independent audit: PENDING
+M04 status: NOT_STARTED
+M04 authorization: NOT_AUTHORIZED
+Exact milestone state: M03 — Core Information Architecture: READY_FOR_GITHUB_CI
 
-M03 and later milestones are NOT authorized. Acceptance of M02 does not start
-or authorize M03. Pull request #2 may be merged only after the final M02
-documentation head passes all GitHub Actions checks.
+M04 and later milestones are NOT authorized. M03 must pass local validation,
+GitHub CI, and an independent ChatGPT reality audit before acceptance.

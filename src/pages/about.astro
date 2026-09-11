@@ -1,0 +1,26 @@
+---
+import InfoPageLayout from '../layouts/InfoPageLayout.astro';
+---
+<InfoPageLayout
+  eyebrow="Purpose"
+  title="About HydroRigor"
+  description="HydroRigor is being built to make indoor hydroponic decisions easier to inspect, understand, and verify."
+  pathname="/about/"
+  relatedLinks={[
+    { label: 'Start Here', href: '/start/' },
+    { label: 'Editorial Policy', href: '/editorial-policy/' },
+    { label: 'Search HydroRigor', href: '/search/' },
+  ]}
+>
+  <h2>Why this site exists</h2>
+  <p>Hydroponic guidance often mixes measurements, manufacturer claims, personal observations, and general advice without making those differences clear. HydroRigor's editorial purpose is to organize practical questions while keeping the evidence category and limits visible.</p>
+
+  <h2>How information is organized</h2>
+  <p>The site begins with decisions: choosing a system or crop, understanding nutrients and water, planning equipment, or troubleshooting a problem. Future data, calculators, reviews, and buyer guides must connect back to a source, method, or explicitly identified editorial interpretation.</p>
+
+  <h2>What is true today</h2>
+  <p>HydroRigor is still in pre-production. M03 establishes the public architecture and static search. It does not publish a crop-target database, working calculators, real product tests, commercial recommendations, live prices, or affiliate destinations.</p>
+
+  <h2>Qualifications and evidence</h2>
+  <p>The site does not rely on invented credentials or implied personal experience. Claims should stand on disclosed evidence and reasoning. Where direct HydroRigor testing eventually occurs, it must be identified separately from published specifications and third-party evidence.</p>
+</InfoPageLayout>

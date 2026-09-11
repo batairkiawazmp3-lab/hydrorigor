@@ -1,12 +1,37 @@
 ---
 import BrandMark from './BrandMark.astro';
+import { searchLink, sectionNavigation, startLink, trustNavigation } from '../lib/navigation.ts';
 ---
-<footer class="border-t border-hydro-deep/10 bg-white py-10">
-  <div class="hr-container grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+<footer class="border-t border-hydro-deep/10 bg-white py-12">
+  <div class="hr-container grid gap-10 lg:grid-cols-[1.1fr_1fr_1fr]">
     <div>
       <BrandMark />
-      <p class="mt-4 max-w-xl text-sm leading-6 text-slate">Evidence-based hydroponics for home growers. HydroRigor is being built around transparent methods, sourced targets, and practical decision tools.</p>
+      <p class="mt-4 max-w-sm text-sm leading-6 text-slate">Evidence-based hydroponics for home growers, organized around transparent methods, sourced information, and practical decisions.</p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <a class="hr-focus rounded-md font-semibold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href={startLink.href}>{startLink.label}</a>
+        <a class="hr-focus rounded-md font-semibold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href={searchLink.href}>{searchLink.label}</a>
+      </div>
     </div>
-    <p class="text-sm text-slate">M01 foundation preview · No affiliate links or production content yet.</p>
+
+    <nav aria-label="Explore HydroRigor">
+      <h2 class="font-heading text-sm font-bold tracking-[0.08em] text-hydro-deep uppercase">Explore</h2>
+      <ul class="mt-4 grid grid-cols-2 gap-x-5 gap-y-3 text-sm text-slate">
+        {sectionNavigation.map((item) => (
+          <li><a class="hr-focus rounded-sm no-underline hover:text-hydro-teal" href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <nav aria-label="HydroRigor standards and support">
+      <h2 class="font-heading text-sm font-bold tracking-[0.08em] text-hydro-deep uppercase">Standards & support</h2>
+      <ul class="mt-4 grid gap-3 text-sm text-slate">
+        {trustNavigation.map((item) => (
+          <li><a class="hr-focus rounded-sm no-underline hover:text-hydro-teal" href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+  <div class="hr-container mt-10 border-t border-hydro-deep/10 pt-6">
+    <p class="text-xs leading-5 text-slate">HydroRigor is in pre-production. No affiliate links, live prices, production calculators, or published hands-on product tests are currently presented.</p>
   </div>
 </footer>

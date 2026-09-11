@@ -17,7 +17,7 @@ interface Props {
 const { entry } = Astro.props;
 const { data } = entry;
 const section = getSectionDefinition(data.category);
-const pathname = `/${data.category}/${data.route}/`;
+const pathname = `/${section.slug}/${data.route}/`;
 const articleJsonLd = buildArticleJsonLd({
   headline: data.title,
   description: data.description,

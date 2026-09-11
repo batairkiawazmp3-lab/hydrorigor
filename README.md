@@ -25,8 +25,9 @@ This repository is the single HydroRigor website project.
 
 ## Current status
 
-M01 foundation passes the local Node 24 gate and is pending GitHub CI plus the
-independent ChatGPT reality audit. M02 is not activated.
+M01 — Foundation and M02 — Content Engine & SEO are accepted and merged into
+`main`. M03 — Core Information Architecture is authorized and in progress on
+`m03-information-architecture`. M04 and later milestones are not authorized.
 
 ## Local validation
 
@@ -36,6 +37,7 @@ npm.cmd run lint
 npm.cmd run check
 npm.cmd test
 npm.cmd run build
+npm.cmd run test:search
 ```
 
 No production deployment is authorized by setup alone.

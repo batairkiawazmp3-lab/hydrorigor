@@ -33,3 +33,6 @@ jobs:
 
       - name: Production build
         run: npm run build
+
+      - name: Static search smoke test
+        run: npm run test:search
