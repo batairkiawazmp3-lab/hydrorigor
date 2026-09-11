@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_TEST
+READY_FOR_AUDIT
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -17,12 +17,12 @@ M02 — Content Engine & SEO
 `edde009b77f706d25833b6a6f13d69c1f369c924`.
 
 The first independent M02 audit rejected fixture-only wording in reusable
-layouts and the generic draft notice. The focused correction is locally
-complete with 16/16 tests and the full local gate passing. Corrective-head
-commit, push, GitHub CI, and independent re-audit remain pending.
+layouts and the generic draft notice. Corrective commit
+`b5382c9c51142ad040a9b8c3e3332bbd896ae814` is pushed with the full local gate
+and all four GitHub checks passing. Independent re-audit remains pending.
 
 Exact milestone state:
-`M02 — Content Engine & SEO: READY_FOR_GITHUB_CI_REVALIDATION`.
+`M02 — Content Engine & SEO: READY_FOR_CHATGPT_M02_REAUDIT`.
 
 ## Authorized scope
 Implement only the typed content collections, development fixtures, static
@@ -61,6 +61,8 @@ tests defined in `milestones/M02/SPECIFICATION.md`.
 - `git push --set-upstream origin m02-content-engine`
 - `gh pr create --base main --head m02-content-engine`
 - `gh pr checks 2 --watch`
+- `git commit -m "fix(m02): neutralize reusable content labels"`
+- corrective branch push and pull-request CI monitoring
 
 ## Passed checks
 - baseline `main` equals `origin/main`: PASS
@@ -83,6 +85,8 @@ tests defined in `milestones/M02/SPECIFICATION.md`.
 - corrective `npm run check`: PASS, 35 files and 0 errors/warnings/hints
 - corrective `npm test`: PASS, 16/16
 - corrective `npm run build`: PASS, 14 static pages and sitemap generated
+- corrective-head `ci / quality`: PASS on push and PR events
+- corrective-head `governance / m00-governance`: PASS on push and PR events
 
 ## Failed checks
 An initial Astro 7.3.0 build failed because an internal logger export used by
@@ -94,10 +98,10 @@ hardcoded sample/fixture wording. That finding is corrected locally and awaits
 corrective-head CI plus independent re-audit.
 
 ## Known limitations
-Corrective-head GitHub CI and independent ChatGPT re-audit are pending. The
-sample pages are intentionally draft development fixtures, not production
-editorial content. M02 intentionally does not include search, commerce schema,
-ratings, product data, or production service integrations.
+Independent ChatGPT re-audit is pending. The sample pages are intentionally
+draft development fixtures, not production editorial content. M02 intentionally
+does not include search, commerce schema, ratings, product data, or production
+service integrations.
 
 ## Deferred work
 All M03+ features and all production, affiliate, data, calculator, search, and
@@ -118,7 +122,7 @@ project or production-service secrets were accessed or added.
 Not deployed; deployment is explicitly unauthorized.
 
 ## Exact next-agent instruction
-Commit and push the focused M02 correction, monitor both GitHub workflow
-families on the final pull request #2 head, then stop for independent ChatGPT
-M02 re-audit. Do not merge pull request #2, start M03, deploy, publish, or
-connect production services.
+Independently re-audit the focused correction and complete pull request #2 diff
+against `milestones/M02/SPECIFICATION.md`. Accept or reject M02 explicitly. Do
+not merge pull request #2, start M03, deploy, publish, or connect production
+services without separate authorization.

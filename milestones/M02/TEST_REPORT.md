@@ -1,6 +1,6 @@
 # M02 Test Report
 
-Status: CORRECTIVE_LOCAL_GATE_PASS_GITHUB_CI_PENDING
+Status: CORRECTIVE_LOCAL_AND_GITHUB_CI_PASS_CHATGPT_REAUDIT_PENDING
 
 Validation date: 2026-09-11
 
@@ -69,5 +69,14 @@ Implementation commit `871dfd5c6f9179f4bff6911d90b6a602542be76b`:
 - pull-request event — `governance / m00-governance`: PASS
 
 The handoff documentation update is also required to retain these green checks
-before work stops. Corrective-head GitHub CI has not run yet. Independent
-ChatGPT M02 re-audit remains pending.
+before work stops.
+
+Corrective implementation commit
+`b5382c9c51142ad040a9b8c3e3332bbd896ae814`:
+
+- push event — `ci / quality`: PASS
+- push event — `governance / m00-governance`: PASS
+- pull-request event — `ci / quality`: PASS
+- pull-request event — `governance / m00-governance`: PASS
+
+Independent ChatGPT M02 re-audit remains pending.
