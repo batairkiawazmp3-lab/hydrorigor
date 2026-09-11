@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_AUDIT
+ACCEPTED
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -13,16 +13,17 @@ READY_FOR_AUDIT
 M01 — Foundation
 
 ## Source commit / working-tree state
-The corrective `m01-foundation` branch tip is pushed to `origin` and backs open
-pull request #1 into `main`. The working tree is clean after this final handoff
-update is committed.
+M01 source and this acceptance record are carried by pull request #1 from
+`m01-foundation` into `main`. The milestone branch is retained through final
+merge and local-main verification.
 
-Exact milestone state: `READY_FOR_CHATGPT_M01_REAUDIT`.
+Exact milestone state: `M01 — Foundation: ACCEPTED`.
 
 ## Authorized scope
-Complete only M01 GitHub synchronization and CI validation. Do not merge the
-pull request, start M02, deploy, publish, register or modify a domain, connect
-production services, or change affiliate accounts.
+Finalize accepted M01 through its documentation commit, green CI, pull-request
+merge, and local `main` synchronization. Do not start M02, deploy, publish,
+register or modify a domain, connect production services, or change affiliate
+accounts.
 
 ## Files created / changed
 - Astro/Tailwind application foundation, shell components, styles, and pages
@@ -45,6 +46,7 @@ production services, or change affiliate accounts.
 - `npm run build`
 - `git push --set-upstream origin m01-foundation`
 - `gh pr create --base main --head m01-foundation`
+- `gh pr edit 1`
 - `gh pr checks 1 --watch`
 
 ## Passed checks
@@ -53,6 +55,7 @@ production services, or change affiliate accounts.
 - Astro diagnostics: PASS, 0 errors / 0 warnings / 0 hints
 - tests: PASS, 5/5
 - production build: PASS, 2 static pages generated
+- independent ChatGPT M01 re-audit: ACCEPTED
 
 ## Corrective audit findings
 - hidden mobile navigation: RESOLVED AND CI-VALIDATED
@@ -71,15 +74,14 @@ None.
   the full application gate still passed
 - the repository's required-status-check branch-protection configuration is not
   available through the current GitHub plan/API response
-- the independent ChatGPT re-audit remains pending
 
 ## Deferred work
-All M02 and production work remains unauthorized.
+M02 has not started and requires separate, explicit authorization. All
+production work remains unauthorized.
 
 ## External side effects
-Authorized repository effects only: `m01-foundation` was pushed and pull request
-#1 was created. The pull request remains open and unmerged. No production or
-third-party service was changed.
+Authorized repository effects are limited to the M01 branch, pull request #1,
+CI, and merge workflow. No production or third-party service was changed.
 
 ## Secrets accessed
 Existing GitHub CLI authentication was used for the authorized push, pull
@@ -90,6 +92,6 @@ files. No project or production-service secrets were accessed or added.
 Not deployed; deployment is explicitly unauthorized.
 
 ## Exact next-agent instruction
-ChatGPT should re-audit the corrected M01 implementation, reports, and green
-pull request #1 checks, then accept, reject, or block M01. Do not merge the pull
-request or authorize M02 unless that independent re-audit accepts M01.
+Await explicit M02 authorization. M01 acceptance does not itself authorize M02.
+Do not start M02 or perform deployment, publishing, domain, affiliate, analytics,
+Search Console, or other production-service work.

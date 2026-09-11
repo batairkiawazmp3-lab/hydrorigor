@@ -1,6 +1,8 @@
 # M01 Reality Audit
 
-Status: PENDING_CHATGPT_REAUDIT
+Status: ACCEPTED
+
+Exact milestone state: `M01 — Foundation: ACCEPTED`
 
 The first independent ChatGPT audit rejected M01 because the primary navigation
 was hidden on mobile, CI could generate a missing lockfile, and the M01
@@ -12,7 +14,8 @@ JavaScript, removes CI lockfile generation, and sets the specification to
 lint, Astro diagnostics, 5/5 tests, and the production build.
 
 The corrective `ci / quality` and `governance / m00-governance` checks now pass
-for both push and pull-request events. Only the independent ChatGPT re-audit
-remains required.
+for both push and pull-request events. The independent ChatGPT M01 re-audit
+reviewed the corrective pass and returned `ACCEPTED`.
 
-M02 remains unauthorized.
+M01 is accepted. M02 has not started and remains unauthorized pending separate,
+explicit authorization.
