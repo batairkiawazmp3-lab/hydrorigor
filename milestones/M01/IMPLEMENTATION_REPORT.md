@@ -1,6 +1,6 @@
 # M01 Implementation Report
 
-Status: IMPLEMENTED_AND_LOCALLY_VALIDATED_PENDING_GITHUB_CI
+Status: IMPLEMENTED_AND_VALIDATED_PENDING_CHATGPT_AUDIT
 
 ## Implemented
 
@@ -36,5 +36,6 @@ Status: IMPLEMENTED_AND_LOCALLY_VALIDATED_PENDING_GITHUB_CI
 
 Local dependency and application validation completed on Node v24.18.0 and npm
 11.16.0. `npm ci`, lint, Astro diagnostics, unit tests, and the production build
-all pass. GitHub CI and the independent ChatGPT reality audit remain required;
-M01 is not accepted and M02 is not authorized.
+all pass. The `ci / quality` and `governance / m00-governance` GitHub Actions
+checks also pass on pull request #1. The independent ChatGPT reality audit
+remains required; M01 is not accepted and M02 is not authorized.

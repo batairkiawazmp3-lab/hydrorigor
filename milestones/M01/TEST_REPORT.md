@@ -1,6 +1,6 @@
 # M01 Test Report
 
-Status: LOCAL_GATE_PASS / GITHUB_CI_PENDING
+Status: LOCAL_AND_GITHUB_CI_PASS / CHATGPT_AUDIT_PENDING
 
 ## Environment
 
@@ -41,9 +41,18 @@ PASS — 4/4 tests
 ### `npm run build`
 PASS — static production build completed; `/index.html` and `/404.html` generated
 
-## CI readiness
+## GitHub CI
 
-`.github/workflows/ci.yml` is prepared to repeat the gate using:
+Pull request #1 from `m01-foundation` into `main` is open at:
+
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/1`
+
+The following checks passed for both the branch push and pull-request events:
+
+- `ci / quality`: PASS
+- `governance / m00-governance`: PASS
+
+The `quality` job repeated the required gate using:
 
 - `actions/checkout@v7`
 - `actions/setup-node@v7`
@@ -56,6 +65,5 @@ PASS — static production build completed; `/index.html` and `/404.html` genera
 
 ## Gate
 
-The local gate is complete. M01 remains unaccepted until the pull-request CI
-checks pass and ChatGPT completes the independent reality audit. M02 remains
-unauthorized.
+The local and GitHub CI gates are complete. M01 remains unaccepted until ChatGPT
+completes the independent reality audit. M02 remains unauthorized.

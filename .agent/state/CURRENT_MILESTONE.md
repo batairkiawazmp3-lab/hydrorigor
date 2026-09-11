@@ -1,8 +1,10 @@
 # Current Milestone
 
 Milestone: M01 — Foundation
-Status: GITHUB_SYNC_AND_CI
+Status: READY_FOR_AUDIT
 Next milestone: M02 — Content Engine & SEO
 Build started: YES
+Synchronization and CI gate: COMPLETE
+Exact milestone state: READY_FOR_CHATGPT_M01_AUDIT
 
-M02 is NOT authorized until M01 passes local validation, GitHub CI, and ChatGPT reality audit.
+M02 is NOT authorized until ChatGPT accepts the M01 reality audit.
