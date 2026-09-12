@@ -7,6 +7,10 @@ import { commercialDestinations, merchants } from '../src/data/merchants/index.t
 import { products } from '../src/data/products/index.ts';
 import { productEvidenceSources } from '../src/data/products/sources.ts';
 import {
+  findUnmistakableHandsOnClaim,
+  validateCommercialMdxSource,
+} from '../src/lib/commercial/content-integrity.ts';
+import {
   commercialDestinationSchema,
   evidenceClaimSchema,
   merchantRecordSchema,
@@ -15,6 +19,8 @@ import {
 import {
   assertProductEvidenceBasis,
   getCommercialLinkAttributes,
+  resolveCommercialDestination,
+  resolveCommercialDestinationFromRegistry,
   validateCommercialPageState,
   validateCommercialRegistry,
 } from '../src/lib/commercial/registry.ts';
@@ -217,6 +223,68 @@ test('non-hands-on reviews cannot render testing or acquisition claims', () => {
   assert.throws(() => reviewSchema.parse({ ...researched, structuredDataEnabled: true }));
 });
 
+test('non-hands-on structured review prose rejects unmistakable HydroRigor testing claims', () => {
+  const researched = {
+    ...fixtureReview,
+    productId: 'documented-product',
+    evidenceBasis: 'externally-researched',
+    evidenceClaims: [{
+      type: 'third-party-evidence',
+      summary: 'This test review uses one identified third-party source record.',
+      sourceRefs: ['source-record'],
+    }],
+    draft: false,
+  };
+  const manufacturer = {
+    ...researched,
+    evidenceBasis: 'manufacturer-spec-only',
+    evidenceClaims: [{
+      type: 'manufacturer-specification',
+      summary: 'This claim records one identified manufacturer specification source.',
+      sourceRefs: ['source-record'],
+    }],
+  };
+
+  assert.throws(() => reviewSchema.parse({ ...researched, verdict: 'We tested this product and recorded a result for this review.' }));
+  assert.throws(() => reviewSchema.parse({ ...manufacturer, methodology: 'Our testing showed a repeatable result for this product.' }));
+  assert.throws(() => reviewSchema.parse({ ...researched, pros: ['We measured this product during direct evaluation.'] }));
+  assert.throws(() => reviewSchema.parse({ ...researched, cons: ['During our test, this product showed a limitation.'] }));
+  assert.throws(() => reviewSchema.parse({
+    ...fixtureReview,
+    verdict: 'HydroRigor tested this fictional item despite its non-hands-on evidence state.',
+  }));
+
+  assert.doesNotThrow(() => reviewSchema.parse({
+    ...researched,
+    methodology: 'Manufacturer testing is cited as external evidence. Our testing methodology requires separate hands-on records.',
+  }));
+  assert.doesNotThrow(() => reviewSchema.parse({
+    ...handsOnReview,
+    verdict: 'We tested this product under the complete methodology and acquisition record shown here.',
+  }));
+});
+
+test('hands-on claim matching stays narrow around methodology and third-party language', () => {
+  assert.ok(findUnmistakableHandsOnClaim('We tested this product under a documented setup.'));
+  assert.ok(findUnmistakableHandsOnClaim('HydroRigor measured the device directly.'));
+  assert.equal(findUnmistakableHandsOnClaim('Manufacturer testing is cited as third-party evidence.'), undefined);
+  assert.equal(findUnmistakableHandsOnClaim('Our testing methodology requires a dated test period.'), undefined);
+  assert.equal(findUnmistakableHandsOnClaim('The source describes third-party tests and measurements.'), undefined);
+});
+
+test('commercial MDX validation rejects non-hands-on first-person test claims', () => {
+  const review = `---\nevidenceBasis: "externally-researched"\n---\n\nWe tested this product in a reservoir.`;
+  const comparison = `---\nitemEvidence:\n  - evidenceBasis: "fixture"\n  - evidenceBasis: "externally-researched"\n---\n\nWe tested both products under the same setup.`;
+  const allowed = `---\nevidenceBasis: "manufacturer-spec-only"\n---\n\nManufacturer testing is cited here. Our testing methodology requires a separate evidence record.`;
+  const handsOn = `---\nevidenceBasis: "hands-on-tested"\n---\n\nWe tested this product under the disclosed method.`;
+
+  assert.match(validateCommercialMdxSource('reviews/researched.mdx', review)[0] ?? '', /unsupported hands-on claim/i);
+  assert.match(validateCommercialMdxSource('comparisons/researched.mdx', comparison)[0] ?? '', /unsupported hands-on claim/i);
+  assert.deepEqual(validateCommercialMdxSource('reviews/manufacturer.mdx', allowed), []);
+  assert.deepEqual(validateCommercialMdxSource('reviews/hands-on.mdx', handsOn), []);
+  assert.deepEqual(validateCommercialMdxSource('articles/methodology.mdx', review), []);
+});
+
 test('supplied, loaned, and discounted acquisition states require separate disclosure', () => {
   for (const acquisitionRelationship of ['supplied', 'loaned', 'discounted']) {
     assert.throws(() => reviewSchema.parse({ ...handsOnReview, acquisitionRelationship }));
@@ -267,6 +335,10 @@ test('comparison evidence must map one-to-one to compared product identifiers', 
   assert.throws(() => comparisonSchema.parse({
     ...comparison,
     useCaseConclusions: [{ useCase: 'Everyone', conclusion: 'Fixture Alpha is the overall winner for every possible reader.' }],
+  }));
+  assert.throws(() => comparisonSchema.parse({
+    ...comparison,
+    useCaseConclusions: [{ useCase: 'Development', conclusion: 'We tested both products and selected one for this use case.' }],
   }));
 });
 
@@ -373,18 +445,36 @@ test('affiliate destinations require disclosure and disclosure-only states requi
 });
 
 test('affiliate link attributes are sponsored and safe while editorial links are not sponsored', () => {
-  const affiliate = getCommercialLinkAttributes(commercialDestinationSchema.parse(affiliateDestination));
-  const editorial = getCommercialLinkAttributes(commercialDestinationSchema.parse({
+  const editorialDestination = commercialDestinationSchema.parse({
     ...affiliateDestination,
     id: 'test-editorial-destination',
     relationship: 'editorial',
-  }));
+  });
+  const registry = validateCommercialRegistry({
+    products: [],
+    sources: [],
+    merchants: [affiliateMerchant],
+    destinations: [affiliateDestination, editorialDestination],
+  });
+  const affiliate = getCommercialLinkAttributes(resolveCommercialDestinationFromRegistry(
+    affiliateDestination.id,
+    registry.destinations,
+  ));
+  const editorial = getCommercialLinkAttributes(resolveCommercialDestinationFromRegistry(
+    editorialDestination.id,
+    registry.destinations,
+  ));
 
   assert.equal(affiliate.target, '_blank');
   for (const token of ['sponsored', 'nofollow', 'noopener', 'noreferrer']) assert.match(affiliate.rel, new RegExp(`\\b${token}\\b`));
   assert.doesNotMatch(editorial.rel, /\bsponsored\b|\bnofollow\b/);
   assert.match(editorial.rel, /\bnoopener\b/);
   assert.match(editorial.rel, /\bnoreferrer\b/);
+});
+
+test('commercial destination resolution fails closed for unknown IDs', () => {
+  assert.throws(() => resolveCommercialDestination('unregistered-destination'), /Unknown commercial destination ID/);
+  assert.throws(() => resolveCommercialDestinationFromRegistry('missing-destination', [affiliateDestination]));
 });
 
 test('product and page evidence bases must match exactly', () => {
@@ -439,6 +529,10 @@ test('commercial components render relationship-aware links, disclosures, and ho
 
   assert.match(affiliateLink, /data-commercial-relationship/);
   assert.match(affiliateLink, /getCommercialLinkAttributes/);
+  assert.match(affiliateLink, /destinationId: string/);
+  assert.match(affiliateLink, /resolveCommercialDestination\(destinationId\)/);
+  assert.doesNotMatch(affiliateLink, /destination:\s*CommercialDestination/);
+  assert.match(destinations, /<AffiliateLink destinationId=\{destination\.id\}/);
   assert.match(disclosure, /Affiliate disclosure/);
   assert.match(disclosure, /Product acquisition disclosure/);
   assert.match(destinations, /No merchant destination is configured/);

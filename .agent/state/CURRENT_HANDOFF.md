@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_CHATGPT_M05_AUDIT
+READY_FOR_GITHUB_CI_RECHECK
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -24,7 +24,10 @@ Implementation commit:
 Pull request #5:
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5` — open and unmerged.
 
-Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_AUDIT`.
+First independent audit: `REJECTED` — focused correction implemented for
+non-hands-on prose claims and registry-backed affiliate link rendering.
+
+Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_CI_RECHECK`.
 
 ## Authorized scope
 Implement only M05's typed product/evidence and merchant/destination models,
@@ -37,7 +40,10 @@ M05 adds strict product/evidence-source/merchant/destination records, isolated
 fictional product fixtures, hardened review and comparison schemas, evidence
 and disclosure UI, relationship-aware link handling, gated Review JSON-LD,
 honest commercial landing states, policy reconciliation, a commercial
-validator, 23 focused tests, search/sitemap assertions, and CI integration.
+validator, 27 focused tests, search/sitemap assertions, and CI integration.
+The corrective pass adds centralized first-person test-claim detection for
+structured and MDX prose plus an ID-only, production-registry-backed
+`AffiliateLink` API.
 
 ## Commands run
 
@@ -59,6 +65,9 @@ validator, 23 focused tests, search/sitemap assertions, and CI integration.
 - `git push --set-upstream origin m05-affiliate-reviews`
 - `gh pr create --base main --head m05-affiliate-reviews`
 - `gh pr checks 5 --watch`
+- focused independent-audit diagnosis and corrective implementation
+- corrective full local gate: `npm ci`, lint, check, test, data, commerce,
+  build, and search
 
 ## Passed checks
 
@@ -68,11 +77,11 @@ validator, 23 focused tests, search/sitemap assertions, and CI integration.
 - starting working tree clean: PASS
 - M04 accepted and squash-merged: PASS
 - lint: PASS
-- Astro diagnostics: PASS — 74 files, 0 errors/warnings/hints
-- tests: PASS — 70/70 total, including 23 focused commercial-integrity tests
+- Astro diagnostics: PASS — 75 files, 0 errors/warnings/hints
+- tests: PASS — 74/74 total, including 27 focused commercial-integrity tests
 - M04 data validation: PASS — 3 sources, 8 records, 5 crops
 - M05 commerce validation: PASS — empty production registries and no raw
-  tracking destinations
+  tracking destinations or unsupported non-hands-on prose
 - production build: PASS — 23 pages, 18 Pagefind entries
 - search smoke: PASS — 19 public routes; M05 landings included and development
   fixtures excluded
@@ -81,14 +90,16 @@ validator, 23 focused tests, search/sitemap assertions, and CI integration.
   pull-request events
 
 ## Failed checks
-None.
+First independent ChatGPT M05 audit: REJECTED — non-hands-on prose claims and
+arbitrary destination-object rendering required hardening. Both findings are
+corrected locally; corrective CI and re-audit remain pending.
 
 ## Known limitations
 No real product, product evidence source, merchant relationship, affiliate
 destination, hands-on test, price, rating, availability, or recommendation is
 configured. The production commercial registries are intentionally empty.
-Pull request #5 is open. Independent ChatGPT audit remains pending; M05 is not
-accepted and the pull request must not be merged.
+Pull request #5 is open. Corrective GitHub CI and independent ChatGPT re-audit
+remain pending; M05 is not accepted and the pull request must not be merged.
 
 ## Deferred work
 M06 is NOT_STARTED and NOT_AUTHORIZED. Production content, active affiliate
@@ -112,7 +123,6 @@ merchant, affiliate, or production-service secret was added.
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Independently audit M05 on pull request #5. Verify the final PR head is green,
-the production commercial registries remain empty, fixtures remain excluded,
-and evidence/disclosure/schema gates do not outrun visible reality. Do not
-merge or start M06 before an explicit acceptance decision.
+Commit and push the focused M05 correction to pull request #5, wait for both
+GitHub workflows to pass, then hand off for independent ChatGPT M05 re-audit.
+Do not merge or start M06.

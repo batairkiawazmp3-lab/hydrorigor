@@ -1,6 +1,6 @@
 # M05 Implementation Report
 
-Status: READY_FOR_AUDIT
+Status: CORRECTIVE_PASS_AWAITING_CI
 
 ## Baseline and governance
 
@@ -59,6 +59,28 @@ M04 was already accepted and squash-merged. M06 remains `NOT_STARTED` and
   explicit reason. Supplied/loaned/discounted acquisition disclosure is
   rendered separately.
 
+## Focused independent-audit correction
+
+The first independent M05 audit rejected two bypass paths while accepting the
+rest of the implementation.
+
+1. `src/lib/commercial/content-integrity.ts` now centralizes narrow detection
+   of unmistakable first-person product testing/measurement claims such as
+   “we tested,” “our testing showed,” “during our test,” and “HydroRigor
+   measured.” It deliberately does not ban generic words such as `test` or
+   `measurement`; manufacturer testing, third-party tests, and “our testing
+   methodology requires…” remain valid.
+2. Non-hands-on review schemas apply that guard to verdict, methodology, pros,
+   and cons. Comparisons with no hands-on item apply it to criteria and
+   use-case conclusions. `validate-commerce.mjs` applies the same helper to the
+   MDX body of non-hands-on reviews and comparisons, closing the prose bypass.
+3. `AffiliateLink.astro` now exposes only `destinationId`. It resolves that ID
+   internally through `resolveCommercialDestination`, which reads only the
+   validated production destination registry and throws for unknown IDs.
+   `MerchantDestinations.astro` likewise accepts IDs and passes only IDs to the
+   link component. Test-only destinations exercise the lower-level resolver;
+   no production record was added.
+
 ## Rendering and structured data
 
 - Reusable components render product identity, evidence basis, individual
@@ -86,18 +108,18 @@ is published.
 ## Validation and CI
 
 `scripts/validate-commerce.mjs` enforces empty M05 production registries,
-fixture isolation, typed frontmatter architecture, and the absence of raw
-tracking destinations in content and commercial rendering components. The
+fixture isolation, typed frontmatter architecture, the absence of raw tracking
+destinations, and non-hands-on MDX prose integrity. The
 `test:commerce` command is part of GitHub Actions between M04 data validation
 and the production build.
 
-The full local gate is green; exact results are in `TEST_REPORT.md`.
+The corrective full local gate is green; exact results are in `TEST_REPORT.md`.
 Implementation commit `7aed764b3ffac9a674a312959c3d01843fdc3db0` was
 pushed and opened as pull request #5:
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. Both `ci / quality`
 and `governance / m00-governance` passed on push and pull-request events for
-that implementation head. The final documentation head must pass the same
-checks before handoff.
+that implementation head. Corrective GitHub CI is pending branch push at this
+report revision.
 
 ## Scope and side effects
 

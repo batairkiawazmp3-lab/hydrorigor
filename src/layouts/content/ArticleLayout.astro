@@ -60,7 +60,9 @@ const commercialState = resolveCommercialPageState(data);
           affiliateDestinationCount={commercialState.affiliateDestinations.length}
           affiliateDisclosureReason={data.affiliateDisclosureReason}
         />
-        {commercialState.destinations.length > 0 && <MerchantDestinations destinations={commercialState.destinations} />}
+        {commercialState.destinations.length > 0 && (
+          <MerchantDestinations destinationIds={commercialState.destinations.map(({ id }) => id)} />
+        )}
         {data.hero && <img class="mt-8 h-auto w-full rounded-2xl" src={data.hero.src} alt={data.hero.alt} width={data.hero.width} height={data.hero.height} />}
         <div class="mt-10"><ContentProse><slot /></ContentProse></div>
         <SourcesList sources={data.sources} />

@@ -4,6 +4,7 @@ import {
   evidenceClaimSchema,
   productEvidenceBasisValues,
 } from '../lib/commercial/models.ts';
+import { findUnmistakableHandsOnClaim } from '../lib/commercial/content-integrity.ts';
 import { articleCategoryValues } from '../lib/sections.ts';
 
 const text = z.string().trim().min(1);
@@ -87,6 +88,22 @@ function validateEvidenceSourceRefs(
   }
 }
 
+function validateNonHandsOnProse(
+  values: { value: string; path: (string | number)[] }[],
+  context: z.RefinementCtx,
+) {
+  for (const { value, path } of values) {
+    const match = findUnmistakableHandsOnClaim(value);
+    if (match) {
+      context.addIssue({
+        code: 'custom',
+        path,
+        message: `Non-hands-on content cannot claim “${match.phrase}”.`,
+      });
+    }
+  }
+}
+
 export const articleSchema = z.object({
   ...editorialFields,
   reviewer: text.optional(),
@@ -127,6 +144,14 @@ export const reviewSchema = z.object({
       code: 'custom',
       message: 'Non-hands-on reviews cannot include testing or acquisition metadata.',
     });
+  }
+  if (!handsOn) {
+    validateNonHandsOnProse([
+      { value: data.verdict, path: ['verdict'] },
+      { value: data.methodology, path: ['methodology'] },
+      ...data.pros.map((value, index) => ({ value, path: ['pros', index] })),
+      ...data.cons.map((value, index) => ({ value, path: ['cons', index] })),
+    ], context);
   }
   if (handsOn && !data.evidenceClaims.some((claim) => claim.type === 'hydrorigor-observation')) {
     context.addIssue({
@@ -300,6 +325,19 @@ export const comparisonSchema = z.object({
   }).strict()).min(1),
 }).strict().superRefine((data, context) => {
   validateDisclosureFields(data, context);
+
+  if (!data.itemEvidence.some(({ evidenceBasis }) => evidenceBasis === 'hands-on-tested')) {
+    validateNonHandsOnProse([
+      ...data.criteria.map(({ description }, index) => ({
+        value: description,
+        path: ['criteria', index, 'description'],
+      })),
+      ...data.useCaseConclusions.map(({ conclusion }, index) => ({
+        value: conclusion,
+        path: ['useCaseConclusions', index, 'conclusion'],
+      })),
+    ], context);
+  }
 
   const compared = [...data.comparedItemIds].sort();
   const evidenced = [...data.itemEvidence.map(({ productId }) => productId)].sort();

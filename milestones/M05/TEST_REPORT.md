@@ -1,6 +1,6 @@
 # M05 Test Report
 
-Status: LOCAL_AND_CI_PASS_PENDING_CHATGPT_AUDIT
+Status: CORRECTIVE_LOCAL_PASS_CI_PENDING
 
 Validation date: 2026-09-12
 
@@ -10,12 +10,12 @@ Validation date: 2026-09-12
   informational allow-scripts review warning for `esbuild@0.28.2`; installation
   completed successfully.
 - `npm run lint`: PASS — HydroRigor source lint checks passed.
-- `npm run check`: PASS — 74 files, 0 errors, 0 warnings, 0 hints.
-- `npm test`: PASS — 70/70 tests.
+- `npm run check`: PASS — 75 files, 0 errors, 0 warnings, 0 hints.
+- `npm test`: PASS — 74/74 tests.
 - `npm run test:data`: PASS — 3 sources, 8 contextual records, 5 crops, no
   ppm/TDS conversion.
 - `npm run test:commerce`: PASS — production registries empty; no raw tracking
-  destinations found.
+  destinations or unsupported non-hands-on prose found.
 - `npm run build`: PASS — 23 static pages built; Pagefind indexed 18 public
   pages and excluded pages without the indexable body marker.
 - `npm run test:search`: PASS — 19 required public routes verified; M04 tools
@@ -23,17 +23,25 @@ Validation date: 2026-09-12
 
 ## M05 automated coverage
 
-`tests/commercial-integrity.test.mjs` contains 23 focused tests covering:
+`tests/commercial-integrity.test.mjs` contains 27 focused tests covering:
 
 - empty production registries and isolated fictional product fixtures;
 - strict products and compatible evidence-source provenance;
 - manufacturer, third-party, observation, and interpretation claim handling;
 - complete hands-on review and per-item comparison requirements;
 - non-hands-on claim boundaries and acquisition disclosures;
+- structured verdict/methodology/pros/cons rejection for unmistakable
+  first-person testing claims;
+- allowed manufacturer-testing, third-party-testing, and testing-methodology
+  language without false rejection;
+- MDX-body rejection for non-hands-on reviews and comparisons, with complete
+  hands-on evidence allowed;
 - rejection of price, availability, score, star, and rating fields;
 - one-to-one comparison evidence and use-case-only conclusions;
 - merchant/program/destination relationship integrity;
 - affiliate disclosure consistency and destination resolution;
+- registry-backed `AffiliateLink destinationId` behavior and unknown-ID
+  failure;
 - `sponsored nofollow` behavior for affiliate links and non-sponsored
   editorial links;
 - safe `_blank` attributes;
@@ -52,5 +60,6 @@ Pull request #5 is open at
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. For implementation
 commit `7aed764b3ffac9a674a312959c3d01843fdc3db0`, both `ci / quality`
 and `governance / m00-governance` passed on push and pull-request events. The
-final documentation-only head is required to pass the same checks before
-handoff. M05 is not accepted; independent ChatGPT audit remains required.
+first independent audit rejected prose and component-registry bypasses. The
+focused corrective local gate passes; corrective GitHub CI is pending push.
+M05 is not accepted and ChatGPT re-audit remains required.

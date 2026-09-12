@@ -1,12 +1,15 @@
 ---
-import type { CommercialDestination } from '../../lib/commercial/models.ts';
-import { getCommercialLinkAttributes } from '../../lib/commercial/registry.ts';
+import {
+  getCommercialLinkAttributes,
+  resolveCommercialDestination,
+} from '../../lib/commercial/registry.ts';
 
 interface Props {
-  destination: CommercialDestination;
+  destinationId: string;
 }
 
-const { destination } = Astro.props;
+const { destinationId } = Astro.props;
+const destination = resolveCommercialDestination(destinationId);
 const attributes = getCommercialLinkAttributes(destination);
 ---
 <a

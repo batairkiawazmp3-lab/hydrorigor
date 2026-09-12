@@ -5,6 +5,7 @@ import { developmentProductFixtures } from '../src/data/commercial/fixtures.ts';
 import { commercialDestinations, merchants } from '../src/data/merchants/index.ts';
 import { products } from '../src/data/products/index.ts';
 import { productEvidenceSources } from '../src/data/products/sources.ts';
+import { validateCommercialMdxSource } from '../src/lib/commercial/content-integrity.ts';
 import { validateCommercialRegistry } from '../src/lib/commercial/registry.ts';
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
@@ -56,6 +57,7 @@ for (const file of await matchingFiles(contentRoot, ['.md', '.mdx'])) {
   if (trackingDestination.test(source)) {
     violations.push(`${path}: raw tracking destinations are forbidden.`);
   }
+  violations.push(...validateCommercialMdxSource(path, source));
 }
 
 for (const directory of [componentRoot, contentLayoutRoot]) {
@@ -72,4 +74,4 @@ if (violations.length > 0) {
   process.exit(1);
 }
 
-process.stdout.write('HydroRigor commercial integrity validation passed: no live commercial records or raw tracking destinations.\n');
+process.stdout.write('HydroRigor commercial integrity validation passed: no live commercial records, raw tracking destinations, or unsupported hands-on prose.\n');

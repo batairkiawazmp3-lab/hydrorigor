@@ -83,7 +83,7 @@ comparedProducts.forEach(({ evidence, product }) => assertProductEvidenceBasis(p
           ))}</div>
         </section>
 
-        <MerchantDestinations destinations={commercialState.destinations} />
+        <MerchantDestinations destinationIds={commercialState.destinations.map(({ id }) => id)} />
 
         <section class="mt-10" aria-labelledby="criteria-heading">
           <h2 id="criteria-heading" class="font-heading text-2xl font-bold text-hydro-deep">Comparison criteria</h2>

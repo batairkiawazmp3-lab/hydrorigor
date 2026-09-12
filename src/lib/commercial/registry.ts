@@ -113,15 +113,29 @@ export function assertProductEvidenceBasis(
   }
 }
 
+export function resolveCommercialDestinationFromRegistry(
+  destinationId: string,
+  availableDestinations: CommercialDestination[],
+): CommercialDestination {
+  const destination = availableDestinations.find((candidate) => candidate.id === destinationId);
+  if (!destination) throw new Error(`Unknown commercial destination ID: ${destinationId}`);
+  return destination;
+}
+
+export function resolveCommercialDestination(destinationId: string): CommercialDestination {
+  return resolveCommercialDestinationFromRegistry(
+    destinationId,
+    productionCommercialRegistry.destinations,
+  );
+}
+
 export function validateCommercialPageState(
   input: CommercialPageInput,
   availableDestinations: CommercialDestination[],
 ): CommercialPageState {
-  const destinations = (input.commercialDestinationIds ?? []).map((id) => {
-    const destination = availableDestinations.find((candidate) => candidate.id === id);
-    if (!destination) throw new Error(`Unknown commercial destination ID: ${id}`);
-    return destination;
-  });
+  const destinations = (input.commercialDestinationIds ?? []).map((id) => (
+    resolveCommercialDestinationFromRegistry(id, availableDestinations)
+  ));
   const affiliateDestinations = destinations.filter(({ relationship }) => relationship === 'affiliate');
 
   if (affiliateDestinations.length > 0 && !input.affiliateDisclosure) {
