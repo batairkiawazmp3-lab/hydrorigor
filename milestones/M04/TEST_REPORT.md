@@ -1,6 +1,6 @@
 # M04 Test Report
 
-Status: CORRECTIVE_LOCAL_GATE_PASS_PENDING_GITHUB_CI
+Status: CORRECTIVE_LOCAL_AND_GITHUB_CI_PASS_PENDING_CHATGPT_REAUDIT
 
 Validation date: 2026-09-12
 
@@ -56,5 +56,13 @@ GitHub Actions passed on the pre-correction implementation commit
 - `governance / m00-governance` (push): PASS.
 - `governance / m00-governance` (pull request): PASS.
 
-The focused corrective head has not run GitHub Actions yet. M04 remains pending
-green corrective-head CI and independent ChatGPT re-audit.
+GitHub Actions also passed on focused corrective commit
+`87fcaa89aec9bac82fa913f3cc97769e0306e401`:
+
+- `ci / quality` (push): PASS.
+- `ci / quality` (pull request): PASS.
+- `governance / m00-governance` (push): PASS.
+- `governance / m00-governance` (pull request): PASS.
+
+M04 remains pending independent ChatGPT re-audit. The final documentation-only
+head must also remain green before handoff.

@@ -1,6 +1,6 @@
 # M04 Implementation Report
 
-Status: CORRECTIVE_IMPLEMENTED_AND_LOCALLY_VALIDATED_PENDING_GITHUB_CI
+Status: CORRECTIVE_IMPLEMENTED_AND_CI_VALIDATED_PENDING_CHATGPT_REAUDIT
 
 ## Baseline and scope
 
@@ -102,3 +102,10 @@ Pull request #4 is open from `m04-data-tools` into `main`:
 The implementation head passed both `ci / quality` and
 `governance / m00-governance` on push and pull-request events. The PR remains
 open and unmerged for independent ChatGPT audit.
+
+Focused provenance correction commit:
+`87fcaa89aec9bac82fa913f3cc97769e0306e401`.
+
+The corrective implementation head passed `ci / quality` and
+`governance / m00-governance` on both push and pull-request events. M04 remains
+unaccepted and PR #4 remains open for independent ChatGPT re-audit.

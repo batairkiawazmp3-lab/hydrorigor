@@ -1,6 +1,6 @@
 # M04 Reality Audit
 
-Status: CORRECTIVE_LOCAL_GATE_PASS_PENDING_GITHUB_CI_AND_REAUDIT
+Status: PENDING_INDEPENDENT_CHATGPT_REAUDIT
 
 M04 is implemented and its complete local gate passes. The crop values are tied
 to three live-verified university/extension sources through eight contextual
@@ -23,6 +23,7 @@ Both corrections are now implemented and the complete local gate passes with
 47/47 tests. The Virginia source ID and mature-plant values are unchanged. The
 UF/IFAS record remains pH 6.0–7.0 and EC 1.4–1.8 mS/cm, with the later internal
 1.2–1.8 mS/cm EC statement disclosed and no invented reconciliation. Corrective
-GitHub CI and independent ChatGPT re-audit remain pending.
+`ci / quality` and `governance / m00-governance` checks pass for push and
+pull-request events. Independent ChatGPT re-audit remains pending.
 
 M05 remains NOT_STARTED and NOT_AUTHORIZED.

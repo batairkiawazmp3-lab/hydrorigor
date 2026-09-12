@@ -1,6 +1,6 @@
 # M04 Specification — Data & Tools
 
-Status: CORRECTIVE_PASS_PENDING_GITHUB_CI
+Status: READY_FOR_REAUDIT
 
 ## Authorization and baseline
 
