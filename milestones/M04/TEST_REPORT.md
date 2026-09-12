@@ -1,6 +1,6 @@
 # M04 Test Report
 
-Status: CORRECTIVE_LOCAL_AND_GITHUB_CI_PASS_PENDING_CHATGPT_REAUDIT
+Status: ACCEPTED
 
 Validation date: 2026-09-12
 
@@ -46,7 +46,7 @@ uses `SPES-466NP`, the UF/IFAS source and target evidence expose both EC
 statements and the reason for selection, and the selected lettuce record remains
 exactly pH 6.0–7.0 and EC 1.4–1.8 mS/cm.
 
-## Pending
+## GitHub and audit outcome
 
 GitHub Actions passed on the pre-correction implementation commit
 `e155c1d0be674c8a1170bd689d29e7fb058641a0`:
@@ -64,5 +64,5 @@ GitHub Actions also passed on focused corrective commit
 - `governance / m00-governance` (push): PASS.
 - `governance / m00-governance` (pull request): PASS.
 
-M04 remains pending independent ChatGPT re-audit. The final documentation-only
-head must also remain green before handoff.
+Independent ChatGPT M04 re-audit result: `ACCEPTED`. The final
+acceptance-documentation head must be green before the authorized PR #4 merge.

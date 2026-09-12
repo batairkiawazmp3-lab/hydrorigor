@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_CHATGPT_M04_REAUDIT
+ACCEPTED
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -18,7 +18,9 @@ M03 was independently accepted and pull request #3 was squash-merged. Local
 `0dd799dd2877d5c228e9836e78707507c61667c6` before branch
 `m04-data-tools` was created.
 
-Exact milestone state: `M04 — Data & Tools: READY_FOR_CHATGPT_M04_REAUDIT`.
+Exact milestone state: `M04 — Data & Tools: ACCEPTED`.
+
+Independent ChatGPT M04 re-audit result: `ACCEPTED`.
 
 Implementation commit:
 `e155c1d0be674c8a1170bd689d29e7fb058641a0`.
@@ -27,7 +29,9 @@ Focused provenance correction commit:
 `87fcaa89aec9bac82fa913f3cc97769e0306e401`.
 
 Pull request #4:
-`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/4` — OPEN, UNMERGED.
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/4` — accepted integration
+record; final merge authorized only after the acceptance-documentation head is
+green.
 
 ## Authorized scope
 Implement only M04's source-first typed crop pH/EC reference and narrow nutrient
@@ -91,13 +95,13 @@ smoke assertions, CI integration, tests, and milestone reports.
 Previous independent ChatGPT audit: REJECTED — correct the Virginia publication ID to
 `SPES-466NP` and disclose the two EC statements within UF/IFAS HS1422. Numeric
 values, calculator arithmetic, CI, search, and scope boundaries otherwise pass.
-Both requested corrections and their local validation are now complete.
+Both requested corrections passed local validation, CI, and independent
+ChatGPT re-audit. No failure remains open.
 
 ## Known limitations
 The dataset is deliberately modest and preserves source-specific context; it is
 not a universal crop prescription. The calculator only scales a dose supplied
 from a manufacturer label and does not predict EC or formulate nutrients.
-Independent ChatGPT re-audit remains pending.
 
 ## Deferred work
 M05 is NOT_STARTED and NOT_AUTHORIZED. Commerce, affiliate infrastructure,
@@ -119,5 +123,5 @@ or production-service secret was added.
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Independently re-audit the focused M04 provenance correction. Do not merge pull
-request #4 or authorize/start M05 until ChatGPT explicitly accepts M04.
+Verify the accepted PR #4 integration and synchronized clean `main` before any
+future work. Do not authorize or start M05 without explicit ChatGPT authority.

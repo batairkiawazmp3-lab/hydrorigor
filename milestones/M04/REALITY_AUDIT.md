@@ -1,6 +1,6 @@
 # M04 Reality Audit
 
-Status: PENDING_INDEPENDENT_CHATGPT_REAUDIT
+Status: ACCEPTED
 
 M04 is implemented and its complete local gate passes. The crop values are tied
 to three live-verified university/extension sources through eight contextual
@@ -24,6 +24,18 @@ Both corrections are now implemented and the complete local gate passes with
 UF/IFAS record remains pH 6.0–7.0 and EC 1.4–1.8 mS/cm, with the later internal
 1.2–1.8 mS/cm EC statement disclosed and no invented reconciliation. Corrective
 `ci / quality` and `governance / m00-governance` checks pass for push and
-pull-request events. Independent ChatGPT re-audit remains pending.
+pull-request events.
+
+Independent ChatGPT M04 re-audit result on 2026-09-12: `ACCEPTED`.
+
+The accepted provenance decisions remain:
+
+- Virginia publication ID: `SPES-466NP`;
+- Virginia mature tomato/pepper trial settings: pH 6.5 and EC 2.0–2.5 mS/cm;
+- UF/IFAS selected lettuce record: pH 6.0–7.0 and EC 1.4–1.8 mS/cm;
+- UF/IFAS's later 1.2–1.8 mS/cm statement remains disclosed without averaging
+  or an invented pH.
+
+Exact milestone state: `M04 — Data & Tools: ACCEPTED`.
 
 M05 remains NOT_STARTED and NOT_AUTHORIZED.

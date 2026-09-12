@@ -1,6 +1,6 @@
 # M04 Specification — Data & Tools
 
-Status: READY_FOR_REAUDIT
+Status: ACCEPTED
 
 ## Authorization and baseline
 
@@ -93,5 +93,7 @@ dosing, and automatic recommendations are not authorized.
 
 ## Completion boundary
 
-M04 remains pending independent ChatGPT audit after implementation, local gate,
-pull request, and green CI. The M04 pull request must not be merged.
+Independent ChatGPT re-audit accepted M04 on 2026-09-12 after implementation,
+local validation, pull-request CI, and the focused provenance correction. Final
+merge of pull request #4 is authorized only after its acceptance-documentation
+head is green. M05 remains separately unauthorized.

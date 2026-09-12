@@ -1,6 +1,6 @@
 # M04 Implementation Report
 
-Status: CORRECTIVE_IMPLEMENTED_AND_CI_VALIDATED_PENDING_CHATGPT_REAUDIT
+Status: ACCEPTED
 
 ## Baseline and scope
 
@@ -90,7 +90,7 @@ accessibility, mobile navigation, and draft/search exclusions remain intact.
 No affiliate destination, merchant registry, price, rating, commercial schema,
 product recommendation, M05 implementation, production content, analytics,
 Search Console, deployment, Vercel connection, domain, or DNS action was added
-or performed. M04 is not accepted; independent ChatGPT audit is still required.
+or performed. M04 is accepted; M05 remains unauthorized.
 
 ## GitHub integration
 
@@ -108,4 +108,7 @@ Focused provenance correction commit:
 
 The corrective implementation head passed `ci / quality` and
 `governance / m00-governance` on both push and pull-request events. M04 remains
-unaccepted and PR #4 remains open for independent ChatGPT re-audit.
+recorded in PR #4.
+
+Independent ChatGPT re-audit result on 2026-09-12: `ACCEPTED`. Final merge of
+PR #4 was authorized only after its acceptance-documentation head is green.
