@@ -1,6 +1,6 @@
 # M05 Test Report
 
-Status: CORRECTIVE_LOCAL_PASS_CI_PENDING
+Status: CORRECTIVE_LOCAL_AND_CI_PASS_PENDING_CHATGPT_REAUDIT
 
 Validation date: 2026-09-12
 
@@ -61,5 +61,6 @@ Pull request #5 is open at
 commit `7aed764b3ffac9a674a312959c3d01843fdc3db0`, both `ci / quality`
 and `governance / m00-governance` passed on push and pull-request events. The
 first independent audit rejected prose and component-registry bypasses. The
-focused corrective local gate passes; corrective GitHub CI is pending push.
-M05 is not accepted and ChatGPT re-audit remains required.
+focused correction is commit `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370`.
+Its full local gate passes, and both workflows passed on push and pull-request
+events. M05 is not accepted and ChatGPT re-audit remains required.

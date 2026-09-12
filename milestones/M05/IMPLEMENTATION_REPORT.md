@@ -1,6 +1,6 @@
 # M05 Implementation Report
 
-Status: CORRECTIVE_PASS_AWAITING_CI
+Status: READY_FOR_CHATGPT_M05_REAUDIT
 
 ## Baseline and governance
 
@@ -118,8 +118,10 @@ Implementation commit `7aed764b3ffac9a674a312959c3d01843fdc3db0` was
 pushed and opened as pull request #5:
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. Both `ci / quality`
 and `governance / m00-governance` passed on push and pull-request events for
-that implementation head. Corrective GitHub CI is pending branch push at this
-report revision.
+that implementation head. Corrective commit
+`de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370` was pushed to the same open,
+unmerged pull request and passed both checks on push and pull-request events.
+M05 is not accepted; independent ChatGPT re-audit remains required.
 
 ## Scope and side effects
 

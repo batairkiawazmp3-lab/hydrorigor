@@ -1,6 +1,6 @@
 # M05 Reality Audit
 
-Status: PENDING_CORRECTIVE_CI_AND_CHATGPT_REAUDIT
+Status: PENDING_CHATGPT_M05_REAUDIT
 
 ## Implementation reality
 
@@ -39,9 +39,10 @@ language.
 Pull request #5 is open and unmerged at
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. The implementation
 head passed `ci / quality` and `governance / m00-governance` for both push and
-pull-request events. The corrective local gate passes; corrective CI is
-pending push. M05 has not been accepted or merged. M06 remains `NOT_STARTED`
-and `NOT_AUTHORIZED`.
+pull-request events. Corrective commit
+`de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370` passed the full local gate and the
+same two workflows on both events. M05 has not been accepted or merged. M06
+remains `NOT_STARTED` and `NOT_AUTHORIZED`.
 
 No affiliate enrollment, merchant login, credential, tracking ID, price or
 availability feed, real test, production recommendation, deployment,

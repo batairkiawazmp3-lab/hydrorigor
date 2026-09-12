@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_GITHUB_CI_RECHECK
+READY_FOR_CHATGPT_M05_REAUDIT
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -21,13 +21,16 @@ M04 was independently accepted and pull request #4 was squash-merged. Local
 Implementation commit:
 `7aed764b3ffac9a674a312959c3d01843fdc3db0`.
 
+Corrective commit:
+`de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370`.
+
 Pull request #5:
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5` — open and unmerged.
 
 First independent audit: `REJECTED` — focused correction implemented for
 non-hands-on prose claims and registry-backed affiliate link rendering.
 
-Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_CI_RECHECK`.
+Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_CHATGPT_M05_REAUDIT`.
 
 ## Authorized scope
 Implement only M05's typed product/evidence and merchant/destination models,
@@ -68,6 +71,8 @@ structured and MDX prose plus an ID-only, production-registry-backed
 - focused independent-audit diagnosis and corrective implementation
 - corrective full local gate: `npm ci`, lint, check, test, data, commerce,
   build, and search
+- `git commit -m "fix(m05): close commercial integrity bypasses"`
+- corrective branch push and `gh pr checks 5 --watch`
 
 ## Passed checks
 
@@ -88,18 +93,23 @@ structured and MDX prose plus an ID-only, production-registry-backed
 - implementation-head `ci / quality`: PASS on push and pull-request events
 - implementation-head `governance / m00-governance`: PASS on push and
   pull-request events
+- corrective-head `ci / quality`: PASS on push and pull-request events
+- corrective-head `governance / m00-governance`: PASS on push and
+  pull-request events
 
 ## Failed checks
 First independent ChatGPT M05 audit: REJECTED — non-hands-on prose claims and
 arbitrary destination-object rendering required hardening. Both findings are
-corrected locally; corrective CI and re-audit remain pending.
+corrected, the full local gate passes, and corrective GitHub CI is green.
+Independent ChatGPT re-audit remains pending.
 
 ## Known limitations
 No real product, product evidence source, merchant relationship, affiliate
 destination, hands-on test, price, rating, availability, or recommendation is
 configured. The production commercial registries are intentionally empty.
 Pull request #5 is open. Corrective GitHub CI and independent ChatGPT re-audit
-remain pending; M05 is not accepted and the pull request must not be merged.
+are complete and pending respectively; M05 is not accepted and the pull
+request must not be merged.
 
 ## Deferred work
 M06 is NOT_STARTED and NOT_AUTHORIZED. Production content, active affiliate
@@ -123,6 +133,6 @@ merchant, affiliate, or production-service secret was added.
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Commit and push the focused M05 correction to pull request #5, wait for both
-GitHub workflows to pass, then hand off for independent ChatGPT M05 re-audit.
-Do not merge or start M06.
+Independently re-audit the focused M05 correction on open pull request #5.
+Verify its final head remains green, then accept or reject M05. Do not merge or
+start M06 before an explicit acceptance decision.
