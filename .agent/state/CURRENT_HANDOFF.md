@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_GITHUB_CI
+READY_FOR_CHATGPT_M05_AUDIT
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -18,7 +18,13 @@ M04 was independently accepted and pull request #4 was squash-merged. Local
 `1936b957796a3f69b0a7c3547dba264296883490` before branch
 `m05-affiliate-reviews` was created.
 
-Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_CI`.
+Implementation commit:
+`7aed764b3ffac9a674a312959c3d01843fdc3db0`.
+
+Pull request #5:
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5` — open and unmerged.
+
+Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_AUDIT`.
 
 ## Authorized scope
 Implement only M05's typed product/evidence and merchant/destination models,
@@ -49,6 +55,10 @@ validator, 23 focused tests, search/sitemap assertions, and CI integration.
 - `npm run test:commerce`
 - `npm run build`
 - `npm run test:search`
+- `git commit -m "feat(m05): add commercial editorial integrity"`
+- `git push --set-upstream origin m05-affiliate-reviews`
+- `gh pr create --base main --head m05-affiliate-reviews`
+- `gh pr checks 5 --watch`
 
 ## Passed checks
 
@@ -66,6 +76,9 @@ validator, 23 focused tests, search/sitemap assertions, and CI integration.
 - production build: PASS — 23 pages, 18 Pagefind entries
 - search smoke: PASS — 19 public routes; M05 landings included and development
   fixtures excluded
+- implementation-head `ci / quality`: PASS on push and pull-request events
+- implementation-head `governance / m00-governance`: PASS on push and
+  pull-request events
 
 ## Failed checks
 None.
@@ -74,7 +87,8 @@ None.
 No real product, product evidence source, merchant relationship, affiliate
 destination, hands-on test, price, rating, availability, or recommendation is
 configured. The production commercial registries are intentionally empty.
-GitHub pull-request CI and independent ChatGPT audit remain pending.
+Pull request #5 is open. Independent ChatGPT audit remains pending; M05 is not
+accepted and the pull request must not be merged.
 
 ## Deferred work
 M06 is NOT_STARTED and NOT_AUTHORIZED. Production content, active affiliate
@@ -82,21 +96,23 @@ enrollment, prices/feeds, analytics, deployment, domain, and later work are
 deferred.
 
 ## External side effects
-The authorized GitHub repository was fetched read-only for baseline
-verification, and the npm registry was accessed by `npm ci`. No affiliate
+The authorized GitHub repository was fetched, the M05 branch was pushed, pull
+request #5 was created, and GitHub Actions was inspected. The npm registry was
+accessed by `npm ci`. No affiliate
 network, merchant, production, publishing,
 analytics, Search Console, Vercel, domain, DNS, or deployment service was
 accessed or changed.
 
 ## Secrets accessed
-Existing Git authentication was used for the authorized fetch. Its value was
-not exposed or stored. No project, merchant, affiliate, or production-service
-secret was added.
+Existing GitHub authentication was used for authorized fetch, push,
+pull-request, and CI actions. Its value was not exposed or stored. No project,
+merchant, affiliate, or production-service secret was added.
 
 ## Deployment status
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Commit and push the validated M05 scope, open a pull request to `main`, monitor
-all GitHub Actions checks, and stop for independent ChatGPT audit when the final
-PR head is green. Do not merge or start M06.
+Independently audit M05 on pull request #5. Verify the final PR head is green,
+the production commercial registries remain empty, fixtures remain excluded,
+and evidence/disclosure/schema gates do not outrun visible reality. Do not
+merge or start M06 before an explicit acceptance decision.

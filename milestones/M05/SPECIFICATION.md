@@ -1,6 +1,6 @@
 # M05 Specification — Affiliate & Reviews
 
-Status: READY_FOR_CI
+Status: READY_FOR_AUDIT
 
 ## Authorization and baseline
 

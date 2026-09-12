@@ -27,8 +27,9 @@ This repository is the single HydroRigor website project.
 
 M01 — Foundation, M02 — Content Engine & SEO, M03 — Core Information
 Architecture, and M04 — Data & Tools are accepted and merged into `main`. M05 —
-Affiliate & Reviews is authorized and in progress on `m05-affiliate-reviews`.
-M06 and later milestones are not started and not authorized.
+Affiliate & Reviews is implemented on `m05-affiliate-reviews` in open pull
+request #5 and remains pending independent ChatGPT audit. M06 and later
+milestones are not started and not authorized.
 
 ## Local validation
 

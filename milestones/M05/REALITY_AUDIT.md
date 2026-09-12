@@ -22,8 +22,12 @@ are correct, current commercial registries are empty, commercial structured
 data does not outrun evidence, and honest empty states do not imply real
 product evaluation.
 
-Pull-request creation and GitHub Actions are pending at this revision. M05 has
-not been accepted or merged. M06 remains `NOT_STARTED` and `NOT_AUTHORIZED`.
+Pull request #5 is open and unmerged at
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. The implementation
+head passed `ci / quality` and `governance / m00-governance` for both push and
+pull-request events. The final documentation head must pass before audit
+handoff. M05 has not been accepted or merged. M06 remains `NOT_STARTED` and
+`NOT_AUTHORIZED`.
 
 No affiliate enrollment, merchant login, credential, tracking ID, price or
 availability feed, real test, production recommendation, deployment,

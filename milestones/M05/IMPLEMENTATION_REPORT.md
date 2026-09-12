@@ -1,6 +1,6 @@
 # M05 Implementation Report
 
-Status: IMPLEMENTED_AWAITING_CI
+Status: READY_FOR_AUDIT
 
 ## Baseline and governance
 
@@ -91,8 +91,13 @@ tracking destinations in content and commercial rendering components. The
 `test:commerce` command is part of GitHub Actions between M04 data validation
 and the production build.
 
-The full local gate is green; exact results are in `TEST_REPORT.md`. GitHub CI
-and pull-request creation are pending at this report revision.
+The full local gate is green; exact results are in `TEST_REPORT.md`.
+Implementation commit `7aed764b3ffac9a674a312959c3d01843fdc3db0` was
+pushed and opened as pull request #5:
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. Both `ci / quality`
+and `governance / m00-governance` passed on push and pull-request events for
+that implementation head. The final documentation head must pass the same
+checks before handoff.
 
 ## Scope and side effects
 

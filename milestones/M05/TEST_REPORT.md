@@ -1,6 +1,6 @@
 # M05 Test Report
 
-Status: LOCAL_PASS_CI_PENDING
+Status: LOCAL_AND_CI_PASS_PENDING_CHATGPT_AUDIT
 
 Validation date: 2026-09-12
 
@@ -48,5 +48,9 @@ affiliate relationship markup.
 
 ## GitHub Actions
 
-Pending branch push and pull-request creation. M05 is not accepted; independent
-ChatGPT audit remains required after the final pull-request head is green.
+Pull request #5 is open at
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. For implementation
+commit `7aed764b3ffac9a674a312959c3d01843fdc3db0`, both `ci / quality`
+and `governance / m00-governance` passed on push and pull-request events. The
+final documentation-only head is required to pass the same checks before
+handoff. M05 is not accepted; independent ChatGPT audit remains required.
