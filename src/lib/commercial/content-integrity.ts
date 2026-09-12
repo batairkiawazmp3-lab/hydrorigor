@@ -59,8 +59,67 @@ function splitMdx(source: string): MdxParts | undefined {
   return { frontmatter: match[1], body: match[2] };
 }
 
-function frontmatterHasHandsOnEvidence(frontmatter: string): boolean {
-  return /^\s*evidenceBasis:\s*["']?hands-on-tested["']?\s*$/imu.test(frontmatter);
+type CommercialContentCollection = 'reviews' | 'comparisons';
+
+function simpleYamlScalar(rawValue: string): string {
+  const commentIndex = rawValue.search(/\s+#/u);
+  const withoutComment = (commentIndex >= 0 ? rawValue.slice(0, commentIndex) : rawValue).trim();
+  const quote = withoutComment[0];
+  return quote && (quote === '"' || quote === "'") && withoutComment.endsWith(quote)
+    ? withoutComment.slice(1, -1)
+    : withoutComment;
+}
+
+function reviewHasHandsOnEvidence(frontmatter: string): boolean {
+  const match = frontmatter.match(/^evidenceBasis:\s*(.*?)\s*$/mu);
+  return match?.[1] !== undefined && simpleYamlScalar(match[1]) === 'hands-on-tested';
+}
+
+function comparisonHasCompleteHandsOnSet(frontmatter: string): boolean {
+  const lines = frontmatter.split(/\r?\n/u);
+  const sectionStart = lines.findIndex((line) => /^itemEvidence:\s*(?:#.*)?$/u.test(line));
+  if (sectionStart < 0) return false;
+
+  const section: string[] = [];
+  for (const line of lines.slice(sectionStart + 1)) {
+    if (/^[A-Za-z_][\w-]*\s*:/u.test(line)) break;
+    section.push(line);
+  }
+
+  const itemIndents = section.flatMap((line) => {
+    const match = line.match(/^(\s*)-\s*/u);
+    return match?.[1] !== undefined ? [match[1].length] : [];
+  });
+  if (itemIndents.length === 0) return false;
+
+  const itemIndent = Math.min(...itemIndents);
+  const records: string[][] = [];
+  for (const line of section) {
+    const itemStart = line.match(/^(\s*)-\s*/u);
+    if (itemStart?.[1]?.length === itemIndent) records.push([line]);
+    else if (records.length > 0) records.at(-1)?.push(line);
+  }
+
+  return records.length > 0 && records.every((record) => {
+    const evidenceBases = record.flatMap((line, index) => {
+      const itemPrefix = index === 0
+        ? line.match(/^\s*-\s*evidenceBasis:\s*(.*?)\s*$/u)
+        : undefined;
+      const property = line.match(/^\s+evidenceBasis:\s*(.*?)\s*$/u);
+      const rawValue = itemPrefix?.[1] ?? property?.[1];
+      return rawValue === undefined ? [] : [simpleYamlScalar(rawValue)];
+    });
+    return evidenceBases.length === 1 && evidenceBases[0] === 'hands-on-tested';
+  });
+}
+
+function frontmatterAllowsHandsOnClaims(
+  collection: CommercialContentCollection,
+  frontmatter: string,
+): boolean {
+  return collection === 'reviews'
+    ? reviewHasHandsOnEvidence(frontmatter)
+    : comparisonHasCompleteHandsOnSet(frontmatter);
 }
 
 export function validateCommercialMdxSource(relativePath: string, source: string): string[] {
@@ -69,7 +128,7 @@ export function validateCommercialMdxSource(relativePath: string, source: string
   if (collection !== 'reviews' && collection !== 'comparisons') return [];
 
   const parts = splitMdx(source);
-  if (!parts || frontmatterHasHandsOnEvidence(parts.frontmatter)) return [];
+  if (!parts || frontmatterAllowsHandsOnClaims(collection, parts.frontmatter)) return [];
 
   const match = findUnmistakableHandsOnClaim(parts.body);
   return match

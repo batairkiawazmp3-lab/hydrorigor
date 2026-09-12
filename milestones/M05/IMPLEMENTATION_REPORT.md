@@ -1,6 +1,6 @@
 # M05 Implementation Report
 
-Status: READY_FOR_CHATGPT_M05_REAUDIT
+Status: FINAL_CORRECTIVE_PASS_AWAITING_CI
 
 ## Baseline and governance
 
@@ -71,15 +71,25 @@ rest of the implementation.
    `measurement`; manufacturer testing, third-party tests, and “our testing
    methodology requires…” remain valid.
 2. Non-hands-on review schemas apply that guard to verdict, methodology, pros,
-   and cons. Comparisons with no hands-on item apply it to criteria and
+   and cons. Comparisons that are not fully hands-on apply it to criteria and
    use-case conclusions. `validate-commerce.mjs` applies the same helper to the
-   MDX body of non-hands-on reviews and comparisons, closing the prose bypass.
+   MDX body of non-hands-on reviews and not-fully-hands-on comparisons, closing
+   the prose bypass.
 3. `AffiliateLink.astro` now exposes only `destinationId`. It resolves that ID
    internally through `resolveCommercialDestination`, which reads only the
    validated production destination registry and throws for unknown IDs.
    `MerchantDestinations.astro` likewise accepts IDs and passes only IDs to the
    link component. Test-only destinations exercise the lower-level resolver;
    no production record was added.
+
+The independent re-audit accepted those corrections and identified one narrow
+over-blocking boundary: comparison evidence lives under `itemEvidence`, while
+the MDX helper recognized only a review's top-level `evidenceBasis`. The final
+correction parses the comparison `itemEvidence` list without adding a YAML
+dependency and permits comparison body claims only when every item is
+`hands-on-tested`. Zero-hands-on and mixed-evidence comparisons remain blocked.
+The comparison schema now applies the same all-items rule to criteria and
+use-case conclusions; existing per-item completeness refinements are unchanged.
 
 ## Rendering and structured data
 
@@ -121,7 +131,9 @@ and `governance / m00-governance` passed on push and pull-request events for
 that implementation head. Corrective commit
 `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370` was pushed to the same open,
 unmerged pull request and passed both checks on push and pull-request events.
-M05 is not accepted; independent ChatGPT re-audit remains required.
+The final comparison-boundary local gate is green. Its GitHub CI is pending at
+this report revision. M05 is not accepted; independent ChatGPT final re-audit
+remains required.
 
 ## Scope and side effects
 

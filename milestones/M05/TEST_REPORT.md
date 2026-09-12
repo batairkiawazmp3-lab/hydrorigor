@@ -1,6 +1,6 @@
 # M05 Test Report
 
-Status: CORRECTIVE_LOCAL_AND_CI_PASS_PENDING_CHATGPT_REAUDIT
+Status: FINAL_CORRECTIVE_LOCAL_PASS_CI_PENDING
 
 Validation date: 2026-09-12
 
@@ -11,7 +11,7 @@ Validation date: 2026-09-12
   completed successfully.
 - `npm run lint`: PASS — HydroRigor source lint checks passed.
 - `npm run check`: PASS — 75 files, 0 errors, 0 warnings, 0 hints.
-- `npm test`: PASS — 74/74 tests.
+- `npm test`: PASS — 76/76 tests.
 - `npm run test:data`: PASS — 3 sources, 8 contextual records, 5 crops, no
   ppm/TDS conversion.
 - `npm run test:commerce`: PASS — production registries empty; no raw tracking
@@ -23,7 +23,7 @@ Validation date: 2026-09-12
 
 ## M05 automated coverage
 
-`tests/commercial-integrity.test.mjs` contains 27 focused tests covering:
+`tests/commercial-integrity.test.mjs` contains 29 focused tests covering:
 
 - empty production registries and isolated fictional product fixtures;
 - strict products and compatible evidence-source provenance;
@@ -36,6 +36,11 @@ Validation date: 2026-09-12
   language without false rejection;
 - MDX-body rejection for non-hands-on reviews and comparisons, with complete
   hands-on evidence allowed;
+- collection-aware review versus comparison frontmatter interpretation;
+- no-hands-on and mixed comparison body claims rejected, with fully hands-on
+  comparison body claims accepted;
+- all-items comparison structured-prose alignment and complete per-item
+  tester, methodology, test-period, acquisition, and observation requirements;
 - rejection of price, availability, score, star, and rating fields;
 - one-to-one comparison evidence and use-case-only conclusions;
 - merchant/program/destination relationship integrity;
@@ -63,4 +68,7 @@ and `governance / m00-governance` passed on push and pull-request events. The
 first independent audit rejected prose and component-registry bypasses. The
 focused correction is commit `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370`.
 Its full local gate passes, and both workflows passed on push and pull-request
-events. M05 is not accepted and ChatGPT re-audit remains required.
+events. The independent re-audit accepted those fixes and found one
+comparison-MDX evidence-boundary bug. The narrow final correction passes the
+full local gate; final GitHub CI is pending. M05 is not accepted and ChatGPT
+final re-audit remains required.

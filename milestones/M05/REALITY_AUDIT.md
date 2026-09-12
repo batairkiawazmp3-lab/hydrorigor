@@ -1,6 +1,6 @@
 # M05 Reality Audit
 
-Status: PENDING_CHATGPT_M05_REAUDIT
+Status: PENDING_FINAL_CORRECTIVE_CI_AND_CHATGPT_FINAL_REAUDIT
 
 ## Implementation reality
 
@@ -22,7 +22,7 @@ are correct, current commercial registries are empty, commercial structured
 data does not outrun evidence, and honest empty states do not imply real
 product evaluation.
 
-## First audit result and correction
+## Audit results and corrections
 
 The first independent ChatGPT M05 audit was `REJECTED`: non-hands-on prose
 could still assert first-person HydroRigor testing, and `AffiliateLink.astro`
@@ -36,12 +36,22 @@ tests preserve discussion of manufacturer testing, third-party testing, and
 testing methodology. Complete hands-on records may use truthful hands-on
 language.
 
+The independent re-audit accepted all earlier findings but rejected one narrow
+over-blocking behavior: comparison MDX nested `itemEvidence` was not
+distinguished from review top-level `evidenceBasis`. The final correction uses
+collection-aware frontmatter inspection. A comparison body may use first-person
+HydroRigor testing claims only when all item evidence is hands-on; zero or mixed
+hands-on evidence remains blocked. Structured comparison-level prose now uses
+the same all-items boundary, while every per-item evidence requirement remains
+enforced.
+
 Pull request #5 is open and unmerged at
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. The implementation
 head passed `ci / quality` and `governance / m00-governance` for both push and
 pull-request events. Corrective commit
 `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370` passed the full local gate and the
-same two workflows on both events. M05 has not been accepted or merged. M06
+same two workflows on both events. The final comparison-boundary local gate
+passes; its GitHub CI is pending. M05 has not been accepted or merged. M06
 remains `NOT_STARTED` and `NOT_AUTHORIZED`.
 
 No affiliate enrollment, merchant login, credential, tracking ID, price or

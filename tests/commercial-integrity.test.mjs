@@ -285,6 +285,20 @@ test('commercial MDX validation rejects non-hands-on first-person test claims', 
   assert.deepEqual(validateCommercialMdxSource('articles/methodology.mdx', review), []);
 });
 
+test('comparison MDX hands-on claims require every item to be hands-on-tested', () => {
+  const noHandsOn = `---\nitemEvidence:\n  - productId: fixture-alpha\n    evidenceBasis: fixture\n  - productId: documented-beta\n    evidenceBasis: externally-researched\n---\n\nWe tested both products under the same setup.`;
+  const mixed = `---\nitemEvidence:\n  - productId: documented-alpha\n    evidenceBasis: hands-on-tested\n  - productId: documented-beta\n    evidenceBasis: externally-researched\n---\n\nWe tested both products under the same setup.`;
+  const fullyHandsOn = `---\nitemEvidence:\n  - productId: documented-alpha\n    evidenceBasis: "hands-on-tested"\n    evidenceClaims:\n      - type: hydrorigor-observation\n        summary: A documented observation for item alpha.\n    sourceRefs:\n      - source-record\n    acquisitionRelationship: purchased\n    testedBy: HydroRigor Test Operator\n    methodology: A documented comparison method for item alpha.\n    testPeriod:\n      started: 2026-08-01\n      completed: 2026-08-15\n  - productId: documented-beta\n    evidenceBasis: 'hands-on-tested'\n    evidenceClaims:\n      - type: hydrorigor-observation\n        summary: A documented observation for item beta.\n    sourceRefs:\n      - source-record\n    acquisitionRelationship: purchased\n    testedBy: HydroRigor Test Operator\n    methodology: A documented comparison method for item beta.\n    testPeriod:\n      started: 2026-08-01\n      completed: 2026-08-15\n---\n\nWe tested both products under the disclosed comparison method.`;
+  const externalLanguage = `---\nitemEvidence:\n  - productId: documented-alpha\n    evidenceBasis: manufacturer-spec-only\n  - productId: documented-beta\n    evidenceBasis: externally-researched\n---\n\nManufacturer testing and third-party measurements are discussed as external evidence.`;
+  const reviewWithNestedHandsOn = `---\nevidenceBasis: externally-researched\nitemEvidence:\n  - evidenceBasis: hands-on-tested\n---\n\nWe tested this product.`;
+
+  assert.match(validateCommercialMdxSource('comparisons/no-hands-on.mdx', noHandsOn)[0] ?? '', /unsupported hands-on claim/i);
+  assert.match(validateCommercialMdxSource('comparisons/mixed.mdx', mixed)[0] ?? '', /unsupported hands-on claim/i);
+  assert.deepEqual(validateCommercialMdxSource('comparisons/fully-hands-on.mdx', fullyHandsOn), []);
+  assert.deepEqual(validateCommercialMdxSource('comparisons/external-language.mdx', externalLanguage), []);
+  assert.match(validateCommercialMdxSource('reviews/nested-evidence.mdx', reviewWithNestedHandsOn)[0] ?? '', /unsupported hands-on claim/i);
+});
+
 test('supplied, loaned, and discounted acquisition states require separate disclosure', () => {
   for (const acquisitionRelationship of ['supplied', 'loaned', 'discounted']) {
     assert.throws(() => reviewSchema.parse({ ...handsOnReview, acquisitionRelationship }));
@@ -364,10 +378,79 @@ test('hands-on comparison evidence requires complete per-item testing metadata',
     useCaseConclusions: [{ useCase: 'Defined test use case', conclusion: 'The conclusion remains bounded to this documented test scenario.' }],
     draft: false,
   };
+  assert.doesNotThrow(() => comparisonSchema.parse({
+    ...comparison,
+    useCaseConclusions: [{
+      useCase: 'Defined test use case',
+      conclusion: 'We tested both products and bounded this conclusion to the documented scenario.',
+    }],
+  }));
+
+  for (const field of ['testedBy', 'methodology', 'testPeriod']) {
+    const invalid = structuredClone(comparison);
+    delete invalid.itemEvidence[0][field];
+    assert.throws(() => comparisonSchema.parse(invalid));
+  }
+
+  const missingAcquisition = structuredClone(comparison);
+  missingAcquisition.itemEvidence[0].acquisitionRelationship = 'not-applicable';
+  assert.throws(() => comparisonSchema.parse(missingAcquisition));
+
+  const missingObservation = structuredClone(comparison);
+  missingObservation.itemEvidence[0].evidenceClaims = [{
+    type: 'editorial-interpretation',
+    summary: 'This deliberately lacks the required HydroRigor observation.',
+  }];
+  assert.throws(() => comparisonSchema.parse(missingObservation));
+});
+
+test('mixed comparison structured prose cannot imply both products were tested', () => {
+  const handsOnItem = {
+    productId: 'documented-alpha',
+    evidenceBasis: 'hands-on-tested',
+    evidenceClaims: [{
+      type: 'hydrorigor-observation',
+      summary: 'A documented observation for the hands-on schema test item.',
+    }],
+    sourceRefs: ['source-record'],
+    acquisitionRelationship: 'purchased',
+    testedBy: 'HydroRigor Test Operator',
+    methodology: 'A documented comparison method used solely for this schema validation test.',
+    testPeriod: { started: '2026-08-01', completed: '2026-08-15' },
+  };
+  const externalItem = {
+    productId: 'documented-beta',
+    evidenceBasis: 'externally-researched',
+    evidenceClaims: [{
+      type: 'third-party-evidence',
+      summary: 'An identified external source supports this test-only comparison record.',
+      sourceRefs: ['source-record'],
+    }],
+    sourceRefs: ['source-record'],
+  };
+  const comparison = {
+    ...common,
+    comparedItemIds: ['documented-alpha', 'documented-beta'],
+    itemEvidence: [handsOnItem, externalItem],
+    criteria: [{
+      name: 'Evidence boundary',
+      description: 'Manufacturer testing and third-party measurements may be described as external evidence.',
+    }],
+    useCaseConclusions: [{
+      useCase: 'Mixed evidence',
+      conclusion: 'The conclusion remains limited to the disclosed evidence for each item.',
+    }],
+    draft: false,
+  };
+
   assert.doesNotThrow(() => comparisonSchema.parse(comparison));
-  const missingTester = structuredClone(comparison);
-  delete missingTester.itemEvidence[0].testedBy;
-  assert.throws(() => comparisonSchema.parse(missingTester));
+  assert.throws(() => comparisonSchema.parse({
+    ...comparison,
+    useCaseConclusions: [{
+      useCase: 'Mixed evidence',
+      conclusion: 'We tested both products and selected one for this specific use case.',
+    }],
+  }));
 });
 
 test('merchant records reject implied or incomplete affiliate relationships', () => {

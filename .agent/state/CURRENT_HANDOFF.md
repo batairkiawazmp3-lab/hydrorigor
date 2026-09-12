@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_CHATGPT_M05_REAUDIT
+READY_FOR_FINAL_GITHUB_CI_RECHECK
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -30,7 +30,10 @@ Pull request #5:
 First independent audit: `REJECTED` — focused correction implemented for
 non-hands-on prose claims and registry-backed affiliate link rendering.
 
-Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_CHATGPT_M05_REAUDIT`.
+Independent re-audit: `REJECTED` — one narrow comparison-MDX evidence-boundary
+correction implemented; final CI remains pending.
+
+Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_FINAL_CI_RECHECK`.
 
 ## Authorized scope
 Implement only M05's typed product/evidence and merchant/destination models,
@@ -43,10 +46,14 @@ M05 adds strict product/evidence-source/merchant/destination records, isolated
 fictional product fixtures, hardened review and comparison schemas, evidence
 and disclosure UI, relationship-aware link handling, gated Review JSON-LD,
 honest commercial landing states, policy reconciliation, a commercial
-validator, 27 focused tests, search/sitemap assertions, and CI integration.
+validator, 29 focused tests, search/sitemap assertions, and CI integration.
 The corrective pass adds centralized first-person test-claim detection for
 structured and MDX prose plus an ID-only, production-registry-backed
 `AffiliateLink` API.
+The final narrow correction makes MDX evidence parsing collection-aware and
+allows comparison-level first-person testing claims only when every
+`itemEvidence` record is fully hands-on. The structured comparison prose gate
+uses the same all-items boundary.
 
 ## Commands run
 
@@ -73,6 +80,8 @@ structured and MDX prose plus an ID-only, production-registry-backed
   build, and search
 - `git commit -m "fix(m05): close commercial integrity bypasses"`
 - corrective branch push and `gh pr checks 5 --watch`
+- independent re-audit diagnosis and comparison evidence-boundary correction
+- final corrective full local gate in the required order
 
 ## Passed checks
 
@@ -83,7 +92,7 @@ structured and MDX prose plus an ID-only, production-registry-backed
 - M04 accepted and squash-merged: PASS
 - lint: PASS
 - Astro diagnostics: PASS — 75 files, 0 errors/warnings/hints
-- tests: PASS — 74/74 total, including 27 focused commercial-integrity tests
+- tests: PASS — 76/76 total, including 29 focused commercial-integrity tests
 - M04 data validation: PASS — 3 sources, 8 records, 5 crops
 - M05 commerce validation: PASS — empty production registries and no raw
   tracking destinations or unsupported non-hands-on prose
@@ -98,18 +107,19 @@ structured and MDX prose plus an ID-only, production-registry-backed
   pull-request events
 
 ## Failed checks
-First independent ChatGPT M05 audit: REJECTED — non-hands-on prose claims and
-arbitrary destination-object rendering required hardening. Both findings are
-corrected, the full local gate passes, and corrective GitHub CI is green.
-Independent ChatGPT re-audit remains pending.
+First independent ChatGPT M05 audit: REJECTED — both findings were corrected
+and their GitHub CI passed. Independent re-audit: REJECTED — the MDX validator
+over-blocked fully hands-on comparisons because it did not interpret nested
+`itemEvidence`. The all-items boundary is corrected locally; final CI and
+ChatGPT final re-audit remain pending.
 
 ## Known limitations
 No real product, product evidence source, merchant relationship, affiliate
 destination, hands-on test, price, rating, availability, or recommendation is
 configured. The production commercial registries are intentionally empty.
-Pull request #5 is open. Corrective GitHub CI and independent ChatGPT re-audit
-are complete and pending respectively; M05 is not accepted and the pull
-request must not be merged.
+Pull request #5 is open. Final corrective GitHub CI and independent ChatGPT
+final re-audit remain pending; M05 is not accepted and the pull request must
+not be merged.
 
 ## Deferred work
 M06 is NOT_STARTED and NOT_AUTHORIZED. Production content, active affiliate
@@ -133,6 +143,6 @@ merchant, affiliate, or production-service secret was added.
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Independently re-audit the focused M05 correction on open pull request #5.
-Verify its final head remains green, then accept or reject M05. Do not merge or
-start M06 before an explicit acceptance decision.
+Commit and push the narrow comparison evidence-boundary correction to open
+pull request #5, wait for all final workflows to pass, then hand off for
+independent ChatGPT final re-audit. Do not merge or start M06.

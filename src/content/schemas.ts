@@ -326,7 +326,7 @@ export const comparisonSchema = z.object({
 }).strict().superRefine((data, context) => {
   validateDisclosureFields(data, context);
 
-  if (!data.itemEvidence.some(({ evidenceBasis }) => evidenceBasis === 'hands-on-tested')) {
+  if (!data.itemEvidence.every(({ evidenceBasis }) => evidenceBasis === 'hands-on-tested')) {
     validateNonHandsOnProse([
       ...data.criteria.map(({ description }, index) => ({
         value: description,
