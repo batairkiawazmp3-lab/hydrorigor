@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_CHATGPT_M05_FINAL_REAUDIT
+ACCEPTED
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -28,7 +28,7 @@ Final comparison-boundary corrective commit:
 `73f7392d8e1241ae14c3e2b02c9339585e8446aa`.
 
 Pull request #5:
-`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5` — open and unmerged.
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`.
 
 First independent audit: `REJECTED` — focused correction implemented for
 non-hands-on prose claims and registry-backed affiliate link rendering.
@@ -36,7 +36,13 @@ non-hands-on prose claims and registry-backed affiliate link rendering.
 Independent re-audit: `REJECTED` — the narrow comparison-MDX evidence-boundary
 correction is implemented, locally validated, pushed, and green in GitHub CI.
 
-Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_CHATGPT_M05_FINAL_REAUDIT`.
+Independent final re-audit: `ACCEPTED` — evidence-basis integrity, structured
+and MDX non-hands-on prose protection, comparison all-items and mixed-evidence
+boundaries, complete per-item evidence, registry-backed destination resolution,
+disclosures, commercial-schema omissions, empty production registries, and
+fictional fixture isolation were accepted.
+
+Exact milestone state: `M05 — Affiliate & Reviews: ACCEPTED`.
 
 ## Authorized scope
 Implement only M05's typed product/evidence and merchant/destination models,
@@ -113,21 +119,18 @@ uses the same all-items boundary.
 - final-corrective-head `ci / quality`: PASS on push and pull-request events
 - final-corrective-head `governance / m00-governance`: PASS on push and
   pull-request events
+- independent ChatGPT M05 final re-audit: ACCEPTED
 
 ## Failed checks
-First independent ChatGPT M05 audit: REJECTED — both findings were corrected
-and their GitHub CI passed. Independent re-audit: REJECTED — the MDX validator
-over-blocked fully hands-on comparisons because it did not interpret nested
-`itemEvidence`. The all-items boundary is corrected; the full local gate and
-GitHub CI pass. ChatGPT final re-audit remains pending.
+None outstanding. The first two independent audit rounds rejected specific
+integrity boundaries; both findings were corrected, locally validated, and
+accepted by the final independent re-audit.
 
 ## Known limitations
 No real product, product evidence source, merchant relationship, affiliate
 destination, hands-on test, price, rating, availability, or recommendation is
 configured. The production commercial registries are intentionally empty.
-Pull request #5 is open. Final corrective GitHub CI is green; independent
-ChatGPT final re-audit remains pending. M05 is not accepted and the pull
-request must not be merged.
+M05 is accepted. M06 requires separate authorization after merge verification.
 
 ## Deferred work
 M06 is NOT_STARTED and NOT_AUTHORIZED. Production content, active affiliate
@@ -151,6 +154,6 @@ merchant, affiliate, or production-service secret was added.
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Independently perform the final M05 re-audit on open pull request #5. Verify
-the final PR head remains green, then accept or reject M05. Do not merge or
-start M06 before an explicit acceptance decision.
+Push this acceptance-only documentation update, require green final-head CI,
+squash-merge pull request #5, synchronize and verify `main`, then stop. Do not
+start M06 without separate ChatGPT authorization.

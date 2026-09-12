@@ -1,6 +1,6 @@
 # M05 Reality Audit
 
-Status: PENDING_CHATGPT_M05_FINAL_REAUDIT
+Status: ACCEPTED
 
 ## Implementation reality
 
@@ -45,15 +45,34 @@ hands-on evidence remains blocked. Structured comparison-level prose now uses
 the same all-items boundary, while every per-item evidence requirement remains
 enforced.
 
-Pull request #5 is open and unmerged at
-`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`. The implementation
-head passed `ci / quality` and `governance / m00-governance` for both push and
-pull-request events. Corrective commit
+## Final independent audit result
+
+The independent ChatGPT M05 final re-audit result is `ACCEPTED`. It accepted:
+
+- evidence-basis integrity;
+- non-hands-on structured prose and review MDX protection;
+- the comparison MDX all-items hands-on rule and mixed-comparison fail-closed
+  behavior;
+- complete per-item hands-on evidence requirements;
+- the registry-backed `AffiliateLink(destinationId)` API and unknown-ID
+  fail-closed behavior;
+- affiliate and acquisition disclosure enforcement;
+- the absence of prices, availability, ratings, scores, `Offer`,
+  `reviewRating`, and `aggregateRating` output; and
+- empty production commercial registries with isolated fictional fixtures.
+
+Pull request #5 at
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5` carries the accepted
+implementation. Its implementation head passed `ci / quality` and
+`governance / m00-governance` for both push and pull-request events. Corrective
+commit
 `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370` passed the full local gate and the
 same two workflows on both events. Final comparison-boundary corrective commit
 `73f7392d8e1241ae14c3e2b02c9339585e8446aa` passed the full local gate and the
-same checks on push and pull-request events. M05 has not been accepted or
-merged. M06 remains `NOT_STARTED` and `NOT_AUTHORIZED`.
+same checks on push and pull-request events. Documentation head
+`1ffd69322a77d593a0a1c36756c70d533bae5f0b` passed the same checks and the
+final independent audit. M05 is accepted. M06 remains `NOT_STARTED` and
+`NOT_AUTHORIZED`.
 
 No affiliate enrollment, merchant login, credential, tracking ID, price or
 availability feed, real test, production recommendation, deployment,

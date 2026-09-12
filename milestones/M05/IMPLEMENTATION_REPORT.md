@@ -1,6 +1,6 @@
 # M05 Implementation Report
 
-Status: READY_FOR_CHATGPT_M05_FINAL_REAUDIT
+Status: ACCEPTED
 
 ## Baseline and governance
 
@@ -133,8 +133,13 @@ that implementation head. Corrective commit
 unmerged pull request and passed both checks on push and pull-request events.
 Final corrective commit `73f7392d8e1241ae14c3e2b02c9339585e8446aa`
 passed the full local gate and both `ci / quality` and
-`governance / m00-governance` on push and pull-request events. M05 is not
-accepted; independent ChatGPT final re-audit remains required.
+`governance / m00-governance` on push and pull-request events. Documentation
+head `1ffd69322a77d593a0a1c36756c70d533bae5f0b` passed the same checks. The
+independent ChatGPT final re-audit accepted M05, including its evidence
+boundaries, prose guards, registry-backed link API, disclosure enforcement,
+commercial-schema omissions, empty production registries, and fixture
+isolation. No implementation boundary was weakened during acceptance
+finalization.
 
 ## Scope and side effects
 

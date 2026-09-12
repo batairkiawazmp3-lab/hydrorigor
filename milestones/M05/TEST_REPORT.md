@@ -1,6 +1,6 @@
 # M05 Test Report
 
-Status: FINAL_CORRECTIVE_LOCAL_AND_CI_PASS_PENDING_CHATGPT_FINAL_REAUDIT
+Status: ACCEPTED
 
 Validation date: 2026-09-12
 
@@ -72,5 +72,8 @@ events. The independent re-audit accepted those fixes and found one
 comparison-MDX evidence-boundary bug. The narrow final correction passes the
 full local gate. Final corrective commit
 `73f7392d8e1241ae14c3e2b02c9339585e8446aa` passed both workflows on push and
-pull-request events. M05 is not accepted and ChatGPT final re-audit remains
-required.
+pull-request events. Documentation head
+`1ffd69322a77d593a0a1c36756c70d533bae5f0b` passed the same workflows on both
+events. The independent ChatGPT final re-audit accepted the 76/76 test result
+and the commercial-integrity boundaries represented by this report. M05 is
+accepted.
