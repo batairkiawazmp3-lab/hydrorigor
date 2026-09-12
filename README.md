@@ -26,9 +26,9 @@ This repository is the single HydroRigor website project.
 ## Current status
 
 M01 — Foundation, M02 — Content Engine & SEO, M03 — Core Information
-Architecture, and M04 — Data & Tools are accepted. M04's accepted integration
-is recorded in pull request #4. M05 and later milestones are not started and
-not authorized.
+Architecture, and M04 — Data & Tools are accepted and merged into `main`. M05 —
+Affiliate & Reviews is authorized and in progress on `m05-affiliate-reviews`.
+M06 and later milestones are not started and not authorized.
 
 ## Local validation
 

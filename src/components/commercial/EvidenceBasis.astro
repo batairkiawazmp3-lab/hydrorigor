@@ -1,0 +1,32 @@
+---
+import type { ProductEvidenceBasis } from '../../lib/commercial/models.ts';
+
+interface Props {
+  basis: ProductEvidenceBasis;
+}
+
+const { basis } = Astro.props;
+const descriptions: Record<ProductEvidenceBasis, { label: string; detail: string }> = {
+  fixture: {
+    label: 'Development fixture',
+    detail: 'Fictional structure only; no real product or evaluation is represented.',
+  },
+  'manufacturer-spec-only': {
+    label: 'Manufacturer specifications',
+    detail: 'Based on identified manufacturer-published information, not HydroRigor hands-on testing.',
+  },
+  'externally-researched': {
+    label: 'External research',
+    detail: 'Based on identified third-party evidence and editorial analysis, not HydroRigor hands-on testing.',
+  },
+  'hands-on-tested': {
+    label: 'Hands-on evidence',
+    detail: 'Includes documented HydroRigor observations made under the methodology shown on this page.',
+  },
+};
+const evidence = descriptions[basis];
+---
+<aside class="mt-6 rounded-xl border border-hydro-deep/10 bg-water-mist p-4" aria-label="Evidence basis">
+  <p class="font-mono text-xs font-semibold tracking-[0.08em] text-hydro-teal uppercase">{evidence.label}</p>
+  <p class="mt-2 text-sm leading-6 text-slate">{evidence.detail}</p>
+</aside>

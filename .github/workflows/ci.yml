@@ -34,6 +34,9 @@ jobs:
       - name: Data and tool verification
         run: npm run test:data
 
+      - name: Commercial integrity verification
+        run: npm run test:commerce
+
       - name: Production build
         run: npm run build
 

@@ -1,0 +1,19 @@
+---
+import type { ProductRecord } from '../../lib/commercial/models.ts';
+
+interface Props {
+  product: ProductRecord;
+}
+
+const { product } = Astro.props;
+---
+<section class="mt-8 rounded-2xl border border-hydro-deep/10 bg-white p-6" aria-labelledby={`product-${product.id}`}>
+  <p class="font-mono text-xs font-semibold tracking-[0.08em] text-slate uppercase">Product identity</p>
+  <h2 id={`product-${product.id}`} class="mt-2 font-heading text-xl font-bold text-hydro-deep">{product.name}</h2>
+  <dl class="mt-4 grid gap-2 text-sm text-slate sm:grid-cols-2">
+    <div><dt class="font-semibold text-hydro-deep">Brand</dt><dd>{product.brand}</dd></div>
+    {product.model && <div><dt class="font-semibold text-hydro-deep">Model</dt><dd>{product.model}</dd></div>}
+    <div><dt class="font-semibold text-hydro-deep">Registry ID</dt><dd><code>{product.id}</code></dd></div>
+    <div><dt class="font-semibold text-hydro-deep">Record status</dt><dd>{product.status}</dd></div>
+  </dl>
+</section>

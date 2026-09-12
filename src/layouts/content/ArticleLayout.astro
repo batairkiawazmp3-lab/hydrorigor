@@ -1,11 +1,13 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import AffiliateDisclosure from '../../components/content/AffiliateDisclosure.astro';
+import CommercialDisclosure from '../../components/commercial/CommercialDisclosure.astro';
+import MerchantDestinations from '../../components/commercial/MerchantDestinations.astro';
 import ContentProse from '../../components/content/ContentProse.astro';
 import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
 import PublicationMeta from '../../components/content/PublicationMeta.astro';
 import SourcesList from '../../components/content/SourcesList.astro';
 import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
+import { resolveCommercialPageState } from '../../lib/commercial/registry.ts';
 import { getSectionDefinition } from '../../lib/sections.ts';
 import { buildArticleJsonLd } from '../../lib/structured-data.ts';
 import BaseLayout from '../BaseLayout.astro';
@@ -28,6 +30,7 @@ const articleJsonLd = buildArticleJsonLd({
   reviewer: data.reviewer,
 });
 const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : undefined;
+const commercialState = resolveCommercialPageState(data);
 ---
 <BaseLayout
   title={`${data.title} — HydroRigor`}
@@ -52,7 +55,12 @@ const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : undefined
         <h1 class="font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
         <p class="mt-5 text-lg leading-8 text-slate">{data.description}</p>
         <div class="mt-6"><PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} reviewer={data.reviewer} /></div>
-        <AffiliateDisclosure enabled={data.affiliateDisclosure} />
+        <CommercialDisclosure
+          affiliateDisclosure={data.affiliateDisclosure}
+          affiliateDestinationCount={commercialState.affiliateDestinations.length}
+          affiliateDisclosureReason={data.affiliateDisclosureReason}
+        />
+        {commercialState.destinations.length > 0 && <MerchantDestinations destinations={commercialState.destinations} />}
         {data.hero && <img class="mt-8 h-auto w-full rounded-2xl" src={data.hero.src} alt={data.hero.alt} width={data.hero.width} height={data.hero.height} />}
         <div class="mt-10"><ContentProse><slot /></ContentProse></div>
         <SourcesList sources={data.sources} />

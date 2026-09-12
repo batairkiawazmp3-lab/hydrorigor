@@ -1,20 +1,18 @@
 # Current Milestone
 
-Milestone: M04 — Data & Tools
-Status: ACCEPTED
-Previous milestone: M03 — Core Information Architecture: ACCEPTED AND MERGED
-Verified baseline: 0dd799dd2877d5c228e9836e78707507c61667c6
-M04 authorization: GRANTED
-M04 build started: YES
-M04 source verification: PASS — SPES-466NP corrected; UF/IFAS discrepancy disclosed
-M04 local validation: PASS — 47/47 tests; lint/check/data/build/search green
-M04 GitHub CI: PASS — corrective ci / quality and governance / m00-governance
-M04 integration: pull request #4 — FINALIZATION_AUTHORIZED_AFTER_GREEN_HEAD
-M04 independent audit: ACCEPTED
-M04 finalization: FINAL_CI_AND_MERGE_AUTHORIZED
-M05 status: NOT_STARTED
-M05 authorization: NOT_AUTHORIZED
-Exact milestone state: M04 — Data & Tools: ACCEPTED
+Milestone: M05 — Affiliate & Reviews
+Status: READY_FOR_CI
+Previous milestone: M04 — Data & Tools: ACCEPTED AND MERGED
+Verified baseline: 1936b957796a3f69b0a7c3547dba264296883490
+M04 integration: pull request #4 — SQUASH_MERGED
+M05 authorization: GRANTED
+M05 build started: YES
+M05 local validation: PASS — 70/70 tests; lint/check/data/commerce/build/search green
+M05 GitHub CI: PENDING
+M05 independent audit: PENDING
+M06 status: NOT_STARTED
+M06 authorization: NOT_AUTHORIZED
+Exact milestone state: M05 — Affiliate & Reviews: READY_FOR_CI
 
-M05 and later milestones are NOT authorized. Acceptance and finalization of M04
-do not start or authorize M05.
+M06 and later milestones are NOT authorized. M05 must pass local validation,
+GitHub CI, and independent ChatGPT audit before acceptance.

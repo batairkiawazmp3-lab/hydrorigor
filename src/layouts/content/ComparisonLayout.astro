@@ -1,11 +1,20 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import AffiliateDisclosure from '../../components/content/AffiliateDisclosure.astro';
+import CommercialDisclosure from '../../components/commercial/CommercialDisclosure.astro';
+import EvidenceBasis from '../../components/commercial/EvidenceBasis.astro';
+import EvidenceClaims from '../../components/commercial/EvidenceClaims.astro';
+import MerchantDestinations from '../../components/commercial/MerchantDestinations.astro';
+import ProductIdentity from '../../components/commercial/ProductIdentity.astro';
 import ContentProse from '../../components/content/ContentProse.astro';
 import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
 import PublicationMeta from '../../components/content/PublicationMeta.astro';
 import SourcesList from '../../components/content/SourcesList.astro';
 import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
+import {
+  assertProductEvidenceBasis,
+  resolveCommercialPageState,
+  resolveProductRecord,
+} from '../../lib/commercial/registry.ts';
 import BaseLayout from '../BaseLayout.astro';
 
 interface Props {
@@ -15,6 +24,12 @@ interface Props {
 const { entry } = Astro.props;
 const { data } = entry;
 const pathname = `/compare/${data.route}/`;
+const commercialState = resolveCommercialPageState(data);
+const comparedProducts = data.itemEvidence.map((item) => ({
+  evidence: item,
+  product: resolveProductRecord(item.productId, data.draft),
+}));
+comparedProducts.forEach(({ evidence, product }) => assertProductEvidenceBasis(product, evidence.evidenceBasis));
 ---
 <BaseLayout
   title={`${data.title} — HydroRigor`}
@@ -38,12 +53,37 @@ const pathname = `/compare/${data.route}/`;
         <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
         <p class="mt-5 text-lg leading-8 text-slate">{data.description}</p>
         <div class="mt-6"><PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} /></div>
-        <AffiliateDisclosure enabled={data.affiliateDisclosure} />
+        <CommercialDisclosure
+          affiliateDisclosure={data.affiliateDisclosure}
+          affiliateDestinationCount={commercialState.affiliateDestinations.length}
+          affiliateDisclosureReason={data.affiliateDisclosureReason}
+        />
 
         <section class="mt-10" aria-labelledby="items-heading">
           <h2 id="items-heading" class="font-heading text-2xl font-bold text-hydro-deep">Compared items</h2>
-          <ul class="mt-4 flex flex-wrap gap-3">{data.comparedItemIds.map((item) => <li class="rounded-full bg-water-mist px-4 py-2 font-mono text-sm text-hydro-deep">{item}</li>)}</ul>
+          <div class="mt-4 grid gap-5 sm:grid-cols-2">{comparedProducts.map(({ evidence, product }) => (
+            <div>
+              <ProductIdentity product={product} />
+              <EvidenceBasis basis={evidence.evidenceBasis} />
+              <EvidenceClaims claims={evidence.evidenceClaims} heading="Item evidence" />
+              <CommercialDisclosure
+                affiliateDisclosure={false}
+                affiliateDestinationCount={0}
+                acquisitionRelationship={evidence.acquisitionRelationship}
+                acquisitionDisclosure={evidence.acquisitionDisclosure}
+              />
+              {evidence.methodology && (
+                <section class="mt-6 rounded-2xl border border-hydro-deep/10 bg-white p-6">
+                  <h3 class="font-heading text-lg font-bold text-hydro-deep">Item methodology</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate">{evidence.methodology}</p>
+                  {evidence.testedBy && <p class="mt-2 text-sm text-slate"><strong>Tested by:</strong> {evidence.testedBy}</p>}
+                </section>
+              )}
+            </div>
+          ))}</div>
         </section>
+
+        <MerchantDestinations destinations={commercialState.destinations} />
 
         <section class="mt-10" aria-labelledby="criteria-heading">
           <h2 id="criteria-heading" class="font-heading text-2xl font-bold text-hydro-deep">Comparison criteria</h2>
