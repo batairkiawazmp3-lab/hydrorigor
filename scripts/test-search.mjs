@@ -126,6 +126,18 @@ try {
       `${toolPath} was missing from the sitemap`,
     );
   }
+  for (const commercialPath of [
+    '/best/',
+    '/reviews/',
+    '/compare/',
+    '/affiliate-disclosure/',
+    '/testing-methodology/',
+  ]) {
+    assert.ok(
+      sitemap.includes(`https://hydrorigor.com${commercialPath}`),
+      `${commercialPath} was missing from the sitemap`,
+    );
+  }
   for (const excludedPath of [
     '/nutrients/',
     '/search/',
@@ -167,6 +179,18 @@ try {
     'Pagefind did not return the public nutrient mixing calculator',
   );
 
+  const reviewLandingResults = await loadResults(search, 'No public product reviews yet');
+  assert.ok(
+    reviewLandingResults.some(({ url }) => normalizePath(url) === '/reviews/'),
+    'Pagefind did not return the public review landing',
+  );
+
+  const disclosureResults = await loadResults(search, 'production merchant and commercial destination registries remain empty');
+  assert.ok(
+    disclosureResults.some(({ url }) => normalizePath(url) === '/affiliate-disclosure/'),
+    'Pagefind did not return the current affiliate disclosure',
+  );
+
   const excludedCases = [
     ['sample fixture reservoir monitor', '/reviews/development-sample-review/'],
     ['sample development system article', '/systems/development-sample-system-article/'],
@@ -192,10 +216,12 @@ try {
 
   assert.match(publicStart, /data-pagefind-body/);
   assert.doesNotMatch(excludedFixture, /data-pagefind-body/);
+  assert.doesNotMatch(excludedFixture, /"@type":"Review"/);
+  assert.doesNotMatch(excludedFixture, /data-commercial-relationship="affiliate"/);
   assert.doesNotMatch(excludedSearch, /data-pagefind-body/);
 
   process.stdout.write(
-    `HydroRigor search smoke passed: ${requiredPublicRoutes.length} public routes verified; Start Here and both M04 tools found; drafts, 404, and search are excluded.\n`,
+    `HydroRigor search smoke passed: ${requiredPublicRoutes.length} public routes verified; M04 tools and M05 public commercial/trust landings found; drafts, 404, and search are excluded.\n`,
   );
 } finally {
   if (search) await search.destroy();

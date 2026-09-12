@@ -5,6 +5,19 @@ route: "development-sample-comparison"
 comparedItemIds:
   - "fixture-system-alpha"
   - "fixture-system-beta"
+itemEvidence:
+  - productId: "fixture-system-alpha"
+    evidenceBasis: "fixture"
+    evidenceClaims:
+      - type: "editorial-interpretation"
+        summary: "This fictional record exists only to validate comparison evidence structure."
+    sourceRefs: []
+  - productId: "fixture-system-beta"
+    evidenceBasis: "fixture"
+    evidenceClaims:
+      - type: "editorial-interpretation"
+        summary: "This fictional record exists only to validate comparison evidence structure."
+    sourceRefs: []
 criteria:
   - name: "Schema coverage"
     description: "Confirms that comparison criteria render from validated structured data."
@@ -20,6 +33,7 @@ sources:
     publisher: "Astro"
     accessedDate: 2026-09-11
 affiliateDisclosure: false
+commercialDestinationIds: []
 draft: true
 ---
 

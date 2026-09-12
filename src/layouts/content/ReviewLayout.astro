@@ -1,11 +1,21 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import AffiliateDisclosure from '../../components/content/AffiliateDisclosure.astro';
+import CommercialDisclosure from '../../components/commercial/CommercialDisclosure.astro';
+import EvidenceBasis from '../../components/commercial/EvidenceBasis.astro';
+import EvidenceClaims from '../../components/commercial/EvidenceClaims.astro';
+import MerchantDestinations from '../../components/commercial/MerchantDestinations.astro';
+import ProductIdentity from '../../components/commercial/ProductIdentity.astro';
 import ContentProse from '../../components/content/ContentProse.astro';
 import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
 import PublicationMeta from '../../components/content/PublicationMeta.astro';
 import SourcesList from '../../components/content/SourcesList.astro';
 import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
+import {
+  assertProductEvidenceBasis,
+  resolveCommercialPageState,
+  resolveProductRecord,
+} from '../../lib/commercial/registry.ts';
+import { buildCommercialReviewJsonLd } from '../../lib/commercial/structured-data.ts';
 import BaseLayout from '../BaseLayout.astro';
 
 interface Props {
@@ -15,6 +25,25 @@ interface Props {
 const { entry } = Astro.props;
 const { data } = entry;
 const pathname = `/reviews/${data.route}/`;
+const product = resolveProductRecord(data.productId, data.draft);
+assertProductEvidenceBasis(product, data.evidenceBasis);
+const commercialState = resolveCommercialPageState(data);
+const commercialJsonLd = buildCommercialReviewJsonLd({
+  product,
+  headline: data.title,
+  verdict: data.verdict,
+  author: data.author,
+  publishDate: data.publishDate,
+  evidenceBasis: data.evidenceBasis,
+  evidenceClaims: data.evidenceClaims,
+  testedBy: data.testedBy,
+  methodology: data.methodology,
+  testPeriod: data.testPeriod,
+  acquisitionRelationship: data.acquisitionRelationship,
+  acquisitionDisclosure: data.acquisitionDisclosure,
+  draft: data.draft,
+  structuredDataEnabled: data.structuredDataEnabled,
+});
 ---
 <BaseLayout
   title={`${data.title} — HydroRigor`}
@@ -24,6 +53,7 @@ const pathname = `/reviews/${data.route}/`;
   type="article"
   publishDate={data.publishDate}
   updatedDate={data.updatedDate}
+  jsonLd={commercialJsonLd ?? undefined}
 >
   <article class="py-14 sm:py-20">
     <div class="hr-container">
@@ -38,7 +68,16 @@ const pathname = `/reviews/${data.route}/`;
         <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{data.title}</h1>
         <p class="mt-5 text-lg leading-8 text-slate">{data.description}</p>
         <div class="mt-6"><PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} testedBy={data.testedBy} /></div>
-        <AffiliateDisclosure enabled={data.affiliateDisclosure} />
+        <EvidenceBasis basis={data.evidenceBasis} />
+        <EvidenceClaims claims={data.evidenceClaims} />
+        <CommercialDisclosure
+          affiliateDisclosure={data.affiliateDisclosure}
+          affiliateDestinationCount={commercialState.affiliateDestinations.length}
+          affiliateDisclosureReason={data.affiliateDisclosureReason}
+          acquisitionRelationship={data.acquisitionRelationship}
+          acquisitionDisclosure={data.acquisitionDisclosure}
+        />
+        <ProductIdentity product={product} />
 
         <section class="mt-10 rounded-2xl border border-hydro-deep/10 bg-water-mist p-6" aria-labelledby="verdict-heading">
           <h2 id="verdict-heading" class="font-heading text-2xl font-bold text-hydro-deep">Verdict</h2>
@@ -60,6 +99,8 @@ const pathname = `/reviews/${data.route}/`;
           <h2 id="methodology-heading" class="font-heading text-xl font-bold text-hydro-deep">Methodology</h2>
           <p class="mt-3 leading-7 text-slate">{data.methodology}</p>
         </section>
+
+        <MerchantDestinations destinationIds={commercialState.destinations.map(({ id }) => id)} />
 
         <div class="mt-10"><ContentProse><slot /></ContentProse></div>
         <SourcesList sources={data.sources} />

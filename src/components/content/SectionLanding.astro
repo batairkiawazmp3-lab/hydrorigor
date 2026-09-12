@@ -1,5 +1,6 @@
 ---
 import type { SectionDefinition } from '../../lib/sections.ts';
+import CommercialSectionStatus from '../commercial/CommercialSectionStatus.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../seo/Breadcrumbs.astro';
 
@@ -42,6 +43,8 @@ const pathname = `/${section.slug}/`;
         <h2 id="availability-heading" class="font-heading text-lg font-bold text-hydro-deep">What is available now</h2>
         <p class="mt-2 max-w-4xl text-sm leading-6 text-ink">{section.availability}</p>
       </aside>
+
+      <CommercialSectionStatus sectionId={section.id} />
 
       <section class="mt-12" aria-labelledby="next-heading">
         <h2 id="next-heading" class="font-heading text-2xl font-bold text-hydro-deep">Continue your path</h2>

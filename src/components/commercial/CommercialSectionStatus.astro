@@ -1,0 +1,32 @@
+---
+import type { SectionDefinition } from '../../lib/sections.ts';
+
+interface Props {
+  sectionId: SectionDefinition['id'];
+}
+
+const { sectionId } = Astro.props;
+const profiles: Partial<Record<SectionDefinition['id'], { title: string; detail: string }>> = {
+  best: {
+    title: 'No buyer guide entries yet',
+    detail: 'A future guide must identify its use case, selection criteria, product evidence, limitations, and material relationships before any qualitative conclusion is published.',
+  },
+  reviews: {
+    title: 'No public product reviews yet',
+    detail: 'A review cannot claim hands-on testing without a tester, method, test period, acquisition record, and documented HydroRigor observation.',
+  },
+  compare: {
+    title: 'No public product comparisons yet',
+    detail: 'A future comparison must apply explicit criteria to typed product records and frame conclusions by use case rather than declare an unsupported universal winner.',
+  },
+};
+const profile = profiles[sectionId];
+---
+{profile && (
+  <section class="mt-10 rounded-2xl border border-hydro-teal/20 bg-water-mist p-6" aria-labelledby="commercial-status-heading">
+    <p class="font-mono text-xs font-semibold tracking-[0.08em] text-hydro-teal uppercase">Commercial editorial status</p>
+    <h2 id="commercial-status-heading" class="mt-2 font-heading text-xl font-bold text-hydro-deep">{profile.title}</h2>
+    <p class="mt-3 max-w-4xl text-sm leading-6 text-slate">{profile.detail}</p>
+    <p class="mt-3 max-w-4xl text-sm leading-6 text-slate">No price, availability, numeric rating, affiliate destination, or real product recommendation is shown in this empty state.</p>
+  </section>
+)}

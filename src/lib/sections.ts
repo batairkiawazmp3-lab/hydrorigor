@@ -75,7 +75,7 @@ export const sectionDefinitions = [
     description: 'Plan crop choices around space, system fit, growth habits, and the evidence available for each plant.',
     eyebrow: 'Choose what to grow',
     intro: 'This section organizes future crop guidance by practical decisions instead of presenting unsupported target numbers or promising universal results.',
-    availability: 'No production crop-target database is published yet. M04 will own sourced target data after separate authorization.',
+    availability: 'M04 provides a modest source-specific pH and EC reference for five crops. It is not a comprehensive crop database or a universal prescription.',
     groups: [
       {
         title: 'Start with constraints',
@@ -171,7 +171,7 @@ export const sectionDefinitions = [
     description: 'A transparent framework for future shortlists organized around real use cases and explicit evidence.',
     eyebrow: 'Make a purchase decision carefully',
     intro: 'This section will organize future buyer guides around constraints and use cases, with clear methods and disclosures.',
-    availability: 'No commercial shortlist or product recommendation is published in M03. Buyer guides require later product research and review work.',
+    availability: 'M05 provides typed product, evidence, disclosure, and destination foundations, but no commercial shortlist or product recommendation is published. Buyer guides require separately researched future content.',
     groups: [
       {
         title: 'Define the use case',
@@ -203,7 +203,7 @@ export const sectionDefinitions = [
     description: 'Future product evaluations with visible methods, evidence boundaries, disclosures, and update history.',
     eyebrow: 'Understand an evaluation',
     intro: 'The review architecture separates methodology, evidence, verdicts, pros, cons, and sources without using unsupported scores.',
-    availability: 'The only review entry currently present is a non-indexable development fixture. No real product review or hands-on claim is published.',
+    availability: 'The only review entry remains a non-indexable fictional fixture. The M05 layout can represent evidence and acquisition status, but no real product review or hands-on claim is published.',
     groups: [
       {
         title: 'Before evaluation',
@@ -235,7 +235,7 @@ export const sectionDefinitions = [
     description: 'Compare approaches and future evaluated items against explicit criteria and reader use cases.',
     eyebrow: 'Compare without a false universal winner',
     intro: 'This section provides the structure for side-by-side reasoning while keeping conclusions tied to a stated use case.',
-    availability: 'The current comparison entry is a non-indexable development fixture. No real product comparison or recommendation is published.',
+    availability: 'The current comparison entry remains a non-indexable fictional fixture. Its evidence-aware structure does not represent a real product comparison, absolute winner, or recommendation.',
     groups: [
       {
         title: 'Set the comparison',

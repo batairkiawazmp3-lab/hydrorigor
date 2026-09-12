@@ -1,0 +1,28 @@
+---
+import type { EvidenceClaim } from '../../lib/commercial/models.ts';
+
+interface Props {
+  claims: EvidenceClaim[];
+  heading?: string | undefined;
+}
+
+const { claims, heading = 'Evidence record' } = Astro.props;
+const labels: Record<EvidenceClaim['type'], string> = {
+  'manufacturer-specification': 'Manufacturer specification',
+  'third-party-evidence': 'Third-party evidence',
+  'hydrorigor-observation': 'HydroRigor observation',
+  'editorial-interpretation': 'Editorial interpretation',
+};
+---
+<section class="mt-6 rounded-2xl border border-hydro-deep/10 bg-white p-6">
+  <h2 class="font-heading text-xl font-bold text-hydro-deep">{heading}</h2>
+  <ul class="mt-4 grid gap-4">
+    {claims.map((claim) => (
+      <li>
+        <strong class="text-sm text-hydro-deep">{labels[claim.type]}</strong>
+        <p class="mt-1 text-sm leading-6 text-slate">{claim.summary}</p>
+        {claim.sourceRefs.length > 0 && <p class="mt-1 font-mono text-xs text-slate">Source records: {claim.sourceRefs.join(', ')}</p>}
+      </li>
+    ))}
+  </ul>
+</section>

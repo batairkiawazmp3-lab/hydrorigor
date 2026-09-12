@@ -47,17 +47,37 @@ test('content schemas accept valid article, review, and comparison data', () => 
     methodology: 'Schema and rendering validation only; no product testing occurred.',
     pros: ['Demonstrates a typed field.'],
     cons: ['Represents no real limitation.'],
+    evidenceBasis: 'fixture',
+    evidenceClaims: [{
+      type: 'editorial-interpretation',
+      summary: 'This fictional review fixture validates a typed evidence claim.',
+    }],
+    acquisitionRelationship: 'not-applicable',
   });
   const comparison = comparisonSchema.parse({
     ...common,
     comparedItemIds: ['fixture-alpha', 'fixture-beta'],
+    itemEvidence: [
+      {
+        productId: 'fixture-alpha',
+        evidenceBasis: 'fixture',
+        evidenceClaims: [{ type: 'editorial-interpretation', summary: 'Fictional evidence for the first comparison item.' }],
+      },
+      {
+        productId: 'fixture-beta',
+        evidenceBasis: 'fixture',
+        evidenceClaims: [{ type: 'editorial-interpretation', summary: 'Fictional evidence for the second comparison item.' }],
+      },
+    ],
     criteria: [{ name: 'Schema coverage', description: 'Validates a structured criterion.' }],
     useCaseConclusions: [{ useCase: 'Development', conclusion: 'No real item is recommended by this fixture.' }],
   });
 
   assert.equal(article.affiliateDisclosure, false);
   assert.equal(article.draft, true);
+  assert.deepEqual(article.commercialDestinationIds, []);
   assert.equal(review.productId, 'fixture-product');
+  assert.equal(review.structuredDataEnabled, false);
   assert.equal(comparison.comparedItemIds.length, 2);
 });
 

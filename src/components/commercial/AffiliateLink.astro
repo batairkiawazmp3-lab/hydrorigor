@@ -1,0 +1,23 @@
+---
+import {
+  getCommercialLinkAttributes,
+  resolveCommercialDestination,
+} from '../../lib/commercial/registry.ts';
+
+interface Props {
+  destinationId: string;
+}
+
+const { destinationId } = Astro.props;
+const destination = resolveCommercialDestination(destinationId);
+const attributes = getCommercialLinkAttributes(destination);
+---
+<a
+  class="hr-focus inline-flex rounded-lg bg-hydro-deep px-4 py-3 font-semibold text-white no-underline hover:bg-hydro-teal"
+  href={attributes.href}
+  target={attributes.target}
+  rel={attributes.rel}
+  data-commercial-relationship={attributes.relationship}
+>
+  <slot>{destination.label}</slot>
+</a>

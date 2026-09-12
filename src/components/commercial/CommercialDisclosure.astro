@@ -1,0 +1,40 @@
+---
+import type { AcquisitionRelationship } from '../../lib/commercial/models.ts';
+
+interface Props {
+  affiliateDisclosure: boolean;
+  affiliateDestinationCount: number;
+  affiliateDisclosureReason?: string | undefined;
+  acquisitionRelationship?: AcquisitionRelationship | undefined;
+  acquisitionDisclosure?: string | undefined;
+}
+
+const {
+  affiliateDisclosure,
+  affiliateDestinationCount,
+  affiliateDisclosureReason,
+  acquisitionRelationship,
+  acquisitionDisclosure,
+} = Astro.props;
+const materialAcquisition = acquisitionRelationship
+  && ['supplied', 'loaned', 'discounted'].includes(acquisitionRelationship);
+if (affiliateDisclosure && affiliateDestinationCount === 0 && !affiliateDisclosureReason) {
+  throw new Error('Affiliate disclosure without a destination requires an explanation.');
+}
+if (materialAcquisition && !acquisitionDisclosure) {
+  throw new Error('Material product acquisition requires a separate disclosure.');
+}
+---
+{affiliateDisclosure && (
+  <aside class="my-7 rounded-xl border border-amber-measure/35 bg-mineral-sand p-4 text-sm leading-6 text-ink" aria-label="Affiliate disclosure">
+    {affiliateDestinationCount > 0
+      ? 'This page contains compensated affiliate links. HydroRigor may receive compensation from qualifying activity without allowing that relationship to determine the editorial conclusion.'
+      : affiliateDisclosureReason}
+  </aside>
+)}
+
+{materialAcquisition && acquisitionDisclosure && (
+  <aside class="my-7 rounded-xl border border-hydro-teal/25 bg-water-mist p-4 text-sm leading-6 text-ink" aria-label="Product acquisition disclosure">
+    <strong class="text-hydro-deep">Product acquisition:</strong> {acquisitionDisclosure}
+  </aside>
+)}

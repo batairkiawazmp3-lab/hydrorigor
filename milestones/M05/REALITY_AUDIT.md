@@ -1,0 +1,80 @@
+# M05 Reality Audit
+
+Status: ACCEPTED
+
+## Implementation reality
+
+M05 commercial editorial infrastructure is implemented and the full local gate
+passes. The production product, product-evidence-source, merchant, and
+commercial-destination registries contain zero records. No current page emits
+commercial Product/Review JSON-LD or contains an affiliate destination.
+
+Three product identifiers exist only as explicitly fictional development
+fixtures supporting the pre-existing draft review/comparison pages. Those
+pages remain noindex and excluded from sitemap and Pagefind. They contain no
+price, availability, rating, affiliate URL, recommendation, or hands-on claim.
+
+## Audit boundaries
+
+Independent ChatGPT should verify that evidence-state refinements fail closed,
+acquisition and affiliate disclosures remain separate, relationship attributes
+are correct, current commercial registries are empty, commercial structured
+data does not outrun evidence, and honest empty states do not imply real
+product evaluation.
+
+## Audit results and corrections
+
+The first independent ChatGPT M05 audit was `REJECTED`: non-hands-on prose
+could still assert first-person HydroRigor testing, and `AffiliateLink.astro`
+accepted a complete destination object rather than resolving a registry ID.
+
+The focused correction adds one shared unmistakable-claim detector to review
+fields, non-hands-on comparison fields, and review/comparison MDX bodies. It
+also changes the public link API to `destinationId`, resolved internally and
+exclusively from the production registry. Unknown IDs throw. Narrow-language
+tests preserve discussion of manufacturer testing, third-party testing, and
+testing methodology. Complete hands-on records may use truthful hands-on
+language.
+
+The independent re-audit accepted all earlier findings but rejected one narrow
+over-blocking behavior: comparison MDX nested `itemEvidence` was not
+distinguished from review top-level `evidenceBasis`. The final correction uses
+collection-aware frontmatter inspection. A comparison body may use first-person
+HydroRigor testing claims only when all item evidence is hands-on; zero or mixed
+hands-on evidence remains blocked. Structured comparison-level prose now uses
+the same all-items boundary, while every per-item evidence requirement remains
+enforced.
+
+## Final independent audit result
+
+The independent ChatGPT M05 final re-audit result is `ACCEPTED`. It accepted:
+
+- evidence-basis integrity;
+- non-hands-on structured prose and review MDX protection;
+- the comparison MDX all-items hands-on rule and mixed-comparison fail-closed
+  behavior;
+- complete per-item hands-on evidence requirements;
+- the registry-backed `AffiliateLink(destinationId)` API and unknown-ID
+  fail-closed behavior;
+- affiliate and acquisition disclosure enforcement;
+- the absence of prices, availability, ratings, scores, `Offer`,
+  `reviewRating`, and `aggregateRating` output; and
+- empty production commercial registries with isolated fictional fixtures.
+
+Pull request #5 at
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5` carries the accepted
+implementation. Its implementation head passed `ci / quality` and
+`governance / m00-governance` for both push and pull-request events. Corrective
+commit
+`de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370` passed the full local gate and the
+same two workflows on both events. Final comparison-boundary corrective commit
+`73f7392d8e1241ae14c3e2b02c9339585e8446aa` passed the full local gate and the
+same checks on push and pull-request events. Documentation head
+`1ffd69322a77d593a0a1c36756c70d533bae5f0b` passed the same checks and the
+final independent audit. M05 is accepted. M06 remains `NOT_STARTED` and
+`NOT_AUTHORIZED`.
+
+No affiliate enrollment, merchant login, credential, tracking ID, price or
+availability feed, real test, production recommendation, deployment,
+publishing, Vercel, domain/DNS, analytics, Search Console, or M06 action
+occurred.
