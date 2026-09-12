@@ -31,6 +31,9 @@ jobs:
       - name: Unit tests
         run: npm test
 
+      - name: Data and tool verification
+        run: npm run test:data
+
       - name: Production build
         run: npm run build
 

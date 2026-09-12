@@ -20,6 +20,8 @@ const approvedRoutes = [
   '/compare/',
   '/problems/',
   '/tools/',
+  '/tools/ph-ec-targets/',
+  '/tools/nutrient-mixing-calculator/',
   '/about/',
   '/testing-methodology/',
   '/editorial-policy/',
