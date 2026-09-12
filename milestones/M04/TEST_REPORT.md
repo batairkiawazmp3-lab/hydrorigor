@@ -1,15 +1,15 @@
 # M04 Test Report
 
-Status: LOCAL_AND_GITHUB_CI_PASS_PENDING_CHATGPT_AUDIT
+Status: CORRECTIVE_LOCAL_GATE_PASS_PENDING_GITHUB_CI
 
-Validation date: 2026-09-11
+Validation date: 2026-09-12
 
 ## Required local gate
 
 - `npm ci`: PASS — 287 packages installed, 0 vulnerabilities.
 - `npm run lint`: PASS.
 - `npm run check`: PASS — 59 files, 0 errors, 0 warnings, 0 hints.
-- `npm test`: PASS — 46/46.
+- `npm test`: PASS — 47/47.
 - `npm run test:data`: PASS — 3 sources, 8 records, 5 crops, no ppm/TDS
   conversion.
 - `npm run build`: PASS — 23 static pages; Pagefind indexed 18 public pages.
@@ -34,16 +34,21 @@ input dimensions; unsupported units are also rejected.
 
 ## Coverage summary
 
-The 46-test suite retains all M01–M03 checks and adds M04 coverage for source and
+The 47-test suite retains all M01–M03 checks and adds M04 coverage for source and
 target schemas, IDs, dates, HTTPS URLs, provenance relationships, range bounds,
 unit policy, ppm/TDS rejection, all four formula paths, input boundaries,
 accessible calculator markup, required warnings, static source rendering, tool
 discovery, sitemap/Pagefind behavior, and absence of affiliate, pricing, rating,
 or commerce behavior.
 
+The focused provenance regression asserts that the Virginia source metadata
+uses `SPES-466NP`, the UF/IFAS source and target evidence expose both EC
+statements and the reason for selection, and the selected lettuce record remains
+exactly pH 6.0–7.0 and EC 1.4–1.8 mS/cm.
+
 ## Pending
 
-GitHub Actions passed on implementation commit
+GitHub Actions passed on the pre-correction implementation commit
 `e155c1d0be674c8a1170bd689d29e7fb058641a0`:
 
 - `ci / quality` (push): PASS.
@@ -51,5 +56,5 @@ GitHub Actions passed on implementation commit
 - `governance / m00-governance` (push): PASS.
 - `governance / m00-governance` (pull request): PASS.
 
-M04 remains pending independent ChatGPT audit. The final documentation-only
-head must also remain green before handoff.
+The focused corrective head has not run GitHub Actions yet. M04 remains pending
+green corrective-head CI and independent ChatGPT re-audit.

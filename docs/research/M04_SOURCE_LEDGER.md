@@ -1,6 +1,6 @@
 # M04 Source Ledger — pH & EC Reference
 
-Last verified: 2026-09-11
+Last verified: 2026-09-12
 
 ## Scope and method
 
@@ -35,16 +35,25 @@ published April 2017.
 University of Florida IFAS Extension, Germán V. Sandoya, Jonael Bosques,
 Francisco P. Rivera Meléndez, and E. Vanessa Vassilaros.
 
-- Locator: “Specific Considerations” → plant nutrition → EC/pH bullet.
-- Supports one lettuce record for small residential or at-home hydroponic
-  settings: pH 6.0–7.0 and EC 1.4–1.8 mS/cm.
+- Primary locator: “Specific Considerations” → “Plant nutrition” → the
+  lettuce-specific bullet. It calls EC 1.4–1.8 mS/cm ideal for lettuce and
+  supplies pH 6.0–7.0 in the same statement. This is the basis for the selected
+  HydroRigor record.
+- Internal discrepancy locator: “Further Considerations” → the nutritive
+  solution bullet. It later describes EC 1.2–1.8 mS/cm but does not supply a pH
+  value in that statement.
+- HydroRigor retains EC 1.4–1.8 mS/cm and pH 6.0–7.0 because the Plant nutrition
+  statement is explicitly lettuce-specific, labels its EC range as ideal, and
+  provides both required values together. The later 1.2–1.8 mS/cm statement is
+  disclosed but is not averaged, silently collapsed, or turned into a second
+  full record with an invented pH.
 - Scope limit: the publication discusses several small systems and does not tie
   the range to one cultivar or growth stage.
 
 ### `virginia-tech-spes-466`
 
 [Hydroponic Production of Edible Crops: System and Crop Comparisons](https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-466/SPES-466.pdf),
-Virginia Cooperative Extension, VCE-466NP (2023), Toni Sperry, Amber Vallotton,
+Virginia Cooperative Extension, SPES-466NP (2023), Toni Sperry, Amber Vallotton,
 Chris Mullins, Joyce Latimer, and Holly Scoggins.
 
 - Locator: pages 5–6, “System Control Parameters” → “Nutrients.”
@@ -58,9 +67,15 @@ Chris Mullins, Joyce Latimer, and Holly Scoggins.
 
 ## Differences preserved
 
-- **Lettuce:** Oklahoma State reports EC 1.2–1.8 mS/cm; UF/IFAS reports
-  1.4–1.8 mS/cm for small systems. Both report pH 6.0–7.0. HydroRigor keeps two
-  records rather than selecting or averaging the lower bound.
+- **Lettuce across sources:** Oklahoma State reports EC 1.2–1.8 mS/cm; the
+  UF/IFAS lettuce-specific Plant nutrition statement reports 1.4–1.8 mS/cm.
+  Both pair their selected EC values with pH 6.0–7.0. HydroRigor keeps separate
+  source/context records rather than averaging the lower bounds.
+- **Lettuce within UF/IFAS HS1422:** the Plant nutrition statement reports the
+  selected lettuce-specific EC 1.4–1.8 mS/cm with pH 6.0–7.0, while Further
+  Considerations later describes nutritive-solution EC 1.2–1.8 mS/cm without a
+  pH in that statement. HydroRigor discloses both, retains the complete
+  lettuce-specific statement, and performs no invented reconciliation.
 - **Tomato:** Oklahoma State's general table reports EC 2.0–4.0 mS/cm and pH
   6.0–6.5. The Virginia mature-plant trials used EC 2.0–2.5 mS/cm and pH 6.5.
   Both records remain separately labeled.

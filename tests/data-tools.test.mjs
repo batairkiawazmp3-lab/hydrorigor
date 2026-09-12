@@ -32,6 +32,32 @@ test('source registry contains unique, complete HTTPS institutional records', ()
   }
 });
 
+test('Virginia and UF/IFAS provenance corrections remain explicit and numeric selections stay unchanged', async () => {
+  const virginia = hydroData.sources.find(({ id }) => id === 'virginia-tech-spes-466');
+  const ifas = hydroData.sources.find(({ id }) => id === 'uf-ifas-hs1422');
+  const lettuce = hydroData.cropTargets.find(({ id }) => id === 'lettuce-small-systems-ifas');
+  const ledger = await read('docs/research/M04_SOURCE_LEDGER.md');
+
+  assert.ok(virginia);
+  assert.match(virginia.locator, /^SPES-466NP,/);
+  assert.doesNotMatch(JSON.stringify(virginia), /VCE-466NP/);
+  assert.match(ledger, /Virginia Cooperative Extension, SPES-466NP \(2023\)/);
+  assert.doesNotMatch(ledger, /VCE-466NP/);
+
+  assert.ok(ifas);
+  assert.ok(lettuce);
+  const provenance = `${ifas.locator} ${ifas.evidenceScope} ${ifas.notes} ${lettuce.contextNotes} ${lettuce.evidenceNotes} ${ledger}`;
+  assert.match(provenance, /Plant nutrition/);
+  assert.match(provenance, /Further Considerations/);
+  assert.match(provenance, /1\.4–1\.8 mS\/cm/);
+  assert.match(provenance, /1\.2–1\.8 mS\/cm/);
+  assert.match(provenance, /not averaged|no invented reconciliation/i);
+  assert.deepEqual(
+    { phMin: lettuce.phMin, phMax: lettuce.phMax, ecMin: lettuce.ecMin, ecMax: lettuce.ecMax },
+    { phMin: 6, phMax: 7, ecMin: 1.4, ecMax: 1.8 },
+  );
+});
+
 test('crop registry has eight contextual records covering the five authorized crops', () => {
   assert.equal(hydroData.cropTargets.length, 8);
   assert.deepEqual(

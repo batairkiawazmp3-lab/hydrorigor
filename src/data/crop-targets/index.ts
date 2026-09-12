@@ -29,8 +29,8 @@ const cropTargetRecords = [
     ecUnit: 'mS/cm',
     sourceEcUnit: 'mS/cm',
     sourceRefs: ['uf-ifas-hs1422'],
-    contextNotes: 'UF/IFAS discusses multiple small-system types and does not tie this range to one cultivar or growth stage.',
-    evidenceNotes: 'Kept separate from the Oklahoma State 1.2–1.8 mS/cm general range so the differing lower bound remains visible.',
+    contextNotes: 'UF/IFAS discusses multiple small-system types and does not tie this range to one cultivar or growth stage. Its later Further Considerations section gives a broader nutritive-solution EC range of 1.2–1.8 mS/cm without a paired pH.',
+    evidenceNotes: 'Selected from the Plant nutrition statement because it explicitly identifies lettuce, calls EC 1.4–1.8 mS/cm ideal, and supplies pH 6.0–7.0 together. The later 1.2–1.8 mS/cm statement is disclosed but not averaged or used to invent a second full record.',
     lastVerified: verifiedDate,
   },
   {

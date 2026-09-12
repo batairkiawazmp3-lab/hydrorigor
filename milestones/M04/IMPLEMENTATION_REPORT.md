@@ -1,6 +1,6 @@
 # M04 Implementation Report
 
-Status: IMPLEMENTED_AND_CI_VALIDATED_PENDING_CHATGPT_AUDIT
+Status: CORRECTIVE_IMPLEMENTED_AND_LOCALLY_VALIDATED_PENDING_GITHUB_CI
 
 ## Baseline and scope
 
@@ -15,13 +15,33 @@ the typed source registry:
 
 1. Oklahoma State University Extension, HLA-6722, Table 2;
 2. University of Florida IFAS Extension, HS1422, plant-nutrition section;
-3. Virginia Cooperative Extension, VCE-466NP/SPES-466, pages 5–6.
+3. Virginia Cooperative Extension, SPES-466NP, pages 5–6.
+
+The Virginia identifier and UF/IFAS internal EC provenance were reverified on
+2026-09-12 during the focused independent-audit corrective pass.
 
 The resulting dataset contains eight source/context-specific records covering
 lettuce, basil, strawberry, tomato, and pepper. Source disagreements are kept as
 separate records. No range is averaged, no ppm/TDS value is converted to EC,
 and no unsourced crop value is present. The complete evidence decisions and
 locators are in `docs/research/M04_SOURCE_LEDGER.md`.
+
+## Focused provenance correction
+
+The first independent M04 audit rejected two provenance details while accepting
+the numeric values and all other implementation behavior. The correction:
+
+- replaces the incorrect Virginia publication identifier with `SPES-466NP`
+  while preserving source ID `virginia-tech-spes-466` and the verified mature
+  tomato/pepper values of pH 6.5 and EC 2.0–2.5 mS/cm;
+- documents both statements inside UF/IFAS HS1422: the lettuce-specific Plant
+  nutrition statement gives ideal EC 1.4–1.8 mS/cm with pH 6.0–7.0, while
+  Further Considerations later gives nutritive-solution EC 1.2–1.8 mS/cm
+  without a paired pH;
+- retains the complete lettuce-specific 1.4–1.8 mS/cm and pH 6.0–7.0 record,
+  performs no averaging, and creates no second record with an invented pH;
+- adds a dedicated regression test for both corrections and the unchanged
+  numeric selection.
 
 ## Data architecture
 
