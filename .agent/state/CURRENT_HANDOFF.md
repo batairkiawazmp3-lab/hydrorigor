@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_FINAL_GITHUB_CI_RECHECK
+READY_FOR_CHATGPT_M05_FINAL_REAUDIT
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -24,16 +24,19 @@ Implementation commit:
 Corrective commit:
 `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370`.
 
+Final comparison-boundary corrective commit:
+`73f7392d8e1241ae14c3e2b02c9339585e8446aa`.
+
 Pull request #5:
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5` — open and unmerged.
 
 First independent audit: `REJECTED` — focused correction implemented for
 non-hands-on prose claims and registry-backed affiliate link rendering.
 
-Independent re-audit: `REJECTED` — one narrow comparison-MDX evidence-boundary
-correction implemented; final CI remains pending.
+Independent re-audit: `REJECTED` — the narrow comparison-MDX evidence-boundary
+correction is implemented, locally validated, pushed, and green in GitHub CI.
 
-Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_FINAL_CI_RECHECK`.
+Exact milestone state: `M05 — Affiliate & Reviews: READY_FOR_CHATGPT_M05_FINAL_REAUDIT`.
 
 ## Authorized scope
 Implement only M05's typed product/evidence and merchant/destination models,
@@ -82,6 +85,8 @@ uses the same all-items boundary.
 - corrective branch push and `gh pr checks 5 --watch`
 - independent re-audit diagnosis and comparison evidence-boundary correction
 - final corrective full local gate in the required order
+- `git commit -m "fix(m05): align comparison evidence boundaries"`
+- final corrective branch push and `gh pr checks 5 --watch`
 
 ## Passed checks
 
@@ -105,21 +110,24 @@ uses the same all-items boundary.
 - corrective-head `ci / quality`: PASS on push and pull-request events
 - corrective-head `governance / m00-governance`: PASS on push and
   pull-request events
+- final-corrective-head `ci / quality`: PASS on push and pull-request events
+- final-corrective-head `governance / m00-governance`: PASS on push and
+  pull-request events
 
 ## Failed checks
 First independent ChatGPT M05 audit: REJECTED — both findings were corrected
 and their GitHub CI passed. Independent re-audit: REJECTED — the MDX validator
 over-blocked fully hands-on comparisons because it did not interpret nested
-`itemEvidence`. The all-items boundary is corrected locally; final CI and
-ChatGPT final re-audit remain pending.
+`itemEvidence`. The all-items boundary is corrected; the full local gate and
+GitHub CI pass. ChatGPT final re-audit remains pending.
 
 ## Known limitations
 No real product, product evidence source, merchant relationship, affiliate
 destination, hands-on test, price, rating, availability, or recommendation is
 configured. The production commercial registries are intentionally empty.
-Pull request #5 is open. Final corrective GitHub CI and independent ChatGPT
-final re-audit remain pending; M05 is not accepted and the pull request must
-not be merged.
+Pull request #5 is open. Final corrective GitHub CI is green; independent
+ChatGPT final re-audit remains pending. M05 is not accepted and the pull
+request must not be merged.
 
 ## Deferred work
 M06 is NOT_STARTED and NOT_AUTHORIZED. Production content, active affiliate
@@ -143,6 +151,6 @@ merchant, affiliate, or production-service secret was added.
 Not deployed; deployment remains explicitly unauthorized.
 
 ## Exact next-agent instruction
-Commit and push the narrow comparison evidence-boundary correction to open
-pull request #5, wait for all final workflows to pass, then hand off for
-independent ChatGPT final re-audit. Do not merge or start M06.
+Independently perform the final M05 re-audit on open pull request #5. Verify
+the final PR head remains green, then accept or reject M05. Do not merge or
+start M06 before an explicit acceptance decision.

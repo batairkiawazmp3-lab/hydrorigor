@@ -1,6 +1,6 @@
 # M05 Implementation Report
 
-Status: FINAL_CORRECTIVE_PASS_AWAITING_CI
+Status: READY_FOR_CHATGPT_M05_FINAL_REAUDIT
 
 ## Baseline and governance
 
@@ -131,9 +131,10 @@ and `governance / m00-governance` passed on push and pull-request events for
 that implementation head. Corrective commit
 `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370` was pushed to the same open,
 unmerged pull request and passed both checks on push and pull-request events.
-The final comparison-boundary local gate is green. Its GitHub CI is pending at
-this report revision. M05 is not accepted; independent ChatGPT final re-audit
-remains required.
+Final corrective commit `73f7392d8e1241ae14c3e2b02c9339585e8446aa`
+passed the full local gate and both `ci / quality` and
+`governance / m00-governance` on push and pull-request events. M05 is not
+accepted; independent ChatGPT final re-audit remains required.
 
 ## Scope and side effects
 

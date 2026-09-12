@@ -1,6 +1,6 @@
 # M05 Test Report
 
-Status: FINAL_CORRECTIVE_LOCAL_PASS_CI_PENDING
+Status: FINAL_CORRECTIVE_LOCAL_AND_CI_PASS_PENDING_CHATGPT_FINAL_REAUDIT
 
 Validation date: 2026-09-12
 
@@ -70,5 +70,7 @@ focused correction is commit `de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370`.
 Its full local gate passes, and both workflows passed on push and pull-request
 events. The independent re-audit accepted those fixes and found one
 comparison-MDX evidence-boundary bug. The narrow final correction passes the
-full local gate; final GitHub CI is pending. M05 is not accepted and ChatGPT
-final re-audit remains required.
+full local gate. Final corrective commit
+`73f7392d8e1241ae14c3e2b02c9339585e8446aa` passed both workflows on push and
+pull-request events. M05 is not accepted and ChatGPT final re-audit remains
+required.
