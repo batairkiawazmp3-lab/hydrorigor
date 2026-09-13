@@ -55,6 +55,12 @@ for (const [label, values] of [
   if (new Set(values).size !== values.length) violations.push(`M06 ${label} are not unique.`);
 }
 
+for (const item of m06ContentItems) {
+  if (getM06Path(item).startsWith('/best/best-')) {
+    violations.push(`${getM06Path(item)}: buyer-guide route repeats the public section word.`);
+  }
+}
+
 for (const source of m06EditorialSources) {
   if (!source.url.startsWith('https://')) violations.push(`${source.id}: source URL must use HTTPS.`);
   if (!source.title || !source.publisher || !source.locator) violations.push(`${source.id}: source metadata is incomplete.`);

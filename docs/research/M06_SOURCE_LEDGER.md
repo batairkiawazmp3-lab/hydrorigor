@@ -1,8 +1,8 @@
 # M06 Source Ledger
 
-Accessed: 2026-09-12. Sources are paraphrased; no long passages are reproduced.
-Manufacturer sources establish product identity or instructions only and are
-not treated as independent performance evidence.
+Accessed: 2026-09-12 and 2026-09-13. Sources are paraphrased; no long passages
+are reproduced. Manufacturer sources establish product identity or
+instructions only and are not treated as independent performance evidence.
 
 ## Source catalog
 
@@ -18,6 +18,8 @@ not treated as independent performance evidence.
 | `ifas-lettuce-cultivars` | [Lettuce Production Systems and Cultivars](https://ask.ifas.ufl.edu/publication/HS1258) | UF/IFAS Extension / extension | Lettuce groups, cultivars and protected-culture systems |
 | `illinois-strawberry-observations` | [Hydroponic day-neutral strawberry production observations](https://extension.illinois.edu/blogs/commercial-fruit-and-vegetable-growers/2023-10-27-hydroponic-day-neutral-strawberry) | University of Illinois Extension / extension | Day-neutral production observations and environment-dependent irrigation |
 | `cornell-strawberry-runners` | [CEA Strawberry Runner Propagation for DWC](https://cea.cals.cornell.edu/crops/cea-strawberry-runner-propagation-for-deep-water-culture/) | Cornell CEA / university research | Runner propagation and establishment into hydroponic systems |
+| `umn-day-neutral-strawberries` | [Day-neutral strawberries](https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/day-neutral-strawberries) | University of Minnesota Extension / extension | Day-neutral varieties are not sensitive to day length and flower/fruit in suitable temperatures; June-bearing plants form flower buds during short fall days |
+| `umn-strawberry-plant-growth` | [How strawberry plants grow](https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/how-strawberry-plants-grow) | University of Minnesota Extension / extension | Pollination and bearing fruit: most varieties are self-fruitful, wind moves some pollen, insects are primary pollinators, and complete pollination supports well-formed fruit |
 | `tennessee-fruiting-crops` | [Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems](https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf) | University of Tennessee Extension / extension | W 844-C, propagation, support, recirculating solution, fruiting crops |
 | `ifas-tomato-cultivars` | [Tomato Cultivar Selection Considerations](https://ask.ifas.ufl.edu/publication/HS1273) | UF/IFAS Extension / extension | Growth habit, protected-culture selection, contextual variety examples |
 | `usu-indoor-tomatoes` | [Growing Tomatoes in Winter](https://extension.usu.edu/news_sections/gardening/tomatoes) | Utah State University Extension / extension | Indoor size constraints and compact cultivars |
@@ -40,7 +42,7 @@ not treated as independent performance evidence.
 | `/best/indoor-hydroponic-system-kits/` | `uga-home-hydroponics`, `unh-home-hydroponics` | Kit architecture checklist, no tested kit |
 | `/systems/deep-water-culture-hydroponics/` | `mu-hydroponic-farming`, `unh-home-hydroponics` | DWC operating model and root oxygen |
 | `/systems/diy-hydroponic-system-for-beginners/` | `uga-home-hydroponics`, `unh-home-hydroponics` | Planning and safety concepts, not construction certification |
-| `/crops/hydroponic-strawberries/` | `mu-hydroponic-farming`, `illinois-strawberry-observations`, `cornell-strawberry-runners` | Crop/system fit, day-neutral observations, propagation; no universal recipe |
+| `/crops/hydroponic-strawberries/` | `mu-hydroponic-farming`, `illinois-strawberry-observations`, `cornell-strawberry-runners`, `umn-day-neutral-strawberries`, `umn-strawberry-plant-growth` | Crop/system fit, day-neutral observations, and propagation; UMN directly supports the day-length/plant-type distinction and strawberry pollination biology. Indoor pollination support is presented as a bounded application of the reported flower biology, not a universal diagnosis or performance guarantee. |
 | `/crops/nft-hydroponic-strawberries/` | `mu-hydroponic-farming`, `vt-nft-systems`, `illinois-strawberry-observations` | NFT water path and context-dependent delivery |
 | `/crops/hydroponic-lettuce/` | `ifas-lettuce-small-systems`, `ifas-lettuce-cultivars`, `mu-hydroponic-farming` | Home lettuce system/cultivar context; pH/EC remains in M04 tool |
 | `/crops/hydroponic-lettuce-systems/` | same three lettuce/system sources | DWC/NFT/passive use cases, no universal winner |
@@ -58,7 +60,7 @@ not treated as independent performance evidence.
 | `/reviews/masterblend-hydroponic-nutrients/` | `masterblend-mixing-instructions`, `masterblend-hydroponics` | Manufacturer specification only; no independent performance or recommendation |
 | `/reviews/general-hydroponics-nutrients/` | `gh-floraseries`, `gh-floraseries-program` | Manufacturer specification only; no independent performance or recommendation |
 | `/best/hydroponic-systems-for-sale/` | `mu-hydroponic-farming`, `uga-home-hydroponics`, `unh-home-hydroponics` | Comparison worksheet, no sellers, prices, or products |
-| `/best/best-hydroponic-system-for-home-growers/` | `mu-hydroponic-farming`, `uga-home-hydroponics`, `vt-system-crop-comparisons` | System-family use cases, no product designation |
+| `/best/hydroponic-system-for-home-growers/` | `mu-hydroponic-farming`, `uga-home-hydroponics`, `vt-system-crop-comparisons` | System-family use cases, no product designation |
 | `/systems/smart-indoor-hydroponic-systems/` | `mu-hydroponic-farming`, `osu-ph-ec-guide` | Feature/sensor criteria, no product test |
 
 ## Disagreements and preserved context
@@ -68,3 +70,24 @@ M04 registry, preserving the Oklahoma State, UF/IFAS, and Virginia Tech
 SPES-466NP contexts and the documented UF/IFAS internal EC wording difference.
 No source ranges are averaged. Manufacturer statements are explicitly labeled
 and never upgraded to third-party or HydroRigor observation evidence.
+
+## Focused source-coverage sanity pass — 2026-09-13
+
+All 25 production pages were reviewed for whether material claims about
+pollination, crop physiology, light/temperature response, nutrient chemistry,
+system failure behavior, organic certification, and product-specific
+instructions stay inside their listed sources. This was a boundary review, not
+a cosmetic source-count exercise.
+
+| Pages / topic | Evidence checked | Result |
+| --- | --- | --- |
+| System and system-selection pages | Missouri, Georgia, New Hampshire, and Virginia Extension system definitions, crop fit, oxygen/flow dependencies, and failure limitations | Claims remain inside the listed source boundaries; no addition required |
+| Strawberry pages | Illinois production observations, Cornell propagation, Virginia NFT, and the two new UMN records | The broad strawberry guide needed direct day-length and pollination evidence; both gaps were corrected and mapped above. No change was made to M04 pH/EC data. |
+| Lettuce pages | UF/IFAS crop, cultivar, light, nutrition, and protected-system context | Claims remain inside the listed source boundaries; no addition required |
+| Tomato pages | Tennessee, Virginia, UF/IFAS, and Utah State sources for growth habit, support, system fit, cultivar context, and indoor constraints | Claims remain inside the listed source boundaries; no addition required |
+| Nutrient and mixing pages | Penn State, Missouri, and Oklahoma State sources for essential elements, water, solubility, compatibility, EC/pH meaning, and measurement | Claims remain inside the listed source boundaries; no addition required |
+| Organic nutrient page | USDA certification rules plus Penn State and Missouri context | Certification and technical context remain explicitly separated; no addition required |
+| Masterblend and General Hydroponics pages | Current manufacturer instructions and identity records only | Product-specific statements remain manufacturer-specification-only; no performance, recommendation, or hands-on claim was added |
+
+No other material claim required a new source or narrowing during this focused
+pass. The two UMN additions are the only source-registry expansion.

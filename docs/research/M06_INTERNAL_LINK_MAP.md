@@ -29,7 +29,7 @@ header/footer links are not counted as article-level discovery.
 | `/reviews/masterblend-hydroponic-nutrients/` | pH/EC reference; calculator; mixing guide |
 | `/reviews/general-hydroponics-nutrients/` | calculator; mixing guide; nutrient solution |
 | `/best/hydroponic-systems-for-sale/` | home system guide; kit checklist |
-| `/best/best-hydroponic-system-for-home-growers/` | DWC guide; kit checklist |
+| `/best/hydroponic-system-for-home-growers/` | DWC guide; kit checklist |
 | `/systems/smart-indoor-hydroponic-systems/` | home system guide |
 
 Anchors are descriptive but varied. Links to M04 tools are included only when a

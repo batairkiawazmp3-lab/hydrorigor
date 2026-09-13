@@ -3,7 +3,7 @@ export interface M06EditorialSource {
   title: string;
   publisher: string;
   url: string;
-  accessedDate: '2026-09-12';
+  accessedDate: '2026-09-12' | '2026-09-13';
   sourceType: 'university-extension' | 'university-research' | 'government' | 'manufacturer';
   locator: string;
 }
@@ -98,6 +98,24 @@ export const m06EditorialSources = [
     accessedDate: '2026-09-12',
     sourceType: 'university-research',
     locator: 'Runner propagation and establishment into hydroponic systems',
+  },
+  {
+    id: 'umn-day-neutral-strawberries',
+    title: 'Day-neutral strawberries',
+    publisher: 'University of Minnesota Extension',
+    url: 'https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/day-neutral-strawberries',
+    accessedDate: '2026-09-13',
+    sourceType: 'university-extension',
+    locator: 'Day-neutral varieties and June-bearing contrast: day-length response and temperature-dependent flowering',
+  },
+  {
+    id: 'umn-strawberry-plant-growth',
+    title: 'How strawberry plants grow',
+    publisher: 'University of Minnesota Extension',
+    url: 'https://extension.umn.edu/agriculture/specialty-crops/commercial-fruit-production/strawberry-farming/how-strawberry-plants-grow',
+    accessedDate: '2026-09-13',
+    sourceType: 'university-extension',
+    locator: 'Pollination and bearing fruit: self-fruitful flowers, pollen movement, and complete pollination',
   },
   {
     id: 'tennessee-fruiting-crops',

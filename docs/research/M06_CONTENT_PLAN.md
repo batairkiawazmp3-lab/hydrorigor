@@ -13,7 +13,7 @@ and `Publishing Sequence` stages 1–2. The workbook was read only.
 | 3 | `/best/indoor-hydroponic-system-kits/` | Buyer Guides | Indoor Hydroponic System Kits: What to Buy and What to Skip | Transactional research | indoor hydroponic system kit | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 4 | `/systems/deep-water-culture-hydroponics/` | Systems | Deep Water Culture Hydroponics: Complete DWC System Guide | Transactional research | hydroponic system deep water culture | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 5 | `/systems/diy-hydroponic-system-for-beginners/` | Systems | DIY Hydroponic System for Beginners: A Simple Home Build | Informational | do it yourself hydroponic system | METRIC_NOT_REVERIFIED | 2 | Validated |
-| 6 | `/crops/hydroponic-strawberries/` | Crops | Hydroponic Strawberries: Complete Indoor Growing Guide | Informational | hydroponic strawberries | VERIFIED_2026-09-12: 8,100 / SD 14 | 3 | Validated |
+| 6 | `/crops/hydroponic-strawberries/` | Crops | Hydroponic Strawberries: Complete Indoor Growing Guide | Informational | hydroponic strawberries | VERIFIED_2026-09-12: 8,100 / SD 14 | 5 | Validated |
 | 7 | `/crops/nft-hydroponic-strawberries/` | Crops | NFT Hydroponic Strawberries: Setup, Flow and Plant Care | Informational | nft hydroponic strawberries | VERIFIED_2026-09-12: 390 / SD 15 | 3 | Validated |
 | 8 | `/crops/hydroponic-lettuce/` | Crops | Hydroponic Lettuce: Complete Home Growing Guide | Informational | hydroponic lettuce | VERIFIED_2026-09-12: 4,400 / SD 27 | 3 | Validated |
 | 9 | `/crops/hydroponic-lettuce-systems/` | Crops | Hydroponic Lettuce Systems Compared: DWC, NFT and Kratky | Transactional research | hydroponic lettuce systems | VERIFIED_2026-09-12: 1,000 / SD 28 | 3 | Validated |
@@ -31,7 +31,7 @@ and `Publishing Sequence` stages 1–2. The workbook was read only.
 | 21 | `/reviews/masterblend-hydroponic-nutrients/` | Reviews | Masterblend Hydroponic Nutrients: Beginner Setup Guide | Transactional research | masterblend hydroponic nutrients | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 22 | `/reviews/general-hydroponics-nutrients/` | Reviews | General Hydroponics Nutrients: How the System Works | Transactional research | general hydroponics hydroponic nutrients | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 23 | `/best/hydroponic-systems-for-sale/` | Buyer Guides | Hydroponic Systems for Sale: How to Compare Before Buying | Transactional research | hydroponic system sale | METRIC_NOT_REVERIFIED | 3 | Validated |
-| 24 | `/best/best-hydroponic-system-for-home-growers/` | Buyer Guides | What Is the Best Hydroponic System for Home Growers? | Commercial research | what is the best hydroponic system | METRIC_NOT_REVERIFIED | 3 | Validated |
+| 24 | `/best/hydroponic-system-for-home-growers/` | Buyer Guides | What Is the Best Hydroponic System for Home Growers? | Commercial research | what is the best hydroponic system | METRIC_NOT_REVERIFIED | 3 | Validated |
 | 25 | `/systems/smart-indoor-hydroponic-systems/` | Systems | Smart Indoor Hydroponic Systems: Features Worth Paying For | Transactional research | smart indoor hydroponic system | METRIC_NOT_REVERIFIED | 2 | Validated |
 
 ## Secondary topics, funnel, tools, and evidence boundary

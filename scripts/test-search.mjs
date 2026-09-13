@@ -118,6 +118,10 @@ try {
     access(join(distRoot, 'nutrients', 'index.html')),
     'the retired /nutrients/ landing was generated',
   );
+  await assert.rejects(
+    access(join(distRoot, 'best', 'best-hydroponic-system-for-home-growers', 'index.html')),
+    'the temporary /best/best-hydroponic-system-for-home-growers/ route was generated',
+  );
 
   const sitemap = await readFile(join(distRoot, 'sitemap-0.xml'), 'utf8');
   assert.match(sitemap, /<loc>https:\/\/hydrorigor\.com\/nutrients-water\/<\/loc>/);
@@ -155,6 +159,7 @@ try {
     '/systems/development-sample-system-article/',
     '/reviews/development-sample-review/',
     '/compare/development-sample-comparison/',
+    '/best/best-hydroponic-system-for-home-growers/',
   ]) {
     assert.ok(
       !sitemap.includes(`https://hydrorigor.com${excludedPath}`),
@@ -207,6 +212,7 @@ try {
     ['essential macro and micronutrients', '/nutrients-water/hydroponic-nutrients/'],
     ['three-component base nutrient system', '/reviews/general-hydroponics-nutrients/'],
     ['requirements sheet crop space root zone', '/best/hydroponic-systems-for-sale/'],
+    ['single best hydroponic system every home', '/best/hydroponic-system-for-home-growers/'],
   ];
   for (const [query, expectedPath] of waveQueries) {
     const results = await loadResults(search, query);
@@ -222,6 +228,7 @@ try {
     ['fixture system alpha beta', '/compare/development-sample-comparison/'],
     ['that channel runs dry', '/404/'],
     ['static site search search terms', '/search/'],
+    ['single best hydroponic system every home', '/best/best-hydroponic-system-for-home-growers/'],
   ];
 
   for (const [query, excludedPath] of excludedCases) {

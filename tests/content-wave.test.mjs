@@ -35,6 +35,15 @@ test('M06 routes, titles, and primary target topics are unique and canonical-pat
   assert.ok(m06ContentItems.every((item) => !getM06Path(item).startsWith('/nutrients/')));
 });
 
+test('buyer-guide routes do not repeat the best section segment', () => {
+  const bestPaths = m06ContentItems
+    .filter(({ category }) => category === 'best')
+    .map(getM06Path);
+
+  assert.ok(bestPaths.includes('/best/hydroponic-system-for-home-growers/'));
+  assert.ok(bestPaths.every((path) => !path.startsWith('/best/best-')));
+});
+
 test('only supervisor-verified keyword metrics carry numbers', () => {
   assert.ok(m06ContentItems
     .filter(({ metricStatus }) => metricStatus === 'METRIC_NOT_REVERIFIED')
@@ -49,6 +58,21 @@ test('M06 source registry is unique, complete, and HTTPS-only', () => {
   assert.ok(m06EditorialSources.every(({ title, publisher, url, locator }) => title && publisher && locator && url.startsWith('https://')));
   const sourceIds = new Set(m06EditorialSources.map(({ id }) => id));
   assert.ok(m06ContentItems.every(({ sourceIds: refs }) => refs.length > 0 && refs.every((id) => sourceIds.has(id))));
+});
+
+test('strawberry day-length and pollination claims map to direct UMN evidence', async () => {
+  const strawberry = m06ContentItems.find(({ id }) => id === 6);
+  const sources = new Map(m06EditorialSources.map((source) => [source.id, source]));
+  const article = await read('src/content/articles/hydroponic-strawberries.mdx');
+
+  assert.ok(strawberry.sourceIds.includes('umn-day-neutral-strawberries'));
+  assert.ok(strawberry.sourceIds.includes('umn-strawberry-plant-growth'));
+  assert.match(sources.get('umn-day-neutral-strawberries').locator, /day-length response/iu);
+  assert.match(sources.get('umn-strawberry-plant-growth').locator, /pollination/iu);
+  assert.match(article, /not sensitive to day length/iu);
+  assert.match(article, /self-fruitful/iu);
+  assert.match(article, /insects are the primary pollinators/iu);
+  assert.match(article, /conservative application of the source's flower biology/iu);
 });
 
 test('article schema accepts typed external-research scope and rejects unknown source refs', () => {
