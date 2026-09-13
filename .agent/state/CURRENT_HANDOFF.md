@@ -23,6 +23,15 @@ first 25 planned Phase 1 pages, edited, sourced, internally linked, and checked
 for duplicate intent. The implemented distribution is 4 Systems, 7 Crops, 7
 Nutrients & Water, 5 Buyer Guides, and 2 Reviews. The workbook was not modified.
 
+Implementation commit:
+`b67238ac991020848ae9f616df335ed334d96679`.
+
+Pull request #6:
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/6` — OPEN and UNMERGED.
+
+The implementation commit passed `ci / quality` and `governance /
+m00-governance` on both push and pull-request events.
+
 ## Completed M06 scope
 
 - 25 strategy-defined non-draft production pages: 23 articles and 2
@@ -52,6 +61,10 @@ Nutrients & Water, 5 Buyer Guides, and 2 Reviews. The workbook was not modified.
 - `npm run test:search`
 - representative built-HTML metadata/evidence inspection
 - generated-site internal-link crawl
+- `git commit -m "feat(m06): publish first content wave"`
+- `git push --set-upstream origin m06-content-wave-1`
+- `gh pr create --base main --head m06-content-wave-1`
+- `gh pr checks 6 --watch`
 
 ## Passed checks
 
@@ -71,6 +84,9 @@ Nutrients & Water, 5 Buyer Guides, and 2 Reviews. The workbook was not modified.
 - Pagefind: PASS — 43 eligible pages indexed
 - search smoke: PASS — 44 public routes checked, all 25 M06 routes included
 - generated internal-link crawl: PASS — 1,630 href references resolved
+- implementation-head `ci / quality`: PASS on push and pull-request events
+- implementation-head `governance / m00-governance`: PASS on push and
+  pull-request events
 
 ## Failed checks
 None.
@@ -90,12 +106,15 @@ product ratings, and product acquisition/testing remain deferred and
 unauthorized.
 
 ## External side effects
-Authoritative public research sources were accessed. No production, affiliate,
-merchant, analytics, Search Console, Vercel, domain, DNS, or publishing service
-was changed.
+Authoritative public research sources were accessed. The M06 branch was pushed,
+pull request #6 was created, and GitHub Actions was inspected. No production,
+affiliate, merchant, analytics, Search Console, Vercel, domain, DNS, or
+publishing service was changed.
 
 ## Secrets accessed
-None.
+Existing GitHub authentication was used by Git and GitHub CLI for the authorized
+branch, pull-request, and checks workflow. Its value was not exposed or stored.
+No project or production-service secret was added.
 
 ## Deployment status
 Not deployed; deployment is explicitly unauthorized.

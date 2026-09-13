@@ -11,6 +11,9 @@ M06 strategy scope: 25 Phase 1 content pages from the authoritative master workb
 M06 production pages: 25
 M06 category distribution: 4 Systems / 7 Crops / 7 Nutrients & Water / 5 Buyer Guides / 2 Reviews
 M06 local gate: PASS
+M06 implementation commit: b67238ac991020848ae9f616df335ed334d96679
+M06 integration vehicle: pull request #6 — OPEN / NOT_MERGED
+M06 implementation-head GitHub CI: PASS — ci / quality and governance / m00-governance on push and pull-request events
 M06 independent audit: PENDING
 M07 status: NOT_STARTED
 M07 authorization: NOT_AUTHORIZED

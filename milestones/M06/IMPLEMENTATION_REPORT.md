@@ -83,6 +83,12 @@ all 1,630 internal href references. Detailed results are in `TEST_REPORT.md`.
 
 ## Scope and handoff
 
+Implementation commit `b67238ac991020848ae9f616df335ed334d96679` was
+pushed to `m06-content-wave-1`, and pull request #6 was opened against `main`.
+That implementation head passed `ci / quality` and `governance /
+m00-governance` on both push and pull-request events. The pull request remains
+open and unmerged for independent audit.
+
 No image was added because legally clear imagery was not required to make the
 articles useful. No production deployment, publishing service, affiliate
 enrollment, live merchant link, analytics, Search Console, Vercel, domain/DNS,

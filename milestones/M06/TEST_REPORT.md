@@ -70,5 +70,17 @@ eligible pages and excludes the same non-indexable surfaces.
   Offer, fake testing identity, M07 content, or production-service
   configuration was detected.
 
+## GitHub implementation-head checks
+
+Pull request #6 remained open and unmerged. For implementation commit
+`b67238ac991020848ae9f616df335ed334d96679`:
+
+| Event | Workflow / check | Result |
+| --- | --- | --- |
+| push | `ci / quality` | PASS |
+| pull request | `ci / quality` | PASS |
+| push | `governance / m00-governance` | PASS |
+| pull request | `governance / m00-governance` | PASS |
+
 M06 awaits independent ChatGPT content and evidence audit; this report does not
 claim milestone acceptance.
