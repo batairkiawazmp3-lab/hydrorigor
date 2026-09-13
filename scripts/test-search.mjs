@@ -3,6 +3,7 @@ import { access, readFile } from 'node:fs/promises';
 import { extname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { requiredPublicRoutes } from '../src/lib/navigation.ts';
+import { getM06Path, m06ContentItems } from '../src/data/m06-content.ts';
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const distRoot = join(projectRoot, 'dist');
@@ -65,7 +66,10 @@ try {
   const titles = new Set();
   const descriptions = new Set();
 
-  for (const route of requiredPublicRoutes) {
+  const productionRoutes = m06ContentItems.map(getM06Path);
+  const routesUnderTest = [...requiredPublicRoutes, ...productionRoutes];
+
+  for (const route of routesUnderTest) {
     const html = await readRoute(route);
     const title = html.match(/<title>([^<]+)<\/title>/)?.[1];
     const description = extractMeta(html, 'description');
@@ -114,6 +118,10 @@ try {
     access(join(distRoot, 'nutrients', 'index.html')),
     'the retired /nutrients/ landing was generated',
   );
+  await assert.rejects(
+    access(join(distRoot, 'best', 'best-hydroponic-system-for-home-growers', 'index.html')),
+    'the temporary /best/best-hydroponic-system-for-home-growers/ route was generated',
+  );
 
   const sitemap = await readFile(join(distRoot, 'sitemap-0.xml'), 'utf8');
   assert.match(sitemap, /<loc>https:\/\/hydrorigor\.com\/nutrients-water\/<\/loc>/);
@@ -138,6 +146,12 @@ try {
       `${commercialPath} was missing from the sitemap`,
     );
   }
+  for (const productionPath of productionRoutes) {
+    assert.ok(
+      sitemap.includes(`https://hydrorigor.com${productionPath}`),
+      `${productionPath} was missing from the sitemap`,
+    );
+  }
   for (const excludedPath of [
     '/nutrients/',
     '/search/',
@@ -145,6 +159,7 @@ try {
     '/systems/development-sample-system-article/',
     '/reviews/development-sample-review/',
     '/compare/development-sample-comparison/',
+    '/best/best-hydroponic-system-for-home-growers/',
   ]) {
     assert.ok(
       !sitemap.includes(`https://hydrorigor.com${excludedPath}`),
@@ -179,17 +194,33 @@ try {
     'Pagefind did not return the public nutrient mixing calculator',
   );
 
-  const reviewLandingResults = await loadResults(search, 'No public product reviews yet');
+  const reviewLandingResults = await loadResults(search, 'Manufacturer-documentation guides only');
   assert.ok(
     reviewLandingResults.some(({ url }) => normalizePath(url) === '/reviews/'),
     'Pagefind did not return the public review landing',
   );
 
-  const disclosureResults = await loadResults(search, 'production merchant and commercial destination registries remain empty');
+  const disclosureResults = await loadResults(search, 'production merchant and commercial-destination registries remain empty');
   assert.ok(
     disclosureResults.some(({ url }) => normalizePath(url) === '/affiliate-disclosure/'),
     'Pagefind did not return the current affiliate disclosure',
   );
+
+  const waveQueries = [
+    ['shallow continuous nutrient stream', '/crops/nft-hydroponic-strawberries/'],
+    ['root support water and oxygen', '/systems/deep-water-culture-hydroponics/'],
+    ['essential macro and micronutrients', '/nutrients-water/hydroponic-nutrients/'],
+    ['three-component base nutrient system', '/reviews/general-hydroponics-nutrients/'],
+    ['requirements sheet crop space root zone', '/best/hydroponic-systems-for-sale/'],
+    ['single best hydroponic system every home', '/best/hydroponic-system-for-home-growers/'],
+  ];
+  for (const [query, expectedPath] of waveQueries) {
+    const results = await loadResults(search, query);
+    assert.ok(
+      results.some(({ url }) => normalizePath(url) === expectedPath),
+      `Pagefind query “${query}” did not return ${expectedPath}`,
+    );
+  }
 
   const excludedCases = [
     ['sample fixture reservoir monitor', '/reviews/development-sample-review/'],
@@ -197,6 +228,7 @@ try {
     ['fixture system alpha beta', '/compare/development-sample-comparison/'],
     ['that channel runs dry', '/404/'],
     ['static site search search terms', '/search/'],
+    ['single best hydroponic system every home', '/best/best-hydroponic-system-for-home-growers/'],
   ];
 
   for (const [query, excludedPath] of excludedCases) {
@@ -221,7 +253,7 @@ try {
   assert.doesNotMatch(excludedSearch, /data-pagefind-body/);
 
   process.stdout.write(
-    `HydroRigor search smoke passed: ${requiredPublicRoutes.length} public routes verified; M04 tools and M05 public commercial/trust landings found; drafts, 404, and search are excluded.\n`,
+    `HydroRigor search smoke passed: ${routesUnderTest.length} public routes verified, including ${productionRoutes.length} M06 production pages; representative systems, crops, nutrients, buyer research, and manufacturer-documentation queries passed; drafts, 404, and search are excluded.\n`,
   );
 } finally {
   if (search) await search.destroy();

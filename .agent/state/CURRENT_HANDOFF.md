@@ -10,150 +10,143 @@ ACCEPTED
 `batairkiawazmp3-lab/hydrorigor`
 
 ## Current milestone
-M05 — Affiliate & Reviews
+M06 — Content Wave 1
 
-## Source commit / working-tree state
-M04 was independently accepted and pull request #4 was squash-merged. Local
+## Source commit / branch state
+M05 was independently accepted and pull request #5 was squash-merged. Local
 `main` and `origin/main` were verified clean and synchronized at
-`1936b957796a3f69b0a7c3547dba264296883490` before branch
-`m05-affiliate-reviews` was created.
+`ac2356cc1d238e43158388d2506004a3800d6895` before branch
+`m06-content-wave-1` was created.
+
+The authoritative workbook was inspected read-only. Its M06 row requires the
+first 25 planned Phase 1 pages, edited, sourced, internally linked, and checked
+for duplicate intent. The implemented distribution is 4 Systems, 7 Crops, 7
+Nutrients & Water, 5 Buyer Guides, and 2 Reviews. The workbook was not modified.
 
 Implementation commit:
-`7aed764b3ffac9a674a312959c3d01843fdc3db0`.
+`b67238ac991020848ae9f616df335ed334d96679`.
 
-Corrective commit:
-`de43b1c2ef69d0378c1c02ff2c3fcc548e2dc370`.
+Corrective implementation commit:
+`5a275b8b08648644242dfba4cd33ab74dce1ba2a`.
 
-Final comparison-boundary corrective commit:
-`73f7392d8e1241ae14c3e2b02c9339585e8446aa`.
+Pull request #6:
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/6` — accepted M06
+integration vehicle. The accepted PR head is
+`9ad8bd2b43c1a8d088f9c2bc1c5a3a4d426c1b82`.
 
-Pull request #5:
-`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/5`.
+The corrective implementation commit passed `ci / quality` and `governance /
+m00-governance` on both push and pull-request events.
 
-First independent audit: `REJECTED` — focused correction implemented for
-non-hands-on prose claims and registry-backed affiliate link rendering.
+The independent ChatGPT final re-audit accepted the exact 25-page Wave 1
+scope, 24-source registry, strawberry provenance correction, 25-page evidence
+sanity pass, stable ID 24 route, M04/M05 boundaries, keyword discipline,
+internal discovery, sitemap/Pagefind behavior, fixture exclusions, and all
+content/search/CI validation.
 
-Independent re-audit: `REJECTED` — the narrow comparison-MDX evidence-boundary
-correction is implemented, locally validated, pushed, and green in GitHub CI.
+## Completed M06 scope
 
-Independent final re-audit: `ACCEPTED` — evidence-basis integrity, structured
-and MDX non-hands-on prose protection, comparison all-items and mixed-evidence
-boundaries, complete per-item evidence, registry-backed destination resolution,
-disclosures, commercial-schema omissions, empty production registries, and
-fictional fixture isolation were accepted.
-
-Exact milestone state: `M05 — Affiliate & Reviews: ACCEPTED`.
-
-## Authorized scope
-Implement only M05's typed product/evidence and merchant/destination models,
-affiliate-link abstraction, relationship-specific disclosures, review and
-comparison integrity, commercial presentation foundations, gated structured
-data, integrity tests, reports, branch, pull request, and CI.
-
-## Files created / changed
-M05 adds strict product/evidence-source/merchant/destination records, isolated
-fictional product fixtures, hardened review and comparison schemas, evidence
-and disclosure UI, relationship-aware link handling, gated Review JSON-LD,
-honest commercial landing states, policy reconciliation, a commercial
-validator, 29 focused tests, search/sitemap assertions, and CI integration.
-The corrective pass adds centralized first-person test-claim detection for
-structured and MDX prose plus an ID-only, production-registry-backed
-`AffiliateLink` API.
-The final narrow correction makes MDX evidence parsing collection-aware and
-allows comparison-level first-person testing claims only when every
-`itemEvidence` record is fully hands-on. The structured comparison prose gate
-uses the same all-items boundary.
+- 25 strategy-defined non-draft production pages: 23 articles and 2
+  manufacturer-documentation reviews
+- typed content manifest, 24-source editorial registry, and source-backed
+  product identities for the two workbook-named nutrient systems
+- content plan, authorized keyword record, source ledger, and internal link map
+- section-landing, homepage, and Start Here discovery updates
+- typed external-research article scope and manufacturer-only review evidence
+- M06 content validator, 12 focused unit tests, CI integration, all-route
+  Pagefind/sitemap coverage, and built-output QA
+- direct UMN Extension evidence for strawberry day-length and pollination
+  claims, plus a documented all-25-page evidence sanity pass
+- stable ID 24 route at `/best/hydroponic-system-for-home-growers/`, with the
+  old duplicated-section path absent and prohibited by regression checks
 
 ## Commands run
 
-- `git fetch --prune origin`
-- exact branch/SHA/synchronization/status verification
-- governing-document review
-- `git switch -c m05-affiliate-reviews`
-- product/evidence, merchant/destination, content-schema, UI, structured-data,
-  validator, policy, and test implementation
+- baseline branch/SHA/synchronization/status verification
+- read-only master-workbook extraction
+- governing-document and existing architecture review
+- `git switch -c m06-content-wave-1`
 - `npm ci`
 - `npm run lint`
 - `npm run check`
 - `npm test`
 - `npm run test:data`
 - `npm run test:commerce`
+- `npm run test:content`
 - `npm run build`
 - `npm run test:search`
-- `git commit -m "feat(m05): add commercial editorial integrity"`
-- `git push --set-upstream origin m05-affiliate-reviews`
-- `gh pr create --base main --head m05-affiliate-reviews`
-- `gh pr checks 5 --watch`
-- focused independent-audit diagnosis and corrective implementation
-- corrective full local gate: `npm ci`, lint, check, test, data, commerce,
-  build, and search
-- `git commit -m "fix(m05): close commercial integrity bypasses"`
-- corrective branch push and `gh pr checks 5 --watch`
-- independent re-audit diagnosis and comparison evidence-boundary correction
-- final corrective full local gate in the required order
-- `git commit -m "fix(m05): align comparison evidence boundaries"`
-- final corrective branch push and `gh pr checks 5 --watch`
+- focused evidence-boundary review across all 25 production pages
+- built-output checks for both strawberry sources and the corrected/retired ID
+  24 paths
+- representative built-HTML metadata/evidence inspection
+- generated-site internal-link crawl
+- `git commit -m "feat(m06): publish first content wave"`
+- `git commit -m "fix(m06): tighten provenance and route stability"`
+- `git push --set-upstream origin m06-content-wave-1`
+- `gh pr create --base main --head m06-content-wave-1`
+- `gh pr checks 6 --watch`
 
 ## Passed checks
 
-- current branch was `main`: PASS
-- local `main` equals `origin/main`: PASS
-- required baseline SHA is exact: PASS
+- current branch before branching was `main`: PASS
+- local `main` equaled `origin/main`: PASS
+- required M05 merge baseline was exact: PASS
 - starting working tree clean: PASS
-- M04 accepted and squash-merged: PASS
+- authoritative M06 count and sequence extracted: PASS — 25 Phase 1 pages
+- M06 content count/distribution/source/link/commercial validation: PASS
 - lint: PASS
-- Astro diagnostics: PASS — 75 files, 0 errors/warnings/hints
-- tests: PASS — 76/76 total, including 29 focused commercial-integrity tests
-- M04 data validation: PASS — 3 sources, 8 records, 5 crops
-- M05 commerce validation: PASS — empty production registries and no raw
-  tracking destinations or unsupported non-hands-on prose
-- production build: PASS — 23 pages, 18 Pagefind entries
-- search smoke: PASS — 19 public routes; M05 landings included and development
-  fixtures excluded
-- implementation-head `ci / quality`: PASS on push and pull-request events
-- implementation-head `governance / m00-governance`: PASS on push and
-  pull-request events
+- Astro check: PASS — 79 files, 0 errors, 0 warnings, 0 hints
+- unit/regression tests: PASS — 88/88
+- M04 data validation: PASS
+- M05 commercial validation: PASS
+- static build: PASS — 48 pages
+- M06 source registry: PASS — 24 records; strawberry guide has five visible
+  sources with direct day-length and pollination evidence
+- sitemap: PASS — 43 eligible URLs, all 25 M06 pages and corrected ID 24 route included
+- Pagefind: PASS — 43 eligible pages / 2,014 words indexed
+- search smoke: PASS — 44 public routes checked, all 25 M06 routes included
+- old ID 24 route: PASS — no generated page, sitemap entry, or Pagefind result
+- generated internal-link crawl: PASS — 1,506 href references resolved across
+  the 44 public routes under test
 - corrective-head `ci / quality`: PASS on push and pull-request events
 - corrective-head `governance / m00-governance`: PASS on push and
   pull-request events
-- final-corrective-head `ci / quality`: PASS on push and pull-request events
-- final-corrective-head `governance / m00-governance`: PASS on push and
-  pull-request events
-- independent ChatGPT M05 final re-audit: ACCEPTED
 
 ## Failed checks
-None outstanding. The first two independent audit rounds rejected specific
-integrity boundaries; both findings were corrected, locally validated, and
-accepted by the final independent re-audit.
+The first independent audit rejected direct provenance for two strawberry
+claims and ID 24's duplicated route segment. Both findings were corrected in
+`5a275b8b08648644242dfba4cd33ab74dce1ba2a`, and the final independent re-audit
+accepted them. No local or final corrective-head CI check failed.
 
 ## Known limitations
-No real product, product evidence source, merchant relationship, affiliate
-destination, hands-on test, price, rating, availability, or recommendation is
-configured. The production commercial registries are intentionally empty.
-M05 is accepted. M06 requires separate authorization after merge verification.
+The two named nutrient-system pages are limited to current manufacturer
+documentation. HydroRigor performed no hands-on testing and supplies no
+performance recommendation. Other buyer-research pages compare decision
+criteria without product shortlists. No images were added; articles use the
+existing accessible text-first presentation. Keyword values can change and do
+not guarantee ranking.
 
 ## Deferred work
-M06 is NOT_STARTED and NOT_AUTHORIZED. Production content, active affiliate
-enrollment, prices/feeds, analytics, deployment, domain, and later work are
-deferred.
+Workbook IDs 26–100, M07, analytics, Search Console, deployment, live
+publishing, affiliate enrollment, merchant destinations, price/availability,
+product ratings, and product acquisition/testing remain deferred and
+unauthorized.
 
 ## External side effects
-The authorized GitHub repository was fetched, the M05 branch was pushed, pull
-request #5 was created, and GitHub Actions was inspected. The npm registry was
-accessed by `npm ci`. No affiliate
-network, merchant, production, publishing,
-analytics, Search Console, Vercel, domain, DNS, or deployment service was
-accessed or changed.
+Authoritative public research sources were accessed. The M06 branch was pushed,
+pull request #6 was created, and GitHub Actions was inspected. No production,
+affiliate, merchant, analytics, Search Console, Vercel, domain, DNS, or
+publishing service was changed.
 
 ## Secrets accessed
-Existing GitHub authentication was used for authorized fetch, push,
-pull-request, and CI actions. Its value was not exposed or stored. No project,
-merchant, affiliate, or production-service secret was added.
+Existing GitHub authentication was used by Git and GitHub CLI for the authorized
+branch, pull-request, and checks workflow. Its value was not exposed or stored.
+No project or production-service secret was added.
 
 ## Deployment status
-Not deployed; deployment remains explicitly unauthorized.
+Not deployed; deployment is explicitly unauthorized.
 
 ## Exact next-agent instruction
-Push this acceptance-only documentation update, require green final-head CI,
-squash-merge pull request #5, synchronize and verify `main`, then stop. Do not
-start M06 without separate ChatGPT authorization.
+Verify M06 integration status in GitHub. If pull request #6 remains open,
+complete only the authorized squash merge after its final documentation head
+passes required checks. Once merged, keep M07 `NOT_STARTED` and
+`NOT_AUTHORIZED` until separate ChatGPT authorization.

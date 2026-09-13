@@ -132,9 +132,14 @@ const affiliateDestination = {
   lastVerified: '2026-09-12',
 };
 
-test('production commercial registries intentionally contain no active records', () => {
-  assert.deepEqual(products, []);
-  assert.deepEqual(productEvidenceSources, []);
+test('production product identities are source-backed while relationship registries stay empty', () => {
+  assert.deepEqual(
+    products.map(({ id }) => id),
+    ['masterblend-4-18-38-tomato-formula', 'general-hydroponics-floraseries'],
+  );
+  assert.equal(productEvidenceSources.length, 4);
+  assert.ok(products.every(({ evidenceBasis }) => evidenceBasis === 'manufacturer-spec-only'));
+  assert.ok(products.every(({ sourceRefs }) => sourceRefs.length >= 2));
   assert.deepEqual(merchants, []);
   assert.deepEqual(commercialDestinations, []);
   assert.doesNotThrow(() => validateCommercialRegistry({
@@ -634,14 +639,14 @@ test('review and comparison layouts resolve typed records without unsupported wi
   assert.doesNotMatch(layouts, /star rating|numeric score|aggregateRating|reviewRating|<Offer/i);
 });
 
-test('buyer guide, review, and comparison landings use honest commercial empty states', async () => {
+test('buyer guide, review, and comparison landings use honest current commercial states', async () => {
   const landing = await read('src/components/content/SectionLanding.astro');
   const status = await read('src/components/commercial/CommercialSectionStatus.astro');
   assert.match(landing, /CommercialSectionStatus/);
-  assert.match(status, /No buyer guide entries yet/);
-  assert.match(status, /No public product reviews yet/);
+  assert.match(status, /Buyer research without a product shortlist/);
+  assert.match(status, /Manufacturer-documentation guides only/);
   assert.match(status, /No public product comparisons yet/);
-  assert.match(status, /No price, availability, numeric rating, affiliate destination, or real product recommendation/);
+  assert.match(status, /No price, availability, numeric rating, affiliate destination, or unsupported product recommendation/);
 });
 
 test('development review and comparison remain draft, fictional, and non-commercial', async () => {

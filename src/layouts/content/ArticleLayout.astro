@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import CommercialDisclosure from '../../components/commercial/CommercialDisclosure.astro';
 import MerchantDestinations from '../../components/commercial/MerchantDestinations.astro';
+import EvidenceBasis from '../../components/commercial/EvidenceBasis.astro';
 import ContentProse from '../../components/content/ContentProse.astro';
 import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
 import PublicationMeta from '../../components/content/PublicationMeta.astro';
@@ -60,6 +61,14 @@ const commercialState = resolveCommercialPageState(data);
           affiliateDestinationCount={commercialState.affiliateDestinations.length}
           affiliateDisclosureReason={data.affiliateDisclosureReason}
         />
+        {data.commercialResearch && (
+          <>
+            <EvidenceBasis basis={data.commercialResearch.evidenceBasis} />
+            <p class="mt-3 rounded-xl border border-hydro-deep/10 bg-white p-4 text-sm leading-6 text-slate">
+              <strong class="text-hydro-deep">Selection scope:</strong> {data.commercialResearch.scope}
+            </p>
+          </>
+        )}
         {commercialState.destinations.length > 0 && (
           <MerchantDestinations destinationIds={commercialState.destinations.map(({ id }) => id)} />
         )}

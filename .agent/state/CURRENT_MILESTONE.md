@@ -1,19 +1,27 @@
 # Current Milestone
 
-Milestone: M05 — Affiliate & Reviews
+Milestone: M06 — Content Wave 1
 Status: ACCEPTED
-Previous milestone: M04 — Data & Tools: ACCEPTED AND MERGED
-Verified baseline: 1936b957796a3f69b0a7c3547dba264296883490
-M04 integration: pull request #4 — SQUASH_MERGED
-M05 authorization: GRANTED
-M05 build started: YES
-M05 local validation: PASS — 76/76 tests; lint/check/data/commerce/build/search green
-M05 GitHub CI: PASS — accepted PR head 1ffd69322a77d593a0a1c36756c70d533bae5f0b passed ci / quality and governance / m00-governance on push and pull-request events
-M05 independent audit: ACCEPTED — final ChatGPT re-audit
-M06 status: NOT_STARTED
-M06 authorization: NOT_AUTHORIZED
-M05 integration vehicle: pull request #5 — INDEPENDENT_AUDIT_ACCEPTED
-Exact milestone state: M05 — Affiliate & Reviews: ACCEPTED
+Previous milestone: M05 — Affiliate & Reviews: ACCEPTED AND MERGED
+Verified baseline: ac2356cc1d238e43158388d2506004a3800d6895
+M05 integration: pull request #5 — SQUASH_MERGED
+M06 authorization: GRANTED
+M06 implementation: COMPLETE
+M06 strategy scope: 25 Phase 1 content pages from the authoritative master workbook
+M06 production pages: 25
+M06 category distribution: 4 Systems / 7 Crops / 7 Nutrients & Water / 5 Buyer Guides / 2 Reviews
+M06 local gate: PASS
+M06 initial implementation commit: b67238ac991020848ae9f616df335ed334d96679
+M06 corrective implementation commit: 5a275b8b08648644242dfba4cd33ab74dce1ba2a
+M06 integration vehicle: pull request #6
+M06 corrective-head GitHub CI: PASS — ci / quality and governance / m00-governance on push and pull-request events
+M06 accepted PR head: 9ad8bd2b43c1a8d088f9c2bc1c5a3a4d426c1b82
+M06 independent audit: ACCEPTED — final re-audit accepted scope, provenance, route stability, boundaries, discovery, and validation
+M07 status: NOT_STARTED
+M07 authorization: NOT_AUTHORIZED
+Exact milestone state: M06 — Content Wave 1: ACCEPTED
 
-M06 and later milestones are NOT authorized. M05 passed local validation,
-GitHub CI, and independent ChatGPT audit.
+M06 is limited to repository content, static rendering, validation, search,
+sitemap, and preview CI. No production deployment, domain/DNS, analytics,
+Search Console, affiliate enrollment, live commercial destination, or M07 work
+was performed or is authorized.
