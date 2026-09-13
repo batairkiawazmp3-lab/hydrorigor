@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_CHATGPT_M06_REAUDIT
+ACCEPTED
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -30,10 +30,18 @@ Corrective implementation commit:
 `5a275b8b08648644242dfba4cd33ab74dce1ba2a`.
 
 Pull request #6:
-`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/6` — OPEN and UNMERGED.
+`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/6` — accepted M06
+integration vehicle. The accepted PR head is
+`9ad8bd2b43c1a8d088f9c2bc1c5a3a4d426c1b82`.
 
 The corrective implementation commit passed `ci / quality` and `governance /
 m00-governance` on both push and pull-request events.
+
+The independent ChatGPT final re-audit accepted the exact 25-page Wave 1
+scope, 24-source registry, strawberry provenance correction, 25-page evidence
+sanity pass, stable ID 24 route, M04/M05 boundaries, keyword discipline,
+internal discovery, sitemap/Pagefind behavior, fixture exclusions, and all
+content/search/CI validation.
 
 ## Completed M06 scope
 
@@ -106,8 +114,8 @@ m00-governance` on both push and pull-request events.
 ## Failed checks
 The first independent audit rejected direct provenance for two strawberry
 claims and ID 24's duplicated route segment. Both findings were corrected in
-`5a275b8b08648644242dfba4cd33ab74dce1ba2a`; the final independent re-audit is
-pending. No local or corrective-head CI check failed.
+`5a275b8b08648644242dfba4cd33ab74dce1ba2a`, and the final independent re-audit
+accepted them. No local or final corrective-head CI check failed.
 
 ## Known limitations
 The two named nutrient-system pages are limited to current manufacturer
@@ -115,7 +123,7 @@ documentation. HydroRigor performed no hands-on testing and supplies no
 performance recommendation. Other buyer-research pages compare decision
 criteria without product shortlists. No images were added; articles use the
 existing accessible text-first presentation. Keyword values can change and do
-not guarantee ranking. Independent evidence/editorial acceptance is pending.
+not guarantee ranking.
 
 ## Deferred work
 Workbook IDs 26–100, M07, analytics, Search Console, deployment, live
@@ -138,7 +146,7 @@ No project or production-service secret was added.
 Not deployed; deployment is explicitly unauthorized.
 
 ## Exact next-agent instruction
-Perform the independent ChatGPT M06 content/evidence re-audit against pull
-request #6 and `milestones/M06/REALITY_AUDIT.md`. Accept or return narrowly
-scoped findings. Do not merge the pull request or authorize/start M07 as part
-of that re-audit.
+Verify M06 integration status in GitHub. If pull request #6 remains open,
+complete only the authorized squash merge after its final documentation head
+passes required checks. Once merged, keep M07 `NOT_STARTED` and
+`NOT_AUTHORIZED` until separate ChatGPT authorization.

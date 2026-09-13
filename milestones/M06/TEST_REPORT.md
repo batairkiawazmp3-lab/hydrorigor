@@ -1,6 +1,6 @@
 # M06 — Test Report
 
-Status: READY_FOR_CHATGPT_M06_REAUDIT
+Status: ACCEPTED
 Validation date: 2026-09-13
 
 ## Required ordered local gate
@@ -88,5 +88,7 @@ Pull request #6 remained open and unmerged. For implementation commit
 | push | `governance / m00-governance` | PASS |
 | pull request | `governance / m00-governance` | PASS |
 
-M06 awaits independent ChatGPT content and evidence re-audit; this report does
-not claim milestone acceptance.
+The independent ChatGPT final re-audit accepted the M06 content, evidence,
+commercial-boundary, sitemap, Pagefind, and CI results at PR head
+`9ad8bd2b43c1a8d088f9c2bc1c5a3a4d426c1b82`. M07 remains `NOT_STARTED` and
+`NOT_AUTHORIZED`.

@@ -27,9 +27,8 @@ This repository is the single HydroRigor website project.
 
 M01 — Foundation, M02 — Content Engine & SEO, M03 — Core Information
 Architecture, M04 — Data & Tools, and M05 — Affiliate & Reviews are accepted
-and merged. M06 — Content Wave 1 is implemented, corrected, and validated on
-`m06-content-wave-1`, pending independent ChatGPT re-audit. M07 and later
-milestones are not started or authorized.
+and merged. M06 — Content Wave 1 is accepted and uses pull request #6 as its
+integration vehicle. M07 and later milestones are not started or authorized.
 
 ## Local validation
 

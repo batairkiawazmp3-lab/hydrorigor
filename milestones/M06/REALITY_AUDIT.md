@@ -1,7 +1,7 @@
 # M06 — Reality Audit
 
-Status: PENDING_INDEPENDENT_CHATGPT_AUDIT
-Technical readiness: READY_FOR_CHATGPT_M06_REAUDIT
+Status: ACCEPTED
+Technical readiness: ACCEPTED
 Audit date: 2026-09-13
 
 ## Strategy reconciliation
@@ -81,10 +81,23 @@ Pagefind only at `/best/hydroponic-system-for-home-growers/`. The old
 sitemap entry, or Pagefind result. Automated validation also rejects future
 accidental `/best/best-*` routes.
 
-## Independent audit boundary
+## Independent ChatGPT audit result
 
-Automated checks establish structural and declared-integrity properties; they
-cannot independently prove scientific adequacy, editorial completeness, or
-search intent quality. Those judgments remain for the independent ChatGPT M06
-re-audit. M06 is ready for that re-audit but is not self-accepted. M07 remains
-`NOT_STARTED` and `NOT_AUTHORIZED`.
+The final independent ChatGPT re-audit accepted M06 on 2026-09-13. Acceptance
+covered:
+
+- the exact 25-page authoritative Wave 1 scope and its 4 Systems / 7 Crops / 7
+  Nutrients & Water / 5 Buyer Guides / 2 Reviews distribution;
+- the 24-source editorial registry, direct strawberry day-length and
+  pollination provenance, and focused 25-page evidence-boundary sanity pass;
+- the corrected `/best/hydroponic-system-for-home-growers/` canonical route,
+  absence of the temporary `/best/best-*` route, and its regression guard;
+- M04 tool/data and M05 commercial-integrity boundaries, including the
+  manufacturer-specification-only product pages;
+- keyword-metric verification discipline, internal linking, sitemap and
+  Pagefind inclusion, and development-fixture exclusion; and
+- content, search, local-gate, and GitHub CI validation.
+
+Exact milestone state: **M06 — Content Wave 1: ACCEPTED**.
+
+M07 remains `NOT_STARTED` and `NOT_AUTHORIZED`.

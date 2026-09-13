@@ -1,6 +1,6 @@
 # M06 — Implementation Report
 
-Status: READY_FOR_CHATGPT_M06_REAUDIT
+Status: ACCEPTED
 
 ## Baseline and strategy reconciliation
 
@@ -121,5 +121,6 @@ articles useful. No production deployment, publishing service, affiliate
 enrollment, live merchant link, analytics, Search Console, Vercel, domain/DNS,
 M07, or articles 26–100 work occurred.
 
-M06 is implemented and locally validated, but it is not self-accepted. Final
-acceptance remains with the independent ChatGPT M06 re-audit.
+The independent ChatGPT final re-audit accepted the complete M06 result at PR
+head `9ad8bd2b43c1a8d088f9c2bc1c5a3a4d426c1b82`. M06 is accepted; M07 remains
+`NOT_STARTED` and `NOT_AUTHORIZED`.

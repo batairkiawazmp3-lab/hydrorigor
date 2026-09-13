@@ -152,11 +152,13 @@ test('M06 production prose contains no fixture markers, tracking links, or numer
   }
 });
 
-test('M06 governance keeps independent acceptance and M07 authorization pending', async () => {
+test('M06 governance records independent acceptance while M07 remains unauthorized', async () => {
   const milestone = await read('.agent/state/CURRENT_MILESTONE.md');
   const audit = await read('milestones/M06/REALITY_AUDIT.md');
-  assert.match(milestone, /M06 independent audit: PENDING/u);
+  assert.match(milestone, /M06 independent audit: ACCEPTED/u);
+  assert.match(milestone, /Exact milestone state: M06 — Content Wave 1: ACCEPTED/u);
   assert.match(milestone, /M07 status: NOT_STARTED/u);
   assert.match(milestone, /M07 authorization: NOT_AUTHORIZED/u);
-  assert.match(audit, /PENDING_INDEPENDENT_CHATGPT_AUDIT/u);
+  assert.match(audit, /Status: ACCEPTED/u);
+  assert.match(audit, /M06 — Content Wave 1: ACCEPTED/u);
 });
