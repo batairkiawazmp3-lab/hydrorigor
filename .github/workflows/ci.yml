@@ -37,6 +37,9 @@ jobs:
       - name: Commercial integrity verification
         run: npm run test:commerce
 
+      - name: Production content integrity verification
+        run: npm run test:content
+
       - name: Production build
         run: npm run build
 

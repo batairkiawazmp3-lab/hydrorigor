@@ -110,7 +110,22 @@ export const articleSchema = z.object({
   category: z.enum(articleCategoryValues),
   tags: z.array(identifier).min(1),
   hero: heroSchema.optional(),
-}).strict().superRefine(validateDisclosureFields);
+  commercialResearch: z.object({
+    evidenceBasis: z.literal('externally-researched'),
+    scope: z.string().trim().min(20),
+    evidenceClaims: z.array(evidenceClaimSchema).min(1),
+  }).strict().optional(),
+}).strict().superRefine((data, context) => {
+  validateDisclosureFields(data, context);
+  data.commercialResearch?.evidenceClaims.forEach((claim, index) => {
+    validateEvidenceSourceRefs(
+      claim.sourceRefs,
+      data.sources,
+      context,
+      ['commercialResearch', 'evidenceClaims', index, 'sourceRefs'],
+    );
+  });
+});
 
 export const reviewSchema = z.object({
   ...editorialFields,

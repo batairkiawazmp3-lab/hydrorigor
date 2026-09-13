@@ -43,7 +43,7 @@ export const sectionDefinitions = [
     description: 'Understand the main ways indoor hydroponic systems support roots, water, nutrients, and airflow.',
     eyebrow: 'Choose a growing method',
     intro: 'Use this section to understand system families, compare their operating demands, and identify the questions to answer before choosing one.',
-    availability: 'The system library is being structured now. Detailed system guides will be published in a later content milestone rather than represented by placeholder articles.',
+    availability: 'M06 publishes four source-backed system guides covering home selection, DWC, a simple DIY planning path, and smart-feature evaluation.',
     groups: [
       {
         title: 'System families',
@@ -74,8 +74,8 @@ export const sectionDefinitions = [
     title: 'Hydroponic crops',
     description: 'Plan crop choices around space, system fit, growth habits, and the evidence available for each plant.',
     eyebrow: 'Choose what to grow',
-    intro: 'This section organizes future crop guidance by practical decisions instead of presenting unsupported target numbers or promising universal results.',
-    availability: 'M04 provides a modest source-specific pH and EC reference for five crops. It is not a comprehensive crop database or a universal prescription.',
+    intro: 'This section organizes crop guidance by practical decisions without presenting unsupported target numbers or promising universal results.',
+    availability: 'M06 publishes seven source-backed guides for strawberries, lettuce, and tomatoes. M04 continues to provide the source-specific pH and EC reference; it is not a universal prescription.',
     groups: [
       {
         title: 'Start with constraints',
@@ -107,7 +107,7 @@ export const sectionDefinitions = [
     description: 'Build a clear mental model for nutrient solutions, water quality, pH, EC, and responsible measurement.',
     eyebrow: 'Understand the root-zone inputs',
     intro: 'This section explains how to think about nutrients and water and links to the first source-supported reference and volume-scaling tool.',
-    availability: 'M04 adds a modest sourced pH/EC reference and a calculator that scales a manufacturer-provided label dose. It does not add crop recipes, EC prediction, or pH dosing.',
+    availability: 'M06 adds seven nutrient and water guides. M04 still provides the sourced pH/EC reference and label-dose scaler; neither the articles nor tools invent crop recipes, EC predictions, or pH dosing.',
     groups: [
       {
         title: 'Water context',
@@ -170,8 +170,8 @@ export const sectionDefinitions = [
     title: 'Buyer guides by use case',
     description: 'A transparent framework for future shortlists organized around real use cases and explicit evidence.',
     eyebrow: 'Make a purchase decision carefully',
-    intro: 'This section will organize future buyer guides around constraints and use cases, with clear methods and disclosures.',
-    availability: 'M05 provides typed product, evidence, disclosure, and destination foundations, but no commercial shortlist or product recommendation is published. Buyer guides require separately researched future content.',
+    intro: 'This section organizes buyer research around constraints and use cases, with clear methods and evidence boundaries.',
+    availability: 'M06 publishes five evidence-bounded buyer research guides. They compare system or nutrient-program criteria without a named product shortlist, price, affiliate destination, or unsupported recommendation.',
     groups: [
       {
         title: 'Define the use case',
@@ -200,10 +200,10 @@ export const sectionDefinitions = [
     slug: 'reviews',
     navLabel: 'Reviews',
     title: 'Editorial reviews',
-    description: 'Future product evaluations with visible methods, evidence boundaries, disclosures, and update history.',
+    description: 'Product-system guides with visible methods, evidence boundaries, disclosures, and update history.',
     eyebrow: 'Understand an evaluation',
     intro: 'The review architecture separates methodology, evidence, verdicts, pros, cons, and sources without using unsupported scores.',
-    availability: 'The only review entry remains a non-indexable fictional fixture. The M05 layout can represent evidence and acquisition status, but no real product review or hands-on claim is published.',
+    availability: 'M06 publishes two manufacturer-documentation nutrient-system guides. Both are explicitly manufacturer-specification-only; no hands-on test, rating, price, availability, affiliate destination, or recommendation is published.',
     groups: [
       {
         title: 'Before evaluation',

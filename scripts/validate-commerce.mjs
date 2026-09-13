@@ -34,9 +34,8 @@ validateCommercialRegistry({
   destinations: commercialDestinations,
 });
 
-if (products.length !== 0 || productEvidenceSources.length !== 0
-  || merchants.length !== 0 || commercialDestinations.length !== 0) {
-  violations.push('M05 production product, evidence-source, merchant, and destination registries must remain empty.');
+if (merchants.length !== 0 || commercialDestinations.length !== 0) {
+  violations.push('Production merchant and destination registries must remain empty until a relationship is separately authorized.');
 }
 
 for (const fixture of developmentProductFixtures) {
@@ -74,4 +73,6 @@ if (violations.length > 0) {
   process.exit(1);
 }
 
-process.stdout.write('HydroRigor commercial integrity validation passed: no live commercial records, raw tracking destinations, or unsupported hands-on prose.\n');
+process.stdout.write(
+  `HydroRigor commercial integrity validation passed: ${products.length} source-backed product identities, ${productEvidenceSources.length} evidence sources, no merchants, destinations, raw tracking links, or unsupported hands-on prose.\n`,
+);

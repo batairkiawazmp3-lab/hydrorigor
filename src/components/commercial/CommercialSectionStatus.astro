@@ -8,12 +8,12 @@ interface Props {
 const { sectionId } = Astro.props;
 const profiles: Partial<Record<SectionDefinition['id'], { title: string; detail: string }>> = {
   best: {
-    title: 'No buyer guide entries yet',
-    detail: 'A future guide must identify its use case, selection criteria, product evidence, limitations, and material relationships before any qualitative conclusion is published.',
+    title: 'Buyer research without a product shortlist',
+    detail: 'M06 buyer guides define use cases and selection criteria at the system or nutrient-program level. They do not rank named products or claim comparative hands-on evidence.',
   },
   reviews: {
-    title: 'No public product reviews yet',
-    detail: 'A review cannot claim hands-on testing without a tester, method, test period, acquisition record, and documented HydroRigor observation.',
+    title: 'Manufacturer-documentation guides only',
+    detail: 'Two M06 nutrient-system guides identify their manufacturer-only evidence basis. No hands-on testing, acquisition, independent performance ranking, or recommendation is claimed.',
   },
   compare: {
     title: 'No public product comparisons yet',
@@ -27,6 +27,6 @@ const profile = profiles[sectionId];
     <p class="font-mono text-xs font-semibold tracking-[0.08em] text-hydro-teal uppercase">Commercial editorial status</p>
     <h2 id="commercial-status-heading" class="mt-2 font-heading text-xl font-bold text-hydro-deep">{profile.title}</h2>
     <p class="mt-3 max-w-4xl text-sm leading-6 text-slate">{profile.detail}</p>
-    <p class="mt-3 max-w-4xl text-sm leading-6 text-slate">No price, availability, numeric rating, affiliate destination, or real product recommendation is shown in this empty state.</p>
+    <p class="mt-3 max-w-4xl text-sm leading-6 text-slate">No price, availability, numeric rating, affiliate destination, or unsupported product recommendation is shown.</p>
   </section>
 )}
