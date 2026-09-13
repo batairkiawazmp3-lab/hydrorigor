@@ -1,6 +1,6 @@
 # M06 — Implementation Report
 
-Status: READY_FOR_CHATGPT_AUDIT
+Status: READY_FOR_CHATGPT_M06_REAUDIT
 
 ## Baseline and strategy reconciliation
 
@@ -32,7 +32,7 @@ static output and zero new client hydration.
 
 ## Research and evidence
 
-- Added a 22-record M06 editorial source registry using university Extension,
+- Added a 24-record M06 editorial source registry using university Extension,
   university research, government, and narrowly scoped manufacturer records.
 - Added the content plan, keyword record, route-to-source ledger, and internal
   link map under `docs/research/`.
@@ -42,6 +42,30 @@ static output and zero new client hydration.
   than duplicating or changing its data.
 - Calculator links describe only manufacturer-label dose scaling; they do not
   imply EC prediction, formulation, crop dosing, or pH adjustment.
+
+## Independent-audit corrective pass
+
+The first independent audit rejected two narrow issues while accepting the
+remaining M06 count, distribution, content, commerce, search, and CI controls.
+The corrective pass:
+
+- added University of Minnesota Extension's `Day-neutral strawberries` as
+  direct evidence for the guide's day-length and plant-type distinction;
+- added University of Minnesota Extension's `How strawberry plants grow` as
+  direct evidence for self-fruitfulness, pollen movement, and complete
+  pollination, while labeling indoor pollination support as a bounded editorial
+  application;
+- reviewed all 25 production pages against their listed evidence boundaries,
+  with no other material sourcing gap found and no cosmetic source additions;
+- changed ID 24 from the temporary
+  `/best/best-hydroponic-system-for-home-growers/` route to
+  `/best/hydroponic-system-for-home-growers/` before publication, without a
+  redirect; and
+- added route, sitemap, Pagefind, source-mapping, and built-output regressions
+  for both corrections.
+
+The M04 strawberry target data was not changed. The corrective implementation
+commit is `5a275b8b08648644242dfba4cd33ab74dce1ba2a`.
 
 ## Commercial integrity
 
@@ -75,19 +99,22 @@ remain active.
 
 ## Validation outcome
 
-The ordered local gate passed on 2026-09-13. Astro built 48 pages; the sitemap
-contains 43 eligible URLs; Pagefind indexed the same 43 eligible pages. Search
-validation checked 44 public routes, including all 25 M06 routes, with the
-noindex search page correctly outside the index. A built-output crawl resolved
-all 1,630 internal href references. Detailed results are in `TEST_REPORT.md`.
+The ordered corrective local gate passed on 2026-09-13. All 88 unit/regression
+tests passed. Astro built 48 pages; the sitemap contains 43 eligible URLs;
+Pagefind indexed the same 43 eligible pages and 2,014 words. Search validation
+checked 44 public routes, including all 25 M06 routes, with the noindex search
+page correctly outside the index. A built-output crawl resolved all 1,506
+internal href references across those routes. Detailed results are in
+`TEST_REPORT.md`.
 
 ## Scope and handoff
 
-Implementation commit `b67238ac991020848ae9f616df335ed334d96679` was
-pushed to `m06-content-wave-1`, and pull request #6 was opened against `main`.
-That implementation head passed `ci / quality` and `governance /
-m00-governance` on both push and pull-request events. The pull request remains
-open and unmerged for independent audit.
+Initial implementation commit `b67238ac991020848ae9f616df335ed334d96679`
+and corrective implementation commit
+`5a275b8b08648644242dfba4cd33ab74dce1ba2a` were pushed to
+`m06-content-wave-1`. Pull request #6 remains open against `main`. The
+corrective implementation head passed `ci / quality` and `governance /
+m00-governance` on both push and pull-request events.
 
 No image was added because legally clear imagery was not required to make the
 articles useful. No production deployment, publishing service, affiliate
@@ -95,4 +122,4 @@ enrollment, live merchant link, analytics, Search Console, Vercel, domain/DNS,
 M07, or articles 26–100 work occurred.
 
 M06 is implemented and locally validated, but it is not self-accepted. Final
-acceptance remains with the independent ChatGPT content/evidence audit.
+acceptance remains with the independent ChatGPT M06 re-audit.

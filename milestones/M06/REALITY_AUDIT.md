@@ -1,7 +1,7 @@
 # M06 — Reality Audit
 
 Status: PENDING_INDEPENDENT_CHATGPT_AUDIT
-Technical readiness: READY_FOR_CHATGPT_AUDIT
+Technical readiness: READY_FOR_CHATGPT_M06_REAUDIT
 Audit date: 2026-09-13
 
 ## Strategy reconciliation
@@ -24,7 +24,7 @@ and present in the built sitemap respectively.
 | 3 | `/best/indoor-hydroponic-system-kits/` | Indoor Hydroponic System Kits: What to Buy and What to Skip | Buyer Guides | Transactional research | indoor hydroponic system kit | METRIC_NOT_REVERIFIED | 2 | Yes | Yes | Yes | externally-researched |
 | 4 | `/systems/deep-water-culture-hydroponics/` | Deep Water Culture Hydroponics: Complete DWC System Guide | Systems | Transactional research | hydroponic system deep water culture | METRIC_NOT_REVERIFIED | 2 | Yes | Yes | Yes | Not applicable |
 | 5 | `/systems/diy-hydroponic-system-for-beginners/` | DIY Hydroponic System for Beginners: A Simple Home Build | Systems | Informational | do it yourself hydroponic system | METRIC_NOT_REVERIFIED | 2 | Yes | Yes | Yes | Not applicable |
-| 6 | `/crops/hydroponic-strawberries/` | Hydroponic Strawberries: Complete Indoor Growing Guide | Crops | Informational | hydroponic strawberries | VERIFIED_2026-09-12: 8,100 / SD 14 | 3 | Yes | Yes | Yes | Not applicable |
+| 6 | `/crops/hydroponic-strawberries/` | Hydroponic Strawberries: Complete Indoor Growing Guide | Crops | Informational | hydroponic strawberries | VERIFIED_2026-09-12: 8,100 / SD 14 | 5 | Yes | Yes | Yes | Not applicable |
 | 7 | `/crops/nft-hydroponic-strawberries/` | NFT Hydroponic Strawberries: Setup, Flow and Plant Care | Crops | Informational | nft hydroponic strawberries | VERIFIED_2026-09-12: 390 / SD 15 | 3 | Yes | Yes | Yes | Not applicable |
 | 8 | `/crops/hydroponic-lettuce/` | Hydroponic Lettuce: Complete Home Growing Guide | Crops | Informational | hydroponic lettuce | VERIFIED_2026-09-12: 4,400 / SD 27 | 3 | Yes | Yes | Yes | Not applicable |
 | 9 | `/crops/hydroponic-lettuce-systems/` | Hydroponic Lettuce Systems Compared: DWC, NFT and Kratky | Crops | Transactional research | hydroponic lettuce systems | VERIFIED_2026-09-12: 1,000 / SD 28 | 3 | Yes | Yes | Yes | Not applicable |
@@ -42,13 +42,13 @@ and present in the built sitemap respectively.
 | 21 | `/reviews/masterblend-hydroponic-nutrients/` | Masterblend Hydroponic Nutrients: Beginner Setup Guide | Reviews | Transactional research | masterblend hydroponic nutrients | METRIC_NOT_REVERIFIED | 2 | Yes | Yes | Yes | manufacturer-spec-only |
 | 22 | `/reviews/general-hydroponics-nutrients/` | General Hydroponics Nutrients: How the System Works | Reviews | Transactional research | general hydroponics hydroponic nutrients | METRIC_NOT_REVERIFIED | 2 | Yes | Yes | Yes | manufacturer-spec-only |
 | 23 | `/best/hydroponic-systems-for-sale/` | Hydroponic Systems for Sale: How to Compare Before Buying | Buyer Guides | Transactional research | hydroponic system sale | METRIC_NOT_REVERIFIED | 3 | Yes | Yes | Yes | externally-researched |
-| 24 | `/best/best-hydroponic-system-for-home-growers/` | What Is the Best Hydroponic System for Home Growers? | Buyer Guides | Commercial research | what is the best hydroponic system | METRIC_NOT_REVERIFIED | 3 | Yes | Yes | Yes | externally-researched |
+| 24 | `/best/hydroponic-system-for-home-growers/` | What Is the Best Hydroponic System for Home Growers? | Buyer Guides | Commercial research | what is the best hydroponic system | METRIC_NOT_REVERIFIED | 3 | Yes | Yes | Yes | externally-researched |
 | 25 | `/systems/smart-indoor-hydroponic-systems/` | Smart Indoor Hydroponic Systems: Features Worth Paying For | Systems | Transactional research | smart indoor hydroponic system | METRIC_NOT_REVERIFIED | 2 | Yes | Yes | Yes | externally-researched |
 
 ## Verified controls
 
 - Every page has at least two visible sources and all expected source IDs
-  resolve to the 22-record registry.
+  resolve to the 24-record registry.
 - Titles, descriptions, routes, primary intent/target combinations, and
   canonical destinations are unique; all routes use the accepted section
   architecture.
@@ -65,10 +65,26 @@ and present in the built sitemap respectively.
   rating, star score, Offer, unsupported winner, or ranking guarantee appears.
 - Accepted M04 data and M05 commercial controls were not weakened.
 
+## Independent-audit correction evidence
+
+The first independent audit rejected the strawberry page's direct coverage of
+day-length and indoor pollination claims and the duplicated `best` segment in
+ID 24's branch-only route. The corrective pass added two authoritative
+University of Minnesota Extension records, mapped each claim explicitly in the
+source ledger, and completed a focused evidence-boundary review of all 25
+production pages. No additional material gap was found. M04 pH/EC records were
+not changed.
+
+ID 24 now builds, self-canonicalizes, appears in the sitemap, and appears in
+Pagefind only at `/best/hydroponic-system-for-home-growers/`. The old
+`/best/best-hydroponic-system-for-home-growers/` path has no generated page,
+sitemap entry, or Pagefind result. Automated validation also rejects future
+accidental `/best/best-*` routes.
+
 ## Independent audit boundary
 
 Automated checks establish structural and declared-integrity properties; they
 cannot independently prove scientific adequacy, editorial completeness, or
 search intent quality. Those judgments remain for the independent ChatGPT M06
-audit. M06 is ready for that audit but is not self-accepted. M07 remains
+re-audit. M06 is ready for that re-audit but is not self-accepted. M07 remains
 `NOT_STARTED` and `NOT_AUTHORIZED`.

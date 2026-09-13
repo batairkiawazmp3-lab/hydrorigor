@@ -1,7 +1,7 @@
 # Current Handoff
 
 ## State
-READY_FOR_CHATGPT_AUDIT
+READY_FOR_CHATGPT_M06_REAUDIT
 
 ## Authoritative local path
 `D:\hydrorigor`
@@ -26,23 +26,30 @@ Nutrients & Water, 5 Buyer Guides, and 2 Reviews. The workbook was not modified.
 Implementation commit:
 `b67238ac991020848ae9f616df335ed334d96679`.
 
+Corrective implementation commit:
+`5a275b8b08648644242dfba4cd33ab74dce1ba2a`.
+
 Pull request #6:
 `https://github.com/batairkiawazmp3-lab/hydrorigor/pull/6` — OPEN and UNMERGED.
 
-The implementation commit passed `ci / quality` and `governance /
+The corrective implementation commit passed `ci / quality` and `governance /
 m00-governance` on both push and pull-request events.
 
 ## Completed M06 scope
 
 - 25 strategy-defined non-draft production pages: 23 articles and 2
   manufacturer-documentation reviews
-- typed content manifest, 22-source editorial registry, and source-backed
+- typed content manifest, 24-source editorial registry, and source-backed
   product identities for the two workbook-named nutrient systems
 - content plan, authorized keyword record, source ledger, and internal link map
 - section-landing, homepage, and Start Here discovery updates
 - typed external-research article scope and manufacturer-only review evidence
-- M06 content validator, 10 focused unit tests, CI integration, all-route
+- M06 content validator, 12 focused unit tests, CI integration, all-route
   Pagefind/sitemap coverage, and built-output QA
+- direct UMN Extension evidence for strawberry day-length and pollination
+  claims, plus a documented all-25-page evidence sanity pass
+- stable ID 24 route at `/best/hydroponic-system-for-home-growers/`, with the
+  old duplicated-section path absent and prohibited by regression checks
 
 ## Commands run
 
@@ -59,9 +66,13 @@ m00-governance` on both push and pull-request events.
 - `npm run test:content`
 - `npm run build`
 - `npm run test:search`
+- focused evidence-boundary review across all 25 production pages
+- built-output checks for both strawberry sources and the corrected/retired ID
+  24 paths
 - representative built-HTML metadata/evidence inspection
 - generated-site internal-link crawl
 - `git commit -m "feat(m06): publish first content wave"`
+- `git commit -m "fix(m06): tighten provenance and route stability"`
 - `git push --set-upstream origin m06-content-wave-1`
 - `gh pr create --base main --head m06-content-wave-1`
 - `gh pr checks 6 --watch`
@@ -76,20 +87,27 @@ m00-governance` on both push and pull-request events.
 - M06 content count/distribution/source/link/commercial validation: PASS
 - lint: PASS
 - Astro check: PASS — 79 files, 0 errors, 0 warnings, 0 hints
-- unit/regression tests: PASS — 86/86
+- unit/regression tests: PASS — 88/88
 - M04 data validation: PASS
 - M05 commercial validation: PASS
 - static build: PASS — 48 pages
-- sitemap: PASS — 43 eligible URLs, all 25 M06 pages included
-- Pagefind: PASS — 43 eligible pages indexed
+- M06 source registry: PASS — 24 records; strawberry guide has five visible
+  sources with direct day-length and pollination evidence
+- sitemap: PASS — 43 eligible URLs, all 25 M06 pages and corrected ID 24 route included
+- Pagefind: PASS — 43 eligible pages / 2,014 words indexed
 - search smoke: PASS — 44 public routes checked, all 25 M06 routes included
-- generated internal-link crawl: PASS — 1,630 href references resolved
-- implementation-head `ci / quality`: PASS on push and pull-request events
-- implementation-head `governance / m00-governance`: PASS on push and
+- old ID 24 route: PASS — no generated page, sitemap entry, or Pagefind result
+- generated internal-link crawl: PASS — 1,506 href references resolved across
+  the 44 public routes under test
+- corrective-head `ci / quality`: PASS on push and pull-request events
+- corrective-head `governance / m00-governance`: PASS on push and
   pull-request events
 
 ## Failed checks
-None.
+The first independent audit rejected direct provenance for two strawberry
+claims and ID 24's duplicated route segment. Both findings were corrected in
+`5a275b8b08648644242dfba4cd33ab74dce1ba2a`; the final independent re-audit is
+pending. No local or corrective-head CI check failed.
 
 ## Known limitations
 The two named nutrient-system pages are limited to current manufacturer
@@ -120,7 +138,7 @@ No project or production-service secret was added.
 Not deployed; deployment is explicitly unauthorized.
 
 ## Exact next-agent instruction
-Perform the independent ChatGPT M06 content/evidence audit against the pull
-request and `milestones/M06/REALITY_AUDIT.md`. Accept or return narrowly scoped
-findings. Do not merge the pull request or authorize/start M07 as part of that
-audit.
+Perform the independent ChatGPT M06 content/evidence re-audit against pull
+request #6 and `milestones/M06/REALITY_AUDIT.md`. Accept or return narrowly
+scoped findings. Do not merge the pull request or authorize/start M07 as part
+of that re-audit.
