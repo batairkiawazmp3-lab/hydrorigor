@@ -96,3 +96,44 @@ Chrome 152, default mobile slow-4G / 4x CPU / 412 × 823 viewport.
 Search SEO 66 is expected for its intentional noindex state and is not asserted.
 All 11 indexable routes meet SEO 100. All 12 routes meet every other locked
 budget. This is local lab evidence only, not deployed CWV or field INP.
+
+All individual M07 samples also stayed within the hard limits: minimum
+Performance 99, maximum LCP 1,484.2 ms, maximum TBT 92 ms, and CLS 0. Lighthouse
+reported its slower-than-reference host CPU warning in 31 of 36 samples. The
+default 4x slowdown was retained; no calibration or threshold relaxation was
+applied. Compare lab environments cautiously rather than treating these
+numbers as production field measurements.
+
+## Reconstructed accepted M06 baseline — 2026-09-17
+
+Built clean commit `a01934e7e2379b38249a6562f7697febddc20a2c` in an isolated
+detached worktree with its original lockfile (`npm ci`, `npm run build`: PASS;
+48 pages / Pagefind 43 pages). The worktree remained clean. Measured all nine
+required baseline routes three times using the corrected launcher and the
+same default-mobile profile and hard budgets as M07. This reconstruction was
+performed after optimization to fill the missing pristine-source evidence; it
+is not claimed to have been collected before implementation. Historical
+chronology above is retained.
+
+| Route | Samples | Performance | Accessibility | SEO | LCP ms | CLS | TBT ms |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| / | 3 | 97 | 96 | 100 | 1758 | 0.0002 | 1.5 |
+| /start/ | 3 | 82 | 95 | 100 | 3472 | 0.0236 | 0.0 |
+| /systems/indoor-hydroponic-systems-for-home/ | 3 | 83 | 96 | 100 | 3335 | 0.0000 | 0.0 |
+| /crops/hydroponic-strawberries/ | 3 | 76 | 96 | 100 | 4083 | 0.0087 | 0.0 |
+| /nutrients-water/hydroponic-nutrients/ | 3 | 83 | 96 | 100 | 3326 | 0.0000 | 0.0 |
+| /best/hydroponic-system-for-home-growers/ | 3 | 83 | 96 | 100 | 3301 | 0.0151 | 0.0 |
+| /reviews/masterblend-hydroponic-nutrients/ | 3 | 79 | 96 | 100 | 3690 | 0.0000 | 0.0 |
+| /tools/ph-ec-targets/ | 3 | 83 | 96 | 100 | 3396 | 0.0132 | 0.0 |
+| /tools/nutrient-mixing-calculator/ | 3 | 82 | 96 | 100 | 3479 | 0.0001 | 0.0 |
+
+Baseline command exited 1 with 25 failed assertions; all 27 reports
+were successfully exported. These are accepted-M06 source measurements against
+the newly introduced M07 gate, not failures of the final M07 build. They are
+not suppressed or used to retroactively reject the historical M06 acceptance.
+
+External font loading and original contrast behavior are included in this
+baseline. Host/network variation prevents attributing every score difference
+solely to code. The final M07 matrix above and successful GitHub CI independently
+establish the current gate. Raw baseline JSON is retained locally under ignored
+`.agent/tmp/m06-final/`; M07 JSON is separate under `.agent/tmp/m07-final/`.

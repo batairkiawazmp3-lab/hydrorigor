@@ -26,8 +26,8 @@ This repository is the single HydroRigor website project.
 ## Current status
 
 M01 — Foundation through M06 — Content Wave 1 are accepted and merged. M07 —
-Quality & Observability is authorized and in progress on
-`m07-quality-observability`. M08 and later milestones are not started or
+Quality & Observability is implemented on `m07-quality-observability` and
+awaits independent ChatGPT audit in PR #7. M08 and later milestones are not started or
 authorized.
 
 ## Local validation

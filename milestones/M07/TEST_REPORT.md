@@ -20,7 +20,7 @@ Source baseline: `a01934e7e2379b38249a6562f7697febddc20a2c`.
 | `npm run test:e2e` | PASS — 22 Chromium functional tests; no unexpected console errors in monitored routes |
 | `npm run test:a11y` | PASS — 17 tests; no scanned WCAG A/AA violations |
 | `npm run test:lighthouse` | PASS — corrected 12-route, 36-sample default-mobile matrix; no failed assertions |
-| GitHub CI | NOT RUN for M07; no PR exists |
+| GitHub CI | PASS — implementation e80277f, both push and PR: quality and m00-governance |
 
 The command `audit:prod` executes `npm audit --omit=dev --audit-level=high`.
 The broader advisory inventory has 10 dev-tool findings: 7 high, 1 moderate,
@@ -45,7 +45,7 @@ baseline limitation. They are not relabeled as successful runs.
 
 The restored-profile single-route diagnostic measured `/systems/` at
 Performance 89, Accessibility 100, SEO 100, LCP 1,268 ms, CLS 0 and TBT 445 ms.
-That diagnostic is evidence of the unresolved performance issue, not the
+That diagnostic records the former launcher problem, not the corrected
 three-sample final matrix. No field INP was measured; its <200 ms target is
 deferred to authorized production measurement.
 
@@ -60,3 +60,25 @@ on 2026-09-17 after their final test-only changes.
 Local raw logs and recovered Lighthouse JSON are ignored under `.agent/tmp/`;
 current reports are ignored under `.lighthouseci/`, `test-results/` and
 `playwright-report/`. Only intentional measurement summaries are versioned.
+
+## Baseline reconstruction and CI evidence
+
+The untouched accepted M06 commit was rebuilt separately on 2026-09-17 using
+its original lockfile: npm ci and build passed. Its nine-route / 27-sample
+measurement exited 1 with 25 failed assertions against M07 budgets. The exact
+median table is in the baseline document. This comparison was reconstructed
+after optimization; the original baseline-first procedure was missed and is
+explicitly disclosed for independent audit. It does not invalidate the passing
+M07 local matrix.
+
+Implementation `e80277f0a82d4dcce9bafba78b12b1ec08d365f3` passed all four checks:
+
+- [push quality](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35178652068): SUCCESS
+- [PR quality](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35178671214): SUCCESS
+- [push governance](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35178652083): SUCCESS
+- [PR governance](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35178671222): SUCCESS
+
+These CI quality jobs include Chromium smoke, axe and all 36 Lighthouse
+captures on Linux in addition to the complete static/integrity gates. The
+subsequent documentation-only head must pass the same checks before the final
+audit handoff; PR #7 remains open and must not be merged without acceptance.

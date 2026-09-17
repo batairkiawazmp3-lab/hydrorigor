@@ -48,9 +48,11 @@ mobile profile. It also strengthened public-fixture/canonical validation and
 search coverage. None of these changes reimplements completed M06 content.
 
 Historical failed measurements remain summarized in
-`docs/research/M07_QUALITY_BASELINE.md`. A pristine accepted-M06 performance
-baseline was not found; the first preserved collection already contained M07
-changes. This evidence limitation is not claimed away.
+`docs/research/M07_QUALITY_BASELINE.md`. The first preserved collection already
+contained M07 changes. Recovery rebuilt exact accepted commit a01934e in an
+isolated worktree with its original lockfile and measured all nine required
+routes three times. The baseline-first chronological requirement was missed;
+the retrospective reconstruction and its 25 failed assertions are disclosed.
 
 ## Integrity and external effects
 
@@ -58,8 +60,22 @@ All 25 production pages, 24 editorial sources, strawberry provenance, sourced
 pH/EC values and manufacturer-only review boundaries remain intact. No content
 IDs 26–100, merchants, affiliate relationships, ratings or prices were added.
 Package/advisory services and official public documentation were read. Existing
-GitHub access was used read-only to check for a PR; no credential value was
-printed. No production service, domain, DNS or deployment was changed.
+GitHub authentication was used to push the authorized branch, create PR #7
+and read its CI checks; no credential value was printed. No production service, domain, DNS or deployment was changed.
 
 Actual gate results and remaining blockers are recorded in `TEST_REPORT.md`
 and `REALITY_AUDIT.md`; this implementation report does not certify acceptance.
+
+## Delivery
+
+Implementation commit: `e80277f0a82d4dcce9bafba78b12b1ec08d365f3`.
+Pull request: [#7](https://github.com/batairkiawazmp3-lab/hydrorigor/pull/7).
+All implementation-head push/PR quality and governance checks succeeded.
+Documentation-only finalization records baseline comparison, CI and handoff;
+its exact head must also pass before independent audit. No merge is authorized.
+
+40 files changed: state/handoff and README; CI/ignore/package configuration;
+four M07 milestone documents; three research and two launch documents;
+Lighthouse/Playwright configuration; four quality/server scripts; search module;
+analytics/SEO/layout and minimal page/style fixes; updated regression tests
+and three browser-suite files. No accepted content, data or workbook changed.
