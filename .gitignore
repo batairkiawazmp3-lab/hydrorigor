@@ -19,6 +19,7 @@ Thumbs.db
 coverage/
 playwright-report/
 test-results/
+.lighthouseci/
 
 # Local agent scratch
 .agent/tmp/

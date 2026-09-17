@@ -13,8 +13,11 @@ test('brand tokens match approved HydroRigor palette', async () => {
 });
 
 test('font families are configured', async () => {
+  const css = await read('src/styles/global.css');
+  for (const family of ['Manrope', 'Inter', 'IBM Plex Mono']) assert.ok(css.includes(family), `missing font family ${family}`);
+
   const layout = await read('src/layouts/BaseLayout.astro');
-  for (const family of ['Manrope', 'Inter', 'IBM+Plex+Mono']) assert.ok(layout.includes(family), `missing font family ${family}`);
+  assert.doesNotMatch(layout, /fonts\.googleapis|fonts\.gstatic/);
 });
 
 test('homepage preserves M01 scope boundary', async () => {

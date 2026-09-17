@@ -1,0 +1,112 @@
+import { expect, test } from '@playwright/test';
+import { fixtureRoutes, representativeRoutes, retiredRoutes } from './routes.mjs';
+
+function collectBrowserFailures(page) {
+  const failures = [];
+  page.on('pageerror', (error) => failures.push(`pageerror: ${error.message}`));
+  page.on('console', (message) => {
+    if (message.type() === 'error') failures.push(`console: ${message.text()}`);
+  });
+  page.on('request', (request) => {
+    if (/_vercel\/insights|vercel-insights|vercel-analytics/.test(request.url())) {
+      failures.push(`unauthorized default analytics request: ${request.url()}`);
+    }
+  });
+  return failures;
+}
+
+test.describe('representative route smoke', () => {
+  for (const route of representativeRoutes) {
+    test(`${route.path} renders meaningful static content`, async ({ page }) => {
+      const browserFailures = collectBrowserFailures(page);
+      const response = await page.goto(route.path, { waitUntil: 'networkidle' });
+
+      expect(response?.ok(), `${route.path} returned ${response?.status()}`).toBeTruthy();
+      await expect(page.getByRole('heading', { level: 1, name: route.heading })).toBeVisible();
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+        'href',
+        `https://hydrorigor.com${route.path}`,
+      );
+      expect(browserFailures).toEqual([]);
+    });
+  }
+});
+
+test('desktop primary navigation reaches a real section', async ({ page }) => {
+  await page.goto('/');
+  const primary = page.getByRole('navigation', { name: 'Primary navigation' });
+  await expect(primary.getByRole('link', { name: 'Start Here' })).toBeVisible();
+  await primary.locator('summary').click();
+  await primary.getByRole('link', { name: 'Systems' }).click();
+  await expect(page).toHaveURL('/systems/');
+  await expect(page.getByRole('heading', { level: 1, name: /Hydroponic systems/i })).toBeVisible();
+});
+
+test('mobile navigation remains visible, keyboard operable, and contained', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  await page.goto('/');
+
+  const primary = page.getByRole('navigation', { name: 'Primary navigation' });
+  await expect(primary).toBeVisible();
+  await expect(primary.getByRole('link', { name: 'Start Here' })).toBeVisible();
+  const summary = primary.locator('summary');
+  await summary.focus();
+  await expect(summary).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(primary.getByRole('link', { name: 'Crops' })).toBeVisible();
+  await primary.getByRole('link', { name: 'Crops' }).click();
+  await expect(page).toHaveURL('/crops/');
+
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  expect(overflow).toBeLessThanOrEqual(1);
+});
+
+test('static search returns a legitimate public page and an honest empty state', async ({ page }) => {
+  const browserFailures = collectBrowserFailures(page);
+  await page.goto('/search/');
+  const input = page.getByRole('searchbox', { name: 'Search terms' });
+
+  await input.fill('nutrient mixing calculator');
+  await page.getByRole('button', { name: 'Search' }).click();
+  await expect(page.getByRole('status')).toContainText(/result/i);
+  await expect(page.locator('#search-results a[href="/tools/nutrient-mixing-calculator/"]')).toBeVisible();
+
+  await input.fill('hydroponic strawberries');
+  await page.getByRole('button', { name: 'Search' }).click();
+  await expect(page.locator('#search-results a[href="/crops/hydroponic-strawberries/"]')).toBeVisible();
+
+  await input.fill('zzzx-hydrorigor-no-result-zzzx');
+  await page.getByRole('button', { name: 'Search' }).click();
+  await expect(page.getByRole('status')).toContainText('No results found');
+  expect(browserFailures).toEqual([]);
+});
+
+test('nutrient calculator validates and produces the independent known answer', async ({ page }) => {
+  await page.goto('/tools/nutrient-mixing-calculator/');
+  await page.getByLabel('Volume', { exact: true }).fill('10');
+  await page.getByLabel('Dose printed on the label').fill('2');
+  await page.getByRole('button', { name: 'Scale label dose' }).click();
+  await expect(page.getByRole('status')).toContainText('Scaled amount: 20 mL');
+
+  await page.getByLabel('Volume', { exact: true }).fill('0');
+  await page.getByRole('button', { name: 'Scale label dose' }).click();
+  await expect(page.getByRole('status')).toContainText(/positive finite number/i);
+});
+
+for (const route of retiredRoutes) {
+  test(`${route} retains honest 404 behavior`, async ({ page }) => {
+    const response = await page.goto(route);
+    expect(response?.status()).toBe(404);
+    await expect(page.getByRole('heading', { level: 1, name: 'That channel runs dry.' })).toBeVisible();
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
+  });
+}
+
+for (const route of fixtureRoutes) {
+  test(`${route} remains non-public and noindex`, async ({ page }) => {
+    const response = await page.goto(route);
+    expect(response?.ok()).toBeTruthy();
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
+    await expect(page.locator('main')).not.toHaveAttribute('data-pagefind-body', 'true');
+  });
+}

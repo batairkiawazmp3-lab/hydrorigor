@@ -11,14 +11,16 @@ interface Props {
   publishDate?: Date | string | undefined;
   updatedDate?: Date | string | undefined;
   image?: SeoImage | undefined;
+  omitCanonical?: boolean | undefined;
 }
 
 const metadata = buildSeoMetadata(Astro.props);
+const { omitCanonical } = Astro.props;
 ---
 <title>{metadata.title}</title>
 <meta name="description" content={metadata.description} />
 <meta name="robots" content={metadata.robots} />
-<link rel="canonical" href={metadata.canonical} />
+{!omitCanonical && <link rel="canonical" href={metadata.canonical} />}
 
 <meta property="og:site_name" content={metadata.openGraph.siteName} />
 <meta property="og:type" content={metadata.openGraph.type} />
