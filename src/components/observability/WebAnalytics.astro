@@ -1,0 +1,6 @@
+---
+import Analytics from '@vercel/analytics/astro';
+
+const analyticsEnabled = import.meta.env.PUBLIC_ENABLE_VERCEL_ANALYTICS === 'true';
+---
+{analyticsEnabled && <Analytics mode="production" />}

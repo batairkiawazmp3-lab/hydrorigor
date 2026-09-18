@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import WebAnalytics from '../components/observability/WebAnalytics.astro';
 import SEO from '../components/seo/SEO.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { buildWebsiteJsonLd } from '../lib/structured-data.ts';
@@ -17,8 +18,9 @@ interface Props {
   updatedDate?: Date | string | undefined;
   image?: SeoImage | undefined;
   jsonLd?: object | object[] | undefined;
+  omitCanonical?: boolean | undefined;
 }
-const { title, description, canonical, noindex, type, publishDate, updatedDate, image, jsonLd } = Astro.props;
+const { title, description, canonical, noindex, type, publishDate, updatedDate, image, jsonLd, omitCanonical } = Astro.props;
 const structuredData = [buildWebsiteJsonLd(), ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
 const searchable = !noindex;
 ---
@@ -38,16 +40,15 @@ const searchable = !noindex;
       publishDate={publishDate}
       updatedDate={updatedDate}
       image={image}
+      omitCanonical={omitCanonical}
     />
     <JsonLd data={structuredData} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
     <a class="hr-focus sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-3" href="#main-content">Skip to content</a>
     <SiteHeader />
-    <main id="main-content" data-pagefind-body={searchable ? true : undefined}><slot /></main>
+    <main id="main-content" tabindex="-1" data-pagefind-body={searchable ? true : undefined}><slot /></main>
     <SiteFooter />
+    <WebAnalytics />
   </body>
 </html>

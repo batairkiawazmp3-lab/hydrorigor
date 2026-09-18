@@ -4,11 +4,13 @@
   --color-hydro-deep: #0b3d3b;
   --color-hydro-teal: #16756f;
   --color-leaf-signal: #6fa86b;
+  --color-leaf-bright: #a6d99f;
   --color-water-mist: #eaf4f1;
   --color-mineral-sand: #f4f1ea;
   --color-ink: #172126;
   --color-slate: #556266;
   --color-amber-measure: #c9872d;
+  --color-white: #ffffff;
 
   --font-heading: "Manrope", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -38,10 +40,6 @@ body {
   background:
     radial-gradient(circle at 88% 4%, rgb(111 168 107 / 0.14), transparent 25rem),
     linear-gradient(180deg, #ffffff 0%, var(--color-mineral-sand) 55%, #ffffff 100%);
-}
-
-a {
-  color: inherit;
 }
 
 ::selection {

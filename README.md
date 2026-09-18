@@ -25,10 +25,10 @@ This repository is the single HydroRigor website project.
 
 ## Current status
 
-M01 — Foundation, M02 — Content Engine & SEO, M03 — Core Information
-Architecture, M04 — Data & Tools, and M05 — Affiliate & Reviews are accepted
-and merged. M06 — Content Wave 1 is accepted and uses pull request #6 as its
-integration vehicle. M07 and later milestones are not started or authorized.
+M01 — Foundation through M06 — Content Wave 1 are accepted and merged. M07 —
+Quality & Observability: ACCEPTED by independent ChatGPT audit. PR #7 is the
+M07 integration vehicle; finalization requires green pre-merge and post-merge CI. M08 and later milestones are not started or
+authorized.
 
 ## Local validation
 
@@ -42,6 +42,19 @@ npm.cmd run test:commerce
 npm.cmd run test:content
 npm.cmd run build
 npm.cmd run test:search
+npm.cmd run test:links
+npm.cmd run test:security
+npm.cmd run audit:prod
+npx.cmd playwright install chromium
+npm.cmd run test:e2e
+npm.cmd run test:a11y
+npm.cmd run test:lighthouse
 ```
+
+M07 uses Chromium, axe WCAG A/AA scans and three default-mobile Lighthouse
+samples per route. See `milestones/M07/TEST_REPORT.md` for actual results and
+`docs/research/M07_QUALITY_BASELINE.md` for performance measurements. Generated
+browser and Lighthouse reports are ignored. Analytics is prepared but disabled
+by default; Search Console preparation is documented without connection.
 
 No production deployment is authorized by setup alone.

@@ -134,6 +134,7 @@ test('trust pages state current evidence and service boundaries honestly', async
 
 test('search is accessible, noindex, and the only page with application JavaScript', async () => {
   const search = await read('src/pages/search.astro');
+  const searchScript = await read('public/scripts/search.js');
   const sourceFiles = [
     'src/pages/index.astro',
     'src/pages/start.astro',
@@ -148,8 +149,9 @@ test('search is accessible, noindex, and the only page with application JavaScri
   assert.match(search, /role="search"/);
   assert.match(search, /type="search"/);
   assert.match(search, /aria-live="polite"/);
-  assert.match(search, /No results found/);
-  assert.match(search, /import\('\/pagefind\/pagefind\.js'\)/);
+  assert.match(search, /src="\/scripts\/search\.js"/);
+  assert.match(searchScript, /No results found/);
+  assert.match(searchScript, /import\('\/pagefind\/pagefind\.js'\)/);
   assert.equal((search.match(/<script/g) ?? []).length, 1);
 
   for (const file of sourceFiles) assert.doesNotMatch(await read(file), /<script|client:(load|idle|visible|media|only)/);

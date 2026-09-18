@@ -1,152 +1,112 @@
 # Current Handoff
 
 ## State
-ACCEPTED
+M07 — Quality & Observability: ACCEPTED. Independent ChatGPT audit accepted
+head `2f573de06d4c73d3519fda667675ab1d49e0b560` on 2026-09-18.
+M06: ACCEPTED AND MERGED. M08: NOT_STARTED / NOT_AUTHORIZED.
+Only M07 acceptance documentation, green-head squash merge and post-merge
+synchronization/CI verification are authorized. Do not start M08.
 
-## Authoritative local path
-`D:\hydrorigor`
+## Source and delivery
+- Working copy: `D:\hydrorigor`
+- Remote: `batairkiawazmp3-lab/hydrorigor`
+- Branch: `m07-quality-observability`
+- Accepted M06 baseline: `a01934e7e2379b38249a6562f7697febddc20a2c`
+- M07 implementation: `e80277f0a82d4dcce9bafba78b12b1ec08d365f3`
+- PR #7: https://github.com/batairkiawazmp3-lab/hydrorigor/pull/7
+- Accepted final PR head: `2f573de06d4c73d3519fda667675ab1d49e0b560`
+- Accepted-head push and PR quality/governance all passed. Acceptance-only
+  documentation must pass the same checks before squash merge. Verify merge-SHA
+  CI afterward; retain the M07 branch until verification completes.
 
-## Authoritative remote
-`batairkiawazmp3-lab/hydrorigor`
+## Completed work — do not repeat
+M07 quality scripts, strict CSP/header preparation, gated disabled analytics,
+Search Console preparation, browser/axe suites, CI, built-link/security
+validators, external-font removal, contrast and skip-link fixes are complete.
+No accepted M06 article, data registry or workbook was changed. The original
+clean-baseline/PR #6/workbook checks were already completed and preserved.
 
-## Current milestone
-M06 — Content Wave 1
+Lighthouse launcher now inherits the pinned chrome-launcher's standard flags,
+retains the default mobile profile and enforces unchanged hard budgets. The
+required systems/nutrients/ID 24 routes are covered. HSTS remains deferred.
+Implementation/report details are in `milestones/M07/` and `docs/research/M07_*`.
 
-## Source commit / branch state
-M05 was independently accepted and pull request #5 was squash-merged. Local
-`main` and `origin/main` were verified clean and synchronized at
-`ac2356cc1d238e43158388d2506004a3800d6895` before branch
-`m06-content-wave-1` was created.
+## Passed local validation — 2026-09-16–17
+- npm ci: PASS; Node 24.18.0
+- lint and Astro check: PASS (91 files, zero diagnostics)
+- unit/regression: PASS 96/96, including final median guard
+- data, commerce, content: PASS; 25 M06 pages and 24 editorial sources
+- build: PASS 48 pages; Pagefind 43 pages / 2,014 words
+- search: PASS 44 public routes
+- links: PASS 1,823 page references, 51 asset references, 56 fragments,
+  44 sitemap locations (43 pages plus child sitemap)
+- security: PASS 7 header policies, strict CSP, no default analytics,
+  no unexpected script origins, zero executable scripts on all 25 M06 pages
+- production audit: PASS zero vulnerabilities
+- Chromium: PASS 22/22, including no analytics requests and no unexpected
+  console errors on monitored public routes
+- axe/focus: PASS 17/17, zero tested WCAG A/AA violations or rule waivers
+- Lighthouse: PASS 36 captures / 12 routes; median Performance/Accessibility
+  100 everywhere, SEO 100 on 11 indexable routes (noindex search 66 expected),
+  LCP 1,060–1,232 ms, CLS 0, TBT 0–39 ms. Every individual capture also meets
+  the enforced thresholds. Full table is in M07_QUALITY_BASELINE.md.
 
-The authoritative workbook was inspected read-only. Its M06 row requires the
-first 25 planned Phase 1 pages, edited, sourced, internally linked, and checked
-for duplicate intent. The implemented distribution is 4 Systems, 7 Crops, 7
-Nutrients & Water, 5 Buyer Guides, and 2 Reviews. The workbook was not modified.
+## CI evidence
+Implementation e80277f passed `ci / quality` and `governance / m00-governance`
+on both push and pull_request. Runs: 35178652068, 35178671214 (quality),
+35178652083, 35178671222 (governance). Linux CI includes every M07 browser,
+accessibility and Lighthouse gate. Documentation-only finalization triggers
+these same checks; inspect PR #7's current head instead of rerunning local work.
 
-Implementation commit:
-`b67238ac991020848ae9f616df335ed334d96679`.
+## Baseline and evidence history
+The original task measured an M07 working build, not a pristine M06 checkout,
+and initially used an incomplete route matrix/custom viewport/launcher. These
+failed measurements are retained rather than relabeled as successful.
+A later 1.2x CPU edit was reverted to the required default 4x mobile profile.
 
-Corrective implementation commit:
-`5a275b8b08648644242dfba4cd33ab74dce1ba2a`.
+Recovery rebuilt exact accepted M06 commit a01934e with its original lockfile
+in isolated `.agent/tmp/m06-baseline`; npm ci/build passed and its worktree is
+clean. All nine required routes were measured three times. The baseline exited
+1 with 25 failed M07-budget assertions; the full table is recorded. This was
+reconstructed AFTER optimization, so the originally required baseline-first
+chronology was not satisfied. The independent audit accepted this procedural deviation.
+Do not repeat these completed collections.
 
-Pull request #6:
-`https://github.com/batairkiawazmp3-lab/hydrorigor/pull/6` — accepted M06
-integration vehicle. The accepted PR head is
-`9ad8bd2b43c1a8d088f9c2bc1c5a3a4d426c1b82`.
+Ignored raw evidence:
+- `.agent/tmp/m07-final/`: passing M07 JSON and empty assertion failures
+- `.agent/tmp/m06-final/`: reconstructed M06 JSON and failed baseline assertions
+- `.agent/tmp/m07-recovery/`: earlier failed/partial measurements
+- `.agent/tmp/m07-*.log` and `.agent/tmp/m06-baseline-*.log`: command output
+- `.lighthouseci/`: most recent baseline raw output (do not mistake it for M07)
 
-The corrective implementation commit passed `ci / quality` and `governance /
-m00-governance` on both push and pull-request events.
+## Limitations and deferred work
+INP is NOT field-measured; <200 ms is the deferred production field target.
+TBT is only the lab proxy. Lighthouse warned about the slow local host in
+31/36 final M07 samples; default throttling was retained and gates passed.
+All-package audit has 10 dev-only LHCI-tree findings (7 high, 1 moderate, 2 low);
+production audit is clean. The independent audit accepted these as M07
+development-tool debt for future toolchain maintenance / separately authorized
+M08 preflight. No forced/breaking dependency fix was applied.
+Automated accessibility/security checks are bounded, not certifications.
+Production edge headers, domain HSTS and live service behavior remain unverified.
 
-The independent ChatGPT final re-audit accepted the exact 25-page Wave 1
-scope, 24-source registry, strawberry provenance correction, 25-page evidence
-sanity pass, stable ID 24 route, M04/M05 boundaries, keyword discipline,
-internal discovery, sitemap/Pagefind behavior, fixture exclusions, and all
-content/search/CI validation.
+## External side effects / secrets / deployment
+Dependencies and public docs were fetched. Existing GitHub authentication was
+used for authorized branch push, PR creation/update and CI inspection. No secret
+value was exposed or added. No production deployment, service/project creation,
+analytics activation, Search Console connection/submission, domain/DNS,
+affiliate/merchant action, content IDs 26–100 or M08 work occurred.
 
-## Completed M06 scope
+## Exact next instruction
+Commit and push only acceptance/state documentation to m07-quality-observability.
+Wait for final-head quality and governance on push and PR; do not merge pending
+or failing checks. Squash merge PR #7 without force, retain the branch, switch
+to main and pull --ff-only. Verify clean local main equals origin/main, then
+verify quality and governance SUCCESS on the exact squash merge SHA. Record
+documentation SHA, merge SHA and final checks in the completion report / PR
+record. Stop with M07_ACCEPTED_AND_MERGED_READY_FOR_M08_AUTHORIZATION only
+after those checks pass. M08 remains NOT_STARTED / NOT_AUTHORIZED.
 
-- 25 strategy-defined non-draft production pages: 23 articles and 2
-  manufacturer-documentation reviews
-- typed content manifest, 24-source editorial registry, and source-backed
-  product identities for the two workbook-named nutrient systems
-- content plan, authorized keyword record, source ledger, and internal link map
-- section-landing, homepage, and Start Here discovery updates
-- typed external-research article scope and manufacturer-only review evidence
-- M06 content validator, 12 focused unit tests, CI integration, all-route
-  Pagefind/sitemap coverage, and built-output QA
-- direct UMN Extension evidence for strawberry day-length and pollination
-  claims, plus a documented all-25-page evidence sanity pass
-- stable ID 24 route at `/best/hydroponic-system-for-home-growers/`, with the
-  old duplicated-section path absent and prohibited by regression checks
-
-## Commands run
-
-- baseline branch/SHA/synchronization/status verification
-- read-only master-workbook extraction
-- governing-document and existing architecture review
-- `git switch -c m06-content-wave-1`
-- `npm ci`
-- `npm run lint`
-- `npm run check`
-- `npm test`
-- `npm run test:data`
-- `npm run test:commerce`
-- `npm run test:content`
-- `npm run build`
-- `npm run test:search`
-- focused evidence-boundary review across all 25 production pages
-- built-output checks for both strawberry sources and the corrected/retired ID
-  24 paths
-- representative built-HTML metadata/evidence inspection
-- generated-site internal-link crawl
-- `git commit -m "feat(m06): publish first content wave"`
-- `git commit -m "fix(m06): tighten provenance and route stability"`
-- `git push --set-upstream origin m06-content-wave-1`
-- `gh pr create --base main --head m06-content-wave-1`
-- `gh pr checks 6 --watch`
-
-## Passed checks
-
-- current branch before branching was `main`: PASS
-- local `main` equaled `origin/main`: PASS
-- required M05 merge baseline was exact: PASS
-- starting working tree clean: PASS
-- authoritative M06 count and sequence extracted: PASS — 25 Phase 1 pages
-- M06 content count/distribution/source/link/commercial validation: PASS
-- lint: PASS
-- Astro check: PASS — 79 files, 0 errors, 0 warnings, 0 hints
-- unit/regression tests: PASS — 88/88
-- M04 data validation: PASS
-- M05 commercial validation: PASS
-- static build: PASS — 48 pages
-- M06 source registry: PASS — 24 records; strawberry guide has five visible
-  sources with direct day-length and pollination evidence
-- sitemap: PASS — 43 eligible URLs, all 25 M06 pages and corrected ID 24 route included
-- Pagefind: PASS — 43 eligible pages / 2,014 words indexed
-- search smoke: PASS — 44 public routes checked, all 25 M06 routes included
-- old ID 24 route: PASS — no generated page, sitemap entry, or Pagefind result
-- generated internal-link crawl: PASS — 1,506 href references resolved across
-  the 44 public routes under test
-- corrective-head `ci / quality`: PASS on push and pull-request events
-- corrective-head `governance / m00-governance`: PASS on push and
-  pull-request events
-
-## Failed checks
-The first independent audit rejected direct provenance for two strawberry
-claims and ID 24's duplicated route segment. Both findings were corrected in
-`5a275b8b08648644242dfba4cd33ab74dce1ba2a`, and the final independent re-audit
-accepted them. No local or final corrective-head CI check failed.
-
-## Known limitations
-The two named nutrient-system pages are limited to current manufacturer
-documentation. HydroRigor performed no hands-on testing and supplies no
-performance recommendation. Other buyer-research pages compare decision
-criteria without product shortlists. No images were added; articles use the
-existing accessible text-first presentation. Keyword values can change and do
-not guarantee ranking.
-
-## Deferred work
-Workbook IDs 26–100, M07, analytics, Search Console, deployment, live
-publishing, affiliate enrollment, merchant destinations, price/availability,
-product ratings, and product acquisition/testing remain deferred and
-unauthorized.
-
-## External side effects
-Authoritative public research sources were accessed. The M06 branch was pushed,
-pull request #6 was created, and GitHub Actions was inspected. No production,
-affiliate, merchant, analytics, Search Console, Vercel, domain, DNS, or
-publishing service was changed.
-
-## Secrets accessed
-Existing GitHub authentication was used by Git and GitHub CLI for the authorized
-branch, pull-request, and checks workflow. Its value was not exposed or stored.
-No project or production-service secret was added.
-
-## Deployment status
-Not deployed; deployment is explicitly unauthorized.
-
-## Exact next-agent instruction
-Verify M06 integration status in GitHub. If pull request #6 remains open,
-complete only the authorized squash merge after its final documentation head
-passes required checks. Once merged, keep M07 `NOT_STARTED` and
-`NOT_AUTHORIZED` until separate ChatGPT authorization.
+No deployment, production project, domain/DNS mutation, HSTS activation,
+analytics activation, Search Console property/token/submission, affiliate or
+merchant changes, new content or M08 implementation is authorized.

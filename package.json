@@ -16,18 +16,28 @@
     "test:content": "node scripts/validate-content.mjs",
     "build": "astro build && pagefind --site dist",
     "test:search": "node scripts/test-search.mjs",
-    "preview": "astro preview"
+    "test:links": "node scripts/validate-links.mjs",
+    "test:security": "node scripts/validate-security.mjs",
+    "audit:prod": "npm audit --omit=dev --audit-level=high",
+    "test:e2e": "playwright test tests/e2e/smoke.spec.mjs",
+    "test:a11y": "playwright test tests/e2e/accessibility.spec.mjs",
+    "test:lighthouse": "node scripts/run-lighthouse.mjs",
+    "preview": "node scripts/serve-dist.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "8.0.1",
     "@astrojs/sitemap": "3.7.4",
     "@tailwindcss/vite": "4.3.0",
+    "@vercel/analytics": "2.0.1",
     "astro": "7.3.2",
     "tailwindcss": "4.3.0"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
+    "@axe-core/playwright": "4.13.0",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.63.0",
     "pagefind": "1.5.2",
-    "typescript": "^6.0.0"
+    "typescript": "6.0.3"
   }
 }
