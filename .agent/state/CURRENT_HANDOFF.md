@@ -1,9 +1,11 @@
 # Current Handoff
 
 ## State
-READY_FOR_AUDIT — READY_FOR_CHATGPT_M07_AUDIT after exact-head CI verification.
-M07 is implemented, not independently accepted. M06: ACCEPTED AND MERGED.
-M08: NOT_STARTED / NOT_AUTHORIZED. Do not merge PR #7 or start M08.
+M07 — Quality & Observability: ACCEPTED. Independent ChatGPT audit accepted
+head `2f573de06d4c73d3519fda667675ab1d49e0b560` on 2026-09-18.
+M06: ACCEPTED AND MERGED. M08: NOT_STARTED / NOT_AUTHORIZED.
+Only M07 acceptance documentation, green-head squash merge and post-merge
+synchronization/CI verification are authorized. Do not start M08.
 
 ## Source and delivery
 - Working copy: `D:\hydrorigor`
@@ -12,9 +14,10 @@ M08: NOT_STARTED / NOT_AUTHORIZED. Do not merge PR #7 or start M08.
 - Accepted M06 baseline: `a01934e7e2379b38249a6562f7697febddc20a2c`
 - M07 implementation: `e80277f0a82d4dcce9bafba78b12b1ec08d365f3`
 - PR #7: https://github.com/batairkiawazmp3-lab/hydrorigor/pull/7
-- Finalization changes only documentation/state. Verify its exact current head
-  has passing push and PR quality/governance checks before delivering the audit
-  handoff. Implementation-head checks already passed all four events/jobs.
+- Accepted final PR head: `2f573de06d4c73d3519fda667675ab1d49e0b560`
+- Accepted-head push and PR quality/governance all passed. Acceptance-only
+  documentation must pass the same checks before squash merge. Verify merge-SHA
+  CI afterward; retain the M07 branch until verification completes.
 
 ## Completed work — do not repeat
 M07 quality scripts, strict CSP/header preparation, gated disabled analytics,
@@ -66,7 +69,7 @@ in isolated `.agent/tmp/m06-baseline`; npm ci/build passed and its worktree is
 clean. All nine required routes were measured three times. The baseline exited
 1 with 25 failed M07-budget assertions; the full table is recorded. This was
 reconstructed AFTER optimization, so the originally required baseline-first
-chronology was not satisfied. Disclose that procedural deviation to the auditor.
+chronology was not satisfied. The independent audit accepted this procedural deviation.
 Do not repeat these completed collections.
 
 Ignored raw evidence:
@@ -81,7 +84,9 @@ INP is NOT field-measured; <200 ms is the deferred production field target.
 TBT is only the lab proxy. Lighthouse warned about the slow local host in
 31/36 final M07 samples; default throttling was retained and gates passed.
 All-package audit has 10 dev-only LHCI-tree findings (7 high, 1 moderate, 2 low);
-production audit is clean. No forced/breaking dependency fix was applied.
+production audit is clean. The independent audit accepted these as M07
+development-tool debt for future toolchain maintenance / separately authorized
+M08 preflight. No forced/breaking dependency fix was applied.
 Automated accessibility/security checks are bounded, not certifications.
 Production edge headers, domain HSTS and live service behavior remain unverified.
 
@@ -93,7 +98,15 @@ analytics activation, Search Console connection/submission, domain/DNS,
 affiliate/merchant action, content IDs 26–100 or M08 work occurred.
 
 ## Exact next instruction
-Verify final PR #7 head checks after the documentation commit; once green,
-stop for independent ChatGPT M07 audit. Audit against SPECIFICATION.md, reports,
-actual diff and linked CI. Do not implement another milestone, merge, deploy or
-activate services without the required separate authorization.
+Commit and push only acceptance/state documentation to m07-quality-observability.
+Wait for final-head quality and governance on push and PR; do not merge pending
+or failing checks. Squash merge PR #7 without force, retain the branch, switch
+to main and pull --ff-only. Verify clean local main equals origin/main, then
+verify quality and governance SUCCESS on the exact squash merge SHA. Record
+documentation SHA, merge SHA and final checks in the completion report / PR
+record. Stop with M07_ACCEPTED_AND_MERGED_READY_FOR_M08_AUTHORIZATION only
+after those checks pass. M08 remains NOT_STARTED / NOT_AUTHORIZED.
+
+No deployment, production project, domain/DNS mutation, HSTS activation,
+analytics activation, Search Console property/token/submission, affiliate or
+merchant changes, new content or M08 implementation is authorized.

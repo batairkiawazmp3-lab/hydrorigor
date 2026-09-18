@@ -2,7 +2,8 @@
 
 M06 baseline: `a01934e7e2379b38249a6562f7697febddc20a2c`, accepted and
 squash-merged through PR #6. Branch: `m07-quality-observability`.
-M07 is authorized; independent acceptance has not occurred. M08 is unauthorized.
+M07 — Quality & Observability: ACCEPTED by independent ChatGPT audit on
+2026-09-18 at head `2f573de06d4c73d3519fda667675ab1d49e0b560`. M08 is NOT_STARTED / NOT_AUTHORIZED.
 
 The original task verified the clean synchronized baseline, branch creation
 and read-only workbook row. Recovery reused that completed evidence. The
@@ -52,7 +53,8 @@ Historical failed measurements remain summarized in
 contained M07 changes. Recovery rebuilt exact accepted commit a01934e in an
 isolated worktree with its original lockfile and measured all nine required
 routes three times. The baseline-first chronological requirement was missed;
-the retrospective reconstruction and its 25 failed assertions are disclosed.
+the retrospective reconstruction and its 25 failed assertions are preserved
+as an accepted procedural deviation.
 
 ## Integrity and external effects
 
@@ -63,8 +65,8 @@ Package/advisory services and official public documentation were read. Existing
 GitHub authentication was used to push the authorized branch, create PR #7
 and read its CI checks; no credential value was printed. No production service, domain, DNS or deployment was changed.
 
-Actual gate results and remaining blockers are recorded in `TEST_REPORT.md`
-and `REALITY_AUDIT.md`; this implementation report does not certify acceptance.
+Actual gate results and independent acceptance are recorded in `TEST_REPORT.md`
+and `REALITY_AUDIT.md`. Accepted debt and limitations remain disclosed.
 
 ## Delivery
 
@@ -72,7 +74,9 @@ Implementation commit: `e80277f0a82d4dcce9bafba78b12b1ec08d365f3`.
 Pull request: [#7](https://github.com/batairkiawazmp3-lab/hydrorigor/pull/7).
 All implementation-head push/PR quality and governance checks succeeded.
 Documentation-only finalization records baseline comparison, CI and handoff;
-its exact head must also pass before independent audit. No merge is authorized.
+the independent audit accepted head 2f573de. The acceptance documentation
+head must pass all required checks before the now-authorized squash merge.
+Post-merge CI and clean main synchronization are required before stopping.
 
 40 files changed: state/handoff and README; CI/ignore/package configuration;
 four M07 milestone documents; three research and two launch documents;

@@ -1,7 +1,7 @@
 # Current Milestone
 
 Milestone: M07 — Quality & Observability
-Status: READY_FOR_AUDIT
+Status: ACCEPTED
 Previous milestone: M06 — Content Wave 1: ACCEPTED AND MERGED
 Verified baseline: a01934e7e2379b38249a6562f7697febddc20a2c
 M06 integration: pull request #6 — SQUASH_MERGED
@@ -11,9 +11,11 @@ M07 implementation: COMPLETE
 M07 branch: m07-quality-observability
 M08 status: NOT_STARTED
 M08 authorization: NOT_AUTHORIZED
-M07 independent audit: PENDING
-Exact milestone state: READY_FOR_CHATGPT_M07_AUDIT
-M07 pull request: #7 — OPEN; do not merge without independent acceptance
+M07 independent audit: ACCEPTED
+Exact milestone state: M07 — Quality & Observability: ACCEPTED
+Accepted M07 PR head: 2f573de06d4c73d3519fda667675ab1d49e0b560
+M07 integration: PR #7; squash merge authorized after final documentation-head checks pass
+Post-merge synchronization and merge-SHA CI verification required before M08 authorization
 
 M07 is limited to repository quality gates, performance, accessibility,
 security configuration, link integrity, analytics preparation, Search Console

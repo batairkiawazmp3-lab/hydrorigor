@@ -68,7 +68,7 @@ its original lockfile: npm ci and build passed. Its nine-route / 27-sample
 measurement exited 1 with 25 failed assertions against M07 budgets. The exact
 median table is in the baseline document. This comparison was reconstructed
 after optimization; the original baseline-first procedure was missed and is
-explicitly disclosed for independent audit. It does not invalidate the passing
+accepted by the independent audit as a procedural deviation. It does not invalidate the passing
 M07 local matrix.
 
 Implementation `e80277f0a82d4dcce9bafba78b12b1ec08d365f3` passed all four checks:
@@ -80,5 +80,20 @@ Implementation `e80277f0a82d4dcce9bafba78b12b1ec08d365f3` passed all four checks
 
 These CI quality jobs include Chromium smoke, axe and all 36 Lighthouse
 captures on Linux in addition to the complete static/integrity gates. The
-subsequent documentation-only head must pass the same checks before the final
-audit handoff; PR #7 remains open and must not be merged without acceptance.
+accepted head `2f573de06d4c73d3519fda667675ab1d49e0b560` also passed all four checks:
+
+- [PR quality](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35223605209): SUCCESS
+- [push quality](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35223600013): SUCCESS
+- [PR governance](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35223605112): SUCCESS
+- [push governance](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/35223600158): SUCCESS
+
+Independent ChatGPT M07 audit: ACCEPTED on 2026-09-18. The ten disclosed
+dev-only advisories (7 high, 1 moderate, 2 low) are accepted development-tool
+debt for future toolchain maintenance / separately authorized M08 preflight.
+Production audit remains clean; no forced fix or breaking downgrade was run.
+Field INP remains unmeasured, with <200 ms retained as the production target.
+
+The acceptance-only documentation head must pass full quality and governance
+before squash merge; the merge SHA must pass post-merge quality/governance.
+These new CI results will be reported with their exact SHAs in the final
+completion report and PR #7 record, without backdating outcomes here.
