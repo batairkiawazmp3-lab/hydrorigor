@@ -1,24 +1,20 @@
 # Current Milestone
 
-Milestone: M07 — Quality & Observability
-Status: ACCEPTED
-Previous milestone: M06 — Content Wave 1: ACCEPTED AND MERGED
-Verified baseline: a01934e7e2379b38249a6562f7697febddc20a2c
-M06 integration: pull request #6 — SQUASH_MERGED
-M06 independent audit: ACCEPTED
-M07 authorization: GRANTED
-M07 implementation: COMPLETE
-M07 branch: m07-quality-observability
-M08 status: NOT_STARTED
-M08 authorization: NOT_AUTHORIZED
-M07 independent audit: ACCEPTED
-Exact milestone state: M07 — Quality & Observability: ACCEPTED
-Accepted M07 PR head: 2f573de06d4c73d3519fda667675ab1d49e0b560
-M07 integration: PR #7; squash merge authorized after final documentation-head checks pass
-Post-merge synchronization and merge-SHA CI verification required before M08 authorization
+Milestone: M08 — Production Launch
+Status: IN_PROGRESS
+M08 authorization: GRANTED_WITH_HUMAN_LAUNCH_GATES
+Previous milestone: M07 — Quality & Observability: ACCEPTED AND MERGED
+M07 integration: PR #7 — SQUASH_MERGED
+Verified baseline: 53e80f5db2633d06d08ec4e3684820465bca7f8c
+M07 post-merge quality: SUCCESS
+M07 post-merge governance: SUCCESS
+Branch: m08-production-launch
+Specification: milestones/M08/SPECIFICATION.md
+M09 status: NOT_STARTED
+M09 authorization: NOT_AUTHORIZED
 
-M07 is limited to repository quality gates, performance, accessibility,
-security configuration, link integrity, analytics preparation, Search Console
-preparation, governance, and CI. Production deployment, analytics activation,
-Search Console connection, domain/DNS changes, affiliate enrollment, live
-commercial destinations, and M08 work remain unauthorized.
+Only repository/local work and read-only account/domain inspection are currently
+authorized. Human gates A–F require separate explicit owner approval; none has
+been granted. No project/link, purchase, domain/DNS, deployment, analytics,
+Search Console or HSTS mutation. Keep analytics false and 25 existing pages.
+M08 is not independently accepted.

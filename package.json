@@ -22,7 +22,10 @@
     "test:e2e": "playwright test tests/e2e/smoke.spec.mjs",
     "test:a11y": "playwright test tests/e2e/accessibility.spec.mjs",
     "test:lighthouse": "node scripts/run-lighthouse.mjs",
-    "preview": "node scripts/serve-dist.mjs"
+    "preview": "node scripts/serve-dist.mjs",
+    "test:production": "node scripts/test-production.mjs",
+    "test:launch": "node scripts/test-production.mjs --local",
+    "test:lighthouse:production": "node scripts/run-lighthouse.mjs lighthouserc.production.cjs"
   },
   "dependencies": {
     "@astrojs/mdx": "8.0.1",

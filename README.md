@@ -25,10 +25,12 @@ This repository is the single HydroRigor website project.
 
 ## Current status
 
-M01 — Foundation through M06 — Content Wave 1 are accepted and merged. M07 —
-Quality & Observability: ACCEPTED by independent ChatGPT audit. PR #7 is the
-M07 integration vehicle; finalization requires green pre-merge and post-merge CI. M08 and later milestones are not started or
-authorized.
+M01 through M07 are accepted and merged. M07 — Quality & Observability was
+squash-merged through PR #7 at `53e80f5db2633d06d08ec4e3684820465bca7f8c`;
+post-merge quality and governance passed. M08 — Production Launch is IN_PROGRESS,
+authorized with human launch gates. Repository preparation is permitted;
+production mutations require separate owner approval. M09 remains NOT_STARTED /
+NOT_AUTHORIZED. See [M08 production runbook](docs/launch/M08_PRODUCTION_RUNBOOK.md).
 
 ## Local validation
 
@@ -58,3 +60,9 @@ browser and Lighthouse reports are ignored. Analytics is prepared but disabled
 by default; Search Console preparation is documented without connection.
 
 No production deployment is authorized by setup alone.
+
+M08 adds `npm run test:launch` for a local launch-smoke rehearsal. After approved
+deployment, set `PRODUCTION_BASE_URL=https://hydrorigor.com/` and run
+`npm run test:production` and `npm run test:lighthouse:production`. Local results
+are not production evidence. Automatic Vercel Git deployments are disabled in
+repository configuration; project linking and manual deployment remain gated.
