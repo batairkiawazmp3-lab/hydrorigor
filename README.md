@@ -28,8 +28,8 @@ This repository is the single HydroRigor website project.
 M01 through M07 are accepted and merged. M07 — Quality & Observability was
 squash-merged through PR #7 at `53e80f5db2633d06d08ec4e3684820465bca7f8c`;
 post-merge quality and governance passed. M08 — Production Launch is IN_PROGRESS,
-authorized with human launch gates. Repository preparation is permitted;
-production mutations require separate owner approval. M09 remains NOT_STARTED /
+authorized with human launch gates. Gate A project-only setup is complete;
+deployment and remaining launch mutations require separate owner approval. M09 remains NOT_STARTED /
 NOT_AUTHORIZED. See [M08 production runbook](docs/launch/M08_PRODUCTION_RUNBOOK.md).
 
 ## Local validation

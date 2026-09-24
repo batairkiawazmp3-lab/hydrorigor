@@ -54,3 +54,18 @@ Sources: [quote](https://vercel.com/domains/search?q=hydrorigor.com),
 [A record guidance](https://vercel.com/kb/guide/a-record-and-caa-with-vercel),
 [renewals](https://vercel.com/docs/domains/working-with-domains/renew-a-domain),
 [privacy support](https://vercel.com/docs/domains/supported-domains).
+
+## Owner purchase handoff — refreshed 2026-09-24
+
+Authenticated Vercel registrar GET availability returned available=true; price
+returned years=1, purchasePrice=11.25, renewalPrice=11.25 (USD). Availability
+and quote are time-sensitive. Taxes/checkout fees and exact privacy inclusion
+remain unverified; no checkout or purchase attempted. Owner will purchase personally.
+No automated purchase, domain connection or DNS action is approved.
+
+Vercel uses sponsoring registrars Name.com/Tucows; exact registrar is not yet
+identified. For team registrations, the Team Owner is the designated registrant.
+Accurate contact details and timely verification are required. Auto-renewal charges
+and future renewal prices apply; failed renewal can lose the registration and
+redemption may cost extra. Owner must review final checkout and renewal terms.
+[Registration terms](https://vercel.com/legal/domain-name-registration-and-services-terms).

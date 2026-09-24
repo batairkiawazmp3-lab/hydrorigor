@@ -1,6 +1,6 @@
 # M08 production runbook
 
-Status: repository preparation; no external launch mutation executed.
+Status: approved Gate A project-only setup complete; no deployment.
 Authorization: GRANTED_WITH_HUMAN_LAUNCH_GATES. M09 unauthorized.
 
 ## Evidence vocabulary
@@ -14,7 +14,7 @@ Authorization: GRANTED_WITH_HUMAN_LAUNCH_GATES. M09 unauthorized.
 | INDEPENDENTLY_AUDITED | ChatGPT decision, never self-awarded by Codex |
 
 Baseline/branch: COMPLETED. M07: INDEPENDENTLY_AUDITED and merged.
-Current M08 local results: TEST_REPORT.md. M08 external execution: NONE.
+Current M08 local results: TEST_REPORT.md. M08 external execution: Gate A only; see ledger.
 M08 independent audit: NOT_PERFORMED. Do not conflate these states.
 
 ## Read-only preflight — 2026-09-19 Asia/Karachi
@@ -35,11 +35,11 @@ Pro's current published platform fee is USD 20/month including one deploying sea
 plus applicable usage/add-ons/taxes. No upgrade or paid service is approved.
 This account decision is part of the approval package, not an automatic upgrade.
 
-## Exact proposed project — Gate A, not applied
+## Approved project — Gate A applied and verified
 
 | Setting | Value |
 | --- | --- |
-| Provider/account | Vercel / batairkiawazmp3-9310s-projects; owner must confirm |
+| Provider/account | Vercel / batairkiawazmp3-9310s-projects; owner-approved setup |
 | Project/framework | hydrorigor / Astro static |
 | Repository/root | batairkiawazmp3-lab/hydrorigor / repository root |
 | Production branch/Node | main / 24.x |
@@ -110,7 +110,7 @@ F activation must follow proven HTTPS/domain scope; C approval is not F approval
 
 ## External mutation ledger
 
-NONE EXECUTED. For each future mutation append: UTC timestamp; gate/owner approval;
+Gate A execution record follows. For each future mutation append: UTC timestamp; gate/owner approval;
 provider/account; exact action; non-secret project/deployment/domain ID;
 before/after state; read-back/HTTP/DNS/browser verification; rollback and result.
 Never record credentials, billing details or registrant personal data.
@@ -123,3 +123,33 @@ Official references: [Astro](https://vercel.com/docs/frameworks/frontend/astro),
 
 Plan references: [fair use](https://vercel.com/docs/limits/fair-use-guidelines),
 [Pro pricing](https://vercel.com/docs/plans/pro-plan).
+
+### Gate A ledger
+
+Gate A project-only setup: OWNER_APPROVED / COMPLETED / VERIFIED, 2026-09-24.
+Project hydrorigor (prj_Lbm21h2zFAWCHMMwaRsh7KsHD9ee), Vercel team
+batairkiawazmp3-9310s-projects (team_1vAKWbbo2FshNGErHHmrMzBM), Hobby.
+GitHub batairkiawazmp3-lab/hydrorigor linked; production branch main.
+Astro / Node 24.x / npm ci / npm run build / dist. Analytics flag false in
+production, preview and development; Web Analytics not enabled.
+Read-back 2026-09-24T13:21:36Z confirmed settings; deployment list was empty.
+Local .vercel link completed. CLI generated ignored .env.local with an OIDC token;
+no token was printed or committed. No interactive login occurred.
+Preview deployments disabled; autoAssignCustomDomains=false; ignored-build
+command exit 0. Branch vercel.json also disables Git deployments. These controls
+are not a universal manual-deployment lock. Gate C still requires approval.
+Deployment-policy guard was rejected with HTTP 403 on Hobby; no upgrade occurred.
+Gate B automated checkout NOT_APPROVED: owner intends personal purchase.
+No domain purchase/connection/DNS, deployment, analytics activation, Search Console,
+custom HSTS or release tag occurred. M09 NOT_STARTED / NOT_AUTHORIZED.
+M08 remains IN_PROGRESS, NOT_INDEPENDENTLY_AUDITED.
+Next checkpoint: GATE_A_COMPLETE_READY_FOR_DOMAIN_OWNER_PURCHASE.
+
+Creation timestamp: 2026-09-24T02:12:22.390Z.
+Git link timestamp: 2026-09-24T13:20:31.209Z.
+Settings and local link completed 2026-09-24, read back at the time above.
+Provider: Vercel. Project-only POST /v11/projects; PATCH /v9/projects/{id};
+POST /v9/projects/{id}/link; local vercel link. Settings read-back and empty
+GET /v6/deployments verified the result. No DNS records were changed.
+Rollback: retain inactive project; settings can be restored and Git unlinked with
+owner approval. No deployment exists to roll back. Do not delete the team/domain.
