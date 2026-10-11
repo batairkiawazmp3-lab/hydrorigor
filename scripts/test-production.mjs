@@ -29,8 +29,13 @@ function headersMatch(response, path) {
   for (const { key, value } of expectedHeaders) {
     assert.equal(normalized(headers[key.toLowerCase()] ?? ''), normalized(value), `${path}: ${key}`);
   }
-  // Unexpected provider-added HSTS is evidence to investigate, not Gate F approval.
-  assert.equal(headers['strict-transport-security'], undefined, `${path}: unexpected HSTS; stop at Gate F`);
+  // Owner policy (2026-10-11): observe provider HSTS separately from custom policy.
+  // Repository security validation still forbids an unauthorized custom HSTS header.
+  if (local) {
+    assert.equal(headers['strict-transport-security'], undefined, `${path}: unexpected local HSTS`);
+  } else {
+    process.stdout.write(`OBSERVED provider HSTS ${path}: ${headers['strict-transport-security'] ?? 'absent'}\n`);
+  }
   assert.doesNotMatch(headers['x-robots-tag'] ?? '', /noindex|none/i, `${path}: global X-Robots-Tag`);
 }
 

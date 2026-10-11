@@ -39,3 +39,10 @@ References: [property types](https://support.google.com/webmasters/answer/34592)
 [verification](https://support.google.com/webmasters/answer/9008080),
 [sitemaps](https://support.google.com/webmasters/answer/7451001),
 [URL Inspection](https://support.google.com/webmasters/answer/9012289).
+
+## October checkpoint
+
+Domain ownership and Vercel Production attachment are complete. Search Console
+remains NOT_CONNECTED; no property, verification, sitemap submission or URL
+Inspection action was performed. Gate E remains mandatory; any specific DNS TXT
+change also needs Gate B. Local ownership is not Google ownership verification.

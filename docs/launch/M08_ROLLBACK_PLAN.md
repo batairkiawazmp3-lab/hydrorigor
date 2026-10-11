@@ -32,7 +32,7 @@ collection, set PUBLIC_ENABLE_VERCEL_ANALYTICS=false and rebuild/redeploy the ap
 commit because it is a build-time flag. Verify no insights requests and CSP/smoke.
 Do not interpret a Git revert as authorization for environment/provider changes.
 
-HSTS is deferred; provider default needs resolution before launch. Browser-cached
+Custom HSTS remains unauthorized; provider-default HSTS is expected. Browser-cached
 HSTS cannot be immediately undone by a Git revert. Keep HTTPS healthy, never
 enable includeSubDomains/preload as an incident workaround.
 
@@ -43,3 +43,20 @@ replace NS, alter MX, transfer ownership, cancel renewal or delete the domain.
 Record incident/verification/remaining debt in REALITY_AUDIT and mutation ledger.
 
 Reference: [Vercel Instant Rollback](https://vercel.com/docs/instant-rollback).
+
+## October first-release incident plan
+
+Owner purchase/Pro/attachment is complete; do not undo it during rollback.
+There is no previous deployed known-good version: vercel rollback cannot restore
+an invented baseline. Gate C should explicitly authorize pausing this project if
+the first release is harmful, then verify it no longer serves the failed site.
+Pause is reversible but intentionally interrupts availability, including deployment
+URLs. Resume needs owner review and a validated corrective release.
+Preserve DNS/domain/renewal and all other projects. Do not delete the deployment,
+project or domain. Keep the deployment ID/logs for investigation.
+After a later known-good deployment exists, rollback may restore that exact ID
+under approved incident scope, followed by all relevant smoke/header checks.
+Git rollback is a normal revert PR with green CI and separate deployment approval;
+no reset, force push or blind DNS reversal. Restore the ignored-build guard exit 0
+after the controlled launch attempt. Custom HSTS stays absent; provider browser
+HSTS caches are not undone by Git rollback, so preserve HTTPS capability.
