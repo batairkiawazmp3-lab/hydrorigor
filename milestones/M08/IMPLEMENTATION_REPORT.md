@@ -129,6 +129,6 @@ Next checkpoint: GATE_A_COMPLETE_READY_FOR_DOMAIN_OWNER_PURCHASE.
 
 The M08 production smoke now observes/logs provider HSTS instead of failing solely
 on its presence, per the owner's 2026-10-11 policy. Local rehearsal still requires
-no HSTS. All seven configured headers remain exact checks; repository security
-validation continues to prohibit custom HSTS. No accepted M01-M07 code, data or
+no HSTS. All seven configured headers remain exact checks; the M08 smoke configuration
+check prohibits custom HSTS. No accepted M01-M07 code, data or
 content, budget, dependency or CSP policy was changed.

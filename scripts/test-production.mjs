@@ -17,6 +17,8 @@ let server;
 let browser;
 const failures = [];
 const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
+assert.ok(!config.headers.some(({ headers }) => headers.some(({ key }) => key.toLowerCase() === 'strict-transport-security')),
+  'Custom HSTS configuration requires separate owner approval');
 const expectedHeaders = config.headers.find(({ source }) => source === '/(.*)').headers;
 const editorial = m06ContentItems.map(getM06Path);
 const publicPaths = [...new Set([...requiredPublicRoutes, ...editorial])];
@@ -30,7 +32,7 @@ function headersMatch(response, path) {
     assert.equal(normalized(headers[key.toLowerCase()] ?? ''), normalized(value), `${path}: ${key}`);
   }
   // Owner policy (2026-10-11): observe provider HSTS separately from custom policy.
-  // Repository security validation still forbids an unauthorized custom HSTS header.
+  // The configuration check above still rejects an unauthorized custom HSTS header.
   if (local) {
     assert.equal(headers['strict-transport-security'], undefined, `${path}: unexpected local HSTS`);
   } else {
