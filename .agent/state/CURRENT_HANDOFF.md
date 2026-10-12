@@ -1,6 +1,35 @@
 # Current Handoff — M08
 
-## Current launch blocker — 2026-10-11
+## Scoped dependency remediation — 2026-10-12
+
+Owner authorized compatible production dependency remediation from cb6fdd83f5234228aba45cdc8663519907b2abe4.
+The five production package findings have been removed from npm's audit graph:
+devalue 5.9.2 -> 5.9.4; http-cache-semantics 4.2.0 -> 4.3.0;
+sharp 0.35.4 -> 0.35.5 with matching platform binaries/libvips;
+source-map-js 1.2.1 -> 1.2.2; smol-toml 1.8.0 -> 1.9.1.
+Only compatible lockfile entries changed; package.json, Astro 7.3.2, Tailwind 4.3.0,
+Node 24.x, accepted application/content/data/config and security policies unchanged.
+Production JSON audit: zero vulnerabilities at every severity. Full audit: 21
+DEV-ONLY findings (2 low/6 moderate/12 high/1 critical), including proxy-addr via
+LHCI/Express. No forced fix, audit suppression, overrides or toolchain migration.
+http-cache-semantics is a disputed advisory; 4.3.0 is outside the audit range but
+is NOT claimed to be a proven upstream security fix. Actual Astro build-time use
+and residual caveat are documented in milestones/M08/DEPENDENCY_REMEDIATION.md.
+
+Local remediation gates COMPLETE: npm ci; lint; Astro diagnostics; 98 unit tests;
+M04 data/M05 commerce/M06 content validators; build; search; links; security;
+production audit (zero at all severities); Chromium 22/22; axe/focus 17/17;
+44-route/25-page launch rehearsal; authoritative Lighthouse assertion PASS on
+12 routes / 36 mobile captures. Exact-head GitHub CI is required after this commit;
+its SHA/run evidence will be attached to PR #8 without changing the tested head.
+
+ October audit failure, September clean audit,
+Chrome startup failure/retry and the interrupted local build OOM remain historical
+evidence below. M08 is not accepted; PR #8 must remain open/unmerged. No deployment,
+analytics activation, Search Console change, custom HSTS, DNS change or M09 work.
+
+
+## Historical launch blocker — 2026-10-11
 
 BLOCKED — current production dependency audit fails: 5 vulnerabilities
 (4 high, 1 moderate). Gate C readiness is NOT established; do not merge/deploy.
@@ -132,4 +161,4 @@ Use the controlled Gate C plan in M08_PRODUCTION_RUNBOOK.md. Actual squash/main
 release SHA is NOT_YET_CREATED; no production release tag or deploy exists.
 Only after explicit owner approval may merge/settings/deploy/aliases occur.
 No www or DNS mutation is included implicitly. Current state:
-BLOCKED — current production dependency audit fails.
+LOCAL_REMEDIATION_COMPLETE_AWAITING_EXACT_HEAD_CI.

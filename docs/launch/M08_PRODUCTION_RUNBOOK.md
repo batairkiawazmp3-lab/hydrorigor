@@ -1,5 +1,16 @@
 # M08 production runbook
 
+## Remediation update — 2026-10-12
+
+The October 11 production-audit blocker is locally resolved by compatible lockfile
+updates; all local gates and 36-capture Lighthouse assertions pass. See
+../../milestones/M08/DEPENDENCY_REMEDIATION.md for exact advisories, versions,
+http-cache-semantics caveat, 21 development-only findings and recovery evidence.
+Exact remediation-head CI must pass before readiness is reported in PR #8.
+No merge/deploy approval is implied. The older audit-blocker text below records
+the October 11 state and is superseded by this update.
+
+
 ## Current reconciliation — 2026-10-11
 
 HOSTING_DECISION = VERCEL_PRO_FINAL
