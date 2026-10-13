@@ -1,0 +1,186 @@
+# M08 — Production Launch
+
+## Current reconciliation — 2026-10-11
+
+HOSTING_DECISION = VERCEL_PRO_FINAL
+DOMAIN_OWNERSHIP = COMPLETE
+DOMAIN = hydrorigor.com
+DOMAIN_PURCHASE_PRICE = USD 11.25
+AUTO_RENEW = ON
+DOMAIN_ATTACHED_TO_PROJECT = YES
+PRODUCTION_DEPLOYMENT = NOT_YET_AUTHORIZED
+ANALYTICS = DISABLED
+SEARCH_CONSOLE = NOT_CONNECTED
+CUSTOM_HSTS = NOT_AUTHORIZED
+M09 = NOT_STARTED / NOT_AUTHORIZED
+
+Owner completed the Pro upgrade, domain purchase and Production attachment.
+Purchase price USD 11.25, renewal shown USD 11.25/year and estimated checkout tax
+USD 0.00 are owner-reported purchase facts, not a newly retrieved invoice.
+No external mutation was performed by Codex during this reconciliation.
+
+Authenticated read-only API verifies Pro on team_1vAKWbbo2FshNGErHHmrMzBM
+(batairkiawazmp3-9310s-projects); project hydrorigor,
+prj_Lbm21h2zFAWCHMMwaRsh7KsHD9ee. GitHub batairkiawazmp3-lab/hydrorigor,
+main, Astro, Node 24.x, npm ci, npm run build, dist all match.
+PUBLIC_ENABLE_VERCEL_ANALYTICS=false covers production/preview/development;
+webAnalytics and analytics are null. Deployment count = 0.
+
+Domain API verifies correct team, boughtAt 2026-10-11T12:58:06Z, renew=true,
+and verified=true. Project domains are hydrorigor.com and hydrorigor.vercel.app;
+no www, no redirect. Apex has gitBranch=null/customEnvironmentId=null (default
+Production binding), corroborating the owner's Production-screen observation.
+Nameservers and intended nameservers both ns1.vercel-dns.com/ns2.vercel-dns.com;
+nsVerifiedAt 2026-10-11T13:22:16.930Z. Domain config: misconfigured=false,
+conflicts=[], configuredBy=A, observed A values 216.150.16.1/216.150.16.193.
+These are observations, not instructions to alter DNS. Global propagation is not
+proven by one provider observation. Certificate cert_SBYwhW1HuxtDUrI2VoLXJ7QG
+covers hydrorigor.com, autoRenew=true, created 2026-10-11T13:04:08.500Z,
+expires 2027-01-09T12:05:35Z. Actual served chain/HTTPS remains post-deploy evidence.
+
+Canonical remains https://hydrorigor.com/. Adding www and a permanent apex redirect
+is recommended as a separate Gate B/C approval, not implemented or needed for an
+apex-only first launch. No Search Console connection/submission or custom HSTS.
+Provider default HSTS max-age=63072000 is expected and is not itself a failure
+or custom-policy approval. Record real headers after deployment; do not configure
+includeSubDomains/preload. M08 remains IN_PROGRESS and not independently accepted.
+
+The following September records are historical evidence; this October reconciliation
+supersedes their pending purchase, Hobby limitation and provider-HSTS conflict states.
+
+
+Authorization: GRANTED_WITH_HUMAN_LAUNCH_GATES (owner instruction, 2026-09-19).
+Status: IN_PROGRESS. M09: NOT_STARTED / NOT_AUTHORIZED.
+
+## Authority and baseline
+
+Read-only extraction of `docs/reference/HydroRigor_Master_Strategy.xlsx`,
+`Build Milestones!A12:H12`, confirms: Domain + deploy + indexing; production
+Vercel project, hydrorigor.com, sitemap submission, indexability checks,
+redirects/404, backup/tag; production smoke test and Search Console URL
+inspection pass; all prior milestones; production deployment; 25 pages.
+The workbook's historical PLANNED cell is unchanged. The owner's current
+authorization controls execution and imposes the human gates below.
+
+M07 — Quality & Observability: ACCEPTED AND MERGED. Required baseline:
+`53e80f5db2633d06d08ec4e3684820465bca7f8c`. Before edits, main and origin/main
+matched this SHA, tree was clean, PR #7 was merged, and post-merge ci/quality
+and governance/m00-governance succeeded. Work branch: `m08-production-launch`.
+
+## Repository scope
+
+Prepare production configuration, validation, governance, release/rollback and
+DNS/Search Console runbooks. Preserve all 25 M06 pages and 24 editorial sources,
+M04 data provenance, M05 commercial rules, route stability, zero ordinary
+editorial executable scripts and every accepted M07 security/accessibility gate.
+No article rewrites, articles 26–100, merchant feeds, prices, ratings, additional
+affiliate relationships, new monitoring vendors, or architecture migration.
+
+Canonical origin is exactly `https://hydrorigor.com/`. A connected www host must
+permanently redirect to apex. No localhost or preview canonical/sitemap/OG URLs.
+Retired `/nutrients/` and `/best/best-hydroponic-system-for-home-growers/` remain
+honest 404s; no broad redirects masking missing pages. Search, 404 and accepted
+development fixtures remain noindex/excluded from the sitemap.
+
+## Mandatory human gates
+
+Repository preparation, Git branch/PR work, local tests and authenticated
+read-only inspection are authorized. The initial authorization excluded external launch mutations; the owner subsequently
+approved Gate A project-only setup. All other gates remain unapproved.
+Approval is per gate, not transferable. Stop immediately before execution:
+
+| Gate | Mutations requiring explicit owner approval | Stop state |
+| --- | --- | --- |
+| A | Create/link Vercel project/repository; project settings; production environment | AWAITING_OWNER_APPROVAL_GATE_A_VERCEL |
+| B | Domain purchase/transfer/connection; A/AAAA/CNAME/TXT/NS or nameservers | AWAITING_OWNER_APPROVAL_GATE_B_DOMAIN_DNS |
+| C | Public production deployment, preview promotion, production aliases | AWAITING_OWNER_APPROVAL_GATE_C_DEPLOY |
+| D | Vercel Web Analytics activation, collection, production flag true | AWAITING_OWNER_APPROVAL_GATE_D_ANALYTICS |
+| E | Search Console property/token/verification, sitemap, indexing, URL Inspection | AWAITING_OWNER_APPROVAL_GATE_E_SEARCH_CONSOLE |
+| F | HSTS after HTTPS/domain scope is proven; subdomain/preload scope separately | AWAITING_OWNER_APPROVAL_GATE_F_HSTS |
+
+No interactive login or unprovisioned secrets. If account access is unavailable,
+record BLOCKED_AT_HUMAN_GATE and exact owner action; never commit tokens.
+Unowned domain requires HUMAN_GATE_DOMAIN_PURCHASE_REQUIRED, current reliable
+quote and unknown charges disclosed, with no purchase. Missing project requires
+HUMAN_GATE_VERCEL_PROJECT_REQUIRED and a concrete configuration proposal.
+
+Build proposal: hydrorigor / Astro / main / Node 24.x / npm ci / npm run build /
+dist. Keep PUBLIC_ENABLE_VERCEL_ANALYTICS=false. No Google Analytics, pixels,
+Hotjar, Sentry, advertising trackers, or implicit deployment during Git linking.
+If a provider operation bundles project import and deployment, Gate A alone is
+insufficient: pause for Gate C or use a verified non-deploying operation.
+
+## Required local and CI gate
+
+Run npm ci, npm run lint, npm run check, npm test, npm run test:data,
+npm run test:commerce, npm run test:content, npm run build, npm run test:search,
+npm run test:links, npm run test:security, npm run audit:prod,
+npm run test:e2e, npm run test:a11y, npm run test:lighthouse. All must pass.
+Add locally exercised production-safe smoke automation, with no credentials and
+explicit HTTPS target. Preserve Performance >=95, Accessibility=100,
+indexable SEO=100, LCP<=2500 ms, CLS<=0.1, TBT<=200 ms, 12 routes/36 captures.
+Never equate TBT/Lighthouse with field INP.
+
+Retain accepted M07 debt: baseline reconstructed AFTER optimization at M06
+`a01934e7e2379b38249a6562f7697febddc20a2c` with original lockfile in clean
+worktree; 10 dev-only LHCI advisories (7 high/1 moderate/2 low), production audit
+clean. No npm audit fix --force or breaking downgrade to suppress advisories.
+Current audit changes must be reported honestly, not forced to match old totals.
+
+## Release sequence and acceptance
+
+Create the four milestone artifacts and five requested launch runbooks. Separate
+completed repository work, verified read-only observations, awaiting approval,
+externally executed actions and independent audit. Open PR #8 after repository
+preparation, require green quality/governance/repository checks; do not merge
+merely because CI passes. Return one concrete approval package after preflight.
+
+After explicit approvals, deploy only auditable accepted main SHA. Record UTC
+timestamp, provider/action, non-secret IDs, verification and rollback after each
+mutation. Validate actual HTTPS production, all 25 pages, representative routes,
+calculator 10 L × 2 mL/L = 20 mL, search, headers/CSP, 404/retired routes, robots,
+sitemap, canonical/OG URLs, console errors, analytics absence and real edge
+redirects. Run production Lighthouse with unchanged thresholds. Local results
+do not establish production behavior. Header mismatch stops progression.
+
+Gate E: prefer a reasoned property selection; Domain DNS verification also
+requires Gate B for the exact TXT. Submit only
+`https://hydrorigor.com/sitemap-index.xml`; record representative URL Inspection
+states without promising immediate indexing. Field INP may remain NOT YET
+AVAILABLE — awaiting real-user field data; target <200 ms.
+
+Gate F remains deferred until certificates, HTTPS, redirects and domain scope
+are proven. No casual includeSubDomains/preload. Gate D remains optional and
+disabled unless explicitly approved, followed by request/CSP/smoke verification.
+
+Prepare rollback using accepted M07 Git SHA, but do not mislabel it an existing
+production deployment. Record real deployment ID when created. Stop on 5xx,
+HTTPS/canonical/noindex/CSP/accessibility/performance/DNS regressions; roll back
+only if authorized and safe. Do not blindly undo DNS ownership verification.
+Only after independently verified release and known exact SHA create approved
+annotated tag `hydrorigor-v0.1-launch`; no provisional final tag.
+
+Prelaunch handoff: READY_FOR_OWNER_M08_LAUNCH_APPROVAL with specific gate states.
+After approved external execution: READY_FOR_CHATGPT_M08_AUDIT. Codex must not
+self-accept M08. M09 needs separate authorization after M08 acceptance.
+
+## Owner decision amendment — 2026-09-24
+
+Gate A project-only setup: OWNER_APPROVED / COMPLETED / VERIFIED, 2026-09-24.
+Project hydrorigor (prj_Lbm21h2zFAWCHMMwaRsh7KsHD9ee), Vercel team
+batairkiawazmp3-9310s-projects (team_1vAKWbbo2FshNGErHHmrMzBM), Hobby.
+GitHub batairkiawazmp3-lab/hydrorigor linked; production branch main.
+Astro / Node 24.x / npm ci / npm run build / dist. Analytics flag false in
+production, preview and development; Web Analytics not enabled.
+Read-back 2026-09-24T13:21:36Z confirmed settings; deployment list was empty.
+Local .vercel link completed. CLI generated ignored .env.local with an OIDC token;
+no token was printed or committed. No interactive login occurred.
+Preview deployments disabled; autoAssignCustomDomains=false; ignored-build
+command exit 0. Branch vercel.json also disables Git deployments. These controls
+are not a universal manual-deployment lock. Gate C still requires approval.
+Deployment-policy guard was rejected with HTTP 403 on Hobby; no upgrade occurred.
+Gate B automated checkout NOT_APPROVED: owner intends personal purchase.
+No domain purchase/connection/DNS, deployment, analytics activation, Search Console,
+custom HSTS or release tag occurred. M09 NOT_STARTED / NOT_AUTHORIZED.
+M08 remains IN_PROGRESS, NOT_INDEPENDENTLY_AUDITED.
+Next checkpoint: GATE_A_COMPLETE_READY_FOR_DOMAIN_OWNER_PURCHASE.
