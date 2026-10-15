@@ -1,5 +1,61 @@
 # M08 rollback plan
 
+## Lighthouse recovery safe stop — 2026-10-15
+
+M08_PRODUCTION_LIGHTHOUSE_COLLECTION_BLOCKED. Seven valid reports preserved:
+/ 3/3, /start/ 3/3, /systems/ 1/3, other nine routes 0/3. Both complete route
+medians pass; no /systems/ median or full-matrix assertion is possible.
+/systems/ capture 2 failed NO_NAVSTART twice, exhausting its one permitted retry.
+No third attempt; no valid report retried/discarded. Worst valid Performance 53,
+LCP 4455.585 ms and TBT 784 ms remain disclosed variance risks. Cause of
+NO_NAVSTART remains unproven; fresh profiles did not reliably prevent it.
+Finally re-pause verified; apex 503 DEPLOYMENT_PAUSED reconfirmed 12:32:59Z.
+Same deployment/source, zero additional deployments. Analytics false; Search
+Console/custom HSTS/M09 untouched. M08 not accepted; no permanent unpause.
+See M08 GATE_C_RELEASE_EVIDENCE.md and SEARCH_FAILURE_INVESTIGATION.md for
+all seven scores, retry ledger, local probe, chronology and next investigation.
+Earlier checkpoints below are historical.
+
+## Second production validation checkpoint — 2026-10-15
+
+M08_SECOND_PRODUCTION_VALIDATION_FAILED. Three cold searches and warm search
+passed unchanged; 44 routes / 25 M06 pages, calculator, TLS/metadata/security,
+zero-vulnerability production audit and 17/17 accessibility passed. Lighthouse
+first capture failed NO_NAVSTART; 0/36 valid production reports, no medians or
+budget pass claimed. Automatic re-pause verified and reconfirmed on resume:
+paused=true, apex 503 DEPLOYMENT_PAUSED. Same deployment dpl_DbGiGTwLdwHvPJHoEoCPwxH8pYcX
+and release 141e3716aabef104adc5319215e0ddc607512162; zero additional deployments.
+Analytics disabled; Search Console/custom HSTS untouched; M09 NOT_STARTED /
+NOT_AUTHORIZED. www remains unconfigured with certificate mismatch. No code,
+test, configuration or timeout changes. Production stays paused pending review
+of Lighthouse collection and a separately approved continuation. M08 not accepted.
+See milestones/M08/GATE_C_RELEASE_EVIDENCE.md and SEARCH_FAILURE_INVESTIGATION.md
+for timestamps, complete passed evidence and preserved failure history.
+
+Earlier entries below are historical checkpoints, not the current authorization.
+
+## Gate C release attempt — 2026-10-13
+
+Current state: PRODUCTION_ROLLED_BACK_GATE_C_FAILED.
+PR #8 squash-merged to 141e3716aabef104adc5319215e0ddc607512162; exact-main
+quality (38378777665) and governance (38378777968) both SUCCESS.
+Owner-approved first production deployment dpl_DbGiGTwLdwHvPJHoEoCPwxH8pYcX
+used that exact Git SHA and reached READY. All 44 public routes / 25 M06 pages,
+calculator, headers, canonicals, robots/sitemap and zero-vulnerability production
+audit passed, but the required Pagefind result was absent at the 5000 ms timeout.
+Root cause remains undiagnosed; no assertion was weakened.
+Approved first-release rollback paused only HydroRigor. API paused=true and apex
+plus deployment URL HTTP 503 DEPLOYMENT_PAUSED verified at 16:46Z. Domain/DNS
+preserved; ignored-build guard restored to exit 0. Production Lighthouse and
+accessibility NOT_RUN after failure. Analytics flag false in all environments;
+no activation or requests observed. Search Console untouched; no custom HSTS.
+M09 NOT_STARTED / NOT_AUTHORIZED. M08 IN_PROGRESS / NOT_ACCEPTED.
+See milestones/M08/GATE_C_RELEASE_EVIDENCE.md for timestamps, full evidence,
+provider HSTS observations, www limitation and recovery prerequisites.
+Do not resume/deploy again without recovery approval. Historical entries below
+are retained; their unmerged/zero-deployment/pending-Gate-C state is superseded.
+
+
 PREPARED; no production release or rollback executed.
 Last known good Git SHA: 53e80f5db2633d06d08ec4e3684820465bca7f8c (accepted M07).
 Last known good production deployment: NONE VERIFIED. A Git baseline is not a
