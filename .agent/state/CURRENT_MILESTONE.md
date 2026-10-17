@@ -198,3 +198,8 @@ or custom-policy approval. Record real headers after deployment; do not configur
 includeSubDomains/preload. M08 remains IN_PROGRESS and not independently accepted.
 
 Checkpoint: LOCAL_REMEDIATION_COMPLETE_AWAITING_EXACT_HEAD_CI
+
+
+## 2026-10-17 checkpoint and next decision
+
+M08_LIGHTHOUSE_HARNESS_RELIABILITY_UNRESOLVED. Both collector versions reproduced NO_NAVSTART; no dependency upgrade justified. Completed local forensic and version-comparison evidence is in milestones/M08/LIGHTHOUSE_FORENSICS.md. Read-only exact-release CI logs confirm Ubuntu completed the original 36-capture local matrix (run 38378777665); this is not production evidence. Next proposed action: controlled local-build Linux diagnostic, detailed in milestones/M08/LINUX_COLLECTOR_PLAN.md, awaiting approval for diagnostic CI additions. No production access authorized. Apex read-only check 2026-10-17T02:57:04Z returned 503 DEPLOYMENT_PAUSED. Analytics/Search Console/custom HSTS/M09 unchanged; M08 unaccepted.

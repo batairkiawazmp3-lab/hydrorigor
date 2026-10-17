@@ -368,3 +368,8 @@ checkpoint. No application/content/schema/dependency change was made.
 | /start/ | 2026-10-15T07:29:02.893Z | 97 | 100 | 100 | 1401.027 | 0 | 170 |
 | /start/ | 2026-10-15T07:29:38.504Z | 86 | 100 | 100 | 1367.000 | 0 | 391.5 |
 | /systems/ | 2026-10-15T07:30:38.372Z | 53 | 100 | 100 | 4455.585 | 0 | 536 |
+
+
+## 2026-10-16 local Lighthouse forensic verdict
+
+M08_LIGHTHOUSE_HARNESS_RELIABILITY_UNRESOLVED. Completed 18 local attempts: 15 valid (five per representative route), three NO_NAVSTART. All low valid scores and failed raw traces preserved. No application fix or further production window justified. Production remains paused; M08 unaccepted; M09 NOT_STARTED / NOT_AUTHORIZED. See milestones/M08/LIGHTHOUSE_FORENSICS.md for the full matrix, trace evidence, upstream review and unchanged three-run per-metric median rule.

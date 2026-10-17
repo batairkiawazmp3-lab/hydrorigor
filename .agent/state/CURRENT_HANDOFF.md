@@ -251,3 +251,13 @@ release SHA is NOT_YET_CREATED; no production release tag or deploy exists.
 Only after explicit owner approval may merge/settings/deploy/aliases occur.
 No www or DNS mutation is included implicitly. Current state:
 LOCAL_REMEDIATION_COMPLETE_AWAITING_EXACT_HEAD_CI.
+
+
+## 2026-10-16 local Lighthouse forensic verdict
+
+M08_LIGHTHOUSE_HARNESS_RELIABILITY_UNRESOLVED. Completed 18 local attempts: 15 valid (five per representative route), three NO_NAVSTART. All low valid scores and failed raw traces preserved. No application fix or further production window justified. Production remains paused; M08 unaccepted; M09 NOT_STARTED / NOT_AUTHORIZED. See milestones/M08/LIGHTHOUSE_FORENSICS.md for the full matrix, trace evidence, upstream review and unchanged three-run per-metric median rule.
+
+
+## 2026-10-17 checkpoint and next decision
+
+M08_LIGHTHOUSE_HARNESS_RELIABILITY_UNRESOLVED. Both collector versions reproduced NO_NAVSTART; no dependency upgrade justified. Completed local forensic and version-comparison evidence is in milestones/M08/LIGHTHOUSE_FORENSICS.md. Read-only exact-release CI logs confirm Ubuntu completed the original 36-capture local matrix (run 38378777665); this is not production evidence. Next proposed action: controlled local-build Linux diagnostic, detailed in milestones/M08/LINUX_COLLECTOR_PLAN.md, awaiting approval for diagnostic CI additions. No production access authorized. Apex read-only check 2026-10-17T02:57:04Z returned 503 DEPLOYMENT_PAUSED. Analytics/Search Console/custom HSTS/M09 unchanged; M08 unaccepted.
