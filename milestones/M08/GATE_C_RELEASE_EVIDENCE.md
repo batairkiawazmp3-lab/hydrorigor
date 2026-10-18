@@ -373,3 +373,8 @@ checkpoint. No application/content/schema/dependency change was made.
 ## 2026-10-16 local Lighthouse forensic verdict
 
 M08_LIGHTHOUSE_HARNESS_RELIABILITY_UNRESOLVED. Completed 18 local attempts: 15 valid (five per representative route), three NO_NAVSTART. All low valid scores and failed raw traces preserved. No application fix or further production window justified. Production remains paused; M08 unaccepted; M09 NOT_STARTED / NOT_AUTHORIZED. See milestones/M08/LIGHTHOUSE_FORENSICS.md for the full matrix, trace evidence, upstream review and unchanged three-run per-metric median rule.
+
+
+## 2026-10-18 Linux diagnostic complete
+
+M08_LINUX_LIGHTHOUSE_COLLECTOR_VALIDATED_FOR_NEXT_CONTROLLED_STEP. Run 39102647730/job 117601886609 SUCCESS; diagnostic head 3dc9c937539bc254f4242ded3cd1ab3b6fe7471e tested exact release 141e3716aabef104adc5319215e0ddc607512162. Ubuntu 24.04.5/image 20261012.334.1, Node 24.21.0, Lighthouse 12.6.1/LHCI 0.15.1, Chrome 155.0.8059.39:15/15 valid, zero NO_NAVSTART or other collector failures. Artifact 12126952086 independently inspected. All three routes P/A/SEO100, CLS0; LCP medians 1.2030789/1.2054039/1.2033332s; TBT medians 0. Earlier rejected workflow 39102599323 produced no captures and remains disclosed. Chrome differs from Windows154; no OS-only causal claim. See LIGHTHOUSE_FORENSICS.md for full distributions. Sufficient to propose a separately approved controlled production measurement; production remains paused, production matrix incomplete, M08 unaccepted, M09 NOT_STARTED/NOT_AUTHORIZED. No merge or external mutation.

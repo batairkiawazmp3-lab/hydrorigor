@@ -242,3 +242,47 @@ The six lab setup errors, watchdog, interstitial and interruption are retained c
 Final safety verification 2026-10-16T14:18:01Z: provider paused=true; deployment dpl_DbGiGTwLdwHvPJHoEoCPwxH8pYcX; source141e3716aabef104adc5319215e0ddc607512162; count1; analytics false in production/preview/development. Apex 14:18:09Z HTTP503 DEPLOYMENT_PAUSED. Project dependency hashes match before experiment: package.json 192482AFB590A0350FEC3C4D6A716B92D46CF70413EFF49ED02C78DEC97D01A6; package-lock.json 899D2AE51A2162DB6A83BA24FF93FDF3CD3A9F94B22F988208984B4470CFB838. Local server stopped after collection. Documentation remains uncommitted; no generated lab artifacts staged.
 
 Interstitial detail: round-3-route-2-lh-13.5.0 DevTools Network.loadingFailed reports net::ERR_NETWORK_IO_SUSPENDED for the Document. This supports a runtime/network suspension contribution to that separate failed slot; it does not establish the cause of NO_NAVSTART or justify assigning every timestamp gap to OS sleep. Representative raw LHR metrics were manually checked against analysis output; all six version/route groups contain exactly five attempts.
+
+
+## 2026-10-18 Linux collector diagnostic — verified completion
+
+**M08_LINUX_LIGHTHOUSE_COLLECTOR_VALIDATED_FOR_NEXT_CONTROLLED_STEP**
+
+Workflow m08-linux-lighthouse-diagnostic; [run 39102647730](https://github.com/batairkiawazmp3-lab/hydrorigor/actions/runs/39102647730), job 117601886609, SUCCESS. Diagnostic head 3dc9c937539bc254f4242ded3cd1ab3b6fe7471e. Exact release tested: 141e3716aabef104adc5319215e0ddc607512162. No merge required; branch/path-filtered push triggered the workflow.
+
+Environment: Ubuntu 24.04.5 LTS; ubuntu-24.04 image 20261012.334.1; kernel 6.17.0-1022-azure; Node v24.21.0; Lighthouse 12.6.1; LHCI 0.15.1; Google Chrome 155.0.8059.39 (/usr/bin/google-chrome). Analytics=false. Aggregate host CPU across attempts 32.6658–35.2498%.
+
+Artifact 12126952086, m08-linux-lighthouse-39102647730-1, 10,185,001 bytes, 110 original files, downloaded and inspected. Local distributions.json is a derived 111th file, not part of the original artifact. LHRs, raw traces, DevTools/browser/collector/server logs, all attempt records, environment and assertion configuration are preserved. Evidence is ignored under .agent/tmp/m08-linux-diagnostic/artifact, not committed.
+
+Independent inspection of all 15 raw LHR/trace pairs confirms correct requested/final local URL, no runtime error and navigationStart present. 15 attempts / 15 valid / 0 invalid / 0 NO_NAVSTART / 0 other collector failures. Valid rate100%; NO_NAVSTART rate0%. Five independent samples each for /, /start/, /systems/. No retry/replacement; every score retained.
+
+### Valid distributions (min / median / max)
+
+| Route | Performance | Accessibility | SEO | LCP seconds | CLS | TBT ms |
+|---|---|---|---|---|---|---|
+| / | 100 / 100 / 100 | 100 / 100 / 100 | 100 / 100 / 100 | 1.2022284 / 1.2030789 / 1.2039128 | 0 / 0 / 0 | 0 / 0 / 90.862525 |
+| /start/ | 100 / 100 / 100 | 100 / 100 / 100 | 100 / 100 / 100 | 1.2025816 / 1.2054039 / 1.2071382 | 0 / 0 / 0 | 0 / 0 / 0 |
+| /systems/ | 100 / 100 / 100 | 100 / 100 / 100 | 100 / 100 / 100 | 1.2018504 / 1.2033332 / 1.2093954 | 0 / 0 / 0 | 0 / 0 / 0 |
+
+LCP population SD: homepage0.5995 ms, start1.6371 ms, systems2.6389 ms. Homepage TBT SD36.3450 ms; start/systems0. These five-sample statistics characterize diagnostic repeatability, not the authoritative three-capture median acceptance rule. Budgets/throttling remain unchanged.
+
+### Comparison and interpretation
+
+The earlier Windows Lighthouse 12.6.1/Chrome 154 experiment had 15 valid of18 and three NO_NAVSTART (16.67%); valid Performance ranged76–100, with TBT up to1162.219 ms. The later interrupted version comparison retained all30 slots: baseline8/15 valid with4 NO_NAVSTART; 13.5.0 had5/15 valid with5 NO_NAVSTART and other setup/runtime failures. Its six nullable-CLI setup failures and interruption limitations remain disclosed above. Upgrading Lighthouse did not establish reliability.
+
+The tested GitHub-hosted Linux environment demonstrated materially better Lighthouse collection reliability than the tested Windows environment. Because the browser versions also differed, the evidence does not isolate operating system as the sole causal factor. Node patch, machine resources and uninterrupted runner conditions also differ. This does not prove Linux fixes NO_NAVSTART or establish its original cause. Fifteen clean captures are finite evidence, not a guarantee.
+
+Preserve corroborating earlier exact-release CI run 38378777665: Ubuntu runner completed12 routes x3=36 local captures and passed mobile budgets; governance38378777968 also passed. These are local-build measurements, not real production HTTPS evidence.
+
+### Earlier rejected workflow setup
+
+Run 39102599323 at e4d7dc17e3229fb9cbf39669da77092a3ac6d861 was rejected before collector job creation because runner.temp was used in job-level env. Zero Lighthouse captures; no production effect. Correction moved the path to collection-step env in3dc9c937539bc254f4242ded3cd1ab3b6fe7471e. This failed setup is retained, separate from the successful15-attempt collection.
+
+### Next controlled step, not launch approval
+
+The tested runner/collector combination is sufficiently demonstrated to justify proposing another controlled production Lighthouse window, subject to explicit owner approval and verified ability to re-pause. No window is opened by this diagnostic result. Preserve all seven existing valid production reports and their low-score outliers; do not replace or silently mix different browser/runner environments. The next plan must identify any mixed-environment aggregate and obtain a supervisor decision on how it supports acceptance. The production12x3 matrix has NOT passed. M08 is NOT accepted.
+
+No application/content/dependency/threshold/throttling/acceptance changes. No deployment, production unpause, DNS/domain, analytics activation, Search Console, custom HSTS or M09 action. M09 remains NOT_STARTED / NOT_AUTHORIZED.
+
+
+Final read-only safety check 2026-10-18T11:26:10Z: paused=true, deployment dpl_DbGiGTwLdwHvPJHoEoCPwxH8pYcX and source141e3716aabef104adc5319215e0ddc607512162 unchanged, deployment count1 (zero additional). PUBLIC_ENABLE_VERCEL_ANALYTICS=false in production/preview/development. Apex 11:26:19Z: HTTP503 DEPLOYMENT_PAUSED; provider-default HSTS max-age=63072000 unchanged. No custom HSTS, Search Console, DNS or M09 mutation.
