@@ -16,7 +16,6 @@ jobs:
     timeout-minutes: 35
     env:
       PUBLIC_ENABLE_VERCEL_ANALYTICS: 'false'
-      DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-lighthouse-diagnostic
     steps:
       - uses: actions/checkout@v7
         with:
@@ -39,6 +38,8 @@ jobs:
         working-directory: release
         run: npm run build
       - name: Fifteen independent local collector attempts
+        env:
+          DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-lighthouse-diagnostic
         working-directory: release
         run: node ../diagnostic/scripts/diagnose-lighthouse.mjs
       - name: Preserve diagnostic evidence even on failure
@@ -49,3 +50,4 @@ jobs:
           path: ${{ runner.temp }}/m08-lighthouse-diagnostic
           if-no-files-found: warn
           retention-days: 30
+
