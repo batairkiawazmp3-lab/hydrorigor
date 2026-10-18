@@ -4,8 +4,7 @@ on:
   push:
     branches: [m08-search-production-fix]
     paths:
-      - .github/workflows/m08-production-lighthouse.yml
-      - scripts/collect-m08-production-lighthouse.mjs
+      - .agent/requests/m08-production-window.json
 
 permissions:
   contents: read
@@ -29,13 +28,17 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@v7
         with:
-          node-version: '24'
+          node-version: '24.21.0'
+      - name: Verify owner window request
+        working-directory: diagnostic
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('.agent/requests/m08-production-window.json')); if(r.release !== '141e3716aabef104adc5319215e0ddc607512162' || r.ownerConfirmedUnpaused !== true) throw new Error('Owner window request missing or mismatched');"
       - name: Verify exact release and install locked dependencies
         working-directory: release
         run: |
           test "$(git rev-parse HEAD)" = 141e3716aabef104adc5319215e0ddc607512162
           npm ci
-      - name: Collect only missing production captures
+      - name: Collect 36 fresh production captures and assert medians
         env:
           DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-production-lighthouse
         working-directory: release
@@ -48,4 +51,3 @@ jobs:
           path: ${{ runner.temp }}/m08-production-lighthouse
           if-no-files-found: warn
           retention-days: 30
-

@@ -1,4 +1,4 @@
-// Owner-approved M08 production collection: missing slots only; no deployment APIs.
+// Owner-controlled M08 production window: 36 fresh Linux reports, no retries.
 import { spawn, execFileSync } from 'node:child_process';
 import { createWriteStream } from 'node:fs';
 import { mkdir, mkdtemp, readFile, writeFile, copyFile } from 'node:fs/promises';
@@ -57,26 +57,29 @@ const environment = {
 await writeFile(join(output, 'environment.json'), JSON.stringify(environment, null, 2));
 if (environment.chromeVersion !== 'Google Chrome 155.0.8059.39') throw new Error('Chrome differs from validated Linux pairing');
 await copyFile(join(root, 'lighthouserc.cjs'), join(output, 'lighthouserc.cjs'));
-// Wait for the separately controlled owner-approved access window.
-// No provider credentials or mutation capabilities are available to this job.
-console.log('READY_FOR_CONTROLLED_WINDOW');
-let accessible = false;
-for (let i = 0; i < 120; i++) {
- try { const r = await fetch(origin + '/', {signal: AbortSignal.timeout(5000)}); if (r.status === 200) { accessible = true; break; } } catch {}
- await delay(5000);
-}
-if (!accessible) throw new Error('Production window not opened within ten minutes');
-const records = [];
+// Owner must unpause before triggering. One preflight request; never wait for unpause.
+const preflight = { checkedAt: new Date().toISOString(), url: origin + '/' };
 try {
-  const routes = config.ci.collect.url.map(url => new URL(url).pathname);
-  for (const [index, route] of routes.entries()) for (let round = ([3,3,1][index] ?? 0) + 1; round <= 3; round++) for (let attempt = 1; attempt <= 2; attempt++) {
-    const folder = join(output, `round-${round}-route-${index}-attempt-${attempt}`);
+  const response = await fetch(origin + '/', { redirect: 'manual', signal: AbortSignal.timeout(15000) });
+  preflight.status = response.status;
+  await response.body?.cancel();
+} catch (error) { preflight.error = error.message; }
+await writeFile(join(output, 'preflight.json'), JSON.stringify(preflight, null, 2));
+if (preflight.status !== 200) throw new Error('Production preflight is not HTTP 200; zero captures started');
+const records = [];
+const lhrs = [];
+const routes = config.ci.collect.url.map(url => new URL(url).pathname);
+if (routes.length !== 12 || new Set(routes).size !== 12 || config.ci.collect.numberOfRuns !== 3) throw new Error('Authoritative matrix mismatch');
+await writeFile(join(output, 'manifest.json'), JSON.stringify({sourceSha, origin, expectedCaptures:36, historicalReportsIncluded:false, routes:routes.map(route=>({route,captures:[1,2,3]})), retryPolicy:'none; stop at first invalid capture'},null,2));
+try {
+  for (const [index, route] of routes.entries()) for (let round = 1; round <= 3; round++) {
+    const folder = join(output, `round-${round}-route-${index}`);
     await mkdir(folder);
     // Profiles stay outside uploaded evidence; raw logs/traces remain inside.
     const profile = await mkdtemp('/tmp/hydrorigor-m08-chrome-');
     const debugPort = await port();
     const beforeCpu = cpuSnapshot();
-    const record = { round, attempt, routeIndex: index, route, url: origin + route, start: new Date().toISOString(), profile, debugPort, memoryBefore: freemem() };
+    const record = { round, routeIndex: index, route, url: origin + route, start: new Date().toISOString(), profile, debugPort, memoryBefore: freemem() };
     const chrome = spawn(chromePath, [...flags, `--remote-debugging-port=${debugPort}`, `--user-data-dir=${profile}`, 'about:blank']);
     record.chromePid = chrome.pid;
     const chromeLog = createWriteStream(join(folder, 'chrome.log'));
@@ -109,6 +112,7 @@ try {
       record.observedLoad = metrics.observedLoad;
       record.navigationStartCount = trace.traceEvents.filter(e => e.name === 'navigationStart').length;
       record.valid = !record.runtimeError && record.collectorExit.code === 0 && lhr.requestedUrl === record.url && lhr.finalUrl === record.url && record.navigationStartCount > 0 && Number.isFinite(metrics.observedNavigationStartTs) && ['performance', 'accessibility', 'seo', 'lcp', 'cls', 'tbt'].every(k => Number.isFinite(record[k]));
+      if (record.valid) lhrs.push(lhr);
     } catch (e) { record.valid = false; record.error = e.message; }
     finally {
       await stop(collector); await stop(chrome);
@@ -121,8 +125,7 @@ try {
       await writeFile(join(output, 'attempts.json'), JSON.stringify(records, null, 2));
       console.log(JSON.stringify(record));
     }
-    if (record.valid) break; // Never retry a valid budget miss.
-    if (attempt === 2) throw new Error('Collector failed twice for ' + route + ' capture ' + round);
+    if (!record.valid) throw new Error('Invalid collector capture; authoritative run stopped: ' + route + ' capture ' + round);
   }
 } finally {
  await writeFile(join(output, 'summary.json'), JSON.stringify({attempts:records.length,valid:records.filter(r=>r.valid).length,invalid:records.filter(r=>!r.valid).length,noNavStart:records.filter(r=>r.runtimeError?.code==='NO_NAVSTART').length},null,2));
@@ -130,5 +133,12 @@ try {
 const summary = { attempts: records.length, valid: records.filter(r => r.valid).length, noNavStart: records.filter(r => r.runtimeError?.code === 'NO_NAVSTART').length, invalid: records.filter(r => !r.valid).length };
 await writeFile(join(output, 'summary.json'), JSON.stringify(summary, null, 2));
 console.log(JSON.stringify(summary));
-// Diagnostic collection verdict only; scores are preserved, not accepted here.
-process.exitCode = summary.valid === 29 ? 0 : 1;
+if (summary.attempts !== 36 || summary.valid !== 36 || lhrs.length !== 36) throw new Error('Incomplete homogeneous production matrix');
+// Use the pinned LHCI assertion implementation and exact repository configuration.
+const { getAllAssertionResults } = require('@lhci/utils/src/assertions.js');
+const assertions = getAllAssertionResults({ ...config.ci.assert, includePassedAssertions: true }, lhrs);
+await writeFile(join(output, 'assertion-results.json'), JSON.stringify(assertions, null, 2));
+const failed = assertions.filter(result => !result.passed && result.level === 'error');
+await writeFile(join(output, 'budget-summary.json'), JSON.stringify({ reports:36, routes:12, failed:failed.length, passed:failed.length===0, assertions:config.ci.assert }, null, 2));
+console.log(JSON.stringify({budgetFailures:failed}));
+process.exitCode = failed.length ? 1 : 0;
