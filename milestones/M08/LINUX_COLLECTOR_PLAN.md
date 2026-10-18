@@ -28,3 +28,9 @@ No package.json/package-lock.json, lighthouserc.cjs, accepted CI workflow, thres
 ## Approval boundary and cost
 
 Previous instructions explicitly prohibited CI changes during the investigation. This plan is prepared for approval before adding or running a new diagnostic workflow. GitHub-hosted runtime/artifact usage may count against repository/account allowances; do not purchase capacity. No production side effects. The workflow/script are removable through normal Git changes; diagnostic artifacts can expire normally. No DNS, analytics, Search Console, custom HSTS or M09 action.
+
+## Owner authorization and implementation — 2026-10-18
+
+Owner approved diagnostic-only workflow/script, branch commit/push, execution and artifact retrieval. No merge or production mutation. Implemented branch/path-filtered push trigger instead of workflow_dispatch: new manual workflows normally need default-branch registration; push permits execution from the investigation branch without merging. Documentation-only follow-up pushes do not retrigger the diagnostic.
+
+Workflow checks out the exact release separately from diagnostic source, uses Node24 and its locked Lighthouse12.6.1, records Ubuntu image/Chrome/flags/resources, builds locally with analytics false, and runs 15 serialized fresh-browser attempts with no replacement. A nonzero diagnostic exit means collector invalidity, not a budget relaxation. All raw LHR/trace/devtools/browser logs and settings are uploaded on completion/failure; profiles are excluded. Existing CI, dependency files and application remain untouched. Local validation: Node syntax, YAML parsing, pinned CLI resolution, and diff whitespace checks pass. Production apex remains 503 DEPLOYMENT_PAUSED before push.
