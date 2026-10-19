@@ -126,6 +126,8 @@ try {
       console.log(JSON.stringify(record));
     }
     if (!record.valid) throw new Error('Invalid collector capture; authoritative run stopped: ' + route + ' capture ' + round);
+    // Pace only completed valid captures; no initial/final wait and no retries.
+    if (records.length < 36) await delay(35000);
   }
 } finally {
  await writeFile(join(output, 'summary.json'), JSON.stringify({attempts:records.length,valid:records.filter(r=>r.valid).length,invalid:records.filter(r=>!r.valid).length,noNavStart:records.filter(r=>r.runtimeError?.code==='NO_NAVSTART').length},null,2));
