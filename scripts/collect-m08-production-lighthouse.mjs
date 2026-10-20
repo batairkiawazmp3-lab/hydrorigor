@@ -1,7 +1,7 @@
 // Owner-controlled M08 production window: 36 fresh Linux reports, no retries.
 import { spawn, execFileSync } from 'node:child_process';
 import { createWriteStream } from 'node:fs';
-import { mkdir, mkdtemp, readFile, writeFile, copyFile } from 'node:fs/promises';
+import { rm, mkdir, mkdtemp, readFile, writeFile, copyFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
@@ -9,6 +9,17 @@ import { createServer } from 'node:net';
 import { freemem, totalmem, cpus, release } from 'node:os';
 import { setTimeout as delay } from 'node:timers/promises';
 
+import { evidenceSanitizer } from './m08-evidence-safety.mjs';
+
+const secret = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
+const output = resolve(process.env.DIAGNOSTIC_OUTPUT || 'diagnostic-output');
+await mkdir(output, { recursive: true });
+await rm(join(output, 'SAFE_TO_UPLOAD'), {force:true});
+const safety = evidenceSanitizer(secret);
+let safetyFailed = false;
+const childEnv = { ...process.env };
+delete childEnv.VERCEL_AUTOMATION_BYPASS_SECRET;
+async function collect() {
 const sourceSha = '141e3716aabef104adc5319215e0ddc607512162';
 const root = process.cwd();
 const require = createRequire(join(root, 'package.json'));
@@ -18,8 +29,6 @@ if (process.platform !== 'linux') throw new Error('Linux-only diagnostic');
 if (execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim() !== sourceSha) throw new Error('Release SHA mismatch');
 if (lhPackage.version !== '12.6.1') throw new Error('Lighthouse version mismatch');
 if (process.env.PUBLIC_ENABLE_VERCEL_ANALYTICS !== 'false') throw new Error('Analytics must be false');
-const output = resolve(process.env.DIAGNOSTIC_OUTPUT || 'diagnostic-output');
-await mkdir(output, { recursive: true });
 const lhRequire = createRequire(require.resolve('lighthouse'));
 const { Launcher } = await import(pathToFileURL(lhRequire.resolve('chrome-launcher')));
 const chromePath = execFileSync('which', ['google-chrome'], { encoding: 'utf8' }).trim();
@@ -58,9 +67,9 @@ await writeFile(join(output, 'environment.json'), JSON.stringify(environment, nu
 if (environment.chromeVersion !== 'Google Chrome 155.0.8059.39') throw new Error('Chrome differs from validated Linux pairing');
 await copyFile(join(root, 'lighthouserc.cjs'), join(output, 'lighthouserc.cjs'));
 // Owner must unpause before triggering. One preflight request; never wait for unpause.
-const preflight = { checkedAt: new Date().toISOString(), url: origin + '/' };
+const preflight = { checkedAt: new Date().toISOString(), url: origin + '/', bypassConfigured: true };
 try {
-  const response = await fetch(origin + '/', { redirect: 'manual', signal: AbortSignal.timeout(15000) });
+  const response = await fetch(origin + '/', { headers: {'x-vercel-protection-bypass':secret,'x-vercel-set-bypass-cookie':'true'}, redirect: 'manual', signal: AbortSignal.timeout(15000) });
   preflight.status = response.status;
   await response.body?.cancel();
 } catch (error) { preflight.error = error.message; }
@@ -75,30 +84,34 @@ try {
   for (const [index, route] of routes.entries()) for (let round = 1; round <= 3; round++) {
     const folder = join(output, `round-${round}-route-${index}`);
     await mkdir(folder);
-    // Profiles stay outside uploaded evidence; raw logs/traces remain inside.
+    // Raw outputs, credentials and browser profiles never enter uploaded evidence.
+    const scratch = await mkdtemp('/tmp/hydrorigor-m08-raw-');
+    const headersPath = join(scratch, 'headers.json');
+    await writeFile(headersPath, JSON.stringify({'x-vercel-protection-bypass':secret,'x-vercel-set-bypass-cookie':'true'}), {mode:0o600});
     const profile = await mkdtemp('/tmp/hydrorigor-m08-chrome-');
     const debugPort = await port();
     const beforeCpu = cpuSnapshot();
     const record = { round, routeIndex: index, route, url: origin + route, start: new Date().toISOString(), profile, debugPort, memoryBefore: freemem() };
-    const chrome = spawn(chromePath, [...flags, `--remote-debugging-port=${debugPort}`, `--user-data-dir=${profile}`, 'about:blank']);
+    const chrome = spawn(chromePath, [...flags, `--remote-debugging-port=${debugPort}`, `--user-data-dir=${profile}`, 'about:blank'], {env:childEnv});
     record.chromePid = chrome.pid;
-    const chromeLog = createWriteStream(join(folder, 'chrome.log'));
+    const chromeLog = createWriteStream(join(scratch, 'chrome.log'));
     chrome.stdout.pipe(chromeLog); chrome.stderr.pipe(chromeLog);
     let collector;
+    let log;
     try {
       await ready(`http://127.0.0.1:${debugPort}/json/version`);
       record.chromeReady = new Date().toISOString();
       // Only real CLI settings, never serialize nullable LHR output metadata.
-      const cliFlags = { ...config.ci.collect.settings, port: debugPort, output: ['json'], outputPath: join(folder, 'lhr.json'), saveAssets: true, chromeFlags: '--headless=new' };
+      const cliFlags = { ...config.ci.collect.settings, port: debugPort, output: ['json'], outputPath: join(scratch, 'lhr.json'), saveAssets: true, chromeFlags: '--headless=new' };
       await writeFile(join(folder, 'flags.json'), JSON.stringify(cliFlags, null, 2));
-      collector = spawn(process.execPath, [require.resolve('lighthouse/cli/index.js'), record.url, '--cli-flags-path', join(folder, 'flags.json')], { cwd: root });
-      const log = createWriteStream(join(folder, 'lighthouse.log'));
+      collector = spawn(process.execPath, [require.resolve('lighthouse/cli/index.js'), record.url, '--cli-flags-path', join(folder, 'flags.json'), '--extra-headers=' + headersPath], { cwd: root, env:childEnv });
+      log = createWriteStream(join(scratch, 'lighthouse.log'));
       collector.stdout.pipe(log); collector.stderr.pipe(log);
       const timer = setTimeout(() => { record.watchdog = true; collector.kill('SIGKILL'); }, 180000);
       try { record.collectorExit = await exited(collector); } finally { clearTimeout(timer); }
       record.chromeAliveAtCollectorExit = chrome.exitCode === null && chrome.signalCode === null;
-      const lhr = JSON.parse(await readFile(join(folder, 'lhr.json'), 'utf8'));
-      const trace = JSON.parse(await readFile(join(folder, 'lhr-0.trace.json'), 'utf8'));
+      const lhr = JSON.parse(await readFile(join(scratch, 'lhr.json'), 'utf8'));
+      const trace = JSON.parse(await readFile(join(scratch, 'lhr-0.trace.json'), 'utf8'));
       const metrics = lhr.audits.metrics?.details?.items?.[0] || {};
       record.runtimeError = lhr.runtimeError || null;
       record.performance = lhr.categories.performance?.score;
@@ -116,14 +129,16 @@ try {
     } catch (e) { record.valid = false; record.error = e.message; }
     finally {
       await stop(collector); await stop(chrome);
+      await Promise.all([chromeLog, log].filter(Boolean).map(stream => new Promise(resolve => stream.end(resolve))));
+      try { await safety.publish(scratch, folder); } catch { safetyFailed = true; throw new Error('Evidence sanitization failed'); } finally { await rm(scratch, {recursive:true,force:true}); await rm(profile, {recursive:true,force:true}); }
       record.memoryAfter = freemem();
       const afterCpu = cpuSnapshot();
       record.hostCpuBusyPercent = 100 * (1 - (afterCpu.idle - beforeCpu.idle) / (afterCpu.total - beforeCpu.total));
       record.end = new Date().toISOString();
       records.push(record);
-      await writeFile(join(folder, 'attempt.json'), JSON.stringify(record, null, 2));
-      await writeFile(join(output, 'attempts.json'), JSON.stringify(records, null, 2));
-      console.log(JSON.stringify(record));
+      await writeFile(join(folder, 'attempt.json'), safety.sanitize(JSON.stringify(record, null, 2)));
+      await writeFile(join(output, 'attempts.json'), safety.sanitize(JSON.stringify(records, null, 2)));
+      console.log(safety.sanitize(JSON.stringify(record)));
     }
     if (!record.valid) throw new Error('Invalid collector capture; authoritative run stopped: ' + route + ' capture ' + round);
     // Pace only completed valid captures; no initial/final wait and no retries.
@@ -142,5 +157,9 @@ const assertions = getAllAssertionResults({ ...config.ci.assert, includePassedAs
 await writeFile(join(output, 'assertion-results.json'), JSON.stringify(assertions, null, 2));
 const failed = assertions.filter(result => !result.passed && result.level === 'error');
 await writeFile(join(output, 'budget-summary.json'), JSON.stringify({ reports:36, routes:12, failed:failed.length, passed:failed.length===0, assertions:config.ci.assert }, null, 2));
-console.log(JSON.stringify({budgetFailures:failed}));
+console.log(safety.sanitize(JSON.stringify({budgetFailures:failed})));
 process.exitCode = failed.length ? 1 : 0;
+
+}
+try { await collect(); } catch { process.exitCode = 1; console.error('Production collection failed; inspect sanitized evidence if available.'); }
+try { if (safetyFailed) throw new Error('Unsafe evidence'); await safety.seal(output); } catch { await rm(join(output,'SAFE_TO_UPLOAD'),{force:true}); process.exitCode = 1; console.error('Evidence safety validation failed; artifact upload prohibited.'); }

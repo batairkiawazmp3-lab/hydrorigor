@@ -40,11 +40,21 @@ jobs:
           npm ci
       - name: Collect 36 fresh production captures and assert medians
         env:
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
           DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-production-lighthouse
         working-directory: release
         run: node ../diagnostic/scripts/collect-m08-production-lighthouse.mjs
-      - name: Preserve diagnostic evidence even on failure
+      - name: Check artifact safety marker
         if: always()
+        id: evidence
+        env:
+          EVIDENCE_PATH: ${{ runner.temp }}/m08-production-lighthouse
+        run: |
+          if test -f "$EVIDENCE_PATH/SAFE_TO_UPLOAD"; then
+            echo 'safe=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Preserve diagnostic evidence even on failure
+        if: always() && steps.evidence.outputs.safe == 'true'
         uses: actions/upload-artifact@v7.0.2
         with:
           name: m08-production-lighthouse-${{ github.run_id }}-${{ github.run_attempt }}
