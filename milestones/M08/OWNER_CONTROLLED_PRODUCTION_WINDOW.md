@@ -1,6 +1,6 @@
 # M08 owner-controlled Linux production window
 
-Status: M08_LINUX_PRODUCTION_WORKFLOW_READY_FOR_OWNER_WINDOW. Preparation only; not triggered.
+Status: M08_VERCEL_AUTOMATION_BYPASS_READY. The finalized bypass implementation has not been triggered; earlier production attempts are preserved below as history.
 
 This plan supersedes the earlier mixed Windows/Linux acceptance proposal. The seven historical Windows reports and all poor scores remain incident evidence only. Authoritative acceptance requires 36 NEW valid reports from one GitHub-hosted Linux workflow run: all 12 routes in the exact release lighthouserc.cjs, three captures each. No old report import, replacement, or retry. First runtime/collector-invalid capture stops the run; valid poor scores remain and collection continues to the final unchanged median assertions.
 
@@ -13,13 +13,13 @@ Branch: m08-search-production-fix. No merge required.
 
 ubuntu-24.04; Node pinned24.21.0; release lockfile supplies Lighthouse12.6.1/LHCI0.15.1; installed Chrome must exactly match validated155.0.8059.39 or stop before collection. Runner image/kernel metadata are recorded; GitHub image updates cannot be assumed identical. No browser installation or dependency upgrade is attempted.
 
-Headless=new, original chrome-launcher defaults plus disable-gpu/no-first-run; independent fresh process/profile per capture; navigation mode. Mobile simulated slow4G: RTT150ms, throughput1638.4Kbps, request latency562.5ms, download1474.56/upload675Kbps, CPU4x; viewport412x823, DPR1.75. Original Lighthouse12.6.1 defaults and category set retained. Exact effective configSettings remain in every LHR.
+Headless=new, original chrome-launcher defaults plus disable-gpu/no-first-run; independent fresh process/profile per capture; navigation mode. Mobile simulated slow4G: RTT150ms, throughput1638.4Kbps, request latency562.5ms, download1474.56/upload675Kbps, CPU4x; viewport412x823, DPR1.75. Original Lighthouse12.6.1 defaults and category set retained. Uploaded LHRs retain non-sensitive effective configSettings; configSettings.extraHeaders and other sensitive values are redacted. Raw secret-bearing settings remain only in ephemeral scratch.
 
-One preflight GET https://hydrorigor.com/ with redirects disabled must return200; otherwise stop with zero captures. No waiting for manual unpause, no provider calls. Exact release checked out separately from workflow/collector code, npm ci only, no application build or deployment. PUBLIC_ENABLE_VERCEL_ANALYTICS=false.
+One preflight GET https://hydrorigor.com/ with redirects disabled must return200; otherwise stop with zero captures. Preflight uses the authorized automation headers in memory. No waiting for manual unpause and no provider configuration API calls. Exact release checked out separately from workflow/collector code, npm ci only, no application build or deployment. PUBLIC_ENABLE_VERCEL_ANALYTICS=false.
 
 After36 valid reports, invoke pinned @lhci/utils getAllAssertionResults with the unchanged release ci.assert configuration. Per-route/per-metric median, P>=95, A=100, SEO=100 except/search/, LCP<=2500ms, CLS<=0.1, TBT<=200ms. Repository ceilings are inclusive; this preserves accepted rules despite shorthand strict '<' in the request. Field INP is not measured.
 
-Always upload LHRs, raw traces, DevTools/browser/collector logs, version/settings metadata, route/capture manifest, records, collection summary and assertion results when reached. Partial evidence retained on failure; profiles excluded. Job timeout40minutes. No Vercel CLI/API/token, no deployment permission or environment secrets; workflow contents permission is read-only. The job cannot control Vercel pause/unpause. OWNER must re-pause on success, failure, cancellation or timeout.
+Only sanitized LHRs, traces, DevTools/browser/collector logs, version/settings metadata, route/capture manifest, records, collection summary and assertion results may enter DIAGNOSTIC_OUTPUT. Raw secret-bearing material stays in ephemeral scratch and is never uploaded. Upload requires SAFE_TO_UPLOAD after the sanitization and leak scan passes, including on handled collection failure; unsafe evidence is not uploaded. Profiles are excluded. Job timeout40minutes. VERCEL_AUTOMATION_BYPASS_SECRET is stored only as a GitHub Actions repository secret for this workflow, exposed only to the production collection step. Its value exists at runtime only in memory and temporary restricted headers files; Lighthouse receives only a headers-file path. No credential is stored in repository files, flags.json or uploaded artifacts. No Vercel management credentials or deployment permission are provided; workflow contents permission is read-only. System Mitigations remain active, no System Bypass IP is used, and no custom firewall weakening occurs. The job cannot control Vercel pause/unpause. OWNER must re-pause on success, failure, cancellation or timeout.
 
 ## Exact routes
 
@@ -38,7 +38,7 @@ Always upload LHRs, raw traces, DevTools/browser/collector logs, version/setting
 
 ## Trigger only AFTER owner confirms manual unpause
 
-Preparation pushes do not trigger this workflow. It only listens for changes to .agent/requests/m08-production-window.json on m08-search-production-fix. The request file is intentionally absent now. This avoids default-branch workflow_dispatch registration and does not require merging. After the owner explicitly confirms manual unpause, execute in PowerShell from D:\hydrorigor:
+Preparation pushes do not trigger this workflow. It only listens for changes to .agent/requests/m08-production-window.json on m08-search-production-fix. The existing request file must not be modified during preparation; only a separately authorized owner-window request may change it. This avoids default-branch workflow_dispatch registration and does not require merging. After the owner explicitly confirms manual unpause, execute in PowerShell from D:\hydrorigor:
 
 ```powershell
 New-Item -ItemType Directory -Force .agent/requests | Out-Null
@@ -58,7 +58,7 @@ Node syntax and YAML parse passed. Synthetic36-report assertions verified origin
 
 Owner-verified security state: custom Firewall not configured; Attack Mode off; System Bypass zero IPs; System Mitigations active. Run 39147276614 preserved 32 valid Linux reports with zero NO_NAVSTART, then stopped on /search/ capture 3 with HTTP 403, x-vercel-mitigated: challenge, retry-after: 30. Those reports remain historical evidence, not final acceptance inputs.
 
-Collector now waits 35 seconds after a valid completed capture (including Chrome cleanup) before starting the next capture. Exactly 35 waits for a successful 36-capture matrix, none before the first or after the last; invalid capture still stops immediately without retry. Purpose: reduce automated request bursts while preserving security protections. No bypass or mitigation change. No guarantee that pacing prevents another challenge.
+Collector now waits 35 seconds after a valid completed capture (including Chrome cleanup) before starting the next capture. Exactly 35 waits for a successful 36-capture matrix, none before the first or after the last; invalid capture still stops immediately without retry. Purpose: reduce automated request bursts while preserving security protections. At this pacing-only checkpoint, no automation bypass or mitigation change was made. Subsequent evidence below shows pacing alone did not prevent another challenge; the finalized implementation uses supported automation credentials without weakening mitigations.
 
 Runtime analysis before deciding timeout: prior collection step took 407 seconds for 33 attempts; extrapolation 407/33*36 = 444 seconds. Added pacing is 35*35 = 1225 seconds (20m25s), giving 1669 seconds (27m49s) plus setup/upload (previous job overhead 25 seconds), approximately 28m14s. Retain 40-minute job cap. Conservative sum of existing startup polling allowance (50*(1s+0.2s)=60s), collector watchdog (180s), and two graceful cleanup waits (6s) is 36*246+1225=10081 seconds (168m1s), excluding unbounded OS/file operations; this is not an expected successful runtime or a strict wall-clock bound. Slow pathological runs already cannot be guaranteed to finish in 40 minutes. The observed successful-capture pace fits; do not extend the owner-controlled exposure window merely to accommodate pathological stalls. Timeout remains a hard stop, not a completeness guarantee.
 
