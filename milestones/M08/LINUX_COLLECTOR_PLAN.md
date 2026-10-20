@@ -55,3 +55,7 @@ Prepared/pushed production collector head56d53f66d49b4c7ee058bdc65231a16aceffde2
 ## Owner-controlled homogeneous production matrix — superseding plan
 
 M08_LINUX_PRODUCTION_WORKFLOW_READY_FOR_OWNER_WINDOW. See OWNER_CONTROLLED_PRODUCTION_WINDOW.md. New authoritative matrix must contain36 fresh Linux reports from one run; the historical seven Windows reports are incident evidence only, never combined for acceptance. No retries; first invalid capture stops. Preparation push cannot trigger collection: only a later owner-confirmed request-file push does. Owner controls pause/unpause manually. No automatic Vercel controller or bypass of its policy restriction. M08 remains unaccepted.
+
+## Chrome 155.0.8059.84 diagnostic preparation
+
+Owner-reported production run 39474030878 stopped safely at the exact Chrome guard before collecting production reports: runner Chrome was 155.0.8059.84 rather than 155.0.8059.39. Existing production guard remains unchanged. Validate the new browser only with the existing local-build Linux diagnostic: exact release 141e3716aabef104adc5319215e0ddc607512162, Node explicitly 24.21.0, Lighthouse12.6.1, five independent attempts each on loopback /, /start/, /systems/. Environment is recorded before the diagnostic-only exact Chrome .84 guard; mismatch stops before collection. No bypass credential, production target, dependency/throttling/assertion change, or production trigger. Results pending; compatibility diagnostic only, not production acceptance.

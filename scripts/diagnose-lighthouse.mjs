@@ -55,6 +55,7 @@ const environment = {
   settings: config.ci.collect.settings, assertions: config.ci.assert,
 };
 await writeFile(join(output, 'environment.json'), JSON.stringify(environment, null, 2));
+if (environment.chromeVersion !== 'Google Chrome 155.0.8059.84') throw new Error('Diagnostic Chrome version mismatch; zero captures started');
 await copyFile(join(root, 'lighthouserc.cjs'), join(output, 'lighthouserc.cjs'));
 const server = spawn(process.execPath, ['scripts/serve-dist.mjs', '--port', String(serverPort)], { cwd: root });
 const serverLog = createWriteStream(join(output, 'server.log'));
