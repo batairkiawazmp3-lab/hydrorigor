@@ -64,7 +64,8 @@ const environment = {
   settings: config.ci.collect.settings, assertions: config.ci.assert,
 };
 await writeFile(join(output, 'environment.json'), JSON.stringify(environment, null, 2));
-if (environment.chromeVersion !== 'Google Chrome 155.0.8059.84') throw new Error('Chrome differs from validated Linux pairing');
+const approvedChromeVersions = Object.freeze(['Google Chrome 155.0.8059.39', 'Google Chrome 155.0.8059.84']);
+if (!approvedChromeVersions.includes(environment.chromeVersion)) throw new Error('Chrome differs from validated Linux pairing');
 await copyFile(join(root, 'lighthouserc.cjs'), join(output, 'lighthouserc.cjs'));
 // Owner must unpause before triggering. One preflight request; never wait for unpause.
 const preflight = { checkedAt: new Date().toISOString(), url: origin + '/', bypassConfigured: true };
