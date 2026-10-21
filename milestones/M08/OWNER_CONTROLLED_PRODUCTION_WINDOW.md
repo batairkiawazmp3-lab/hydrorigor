@@ -11,7 +11,7 @@ Branch: m08-search-production-fix. No merge required.
 
 ## Environment and gates
 
-ubuntu-24.04; Node pinned24.21.0; release lockfile supplies Lighthouse12.6.1/LHCI0.15.1; installed Chrome must exactly match validated155.0.8059.39 or stop before collection. Runner image/kernel metadata are recorded; GitHub image updates cannot be assumed identical. No browser installation or dependency upgrade is attempted.
+ubuntu-24.04; Node pinned24.21.0; release lockfile supplies Lighthouse12.6.1/LHCI0.15.1; installed Chrome must exactly match validated155.0.8059.84 or stop before collection. Runner image/kernel metadata are recorded; GitHub image updates cannot be assumed identical. No browser installation or dependency upgrade is attempted.
 
 Headless=new, original chrome-launcher defaults plus disable-gpu/no-first-run; independent fresh process/profile per capture; navigation mode. Mobile simulated slow4G: RTT150ms, throughput1638.4Kbps, request latency562.5ms, download1474.56/upload675Kbps, CPU4x; viewport412x823, DPR1.75. Original Lighthouse12.6.1 defaults and category set retained. Uploaded LHRs retain non-sensitive effective configSettings; configSettings.extraHeaders and other sensitive values are redacted. Raw secret-bearing settings remain only in ephemeral scratch.
 
@@ -77,3 +77,10 @@ Sentinel-only tests: scratch headers contain fake value; evidence has none; conf
 System Mitigations remain active per owner-verified state. No System Bypass IP, firewall, Attack Mode or other provider change was made. Production stays paused; owner request file untouched. Analytics false; Search Console, DNS, custom HSTS and M09 unchanged. Final acceptance still requires a wholly fresh 36-report matrix in a separately authorized owner-controlled window. This is preparation, not M08 acceptance.
 
 Final read-only provider check confirmed project prj_Lbm21h2zFAWCHMMwaRsh7KsHD9ee paused=true. No HTTP request to production was performed during implementation. Child Chrome/Lighthouse processes do not inherit the secret environment variable; Lighthouse receives only the temporary headers-file path. Real secret never retrieved.
+
+
+## 2026-10-21 validated Chrome compatibility guard update
+
+Production run 39474030878 stopped at the environment guard before collection because GitHub runner Chrome changed from 155.0.8059.39 to 155.0.8059.84. Loopback-only diagnostic run 39475564075 at e5707e76887a0a16a2f5390d3baa8cb625280c75 validated the new pairing: Ubuntu24.04.5, ImageOS ubuntu24, ImageVersion20261018.339.1, Node24.21.0, Lighthouse12.6.1, LHCI0.15.1, Chrome155.0.8059.84. Owner-verified results: 15/15 valid, zero invalid/NO_NAVSTART; Performance/Accessibility/SEO100, CLS0, TBT0ms throughout. GitHub diagnostic conclusion SUCCESS independently rechecked; normal CI39475564105 also SUCCESS.
+
+The production collector's exact Chrome comparison now requires Google Chrome 155.0.8059.84. This is browser/collector compatibility validation only, not production acceptance. Final M08 still requires one wholly fresh successful 36-report production matrix. Only that comparison changes in executable code: automation bypass, secret handling/sanitizer/SAFE_TO_UPLOAD, routes, assertions, release141e3716aabef104adc5319215e0ddc607512162, pacing, no retries, stop-on-invalid and workflow timeout remain unchanged. Request file unchanged; no production workflow triggered or Vercel mutation. Production remains paused; M08 unaccepted and M09 unauthorized.
