@@ -1,0 +1,63 @@
+name: m08-linux-production-lighthouse
+
+on:
+  push:
+    branches: [m08-search-production-fix]
+    paths:
+      - .agent/requests/m08-production-window.json
+
+permissions:
+  contents: read
+
+jobs:
+  collector:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      PUBLIC_ENABLE_VERCEL_ANALYTICS: 'false'
+      M08_PRODUCTION_COLLECTION: '141e3716aabef104adc5319215e0ddc607512162'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: diagnostic
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: 141e3716aabef104adc5319215e0ddc607512162
+          path: release
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24.21.0'
+      - name: Verify owner window request
+        working-directory: diagnostic
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('.agent/requests/m08-production-window.json')); if(r.release !== '141e3716aabef104adc5319215e0ddc607512162' || r.ownerConfirmedUnpaused !== true) throw new Error('Owner window request missing or mismatched');"
+      - name: Verify exact release and install locked dependencies
+        working-directory: release
+        run: |
+          test "$(git rev-parse HEAD)" = 141e3716aabef104adc5319215e0ddc607512162
+          npm ci
+      - name: Collect 36 fresh production captures and assert medians
+        env:
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+          DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-production-lighthouse
+        working-directory: release
+        run: node ../diagnostic/scripts/collect-m08-production-lighthouse.mjs
+      - name: Check artifact safety marker
+        if: always()
+        id: evidence
+        env:
+          EVIDENCE_PATH: ${{ runner.temp }}/m08-production-lighthouse
+        run: |
+          if test -f "$EVIDENCE_PATH/SAFE_TO_UPLOAD"; then
+            echo 'safe=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Preserve diagnostic evidence even on failure
+        if: always() && steps.evidence.outputs.safe == 'true'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: m08-production-lighthouse-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/m08-production-lighthouse
+          if-no-files-found: warn
+          retention-days: 30

@@ -1,0 +1,53 @@
+name: m08-linux-lighthouse-diagnostic
+
+on:
+  push:
+    branches: [m08-search-production-fix]
+    paths:
+      - .github/workflows/m08-lighthouse-diagnostic.yml
+      - scripts/diagnose-lighthouse.mjs
+
+permissions:
+  contents: read
+
+jobs:
+  collector:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      PUBLIC_ENABLE_VERCEL_ANALYTICS: 'false'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: diagnostic
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: 141e3716aabef104adc5319215e0ddc607512162
+          path: release
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24.21.0'
+      - name: Verify exact release and install locked dependencies
+        working-directory: release
+        run: |
+          test "$(git rev-parse HEAD)" = 141e3716aabef104adc5319215e0ddc607512162
+          npm ci
+      - name: Build locally without analytics
+        working-directory: release
+        run: npm run build
+      - name: Fifteen independent local collector attempts
+        env:
+          DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-lighthouse-diagnostic
+        working-directory: release
+        run: node ../diagnostic/scripts/diagnose-lighthouse.mjs
+      - name: Preserve diagnostic evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: m08-linux-lighthouse-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/m08-lighthouse-diagnostic
+          if-no-files-found: warn
+          retention-days: 30
+
