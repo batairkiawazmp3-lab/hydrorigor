@@ -1,5 +1,12 @@
 # Current Milestone
 
+## Current review — 2026-10-22
+
+BLOCKED — the pinned deployed release141e3716aabef104adc5319215e0ddc607512162 still locks Vite8.3.0 and its fresh production audit reports one HIGH finding. The investigation branch is clean/green and patched, but its audit is not evidence for the old release. Owner approval is required to change the production application release. Production verified paused=true. See milestones/M08/FINAL_READINESS_REVIEW.md for exact CI evidence, audit comparison, analytics-state nuance and proposed controlled release decision. Do not trigger the current request file. M08 NOT_ACCEPTED; M09 NOT_STARTED / NOT_AUTHORIZED.
+
+All earlier checkpoints below are preserved historical evidence.
+
+
 ## Lighthouse recovery safe stop â€” 2026-10-15
 
 M08_PRODUCTION_LIGHTHOUSE_COLLECTION_BLOCKED. Seven valid reports preserved:

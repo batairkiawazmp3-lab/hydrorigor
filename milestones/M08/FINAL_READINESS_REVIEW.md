@@ -1,0 +1,25 @@
+# M08 final non-production readiness review — 2026-10-22
+
+Status: BLOCKED — pinned production release fails the required production dependency audit; changing that release requires explicit owner approval.
+
+## Verified repository evidence
+
+Reviewed branch7330bd42680b3008b602f5aa1ca2c0d7af11c3c6. CI39590404597 and governance39590404297 both SUCCESS at that exact head. Every quality step succeeded: clean install, lint, Astro diagnostics, unit/data/commerce/content checks, build, search/links/security, production audit, Chromium smoke, axe accessibility, local launch rehearsal and local Lighthouse mobile budgets. No need to repeat those expensive checks without code changes. Fresh branch npm audit --omit=dev --audit-level=high JSON again reports zero vulnerabilities. Sentinel evidence-safety tests passed during review. Chrome .39/.84 loopback diagnostics remain compatibility evidence only. No full production matrix has passed.
+
+## Blocking release distinction
+
+Current deployment dpl_DbGiGTwLdwHvPJHoEoCPwxH8pYcX remains source141e3716aabef104adc5319215e0ddc607512162. Its exact package.json/package-lock.json were extracted read-only into an ignored audit directory; no installation, build, production request or deployment was made. Fresh npm audit --package-lock-only --omit=dev --audit-level=high reports one HIGH Vite finding, with GHSA-698v-4r3x-3vcv, GHSA-r825-w8mm-5pxw and GHSA-587h-7wmj-h5pm. That release locks Vite8.3.0. Current branch has patched8.3.3, required Rolldown1.2.11/types0.151.0, committed in41599936a1a47212c4c2b9875478bc01be05793c. Branch audit success cannot be attributed to the old deployed release.
+
+These advisories concern bundled development-server/editor functionality; this finding does not prove an exploitable client-side issue in the static deployed HTML. Nevertheless the exact-release audit gate is explicit and cannot be waived by inference. A Lighthouse pass on the old release would not satisfy the complete launch gate. Audit JSON preserved in .agent/tmp/m08-final-review/{branch,release}-audit.json. September/October historical clean audits remain valid historical observations, not current attestations.
+
+## Read-only provider and credential evidence
+
+Project API confirms paused=true; deployment source remains141e3716aabef104adc5319215e0ddc607512162. PUBLIC_ENABLE_VERCEL_ANALYTICS=false in production/preview/development. The current project response contains a webAnalytics configuration ID, unlike the historical null claim; this alone does not establish actual client collection. Do not claim account-side analytics is unconfigured. No provider mutation or activation was made. Owner should confirm the intended dashboard state before launch. GitHub secret metadata confirms VERCEL_AUTOMATION_BYPASS_SECRET exists; its value was never retrieved. Official bypass wiring, sanitizer and SAFE_TO_UPLOAD gating remain intact. System Mitigations active/no System Bypass IP remain owner-reported; no firewall alteration. No production HTTP test, workflow trigger, unpause, DNS, Search Console, custom HSTS or M09 action occurred.
+
+## Concrete owner decision required before final launch window
+
+Recommended: authorize preparing a reviewed release replacement containing the already-tested narrow Vite lockfile remediation, obtaining green exact-main CI/governance after an approved merge, deploying only that approved resulting SHA, and updating the production-validation pin to that same SHA. No merge/deploy/pin change was executed here. The exact resulting main SHA must be recorded after the separately approved integration, never invented. Keep analytics false and clarify the dashboard configuration; leave Search Console, DNS, custom HSTS and M09 untouched. Do not simply unpause the old deployment as the final launch action.
+
+After that release decision and exact-release audit are satisfied, the owner can approve the final controlled access window. The existing request-file trigger procedure in OWNER_CONTROLLED_PRODUCTION_WINDOW.md must first be reconciled to the newly approved release; its current141e pin is unchanged and must NOT be triggered now. Owner manually unpauses only the approved deployment, confirms readiness, then the authorized request-file commit starts one36-fresh-report run on one runner with one allowlisted Chrome version. Preserve every valid score; fail on invalidity; no retries or report mixing. Owner manually re-pauses on every outcome, including timeout/cancellation. Inspect sanitized evidence, SAFE_TO_UPLOAD,36unique expected captures, per-route medians and all assertions; repeat required real-site release checks for any replacement deployment. Only then seek independent review and explicit permanent launch approval. A green workflow alone is not permission to publish permanently.
+
+Other outstanding external acceptance: Search Console ownership/sitemap/URL inspection under GateE (and exact DNS authorization if needed), release tag at independently verified SHA, and owner decision on the historical www certificate mismatch. None is silently waived. Field INP remains unmeasured. M08 NOT_ACCEPTED; M09 NOT_STARTED / NOT_AUTHORIZED.
