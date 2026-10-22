@@ -28,6 +28,9 @@ jobs:
       - name: Astro diagnostics
         run: npm run check
 
+      - name: M08 evidence secret-safety tests
+        run: node scripts/test-m08-evidence-safety.mjs
+
       - name: Unit tests
         run: npm test
 

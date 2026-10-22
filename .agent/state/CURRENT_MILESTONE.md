@@ -1,5 +1,10 @@
 # Current Milestone
 
+## Replacement release preparation authorized - 2026-10-22
+
+Owner authorized a replacement release candidate containing the tested Vite remediation. Preparation only: no merge, deployment, promotion, unpause or production workflow is authorized by this step. PR #8 was already squash-merged on October13 to141e3716aabef104adc5319215e0ddc607512162; never recreate or reopen that historical release. See milestones/M08/REPLACEMENT_RELEASE_CANDIDATE.md. Current production remains pinned to the old SHA and paused. M08 NOT_ACCEPTED; M09 NOT_STARTED / NOT_AUTHORIZED. Earlier blocked/checkpoint entries are historical and remain preserved.
+
+
 ## Current review — 2026-10-22
 
 BLOCKED — the pinned deployed release141e3716aabef104adc5319215e0ddc607512162 still locks Vite8.3.0 and its fresh production audit reports one HIGH finding. The investigation branch is clean/green and patched, but its audit is not evidence for the old release. Owner approval is required to change the production application release. Production verified paused=true. See milestones/M08/FINAL_READINESS_REVIEW.md for exact CI evidence, audit comparison, analytics-state nuance and proposed controlled release decision. Do not trigger the current request file. M08 NOT_ACCEPTED; M09 NOT_STARTED / NOT_AUTHORIZED.
