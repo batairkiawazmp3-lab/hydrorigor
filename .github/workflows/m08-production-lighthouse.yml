@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 40
     env:
       PUBLIC_ENABLE_VERCEL_ANALYTICS: 'false'
-      M08_PRODUCTION_COLLECTION: '141e3716aabef104adc5319215e0ddc607512162'
+      M08_PRODUCTION_COLLECTION: '625ba09db5f2891156e8324bafcb7616f1628c8f'
     steps:
       - uses: actions/checkout@v7
         with:
@@ -23,7 +23,7 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@v7
         with:
-          ref: 141e3716aabef104adc5319215e0ddc607512162
+          ref: 625ba09db5f2891156e8324bafcb7616f1628c8f
           path: release
           persist-credentials: false
       - uses: actions/setup-node@v7
@@ -32,11 +32,11 @@ jobs:
       - name: Verify owner window request
         working-directory: diagnostic
         run: |
-          node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('.agent/requests/m08-production-window.json')); if(r.release !== '141e3716aabef104adc5319215e0ddc607512162' || r.ownerConfirmedUnpaused !== true) throw new Error('Owner window request missing or mismatched');"
+          node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('.agent/requests/m08-production-window.json')); if(r.release !== '625ba09db5f2891156e8324bafcb7616f1628c8f' || r.ownerConfirmedUnpaused !== true) throw new Error('Owner window request missing or mismatched');"
       - name: Verify exact release and install locked dependencies
         working-directory: release
         run: |
-          test "$(git rev-parse HEAD)" = 141e3716aabef104adc5319215e0ddc607512162
+          test "$(git rev-parse HEAD)" = 625ba09db5f2891156e8324bafcb7616f1628c8f
           npm ci
       - name: Collect 36 fresh production captures and assert medians
         env:
