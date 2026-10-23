@@ -22,6 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lighthouse Chrome startup diagnostic
+        run: node scripts/run-lighthouse.mjs --startup-only
+
       - name: Lint
         run: npm run lint
 
@@ -72,3 +75,12 @@ jobs:
 
       - name: Lighthouse mobile budgets
         run: npm run test:lighthouse
+
+      - name: Preserve local Chrome startup diagnostics
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: lighthouse-startup-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .agent/tmp/lighthouse-startup/
+          if-no-files-found: ignore
+          retention-days: 14
