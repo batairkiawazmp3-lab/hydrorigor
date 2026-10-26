@@ -20,7 +20,7 @@ let safetyFailed = false;
 const childEnv = { ...process.env };
 delete childEnv.VERCEL_AUTOMATION_BYPASS_SECRET;
 async function collect() {
-const sourceSha = '625ba09db5f2891156e8324bafcb7616f1628c8f';
+const sourceSha = '50966ce935cb2b7dbdc1ea3b4630b9feb1e9f50d';
 const root = process.cwd();
 const require = createRequire(join(root, 'package.json'));
 const config = require('./lighthouserc.cjs');
