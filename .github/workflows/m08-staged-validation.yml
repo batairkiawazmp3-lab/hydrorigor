@@ -1,0 +1,52 @@
+name: m08-protected-staged-validation
+on:
+  push:
+    branches: [codex/m08-staged-validation]
+    paths: [.github/workflows/m08-staged-validation.yml]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      PUBLIC_ENABLE_VERCEL_ANALYTICS: 'false'
+      M08_PRODUCTION_COLLECTION: '50966ce935cb2b7dbdc1ea3b4630b9feb1e9f50d'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: harness
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: 50966ce935cb2b7dbdc1ea3b4630b9feb1e9f50d
+          path: release
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24.21.0'
+      - name: Install exact release tools
+        working-directory: release
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          node ../harness/scripts/test-m08-evidence-safety.mjs
+      - name: Validate only approved protected staged deployment
+        working-directory: release
+        env:
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+          DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-staged-validation
+        run: node ../harness/scripts/validate-m08-staged.mjs
+      - name: Artifact safety gate
+        if: always()
+        id: evidence
+        env:
+          EVIDENCE_PATH: ${{ runner.temp }}/m08-staged-validation
+        run: |
+          if test -f "$EVIDENCE_PATH/SAFE_TO_UPLOAD"; then echo 'safe=true' >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/upload-artifact@v7.0.2
+        if: always() && steps.evidence.outputs.safe == 'true'
+        with:
+          name: m08-staged-validation-${{ github.run_id }}
+          path: ${{ runner.temp }}/m08-staged-validation
+          retention-days: 30
