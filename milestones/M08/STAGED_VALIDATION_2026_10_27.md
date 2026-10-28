@@ -21,3 +21,11 @@ The anonymous apex gate passed HTTP 302 after unpause at 2026-10-28T03:00:02.169
 Sanitized artifact `m08-staged-validation-40624199681` was downloaded and preserves the empty stages list and failure. Cleanup requested pause at 2026-10-28T03:01:33.4789769Z and completed at 03:01:54.6901568Z: paused=true, protection=all, autoAssignCustomDomains=false, apex503 DEPLOYMENT_PAUSED, all four aliases unchanged. No deployment, promotion, DNS, analytics, Search Console, HSTS or M09 mutation occurred.
 
 Do not promote based on READY build status. Another validation window requires resolving the runner compatibility gate without weakening it. Preserve this stopped run; no scores exist to reuse.
+
+## Read-only recovery — 2026-10-28
+
+Ordinary CI 40624199484 succeeded on Ubuntu image 20261023.334.3 with Node v24.21.0 and Google Chrome 155.0.8059.39. Later ordinary CI 40624452963 succeeded on image 20261026.354.1 with Node v24.22.1 and Google Chrome 156.0.8078.47. Their startup artifacts were inspected locally. Neither used the failed staged run's image 20261025.353.1, so neither establishes that run's actual rejected Chrome version. These are local-build CI results, not staged production acceptance.
+
+The staged adapter now records the actual Chrome version and safe runner metadata before enforcing the unchanged exact allowlist. This is observability only: no new browser is approved, no assertion is relaxed, and the staged workflow/request file is unchanged. No validation window was opened during recovery. A loopback compatibility diagnostic for a newly observed browser is required before proposing an allowlist change; do not infer approval from a passing ordinary CI run with different Node/browser versions.
+
+Read-only Vercel verification at 2026-10-28 10:03 UTC confirmed paused=true, protection=all, autoAssignCustomDomains=false and apex HTTP 503 with X-Vercel-Error: DEPLOYMENT_PAUSED. No deployment, unpause, promotion, alias/DNS, analytics, Search Console, HSTS or M09 action was performed.

@@ -36,8 +36,9 @@ try {
   assert.equal(execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(), sha);
   assert.equal(process.version, 'v24.21.0');
   const chrome = execFileSync('google-chrome', ['--version'], { encoding: 'utf8' }).trim();
-  assert.ok(['Google Chrome 155.0.8059.39', 'Google Chrome 155.0.8059.84'].includes(chrome), 'Unvalidated Chrome version');
   results.chrome = chrome;
+  results.runner = { node: process.version, image: process.env.ImageOS, imageVersion: process.env.ImageVersion };
+  assert.ok(['Google Chrome 155.0.8059.39', 'Google Chrome 155.0.8059.84'].includes(chrome), 'Unvalidated Chrome version');
   // Keep the original canonical origin and all route/content/security assertions.
   let smoke = (await readFile('scripts/test-production.mjs', 'utf8')).replace(/\r\n/g, '\n');
   smoke = replaceOnce(smoke, "let origin = local ? undefined : productionTarget(process.env.PRODUCTION_BASE_URL);", `let origin = ${JSON.stringify(origin)};`);
