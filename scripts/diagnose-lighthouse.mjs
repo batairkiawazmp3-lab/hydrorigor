@@ -9,7 +9,7 @@ import { createServer } from 'node:net';
 import { freemem, totalmem, cpus, release } from 'node:os';
 import { setTimeout as delay } from 'node:timers/promises';
 
-const sourceSha = '141e3716aabef104adc5319215e0ddc607512162';
+const sourceSha = '50966ce935cb2b7dbdc1ea3b4630b9feb1e9f50d';
 const root = process.cwd();
 const require = createRequire(join(root, 'package.json'));
 const config = require('./lighthouserc.cjs');
@@ -55,7 +55,7 @@ const environment = {
   settings: config.ci.collect.settings, assertions: config.ci.assert,
 };
 await writeFile(join(output, 'environment.json'), JSON.stringify(environment, null, 2));
-if (environment.chromeVersion !== 'Google Chrome 155.0.8059.84') throw new Error('Diagnostic Chrome version mismatch; zero captures started');
+if (environment.chromeVersion !== 'Google Chrome 156.0.8078.47') throw new Error('Diagnostic Chrome version mismatch; zero captures started');
 await copyFile(join(root, 'lighthouserc.cjs'), join(output, 'lighthouserc.cjs'));
 const server = spawn(process.execPath, ['scripts/serve-dist.mjs', '--port', String(serverPort)], { cwd: root });
 const serverLog = createWriteStream(join(output, 'server.log'));

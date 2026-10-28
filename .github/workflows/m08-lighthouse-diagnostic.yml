@@ -2,7 +2,7 @@ name: m08-linux-lighthouse-diagnostic
 
 on:
   push:
-    branches: [m08-search-production-fix]
+    branches: [codex/m08-staged-validation]
     paths:
       - .github/workflows/m08-lighthouse-diagnostic.yml
       - scripts/diagnose-lighthouse.mjs
@@ -23,7 +23,7 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@v7
         with:
-          ref: 141e3716aabef104adc5319215e0ddc607512162
+          ref: 50966ce935cb2b7dbdc1ea3b4630b9feb1e9f50d
           path: release
           persist-credentials: false
       - uses: actions/setup-node@v7
@@ -32,7 +32,7 @@ jobs:
       - name: Verify exact release and install locked dependencies
         working-directory: release
         run: |
-          test "$(git rev-parse HEAD)" = 141e3716aabef104adc5319215e0ddc607512162
+          test "$(git rev-parse HEAD)" = 50966ce935cb2b7dbdc1ea3b4630b9feb1e9f50d
           npm ci
       - name: Build locally without analytics
         working-directory: release
