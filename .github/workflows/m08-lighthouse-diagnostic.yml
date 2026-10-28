@@ -50,10 +50,16 @@ jobs:
           cat "$browser_root/version.txt"
           browser_version="$(sed 's/[[:space:]]*$//' "$browser_root/version.txt")"
           test "$browser_version" = 'Google Chrome for Testing 156.0.8078.47'
-          test -x /opt/google/chrome/chrome-sandbox
-          test "$(stat -c '%u:%a' /opt/google/chrome/chrome-sandbox)" = '0:4755'
-          echo 'CHROME_DEVEL_SANDBOX=/opt/google/chrome/chrome-sandbox' >> "$GITHUB_ENV"
-          echo "M08_DIAGNOSTIC_CHROME=$browser_root/chrome-linux64/chrome" >> "$GITHUB_ENV"
+          sudo mkdir -p /opt/m08-diagnostic-cft
+          sudo cp -a "$browser_root/chrome-linux64/." /opt/m08-diagnostic-cft/
+          sudo chown -R root:root /opt/m08-diagnostic-cft
+          sudo chmod -R go-w /opt/m08-diagnostic-cft
+          printf '%s\n' 'abi <abi/4.0>,' 'include <tunables/global>' \
+            'profile m08-diagnostic-cft /opt/m08-diagnostic-cft/chrome flags=(unconfined) {' \
+            '  userns,' '}' | sudo tee /etc/apparmor.d/m08-diagnostic-cft
+          sudo apparmor_parser -r /etc/apparmor.d/m08-diagnostic-cft
+          stat -c '%U %a %n' /opt/m08-diagnostic-cft/chrome
+          echo 'M08_DIAGNOSTIC_CHROME=/opt/m08-diagnostic-cft/chrome' >> "$GITHUB_ENV"
       - name: Fifteen independent local collector attempts
         env:
           DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-lighthouse-diagnostic
