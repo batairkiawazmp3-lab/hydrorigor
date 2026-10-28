@@ -52,6 +52,7 @@ const environment = {
   os: await readFile('/etc/os-release', 'utf8'), kernel: release(), node: process.version,
   lighthouse: lhPackage.version, lhci: require('@lhci/cli/package.json').version,
   chromePath, chromeVersion: execFileSync(chromePath, ['--version'], { encoding: 'utf8' }).trim(),
+  sandboxHelper: process.env.CHROME_DEVEL_SANDBOX,
   cpu: cpus().map(c => c.model), totalMemory: totalmem(), flags,
   settings: config.ci.collect.settings, assertions: config.ci.assert,
 };

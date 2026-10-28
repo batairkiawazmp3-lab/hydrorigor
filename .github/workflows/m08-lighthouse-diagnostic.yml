@@ -50,6 +50,9 @@ jobs:
           cat "$browser_root/version.txt"
           browser_version="$(sed 's/[[:space:]]*$//' "$browser_root/version.txt")"
           test "$browser_version" = 'Google Chrome for Testing 156.0.8078.47'
+          test -x /opt/google/chrome/chrome-sandbox
+          test "$(stat -c '%u:%a' /opt/google/chrome/chrome-sandbox)" = '0:4755'
+          echo 'CHROME_DEVEL_SANDBOX=/opt/google/chrome/chrome-sandbox' >> "$GITHUB_ENV"
           echo "M08_DIAGNOSTIC_CHROME=$browser_root/chrome-linux64/chrome" >> "$GITHUB_ENV"
       - name: Fifteen independent local collector attempts
         env:
