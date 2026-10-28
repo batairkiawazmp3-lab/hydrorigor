@@ -37,6 +37,17 @@ jobs:
       - name: Build locally without analytics
         working-directory: release
         run: npm run build
+      - name: Provision exact diagnostic Chrome for Testing
+        run: |
+          set -euo pipefail
+          browser_root="$RUNNER_TEMP/m08-diagnostic-browser"
+          mkdir -p "$browser_root"
+          curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 \
+            https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.47/linux64/chrome-linux64.zip \
+            --output "$browser_root/chrome.zip"
+          unzip -q "$browser_root/chrome.zip" -d "$browser_root"
+          test "$("$browser_root/chrome-linux64/chrome" --version)" = 'Google Chrome for Testing 156.0.8078.47'
+          echo "M08_DIAGNOSTIC_CHROME=$browser_root/chrome-linux64/chrome" >> "$GITHUB_ENV"
       - name: Fifteen independent local collector attempts
         env:
           DIAGNOSTIC_OUTPUT: ${{ runner.temp }}/m08-lighthouse-diagnostic

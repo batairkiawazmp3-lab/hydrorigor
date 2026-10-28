@@ -22,7 +22,8 @@ const output = resolve(process.env.DIAGNOSTIC_OUTPUT || 'diagnostic-output');
 await mkdir(output, { recursive: true });
 const lhRequire = createRequire(require.resolve('lighthouse'));
 const { Launcher } = await import(pathToFileURL(lhRequire.resolve('chrome-launcher')));
-const chromePath = execFileSync('which', ['google-chrome'], { encoding: 'utf8' }).trim();
+if (!process.env.M08_DIAGNOSTIC_CHROME) throw new Error('Explicit diagnostic browser path required');
+const chromePath = resolve(process.env.M08_DIAGNOSTIC_CHROME);
 const flags = [...Launcher.defaultFlags(), '--headless=new', '--disable-gpu', '--no-first-run'];
 const cpuSnapshot = () => cpus().reduce((a, c) => ({ idle: a.idle + c.times.idle, total: a.total + Object.values(c.times).reduce((s, n) => s + n, 0) }), { idle: 0, total: 0 });
 const exited = (p) => new Promise((res, rej) => { p.once('exit', (code, signal) => res({ code, signal })); p.once('error', rej); });
@@ -55,7 +56,7 @@ const environment = {
   settings: config.ci.collect.settings, assertions: config.ci.assert,
 };
 await writeFile(join(output, 'environment.json'), JSON.stringify(environment, null, 2));
-if (environment.chromeVersion !== 'Google Chrome 156.0.8078.47') throw new Error('Diagnostic Chrome version mismatch; zero captures started');
+if (environment.chromeVersion !== 'Google Chrome for Testing 156.0.8078.47') throw new Error('Diagnostic Chrome version mismatch; zero captures started');
 await copyFile(join(root, 'lighthouserc.cjs'), join(output, 'lighthouserc.cjs'));
 const server = spawn(process.execPath, ['scripts/serve-dist.mjs', '--port', String(serverPort)], { cwd: root });
 const serverLog = createWriteStream(join(output, 'server.log'));
