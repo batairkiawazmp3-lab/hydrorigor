@@ -59,3 +59,13 @@ The successful procedure downloads the exact official Chrome for Testing archive
 Recommended next step: separately review adoption of this exact provisioning procedure in the staged validation harness, including secret-safety tests, before opening another protected window. No production allowlist, staged workflow, production collector, owner request, dependencies, application, budgets or throttling changed in this diagnostic work. No production access was used by the diagnostic. No merge, deployment, promotion, unpause, DNS/alias, analytics, Search Console, custom HSTS or M09 action occurred.
 
 Read-only safety verification on 2026-10-29 at 01:51 UTC: paused=true, protection=all, autoAssignCustomDomains=false; apex HTTP 503 with X-Vercel-Error DEPLOYMENT_PAUSED. M08 remains NOT_ACCEPTED. Staged smoke/accessibility/full Lighthouse acceptance remains outstanding.
+
+## Staged pinned-browser preparation — 2026-10-29
+
+Preparation branch: codex/m08-pinned-staged-browser, based on evidence checkpoint edda55c00a59c08c1df25431770f8d6f5e8a7610. This branch does not match the staged workflow push trigger (codex/m08-staged-validation), so pushing preparation does not open a staged validation window.
+
+The staged workflow now contains the identical provisioning block proven by diagnostic run 40721979873. The adapter checks the exact root-owned /opt/m08-diagnostic-cft/chrome binary and exact Google Chrome for Testing 156.0.8078.47 identity. Its ephemeral collector copy selects that same path and exact identity. The committed apex production collector and its existing allowlist remain unchanged. Playwright smoke/accessibility retain their locked browser dependency; the pinned Chrome applies to Lighthouse and its preflight.
+
+Local validation: adapter syntax PASS; generated collector syntax PASS; exact provisioning-block equivalence PASS; three anchored collector substitutions (existing target URL plus browser path and exact identity) PASS; sentinel secret-safety tests PASS; git diff --check PASS. No change to release SHA, Node, Lighthouse, routes, 36-capture requirement, pacing, budgets, retries, bypass handling, sanitizer, owner request or dependencies.
+
+This is preparation only. Before execution, review this change and reverify deployment identity, source, protection and aliases. Moving this workflow change onto codex/m08-staged-validation triggers site access and must occur only within a separately controlled authorized window, with anonymous apex authentication verification and guaranteed re-pause. Do not promote or claim acceptance based on the loopback diagnostic.

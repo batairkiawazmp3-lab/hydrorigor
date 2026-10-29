@@ -31,6 +31,29 @@ jobs:
           npm ci
           npx playwright install --with-deps chromium
           node ../harness/scripts/test-m08-evidence-safety.mjs
+      - name: Provision exact diagnostic Chrome for Testing
+        run: |
+          set -euo pipefail
+          browser_root="$RUNNER_TEMP/m08-diagnostic-browser"
+          mkdir -p "$browser_root"
+          curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 \
+            https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.47/linux64/chrome-linux64.zip \
+            --output "$browser_root/chrome.zip"
+          unzip -q "$browser_root/chrome.zip" -d "$browser_root"
+          "$browser_root/chrome-linux64/chrome" --version > "$browser_root/version.txt"
+          cat "$browser_root/version.txt"
+          browser_version="$(sed 's/[[:space:]]*$//' "$browser_root/version.txt")"
+          test "$browser_version" = 'Google Chrome for Testing 156.0.8078.47'
+          sudo mkdir -p /opt/m08-diagnostic-cft
+          sudo cp -a "$browser_root/chrome-linux64/." /opt/m08-diagnostic-cft/
+          sudo chown -R root:root /opt/m08-diagnostic-cft
+          sudo chmod -R go-w /opt/m08-diagnostic-cft
+          printf '%s\n' 'abi <abi/4.0>,' 'include <tunables/global>' \
+            'profile m08-diagnostic-cft /opt/m08-diagnostic-cft/chrome flags=(unconfined) {' \
+            '  userns,' '}' | sudo tee /etc/apparmor.d/m08-diagnostic-cft
+          sudo apparmor_parser -r /etc/apparmor.d/m08-diagnostic-cft
+          stat -c '%U %a %n' /opt/m08-diagnostic-cft/chrome
+          echo 'M08_DIAGNOSTIC_CHROME=/opt/m08-diagnostic-cft/chrome' >> "$GITHUB_ENV"
       - name: Validate only approved protected staged deployment
         working-directory: release
         env:

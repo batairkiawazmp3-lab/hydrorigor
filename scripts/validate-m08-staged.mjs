@@ -35,10 +35,12 @@ async function run(name, args) {
 try {
   assert.equal(execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(), sha);
   assert.equal(process.version, 'v24.21.0');
-  const chrome = execFileSync('google-chrome', ['--version'], { encoding: 'utf8' }).trim();
+  const chromePath = '/opt/m08-diagnostic-cft/chrome';
+  const chrome = execFileSync(chromePath, ['--version'], { encoding: 'utf8' }).trim();
   results.chrome = chrome;
+  results.chromePath = chromePath;
   results.runner = { node: process.version, image: process.env.ImageOS, imageVersion: process.env.ImageVersion };
-  assert.ok(['Google Chrome 155.0.8059.39', 'Google Chrome 155.0.8059.84'].includes(chrome), 'Unvalidated Chrome version');
+  assert.equal(chrome, 'Google Chrome for Testing 156.0.8078.47', 'Unvalidated staged Chrome version');
   // Keep the original canonical origin and all route/content/security assertions.
   let smoke = (await readFile('scripts/test-production.mjs', 'utf8')).replace(/\r\n/g, '\n');
   smoke = replaceOnce(smoke, "let origin = local ? undefined : productionTarget(process.env.PRODUCTION_BASE_URL);", `let origin = ${JSON.stringify(origin)};`);
@@ -55,6 +57,8 @@ try {
   await run('accessibility', ['node_modules/@playwright/test/cli.js', 'test', '--config=.m08-staged-playwright.mjs']);
   let collector = await readFile(new URL('./collect-m08-production-lighthouse.mjs', import.meta.url), 'utf8');
   collector = replaceOnce(collector, "const origin = 'https://hydrorigor.com';", `const origin = ${JSON.stringify(origin)};`);
+  collector = replaceOnce(collector, "const chromePath = execFileSync('which', ['google-chrome'], { encoding: 'utf8' }).trim();", `const chromePath = ${JSON.stringify(chromePath)};`);
+  collector = replaceOnce(collector, "const approvedChromeVersions = Object.freeze(['Google Chrome 155.0.8059.39', 'Google Chrome 155.0.8059.84']);", "const approvedChromeVersions = Object.freeze(['Google Chrome for Testing 156.0.8078.47']);");
   await writeFile('scripts/.m08-staged-lighthouse.mjs', collector);
   await copyFile(new URL('./m08-evidence-safety.mjs', import.meta.url), 'scripts/m08-evidence-safety.mjs');
   await run('lighthouse', ['scripts/.m08-staged-lighthouse.mjs']);
