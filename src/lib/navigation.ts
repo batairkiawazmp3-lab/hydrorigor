@@ -47,12 +47,12 @@ export const trustNavigation = [
   {
     label: 'About',
     href: '/about/',
-    description: 'Why HydroRigor is being built and how it approaches evidence.',
+    description: 'Who runs HydroRigor and how it approaches evidence.',
   },
   {
     label: 'Testing Methodology',
     href: '/testing-methodology/',
-    description: 'How future product evaluation will separate plans, evidence, and conclusions.',
+    description: 'How products and data are evaluated, and what counts as evidence.',
   },
   {
     label: 'Editorial Policy',
@@ -62,12 +62,12 @@ export const trustNavigation = [
   {
     label: 'Affiliate Disclosure',
     href: '/affiliate-disclosure/',
-    description: 'How future compensated links will be disclosed and qualified.',
+    description: 'How compensated links are disclosed and kept separate from conclusions.',
   },
   {
     label: 'Contact',
     href: '/contact/',
-    description: 'The planned path for corrections, feedback, and partnership inquiries.',
+    description: 'Corrections, reader feedback, and partnership inquiries.',
   },
 ] as const satisfies readonly NavigationLink[];
 

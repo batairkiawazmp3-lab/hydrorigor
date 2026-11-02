@@ -7,6 +7,7 @@ import { chromium, expect } from '@playwright/test';
 import { productionTarget } from './production-target.mjs';
 import { m06ContentItems, getM06Path } from '../src/data/m06-content.ts';
 import { requiredPublicRoutes } from '../src/lib/navigation.ts';
+import { EMPTY_SECTION_PATHS } from '../src/lib/indexing.ts';
 import { fixtureRoutes, representativeRoutes, retiredRoutes } from '../tests/e2e/routes.mjs';
 
 const local = process.argv.includes('--local');
@@ -22,7 +23,7 @@ assert.ok(!config.headers.some(({ headers }) => headers.some(({ key }) => key.to
 const expectedHeaders = config.headers.find(({ source }) => source === '/(.*)').headers;
 const editorial = m06ContentItems.map(getM06Path);
 const publicPaths = [...new Set([...requiredPublicRoutes, ...editorial])];
-const indexable = publicPaths.filter((path) => path !== '/search/');
+const indexable = publicPaths.filter((path) => path !== '/search/' && !EMPTY_SECTION_PATHS.has(path));
 const failuresFromBrowser = [];
 const normalized = (text) => text.replace(/\s+/g, ' ').trim();
 
@@ -107,7 +108,7 @@ try {
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', canonicalOrigin + path);
       await expect(page.locator('meta[property="og:url"]')).toHaveAttribute('content', canonicalOrigin + path);
       const robots = await page.locator('meta[name="robots"]').getAttribute('content');
-      if (path === '/search/') assert.match(robots, /noindex/i);
+      if (path === '/search/' || EMPTY_SECTION_PATHS.has(path)) assert.match(robots, /noindex/i);
       else assert.doesNotMatch(robots ?? '', /noindex|none/i);
       if (editorial.includes(path)) {
         const scripts = await page.locator('script').evaluateAll((elements) => elements.filter(

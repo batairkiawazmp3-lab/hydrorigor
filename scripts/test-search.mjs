@@ -3,6 +3,7 @@ import { access, readFile } from 'node:fs/promises';
 import { extname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { requiredPublicRoutes } from '../src/lib/navigation.ts';
+import { EMPTY_SECTION_PATHS } from '../src/lib/indexing.ts';
 import { getM06Path, m06ContentItems } from '../src/data/m06-content.ts';
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
@@ -84,11 +85,11 @@ try {
     );
     assert.equal(
       robots,
-      route === '/search/' ? 'noindex, nofollow' : 'index, follow',
+      route === '/search/' || EMPTY_SECTION_PATHS.has(route) ? 'noindex, nofollow' : 'index, follow',
       `${route} has the wrong robots directive`,
     );
 
-    if (route === '/search/') {
+    if (route === '/search/' || EMPTY_SECTION_PATHS.has(route)) {
       assert.doesNotMatch(html, /data-pagefind-body/);
     } else {
       assert.match(html, /data-pagefind-body/);
@@ -137,7 +138,6 @@ try {
   for (const commercialPath of [
     '/best/',
     '/reviews/',
-    '/compare/',
     '/affiliate-disclosure/',
     '/testing-methodology/',
   ]) {
@@ -160,6 +160,7 @@ try {
     '/reviews/development-sample-review/',
     '/compare/development-sample-comparison/',
     '/best/best-hydroponic-system-for-home-growers/',
+    ...EMPTY_SECTION_PATHS,
   ]) {
     assert.ok(
       !sitemap.includes(`https://hydrorigor.com${excludedPath}`),
