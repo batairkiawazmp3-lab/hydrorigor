@@ -1,3 +1,4 @@
+import { findAuthor } from '../data/authors.ts';
 import { SITE_DESCRIPTION, SITE_NAME, absoluteUrl } from './site.ts';
 
 export interface WebsiteJsonLd {
@@ -27,7 +28,7 @@ export interface BlogPostingJsonLd {
   mainEntityOfPage: string;
   datePublished: string;
   dateModified: string;
-  author: { '@type': 'Person' | 'Organization'; name: string };
+  author: { '@type': 'Person' | 'Organization'; name: string; url?: string };
   publisher: { '@type': 'Organization'; name: string; url: string };
   reviewedBy?: { '@type': 'Person'; name: string };
 }
@@ -64,6 +65,13 @@ export function buildWebsiteJsonLd(): WebsiteJsonLd {
   };
 }
 
+function authorJsonLd(name: string): BlogPostingJsonLd['author'] {
+  const profile = findAuthor(name);
+  return profile
+    ? { '@type': 'Person', name: profile.name, url: absoluteUrl(profile.profilePath) }
+    : { '@type': 'Organization', name };
+}
+
 export function buildArticleJsonLd(input: ArticleJsonLdInput): BlogPostingJsonLd {
   const published = isoDate(input.publishDate);
   const result: BlogPostingJsonLd = {
@@ -75,7 +83,7 @@ export function buildArticleJsonLd(input: ArticleJsonLdInput): BlogPostingJsonLd
     mainEntityOfPage: absoluteUrl(input.url),
     datePublished: published,
     dateModified: input.updatedDate ? isoDate(input.updatedDate) : published,
-    author: { '@type': 'Organization', name: input.author },
+    author: authorJsonLd(input.author),
     publisher: { '@type': 'Organization', name: SITE_NAME, url: absoluteUrl('/') },
   };
 
