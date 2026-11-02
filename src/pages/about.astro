@@ -1,5 +1,8 @@
 ---
+import { findAuthor } from '../data/authors.ts';
 import InfoPageLayout from '../layouts/InfoPageLayout.astro';
+
+const founder = findAuthor('Najeeb');
 ---
 <InfoPageLayout
   eyebrow="Purpose"
@@ -19,7 +22,7 @@ import InfoPageLayout from '../layouts/InfoPageLayout.astro';
   <p>The site begins with decisions: choosing a system or crop, understanding nutrients and water, planning equipment, or troubleshooting a problem. Future data, calculators, reviews, and buyer guides must connect back to a source, method, or explicitly identified editorial interpretation.</p>
 
   <h2 id="najeeb">Who runs HydroRigor</h2>
-  <p>HydroRigor is founded and edited by Najeeb, a master’s-trained conservation scientist with hands-on field survey experience. His training is in collecting, checking and interpreting field data, not in selling equipment. That is the standard HydroRigor applies to home hydroponics: every target, range and recommendation should trace back to a named university, extension or manufacturer source that you can open yourself.</p>
+  <p>HydroRigor is founded and edited by Najeeb, a conservation scientist ({founder?.credential}) with hands-on field survey experience. His training is in collecting, checking and interpreting field data, not in selling equipment. That is the standard HydroRigor applies to home hydroponics: every target, range and recommendation should trace back to a named university, extension or manufacturer source that you can open yourself.</p>
   <p>Guides credited to Najeeb are written or edited and then checked by him against the sources listed at the end of each page. Guides credited to HydroRigor Editorial are older pages that are being reviewed and upgraded to the same standard.</p>
 
   <h2>What HydroRigor does and does not claim</h2>
