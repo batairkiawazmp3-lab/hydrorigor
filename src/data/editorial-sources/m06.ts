@@ -3,8 +3,8 @@ export interface M06EditorialSource {
   title: string;
   publisher: string;
   url: string;
-  accessedDate: '2026-09-12' | '2026-09-13';
-  sourceType: 'university-extension' | 'university-research' | 'government' | 'manufacturer';
+  accessedDate: '2026-09-12' | '2026-09-13' | '2026-11-02';
+  sourceType: 'university-extension' | 'university-research' | 'government' | 'manufacturer' | 'industry-technical';
   locator: string;
 }
 
@@ -116,6 +116,51 @@ export const m06EditorialSources = [
     accessedDate: '2026-09-13',
     sourceType: 'university-extension',
     locator: 'Pollination and bearing fruit: self-fruitful flowers, pollen movement, and complete pollination',
+  },
+  {
+    id: 'ua-strawberry-irrigation',
+    title: 'Hydroponic Strawberry Irrigation',
+    publisher: 'University of Arizona CEAC Hydroponic Strawberry Information Website',
+    url: 'https://cales.arizona.edu/strawberry/Hydroponic_Strawberry_Information_Website/Irrigation.html',
+    accessedDate: '2026-11-02',
+    sourceType: 'university-research',
+    locator: 'Nutrient solution pH 5.5-6.0, EC at or below 1.0 dS/m, irrigation volume/frequency and drainage targets',
+  },
+  {
+    id: 'ua-strawberry-environment',
+    title: 'Hydroponic Strawberry Environmental Control',
+    publisher: 'University of Arizona CEAC Hydroponic Strawberry Information Website',
+    url: 'https://cales.arizona.edu/strawberry/Hydroponic_Strawberry_Information_Website/Env._Control.html',
+    accessedDate: '2026-11-02',
+    sourceType: 'university-research',
+    locator: 'Day/night air temperature, crown temperature and photosynthetic light saturation',
+  },
+  {
+    id: 'ua-strawberry-lighting',
+    title: 'Hydroponic Strawberry Supplemental Lighting',
+    publisher: 'University of Arizona CEAC Hydroponic Strawberry Information Website',
+    url: 'https://cales.arizona.edu/strawberry/Hydroponic_Strawberry_Information_Website/Supplemental_Lighting.html',
+    accessedDate: '2026-11-02',
+    sourceType: 'university-research',
+    locator: 'Photoperiod extension for everbearing plants and measuring light in umol/m2/s',
+  },
+  {
+    id: 'cornell-indoor-strawberry-basics',
+    title: 'From Planting to Harvesting: The Basics of Indoor Strawberry Production',
+    publisher: 'Greenhouse Grower (Gagne, Allred and Mattson, Cornell University)',
+    url: 'https://www.greenhousegrower.com/production/from-planting-to-harvesting-the-basics-of-indoor-strawberry-production/',
+    accessedDate: '2026-11-02',
+    sourceType: 'university-research',
+    locator: 'Albion and Cabrillo, 72/58 F day/night, EC 1.2 mS/cm, leachate, crown and inflorescence limits, harvest frequency',
+  },
+  {
+    id: 'ua-ceac-berries-cea',
+    title: 'Berries in Controlled Environment Agriculture',
+    publisher: 'University of Arizona CEAC Short Course (Karla Garcia, Hort Americas)',
+    url: 'https://ceac.arizona.edu/sites/default/files/2026-04/2-Karla-Garcia-BERRIES-IN-CEA-PDF.pdf',
+    accessedDate: '2026-11-02',
+    sourceType: 'industry-technical',
+    locator: 'Strawberry DLI minimum/optimum, indoor PPFD, humidity, substrate volume and porosity, night temperature and flavour',
   },
   {
     id: 'tennessee-fruiting-crops',

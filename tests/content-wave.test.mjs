@@ -75,6 +75,22 @@ test('strawberry day-length and pollination claims map to direct UMN evidence', 
   assert.match(article, /conservative application of the source's flower biology/iu);
 });
 
+test('strawberry numeric targets map to university controlled-environment sources', async () => {
+  const strawberry = m06ContentItems.find(({ id }) => id === 6);
+  const sources = new Map(m06EditorialSources.map((source) => [source.id, source]));
+  const article = await read('src/content/articles/hydroponic-strawberries.mdx');
+
+  for (const id of ['ua-strawberry-irrigation', 'ua-strawberry-environment', 'cornell-indoor-strawberry-basics', 'ua-ceac-berries-cea']) {
+    assert.ok(strawberry.sourceIds.includes(id), `${id} must back the strawberry targets`);
+  }
+  assert.match(sources.get('ua-strawberry-irrigation').locator, /pH 5\.5-6\.0/u);
+  assert.match(sources.get('ua-strawberry-irrigation').locator, /EC at or below 1\.0/u);
+  assert.match(sources.get('ua-ceac-berries-cea').locator, /DLI/u);
+  assert.match(article, /5\.5–6\.0/u);
+  assert.match(article, /About 1\.0 dS\/m/u);
+  assert.match(article, /HydroRigor has not run its own strawberry trial/u);
+});
+
 test('article schema accepts typed external-research scope and rejects unknown source refs', () => {
   const base = {
     title: 'Evidence-bounded buyer research',
