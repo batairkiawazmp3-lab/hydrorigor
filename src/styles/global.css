@@ -120,3 +120,46 @@ body {
   padding-left: 1rem;
   color: var(--color-slate);
 }
+
+.hr-prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border: 1px solid rgb(11 61 59 / 0.14);
+  border-radius: var(--hr-radius-card);
+  background: var(--color-white);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.hr-prose thead th {
+  background: var(--color-water-mist);
+  color: var(--color-hydro-deep);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: left;
+}
+
+.hr-prose th,
+.hr-prose td {
+  padding: 0.65rem 0.85rem;
+  vertical-align: top;
+  border-bottom: 1px solid rgb(11 61 59 / 0.1);
+  min-width: 7.5rem;
+}
+
+.hr-prose tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.hr-prose tbody tr:nth-child(even) td {
+  background: rgb(244 241 234 / 0.45);
+}
+
+.hr-prose img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--hr-radius-card);
+}

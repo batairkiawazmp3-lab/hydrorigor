@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import CommercialDisclosure from '../../components/commercial/CommercialDisclosure.astro';
 import MerchantDestinations from '../../components/commercial/MerchantDestinations.astro';
 import EvidenceBasis from '../../components/commercial/EvidenceBasis.astro';
+import AuthorBio from '../../components/content/AuthorBio.astro';
 import ContentProse from '../../components/content/ContentProse.astro';
 import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
 import PublicationMeta from '../../components/content/PublicationMeta.astro';
@@ -74,6 +75,7 @@ const commercialState = resolveCommercialPageState(data);
         )}
         {data.hero && <img class="mt-8 h-auto w-full rounded-2xl" src={data.hero.src} alt={data.hero.alt} width={data.hero.width} height={data.hero.height} />}
         <div class="mt-10"><ContentProse><slot /></ContentProse></div>
+        <AuthorBio name={data.author} />
         <SourcesList sources={data.sources} />
       </div>
     </div>

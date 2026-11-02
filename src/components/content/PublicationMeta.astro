@@ -1,4 +1,6 @@
 ---
+import { findAuthor } from '../../data/authors.ts';
+
 interface Props {
   author: string;
   publishDate: Date;
@@ -8,6 +10,7 @@ interface Props {
 }
 
 const { author, publishDate, updatedDate, reviewer, testedBy } = Astro.props;
+const authorProfile = findAuthor(author);
 const dateFormatter = new Intl.DateTimeFormat('en', {
   dateStyle: 'long',
   timeZone: 'UTC',
@@ -17,7 +20,7 @@ const isoDay = (date: Date) => date.toISOString().slice(0, 10);
 <dl class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate">
   <div class="flex gap-2">
     <dt class="font-semibold text-hydro-deep">Author</dt>
-    <dd>{author}</dd>
+    <dd>{authorProfile ? <a class="hr-focus text-hydro-teal underline underline-offset-4" href={authorProfile.profilePath}>{author}</a> : author}</dd>
   </div>
   <div class="flex gap-2">
     <dt class="font-semibold text-hydro-deep">Published</dt>
