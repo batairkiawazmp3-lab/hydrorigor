@@ -25,4 +25,6 @@ The user should normally be needed only for:
 
 ## Deployment path
 
-`D:\hydrorigor -> GitHub -> CI -> Vercel Preview -> Production Approval -> hydrorigor.com`
+`D:\hydrorigor -> branch -> GitHub pull request -> CI green -> squash merge to main -> Vercel deploys hydrorigor.com automatically`
+
+The site is live (owner-approved, 2026-11-02). Do not pause production or disable Git deployments; see `AGENTS.md`.
