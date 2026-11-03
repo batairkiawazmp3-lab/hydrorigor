@@ -17,28 +17,27 @@ is archived in `milestones/M08/`. Do not reopen it.
 
 ## Operating model
 
-HydroRigor uses a deliberately simple two-agent workflow:
+Claude is the only agent on HydroRigor (owner decision, 2026-11-03; Codex and the
+ChatGPT supervisor stage are retired). Claude plans, researches, writes, builds, tests,
+opens pull requests and merges them when CI is green. The step-by-step run procedure is
+in `CLAUDE.md`.
 
-- **ChatGPT** — supervisor, planner, researcher, and reality auditor.
-- **Codex** — primary local implementation and test agent working in `D:\hydrorigor`.
+Two scheduled tasks run Claude without the owner present:
 
-No mandatory Claude stage exists.
+- **Content run** (Monday and Thursday): ships the next item in
+  `.agent/state/CURRENT_MILESTONE.md` as one pull request, merges it when every check is
+  green, verifies it live and reports.
+- **Monthly SEO review** (1st of the month): audits the live site, checks rankings and
+  keyword data where a connected tool allows, and reorders the queue.
 
-## Normal milestone flow
+## Normal flow
 
-`SPEC -> CODEX IMPLEMENT + TEST/FIX LOOP -> GITHUB CI -> CHATGPT AUDIT -> ACCEPT/REJECT`
-
-Codex may plan its own implementation details inside an already-approved milestone and may automatically fix test/build failures that are within scope.
+`QUEUE ITEM -> BRANCH -> IMPLEMENT + LOCAL CHECKS -> PR -> GITHUB CI -> SQUASH MERGE -> VERIFY LIVE -> UPDATE STATE`
 
 ## Source of truth
 
-Local authoritative working copy:
-
-`D:\hydrorigor`
-
-Remote repository:
-
-`batairkiawazmp3-lab/hydrorigor`
+Repository (authoritative): `batairkiawazmp3-lab/hydrorigor`, branch `main`.
+The owner's local copy at `D:\hydrorigor` is optional; always branch from `origin/main`.
 
 Strategy source:
 
@@ -46,7 +45,7 @@ Strategy source:
 
 ## Scope discipline
 
-Codex must:
+Claude must:
 1. read `.agent/state/CURRENT_MILESTONE.md`;
 2. read the active milestone specification;
 3. work only inside that milestone;
@@ -57,14 +56,15 @@ Codex must:
 
 ## Safe autonomous actions
 
-Within an approved milestone, Codex may without repeated approval:
+Within an approved milestone, Claude may without repeated approval:
 - create/edit/delete project files that are inside milestone scope;
 - install declared project dependencies;
 - run local development servers;
 - run lint/typecheck/tests/build;
 - fix implementation/test failures;
-- create local Git branches/commits;
-- prepare pull requests and CI fixes after GitHub access is connected.
+- create Git branches/commits, open pull requests and fix CI;
+- squash-merge a pull request once every CI check is green (owner-approved, 2026-11-02);
+- download free-license Unsplash photos for the site (owner-approved, 2026-11-03).
 
 ## Actions requiring explicit user approval
 
