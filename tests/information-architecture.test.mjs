@@ -26,6 +26,7 @@ const approvedRoutes = [
   '/testing-methodology/',
   '/editorial-policy/',
   '/affiliate-disclosure/',
+  '/privacy/',
   '/contact/',
   '/search/',
 ];
@@ -33,7 +34,7 @@ const approvedRoutes = [
 test('centralized navigation contains the approved public architecture', () => {
   assert.deepEqual([...new Set(requiredPublicRoutes)], approvedRoutes);
   assert.equal(primaryNavigation.length, 11);
-  assert.equal(trustNavigation.length, 5);
+  assert.equal(trustNavigation.length, 6);
   assert.ok(primaryNavigation.every(({ href }) => href.startsWith('/') && !href.includes('#')));
   assert.ok(trustNavigation.every(({ href }) => href.startsWith('/') && !href.includes('#')));
 });

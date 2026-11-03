@@ -1,0 +1,52 @@
+---
+import InfoPageLayout from '../layouts/InfoPageLayout.astro';
+---
+<InfoPageLayout
+  eyebrow="Your data"
+  title="Privacy policy"
+  description="What HydroRigor collects when you read the site, why, and who processes it. Short version: anonymous visit counts, no accounts, no ads, no tracking cookies."
+  pathname="/privacy/"
+  relatedLinks={[
+    { label: 'Affiliate Disclosure', href: '/affiliate-disclosure/' },
+    { label: 'Editorial Policy', href: '/editorial-policy/' },
+    { label: 'Contact', href: '/contact/' },
+  ]}
+>
+  <p><strong>Last updated:</strong> November 3, 2026</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>HydroRigor has no accounts, sign-up forms, comments or newsletter, so it does not ask for your name or email.</li>
+    <li>We count visits with Vercel Web Analytics, which does not use cookies and reports only aggregated statistics.</li>
+    <li>There are no ads, no advertising trackers and no third-party scripts. Fonts, images and code are all served from hydrorigor.com.</li>
+    <li>Site search runs entirely in your browser; what you type is not sent to us.</li>
+  </ul>
+
+  <h2>Who runs this site</h2>
+  <p>HydroRigor is an independent publication run by Najeeb. See the <a href="/about/">About page</a> for more, and the <a href="/contact/">Contact page</a> for how to reach us.</p>
+
+  <h2>Visit statistics</h2>
+  <p>We use <a href="https://vercel.com/docs/analytics/privacy-policy" rel="noopener">Vercel Web Analytics</a> to see which guides people read and how they found them, so we know what to improve. It does not set cookies. Vercel identifies a visit with a hash created from the incoming request and discards it after 24 hours, and it does not track you across other websites.</p>
+  <p>For each page view it may record the time, the page address, the referring site, your approximate location (country, region, city), and your device type, operating system and browser. We only see these as totals, such as the number of visitors to a guide or the share coming from search engines.</p>
+
+  <h2>Hosting and server logs</h2>
+  <p>The site is hosted by Vercel. Like any web server, Vercel processes technical request data, including your IP address, to deliver pages, keep the service secure and prevent abuse. Vercel's handling of that data is described in its <a href="https://vercel.com/legal/privacy-policy" rel="noopener">privacy policy</a>.</p>
+
+  <h2>Search and tools</h2>
+  <p>The site search, the nutrient mixing calculator and the pH and EC reference all run in your browser. Nothing you enter in them is sent to or stored by HydroRigor.</p>
+
+  <h2>Links to other websites</h2>
+  <p>Guides link to university, extension and research sources and to other sites. Those sites have their own privacy practices, which apply once you follow a link.</p>
+
+  <h2>Affiliate links</h2>
+  <p>HydroRigor does not currently use affiliate links. If that changes, affected pages will say so clearly, as described in the <a href="/affiliate-disclosure/">affiliate disclosure</a>, and this policy will be updated first. A merchant may set its own cookies when you follow an affiliate link to its site.</p>
+
+  <h2>Children</h2>
+  <p>HydroRigor is written for adult home growers and is not directed at children under 13. We do not knowingly collect information from children.</p>
+
+  <h2>Your choices</h2>
+  <p>You can read every page without enabling cookies. Browser privacy settings and content blockers that stop analytics scripts will not affect how the site works.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If what we collect changes, we will update this page and the date at the top before the change takes effect.</p>
+</InfoPageLayout>
