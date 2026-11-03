@@ -3,7 +3,7 @@ export interface M06EditorialSource {
   title: string;
   publisher: string;
   url: string;
-  accessedDate: '2026-09-12' | '2026-09-13' | '2026-11-02';
+  accessedDate: `${number}-${number}-${number}`;
   sourceType: 'university-extension' | 'university-research' | 'government' | 'manufacturer' | 'industry-technical';
   locator: string;
 }
@@ -116,6 +116,24 @@ export const m06EditorialSources = [
     accessedDate: '2026-09-13',
     sourceType: 'university-extension',
     locator: 'Pollination and bearing fruit: self-fruitful flowers, pollen movement, and complete pollination',
+  },
+  {
+    id: 'uky-hydroponic-lettuce',
+    title: 'Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)',
+    publisher: 'University of Kentucky Center for Crop Diversification',
+    url: 'https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf',
+    accessedDate: '2026-11-03',
+    sourceType: 'university-extension',
+    locator: 'Lettuce pH 5.5-6.0, EC about 1.5 (1.0 seedlings), DLI 12-17, PPFD, air temperature, humidity, dissolved oxygen, timeline, spacing, tipburn and bolting',
+  },
+  {
+    id: 'kratky-noncirculating-lettuce',
+    title: 'Three Non-circulating Hydroponic Methods for Growing Lettuce (Acta Horticulturae 843)',
+    publisher: 'B.A. Kratky, University of Hawaii CTAHR',
+    url: 'https://www3.ctahr.hawaii.edu/Hawaii/downloads/Three_Non-circulating_Hydroponic_Methods_for_Growing_lettuce.pdf',
+    accessedDate: '2026-11-03',
+    sourceType: 'university-research',
+    locator: 'Kratky method: all solution added before planting, 3-6 L used per plant, air gap and oxygen roots, no pumps, starting EC about 1.5, harvest timing',
   },
   {
     id: 'ua-strawberry-irrigation',

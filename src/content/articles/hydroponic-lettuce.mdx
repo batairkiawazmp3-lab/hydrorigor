@@ -1,22 +1,33 @@
 ---
 title: "Hydroponic Lettuce: Complete Home Growing Guide"
-description: "Grow hydroponic lettuce at home by matching cultivar, system, propagation, light, nutrition, airflow, and harvest plan to one context."
+description: "Grow hydroponic lettuce at home: sourced pH, EC, light and temperature targets, the best varieties, Kratky vs DWC vs NFT, a harvest timeline and fixes for tipburn."
 route: "hydroponic-lettuce"
 publishDate: 2026-09-12
-author: "HydroRigor Editorial"
+updatedDate: 2026-11-03
+author: "Najeeb"
 category: "crops"
 tags: ["lettuce", "home-growing", "crop-guide"]
 sources:
+  - id: "uky-hydroponic-lettuce"
+    title: "Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)"
+    url: "https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification"
+    accessedDate: 2026-11-03
   - id: "ifas-lettuce-small-systems"
     title: "Growing Lettuce in Small Hydroponic Systems"
     url: "https://ask.ifas.ufl.edu/publication/HS1422"
     publisher: "UF/IFAS Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-03
   - id: "ifas-lettuce-cultivars"
     title: "An Overview of Lettuce Production Systems and Cultivars Used in Hydroponics and Protected Culture in Florida"
     url: "https://ask.ifas.ufl.edu/publication/HS1258"
     publisher: "UF/IFAS Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-03
+  - id: "kratky-noncirculating-lettuce"
+    title: "Three Non-circulating Hydroponic Methods for Growing Lettuce (Acta Horticulturae 843)"
+    url: "https://www3.ctahr.hawaii.edu/Hawaii/downloads/Three_Non-circulating_Hydroponic_Methods_for_Growing_lettuce.pdf"
+    publisher: "B.A. Kratky, University of Hawaii CTAHR"
+    accessedDate: 2026-11-03
   - id: "mu-hydroponic-farming"
     title: "Controlled Environment Agriculture: Hydroponic Farming"
     url: "https://extension.missouri.edu/publications/g6986"
@@ -27,38 +38,143 @@ commercialDestinationIds: []
 draft: false
 ---
 
-Lettuce is a practical home hydroponic crop when the variety, system, temperature and light context, plant spacing, and nutrient management are planned together. Begin with one lettuce type and a system you can inspect; then record what changes from seedling to harvest.
+Lettuce is the best first crop for indoor hydroponics. It grows fast, stays small, needs far less light than fruiting plants, and can go from seed to salad in about five to eight weeks. Most failures come from three things: a solution that is too strong or drifts off pH, too little light, and a room that runs too warm.
 
-## Choose a lettuce type for the environment
+This guide gives you the targets first, then shows how to choose a variety and system, start seeds, feed, light and harvest. Every number comes from university extension or research work, named next to the figure.
 
-Lettuce is not one uniform plant. Butterhead, leaf, romaine, and crisphead types differ in form, density, and production demands. UF/IFAS Extension advises choosing cultivars adapted to the available day length and temperature context. A variety selected for a cool greenhouse may respond differently in a warm indoor room.
+![Quick reference card for hydroponic lettuce: pH 5.5–6.0, EC about 1.5, daily light 12–17 mol per square metre, days up to 24 °C and nights up to 18 °C, harvest 3–5 weeks after transplanting.](/images/guides/lettuce-quick-reference.svg)
 
-The [lettuce seed guide](/crops/hydroponic-lettuce-seeds/) explains how to read growth habit and resistance claims without treating a variety name as a guarantee.
+## Quick answer: hydroponic lettuce targets
 
-## Pick a system with visible roots and flow
+| Factor | Target | Source |
+| --- | --- | --- |
+| Nutrient solution pH | 5.5–6.0 | University of Kentucky |
+| Electrical conductivity (EC) | About 1.5 mS/cm for growing plants; about 1.0 for seedlings. UF/IFAS gives 1.2–1.8 | University of Kentucky; UF/IFAS |
+| Solution temperature | 65–80 °F (18–27 °C) | UF/IFAS |
+| Air temperature | Days up to 75 °F (24 °C), nights up to 65 °F (18 °C) | University of Kentucky |
+| Relative humidity | 50–70 % | University of Kentucky |
+| Daily light integral (DLI) | 12–17 mol/m²/day is optimal; growth slows below about 6.5–9.7 | University of Kentucky |
+| Light intensity | About 50 µmol/m²/s to germinate, rising to 200–300 µmol/m²/s | University of Kentucky |
+| Dissolved oxygen (DWC) | 6–8 ppm | University of Kentucky |
+| Transplant | 14–21 days after seeding, at 3–4 true leaves | University of Kentucky |
+| Harvest | 21–35 days after transplanting | University of Kentucky |
 
-Small hydroponic lettuce can be grown in NFT, floating or DWC systems, passive reservoirs, and media-based drip systems. Each changes how roots receive oxygen and how quickly a failure becomes visible.
+Two points cause most problems. First, **lettuce wants a moderate, steady solution**: Kentucky's example recipe sits near 1.5 mS/cm, and source water above pH 7 usually needs to be brought down. Second, **heat is the enemy**: warm rooms bring bolting and tipburn, so keep days at or below 75 °F where you can.
 
-NFT supports rows of plants but depends on flow. DWC keeps roots immersed and normally adds aeration. A passive container removes moving parts while making solution level and root-air space central. Compare these use cases in [hydroponic lettuce systems](/crops/hydroponic-lettuce-systems/).
+You can compare lettuce with other crops in the [pH and EC target table](/tools/ph-ec-targets/).
 
-## Propagate cleanly
+## Choose the right lettuce type
 
-Start seeds in a clean, suitable plug or medium. Keep the seed zone moist without waterlogging it, and provide light promptly after emergence. Move seedlings only when the plug remains stable and roots can reach the system’s moist zone.
+UF/IFAS Extension groups hydroponic lettuce into butterhead (also called Boston or Bibb), looseleaf, romaine and blends. It does not consider crisphead (iceberg) suitable for typical hydroponic production, and the University of Kentucky notes that romaine is generally harder to grow in controlled environments than leaf or butterhead types.
 
-Do not bury the stem or crowd many seedlings into one final site. Label varieties and sowing dates so plant response can be interpreted later.
+| Type | Varieties named by UF/IFAS | Why choose it |
+| --- | --- | --- |
+| Butterhead | 'Rex' (an industry standard that performs year-round), 'Charles' (slow to bolt, tipburn resistant), 'Skyphos' | Soft heads, the classic greenhouse lettuce |
+| Looseleaf | 'New Red Fire' and 'Tropicana' (heat tolerant, slow to bolt), 'Cherokee' (very heat tolerant), 'Dark Lollo Rossa' (keeps colour in low light) | Fastest and most forgiving; pick leaves as you go |
+| Romaine | 'Thumper' (compact, strong against tipburn), 'Green Forest' (best overall for tipburn and bolt resistance) | Crunch, but needs tighter control |
+| Blends | 'Salanova' (very heat tolerant), baby-leaf mixes | Many textures from one tray |
 
-## Manage light, temperature, and airflow together
+**Recommendation for a first crop:** start with a butterhead such as 'Rex' or a heat-tolerant looseleaf such as 'New Red Fire'. If your room runs warm, pick a variety UF/IFAS describes as slow to bolt or heat tolerant. UF/IFAS stresses that its list is a set of suggestions, not a guarantee, so treat one tray as a trial and keep notes.
 
-UF/IFAS notes that light position and duration can create problems at both extremes: a light too close can damage leaves, while inadequate light can produce stretched growth. Exact schedules depend on cultivar, fixture, distance, and measured light—not just clock hours.
+## Pick a hydroponic system for lettuce
 
-Keep air moving gently through the canopy and leave room to inspect inner leaves. Warm conditions can increase bolting risk in sensitive cultivars, so record room and root-zone conditions rather than diagnosing from calendar age alone.
+Lettuce grows in almost every system. The real question is how much attention and equipment you want.
 
-## Use a complete nutrient program with context
+| System | How it works | Spacing (University of Kentucky) | Best for |
+| --- | --- | --- | --- |
+| Kratky (non-circulating) | Each plant sits over a fixed volume of solution; no pump | One plant per container | A first try, a windowsill, no electricity |
+| Deep water culture (raft) | Plants float on a raft over aerated solution at least 12 in deep | 3–4 plants per sq ft | Steady results, easy to scale |
+| NFT channels | A thin film of solution flows along sloped channels | About 2 plants per sq ft | Efficient water use; needs reliable pumps |
+| Drip or ebb-and-flow | Solution is delivered to media on a timer | 1–2 plants per sq ft | Mixed crops in one system |
 
-Follow current manufacturer instructions for a complete hydroponic nutrient program and account for source water. Measure consistently with maintained instruments. Do not convert an unexplained ppm display into EC or infer individual nutrients from conductivity.
+**Recommendation:** start with Kratky to learn the crop, then move to a small deep water culture tub. The [deep water culture guide](/systems/deep-water-culture-hydroponics/) covers the build, and [hydroponic lettuce systems compared](/crops/hydroponic-lettuce-systems/) goes deeper on DWC, NFT and Kratky.
 
-HydroRigor’s [pH and EC target reference](/tools/ph-ec-targets/) contains the accepted UF/IFAS lettuce record and transparently explains the publication’s internal EC wording. This article links to that record instead of hardcoding another range.
+### How the Kratky method works
 
-## Harvest and review the crop
+B.A. Kratky's method at the University of Hawaii adds **all of the nutrient solution before planting**; nothing is added afterwards. As the plant drinks, the level drops and a moist air gap forms. Roots in that gap take in oxygen, while roots still in the solution take up water and nutrients, so no pump or air stone is needed. In his trials a lettuce plant used about 3–6 litres, a 4-litre bottle grew one plant in about 6–7 weeks from seeding, and tank systems started at an EC of about 1.5.
 
-Harvest method depends on lettuce type and the intended use. Whatever the method, review the full record afterward: germination, transplant date, system interruptions, solution changes, canopy condition, and quality at harvest. That record is more useful for the next crop than a generic promise of “fast growth.”
+The one rule: **never top the container back up over the air-exposed roots**. Kratky warns that submerging them can drown the plant. He also notes that poor water can concentrate salts and cause tipburn, so use clean water or rainwater where your tap water is hard.
+
+## Start seeds and transplant
+
+1. Sow into rockwool cubes or similar plugs, a couple of seeds per plug.
+2. Keep them near 68 °F (20 °C). The University of Kentucky reports germination in about 3 days.
+3. Give seedlings gentle light, about 50 µmol/m²/s at first, then raise it towards 200–300 µmol/m²/s as true leaves appear.
+4. Feed seedlings a weak solution of about EC 1.0.
+5. Transplant 14–21 days after seeding, when plants have 3–4 true leaves and roots show through the plug.
+
+## Feed and water: steady EC and pH
+
+- **Strength:** run growing plants at about **EC 1.5 mS/cm** (University of Kentucky). UF/IFAS gives a working range of 1.2–1.8 mS/cm. Follow your nutrient manufacturer's directions for the base dose and use the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) to scale it to your reservoir.
+- **pH:** keep the solution at **5.5–6.0**. Many tap waters start above pH 7.0 and need acid to bring them down.
+- **Top up and replace:** in recirculating systems, top up every few days and replace the solution fully or partly every 3–4 weeks (University of Kentucky). Kratky containers are the exception: don't top up.
+- **Oxygen and temperature:** in deep water culture, keep dissolved oxygen at 6–8 ppm with an air pump and stones, and keep the solution between 65 and 80 °F (UF/IFAS). Warm solution holds less oxygen.
+
+For the basics of mixing a complete solution, see [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/).
+
+## Light: enough, but not too much
+
+The University of Kentucky gives an **optimal daily light integral of 12–17 mol/m²/day**, with growth slowing below about 6.5–9.7. Use this table to set your lights (DLI = intensity × hours × 0.0036):
+
+| Intensity at plant tops (µmol/m²/s) | 12 h | 14 h | 16 h |
+| --- | --- | --- | --- |
+| 200 | 8.6 | 10.1 | 11.5 |
+| 250 | 10.8 | 12.6 | 14.4 |
+| 300 | 13.0 | 15.1 | 17.3 |
+
+**Recommendation:** about 250 µmol/m²/s for 14–16 hours a day lands in the 12–17 range. More light and heat speed growth but raise the risk of tipburn, so don't push past the top of that range in a warm room. Measure with a PAR meter rather than a phone lux app.
+
+## Temperature, humidity and airflow
+
+The University of Kentucky recommends days no warmer than **75 °F (24 °C)** and nights no warmer than **65 °F (18 °C)**, relative humidity of 50–70 %, and gentle air movement of about 0.7–2.2 mph across the leaves. Lettuce tolerates cool conditions, with nights down to 50 °F, but grows more slowly. Prolonged heat and big temperature swings trigger bolting.
+
+## Harvest
+
+- Expect to harvest **21–35 days after transplanting**. The University of Kentucky suggests harvesting earlier in summer to reduce tipburn and later in winter when growth is slower.
+- Its trials report heads of about 100–210 g (3.5–7.5 oz).
+- Harvest whole heads at the base, or pick the outer leaves of looseleaf types and let the centre keep growing.
+- Rinse and chill lettuce straight after harvest for the best shelf life.
+
+## Troubleshooting common problems
+
+| Symptom | Likely cause | What to do |
+| --- | --- | --- |
+| Brown, dry edges on young inner leaves | Tipburn: calcium can't reach fast-growing tissue, often from high light, heat or fast growth | Lower light or temperature, add airflow, harvest a little earlier, choose tipburn-resistant varieties |
+| Tall central stalk, bitter taste | Bolting from prolonged heat or big temperature swings | Use heat-tolerant varieties, cool and ventilate the room |
+| Slow, pale, stretched plants | Too little light | Raise intensity or hours towards 12–17 mol/m²/day |
+| Wilting or brown roots in DWC | Low dissolved oxygen, often from warm solution | Check the air pump and stones; cool the solution below 80 °F |
+| Leaf burn in Kratky containers | Salts concentrating from hard water | Start with clean or rain water; don't add fertilizer mid-crop |
+| Yellowing lower leaves | Solution too weak or pH off | Check EC (about 1.5) and pH (5.5–6.0) |
+
+## Frequently asked questions
+
+### How long does hydroponic lettuce take to grow?
+
+About 2–3 weeks from seed to transplant plus 3–5 weeks to harvest, so roughly 5–8 weeks in total. Kratky's bottle method took about 6–7 weeks from seeding.
+
+### What pH does hydroponic lettuce need?
+
+Keep the nutrient solution between pH 5.5 and 6.0 (University of Kentucky).
+
+### Can I grow lettuce without a pump?
+
+Yes. The Kratky method needs no pump, air stone or electricity, as long as you add all of the solution at the start and never refill over the exposed roots.
+
+### Which lettuce is easiest to grow hydroponically?
+
+Butterhead and looseleaf types. Romaine is harder in controlled environments, and iceberg isn't considered suitable for typical hydroponic production.
+
+## Weekly checklist
+
+- Check pH and EC two or three times a week, and daily in small reservoirs.
+- Look for tipburn on the youngest leaves and stretched growth.
+- Confirm air pumps and stones are working in DWC.
+- Top up recirculating systems; leave Kratky containers alone.
+- Note air temperature highs and lows.
+- Sow a new tray every 1–2 weeks for a continuous supply.
+
+## Next steps
+
+Choose your seed with [hydroponic lettuce seeds](/crops/hydroponic-lettuce-seeds/), compare setups in [hydroponic lettuce systems compared](/crops/hydroponic-lettuce-systems/), and read the [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) before your first mix.
+
+*Targets in this guide come from the university and extension sources listed below, mostly from commercial or research settings. Home conditions vary, so treat them as starting points and adjust to how your plants respond. HydroRigor has not run its own lettuce trial for this guide.*
