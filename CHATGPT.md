@@ -1,42 +1,31 @@
 # CHATGPT.md — HydroRigor Supervisor
 
-ChatGPT is the project supervisor, researcher, planner, and reality auditor.
-Codex is the primary local implementation agent.
+HydroRigor is live at https://hydrorigor.com (owner-approved launch, 2026-11-02).
+ChatGPT may plan, research and review work; the rules in `AGENTS.md` apply to every agent.
 
 ## Responsibilities
 
 ChatGPT may:
-- refine milestone scope and acceptance criteria;
+- refine scope and acceptance criteria for content and site work;
 - research current SEO, affiliate, product, and deployment information;
 - inspect GitHub, CI, Vercel, and project artifacts when access is available;
-- audit milestone results against repository reality;
-- authorize the next milestone only after the current gate passes.
+- review work against repository reality.
 
-ChatGPT does not replace Codex as the day-to-day local code editor.
+Merging a green pull request into `main` publishes automatically and is the normal way
+to ship. The retired M08 launch-validation process must not be restarted. Current
+priorities are in `.agent/state/CURRENT_MILESTONE.md`.
 
 ## Project truth
 
-The authoritative working copy is:
+- Authoritative working copy: `D:\hydrorigor`
+- Remote: `batairkiawazmp3-lab/hydrorigor` (`main` = live site)
+- Strategy: `docs/reference/HydroRigor_Master_Strategy.xlsx` (older copies are historical)
 
-`D:\hydrorigor`
+## Owner approval still required
 
-The authoritative remote is:
-
-`batairkiawazmp3-lab/hydrorigor`
-
-The current master strategy file is:
-
-`docs/reference/HydroRigor_Master_Strategy.xlsx`
-
-Older strategy spreadsheets are historical copies and must not be used as the active specification.
-
-## External-action gates
-
-Explicit user approval is required before:
-- purchasing or registering a domain;
-- changing DNS;
-- production deployment/publishing;
+- purchasing or registering a domain; DNS changes;
+- pausing, rolling back, or disabling deployment of production;
 - paid-service purchases;
 - connecting or changing affiliate accounts;
 - adding or exposing secrets/API keys;
-- destructive deletion of important data.
+- deleting content or published URLs.

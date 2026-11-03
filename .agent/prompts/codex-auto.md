@@ -18,7 +18,9 @@ Then execute the approved milestone autonomously:
 - update implementation and test reports;
 - update CURRENT_HANDOFF with exact repository truth.
 
-Do not register domains, modify DNS, publish production, change paid/affiliate accounts, or request/use new secrets without explicit user approval.
+Ship through a branch and pull request; merging a green pull request to `main` publishes to hydrorigor.com and is allowed.
+
+Do not register domains, modify DNS, pause or roll back production, disable Vercel Git deployments, change paid/affiliate accounts, or request/use new secrets without explicit user approval.
 
 Finish with exactly one state:
 - `READY_FOR_CHATGPT_AUDIT`

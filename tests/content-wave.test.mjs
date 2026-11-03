@@ -168,15 +168,15 @@ test('M06 production prose contains no fixture markers, tracking links, or numer
   }
 });
 
-test('M06 acceptance history survives the gated M08 milestone transition', async () => {
+test('M06–M08 acceptance history survives the launch and M09 is active', async () => {
+  const archived = await read('milestones/M08/ARCHIVED_CURRENT_MILESTONE_2026-11-02.md');
   const milestone = await read('.agent/state/CURRENT_MILESTONE.md');
   const audit = await read('milestones/M06/REALITY_AUDIT.md');
-  assert.match(milestone, /Previous milestone: M07 — Quality & Observability: ACCEPTED AND MERGED/u);
-  assert.match(milestone, /M07 integration: PR #7 — SQUASH_MERGED/u);
-  assert.match(milestone, /Milestone: M08 — Production Launch/u);
-  assert.match(milestone, /M08 authorization: GRANTED_WITH_HUMAN_LAUNCH_GATES/u);
-  assert.match(milestone, /M09 status: NOT_STARTED/u);
-  assert.match(milestone, /M09 authorization: NOT_AUTHORIZED/u);
+  assert.match(archived, /Previous milestone: M07 — Quality & Observability: ACCEPTED AND MERGED/u);
+  assert.match(archived, /M07 integration: PR #7 — SQUASH_MERGED/u);
+  assert.match(archived, /Milestone: M08 — Production Launch/u);
+  assert.match(milestone, /M08 — Production Launch: ACCEPTED/u);
+  assert.match(milestone, /M09 — Content upgrade and scale: ACTIVE/u);
   assert.match(audit, /Status: ACCEPTED/u);
   assert.match(audit, /M06 — Content Wave 1: ACCEPTED/u);
 });

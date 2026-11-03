@@ -3,8 +3,8 @@
 ## Branching
 
 Recommended:
-- `main` = releasable baseline
-- one milestone branch at a time: `m01-foundation`, `m02-content-engine`, etc.
+- `main` = the live site; every merge deploys to hydrorigor.com
+- short-lived branches: `content/<topic>`, `fix/<topic>`, `feat/<topic>`, `chore/<topic>`
 
 ## Commit conventions
 

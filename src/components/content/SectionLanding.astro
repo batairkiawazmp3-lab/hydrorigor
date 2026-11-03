@@ -4,6 +4,7 @@ import CommercialSectionStatus from '../commercial/CommercialSectionStatus.astro
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../seo/Breadcrumbs.astro';
 import { getM06Path, m06ContentItems } from '../../data/m06-content.ts';
+import { EMPTY_SECTION_PATHS } from '../../lib/indexing.ts';
 
 interface Props {
   section: SectionDefinition;
@@ -13,7 +14,7 @@ const { section } = Astro.props;
 const pathname = `/${section.slug}/`;
 const publishedItems = m06ContentItems.filter(({ category }) => category === section.id);
 ---
-<BaseLayout title={`${section.title} — HydroRigor`} description={section.description}>
+<BaseLayout title={`${section.title} — HydroRigor`} description={section.description} noindex={EMPTY_SECTION_PATHS.has(pathname)}>
   <section class="py-14 sm:py-20">
     <div class="hr-container">
       <Breadcrumbs items={[

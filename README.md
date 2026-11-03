@@ -25,12 +25,10 @@ This repository is the single HydroRigor website project.
 
 ## Current status
 
-M01 through M07 are accepted and merged. M07 — Quality & Observability was
-squash-merged through PR #7 at `53e80f5db2633d06d08ec4e3684820465bca7f8c`;
-post-merge quality and governance passed. M08 — Production Launch is IN_PROGRESS,
-authorized with human launch gates. Gate A project-only setup is complete;
-deployment and remaining launch mutations require separate owner approval. M09 remains NOT_STARTED /
-NOT_AUTHORIZED. See [M08 production runbook](docs/launch/M08_PRODUCTION_RUNBOOK.md).
+**Live at https://hydrorigor.com** since 2026-11-02 (owner-approved). M01–M08 are
+accepted; M09 (content upgrade and scale) is active. Merging a green pull request into
+`main` deploys automatically through Vercel. See `AGENTS.md` for the rules every agent
+follows and `.agent/state/CURRENT_MILESTONE.md` for current priorities.
 
 ## Local validation
 
@@ -59,10 +57,6 @@ samples per route. See `milestones/M07/TEST_REPORT.md` for actual results and
 browser and Lighthouse reports are ignored. Analytics is prepared but disabled
 by default; Search Console preparation is documented without connection.
 
-No production deployment is authorized by setup alone.
-
-M08 adds `npm run test:launch` for a local launch-smoke rehearsal. After approved
-deployment, set `PRODUCTION_BASE_URL=https://hydrorigor.com/` and run
-`npm run test:production` and `npm run test:lighthouse:production`. Local results
-are not production evidence. Automatic Vercel Git deployments are disabled in
-repository configuration; project linking and manual deployment remain gated.
+`npm run test:launch` runs a local launch-smoke rehearsal. To check the live site, set
+`PRODUCTION_BASE_URL=https://hydrorigor.com/` and run `npm run test:production`.
+Vercel Git deployments are enabled: every merge to `main` deploys to production.

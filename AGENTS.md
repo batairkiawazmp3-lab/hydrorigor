@@ -1,5 +1,20 @@
 # AGENTS.md — HydroRigor Agent Rules
 
+## Current status (owner-approved, 2026-11-02)
+
+HydroRigor is **live** at https://hydrorigor.com. M08 (launch) is accepted by the
+owner; M09 (content upgrade and scale) is active. Merging a green pull request
+into `main` deploys automatically through Vercel and is the normal way to ship.
+
+The site is live, so do not do any of the following unless the owner explicitly
+asks in the current task: pause the Vercel project, roll back production, remove a
+production domain, set `git.deploymentEnabled: false` or remove `ignoreCommand`
+in `vercel.json`, add `noindex` to published guides, or delete/rename published URLs.
+
+The October 2026 M08 launch-validation process (production Lighthouse windows,
+pinned-browser staged validation, request-file triggers) is retired; its history
+is archived in `milestones/M08/`. Do not reopen it.
+
 ## Operating model
 
 HydroRigor uses a deliberately simple two-agent workflow:
@@ -55,12 +70,26 @@ Within an approved milestone, Codex may without repeated approval:
 
 - domain purchase or registration;
 - DNS modification;
-- production deployment/publishing;
+- pausing, rolling back, or disabling deployment of production (merging a green PR to `main` does not need extra approval);
 - paid service purchase;
 - affiliate-account authorization/change;
 - API keys, tokens, or secrets not already provisioned for the project;
 - destructive deletion of important user data;
 - major architecture change outside the approved specification.
+
+## Content standard for new and rewritten guides
+
+- Answer the searcher's question near the top, including the numbers they look for
+  (pH, EC, temperature, light, spacing), each tied to a named source listed in the page
+  and registered in `src/data/editorial-sources/`.
+- Give clear, reasoned recommendations and say what each one is based on.
+- Primary guides: roughly 1,800–2,500 words, with tables, at least one original SVG
+  diagram in `public/images/guides/` (presentation attributes only, no inline `style`,
+  because of the CSP), a troubleshooting section, and internal links.
+- Use `author: "Najeeb"` only on pages Najeeb has reviewed; otherwise `HydroRigor Editorial`.
+  The author profile and degree live in `src/data/authors.ts`.
+- When a section's first guide is published, remove its path from
+  `EMPTY_SECTION_PATHS` in `src/lib/indexing.ts`.
 
 ## Evidence and affiliate integrity
 

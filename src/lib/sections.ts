@@ -43,7 +43,7 @@ export const sectionDefinitions = [
     description: 'Understand the main ways indoor hydroponic systems support roots, water, nutrients, and airflow.',
     eyebrow: 'Choose a growing method',
     intro: 'Use this section to understand system families, compare their operating demands, and identify the questions to answer before choosing one.',
-    availability: 'M06 publishes four source-backed system guides covering home selection, DWC, a simple DIY planning path, and smart-feature evaluation.',
+    availability: 'Four guides cover choosing a home system, deep water culture, a simple DIY build, and which smart features are worth paying for.',
     groups: [
       {
         title: 'System families',
@@ -75,7 +75,7 @@ export const sectionDefinitions = [
     description: 'Plan crop choices around space, system fit, growth habits, and the evidence available for each plant.',
     eyebrow: 'Choose what to grow',
     intro: 'This section organizes crop guidance by practical decisions without presenting unsupported target numbers or promising universal results.',
-    availability: 'M06 publishes seven source-backed guides for strawberries, lettuce, and tomatoes. M04 continues to provide the source-specific pH and EC reference; it is not a universal prescription.',
+    availability: 'Seven guides cover strawberries, lettuce, and tomatoes. The pH and EC reference tool lists sourced targets for each crop and the conditions they came from.',
     groups: [
       {
         title: 'Start with constraints',
@@ -88,8 +88,8 @@ export const sectionDefinitions = [
         topics: ['Leafy crops', 'Herbs', 'Fruiting crops'],
       },
       {
-        title: 'Read future crop profiles',
-        description: 'Crop pages will separate sourced targets, practical interpretation, and unresolved evidence gaps.',
+        title: 'Read the crop guides',
+        description: 'Crop guides give sourced targets, practical setup advice, and the limits of the evidence.',
         topics: ['Source provenance', 'Range context', 'Update history'],
       },
     ],
@@ -107,7 +107,7 @@ export const sectionDefinitions = [
     description: 'Build a clear mental model for nutrient solutions, water quality, pH, EC, and responsible measurement.',
     eyebrow: 'Understand the root-zone inputs',
     intro: 'This section explains how to think about nutrients and water and links to the first source-supported reference and volume-scaling tool.',
-    availability: 'M06 adds seven nutrient and water guides. M04 still provides the sourced pH/EC reference and label-dose scaler; neither the articles nor tools invent crop recipes, EC predictions, or pH dosing.',
+    availability: 'Seven guides cover nutrient basics, mixing, organic options, and feeding by crop. The pH and EC reference and the label-dose calculator help you apply them.',
     groups: [
       {
         title: 'Water context',
@@ -121,7 +121,7 @@ export const sectionDefinitions = [
       },
       {
         title: 'Use evidence carefully',
-        description: 'Future target ranges will identify their source, units, assumptions, and limits.',
+        description: 'Every target range names its source, units, and the context it was measured in.',
         topics: ['Units and instruments', 'Source quality', 'Responsible interpretation'],
       },
     ],
@@ -139,7 +139,7 @@ export const sectionDefinitions = [
     description: 'Understand equipment roles, specifications, setup questions, and evidence before evaluating products.',
     eyebrow: 'Plan the supporting hardware',
     intro: 'This section helps readers organize equipment decisions without presenting untested products or premature buying recommendations.',
-    availability: 'Equipment explainers and evaluated product coverage will arrive only after their content and testing milestones are authorized.',
+    availability: 'Equipment guides for lights, pumps, meters, and growing media are being written. Until then, the system and nutrient guides cover what each setup needs.',
     groups: [
       {
         title: 'Core setup roles',
@@ -153,7 +153,7 @@ export const sectionDefinitions = [
       },
       {
         title: 'Evaluation questions',
-        description: 'Future equipment coverage will distinguish published specifications, observed behavior, and editorial judgment.',
+        description: 'Equipment guides separate published specifications, observed behavior, and editorial judgment.',
         topics: ['Specification checks', 'Usability criteria', 'Testing evidence'],
       },
     ],
@@ -168,10 +168,10 @@ export const sectionDefinitions = [
     slug: 'best',
     navLabel: 'Buyer Guides',
     title: 'Buyer guides by use case',
-    description: 'A transparent framework for future shortlists organized around real use cases and explicit evidence.',
+    description: 'Research-based buying guides organized around real use cases, with the evidence behind each pick.',
     eyebrow: 'Make a purchase decision carefully',
     intro: 'This section organizes buyer research around constraints and use cases, with clear methods and evidence boundaries.',
-    availability: 'M06 publishes five evidence-bounded buyer research guides. They compare system or nutrient-program criteria without a named product shortlist, price, affiliate destination, or unsupported recommendation.',
+    availability: 'Five buyer guides explain what to look for in systems, kits, and nutrients for different home setups.',
     groups: [
       {
         title: 'Define the use case',
@@ -180,12 +180,12 @@ export const sectionDefinitions = [
       },
       {
         title: 'Show the evidence',
-        description: 'Future guides will explain selection criteria, source limitations, and what was or was not tested.',
+        description: 'Each guide explains its selection criteria, source limitations, and what was or was not tested.',
         topics: ['Selection criteria', 'Evidence type', 'Known limitations'],
       },
       {
         title: 'Disclose incentives',
-        description: 'Any future compensated link will be identified without allowing compensation to determine editorial conclusions.',
+        description: 'Any compensated link is disclosed, and compensation never decides an editorial conclusion.',
         topics: ['Material connections', 'Link qualification', 'Corrections'],
       },
     ],
@@ -203,7 +203,7 @@ export const sectionDefinitions = [
     description: 'Product-system guides with visible methods, evidence boundaries, disclosures, and update history.',
     eyebrow: 'Understand an evaluation',
     intro: 'The review architecture separates methodology, evidence, verdicts, pros, cons, and sources without using unsupported scores.',
-    availability: 'M06 publishes two manufacturer-documentation nutrient-system guides. Both are explicitly manufacturer-specification-only; no hands-on test, rating, price, availability, affiliate destination, or recommendation is published.',
+    availability: "Two guides explain how the Masterblend and General Hydroponics nutrient systems work, based on the manufacturers' published documentation.",
     groups: [
       {
         title: 'Before evaluation',
@@ -232,10 +232,10 @@ export const sectionDefinitions = [
     slug: 'compare',
     navLabel: 'Comparisons',
     title: 'Hydroponic comparisons',
-    description: 'Compare approaches and future evaluated items against explicit criteria and reader use cases.',
+    description: 'Head-to-head comparisons of setups and products against explicit criteria and reader use cases.',
     eyebrow: 'Compare without a false universal winner',
     intro: 'This section provides the structure for side-by-side reasoning while keeping conclusions tied to a stated use case.',
-    availability: 'The current comparison entry remains a non-indexable fictional fixture. Its evidence-aware structure does not represent a real product comparison, absolute winner, or recommendation.',
+    availability: 'Comparison guides are being written. For now, the hydroponic lettuce systems guide compares DWC, NFT, and Kratky side by side.',
     groups: [
       {
         title: 'Set the comparison',
@@ -266,8 +266,8 @@ export const sectionDefinitions = [
     title: 'Hydroponic troubleshooting',
     description: 'Approach symptoms methodically, separate observations from causes, and choose safe next checks.',
     eyebrow: 'Fix a problem methodically',
-    intro: 'This section will organize troubleshooting around observed symptoms, system context, evidence, and reversible checks.',
-    availability: 'Detailed diagnostic articles are not yet published. This landing provides the decision structure without pretending to diagnose a live grow.',
+    intro: 'Troubleshooting guides start from what you can observe, check the system context, and favour safe, reversible fixes.',
+    availability: 'Troubleshooting guides are being written. The strawberry guide already includes a symptom-and-fix table for common problems.',
     groups: [
       {
         title: 'Record the symptom',
@@ -299,7 +299,7 @@ export const sectionDefinitions = [
     description: 'Use a sourced crop pH/EC reference and a tested manufacturer label-dose volume scaler.',
     eyebrow: 'Use decision support responsibly',
     intro: 'The first HydroRigor tools make their inputs, units, assumptions, sources, formula behavior, and limits visible.',
-    availability: 'M04 provides exactly two outputs: a five-crop source/context reference and a nutrient label-dose scaler. Neither supplies automatic crop dosing or product advice.',
+    availability: 'Two tools: a pH and EC target reference for five crops with their sources, and a calculator that scales a nutrient label dose to your reservoir size.',
     groups: [
       {
         title: 'Reference tools',
@@ -313,7 +313,7 @@ export const sectionDefinitions = [
       },
       {
         title: 'Decision boundaries',
-        description: 'Tools will clarify what their output can support and what still requires judgment or new evidence.',
+        description: 'Each tool states what its output can support and what still requires your judgment.',
         topics: ['Interpretation limits', 'Evidence gaps', 'No automatic diagnosis'],
       },
     ],
