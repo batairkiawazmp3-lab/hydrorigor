@@ -4,6 +4,8 @@ export interface AuthorProfile {
   credential: string;
   bio: string;
   profilePath: string;
+  /** Public profiles that confirm who the author is (LinkedIn, organisation site). Add only real URLs the owner provides. */
+  sameAs?: readonly string[];
 }
 
 const najeebDegree = 'MSc in Environmental Sciences';

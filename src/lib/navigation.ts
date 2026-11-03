@@ -65,6 +65,11 @@ export const trustNavigation = [
     description: 'How compensated links are disclosed and kept separate from conclusions.',
   },
   {
+    label: 'Privacy Policy',
+    href: '/privacy/',
+    description: 'What the site collects, why, and who processes it.',
+  },
+  {
     label: 'Contact',
     href: '/contact/',
     description: 'Corrections, reader feedback, and partnership inquiries.',

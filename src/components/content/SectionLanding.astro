@@ -1,4 +1,5 @@
 ---
+import { pageTitle } from '../../lib/seo.ts';
 import type { SectionDefinition } from '../../lib/sections.ts';
 import CommercialSectionStatus from '../commercial/CommercialSectionStatus.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -27,7 +28,7 @@ const bodies = new Map(entries.map((entry) => [entry.data.route, entry.body]));
 const banner = photoForSection(section.id);
 const image = await socialImage(banner);
 ---
-<BaseLayout title={`${section.title} — HydroRigor`} description={section.description} noindex={EMPTY_SECTION_PATHS.has(pathname)} image={image}>
+<BaseLayout title={pageTitle(section.title)} description={section.description} noindex={EMPTY_SECTION_PATHS.has(pathname)} image={image}>
   <section class="py-14 sm:py-20">
     <div class="hr-container">
       <Breadcrumbs items={[

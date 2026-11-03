@@ -8,7 +8,7 @@ and `Publishing Sequence` stages 1–2. The workbook was read only.
 
 | ID | Route | Category | Final title | Intent | Primary topic | Metric status | Sources | Status |
 | ---: | --- | --- | --- | --- | --- | --- | ---: | --- |
-| 1 | `/systems/indoor-hydroponic-systems-for-home/` | Systems | Indoor Hydroponic Systems for Home: Complete Beginner-to-Buyer Guide | Commercial research | indoor hydroponic system | VERIFIED_2026-09-12: 2,900 / SD 33 | 3 | Validated |
+| 1 | `/systems/indoor-hydroponic-systems-for-home/` | Systems | Indoor Hydroponic Systems for Home: How to Choose and Set Up | Commercial research | indoor hydroponic system | VERIFIED_2026-09-12: 2,900 / SD 33 | 3 | Validated |
 | 2 | `/best/hydroponic-systems-for-beginners/` | Buyer Guides | Best Hydroponic Systems for Beginners: What Actually Matters | Commercial research | best hydroponic system for beginners | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 3 | `/best/indoor-hydroponic-system-kits/` | Buyer Guides | Indoor Hydroponic System Kits: What to Buy and What to Skip | Transactional research | indoor hydroponic system kit | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 4 | `/systems/deep-water-culture-hydroponics/` | Systems | Deep Water Culture Hydroponics: Complete DWC System Guide | Transactional research | hydroponic system deep water culture | METRIC_NOT_REVERIFIED | 2 | Validated |
@@ -25,7 +25,7 @@ and `Publishing Sequence` stages 1–2. The workbook was read only.
 | 15 | `/nutrients-water/organic-hydroponic-nutrients/` | Nutrients & Water | Organic Hydroponic Nutrients: What Works and What to Know | Transactional research | hydroponic nutrients organic | VERIFIED_2026-09-12: 590 / SD 20 | 3 | Validated |
 | 16 | `/best/hydroponic-nutrients-for-home-growers/` | Buyer Guides | Best Hydroponic Nutrients for Home Growers | Commercial research | best hydroponic nutrients | METRIC_NOT_REVERIFIED | 3 | Validated |
 | 17 | `/nutrients-water/powder-vs-liquid-hydroponic-nutrients/` | Nutrients & Water | Powder vs Liquid Hydroponic Nutrients: Which Should You Buy? | Commercial research | hydroponic nutrients powder | METRIC_NOT_REVERIFIED | 2 | Validated |
-| 18 | `/nutrients-water/hydroponic-nutrients-for-vegetables/` | Nutrients & Water | Hydroponic Nutrients for Vegetables: A Practical Feeding Guide | Transactional research | hydroponic nutrients vegetables | METRIC_NOT_REVERIFIED | 3 | Validated |
+| 18 | `/nutrients-water/hydroponic-nutrients-for-vegetables/` | Nutrients & Water | Hydroponic Nutrients for Vegetables: A Feeding Guide | Transactional research | hydroponic nutrients vegetables | METRIC_NOT_REVERIFIED | 3 | Validated |
 | 19 | `/nutrients-water/hydroponic-nutrients-for-tomatoes/` | Nutrients & Water | Hydroponic Nutrients for Tomatoes: Feeding by Growth Stage | Informational | hydroponic tomatoes nutrient solution | VERIFIED_2026-09-12: 170 / SD 18 | 3 | Validated |
 | 20 | `/nutrients-water/how-to-mix-hydroponic-nutrients/` | Nutrients & Water | How to Mix Hydroponic Nutrients Correctly | Informational | mixing hydroponic nutrients | METRIC_NOT_REVERIFIED | 3 | Validated |
 | 21 | `/reviews/masterblend-hydroponic-nutrients/` | Reviews | Masterblend Hydroponic Nutrients: Beginner Setup Guide | Transactional research | masterblend hydroponic nutrients | METRIC_NOT_REVERIFIED | 2 | Validated |

@@ -28,9 +28,27 @@ export interface BlogPostingJsonLd {
   mainEntityOfPage: string;
   datePublished: string;
   dateModified: string;
-  author: { '@type': 'Person' | 'Organization'; name: string; url?: string };
-  publisher: { '@type': 'Organization'; name: string; url: string };
+  author: AuthorJsonLd;
+  publisher: PublisherJsonLd;
   reviewedBy?: { '@type': 'Person'; name: string };
+}
+
+export interface AuthorJsonLd {
+  '@type': 'Person' | 'Organization';
+  name: string;
+  url?: string;
+  jobTitle?: string;
+  description?: string;
+  hasCredential?: { '@type': 'EducationalOccupationalCredential'; credentialCategory: 'degree'; name: string };
+  worksFor?: { '@type': 'Organization'; name: string; url: string };
+  sameAs?: string[];
+}
+
+export interface PublisherJsonLd {
+  '@type': 'Organization';
+  name: string;
+  url: string;
+  logo: { '@type': 'ImageObject'; url: string; width: number; height: number };
 }
 
 export interface BreadcrumbInput {
@@ -65,11 +83,29 @@ export function buildWebsiteJsonLd(): WebsiteJsonLd {
   };
 }
 
-function authorJsonLd(name: string): BlogPostingJsonLd['author'] {
+function publisherJsonLd(): PublisherJsonLd {
+  return {
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: absoluteUrl('/'),
+    logo: { '@type': 'ImageObject', url: absoluteUrl('/icon-512.png'), width: 512, height: 512 },
+  };
+}
+
+function authorJsonLd(name: string): AuthorJsonLd {
   const profile = findAuthor(name);
-  return profile
-    ? { '@type': 'Person', name: profile.name, url: absoluteUrl(profile.profilePath) }
-    : { '@type': 'Organization', name };
+  if (!profile) return { '@type': 'Organization', name };
+  const person: AuthorJsonLd = {
+    '@type': 'Person',
+    name: profile.name,
+    url: absoluteUrl(profile.profilePath),
+    jobTitle: profile.role,
+    description: profile.bio,
+    hasCredential: { '@type': 'EducationalOccupationalCredential', credentialCategory: 'degree', name: profile.credential },
+    worksFor: { '@type': 'Organization', name: SITE_NAME, url: absoluteUrl('/') },
+  };
+  if (profile.sameAs && profile.sameAs.length > 0) person.sameAs = [...profile.sameAs];
+  return person;
 }
 
 export function buildArticleJsonLd(input: ArticleJsonLdInput): BlogPostingJsonLd {
@@ -84,7 +120,7 @@ export function buildArticleJsonLd(input: ArticleJsonLdInput): BlogPostingJsonLd
     datePublished: published,
     dateModified: input.updatedDate ? isoDate(input.updatedDate) : published,
     author: authorJsonLd(input.author),
-    publisher: { '@type': 'Organization', name: SITE_NAME, url: absoluteUrl('/') },
+    publisher: publisherJsonLd(),
   };
 
   if (input.reviewer) result.reviewedBy = { '@type': 'Person', name: input.reviewer };

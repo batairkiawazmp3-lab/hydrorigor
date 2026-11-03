@@ -1,4 +1,5 @@
 ---
+import { pageTitle } from '../../lib/seo.ts';
 import type { CollectionEntry } from 'astro:content';
 import type { MarkdownHeading } from 'astro';
 import CommercialDisclosure from '../../components/commercial/CommercialDisclosure.astro';
@@ -50,7 +51,7 @@ const related = m06ContentItems
   .slice(0, 4);
 ---
 <BaseLayout
-  title={`${data.title} — HydroRigor`}
+  title={pageTitle(data.title)}
   description={data.description}
   canonical={data.canonical}
   noindex={data.draft}

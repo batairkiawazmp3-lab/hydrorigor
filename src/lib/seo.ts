@@ -1,6 +1,12 @@
 import { isIndexable } from './indexing.ts';
 import { SITE_NAME, absoluteUrl } from './site.ts';
 
+/** Browser/search title: adds the brand only when the result stays within 60 characters. */
+export function pageTitle(title: string): string {
+  const branded = `${title} — HydroRigor`;
+  return branded.length <= 60 ? branded : title;
+}
+
 export interface SeoImage {
   src: string;
   alt: string;

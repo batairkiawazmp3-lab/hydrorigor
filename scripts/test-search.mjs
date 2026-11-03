@@ -201,7 +201,7 @@ try {
     'Pagefind did not return the public review landing',
   );
 
-  const disclosureResults = await loadResults(search, 'production merchant and commercial-destination registries remain empty');
+  const disclosureResults = await loadResults(search, 'no paid links, tracking IDs, live prices');
   assert.ok(
     disclosureResults.some(({ url }) => normalizePath(url) === '/affiliate-disclosure/'),
     'Pagefind did not return the current affiliate disclosure',

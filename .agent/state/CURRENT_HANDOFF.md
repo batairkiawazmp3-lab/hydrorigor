@@ -17,9 +17,14 @@ Updated: 2026-11-03
 - Contact email: Vercel manages DNS but does not host mailboxes. Owner to pick a provider
   (free forwarding such as ImprovMX, or a mailbox such as Zoho Mail Lite) and create the
   account; Claude then adds the DNS records in Vercel (with approval) and turns on `/contact/`.
-- Turn on Vercel Web Analytics and set `PUBLIC_ENABLE_VERCEL_ANALYTICS=true` (Production) in Vercel.
 - CI Lighthouse steps have failed before when GitHub's Chrome version changed. If only those
   steps fail, re-run the job once and report it; do not weaken the budgets.
+- Backlinks (the site has none yet, per Ubersuggest 2026-11-03): link to HydroRigor from the
+  owner's foundation site bio; create a Pinterest business account for pins of guide images;
+  answer r/Hydroponics questions where a guide genuinely helps.
+- Author profiles: send real LinkedIn / organisation URLs to add as `sameAs` in `src/data/authors.ts`.
+- Search Console: Claude needs Chrome with the Claude extension open to read indexing data.
+- OpenRush has no credits; the monthly SEO review uses Ubersuggest (10 live SERP refreshes/month).
 
 ## Awaiting owner review
 

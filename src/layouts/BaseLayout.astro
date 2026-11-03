@@ -7,6 +7,8 @@ import SEO from '../components/seo/SEO.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { buildWebsiteJsonLd } from '../lib/structured-data.ts';
 import type { SeoImage } from '../lib/seo.ts';
+import { socialImage } from '../lib/social-image.ts';
+import { photos } from '../data/photos.ts';
 
 interface Props {
   title: string;
@@ -21,6 +23,7 @@ interface Props {
   omitCanonical?: boolean | undefined;
 }
 const { title, description, canonical, noindex, type, publishDate, updatedDate, image, jsonLd, omitCanonical } = Astro.props;
+const shareImage = image ?? await socialImage(photos['systems-home-nft-lights']);
 const structuredData = [buildWebsiteJsonLd(), ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
 const searchable = !noindex;
 ---
@@ -30,6 +33,9 @@ const searchable = !noindex;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0F6B4F" />
     <link rel="preload" href="/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <SEO
@@ -41,7 +47,7 @@ const searchable = !noindex;
       type={type}
       publishDate={publishDate}
       updatedDate={updatedDate}
-      image={image}
+      image={shareImage}
       omitCanonical={omitCanonical}
     />
     <JsonLd data={structuredData} />
