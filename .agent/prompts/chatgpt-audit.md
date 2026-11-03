@@ -1,3 +1,5 @@
+> **Retired (2026-11-03).** Claude is now the only agent; follow `CLAUDE.md`.
+
 # ChatGPT Reality Audit Prompt
 
 Audit the active HydroRigor milestone against repository and CI reality.

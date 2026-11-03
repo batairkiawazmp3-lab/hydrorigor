@@ -1,3 +1,5 @@
+> **Retired (2026-11-03).** Claude is now the only agent on HydroRigor; see `CLAUDE.md` and `AGENTS.md`. This file is kept for history and because the governance check requires it.
+
 # CHATGPT.md — HydroRigor Supervisor
 
 HydroRigor is live at https://hydrorigor.com (owner-approved launch, 2026-11-02).

@@ -1,3 +1,5 @@
+> **Retired (2026-11-03).** Claude is now the only agent; follow `CLAUDE.md`.
+
 # Codex Autonomous Milestone Prompt
 
 You are the primary HydroRigor implementation agent working in `D:\hydrorigor`.

@@ -6,12 +6,14 @@ Minimize manual copy/paste while preserving approval gates for sensitive/externa
 
 ## Working model
 
-1. ChatGPT approves a milestone.
-2. Codex opens `D:\hydrorigor` and runs the instructions in `.agent/prompts/codex-auto.md`.
-3. Codex implements, tests, fixes, and records the milestone.
-4. GitHub CI confirms the branch when GitHub access is connected.
-5. ChatGPT audits repository + CI reality.
-6. The next milestone is activated only after acceptance.
+Claude is the only agent (owner decision, 2026-11-03). Two scheduled tasks run it:
+
+1. **Content run**, Monday and Thursday: takes the next open item in
+   `.agent/state/CURRENT_MILESTONE.md`, ships it as one pull request following `CLAUDE.md`,
+   merges when CI is green, verifies the live page and reports to the owner.
+2. **Monthly SEO review**, 1st of the month: audits the live site and reorders the queue.
+
+The owner can also ask Claude directly at any time; the same procedure applies.
 
 ## User involvement
 
@@ -25,6 +27,6 @@ The user should normally be needed only for:
 
 ## Deployment path
 
-`D:\hydrorigor -> branch -> GitHub pull request -> CI green -> squash merge to main -> Vercel deploys hydrorigor.com automatically`
+`origin/main -> branch -> GitHub pull request -> CI green -> squash merge to main -> Vercel deploys hydrorigor.com automatically`
 
 The site is live (owner-approved, 2026-11-02). Do not pause production or disable Git deployments; see `AGENTS.md`.
