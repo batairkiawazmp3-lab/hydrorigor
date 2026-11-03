@@ -15,7 +15,8 @@ test('brand tokens match the Lab Garden HydroRigor palette', async () => {
 test('font families are configured', async () => {
   const css = await read('src/styles/global.css');
   for (const family of ['Plus Jakarta Sans', 'Inter', 'JetBrains Mono']) assert.ok(css.includes(family), `missing font family ${family}`);
-  assert.match(css, /@fontsource/, 'fonts must be self-hosted');
+  assert.match(css, /url\("\/fonts\//, 'fonts must be self-hosted');
+  assert.match(css, /font-display: optional/, 'fonts must not cause layout shift');
 
   const layout = await read('src/layouts/BaseLayout.astro');
   assert.doesNotMatch(layout, /fonts\.googleapis|fonts\.gstatic/);
