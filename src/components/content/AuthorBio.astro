@@ -8,10 +8,13 @@ interface Props {
 const author = findAuthor(Astro.props.name);
 ---
 {author && (
-  <aside class="mt-12 rounded-2xl border border-hydro-deep/10 bg-water-mist p-6" aria-labelledby="author-bio-heading">
-    <p class="font-mono text-xs font-semibold tracking-[0.08em] text-hydro-teal uppercase">About the author</p>
-    <h2 id="author-bio-heading" class="mt-2 font-heading text-xl font-bold text-hydro-deep">{author.name} <span class="font-body text-base font-normal text-slate">· {author.role}</span></h2>
-    <p class="mt-3 text-base leading-7 text-ink">{author.bio}</p>
-    <p class="mt-3 text-sm"><a class="hr-focus text-hydro-teal underline underline-offset-4" href={author.profilePath}>More about HydroRigor and its editorial standards</a></p>
+  <aside class="mt-14 flex flex-col gap-5 rounded-[1.5rem] bg-water-mist p-6 sm:flex-row sm:p-7" aria-labelledby="author-bio-heading">
+    <span aria-hidden="true" class="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-hydro-teal font-heading text-2xl font-extrabold text-white">{author.name.charAt(0)}</span>
+    <div>
+      <p class="font-mono text-xs font-bold tracking-[0.12em] text-hydro-emerald-dark uppercase">About the author</p>
+      <h2 id="author-bio-heading" class="mt-1 font-heading text-xl font-bold text-hydro-deep">{author.name} <span class="font-body text-base font-normal text-slate">· {author.role}</span></h2>
+      <p class="mt-2 text-base leading-7 text-ink">{author.bio}</p>
+      <p class="mt-3 text-sm"><a class="hr-focus font-semibold text-hydro-teal underline underline-offset-4" href={author.profilePath}>More about HydroRigor and its editorial standards</a></p>
+    </div>
   </aside>
 )}
