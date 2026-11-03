@@ -5,38 +5,38 @@ import { searchLink, sectionNavigation, startLink } from '../lib/navigation.ts';
 const currentPath = Astro.url.pathname;
 const isCurrent = (href: string) => currentPath === href || (href !== '/' && currentPath.startsWith(href));
 ---
-<header class="relative z-40 border-b border-hydro-deep/10 bg-white/[0.94] backdrop-blur">
+<header class="sticky top-0 z-40 border-b border-line bg-white/[0.96] backdrop-blur">
   <div class="hr-container flex min-h-18 flex-wrap items-center justify-between gap-x-6 gap-y-3 py-3 md:flex-nowrap md:py-0">
     <BrandMark />
-    <nav aria-label="Primary navigation" class="order-3 flex w-full flex-wrap items-center gap-2 border-t border-hydro-deep/10 pt-3 md:order-none md:w-auto md:flex-nowrap md:justify-end md:border-t-0 md:pt-0">
-      <a
-        class="hr-focus rounded-lg bg-hydro-teal px-3 py-2 text-sm font-bold text-white no-underline transition hover:bg-hydro-deep"
-        href={startLink.href}
-        aria-current={isCurrent(startLink.href) ? 'page' : undefined}
-      >{startLink.label}</a>
-      <a
-        class="hr-focus rounded-lg border border-hydro-deep/15 bg-white px-3 py-2 text-sm font-semibold text-hydro-deep no-underline hover:border-hydro-teal hover:text-hydro-teal"
-        href={searchLink.href}
-        aria-current={isCurrent(searchLink.href) ? 'page' : undefined}
-      >{searchLink.label}</a>
+    <nav aria-label="Primary navigation" class="order-3 flex w-full flex-wrap items-center gap-2 border-t border-line pt-3 md:order-none md:w-auto md:flex-nowrap md:justify-end md:border-t-0 md:pt-0">
       <details class="group relative w-full sm:w-auto">
-        <summary class="hr-focus flex cursor-pointer list-none items-center justify-between gap-3 rounded-lg border border-hydro-deep/15 bg-water-mist px-3 py-2 text-sm font-bold text-hydro-deep [&::-webkit-details-marker]:hidden">
+        <summary class="hr-focus flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 rounded-full px-4 text-sm font-semibold text-hydro-deep hover:bg-water-mist [&::-webkit-details-marker]:hidden">
           Explore topics
-          <span aria-hidden="true" class="text-hydro-teal transition group-open:rotate-180">⌄</span>
+          <svg aria-hidden="true" class="h-4 w-4 text-hydro-teal transition group-open:rotate-180" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4" /></svg>
         </summary>
-        <div class="mt-3 grid gap-2 rounded-xl border border-hydro-deep/10 bg-white p-3 shadow-[var(--hr-shadow-soft)] sm:absolute sm:right-0 sm:w-[38rem] sm:grid-cols-2">
+        <div class="mt-3 grid gap-1 rounded-2xl border border-line bg-white p-3 shadow-[var(--hr-shadow-soft)] sm:absolute sm:right-0 sm:w-[40rem] sm:grid-cols-2">
           {sectionNavigation.map((item) => (
             <a
-              class="hr-focus rounded-lg p-3 no-underline hover:bg-water-mist"
+              class="hr-focus rounded-xl p-3 no-underline hover:bg-water-mist"
               href={item.href}
               aria-current={isCurrent(item.href) ? 'page' : undefined}
             >
-              <span class="block font-heading text-sm font-bold text-hydro-deep">{item.label}</span>
+              <span class="block font-heading text-[0.95rem] font-bold text-hydro-deep">{item.label}</span>
               <span class="mt-1 block text-xs leading-5 text-slate">{item.description}</span>
             </a>
           ))}
         </div>
       </details>
+      <a
+        class="hr-focus inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold text-hydro-deep no-underline hover:bg-water-mist"
+        href={searchLink.href}
+        aria-current={isCurrent(searchLink.href) ? 'page' : undefined}
+      ><svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="4.5" /><path d="M10.5 10.5L14 14" /></svg>{searchLink.label}</a>
+      <a
+        class="hr-focus inline-flex min-h-11 items-center rounded-full bg-hydro-teal px-5 text-sm font-semibold text-white no-underline transition hover:bg-hydro-emerald-dark"
+        href={startLink.href}
+        aria-current={isCurrent(startLink.href) ? 'page' : undefined}
+      >{startLink.label}</a>
     </nav>
   </div>
 </header>

@@ -1,20 +1,28 @@
 @import "tailwindcss";
+@import "@fontsource-variable/plus-jakarta-sans/wght.css";
+@import "@fontsource-variable/inter/wght.css";
+@import "@fontsource/jetbrains-mono/latin-500.css";
+@import "@fontsource/jetbrains-mono/latin-700.css";
 
 @theme {
-  --color-hydro-deep: #0b3d3b;
-  --color-hydro-teal: #16756f;
-  --color-leaf-signal: #6fa86b;
-  --color-leaf-bright: #a6d99f;
-  --color-water-mist: #eaf4f1;
-  --color-mineral-sand: #f4f1ea;
-  --color-ink: #172126;
-  --color-slate: #556266;
-  --color-amber-measure: #c9872d;
+  /* Lab Garden brand (2026-11). Token names kept from v1 so every page restyles at once. */
+  --color-hydro-deep: #0e1a14;     /* Night Soil: headings, dark bands */
+  --color-hydro-teal: #0f6b4f;     /* Emerald: links, buttons */
+  --color-hydro-emerald-dark: #0b4f3a;
+  --color-leaf-signal: #3e9b6a;    /* mid leaf: bullets, rules */
+  --color-leaf-bright: #c6f35e;    /* Grow Light: accents on dark only */
+  --color-water-mist: #e3f1e8;     /* Leaf Wash: answer cards */
+  --color-mineral-sand: #f5f7f2;   /* Bench: page ground */
+  --color-ink: #0e1a14;
+  --color-slate: #3f5248;          /* Moss Grey: secondary text */
+  --color-line: #dce4dd;
+  --color-night-panel: #17271f;
+  --color-amber-measure: #c9872d;  /* focus ring */
   --color-white: #ffffff;
 
-  --font-heading: "Manrope", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-heading: "Plus Jakarta Sans Variable", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 :root {
@@ -23,7 +31,7 @@
   --hr-reading-width: 47.5rem;
   --hr-radius-card: 0.875rem;
   --hr-radius-control: 0.625rem;
-  --hr-shadow-soft: 0 18px 50px rgb(11 61 59 / 0.08);
+  --hr-shadow-soft: 0 18px 50px rgb(14 26 20 / 0.08);
 }
 
 html {
@@ -37,13 +45,12 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 88% 4%, rgb(111 168 107 / 0.14), transparent 25rem),
-    linear-gradient(180deg, #ffffff 0%, var(--color-mineral-sand) 55%, #ffffff 100%);
+  background: var(--color-mineral-sand);
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: rgb(22 117 111 / 0.22);
+  background: rgb(198 243 94 / 0.55);
 }
 
 .hr-container {
@@ -62,15 +69,15 @@ body {
 
 .hr-grid-lines {
   background-image:
-    linear-gradient(rgb(11 61 59 / 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(11 61 59 / 0.06) 1px, transparent 1px);
+    linear-gradient(rgb(14 26 20 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(14 26 20 / 0.06) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
 .hr-prose {
   color: var(--color-ink);
-  font-size: 1.0625rem;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 1.75;
 }
 
 .hr-prose > * + * {
@@ -81,13 +88,15 @@ body {
 .hr-prose h3 {
   color: var(--color-hydro-deep);
   font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  scroll-margin-top: 6rem;
 }
 
 .hr-prose h2 {
-  margin-top: 2.5rem;
-  font-size: 1.75rem;
+  margin-top: 3rem;
+  font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2rem);
 }
 
 .hr-prose h3 {
@@ -127,7 +136,7 @@ body {
   max-width: 100%;
   overflow-x: auto;
   border-collapse: collapse;
-  border: 1px solid rgb(11 61 59 / 0.14);
+  border: 1px solid rgb(14 26 20 / 0.14);
   border-radius: var(--hr-radius-card);
   background: var(--color-white);
   font-size: 0.9375rem;
@@ -146,7 +155,7 @@ body {
 .hr-prose td {
   padding: 0.65rem 0.85rem;
   vertical-align: top;
-  border-bottom: 1px solid rgb(11 61 59 / 0.1);
+  border-bottom: 1px solid rgb(14 26 20 / 0.1);
   min-width: 7.5rem;
 }
 

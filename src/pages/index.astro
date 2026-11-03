@@ -1,112 +1,144 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Illustration, { type IllustrationName } from '../components/Illustration.astro';
+import { getM06Path, m06ContentItems } from '../data/m06-content.ts';
 import { sectionDefinitions } from '../lib/sections.ts';
+import { EMPTY_SECTION_PATHS } from '../lib/indexing.ts';
+import { readingMinutes } from '../lib/reading.ts';
 
-const choosePathIds = new Set(['systems', 'crops', 'nutrients', 'equipment', 'problems']);
-const choosePaths = sectionDefinitions.filter(({ id }) => choosePathIds.has(id));
-const evidencePaths = sectionDefinitions.filter(({ id }) => !choosePathIds.has(id));
+const articles = await getCollection('articles', ({ data }) => !data.draft);
+const byRoute = new Map(articles.map((entry) => [entry.data.route, entry]));
+const item = (route: string) => m06ContentItems.find((candidate) => candidate.route === route)!;
 
-const principles = [
-  ['Source', 'Identify where a claim, specification, or future target comes from.'],
-  ['Context', 'Explain the system, crop, use case, and limits around the information.'],
-  ['Method', 'Show how future comparisons, tests, and tools reach their conclusions.'],
-] as const;
+const crops: Array<{ route: string; label: string; note: string; art: IllustrationName }> = [
+  { route: 'hydroponic-lettuce', label: 'Lettuce & greens', note: 'The easiest first crop for any system', art: 'lettuce' },
+  { route: 'hydroponic-strawberries', label: 'Strawberries', note: 'Day-neutral varieties fruit for months', art: 'strawberry' },
+  { route: 'hydroponic-tomatoes', label: 'Tomatoes', note: 'Big plants with big light needs', art: 'tomato' },
+  { route: 'hydroponic-nutrients', label: 'Nutrients & water', note: 'pH, EC and mixing, explained', art: 'nutrients' },
+];
+
+const topics = sectionDefinitions.filter((section) => !EMPTY_SECTION_PATHS.has(`/${section.slug}/`));
+
+const featured: Array<{ route: string; art: IllustrationName; tag: string }> = [
+  { route: 'hydroponic-strawberries', art: 'strawberry', tag: 'Crops' },
+  { route: 'deep-water-culture-hydroponics', art: 'systems', tag: 'Systems' },
+  { route: 'indoor-hydroponic-systems-for-home', art: 'rack', tag: 'Systems' },
+];
 ---
-<BaseLayout title="HydroRigor — Evidence-based hydroponics" description="Practical hydroponic guides, crop guidance, transparent methods, and decision paths for home growers.">
-  <section class="relative overflow-hidden py-20 sm:py-28">
-    <div class="hr-container grid items-center gap-12 lg:grid-cols-[1.08fr_.92fr]">
-      <div class="max-w-3xl">
-        <p class="mb-5 inline-flex rounded-full border border-hydro-teal/20 bg-water-mist px-3 py-1 font-mono text-xs font-semibold tracking-[0.08em] text-hydro-deep uppercase">Evidence-led hydroponics</p>
-        <h1 class="font-heading text-5xl leading-[1.02] font-extrabold tracking-[-0.055em] text-hydro-deep sm:text-6xl lg:text-7xl">Grow indoors with evidence, not guesswork.</h1>
-        <p class="mt-7 max-w-2xl text-lg leading-8 text-slate sm:text-xl">Practical hydroponic guides, crop guidance, tools, and transparent reviews—organized to show what is known, what is planned, and where evidence has limits.</p>
-        <div class="mt-9 flex flex-wrap gap-3">
-          <a class="hr-focus rounded-[10px] bg-hydro-teal px-5 py-3.5 text-sm font-bold text-white no-underline transition hover:bg-hydro-deep" href="/start/">Start with hydroponics</a>
-          <a class="hr-focus rounded-[10px] border border-hydro-teal/30 bg-white px-5 py-3.5 text-sm font-bold text-hydro-deep no-underline hover:border-hydro-teal" href="/search/">Search HydroRigor</a>
+<BaseLayout title="HydroRigor — Evidence-based hydroponics for home growers" description="Clear hydroponic guides for home growers: sourced pH, EC, light and temperature targets, the systems worth buying, and fixes for common problems.">
+  <section class="py-14 sm:py-20" aria-labelledby="hero-heading">
+    <div class="hr-container grid items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
+      <div>
+        <p class="mb-6 inline-flex items-center gap-2 rounded-full bg-water-mist px-3.5 py-1.5 text-sm font-semibold text-hydro-emerald-dark">
+          <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7" /></svg>
+          Every target sourced to university research
+        </p>
+        <h1 id="hero-heading" class="font-heading text-[2.6rem] leading-[1.02] font-extrabold tracking-[-0.04em] text-hydro-deep sm:text-6xl lg:text-[4.1rem]">Grow indoors with evidence, not guesswork.</h1>
+        <p class="mt-6 max-w-xl text-lg leading-8 text-slate">Clear hydroponic guides for home growers: the exact pH, EC, light and temperature targets, the systems worth buying, and what to do when plants struggle.</p>
+        <form class="mt-8 flex max-w-xl flex-wrap gap-3" role="search" action="/search/" method="get">
+          <label class="sr-only" for="home-search">Search HydroRigor guides</label>
+          <input id="home-search" name="q" type="search" placeholder="Try “strawberries pH” or “DWC”" class="hr-focus min-h-13 flex-[1_1_16rem] rounded-full border-[1.5px] border-line bg-white px-5 text-base text-ink placeholder:text-slate/70" />
+          <button type="submit" class="hr-focus min-h-13 rounded-full bg-hydro-deep px-6 font-semibold text-white hover:bg-hydro-teal">Search</button>
+        </form>
+        <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
+          <a class="hr-focus rounded-sm text-hydro-teal" href="/start/">New to hydroponics? Start here →</a>
+          <a class="hr-focus rounded-sm text-hydro-teal" href="/tools/">Free tools →</a>
         </div>
       </div>
 
-      <aside class="hr-grid-lines rounded-[28px] border border-hydro-deep/10 bg-white p-6 shadow-[var(--hr-shadow-soft)]" aria-labelledby="evidence-heading">
-        <div class="rounded-2xl bg-hydro-deep p-6 text-white">
-          <p class="font-mono text-xs tracking-[0.12em] text-water-mist uppercase">How to read HydroRigor</p>
-          <h2 id="evidence-heading" class="mt-3 font-heading text-2xl font-bold">Evidence should remain visible.</h2>
-          <dl class="mt-7 grid gap-4">
-            {principles.map(([term, description]) => (
-              <div class="rounded-xl border border-white/[0.12] bg-white/[0.07] p-4">
-                <dt class="font-mono text-xs font-semibold tracking-[0.08em] text-leaf-bright uppercase">{term}</dt>
-                <dd class="mt-2 text-sm leading-6 text-white/[0.78]">{description}</dd>
-              </div>
-            ))}
-          </dl>
+      <div class="grid grid-cols-2 gap-3.5">
+        <a class="hr-focus group relative row-span-2 min-h-[26rem] overflow-hidden rounded-[1.75rem] no-underline" href={getM06Path(item('indoor-hydroponic-systems-for-home'))}>
+          <Illustration name="rack" class="absolute inset-0 h-full w-full transition duration-500 group-hover:scale-[1.03]" />
+          <span class="absolute inset-x-4 bottom-4 rounded-2xl bg-white/[0.94] p-4">
+            <span class="block font-mono text-[0.7rem] font-bold tracking-[0.1em] text-hydro-teal uppercase">Systems</span>
+            <span class="mt-1 block font-heading font-bold leading-tight text-hydro-deep">Indoor hydroponic systems for home</span>
+          </span>
+        </a>
+        <a class="hr-focus group relative min-h-[12.5rem] overflow-hidden rounded-[1.75rem] no-underline" href={getM06Path(item('hydroponic-strawberries'))}>
+          <Illustration name="strawberry" class="absolute inset-0 h-full w-full transition duration-500 group-hover:scale-[1.03]" />
+          <span class="absolute bottom-3 left-3 rounded-full bg-white/[0.94] px-3 py-1.5 text-sm font-bold text-hydro-deep">Strawberries</span>
+        </a>
+        <div class="flex min-h-[12.5rem] flex-col justify-between rounded-[1.75rem] bg-hydro-deep p-5">
+          <p class="font-mono text-[0.7rem] font-bold tracking-[0.12em] text-leaf-bright uppercase">Sourced target</p>
+          <p class="text-white"><span class="block text-sm font-semibold text-white/[0.75]">Strawberries</span><span class="block font-mono text-xl leading-tight font-bold sm:text-3xl">pH 5.5–6.0</span></p>
+          <a class="hr-focus rounded-sm text-sm font-semibold text-leaf-bright" href="/tools/ph-ec-targets/">All crop targets →</a>
         </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="border-y border-hydro-deep/10 bg-white py-14" aria-labelledby="start-heading">
-    <div class="hr-container grid gap-8 lg:grid-cols-[.7fr_1.3fr] lg:items-center">
-      <div>
-        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Start Here</p>
-        <h2 id="start-heading" class="mt-3 font-heading text-3xl font-bold tracking-[-0.035em] text-hydro-deep">Find the next useful question.</h2>
-      </div>
-      <div>
-        <p class="text-base leading-7 text-slate">New to hydroponics? Use the static beginner path to move from goals and constraints toward systems, crops, nutrients and water, equipment, or troubleshooting.</p>
-        <a class="hr-focus mt-5 inline-flex rounded-lg font-bold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href="/start/">Open the beginner decision path →</a>
       </div>
     </div>
   </section>
 
-  <section class="py-20" aria-labelledby="choose-heading">
+  <section class="pb-16" aria-labelledby="grow-heading">
     <div class="hr-container">
-      <div class="max-w-3xl">
-        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Choose your path</p>
-        <h2 id="choose-heading" class="mt-3 font-heading text-3xl font-bold tracking-[-0.035em] text-hydro-deep sm:text-4xl">Navigate by the decision in front of you.</h2>
-        <p class="mt-4 leading-7 text-slate">These sections now connect to the first 25 source-backed production guides while keeping their evidence and commercial limits visible.</p>
-      </div>
-      <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {choosePaths.map((section) => (
-          <a class="hr-focus group rounded-2xl border border-hydro-deep/10 bg-white p-6 no-underline shadow-[0_10px_30px_rgb(11_61_59_/_0.04)] hover:border-hydro-teal/40" href={`/${section.slug}/`}>
-            <span class="font-heading text-xl font-bold text-hydro-deep group-hover:text-hydro-teal">{section.navLabel}</span>
-            <span class="mt-3 block text-sm leading-6 text-slate">{section.description}</span>
-            <span class="mt-5 block text-sm font-bold text-hydro-teal">Explore this section →</span>
+      <h2 id="grow-heading" class="font-heading text-3xl font-extrabold tracking-[-0.025em] text-hydro-deep">What do you want to grow?</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {crops.map((crop) => (
+          <a class="hr-focus group overflow-hidden rounded-[1.4rem] border border-line bg-white no-underline transition hover:-translate-y-0.5 hover:shadow-[var(--hr-shadow-soft)]" href={getM06Path(item(crop.route))}>
+            <Illustration name={crop.art} class="h-40 w-full" />
+            <span class="block p-5">
+              <span class="block font-heading text-lg font-bold text-hydro-deep group-hover:text-hydro-teal">{crop.label}</span>
+              <span class="mt-1 block text-sm text-slate">{crop.note}</span>
+            </span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="bg-hydro-deep py-20 text-white" aria-labelledby="decisions-heading">
+  <section class="pb-16" aria-labelledby="topics-heading">
     <div class="hr-container">
-      <div class="max-w-3xl">
-        <p class="font-mono text-xs tracking-[0.1em] text-leaf-bright uppercase">Decision support</p>
-        <h2 id="decisions-heading" class="mt-3 font-heading text-3xl font-bold tracking-[-0.035em] sm:text-4xl">See how recommendations and tools earn trust.</h2>
-        <p class="mt-4 leading-7 text-white/[0.75]">A source-supported pH/EC reference, label-dose volume scaler, and the first systems, crop, nutrient, and buyer-research guides are available. Hands-on product evaluations and commercial recommendations remain unavailable.</p>
-      </div>
-      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {evidencePaths.map((section) => (
-          <a class="hr-focus rounded-xl border border-white/[0.14] bg-white/[0.07] p-5 no-underline hover:bg-white/[0.12]" href={`/${section.slug}/`}>
-            <span class="font-heading text-lg font-bold">{section.navLabel}</span>
-            <span class="mt-3 block text-sm leading-6 text-white/[0.7]">{section.intro}</span>
-          </a>
+      <h2 id="topics-heading" class="font-heading text-xl font-extrabold text-hydro-deep">Browse by topic</h2>
+      <ul class="mt-4 flex flex-wrap gap-2.5">
+        {topics.map((section) => (
+          <li><a class="hr-focus inline-flex min-h-11 items-center rounded-full border border-line bg-white px-4 text-sm font-semibold text-hydro-deep no-underline hover:border-hydro-teal hover:text-hydro-teal" href={`/${section.slug}/`}>{section.navLabel}</a></li>
         ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="bg-hydro-deep py-16 text-white sm:py-20" aria-labelledby="guides-heading">
+    <div class="hr-container">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <h2 id="guides-heading" class="font-heading text-3xl font-extrabold tracking-[-0.025em]">Start with these guides</h2>
+        <a class="hr-focus rounded-sm font-semibold text-leaf-bright" href="/start/">Find your path →</a>
+      </div>
+      <div class="mt-8 grid gap-5 md:grid-cols-3">
+        {featured.map((feature) => {
+          const meta = item(feature.route);
+          const entry = byRoute.get(feature.route);
+          return (
+            <a class="hr-focus group overflow-hidden rounded-[1.4rem] bg-night-panel no-underline" href={getM06Path(meta)}>
+              <Illustration name={feature.art} class="h-48 w-full transition duration-500 group-hover:scale-[1.03]" />
+              <span class="block p-6">
+                <span class="text-sm font-semibold text-leaf-bright">{feature.tag} · {readingMinutes(entry?.body)} min read</span>
+                <span class="mt-2 block font-heading text-xl leading-snug font-bold text-white">{meta.title}</span>
+              </span>
+            </a>
+          );
+        })}
       </div>
     </div>
   </section>
 
-  <section class="py-20" aria-labelledby="trust-heading">
-    <div class="hr-container grid gap-6 lg:grid-cols-2">
-      <div class="rounded-2xl border border-hydro-deep/10 bg-white p-7">
-        <p class="font-mono text-xs text-hydro-teal uppercase">Reviews & testing</p>
-        <h2 id="trust-heading" class="mt-3 font-heading text-2xl font-bold text-hydro-deep">Evidence labels before product claims.</h2>
-        <p class="mt-3 leading-7 text-slate">HydroRigor has not published hands-on product tests. Two manufacturer-documentation guides clearly identify that narrow evidence basis; the methodology still distinguishes specifications, third-party evidence, observations, and interpretation.</p>
-        <a class="hr-focus mt-5 inline-flex rounded-md font-bold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href="/testing-methodology/">Read the testing methodology →</a>
+  <section class="py-16 sm:py-20" aria-labelledby="tools-heading">
+    <div class="hr-container grid gap-5 lg:grid-cols-2">
+      <div class="rounded-[1.75rem] bg-water-mist p-8">
+        <p class="font-mono text-xs font-bold tracking-[0.12em] text-hydro-emerald-dark uppercase">Free tools</p>
+        <h2 id="tools-heading" class="mt-3 font-heading text-[1.75rem] leading-tight font-extrabold text-hydro-deep">Mix nutrients and check targets in seconds</h2>
+        <p class="mt-3 leading-7 text-slate">Scale any nutrient label dose to your reservoir and look up sourced pH and EC ranges for each crop.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="hr-focus inline-flex min-h-11 items-center rounded-full bg-hydro-teal px-5 text-sm font-semibold text-white no-underline hover:bg-hydro-emerald-dark" href="/tools/nutrient-mixing-calculator/">Nutrient calculator</a>
+          <a class="hr-focus inline-flex min-h-11 items-center rounded-full border-[1.5px] border-hydro-teal px-5 text-sm font-semibold text-hydro-teal no-underline" href="/tools/ph-ec-targets/">pH &amp; EC targets</a>
+        </div>
       </div>
-      <div class="rounded-2xl border border-hydro-deep/10 bg-water-mist p-7">
-        <p class="font-mono text-xs text-hydro-teal uppercase">Editorial standards</p>
-        <h2 class="mt-3 font-heading text-2xl font-bold text-hydro-deep">Sourcing, corrections, and incentives stay visible.</h2>
-        <p class="mt-3 leading-7 text-slate">Every guide lists its sources. There are no affiliate links on HydroRigor yet; if a page ever earns from a link, it will say so clearly, and that will never decide a recommendation.</p>
-        <div class="mt-5 flex flex-wrap gap-4">
-          <a class="hr-focus rounded-md font-bold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href="/editorial-policy/">Editorial policy</a>
-          <a class="hr-focus rounded-md font-bold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href="/affiliate-disclosure/">Affiliate disclosure</a>
+      <div class="rounded-[1.75rem] border border-line bg-white p-8">
+        <p class="font-mono text-xs font-bold tracking-[0.12em] text-slate uppercase">Why trust HydroRigor</p>
+        <h2 class="mt-3 font-heading text-[1.75rem] leading-tight font-extrabold text-hydro-deep">Run by a scientist. Every target cited.</h2>
+        <p class="mt-3 leading-7 text-slate">Najeeb checks each guide against university and extension research and lists every source. There are no affiliate links on HydroRigor yet; if a page ever earns from a link, it will say so clearly, and that will never decide a recommendation.</p>
+        <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2 font-semibold">
+          <a class="hr-focus rounded-sm text-hydro-teal" href="/about/">About Najeeb</a>
+          <a class="hr-focus rounded-sm text-hydro-teal" href="/editorial-policy/">Editorial policy</a>
+          <a class="hr-focus rounded-sm text-hydro-teal" href="/testing-methodology/">Testing methodology</a>
         </div>
       </div>
     </div>

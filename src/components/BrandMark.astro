@@ -1,16 +1,19 @@
 ---
 interface Props {
   compact?: boolean;
+  tone?: 'light' | 'dark';
 }
-const { compact = false } = Astro.props;
+const { compact = false, tone = 'light' } = Astro.props;
+const dark = tone === 'dark';
 ---
-<a class="hr-focus inline-flex items-center gap-3 rounded-lg no-underline" href="/" aria-label="HydroRigor home">
-  <svg class="h-9 w-9 shrink-0" viewBox="0 0 40 40" role="img" aria-label="HydroRigor symbol">
-    <rect width="40" height="40" rx="11" fill="#0B3D3B" />
-    <path d="M11 11v18M11 20h12M23 11v18M23 15c5 0 7 2 7 5s-2 5-7 5" fill="none" stroke="#EAF4F1" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M23 27c2 0 4 1.1 5.5 3" fill="none" stroke="#6FA86B" stroke-width="2.2" stroke-linecap="round" />
+<a class="hr-focus inline-flex items-center gap-2.5 rounded-lg no-underline" href="/" aria-label="HydroRigor home">
+  <svg class="h-9 w-9 shrink-0" viewBox="0 0 56 56" role="img" aria-label="HydroRigor symbol">
+    <rect width="56" height="56" rx="16" fill={dark ? '#C6F35E' : '#0F6B4F'} />
+    <path d="M18 14v28M38 14v28" fill="none" stroke={dark ? '#0E1A14' : '#F5F7F2'} stroke-width="4" stroke-linecap="round" />
+    <path d="M18 30c6-6 14-6 20 0" fill="none" stroke={dark ? '#0F6B4F' : '#C6F35E'} stroke-width="4" stroke-linecap="round" />
+    <circle cx="28" cy="22" r="3.5" fill={dark ? '#0F6B4F' : '#C6F35E'} />
   </svg>
   {compact ? null : (
-    <span class="font-heading text-xl font-bold tracking-[-0.035em] text-hydro-deep">HydroRigor</span>
+    <span class:list={['font-heading text-[1.35rem] font-extrabold tracking-[-0.035em]', dark ? 'text-white' : 'text-hydro-deep']}>Hydro<span class={dark ? 'text-leaf-bright' : 'text-hydro-teal'}>Rigor</span></span>
   )}
 </a>

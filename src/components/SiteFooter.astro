@@ -2,36 +2,36 @@
 import BrandMark from './BrandMark.astro';
 import { searchLink, sectionNavigation, startLink, trustNavigation } from '../lib/navigation.ts';
 ---
-<footer class="border-t border-hydro-deep/10 bg-white py-12">
-  <div class="hr-container grid gap-10 lg:grid-cols-[1.1fr_1fr_1fr]">
+<footer class="bg-hydro-deep py-14 text-white/[0.78]">
+  <div class="hr-container grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr]">
     <div>
-      <BrandMark />
-      <p class="mt-4 max-w-sm text-sm leading-6 text-slate">Evidence-based hydroponics for home growers, organized around transparent methods, sourced information, and practical decisions.</p>
+      <BrandMark tone="dark" />
+      <p class="mt-5 max-w-sm text-sm leading-6">Clear, sourced hydroponic guides for home growers: the targets, the systems worth buying, and what to do when plants struggle.</p>
       <div class="mt-5 flex flex-wrap gap-3">
-        <a class="hr-focus rounded-md font-semibold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href={startLink.href}>{startLink.label}</a>
-        <a class="hr-focus rounded-md font-semibold text-hydro-teal underline decoration-hydro-teal/30 underline-offset-4" href={searchLink.href}>{searchLink.label}</a>
+        <a class="hr-focus inline-flex min-h-11 items-center rounded-full bg-leaf-bright px-5 text-sm font-bold text-hydro-deep no-underline" href={startLink.href}>{startLink.label}</a>
+        <a class="hr-focus inline-flex min-h-11 items-center rounded-full border border-white/25 px-5 text-sm font-semibold text-white no-underline hover:border-leaf-bright" href={searchLink.href}>{searchLink.label}</a>
       </div>
     </div>
 
     <nav aria-label="Explore HydroRigor">
-      <h2 class="font-heading text-sm font-bold tracking-[0.08em] text-hydro-deep uppercase">Explore</h2>
-      <ul class="mt-4 grid grid-cols-2 gap-x-5 gap-y-3 text-sm text-slate">
+      <h2 class="font-mono text-xs font-bold tracking-[0.12em] text-leaf-bright uppercase">Explore</h2>
+      <ul class="mt-4 grid grid-cols-2 gap-x-5 gap-y-3 text-sm">
         {sectionNavigation.map((item) => (
-          <li><a class="hr-focus rounded-sm no-underline hover:text-hydro-teal" href={item.href}>{item.label}</a></li>
+          <li><a class="hr-focus rounded-sm text-white/[0.8] no-underline hover:text-leaf-bright" href={item.href}>{item.label}</a></li>
         ))}
       </ul>
     </nav>
 
     <nav aria-label="HydroRigor standards and support">
-      <h2 class="font-heading text-sm font-bold tracking-[0.08em] text-hydro-deep uppercase">Standards & support</h2>
-      <ul class="mt-4 grid gap-3 text-sm text-slate">
+      <h2 class="font-mono text-xs font-bold tracking-[0.12em] text-leaf-bright uppercase">Standards & support</h2>
+      <ul class="mt-4 grid gap-3 text-sm">
         {trustNavigation.map((item) => (
-          <li><a class="hr-focus rounded-sm no-underline hover:text-hydro-teal" href={item.href}>{item.label}</a></li>
+          <li><a class="hr-focus rounded-sm text-white/[0.8] no-underline hover:text-leaf-bright" href={item.href}>{item.label}</a></li>
         ))}
       </ul>
     </nav>
   </div>
-  <div class="hr-container mt-10 border-t border-hydro-deep/10 pt-6">
-    <p class="text-xs leading-5 text-slate">HydroRigor guides cite their sources at the end of every page. Tools scale label-provided inputs and show sourced reference data. HydroRigor does not publish invented ratings, live prices, or hands-on tests it has not documented.</p>
+  <div class="hr-container mt-12 border-t border-white/[0.12] pt-6">
+    <p class="text-xs leading-5 text-white/[0.65]">HydroRigor guides cite their sources at the end of every page. Tools scale label-provided inputs and show sourced reference data. HydroRigor does not publish invented ratings, live prices, or hands-on tests it has not documented. © {new Date().getFullYear()} HydroRigor.</p>
   </div>
 </footer>

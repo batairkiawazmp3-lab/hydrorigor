@@ -5,16 +5,17 @@ import { readFile } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
 
-test('brand tokens match approved HydroRigor palette', async () => {
+test('brand tokens match the Lab Garden HydroRigor palette', async () => {
   const css = await read('src/styles/global.css');
-  for (const token of ['#0b3d3b', '#16756f', '#6fa86b', '#eaf4f1', '#f4f1ea', '#172126', '#556266', '#c9872d']) {
+  for (const token of ['#0e1a14', '#0f6b4f', '#3e9b6a', '#c6f35e', '#e3f1e8', '#f5f7f2', '#3f5248', '#c9872d']) {
     assert.match(css.toLowerCase(), new RegExp(token));
   }
 });
 
 test('font families are configured', async () => {
   const css = await read('src/styles/global.css');
-  for (const family of ['Manrope', 'Inter', 'IBM Plex Mono']) assert.ok(css.includes(family), `missing font family ${family}`);
+  for (const family of ['Plus Jakarta Sans', 'Inter', 'JetBrains Mono']) assert.ok(css.includes(family), `missing font family ${family}`);
+  assert.match(css, /@fontsource/, 'fonts must be self-hosted');
 
   const layout = await read('src/layouts/BaseLayout.astro');
   assert.doesNotMatch(layout, /fonts\.googleapis|fonts\.gstatic/);
