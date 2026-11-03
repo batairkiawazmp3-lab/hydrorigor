@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Illustration, { type IllustrationName } from '../components/Illustration.astro';
+import Photo from '../components/Photo.astro';
+import { photos, photographerUrl, UNSPLASH_URL, type PhotoKey } from '../data/photos.ts';
 import { getM06Path, m06ContentItems } from '../data/m06-content.ts';
 import { sectionDefinitions } from '../lib/sections.ts';
 import { EMPTY_SECTION_PATHS } from '../lib/indexing.ts';
@@ -11,20 +12,24 @@ const articles = await getCollection('articles', ({ data }) => !data.draft);
 const byRoute = new Map(articles.map((entry) => [entry.data.route, entry]));
 const item = (route: string) => m06ContentItems.find((candidate) => candidate.route === route)!;
 
-const crops: Array<{ route: string; label: string; note: string; art: IllustrationName }> = [
-  { route: 'hydroponic-lettuce', label: 'Lettuce & greens', note: 'The easiest first crop for any system', art: 'lettuce' },
-  { route: 'hydroponic-strawberries', label: 'Strawberries', note: 'Day-neutral varieties fruit for months', art: 'strawberry' },
-  { route: 'hydroponic-tomatoes', label: 'Tomatoes', note: 'Big plants with big light needs', art: 'tomato' },
-  { route: 'hydroponic-nutrients', label: 'Nutrients & water', note: 'pH, EC and mixing, explained', art: 'nutrients' },
+const crops: Array<{ route: string; label: string; note: string; photo: PhotoKey }> = [
+  { route: 'hydroponic-lettuce', label: 'Lettuce & greens', note: 'The easiest first crop for any system', photo: 'butterhead-lettuce-hands' },
+  { route: 'hydroponic-strawberries', label: 'Strawberries', note: 'Day-neutral varieties fruit for months', photo: 'strawberries-gutter' },
+  { route: 'hydroponic-tomatoes', label: 'Tomatoes', note: 'Big plants with big light needs', photo: 'tomatoes-high-wire' },
+  { route: 'hydroponic-nutrients', label: 'Nutrients & water', note: 'pH, EC and mixing, explained', photo: 'meter-probe' },
 ];
 
 const topics = sectionDefinitions.filter((section) => !EMPTY_SECTION_PATHS.has(`/${section.slug}/`));
 
-const featured: Array<{ route: string; art: IllustrationName; tag: string }> = [
-  { route: 'hydroponic-strawberries', art: 'strawberry', tag: 'Crops' },
-  { route: 'deep-water-culture-hydroponics', art: 'systems', tag: 'Systems' },
-  { route: 'indoor-hydroponic-systems-for-home', art: 'rack', tag: 'Systems' },
+const featured: Array<{ route: string; photo: PhotoKey; tag: string }> = [
+  { route: 'deep-water-culture-hydroponics', photo: 'dwc-net-pot-roots', tag: 'Systems' },
+  { route: 'hydroponic-lettuce-systems', photo: 'lettuce-channel-net-pot', tag: 'Crops' },
+  { route: 'how-to-mix-hydroponic-nutrients', photo: 'beaker-measure', tag: 'Nutrients' },
 ];
+
+const heroKeys: PhotoKey[] = ['systems-home-nft-lights-tall', 'strawberries-hanging-close'];
+const usedKeys = [...new Set<PhotoKey>([...heroKeys, ...crops.map((crop) => crop.photo), ...featured.map((feature) => feature.photo)])];
+const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[key]])).values()];
 ---
 <BaseLayout title="HydroRigor — Evidence-based hydroponics for home growers" description="Clear hydroponic guides for home growers: sourced pH, EC, light and temperature targets, the systems worth buying, and fixes for common problems.">
   <section class="py-14 sm:py-20" aria-labelledby="hero-heading">
@@ -49,14 +54,15 @@ const featured: Array<{ route: string; art: IllustrationName; tag: string }> = [
 
       <div class="grid grid-cols-2 gap-3.5">
         <a class="hr-focus group relative row-span-2 min-h-[26rem] overflow-hidden rounded-[1.75rem] no-underline" href={getM06Path(item('indoor-hydroponic-systems-for-home'))}>
-          <Illustration name="rack" class="absolute inset-0 h-full w-full transition duration-500 group-hover:scale-[1.03]" />
+          <Photo photo={photos['systems-home-nft-lights-tall']} decorative eager sizes="(min-width: 1024px) 270px, 50vw" widths={[320, 480, 640, 960]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+          <span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-hydro-deep/45 via-transparent to-transparent"></span>
           <span class="absolute inset-x-4 bottom-4 rounded-2xl bg-white/[0.94] p-4">
             <span class="block font-mono text-[0.7rem] font-bold tracking-[0.1em] text-hydro-teal uppercase">Systems</span>
             <span class="mt-1 block font-heading font-bold leading-tight text-hydro-deep">Indoor hydroponic systems for home</span>
           </span>
         </a>
         <a class="hr-focus group relative min-h-[12.5rem] overflow-hidden rounded-[1.75rem] no-underline" href={getM06Path(item('hydroponic-strawberries'))}>
-          <Illustration name="strawberry" class="absolute inset-0 h-full w-full transition duration-500 group-hover:scale-[1.03]" />
+          <Photo photo={photos['strawberries-hanging-close']} decorative sizes="(min-width: 1024px) 270px, 50vw" widths={[320, 480, 640]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
           <span class="absolute bottom-3 left-3 rounded-full bg-white/[0.94] px-3 py-1.5 text-sm font-bold text-hydro-deep">Strawberries</span>
         </a>
         <div class="flex min-h-[12.5rem] flex-col justify-between rounded-[1.75rem] bg-hydro-deep p-5">
@@ -74,7 +80,9 @@ const featured: Array<{ route: string; art: IllustrationName; tag: string }> = [
       <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {crops.map((crop) => (
           <a class="hr-focus group overflow-hidden rounded-[1.4rem] border border-line bg-white no-underline transition hover:-translate-y-0.5 hover:shadow-[var(--hr-shadow-soft)]" href={getM06Path(item(crop.route))}>
-            <Illustration name={crop.art} class="h-40 w-full" />
+            <span class="block h-44 overflow-hidden">
+              <Photo photo={photos[crop.photo]} decorative sizes="(min-width: 1024px) 300px, (min-width: 640px) 50vw, 100vw" widths={[320, 480, 640, 800]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />
+            </span>
             <span class="block p-5">
               <span class="block font-heading text-lg font-bold text-hydro-deep group-hover:text-hydro-teal">{crop.label}</span>
               <span class="mt-1 block text-sm text-slate">{crop.note}</span>
@@ -108,7 +116,9 @@ const featured: Array<{ route: string; art: IllustrationName; tag: string }> = [
           const entry = byRoute.get(feature.route);
           return (
             <a class="hr-focus group overflow-hidden rounded-[1.4rem] bg-night-panel no-underline" href={getM06Path(meta)}>
-              <Illustration name={feature.art} class="h-48 w-full transition duration-500 group-hover:scale-[1.03]" />
+              <span class="block h-52 overflow-hidden">
+                <Photo photo={photos[feature.photo]} decorative sizes="(min-width: 768px) 33vw, 100vw" widths={[400, 640, 960]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />
+              </span>
               <span class="block p-6">
                 <span class="text-sm font-semibold text-leaf-bright">{feature.tag} · {readingMinutes(entry?.body)} min read</span>
                 <span class="mt-2 block font-heading text-xl leading-snug font-bold text-white">{meta.title}</span>
@@ -141,6 +151,13 @@ const featured: Array<{ route: string; art: IllustrationName; tag: string }> = [
           <a class="hr-focus rounded-sm text-hydro-teal" href="/testing-methodology/">Testing methodology</a>
         </div>
       </div>
+    </div>
+    <div class="hr-container mt-10">
+      <p class="text-xs leading-5 text-slate" data-pagefind-ignore>
+        Photos by {credits.map((credit, index) => (
+          <>{index > 0 && (index === credits.length - 1 ? ' and ' : ', ')}<a class="hr-focus rounded-sm text-slate underline decoration-line underline-offset-2 hover:text-hydro-teal" href={photographerUrl(credit.username)} rel="noopener">{credit.photographer}</a></>
+        ))} on <a class="hr-focus rounded-sm text-slate underline decoration-line underline-offset-2 hover:text-hydro-teal" href={UNSPLASH_URL} rel="noopener">Unsplash</a>.
+      </p>
     </div>
   </section>
 </BaseLayout>

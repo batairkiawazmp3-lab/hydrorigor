@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import type { SitePhoto } from '../data/photos.ts';
+
+interface Props {
+  photo: SitePhoto;
+  sizes: string;
+  class?: string;
+  widths?: number[];
+  /** The page's main above-the-fold image: load eagerly with high fetch priority. */
+  priority?: boolean;
+  /** Visible on load but not the main content: load eagerly at normal priority. */
+  eager?: boolean;
+  /** Decorative use (e.g. inside a link that already has a text label). */
+  decorative?: boolean;
+}
+
+const { photo, sizes, class: className, widths = [400, 640, 960, 1280, 1600], priority = false, eager = false, decorative = false } = Astro.props;
+const maxWidth = photo.image.width;
+const usable = widths.filter((width) => width <= maxWidth);
+---
+<Image
+  src={photo.image}
+  alt={decorative ? '' : photo.alt}
+  widths={usable.length > 0 ? usable : [maxWidth]}
+  sizes={sizes}
+  format="webp"
+  quality={64}
+  class={className}
+  loading={priority || eager ? 'eager' : 'lazy'}
+  decoding={priority ? 'sync' : 'async'}
+  fetchpriority={priority ? 'high' : 'auto'}
+  data-pagefind-ignore="all"
+/>

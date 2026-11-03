@@ -14,7 +14,6 @@ Updated: 2026-11-02
 
 ## Open items for the owner
 
-- Confirm or correct the degree in `src/data/authors.ts` (currently a placeholder).
 - Choose a public contact email; `/contact/` still says contact is not active.
 - Turn on Vercel Web Analytics and set `PUBLIC_ENABLE_VERCEL_ANALYTICS=true` (Production) in Vercel.
 - CI Lighthouse steps have failed before when GitHub's Chrome version changed. If only those

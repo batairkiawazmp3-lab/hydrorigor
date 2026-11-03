@@ -177,7 +177,7 @@ try {
   });
   await search.init();
 
-  const publicResults = await loadResults(search, 'beginner orientation');
+  const publicResults = await loadResults(search, 'first harvest');
   assert.ok(
     publicResults.some(({ url }) => normalizePath(url) === '/start/'),
     'representative Pagefind query did not return the public Start Here page',

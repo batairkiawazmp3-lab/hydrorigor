@@ -9,7 +9,10 @@ import ContentProse from '../../components/content/ContentProse.astro';
 import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
 import PublicationMeta from '../../components/content/PublicationMeta.astro';
 import SourcesList from '../../components/content/SourcesList.astro';
-import Illustration, { type IllustrationName } from '../../components/Illustration.astro';
+import Photo from '../../components/Photo.astro';
+import PhotoCredit from '../../components/PhotoCredit.astro';
+import { photoForGuide } from '../../data/photos.ts';
+import { socialImage } from '../../lib/social-image.ts';
 import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
 import { resolveCommercialPageState } from '../../lib/commercial/registry.ts';
 import { getSectionDefinition } from '../../lib/sections.ts';
@@ -36,21 +39,11 @@ const articleJsonLd = buildArticleJsonLd({
   updatedDate: data.updatedDate,
   reviewer: data.reviewer,
 });
-const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : undefined;
+const heroPhoto = data.hero ? undefined : photoForGuide(data.route);
+const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : await socialImage(heroPhoto);
 const commercialState = resolveCommercialPageState(data);
 const minutes = readingMinutes(entry.body);
 const toc = headings.filter(({ depth }) => depth === 2);
-
-const art: IllustrationName = (() => {
-  const route = data.route;
-  if (route.includes('strawberr')) return 'strawberry';
-  if (route.includes('lettuce')) return 'lettuce';
-  if (route.includes('tomato')) return 'tomato';
-  if (data.category === 'systems') return route.includes('home') || route.includes('smart') ? 'rack' : 'systems';
-  if (data.category === 'nutrients') return 'nutrients';
-  if (data.category === 'best') return 'buyer';
-  return 'systems';
-})();
 
 const related = m06ContentItems
   .filter((item) => item.collection === 'articles' && item.category === data.category && item.route !== data.route)
@@ -87,11 +80,19 @@ const related = m06ContentItems
         </div>
       </div>
 
-      <div class:list={['mt-8 overflow-hidden rounded-[1.75rem]', data.hero ? '' : (art === 'rack' ? 'bg-night-panel' : 'bg-water-mist')]}>
-        {data.hero
-          ? <img class="h-auto w-full" src={data.hero.src} alt={data.hero.alt} width={data.hero.width} height={data.hero.height} />
-          : <Illustration name={art} fit="contain" class="mx-auto block h-56 w-full max-w-3xl sm:h-80" />}
-      </div>
+      {data.hero && (
+        <div class="mt-8 overflow-hidden rounded-[1.75rem]">
+          <img class="h-auto w-full" src={data.hero.src} alt={data.hero.alt} width={data.hero.width} height={data.hero.height} />
+        </div>
+      )}
+      {heroPhoto && (
+        <figure class="mt-8" data-pagefind-ignore="all">
+          <div class="aspect-[16/9] overflow-hidden rounded-[1.75rem] bg-water-mist sm:aspect-[21/9]">
+            <Photo photo={heroPhoto} eager sizes="(min-width: 1232px) 1200px, calc(100vw - 2rem)" class="h-full w-full object-cover" />
+          </div>
+          <figcaption><PhotoCredit photo={heroPhoto} class="mt-2" /></figcaption>
+        </figure>
+      )}
 
       <div class="mt-10 grid gap-10 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-14">
         <aside class="lg:order-none" aria-label="On this page">

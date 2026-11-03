@@ -5,6 +5,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../seo/Breadcrumbs.astro';
 import { getM06Path, m06ContentItems } from '../../data/m06-content.ts';
 import { EMPTY_SECTION_PATHS } from '../../lib/indexing.ts';
+import { readingMinutes } from '../../lib/reading.ts';
+import { photoForGuide, photoForSection } from '../../data/photos.ts';
+import { socialImage } from '../../lib/social-image.ts';
+import Photo from '../Photo.astro';
+import PhotoCredit from '../PhotoCredit.astro';
+import { getCollection } from 'astro:content';
 
 interface Props {
   section: SectionDefinition;
@@ -13,25 +19,67 @@ interface Props {
 const { section } = Astro.props;
 const pathname = `/${section.slug}/`;
 const publishedItems = m06ContentItems.filter(({ category }) => category === section.id);
+const entries = [
+  ...(await getCollection('articles', ({ data }) => !data.draft)),
+  ...(await getCollection('reviews', ({ data }) => !data.draft)),
+];
+const bodies = new Map(entries.map((entry) => [entry.data.route, entry.body]));
+const banner = photoForSection(section.id);
+const image = await socialImage(banner);
 ---
-<BaseLayout title={`${section.title} — HydroRigor`} description={section.description} noindex={EMPTY_SECTION_PATHS.has(pathname)}>
+<BaseLayout title={`${section.title} — HydroRigor`} description={section.description} noindex={EMPTY_SECTION_PATHS.has(pathname)} image={image}>
   <section class="py-14 sm:py-20">
     <div class="hr-container">
       <Breadcrumbs items={[
         { name: 'Home', url: '/' },
         { name: section.title, url: pathname },
       ]} />
-      <div class="max-w-4xl">
-        <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">{section.eyebrow}</p>
-        <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{section.title}</h1>
-        <p class="mt-5 max-w-3xl text-lg leading-8 text-slate">{section.description}</p>
-        <p class="mt-6 max-w-3xl text-base leading-7 text-ink">{section.intro}</p>
+      <div class="grid items-center gap-10 lg:grid-cols-[1.1fr_.9fr]">
+        <div>
+          <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">{section.eyebrow}</p>
+          <h1 class="mt-3 font-heading text-4xl font-extrabold tracking-[-0.045em] text-hydro-deep sm:text-5xl">{section.title}</h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-slate">{section.description}</p>
+          <p class="mt-6 max-w-3xl text-base leading-7 text-ink">{section.intro}</p>
+        </div>
+        {banner && (
+          <figure data-pagefind-ignore="all">
+            <div class="aspect-[4/3] overflow-hidden rounded-[1.75rem] bg-water-mist">
+              <Photo photo={banner} eager sizes="(min-width: 1024px) 540px, calc(100vw - 2rem)" widths={[400, 640, 960, 1280]} class="h-full w-full object-cover" />
+            </div>
+            <figcaption><PhotoCredit photo={banner} class="mt-2" /></figcaption>
+          </figure>
+        )}
       </div>
 
-      <div class="mt-12 grid gap-5 lg:grid-cols-3">
+      {publishedItems.length > 0 && (
+        <section class="mt-14" aria-labelledby="published-heading">
+          <h2 id="published-heading" class="font-heading text-2xl font-extrabold tracking-[-0.02em] text-hydro-deep">Published guides</h2>
+          <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {publishedItems.map((item) => {
+              const cardPhoto = photoForGuide(item.route);
+              return (
+                <a class="hr-focus group overflow-hidden rounded-[1.4rem] border border-line bg-white no-underline transition hover:-translate-y-0.5 hover:shadow-[var(--hr-shadow-soft)]" href={getM06Path(item)}>
+                  {cardPhoto && (
+                    <span class="block aspect-[16/9] overflow-hidden bg-water-mist">
+                      <Photo photo={cardPhoto} decorative sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" widths={[320, 480, 640, 800]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />
+                    </span>
+                  )}
+                  <span class="block p-5">
+                    <span class="text-sm font-semibold text-hydro-teal">{section.navLabel} · {readingMinutes(bodies.get(item.route))} min read</span>
+                    <span class="mt-1.5 block font-heading text-lg leading-snug font-bold text-hydro-deep group-hover:text-hydro-teal">{item.title}</span>
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      <h2 class="mt-14 font-heading text-2xl font-extrabold tracking-[-0.02em] text-hydro-deep">What this section covers</h2>
+      <div class="mt-6 grid gap-5 lg:grid-cols-3">
         {section.groups.map((group) => (
-          <section class="rounded-2xl border border-hydro-deep/10 bg-white p-6 shadow-[0_10px_30px_rgb(11_61_59_/_0.04)]">
-            <h2 class="font-heading text-xl font-bold text-hydro-deep">{group.title}</h2>
+          <section class="rounded-2xl border border-line bg-white p-6">
+            <h3 class="font-heading text-xl font-bold text-hydro-deep">{group.title}</h3>
             <p class="mt-3 text-sm leading-6 text-slate">{group.description}</p>
             <ul class="mt-5 grid gap-2 text-sm text-ink">
               {group.topics.map((topic) => (
@@ -48,22 +96,6 @@ const publishedItems = m06ContentItems.filter(({ category }) => category === sec
       </aside>
 
       <CommercialSectionStatus sectionId={section.id} />
-
-      {publishedItems.length > 0 && (
-        <section class="mt-12" aria-labelledby="published-heading">
-          <p class="font-mono text-xs font-semibold tracking-[0.1em] text-hydro-teal uppercase">Content Wave 1</p>
-          <h2 id="published-heading" class="mt-2 font-heading text-2xl font-bold text-hydro-deep">Published guides</h2>
-          <div class="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {publishedItems.map((item) => (
-              <a class="hr-focus group rounded-2xl border border-hydro-deep/10 bg-white p-6 no-underline shadow-[0_10px_30px_rgb(11_61_59_/_0.04)] hover:border-hydro-teal/40" href={getM06Path(item)}>
-                <span class="font-mono text-xs font-semibold tracking-[0.08em] text-hydro-teal uppercase">{item.primaryIntent}</span>
-                <span class="mt-3 block font-heading text-lg font-bold leading-6 text-hydro-deep group-hover:text-hydro-teal">{item.title}</span>
-                <span class="mt-4 block text-sm font-bold text-hydro-teal">Read the guide →</span>
-              </a>
-            ))}
-          </div>
-        </section>
-      )}
 
       <section class="mt-12" aria-labelledby="next-heading">
         <h2 id="next-heading" class="font-heading text-2xl font-bold text-hydro-deep">Continue your path</h2>
