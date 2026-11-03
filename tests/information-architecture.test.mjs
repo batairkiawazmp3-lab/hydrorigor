@@ -183,7 +183,7 @@ test('build and CI reproducibly create and smoke-test the Pagefind index', async
   assert.equal(packageFile.scripts['test:search'], 'node scripts/test-search.mjs');
   assert.match(workflow, /Static search smoke test/);
   assert.match(workflow, /npm run test:search/);
-  assert.match(smoke, /beginner orientation/);
+  assert.match(smoke, /first harvest/);
   assert.match(smoke, /development-sample-review/);
 });
 

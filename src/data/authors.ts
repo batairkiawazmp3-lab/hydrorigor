@@ -6,7 +6,6 @@ export interface AuthorProfile {
   profilePath: string;
 }
 
-// OWNER: confirm or correct this degree before launch. It is shown in the bio and on /about/.
 const najeebDegree = 'MSc in Environmental Sciences';
 
 export const authors: readonly AuthorProfile[] = [

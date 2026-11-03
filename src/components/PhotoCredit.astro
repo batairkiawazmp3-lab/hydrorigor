@@ -1,0 +1,13 @@
+---
+import { UNSPLASH_URL, photographerUrl, type SitePhoto } from '../data/photos.ts';
+
+interface Props {
+  photo: SitePhoto;
+  class?: string;
+}
+
+const { photo, class: className } = Astro.props;
+---
+<p class:list={['text-xs text-slate', className]} data-pagefind-ignore>
+  Photo: <a class="hr-focus rounded-sm text-slate underline decoration-line underline-offset-2 hover:text-hydro-teal" href={photographerUrl(photo.username)} rel="noopener">{photo.photographer}</a> on <a class="hr-focus rounded-sm text-slate underline decoration-line underline-offset-2 hover:text-hydro-teal" href={UNSPLASH_URL} rel="noopener">Unsplash</a>
+</p>
