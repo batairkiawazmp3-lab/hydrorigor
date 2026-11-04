@@ -40,9 +40,9 @@ export const sectionDefinitions = [
     slug: 'systems',
     navLabel: 'Systems',
     title: 'Hydroponic systems',
-    description: 'Understand the main ways indoor hydroponic systems support roots, water, nutrients, and airflow.',
+    description: 'Compare the main ways to grow without soil at home, from deep water culture and Kratky to NFT, towers and drip, and pick one that fits your space.',
     eyebrow: 'Choose a growing method',
-    intro: 'Use this section to understand system families, compare their operating demands, and identify the questions to answer before choosing one.',
+    intro: 'Every system gets water, nutrients and oxygen to the roots in a different way. Start with how much space, time and upkeep you have, then read the guide for the method that fits.',
     availability: 'Four guides cover choosing a home system, deep water culture, a simple DIY build, and which smart features are worth paying for.',
     groups: [
       {
@@ -72,9 +72,9 @@ export const sectionDefinitions = [
     slug: 'crops',
     navLabel: 'Crops',
     title: 'Hydroponic crops',
-    description: 'Plan crop choices around space, system fit, growth habits, and the evidence available for each plant.',
+    description: 'What to grow indoors and how: sourced pH, EC, light and temperature targets for lettuce, strawberries, tomatoes and more.',
     eyebrow: 'Choose what to grow',
-    intro: 'This section organizes crop guidance by practical decisions without presenting unsupported target numbers or promising universal results.',
+    intro: 'Pick a crop that fits your space and light, then follow its guide. Leafy greens are the easiest start; strawberries and tomatoes need more light and closer attention.',
     availability: 'Seven guides cover strawberries, lettuce, and tomatoes. The pH and EC reference tool lists sourced targets for each crop and the conditions they came from.',
     groups: [
       {
@@ -104,9 +104,9 @@ export const sectionDefinitions = [
     slug: 'nutrients-water',
     navLabel: 'Nutrients & Water',
     title: 'Nutrients and water',
-    description: 'Build a clear mental model for nutrient solutions, water quality, pH, EC, and responsible measurement.',
-    eyebrow: 'Understand the root-zone inputs',
-    intro: 'This section explains how to think about nutrients and water and links to the first source-supported reference and volume-scaling tool.',
+    description: 'Mix nutrients, set pH and EC and choose the right water, with targets from university research and a free dose calculator.',
+    eyebrow: 'Feed your plants',
+    intro: 'Most hydroponic problems start in the reservoir. These guides explain what plants need, how to mix and measure a solution, and how to read what your meters tell you.',
     availability: 'Seven guides cover nutrient basics, mixing, organic options, and feeding by crop. The pH and EC reference and the label-dose calculator help you apply them.',
     groups: [
       {
@@ -136,9 +136,9 @@ export const sectionDefinitions = [
     slug: 'equipment',
     navLabel: 'Equipment',
     title: 'Hydroponic equipment',
-    description: 'Understand equipment roles, specifications, setup questions, and evidence before evaluating products.',
-    eyebrow: 'Plan the supporting hardware',
-    intro: 'This section helps readers organize equipment decisions without presenting untested products or premature buying recommendations.',
+    description: 'Lights, pumps, air stones, meters and growing media: what each part does and what to look for.',
+    eyebrow: 'Gear that does the work',
+    intro: 'Equipment guides are on the way. Until then, the system and nutrient guides explain what each setup needs.',
     availability: 'Equipment guides for lights, pumps, meters, and growing media are being written. Until then, the system and nutrient guides cover what each setup needs.',
     groups: [
       {
@@ -168,9 +168,9 @@ export const sectionDefinitions = [
     slug: 'best',
     navLabel: 'Buyer Guides',
     title: 'Buyer guides by use case',
-    description: 'Research-based buying guides organized around real use cases, with the evidence behind each pick.',
-    eyebrow: 'Make a purchase decision carefully',
-    intro: 'This section organizes buyer research around constraints and use cases, with clear methods and evidence boundaries.',
+    description: 'Buying guides for hydroponic setups, kits and nutrients, organized by who they suit and what to check before you buy.',
+    eyebrow: 'Buy with confidence',
+    intro: 'Each guide starts from your situation (space, crops, budget and how hands-on you want to be) and explains what to look for and why.',
     availability: 'Five buyer guides explain what to look for in systems, kits, and nutrients for different home setups.',
     groups: [
       {
@@ -200,9 +200,9 @@ export const sectionDefinitions = [
     slug: 'reviews',
     navLabel: 'Reviews',
     title: 'Editorial reviews',
-    description: 'Product-system guides with visible methods, evidence boundaries, disclosures, and update history.',
-    eyebrow: 'Understand an evaluation',
-    intro: 'The review architecture separates methodology, evidence, verdicts, pros, cons, and sources without using unsupported scores.',
+    description: 'How popular nutrient programs are meant to be used, based on their makers\' published instructions.',
+    eyebrow: 'Know what you are buying',
+    intro: 'These guides explain how a product is meant to be used and what its documentation does and does not establish. Each one says plainly when nothing has been tested hands-on.',
     availability: "Two guides explain how the Masterblend and General Hydroponics nutrient systems work, based on the manufacturers' published documentation.",
     groups: [
       {
@@ -232,9 +232,9 @@ export const sectionDefinitions = [
     slug: 'compare',
     navLabel: 'Comparisons',
     title: 'Hydroponic comparisons',
-    description: 'Head-to-head comparisons of setups and products against explicit criteria and reader use cases.',
-    eyebrow: 'Compare without a false universal winner',
-    intro: 'This section provides the structure for side-by-side reasoning while keeping conclusions tied to a stated use case.',
+    description: 'Side-by-side comparisons of setups and products against the same criteria.',
+    eyebrow: 'Compare side by side',
+    intro: 'Comparison guides are on the way. For now, the lettuce systems guide compares DWC, NFT and Kratky side by side.',
     availability: 'Comparison guides are being written. For now, the hydroponic lettuce systems guide compares DWC, NFT, and Kratky side by side.',
     groups: [
       {
@@ -264,9 +264,9 @@ export const sectionDefinitions = [
     slug: 'problems',
     navLabel: 'Troubleshooting',
     title: 'Hydroponic troubleshooting',
-    description: 'Approach symptoms methodically, separate observations from causes, and choose safe next checks.',
-    eyebrow: 'Fix a problem methodically',
-    intro: 'Troubleshooting guides start from what you can observe, check the system context, and favour safe, reversible fixes.',
+    description: 'Fix yellow leaves, root rot, slow growth and pH swings by checking the likely causes in order.',
+    eyebrow: 'Fix a problem',
+    intro: 'Troubleshooting guides are on the way. The lettuce and strawberry guides already include symptom-and-fix tables.',
     availability: 'Troubleshooting guides are being written. The strawberry guide already includes a symptom-and-fix table for common problems.',
     groups: [
       {
@@ -296,9 +296,9 @@ export const sectionDefinitions = [
     slug: 'tools',
     navLabel: 'Tools',
     title: 'Hydroponic tools',
-    description: 'Use a sourced crop pH/EC reference and a tested manufacturer label-dose volume scaler.',
-    eyebrow: 'Use decision support responsibly',
-    intro: 'The first HydroRigor tools make their inputs, units, assumptions, sources, formula behavior, and limits visible.',
+    description: 'Free tools: sourced pH and EC targets by crop, and a calculator that scales a nutrient label dose to your reservoir.',
+    eyebrow: 'Free tools',
+    intro: 'Each tool shows its sources, units and formula, so you can see exactly where a number comes from.',
     availability: 'Two tools: a pH and EC target reference for five crops with their sources, and a calculator that scales a nutrient label dose to your reservoir size.',
     groups: [
       {

@@ -12,11 +12,13 @@ const articles = await getCollection('articles', ({ data }) => !data.draft);
 const byRoute = new Map(articles.map((entry) => [entry.data.route, entry]));
 const item = (route: string) => m06ContentItems.find((candidate) => candidate.route === route)!;
 
-const crops: Array<{ route: string; label: string; note: string; photo: PhotoKey }> = [
-  { route: 'hydroponic-lettuce', label: 'Lettuce & greens', note: 'The easiest first crop for any system', photo: 'butterhead-lettuce-hands' },
-  { route: 'hydroponic-strawberries', label: 'Strawberries', note: 'Day-neutral varieties fruit for months', photo: 'strawberries-gutter' },
-  { route: 'hydroponic-tomatoes', label: 'Tomatoes', note: 'Big plants with big light needs', photo: 'tomatoes-high-wire' },
-  { route: 'hydroponic-nutrients', label: 'Nutrients & water', note: 'pH, EC and mixing, explained', photo: 'meter-probe' },
+// `chip` values are the sourced quick-answer figures shown in each linked guide
+// (or, for tomatoes, in the nutrients guide's crop table). Do not add unsourced numbers.
+const crops: Array<{ route: string; label: string; note: string; photo: PhotoKey; chip: string }> = [
+  { route: 'hydroponic-lettuce', label: 'Lettuce & greens', note: 'The easiest first crop for any system', photo: 'butterhead-lettuce-hands', chip: 'pH 5.5–6.0 · EC ~1.5' },
+  { route: 'hydroponic-strawberries', label: 'Strawberries', note: 'Day-neutral varieties fruit for months', photo: 'strawberries-gutter', chip: 'pH 5.5–6.0 · EC ~1.0' },
+  { route: 'hydroponic-tomatoes', label: 'Tomatoes', note: 'Big plants with big light needs', photo: 'tomato-truss', chip: 'EC 2.0 and up' },
+  { route: 'hydroponic-nutrients', label: 'Nutrients & water', note: 'pH, EC and mixing, explained', photo: 'meter-probe', chip: 'pH 5.5–6.5 · check daily' },
 ];
 
 const topics = sectionDefinitions.filter((section) => !EMPTY_SECTION_PATHS.has(`/${section.slug}/`));
@@ -27,12 +29,12 @@ const featured: Array<{ route: string; photo: PhotoKey; tag: string }> = [
   { route: 'how-to-mix-hydroponic-nutrients', photo: 'beaker-measure', tag: 'Nutrients' },
 ];
 
-const heroKeys: PhotoKey[] = ['systems-home-nft-lights-tall', 'strawberries-hanging-close'];
+const heroKeys: PhotoKey[] = ['systems-home-nft-lights-tall', 'systems-home-nft-lights', 'strawberries-hanging-close'];
 const usedKeys = [...new Set<PhotoKey>([...heroKeys, ...crops.map((crop) => crop.photo), ...featured.map((feature) => feature.photo)])];
 const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[key]])).values()];
 ---
 <BaseLayout title="HydroRigor — Evidence-based hydroponics for home growers" description="Clear hydroponic guides for home growers: sourced pH, EC, light and temperature targets, the systems worth buying, and fixes for common problems.">
-  <section class="py-14 sm:py-20" aria-labelledby="hero-heading">
+  <section class="pt-8 pb-14 sm:py-20" aria-labelledby="hero-heading">
     <div class="hr-container grid items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
       <div>
         <p class="mb-6 inline-flex items-center gap-2 rounded-full bg-water-mist px-3.5 py-1.5 text-sm font-semibold text-hydro-emerald-dark">
@@ -40,7 +42,17 @@ const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[
           Every target sourced to university research
         </p>
         <h1 id="hero-heading" class="font-heading text-[2.6rem] leading-[1.02] font-extrabold tracking-[-0.04em] text-hydro-deep sm:text-6xl lg:text-[4.1rem]">Grow indoors with evidence, not guesswork.</h1>
-        <p class="mt-6 max-w-xl text-lg leading-8 text-slate">Clear hydroponic guides for home growers: the exact pH, EC, light and temperature targets, the systems worth buying, and what to do when plants struggle.</p>
+        <p class="mt-5 max-w-xl text-lg leading-8 text-slate sm:mt-6">Clear hydroponic guides for home growers: the exact pH, EC, light and temperature targets, the systems worth buying, and what to do when plants struggle.</p>
+        <div class="mt-6 grid grid-cols-2 gap-3 lg:hidden">
+          <a class="hr-focus group relative block h-36 overflow-hidden rounded-2xl no-underline sm:h-48" href={getM06Path(item('indoor-hydroponic-systems-for-home'))}>
+            <Photo photo={photos['systems-home-nft-lights']} decorative sizes="(min-width: 640px) 45vw, 50vw" widths={[320, 480, 640]} class="h-full w-full object-cover" />
+            <span class="absolute bottom-2 left-2 rounded-full bg-white/[0.94] px-2.5 py-1 text-xs font-bold text-hydro-deep">Home systems</span>
+          </a>
+          <a class="hr-focus group relative block h-36 overflow-hidden rounded-2xl no-underline sm:h-48" href={getM06Path(item('hydroponic-strawberries'))}>
+            <Photo photo={photos['strawberries-hanging-close']} decorative sizes="(min-width: 640px) 45vw, 50vw" widths={[320, 480, 640]} class="h-full w-full object-cover" />
+            <span class="absolute bottom-2 left-2 rounded-full bg-white/[0.94] px-2.5 py-1 text-xs font-bold text-hydro-deep">Strawberries</span>
+          </a>
+        </div>
         <form class="mt-8 flex max-w-xl flex-wrap gap-3" role="search" action="/search/" method="get">
           <label class="sr-only" for="home-search">Search HydroRigor guides</label>
           <input id="home-search" name="q" type="search" placeholder="Try “strawberries pH” or “DWC”" class="hr-focus min-h-13 flex-[1_1_16rem] rounded-full border-[1.5px] border-line bg-white px-5 text-base text-ink placeholder:text-slate/70" />
@@ -52,9 +64,9 @@ const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[
         </div>
       </div>
 
-      <div class="grid grid-cols-2 gap-3.5">
+      <div class="hidden grid-cols-2 gap-3.5 lg:grid">
         <a class="hr-focus group relative row-span-2 min-h-[26rem] overflow-hidden rounded-[1.75rem] no-underline" href={getM06Path(item('indoor-hydroponic-systems-for-home'))}>
-          <Photo photo={photos['systems-home-nft-lights-tall']} decorative eager sizes="(min-width: 1024px) 270px, 50vw" widths={[320, 480, 640, 960]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+          <Photo photo={photos['systems-home-nft-lights-tall']} decorative sizes="270px" widths={[320, 480, 640]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
           <span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-hydro-deep/45 via-transparent to-transparent"></span>
           <span class="absolute inset-x-4 bottom-4 rounded-2xl bg-white/[0.94] p-4">
             <span class="block font-mono text-[0.7rem] font-bold tracking-[0.1em] text-hydro-teal uppercase">Systems</span>
@@ -62,7 +74,7 @@ const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[
           </span>
         </a>
         <a class="hr-focus group relative min-h-[12.5rem] overflow-hidden rounded-[1.75rem] no-underline" href={getM06Path(item('hydroponic-strawberries'))}>
-          <Photo photo={photos['strawberries-hanging-close']} decorative sizes="(min-width: 1024px) 270px, 50vw" widths={[320, 480, 640]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+          <Photo photo={photos['strawberries-hanging-close']} decorative sizes="270px" widths={[320, 480, 640]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
           <span class="absolute bottom-3 left-3 rounded-full bg-white/[0.94] px-3 py-1.5 text-sm font-bold text-hydro-deep">Strawberries</span>
         </a>
         <div class="flex min-h-[12.5rem] flex-col justify-between rounded-[1.75rem] bg-hydro-deep p-5">
@@ -80,8 +92,9 @@ const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[
       <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {crops.map((crop) => (
           <a class="hr-focus group overflow-hidden rounded-[1.4rem] border border-line bg-white no-underline transition hover:-translate-y-0.5 hover:shadow-[var(--hr-shadow-soft)]" href={getM06Path(item(crop.route))}>
-            <span class="block h-44 overflow-hidden">
+            <span class="relative block h-44 overflow-hidden">
               <Photo photo={photos[crop.photo]} decorative sizes="(min-width: 1024px) 300px, (min-width: 640px) 50vw, 100vw" widths={[320, 480, 640, 800]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />
+              <span class="absolute bottom-3 left-3 rounded-full bg-hydro-deep/90 px-3 py-1 font-mono text-xs font-bold text-leaf-bright">{crop.chip}</span>
             </span>
             <span class="block p-5">
               <span class="block font-heading text-lg font-bold text-hydro-deep group-hover:text-hydro-teal">{crop.label}</span>

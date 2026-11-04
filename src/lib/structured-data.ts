@@ -17,6 +17,7 @@ export interface ArticleJsonLdInput {
   publishDate: Date | string;
   updatedDate?: Date | string | undefined;
   reviewer?: string | undefined;
+  image?: string[] | undefined;
 }
 
 export interface BlogPostingJsonLd {
@@ -31,6 +32,7 @@ export interface BlogPostingJsonLd {
   author: AuthorJsonLd;
   publisher: PublisherJsonLd;
   reviewedBy?: { '@type': 'Person'; name: string };
+  image?: string[];
 }
 
 export interface AuthorJsonLd {
@@ -124,6 +126,7 @@ export function buildArticleJsonLd(input: ArticleJsonLdInput): BlogPostingJsonLd
   };
 
   if (input.reviewer) result.reviewedBy = { '@type': 'Person', name: input.reviewer };
+  if (input.image && input.image.length > 0) result.image = input.image.map((src) => absoluteUrl(src));
   return result;
 }
 

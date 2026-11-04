@@ -1,0 +1,53 @@
+---
+/**
+ * The "key numbers" card shown near the top of a guide.
+ * Every value must come from a source listed on the page; `source` names it in plain words.
+ *
+ * MDX usage:
+ *   import KeyTargets from '../../components/content/KeyTargets.astro';
+ *   <KeyTargets
+ *     title="Hydroponic basil: the targets"
+ *     source="Oklahoma State Extension HLA-6722"
+ *     items={[
+ *       { label: 'Solution pH', value: '5.5–6.0' },
+ *       { label: 'EC', value: '1.0–1.6', note: 'mS/cm' },
+ *     ]}
+ *   />
+ */
+interface Item {
+  label: string;
+  value: string;
+  note?: string;
+}
+
+interface Props {
+  title: string;
+  source: string;
+  items: Item[];
+}
+
+const { title, source, items } = Astro.props;
+const tone = (index: number) =>
+  index === 0
+    ? 'bg-hydro-deep text-white'
+    : index === 1
+      ? 'bg-hydro-teal text-white'
+      : 'bg-water-mist text-hydro-deep';
+const labelTone = (index: number) => (index < 2 ? 'text-leaf-bright' : 'text-hydro-emerald-dark');
+const noteTone = (index: number) => (index < 2 ? 'text-white/[0.85]' : 'text-slate');
+---
+<aside class="my-8 rounded-[1.4rem] border border-line bg-white p-5 sm:p-6" aria-label={title}>
+  <p class="font-heading text-lg font-extrabold tracking-[-0.02em] text-hydro-deep sm:text-xl">{title}</p>
+  <p class="mt-1 text-sm text-slate">Source: {source}</p>
+  <dl class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {items.map((item, index) => (
+      <div class:list={['flex flex-col justify-between rounded-2xl p-4', tone(index)]}>
+        <dt class:list={['text-xs font-semibold', labelTone(index)]}>{item.label}</dt>
+        <dd class="mt-2">
+          <span class="block font-mono text-xl leading-tight font-bold sm:text-2xl">{item.value}</span>
+          {item.note && <span class:list={['mt-1 block text-xs', noteTone(index)]}>{item.note}</span>}
+        </dd>
+      </div>
+    ))}
+  </dl>
+</aside>

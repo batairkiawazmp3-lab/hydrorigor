@@ -13,7 +13,7 @@ import SourcesList from '../../components/content/SourcesList.astro';
 import Photo from '../../components/Photo.astro';
 import PhotoCredit from '../../components/PhotoCredit.astro';
 import { photoForGuide } from '../../data/photos.ts';
-import { socialImage } from '../../lib/social-image.ts';
+import { schemaImages, socialImage } from '../../lib/social-image.ts';
 import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
 import { resolveCommercialPageState } from '../../lib/commercial/registry.ts';
 import { getSectionDefinition } from '../../lib/sections.ts';
@@ -31,7 +31,9 @@ const { entry, headings = [] } = Astro.props;
 const { data } = entry;
 const section = getSectionDefinition(data.category);
 const pathname = `/${section.slug}/${data.route}/`;
+const heroPhoto = data.hero ? undefined : photoForGuide(data.route);
 const articleJsonLd = buildArticleJsonLd({
+  image: data.hero ? [data.hero.src] : await schemaImages(heroPhoto),
   headline: data.title,
   description: data.description,
   url: data.canonical ?? pathname,
@@ -40,7 +42,6 @@ const articleJsonLd = buildArticleJsonLd({
   updatedDate: data.updatedDate,
   reviewer: data.reviewer,
 });
-const heroPhoto = data.hero ? undefined : photoForGuide(data.route);
 const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : await socialImage(heroPhoto);
 const commercialState = resolveCommercialPageState(data);
 const minutes = readingMinutes(entry.body);
@@ -70,14 +71,15 @@ const related = m06ContentItems
       ]} />
       <div class="max-w-4xl">
         <DevelopmentNotice draft={data.draft} />
-        <h1 class="mt-2 font-heading text-[2.25rem] leading-[1.05] font-extrabold tracking-[-0.035em] text-hydro-deep sm:text-5xl lg:text-[3.35rem]">{data.title}</h1>
-        <p class="mt-5 max-w-3xl text-lg leading-8 text-slate">{data.description}</p>
-        <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
-          <PublicationMeta author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} reviewer={data.reviewer} />
-          <p class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate">
+        <h1 class="mt-2 font-heading text-[2rem] leading-[1.06] font-extrabold tracking-[-0.035em] text-hydro-deep sm:text-5xl lg:text-[3.35rem]">{data.title}</h1>
+        <p class="mt-4 max-w-3xl text-base leading-7 text-slate sm:mt-5 sm:text-lg sm:leading-8">{data.description}</p>
+        <div class="mt-4 sm:mt-6">
+          <PublicationMeta compact author={data.author} publishDate={data.publishDate} updatedDate={data.updatedDate} reviewer={data.reviewer}>
+            <span aria-hidden="true">·</span>
             <span>{minutes} min read</span>
+            <span aria-hidden="true">·</span>
             <span>{data.sources.length} {data.sources.length === 1 ? 'source' : 'sources'} cited</span>
-          </p>
+          </PublicationMeta>
         </div>
       </div>
 
@@ -87,7 +89,7 @@ const related = m06ContentItems
         </div>
       )}
       {heroPhoto && (
-        <figure class="mt-8" data-pagefind-ignore="all">
+        <figure class="mt-6 sm:mt-8" data-pagefind-ignore="all">
           <div class="aspect-[16/9] overflow-hidden rounded-[1.75rem] bg-water-mist sm:aspect-[21/9]">
             <Photo photo={heroPhoto} eager sizes="(min-width: 1232px) 1200px, calc(100vw - 2rem)" class="h-full w-full object-cover" />
           </div>
@@ -98,14 +100,27 @@ const related = m06ContentItems
       <div class="mt-10 grid gap-10 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-14">
         <aside class="lg:order-none" aria-label="On this page">
           {toc.length > 0 && (
-            <nav class="rounded-2xl border border-line bg-white p-5 lg:sticky lg:top-24" aria-labelledby="toc-heading">
-              <p id="toc-heading" class="font-mono text-xs font-bold tracking-[0.12em] text-slate uppercase">On this page</p>
-              <ol class="mt-3 grid gap-2 text-sm leading-5">
-                {toc.map((heading) => (
-                  <li><a class="hr-focus rounded-sm text-hydro-deep no-underline hover:text-hydro-teal" href={`#${heading.slug}`}>{heading.text}</a></li>
-                ))}
-              </ol>
-            </nav>
+            <>
+              <details class="group rounded-2xl border border-line bg-white lg:hidden">
+                <summary class="hr-focus flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 rounded-2xl px-5 font-mono text-xs font-bold tracking-[0.12em] text-slate uppercase [&::-webkit-details-marker]:hidden">
+                  On this page ({toc.length} sections)
+                  <svg aria-hidden="true" class="h-4 w-4 text-hydro-teal transition group-open:rotate-180" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4" /></svg>
+                </summary>
+                <ol class="grid gap-2 px-5 pb-5 text-sm leading-5">
+                  {toc.map((heading) => (
+                    <li><a class="hr-focus rounded-sm text-hydro-deep no-underline hover:text-hydro-teal" href={`#${heading.slug}`}>{heading.text}</a></li>
+                  ))}
+                </ol>
+              </details>
+              <nav class="hidden rounded-2xl border border-line bg-white p-5 lg:sticky lg:top-24 lg:block" aria-labelledby="toc-heading">
+                <p id="toc-heading" class="font-mono text-xs font-bold tracking-[0.12em] text-slate uppercase">On this page</p>
+                <ol class="mt-3 grid gap-2 text-sm leading-5">
+                  {toc.map((heading) => (
+                    <li><a class="hr-focus rounded-sm text-hydro-deep no-underline hover:text-hydro-teal" href={`#${heading.slug}`}>{heading.text}</a></li>
+                  ))}
+                </ol>
+              </nav>
+            </>
           )}
         </aside>
 
@@ -134,12 +149,22 @@ const related = m06ContentItems
             <section class="mt-14" aria-labelledby="related-heading">
               <h2 id="related-heading" class="font-heading text-2xl font-extrabold tracking-[-0.02em] text-hydro-deep">Keep reading</h2>
               <div class="mt-5 grid gap-4 sm:grid-cols-2">
-                {related.map((item) => (
-                  <a class="hr-focus rounded-[1.2rem] border border-line bg-white p-5 no-underline transition hover:border-hydro-teal" href={getM06Path(item)}>
-                    <span class="text-sm font-semibold text-hydro-teal">{section.navLabel}</span>
-                    <span class="mt-1 block font-heading font-bold leading-snug text-hydro-deep">{item.title}</span>
-                  </a>
-                ))}
+                {related.map((item) => {
+                  const relatedPhoto = photoForGuide(item.route);
+                  return (
+                    <a class="hr-focus group flex items-stretch overflow-hidden rounded-[1.2rem] border border-line bg-white no-underline transition hover:border-hydro-teal" href={getM06Path(item)}>
+                      {relatedPhoto && (
+                        <span class="block w-28 shrink-0 overflow-hidden bg-water-mist sm:w-32">
+                          <Photo photo={relatedPhoto} decorative sizes="128px" widths={[160, 320]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.05]" />
+                        </span>
+                      )}
+                      <span class="block p-4">
+                        <span class="text-sm font-semibold text-hydro-teal">{section.navLabel}</span>
+                        <span class="mt-1 block font-heading font-bold leading-snug text-hydro-deep group-hover:text-hydro-teal">{item.title}</span>
+                      </span>
+                    </a>
+                  );
+                })}
               </div>
             </section>
           )}

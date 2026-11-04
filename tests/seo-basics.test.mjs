@@ -70,3 +70,41 @@ test('public pages carry no internal milestone codes', async () => {
     assert.doesNotMatch(source, /Content Wave|site boundary/iu, `${path} shows internal wording`);
   }
 });
+
+test('search previews: article images, large image previews and short descriptions', async () => {
+  const layout = await read('src/layouts/content/ArticleLayout.astro');
+  assert.match(layout, /image: data\.hero \? \[data\.hero\.src\] : await schemaImages\(heroPhoto\)/u);
+  const social = await read('src/lib/social-image.ts');
+  assert.match(social, /\[1200, 675\], \[1200, 900\], \[900, 900\]/u, 'schema images cover 16:9, 4:3 and 1:1');
+  assert.match(await read('src/components/seo/SEO.astro'), /name="googlebot" content="max-image-preview:large/u);
+  const ld = buildArticleJsonLd({ headline: 'x', description: 'y', url: '/x/', author: 'Najeeb', publishDate: '2026-09-12', image: ['/_astro/a.jpg'] });
+  assert.deepEqual(ld.image, ['https://hydrorigor.com/_astro/a.jpg']);
+  for (const route of ['hydroponic-strawberries', 'hydroponic-lettuce', 'hydroponic-nutrients']) {
+    const source = await read(`src/content/articles/${route}.mdx`);
+    const description = source.match(/^description: "(.*)"$/mu)[1];
+    assert.ok(description.length <= 155, `${route} description is ${description.length} characters`);
+  }
+});
+
+test('phone first screen: one-row header and a photo above the fold', async () => {
+  const header = await read('src/components/SiteHeader.astro');
+  assert.match(header, /<span class="sr-only sm:not-sr-only">Explore topics<\/span>/u);
+  assert.doesNotMatch(header, /order-3|border-t border-line pt-3/u, 'the old three-row phone header is back');
+  const home = await read('src/pages/index.astro');
+  assert.match(home, /grid grid-cols-2 gap-3 lg:hidden/u, 'homepage needs a phone photo strip');
+  assert.match(home, /chip: 'pH 5\.5–6\.0 · EC ~1\.0'/u);
+});
+
+test('menu descriptions never repeat another section name (keeps link names unique)', async () => {
+  const { sectionNavigation } = await import('../src/lib/navigation.ts');
+  for (const item of sectionNavigation) {
+    for (const other of sectionNavigation) {
+      if (other === item) continue;
+      assert.doesNotMatch(
+        `${item.label} ${item.description}`,
+        new RegExp(`\\b${other.label}\\b`, 'iu'),
+        `"${item.label}" menu text contains "${other.label}", which makes link names ambiguous`,
+      );
+    }
+  }
+});
