@@ -23,6 +23,10 @@ that ships it. Volumes are US monthly searches from `docs/research/M06_KEYWORD_R
 - [x] Technical SEO: favicon and app icons, titles within 60 characters, default share image,
       privacy policy, author credential in structured data, internal milestone wording removed
 - [x] Vercel Web Analytics enabled in production (owner, 2026-11-03)
+- [x] Design update: one-row phone header, phone hero photos, compact guide meta, KeyTargets
+      card, photo "Keep reading" cards, schema images, large image previews (PR #20)
+- [x] Specific search titles for the strawberry, lettuce and nutrients guides
+- [x] Email: ImprovMX MX records added in Vercel DNS (2026-11-04); Contact page waits on a test email
 
 ### Queue (work top to bottom; one item per run)
 Ordered on 2026-11-03 by opportunity: informational topics with low difficulty first.
