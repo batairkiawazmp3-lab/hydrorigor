@@ -15,7 +15,7 @@ export const startLink = {
 export const searchLink = {
   label: 'Search',
   href: '/search/',
-  description: 'Search the public HydroRigor information architecture.',
+  description: 'Search every HydroRigor guide and tool.',
 } as const satisfies NavigationLink;
 
 export const toolNavigation = [

@@ -91,7 +91,7 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-lettuce': 'butterhead-lettuce-hands',
   'hydroponic-lettuce-systems': 'lettuce-channel-net-pot',
   'hydroponic-lettuce-seeds': 'led-lettuce-seedlings',
-  'hydroponic-tomatoes': 'tomatoes-high-wire',
+  'hydroponic-tomatoes': 'tomato-truss',
   'hydroponic-tomato-seeds': 'young-tomato-plant',
   'hydroponic-nutrients': 'meter-probe',
   'hydroponic-nutrient-solution': 'lab-glassware',
@@ -99,7 +99,7 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-nutrients-for-home-growers': 'seedlings-floating-raft',
   'powder-vs-liquid-hydroponic-nutrients': 'water-pour-glass',
   'hydroponic-nutrients-for-vegetables': 'red-veined-chard',
-  'hydroponic-nutrients-for-tomatoes': 'tomato-truss',
+  'hydroponic-nutrients-for-tomatoes': 'tomatoes-high-wire',
   'how-to-mix-hydroponic-nutrients': 'beaker-measure',
   'masterblend-hydroponic-nutrients': 'test-tube-cuttings',
   'general-hydroponics-nutrients': 'cutting-in-water',
@@ -111,7 +111,7 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
 /** Banner photo for each section landing, keyed by section id. */
 export const sectionPhotoKeys: Record<string, PhotoKey> = {
   systems: 'tower-garden-greens',
-  crops: 'strawberries-hanging-close',
+  crops: 'red-veined-chard',
   nutrients: 'test-tube-cuttings',
   equipment: 'led-lettuce-seedlings',
   best: 'diy-pvc-nft-frame',

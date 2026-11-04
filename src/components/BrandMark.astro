@@ -7,13 +7,13 @@ const { compact = false, tone = 'light' } = Astro.props;
 const dark = tone === 'dark';
 ---
 <a class="hr-focus inline-flex items-center gap-2.5 rounded-lg no-underline" href="/" aria-label="HydroRigor home">
-  <svg class="h-9 w-9 shrink-0" viewBox="0 0 56 56" role="img" aria-label="HydroRigor symbol">
+  <svg class="h-8 w-8 shrink-0 sm:h-9 sm:w-9" viewBox="0 0 56 56" role="img" aria-label="HydroRigor symbol">
     <rect width="56" height="56" rx="16" fill={dark ? '#C6F35E' : '#0F6B4F'} />
     <path d="M18 14v28M38 14v28" fill="none" stroke={dark ? '#0E1A14' : '#F5F7F2'} stroke-width="4" stroke-linecap="round" />
     <path d="M18 30c6-6 14-6 20 0" fill="none" stroke={dark ? '#0F6B4F' : '#C6F35E'} stroke-width="4" stroke-linecap="round" />
     <circle cx="28" cy="22" r="3.5" fill={dark ? '#0F6B4F' : '#C6F35E'} />
   </svg>
   {compact ? null : (
-    <span class:list={['font-heading text-[1.35rem] font-extrabold tracking-[-0.035em]', dark ? 'text-white' : 'text-hydro-deep']}>Hydro<span class={dark ? 'text-leaf-bright' : 'text-hydro-teal'}>Rigor</span></span>
+    <span class:list={['font-heading text-[1.2rem] font-extrabold tracking-[-0.035em] sm:text-[1.35rem]', dark ? 'text-white' : 'text-hydro-deep']}>Hydro<span class={dark ? 'text-leaf-bright' : 'text-hydro-teal'}>Rigor</span></span>
   )}
 </a>

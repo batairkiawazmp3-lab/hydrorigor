@@ -20,6 +20,7 @@ const { omitCanonical } = Astro.props;
 <title>{metadata.title}</title>
 <meta name="description" content={metadata.description} />
 <meta name="robots" content={metadata.robots} />
+{metadata.robots === 'index, follow' && <meta name="googlebot" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
 {!omitCanonical && <link rel="canonical" href={metadata.canonical} />}
 
 <meta property="og:site_name" content={metadata.openGraph.siteName} />

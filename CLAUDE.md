@@ -39,6 +39,14 @@ disagree, `AGENTS.md` wins.
 - 1,800–2,500 words for primary guides: quick-answer box, tables, an original SVG diagram in
   `public/images/guides/` (presentation attributes only, no inline `style`), step-by-step
   setup, troubleshooting table, FAQ, and 4+ internal links to related guides and tools.
+- Right after the intro, show the key numbers with the `KeyTargets` component
+  (`src/components/content/KeyTargets.astro`, usage in its header comment). Every value in it
+  must appear in the page's quick-answer table with a listed source.
+- Add a photo, diagram or table every two or three sections so no stretch reads as a wall of text.
+- Titles: `<Topic>: <the specifics searchers want>`, 60 characters or fewer, e.g.
+  "Hydroponic Basil: pH, EC, Light & Harvest Guide". Avoid generic "Complete Guide" titles.
+  Change the title in both the MDX frontmatter and `src/data/m06-content.ts`.
+- Descriptions: 155 characters or fewer, leading with the answer and its numbers.
 - Write plainly for home growers. Recommend clearly and say what each recommendation rests on.
 - Never invent testing, personal experience, prices, ratings, affiliate terms, search volumes
   or crop targets. If a source does not give a number, say so instead of guessing.
@@ -46,7 +54,7 @@ disagree, `AGENTS.md` wins.
   `HydroRigor Editorial`; list them under "awaiting owner review" in the handoff so he can
   approve the byline change.
 - Set `updatedDate` to the day you ship. Keep the route, title intent and canonical URL.
-- Descriptions <= 180 characters. The word "sample" trips the fixture check; avoid it.
+- The word "sample" trips the fixture check; avoid it.
 - When a section's first guide is published, remove its path from `EMPTY_SECTION_PATHS`.
 
 ## Photos

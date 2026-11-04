@@ -7,16 +7,29 @@ interface Props {
   updatedDate?: Date | undefined;
   reviewer?: string | undefined;
   testedBy?: string | undefined;
+  /** One line: "By Najeeb · Updated Nov 2, 2026" plus any slotted items. */
+  compact?: boolean;
 }
 
-const { author, publishDate, updatedDate, reviewer, testedBy } = Astro.props;
+const { author, publishDate, updatedDate, reviewer, testedBy, compact = false } = Astro.props;
 const authorProfile = findAuthor(author);
 const dateFormatter = new Intl.DateTimeFormat('en', {
   dateStyle: 'long',
   timeZone: 'UTC',
 });
+const shortDate = new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' });
 const isoDay = (date: Date) => date.toISOString().slice(0, 10);
+const shownDate = updatedDate ?? publishDate;
 ---
+{compact ? (
+  <p class="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate">
+    <span>By {authorProfile ? <a class="hr-focus font-semibold text-hydro-teal underline underline-offset-4" href={authorProfile.profilePath}>{author}</a> : <span class="font-semibold text-hydro-deep">{author}</span>}</span>
+    <span aria-hidden="true">·</span>
+    <span>{updatedDate ? 'Updated' : 'Published'} <time datetime={isoDay(shownDate)}>{shortDate.format(shownDate)}</time></span>
+    {reviewer && (<><span aria-hidden="true">·</span><span>Reviewed by {reviewer}</span></>)}
+    <slot />
+  </p>
+) : (
 <dl class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate">
   <div class="flex gap-2">
     <dt class="font-semibold text-hydro-deep">Author</dt>
@@ -45,3 +58,4 @@ const isoDay = (date: Date) => date.toISOString().slice(0, 10);
     </div>
   )}
 </dl>
+)}

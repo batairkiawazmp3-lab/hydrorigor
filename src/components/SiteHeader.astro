@@ -6,15 +6,16 @@ const currentPath = Astro.url.pathname;
 const isCurrent = (href: string) => currentPath === href || (href !== '/' && currentPath.startsWith(href));
 ---
 <header class="relative z-40 border-b border-line bg-white/[0.96] backdrop-blur sm:sticky sm:top-0">
-  <div class="hr-container flex min-h-18 flex-wrap items-center justify-between gap-x-6 gap-y-3 py-3 md:flex-nowrap md:py-0">
+  <div class="hr-container relative flex min-h-16 items-center justify-between gap-3 sm:min-h-18">
     <BrandMark />
-    <nav aria-label="Primary navigation" class="order-3 flex w-full flex-wrap items-center gap-2 border-t border-line pt-3 md:order-none md:w-auto md:flex-nowrap md:justify-end md:border-t-0 md:pt-0">
-      <details class="group relative w-full sm:w-auto">
-        <summary class="hr-focus flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 rounded-full px-4 text-sm font-semibold text-hydro-deep hover:bg-water-mist [&::-webkit-details-marker]:hidden">
-          Explore topics
-          <svg aria-hidden="true" class="h-4 w-4 text-hydro-teal transition group-open:rotate-180" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4" /></svg>
+    <nav aria-label="Primary navigation" class="flex w-full flex-wrap items-center justify-end gap-1 sm:w-auto sm:flex-nowrap sm:gap-2">
+      <details class="group static sm:relative">
+        <summary class="hr-focus flex min-h-11 min-w-11 cursor-pointer list-none items-center justify-center gap-2 rounded-full px-3 text-sm font-semibold text-hydro-deep hover:bg-water-mist sm:px-4 [&::-webkit-details-marker]:hidden">
+          <svg aria-hidden="true" class="h-5 w-5 sm:hidden" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3.5 6h13M3.5 10h13M3.5 14h13" /></svg>
+          <span class="sr-only sm:not-sr-only">Explore topics</span>
+          <svg aria-hidden="true" class="hidden h-4 w-4 text-hydro-teal transition group-open:rotate-180 sm:block" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l4 4 4-4" /></svg>
         </summary>
-        <div class="mt-3 grid gap-1 rounded-2xl border border-line bg-white p-3 shadow-[var(--hr-shadow-soft)] sm:absolute sm:right-0 sm:w-[40rem] sm:grid-cols-2">
+        <div class="absolute inset-x-0 top-full mt-2 grid max-h-[calc(100vh-5rem)] gap-1 overflow-y-auto rounded-2xl border border-line bg-white p-3 shadow-[var(--hr-shadow-soft)] sm:inset-x-auto sm:right-0 sm:w-[40rem] sm:grid-cols-2">
           {sectionNavigation.map((item) => (
             <a
               class="hr-focus rounded-xl p-3 no-underline hover:bg-water-mist"
@@ -25,15 +26,18 @@ const isCurrent = (href: string) => currentPath === href || (href !== '/' && cur
               <span class="mt-1 block text-xs leading-5 text-slate">{item.description}</span>
             </a>
           ))}
+          <a class="hr-focus flex items-center gap-2 rounded-xl p-3 font-heading text-[0.95rem] font-bold text-hydro-deep no-underline hover:bg-water-mist sm:hidden" href={searchLink.href}>
+            <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="4.5" /><path d="M10.5 10.5L14 14" /></svg>Search guides
+          </a>
         </div>
       </details>
       <a
-        class="hr-focus inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold text-hydro-deep no-underline hover:bg-water-mist"
+        class="hr-focus hidden min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold text-hydro-deep no-underline hover:bg-water-mist sm:inline-flex"
         href={searchLink.href}
         aria-current={isCurrent(searchLink.href) ? 'page' : undefined}
       ><svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="7" r="4.5" /><path d="M10.5 10.5L14 14" /></svg>{searchLink.label}</a>
       <a
-        class="hr-focus inline-flex min-h-11 items-center rounded-full bg-hydro-teal px-5 text-sm font-semibold text-white no-underline transition hover:bg-hydro-emerald-dark"
+        class="hr-focus inline-flex min-h-11 items-center rounded-full bg-hydro-teal px-4 text-sm font-semibold whitespace-nowrap text-white no-underline transition hover:bg-hydro-emerald-dark sm:px-5"
         href={startLink.href}
         aria-current={isCurrent(startLink.href) ? 'page' : undefined}
       >{startLink.label}</a>
