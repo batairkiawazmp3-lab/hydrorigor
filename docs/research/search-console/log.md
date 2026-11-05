@@ -1,0 +1,17 @@
+# Search Console log
+
+One entry per weekly check, newest first. Baseline: `2026-11-05-baseline.md`.
+Figures are copied from Search Console (web search, last 28 days unless noted); never estimate.
+
+| Week of | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-05 (baseline, Nov 1–3) | 0 | 12 | 0% | 48.4 | 7 | 12 | processing | Lettuce seeds rebuild (#24, #26), share images and pins (#25), Pinterest claim (#27), internal links and queue re-order (this change) |
+
+## Changes to watch
+
+| Shipped | Page | Change | Check after |
+| --- | --- | --- | --- |
+| 2026-11-05 | /crops/hydroponic-lettuce-seeds/ | Full rebuild | 2026-11-19, 2026-12-03 |
+| 2026-11-05 | /best/hydroponic-system-for-home-growers/ | Answer-first description; 4 new internal links | 2026-11-19 |
+| 2026-11-05 | /systems/diy-hydroponic-system-for-beginners/ | 4 new internal links | 2026-11-19 |
+| 2026-11-05 | /nutrients-water/hydroponic-nutrients-for-tomatoes/ | 1 new internal link | 2026-11-19 |
