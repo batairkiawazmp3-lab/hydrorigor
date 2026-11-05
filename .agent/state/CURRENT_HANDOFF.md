@@ -26,7 +26,10 @@ Updated: 2026-11-05
   Pinterest board, Thumbnail, Description, Link, Publish date YYYY-MM-DD, Keywords). New guides
   need a pin row too; dates in the past are rejected.
 - Author profiles: send real LinkedIn / organisation URLs to add as `sameAs` in `src/data/authors.ts`.
-- Search Console: Claude needs Chrome with the Claude extension open to read indexing data.
+- Search Console: Claude reads it in the owner's Chrome (Claude extension, Google account
+  authuser=0, property `sc-domain:hydrorigor.com`). A daily scheduled check (13:55 PKT) logs figures in
+  `docs/research/search-console/log.md` against `2026-11-05-baseline.md`; it only runs while
+  the owner's computer and Chrome are on.
 - OpenRush has no credits; the monthly SEO review uses Ubersuggest (10 live SERP refreshes/month).
 
 ## Awaiting owner review
