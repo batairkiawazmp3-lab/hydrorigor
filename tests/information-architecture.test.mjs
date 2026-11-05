@@ -129,8 +129,9 @@ test('trust pages state current evidence and service boundaries honestly', async
   assert.match(policy, /Responsible AI assistance/);
   assert.match(policy, /do not create evidence, personal experience, product testing, or authority/i);
   assert.match(disclosure, /does not currently publish affiliate links/i);
-  assert.match(contact, /Contact is not active yet/);
-  assert.doesNotMatch(contact, /mailto:|<form/i);
+  assert.match(contact, /const email = 'hello@hydrorigor\.com'/);
+  assert.match(contact, /mailto:/);
+  assert.doesNotMatch(contact, /<form|<input|<script/i, 'contact stays a plain email link with no form backend');
 });
 
 test('search is accessible, noindex, and the only page with application JavaScript', async () => {

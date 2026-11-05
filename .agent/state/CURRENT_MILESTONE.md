@@ -26,7 +26,7 @@ that ships it. Volumes are US monthly searches from `docs/research/M06_KEYWORD_R
 - [x] Design update: one-row phone header, phone hero photos, compact guide meta, KeyTargets
       card, photo "Keep reading" cards, schema images, large image previews (PR #20)
 - [x] Specific search titles for the strawberry, lettuce and nutrients guides
-- [x] Email: ImprovMX MX records added in Vercel DNS (2026-11-04); Contact page waits on a test email
+- [x] Email: ImprovMX forwarding live (DNS 2026-11-04); /contact/ shows hello@hydrorigor.com (2026-11-05)
 
 ### Queue (work top to bottom; one item per run)
 Ordered on 2026-11-03 by opportunity: informational topics with low difficulty first.
@@ -59,6 +59,5 @@ buyer-oriented rewrite with named system types, done after the informational gui
 20. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, after item 3
 
 ### Blocked on the owner
-- [ ] Contact email: `/contact/` goes live once a domain address works (see handoff)
 - [ ] Affiliate links: after the owner joins a programme, add merchants in
       `src/data/merchants/`, enable disclosures and link through `AffiliateLink`

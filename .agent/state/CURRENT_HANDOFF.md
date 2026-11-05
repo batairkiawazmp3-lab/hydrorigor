@@ -14,10 +14,6 @@ Updated: 2026-11-03
 
 ## Open items for the owner
 
-- Contact email: ImprovMX forwarding set up; MX records (mx1/mx2.improvmx.com) added in Vercel
-  DNS on 2026-11-04. Owner to confirm a test email to the alias arrives, then Claude switches
-  on `/contact/` with that address (and updates the contact test in
-  `tests/information-architecture.test.mjs`).
 - Owner photos: a shot list of 10 home-setup photos and an author photo were requested; when
   they arrive, crop to 1600x900, add to `src/data/photos.ts`, and prefer them over stock.
 - CI Lighthouse steps have failed before when GitHub's Chrome version changed. If only those
