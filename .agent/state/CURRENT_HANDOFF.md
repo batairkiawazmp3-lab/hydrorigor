@@ -16,6 +16,20 @@ Updated: 2026-11-05
 
 - Owner photos: a shot list of 10 home-setup photos and an author photo were requested; when
   they arrive, crop to 1600x900, add to `src/data/photos.ts`, and prefer them over stock.
+  Best route (2026-11-05 plan): one real home grow (Kratky or small DWC with lettuce or basil),
+  photographed weekly, gives the site genuine first-hand photos and the only honest basis for
+  "we grew it" or product-review content.
+- Earning plan (2026-11-05; owner decisions, nothing enabled yet):
+  - Affiliate: owner applies to programmes that fit the guides, e.g. True Leaf Market (seeds,
+    kits; reported 15%, 30-day cookie), Click & Grow (reported 10%, 30 days), GrowAce (reported
+    10%, 60 days), Gardyn (Impact; rate not published), Amazon Associates (needs 3 qualifying
+    sales within 180 days of joining; check Pakistan payout options in Associates Central).
+    Rates are third-party reports; confirm in each programme's terms. Links stay off until the
+    owner confirms an approved programme (guardrail).
+  - Display ads: not before about 1,000 monthly sessions (Journey by Mediavine's reported entry
+    point; Raptive 25,000 pageviews with 50% US/UK/CA/AU/NZ traffic; AdSense has no minimum but
+    pays least). Any ad network needs a CSP change and will press on the Lighthouse budgets, so
+    it needs an explicit owner decision on those budgets first; do not change them unasked.
 - CI Lighthouse steps have failed before when GitHub's Chrome version changed. If only those
   steps fail, re-run the job once and report it; do not weaken the budgets.
 - Backlinks (the site has none yet, per Ubersuggest 2026-11-03): link to HydroRigor from the
