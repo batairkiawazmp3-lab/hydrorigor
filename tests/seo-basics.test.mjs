@@ -108,3 +108,7 @@ test('menu descriptions never repeat another section name (keeps link names uniq
     }
   }
 });
+
+test('Pinterest website claim tag stays in the page head', async () => {
+  assert.match(await read('src/components/seo/SEO.astro'), /<meta name="p:domain_verify" content="b514115b231c664860c90262b5b918de" \/>/u);
+});
