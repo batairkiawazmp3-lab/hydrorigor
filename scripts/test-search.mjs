@@ -4,7 +4,7 @@ import { extname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { requiredPublicRoutes } from '../src/lib/navigation.ts';
 import { EMPTY_SECTION_PATHS } from '../src/lib/indexing.ts';
-import { getM06Path, m06ContentItems } from '../src/data/m06-content.ts';
+import { contentItems as m06ContentItems, getContentPath as getM06Path } from '../src/data/content-manifest.ts';
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const distRoot = join(projectRoot, 'dist');

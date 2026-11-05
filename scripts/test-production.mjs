@@ -5,7 +5,7 @@ import { createServer } from 'node:net';
 import { setTimeout as delay } from 'node:timers/promises';
 import { chromium, expect } from '@playwright/test';
 import { productionTarget } from './production-target.mjs';
-import { m06ContentItems, getM06Path } from '../src/data/m06-content.ts';
+import { contentItems as m06ContentItems, getContentPath as getM06Path } from '../src/data/content-manifest.ts';
 import { requiredPublicRoutes } from '../src/lib/navigation.ts';
 import { EMPTY_SECTION_PATHS } from '../src/lib/indexing.ts';
 import { fixtureRoutes, representativeRoutes, retiredRoutes } from '../tests/e2e/routes.mjs';
@@ -184,9 +184,9 @@ try {
       });
     }
   }
-  assert.equal(editorial.length, 25);
+  assert.ok(editorial.length >= 25, 'all 25 launch guides plus any Phase 2+ guides');
   if (failures.length) throw new Error(`${failures.length} launch validation checks failed.`);
-  process.stdout.write(`PASS ${publicPaths.length} public routes, all 25 M06 pages; field INP NOT MEASURED.\n`);
+  process.stdout.write(`PASS ${publicPaths.length} public routes, all ${editorial.length} guides; field INP NOT MEASURED.\n`);
 } catch (error) {
   process.stderr.write(`${error.message}\n`);
   process.exitCode = 1;

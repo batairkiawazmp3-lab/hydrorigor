@@ -4,7 +4,7 @@ import type { SectionDefinition } from '../../lib/sections.ts';
 import CommercialSectionStatus from '../commercial/CommercialSectionStatus.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../seo/Breadcrumbs.astro';
-import { getM06Path, m06ContentItems } from '../../data/m06-content.ts';
+import { contentItems, getContentPath } from '../../data/content-manifest.ts';
 import { EMPTY_SECTION_PATHS } from '../../lib/indexing.ts';
 import { readingMinutes } from '../../lib/reading.ts';
 import { photoForGuide, photoForSection } from '../../data/photos.ts';
@@ -19,7 +19,7 @@ interface Props {
 
 const { section } = Astro.props;
 const pathname = `/${section.slug}/`;
-const publishedItems = m06ContentItems.filter(({ category }) => category === section.id);
+const publishedItems = contentItems.filter(({ category }) => category === section.id);
 const entries = [
   ...(await getCollection('articles', ({ data }) => !data.draft)),
   ...(await getCollection('reviews', ({ data }) => !data.draft)),
@@ -59,7 +59,7 @@ const image = await socialImage(banner);
             {publishedItems.map((item) => {
               const cardPhoto = photoForGuide(item.route);
               return (
-                <a class="hr-focus group overflow-hidden rounded-[1.4rem] border border-line bg-white no-underline transition hover:-translate-y-0.5 hover:shadow-[var(--hr-shadow-soft)]" href={getM06Path(item)}>
+                <a class="hr-focus group overflow-hidden rounded-[1.4rem] border border-line bg-white no-underline transition hover:-translate-y-0.5 hover:shadow-[var(--hr-shadow-soft)]" href={getContentPath(item)}>
                   {cardPhoto && (
                     <span class="block aspect-[16/9] overflow-hidden bg-water-mist">
                       <Photo photo={cardPhoto} decorative sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" widths={[320, 480, 640, 800]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />

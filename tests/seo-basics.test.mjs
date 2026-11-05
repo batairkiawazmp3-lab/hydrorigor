@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { access, readFile } from 'node:fs/promises';
 import { pageTitle } from '../src/lib/seo.ts';
 import { buildArticleJsonLd } from '../src/lib/structured-data.ts';
-import { m06ContentItems } from '../src/data/m06-content.ts';
+import { contentItems } from '../src/data/content-manifest.ts';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
@@ -12,7 +12,7 @@ test('page titles keep the brand only when they fit in 60 characters', () => {
   assert.equal(pageTitle('Hydroponic Lettuce'), 'Hydroponic Lettuce — HydroRigor');
   const long = 'Hydroponic Strawberries: Complete Indoor Growing Guide';
   assert.equal(pageTitle(long), long);
-  for (const { title } of m06ContentItems) {
+  for (const { title } of contentItems) {
     assert.ok(pageTitle(title).length <= 60, `"${title}" is too long for a search result title`);
   }
 });
