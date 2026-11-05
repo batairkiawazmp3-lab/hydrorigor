@@ -151,10 +151,10 @@ test('M04 links are explicit and calculator descriptions preserve the scaling bo
   assert.match(nutrientPages, /does not (?:choose|formulate|predict)/iu);
 });
 
-test('section landings expose the M06 manifest and preserve static rendering', async () => {
+test('section landings expose the content manifest and preserve static rendering', async () => {
   const landing = await read('src/components/content/SectionLanding.astro');
-  assert.match(landing, /m06ContentItems/u);
-  assert.match(landing, /getM06Path/u);
+  assert.match(landing, /contentItems/u);
+  assert.match(landing, /getContentPath/u);
   assert.match(landing, /Published guides/u);
   assert.doesNotMatch(landing, /<script|client:(?:load|idle|visible|media|only)/u);
 });

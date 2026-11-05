@@ -19,7 +19,7 @@ import { resolveCommercialPageState } from '../../lib/commercial/registry.ts';
 import { getSectionDefinition } from '../../lib/sections.ts';
 import { buildArticleJsonLd } from '../../lib/structured-data.ts';
 import { readingMinutes } from '../../lib/reading.ts';
-import { getM06Path, m06ContentItems } from '../../data/m06-content.ts';
+import { contentItems, getContentPath } from '../../data/content-manifest.ts';
 import BaseLayout from '../BaseLayout.astro';
 
 interface Props {
@@ -47,7 +47,7 @@ const commercialState = resolveCommercialPageState(data);
 const minutes = readingMinutes(entry.body);
 const toc = headings.filter(({ depth }) => depth === 2);
 
-const related = m06ContentItems
+const related = contentItems
   .filter((item) => item.collection === 'articles' && item.category === data.category && item.route !== data.route)
   .slice(0, 4);
 ---
@@ -152,7 +152,7 @@ const related = m06ContentItems
                 {related.map((item) => {
                   const relatedPhoto = photoForGuide(item.route);
                   return (
-                    <a class="hr-focus group flex items-stretch overflow-hidden rounded-[1.2rem] border border-line bg-white no-underline transition hover:border-hydro-teal" href={getM06Path(item)}>
+                    <a class="hr-focus group flex items-stretch overflow-hidden rounded-[1.2rem] border border-line bg-white no-underline transition hover:border-hydro-teal" href={getContentPath(item)}>
                       {relatedPhoto && (
                         <span class="block w-28 shrink-0 overflow-hidden bg-water-mist sm:w-32">
                           <Photo photo={relatedPhoto} decorative sizes="128px" widths={[160, 320]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.05]" />

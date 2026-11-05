@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { access, readFile } from 'node:fs/promises';
-import { m06ContentItems } from '../src/data/m06-content.ts';
+import { contentItems } from '../src/data/content-manifest.ts';
 import { sectionDefinitions } from '../src/lib/sections.ts';
 
 const root = new URL('../', import.meta.url);
@@ -40,7 +40,7 @@ test('every photo is a local, credited Unsplash image with descriptive alt text'
 test('every published guide and section has a photo from the registry', async () => {
   const { photos, guides, sections } = await registry();
   const keys = new Set(photos.map(({ key }) => key));
-  for (const item of m06ContentItems) {
+  for (const item of contentItems) {
     assert.ok(guides[item.route], `${item.route} has no hero photo`);
     assert.ok(keys.has(guides[item.route]), `${item.route} points at unknown photo ${guides[item.route]}`);
   }

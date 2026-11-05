@@ -1,0 +1,90 @@
+# Phase 2+ content plan (plan IDs 26–100)
+
+Extracted on 2026-11-05 from the 100 Article Plan sheet in `docs/reference/HydroRigor_Master_Strategy.xlsx`.
+Use this list for new guides: take the plan ID as the manifest `id`, the proposed route as the
+`route`, and rewrite the working title with the CLAUDE.md title rule. Keyword figures come from the
+workbook and are only as current as its validation date; re-check them (Ubersuggest) before writing.
+Routes must be unique within a collection (they are file names in `src/content/<collection>/`).
+
+Stages from the workbook's Publishing Sequence:
+- **Stage 3 (26–55):** full topical depth across methods, crops and equipment.
+- **Stage 4 (56–80):** buyer guides and reviews, after affiliate approval and with the testing policy respected.
+- **Stage 5 (81–100):** troubleshooting and utility content.
+
+| ID | Stage | Section | Collection | Working title | Primary keyword | Intent | Validation | US volume | Difficulty | Proposed route | Notes |
+| ---: | --- | --- | --- | --- | --- | --- | --- | ---: | ---: | --- | --- |
+| 26 | Stage 3 | systems | articles | What Is Hydroponics? How Soil-Free Growing Works | what is a hydroponic system | Informational | Suggestion-derived |  |  | `what-is-hydroponics` |  |
+| 27 | Stage 3 | systems | articles | Types of Hydroponic Systems: DWC, NFT, Kratky, Drip and More | hydroponic system types | Informational | Suggestion-derived |  |  | `types-of-hydroponic-systems` |  |
+| 28 | Stage 3 | systems | articles | Kratky Hydroponics for Beginners: Passive Growing Without Pumps | kratky hydroponic system | Informational | Suggestion-derived |  |  | `kratky-hydroponics` |  |
+| 29 | Stage 3 | systems | articles | NFT Hydroponic Systems: Complete Home Setup Guide | nft hydroponic system | Informational | Suggestion-derived |  |  | `nft-hydroponic-system` |  |
+| 30 | Stage 3 | systems | articles | Ebb and Flow Hydroponics Explained | hydroponic system ebb and flow | Informational | Suggestion-derived |  |  | `ebb-and-flow-hydroponics` |  |
+| 31 | Stage 3 | systems | articles | Dutch Bucket Hydroponics: Best Uses and Setup | dutch bucket hydroponic system | Informational | Suggestion-derived |  |  | `dutch-bucket-hydroponics` |  |
+| 32 | Stage 3 | systems | articles | Drip Hydroponic Systems: How They Work at Home | drip hydroponic system | Informational | Suggestion-derived |  |  | `drip-hydroponic-system` |  |
+| 33 | Stage 3 | systems | articles | Aeroponics vs Hydroponics: Key Differences for Home Growers | aeroponics vs hydroponics | Commercial | Editorial gap |  |  | `aeroponics-vs-hydroponics` | Method/media comparison: publish as an article, not a product comparison |
+| 34 | Stage 3 | equipment | articles | Hydroponic Reservoir Size: How to Choose the Right Capacity | hydroponic system reservoir | Informational | Suggestion-derived |  |  | `hydroponic-reservoir-size` |  |
+| 35 | Stage 3 | equipment | articles | Hydroponic Water Pumps: Flow Rate and Sizing Guide | hydroponic system pumps | Commercial | Suggestion-derived |  |  | `hydroponic-water-pumps` |  |
+| 36 | Stage 3 | equipment | articles | Air Pumps for DWC Hydroponics: Sizing and Setup | air pump for dwc hydroponics | Commercial | Editorial gap |  |  | `air-pump-for-dwc-hydroponics` |  |
+| 37 | Stage 3 | equipment | articles | Net Pots for Hydroponics: Sizes, Media and Reuse | hydroponic net pots | Commercial | Editorial gap |  |  | `hydroponic-net-pots` |  |
+| 38 | Stage 3 | equipment | articles | Best Growing Media for Hydroponics: A Practical Comparison | hydroponic growing media | Commercial | Editorial gap |  |  | `hydroponic-growing-media` |  |
+| 39 | Stage 3 | equipment | articles | Rockwool vs Coco Coir for Hydroponics | rockwool vs coco coir hydroponics | Commercial | Editorial gap |  |  | `rockwool-vs-coco-coir` | Method/media comparison: publish as an article, not a product comparison |
+| 40 | Stage 3 | equipment | articles | LECA for Hydroponics: When It Works Best | hydroponic leca | Informational | Editorial gap |  |  | `leca-hydroponics` |  |
+| 41 | Stage 3 | crops | articles | How to Grow Basil Hydroponically Indoors | hydroponic basil | Informational | Suggestion-derived |  |  | `hydroponic-basil` |  |
+| 42 | Stage 3 | crops | articles | How to Grow Peppers Hydroponically Indoors | hydroponic peppers | Informational | Suggestion-derived |  |  | `hydroponic-peppers` |  |
+| 43 | Stage 3 | crops | articles | How to Grow Cucumbers Hydroponically Indoors | hydroponic cucumbers | Informational | Editorial gap |  |  | `hydroponic-cucumbers` |  |
+| 44 | Stage 3 | crops | articles | How to Grow Microgreens Hydroponically | microgreen hydroponic system | Informational | Suggestion-derived |  |  | `hydroponic-microgreens` |  |
+| 45 | Stage 3 | crops | articles | Best Herbs for Hydroponic Systems | hydroponic system for herbs | Commercial | Suggestion-derived |  |  | `best-herbs-for-hydroponics` |  |
+| 46 | Stage 3 | crops | articles | How to Grow Spinach Hydroponically | hydroponic spinach | Informational | Editorial gap |  |  | `hydroponic-spinach` |  |
+| 47 | Stage 3 | crops | articles | How to Grow Kale Hydroponically | hydroponic kale | Informational | Editorial gap |  |  | `hydroponic-kale` |  |
+| 48 | Stage 3 | crops | articles | How to Grow Green Onions Hydroponically | hydroponic green onions | Informational | Suggestion-derived |  |  | `hydroponic-green-onions` |  |
+| 49 | Stage 3 | crops | articles | How to Grow Cilantro Hydroponically | hydroponic cilantro | Informational | Editorial gap |  |  | `hydroponic-cilantro` |  |
+| 50 | Stage 3 | crops | articles | How to Grow Mint Hydroponically | hydroponic mint | Informational | Editorial gap |  |  | `hydroponic-mint` |  |
+| 51 | Stage 3 | crops | articles | Hydroponic Strawberry Yield per Plant: What Affects Production | hydroponic strawberries yield per plant | Informational | Suggestion-derived |  |  | `hydroponic-strawberry-yield` |  |
+| 52 | Stage 3 | crops | articles | Hydroponic Strawberry Nutrient Schedule by Growth Stage | hydroponic strawberries nutrients | Informational | Suggestion-derived |  |  | `hydroponic-strawberry-nutrient-schedule` |  |
+| 53 | Stage 3 | nutrients | articles | Hydroponic Lettuce pH and EC Targets | hydroponic lettuce ph | Informational | Suggestion-derived |  |  | `hydroponic-lettuce-ph-ec` |  |
+| 54 | Stage 3 | nutrients | articles | Hydroponic Tomato pH and EC Targets | ph for hydroponic tomatoes | Informational | Suggestion-derived |  |  | `hydroponic-tomato-ph-ec` |  |
+| 55 | Stage 3 | crops | articles | Best Hydroponic Plants for Beginners | hydroponic system for beginners | Commercial | Suggestion-derived |  |  | `best-hydroponic-plants-for-beginners` |  |
+| 56 | Stage 4 | best | articles | Best Indoor Hydroponic Systems for Home Growers | best indoor hydroponic system | Commercial | Metric-validated | 140 | 36 | `indoor-hydroponic-system` | Publish after an affiliate programme is approved; research-based picks only |
+| 57 | Stage 4 | best | articles | Best Hydroponic Systems for Small Spaces and Apartments | best hydroponic system for small spaces | Commercial | Suggestion-derived |  |  | `hydroponic-system-for-small-spaces` | Publish after an affiliate programme is approved; research-based picks only |
+| 58 | Stage 4 | best | articles | Best Countertop Hydroponic Gardens | countertop hydroponic system | Commercial | Suggestion-derived |  |  | `countertop-hydroponic-system` | Publish after an affiliate programme is approved; research-based picks only |
+| 59 | Stage 4 | best | articles | Best Vertical Hydroponic Systems for Home | best vertical hydroponic system | Commercial | Suggestion-derived |  |  | `vertical-hydroponic-system` | Publish after an affiliate programme is approved; research-based picks only |
+| 60 | Stage 4 | best | articles | Best DWC Hydroponic Kits | best dwc hydroponic kit | Commercial | Editorial gap |  |  | `dwc-hydroponic-kit` | Publish after an affiliate programme is approved; research-based picks only |
+| 61 | Stage 4 | best | articles | Best NFT Hydroponic Systems for Home | best nft hydroponic system | Commercial | Editorial gap |  |  | `nft-hydroponic-systems-for-home` | Publish after an affiliate programme is approved; research-based picks only |
+| 62 | Stage 4 | best | articles | Best Hydroponic Systems for Lettuce | best hydroponic system for lettuce | Commercial | Suggestion-derived |  |  | `hydroponic-system-for-lettuce` | Publish after an affiliate programme is approved; research-based picks only |
+| 63 | Stage 4 | best | articles | Best Hydroponic Systems for Strawberries | best hydroponic system for strawberries | Commercial | Suggestion-derived |  |  | `hydroponic-system-for-strawberries` | Publish after an affiliate programme is approved; research-based picks only |
+| 64 | Stage 4 | best | articles | Best Hydroponic Systems for Tomatoes | best hydroponic system for tomatoes | Commercial | Suggestion-derived |  |  | `hydroponic-system-for-tomatoes` | Publish after an affiliate programme is approved; research-based picks only |
+| 65 | Stage 4 | best | articles | Best Grow Lights for Hydroponics | hydroponic grow light | Commercial | Metric-validated | 1300 | 38 | `hydroponic-grow-light` | Publish after an affiliate programme is approved; research-based picks only |
+| 66 | Stage 4 | best | articles | Best pH Meters for Hydroponics | hydroponic ph meter | Commercial | Metric-validated | 590 | 44 | `hydroponic-ph-meter` | Publish after an affiliate programme is approved; research-based picks only |
+| 67 | Stage 4 | best | articles | Best EC/TDS Meters for Hydroponics | best ec meter for hydroponics | Commercial | Editorial gap |  |  | `ec-meter-for-hydroponics` | Publish after an affiliate programme is approved; research-based picks only |
+| 68 | Stage 4 | best | articles | Best Air Pumps for DWC Hydroponics | best air pump for dwc hydroponics | Commercial | Editorial gap |  |  | `air-pumps-for-dwc` | Publish after an affiliate programme is approved; research-based picks only |
+| 69 | Stage 4 | best | articles | Best Water Pumps for Home Hydroponics | best water pump for hydroponics | Commercial | Editorial gap |  |  | `water-pump-for-hydroponics` | Publish after an affiliate programme is approved; research-based picks only |
+| 70 | Stage 4 | best | articles | Best Hydroponic Nutrients for Lettuce | best hydroponic nutrients for lettuce | Commercial | Suggestion-derived |  |  | `hydroponic-nutrients-for-lettuce` | Publish after an affiliate programme is approved; research-based picks only |
+| 71 | Stage 4 | best | articles | Best Hydroponic Nutrients for Tomatoes | best hydroponic nutrients for tomatoes | Commercial | Suggestion-derived |  |  | `tomato-nutrient-picks` | Publish after an affiliate programme is approved; research-based picks only; the existing nutrients guide with this topic covers the informational intent |
+| 72 | Stage 4 | best | articles | Best Hydroponic Nutrients for Herbs | hydroponic nutrients for herbs | Commercial | Suggestion-derived |  |  | `hydroponic-nutrients-for-herbs` | Publish after an affiliate programme is approved; research-based picks only |
+| 73 | Stage 4 | best | articles | Best Organic Hydroponic Nutrients for Vegetables | organic hydroponic nutrients | Commercial | Metric-validated | 390 | 18 | `organic-nutrient-picks` | Publish after an affiliate programme is approved; research-based picks only; the existing nutrients guide with this topic covers the informational intent |
+| 74 | Stage 4 | best | articles | Best Replacement Grow Sponges and Pods for Indoor Gardens | hydroponic grow sponges | Commercial | Editorial gap |  |  | `hydroponic-grow-sponges` | Publish after an affiliate programme is approved; research-based picks only |
+| 75 | Stage 4 | reviews | reviews | LetPot Hydroponic System Review: Who It Is Best For | letpot hydroponic system | Commercial | Suggestion-derived |  |  | `letpot-hydroponic-system` | Brand review: manufacturer documentation only unless hands-on testing is documented |
+| 76 | Stage 4 | reviews | reviews | Gardyn Review: Cost, Features and Ongoing Expenses | gardyn hydroponic system | Commercial | Suggestion-derived |  |  | `gardyn-hydroponic-system` | Brand review: manufacturer documentation only unless hands-on testing is documented |
+| 77 | Stage 4 | reviews | reviews | Lettuce Grow Review: Farmstand Pros, Cons and Costs | lettuce grow hydroponic system | Commercial | Editorial gap |  |  | `lettuce-grow-hydroponic-system` | Brand review: manufacturer documentation only unless hands-on testing is documented |
+| 78 | Stage 4 | compare | comparisons | LetPot vs Gardyn: Which Smart Garden Fits Your Home? | letpot vs gardyn | Commercial | Editorial gap |  |  | `letpot-vs-gardyn` | Named-product comparison: needs product records and the comparison schema |
+| 79 | Stage 4 | compare | comparisons | Gardyn vs Lettuce Grow: Smart Indoor Garden Comparison | gardyn vs lettuce grow | Commercial | Editorial gap |  |  | `gardyn-vs-lettuce-grow` | Named-product comparison: needs product records and the comparison schema |
+| 80 | Stage 4 | compare | comparisons | Best AeroGarden Alternatives for Indoor Growing | aerogarden indoor hydroponic system | Commercial | Metric-validated | 70 | 5 | `aerogarden-indoor-hydroponic-system` | Named-product comparison: needs product records and the comparison schema |
+| 81 | Stage 5 | problems | articles | Hydroponic pH Too High: Causes and Fixes | hydroponic ph too high | Informational | Editorial gap |  |  | `hydroponic-ph-too-high` |  |
+| 82 | Stage 5 | problems | articles | Hydroponic pH Too Low: Causes and Fixes | hydroponic ph too low | Informational | Editorial gap |  |  | `hydroponic-ph-too-low` |  |
+| 83 | Stage 5 | problems | articles | Why Hydroponic pH Keeps Drifting | hydroponic ph keeps changing | Informational | Editorial gap |  |  | `hydroponic-ph-keeps-changing` |  |
+| 84 | Stage 5 | problems | articles | Hydroponic EC Too High: What to Do | hydroponic ec too high | Informational | Editorial gap |  |  | `hydroponic-ec-too-high` |  |
+| 85 | Stage 5 | problems | articles | Hydroponic EC Too Low: What to Do | hydroponic ec too low | Informational | Editorial gap |  |  | `hydroponic-ec-too-low` |  |
+| 86 | Stage 5 | problems | articles | Hydroponic Root Rot: Symptoms, Causes and Prevention | hydroponic root rot | Informational | Editorial gap |  |  | `hydroponic-root-rot` |  |
+| 87 | Stage 5 | problems | articles | How to Stop Algae in a Hydroponic System | algae in hydroponic system | Informational | Editorial gap |  |  | `algae-in-hydroponic-system` |  |
+| 88 | Stage 5 | problems | articles | Yellow Leaves in Hydroponics: Diagnostic Guide | yellow leaves hydroponics | Informational | Editorial gap |  |  | `yellow-leaves-hydroponics` |  |
+| 89 | Stage 5 | problems | articles | Hydroponic Leaf Tip Burn: Causes and Fixes | hydroponic tip burn | Informational | Editorial gap |  |  | `hydroponic-tip-burn` |  |
+| 90 | Stage 5 | problems | articles | Hydroponic Nutrient Deficiency Chart | hydroponic nutrient deficiency chart | Informational | Editorial gap |  |  | `hydroponic-nutrient-deficiency-chart` |  |
+| 91 | Stage 5 | problems | articles | Hydroponic Nutrient Burn: How to Recover Plants | hydroponic nutrient burn | Informational | Editorial gap |  |  | `hydroponic-nutrient-burn` |  |
+| 92 | Stage 5 | problems | articles | Why Hydroponic Seedlings Die and How to Prevent It | hydroponic seedlings dying | Informational | Editorial gap |  |  | `hydroponic-seedlings-dying` |  |
+| 93 | Stage 5 | problems | articles | Hydroponic Lettuce Bolting: Causes and Prevention | hydroponic lettuce bolting | Informational | Editorial gap |  |  | `hydroponic-lettuce-bolting` |  |
+| 94 | Stage 5 | problems | articles | Hydroponic Tomato Flowers Dropping: Causes and Fixes | hydroponic tomato flowers dropping | Informational | Editorial gap |  |  | `hydroponic-tomato-flowers-dropping` |  |
+| 95 | Stage 5 | problems | articles | Hydroponic Strawberries Flowering but Not Fruiting | hydroponic strawberries not fruiting | Informational | Editorial gap |  |  | `hydroponic-strawberries-not-fruiting` |  |
+| 96 | Stage 5 | nutrients | articles | Hydroponic Reservoir Temperature: Ideal Range and Control | hydroponic reservoir temperature | Informational | Editorial gap |  |  | `hydroponic-reservoir-temperature` |  |
+| 97 | Stage 5 | equipment | articles | Hydroponic Grow Light Schedule by Crop | hydroponic light schedule | Informational | Editorial gap |  |  | `hydroponic-light-schedule` | Equipment section |
+| 98 | Stage 5 | nutrients | articles | How Often Should You Change Hydroponic Nutrient Solution? | how often change hydroponic water | Informational | Editorial gap |  |  | `how-often-change-hydroponic-water` |  |
+| 99 | Stage 5 | tools | articles | Hydroponic Nutrient Mixing Calculator: Build the Right Strength | hydroponic nutrient calculator | Utility | Editorial gap |  |  | `hydroponic-nutrient-calculator` | Already covered by an existing tool page; improve that page instead of a new route |
+| 100 | Stage 5 | tools | articles | Hydroponic pH and EC Target Chart by Crop | hydroponic ph ec chart | Utility | Editorial gap |  |  | `hydroponic-ph-ec-chart` | Already covered by an existing tool page; improve that page instead of a new route |

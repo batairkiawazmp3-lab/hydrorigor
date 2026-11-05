@@ -1,7 +1,7 @@
 import { readdir, readFile, stat } from 'node:fs/promises';
 import { extname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { getM06Path, m06ContentItems } from '../src/data/m06-content.ts';
+import { contentItems as m06ContentItems, getContentPath as getM06Path } from '../src/data/content-manifest.ts';
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url));
 const distRoot = join(projectRoot, 'dist');

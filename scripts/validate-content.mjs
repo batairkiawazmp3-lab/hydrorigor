@@ -3,6 +3,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { m06ContentItems, getM06Path } from '../src/data/m06-content.ts';
+import { contentItems, getContentPath, phase2ContentItems } from '../src/data/content-manifest.ts';
 import { m06EditorialSourceById, m06EditorialSources } from '../src/data/editorial-sources/m06.ts';
 import { findUnmistakableHandsOnClaim } from '../src/lib/commercial/content-integrity.ts';
 import { shouldIncludeInSitemap } from '../src/lib/indexing.ts';
@@ -66,91 +67,109 @@ for (const source of m06EditorialSources) {
   if (!source.title || !source.publisher || !source.locator) violations.push(`${source.id}: source metadata is incomplete.`);
 }
 
-const validPaths = new Set([...requiredPublicRoutes, ...m06ContentItems.map(getM06Path)]);
+const validPaths = new Set([...requiredPublicRoutes, ...contentItems.map(getContentPath)]);
+
+for (const [label, values] of [
+  ['IDs', contentItems.map(({ id }) => id)],
+  ['routes', contentItems.map(getContentPath)],
+  ['titles', contentItems.map(({ title }) => title)],
+]) {
+  if (new Set(values).size !== values.length) violations.push(`Content manifest ${label} are not unique across all phases.`);
+}
+for (const item of phase2ContentItems) {
+  if (!Number.isInteger(item.id) || item.id < 26 || item.id > 100) violations.push(`${getContentPath(item)}: Phase 2+ plan ID must be 26–100.`);
+}
 const descriptions = new Set();
-const contentFiles = { articles: [], reviews: [] };
+const contentFiles = { articles: [], reviews: [], comparisons: [] };
 
 for (const collection of Object.keys(contentFiles)) {
   const directory = join(projectRoot, 'src', 'content', collection);
   contentFiles[collection] = (await readdir(directory)).filter((name) => name.endsWith('.mdx'));
 }
 
-const productionFiles = [...contentFiles.articles, ...contentFiles.reviews]
-  .filter((name) => !name.startsWith('development-'));
-if (productionFiles.length !== 25) violations.push(`Expected 25 production MDX files; found ${productionFiles.length}.`);
+const productionFiles = Object.entries(contentFiles)
+  .flatMap(([collection, names]) => names.map((name) => `${collection}/${name}`))
+  .filter((name) => !name.split('/')[1].startsWith('development-'));
+const manifestFiles = new Set(contentItems.map((item) => `${item.collection}/${item.route}.mdx`));
+for (const file of productionFiles) {
+  if (!manifestFiles.has(file)) violations.push(`src/content/${file}: production MDX file has no content manifest entry.`);
+}
+if (productionFiles.length !== contentItems.length) {
+  violations.push(`Expected ${contentItems.length} production MDX files (one per manifest entry); found ${productionFiles.length}.`);
+}
 
-for (const item of m06ContentItems) {
+for (const item of contentItems) {
   const file = join(projectRoot, 'src', 'content', item.collection, `${item.route}.mdx`);
   let source;
   try {
     source = await readFile(file, 'utf8');
   } catch {
-    violations.push(`${getM06Path(item)}: expected MDX file is missing.`);
+    violations.push(`${getContentPath(item)}: expected MDX file is missing.`);
     continue;
   }
 
   const parts = splitMdx(source);
   if (!parts) {
-    violations.push(`${getM06Path(item)}: malformed or missing frontmatter.`);
+    violations.push(`${getContentPath(item)}: malformed or missing frontmatter.`);
     continue;
   }
 
   const title = topScalar(parts.frontmatter, 'title');
   const route = topScalar(parts.frontmatter, 'route');
   const description = topScalar(parts.frontmatter, 'description');
-  if (title !== item.title) violations.push(`${getM06Path(item)}: title does not match the strategy manifest.`);
-  if (route !== item.route) violations.push(`${getM06Path(item)}: route does not match the strategy manifest.`);
+  if (title !== item.title) violations.push(`${getContentPath(item)}: title does not match the strategy manifest.`);
+  if (route !== item.route) violations.push(`${getContentPath(item)}: route does not match the strategy manifest.`);
   if (!description || description.length < 60 || description.length > 180) {
-    violations.push(`${getM06Path(item)}: description must be sensible and 60–180 characters.`);
+    violations.push(`${getContentPath(item)}: description must be sensible and 60–180 characters.`);
   } else if (descriptions.has(description)) {
-    violations.push(`${getM06Path(item)}: duplicate description.`);
+    violations.push(`${getContentPath(item)}: duplicate description.`);
   } else descriptions.add(description);
 
-  if (!/^draft:\s*false\s*$/mu.test(parts.frontmatter)) violations.push(`${getM06Path(item)}: production page must be non-draft.`);
-  if (!/^affiliateDisclosure:\s*false\s*$/mu.test(parts.frontmatter)) violations.push(`${getM06Path(item)}: affiliate disclosure must reflect no affiliate links.`);
-  if (!/^commercialDestinationIds:\s*\[\]\s*$/mu.test(parts.frontmatter)) violations.push(`${getM06Path(item)}: commercial destinations must be empty.`);
-  if (forbiddenField.test(parts.frontmatter)) violations.push(`${getM06Path(item)}: forbidden commercial field in frontmatter.`);
-  if (trackingDestination.test(source)) violations.push(`${getM06Path(item)}: tracking or affiliate destination detected.`);
-  if (fixtureMarker.test(source)) violations.push(`${getM06Path(item)}: development fixture marker leaked into production content.`);
+  if (!/^draft:\s*false\s*$/mu.test(parts.frontmatter)) violations.push(`${getContentPath(item)}: production page must be non-draft.`);
+  if (!/^affiliateDisclosure:\s*false\s*$/mu.test(parts.frontmatter)) violations.push(`${getContentPath(item)}: affiliate disclosure must reflect no affiliate links.`);
+  if (!/^commercialDestinationIds:\s*\[\]\s*$/mu.test(parts.frontmatter)) violations.push(`${getContentPath(item)}: commercial destinations must be empty.`);
+  if (forbiddenField.test(parts.frontmatter)) violations.push(`${getContentPath(item)}: forbidden commercial field in frontmatter.`);
+  if (trackingDestination.test(source)) violations.push(`${getContentPath(item)}: tracking or affiliate destination detected.`);
+  if (fixtureMarker.test(source)) violations.push(`${getContentPath(item)}: development fixture marker leaked into production content.`);
 
   const claim = findUnmistakableHandsOnClaim(source);
-  if (claim) violations.push(`${getM06Path(item)}: unsupported HydroRigor hands-on phrase “${claim.phrase}”.`);
+  if (claim) violations.push(`${getContentPath(item)}: unsupported HydroRigor hands-on phrase “${claim.phrase}”.`);
 
   const sourceIds = [...parts.frontmatter.matchAll(/^\s+- id:\s*["']([^"']+)["']\s*$/gmu)]
     .map((match) => match[1]);
-  if (sourceIds.length === 0) violations.push(`${getM06Path(item)}: page has no visible sources.`);
-  if (new Set(sourceIds).size !== sourceIds.length) violations.push(`${getM06Path(item)}: duplicate source IDs.`);
+  if (sourceIds.length === 0) violations.push(`${getContentPath(item)}: page has no visible sources.`);
+  if (new Set(sourceIds).size !== sourceIds.length) violations.push(`${getContentPath(item)}: duplicate source IDs.`);
   if ([...sourceIds].sort().join('|') !== [...item.sourceIds].sort().join('|')) {
-    violations.push(`${getM06Path(item)}: source IDs do not match the M06 manifest.`);
+    violations.push(`${getContentPath(item)}: source IDs do not match the content manifest.`);
   }
   for (const sourceId of sourceIds) {
-    if (!m06EditorialSourceById.has(sourceId)) violations.push(`${getM06Path(item)}: unknown source ID ${sourceId}.`);
+    if (!m06EditorialSourceById.has(sourceId)) violations.push(`${getContentPath(item)}: unknown source ID ${sourceId}.`);
   }
 
   for (const link of internalLinks(parts.body)) {
     const normalized = link.endsWith('/') ? link : `${link}/`;
-    if (!validPaths.has(normalized)) violations.push(`${getM06Path(item)}: unresolved internal link ${link}.`);
+    if (!validPaths.has(normalized)) violations.push(`${getContentPath(item)}: unresolved internal link ${link}.`);
   }
   for (const toolLink of item.toolLinks) {
-    if (!source.includes(`](${toolLink})`)) violations.push(`${getM06Path(item)}: required M04 tool link ${toolLink} is missing.`);
+    if (!source.includes(`](${toolLink})`)) violations.push(`${getContentPath(item)}: required M04 tool link ${toolLink} is missing.`);
   }
 
   const commercialArticle = item.collection === 'articles'
-    && [1, 2, 3, 16, 17, 23, 24, 25].includes(item.id);
+    && ([1, 2, 3, 16, 17, 23, 24, 25].includes(item.id) || (item.id > 25 && item.category === 'best'));
   if (commercialArticle && !/^commercialResearch:\s*$/mu.test(parts.frontmatter)) {
-    violations.push(`${getM06Path(item)}: commercial research page lacks typed evidence scope.`);
+    violations.push(`${getContentPath(item)}: commercial research page lacks typed evidence scope.`);
   }
   if (item.collection === 'reviews' && !/^evidenceBasis:\s*["']manufacturer-spec-only["']\s*$/mu.test(parts.frontmatter)) {
-    violations.push(`${getM06Path(item)}: M06 review must remain manufacturer-specification-only.`);
+    violations.push(`${getContentPath(item)}: M06 review must remain manufacturer-specification-only.`);
   }
-  if (!shouldIncludeInSitemap(getM06Path(item))) violations.push(`${getM06Path(item)}: route is not sitemap eligible.`);
+  if (!shouldIncludeInSitemap(getContentPath(item))) violations.push(`${getContentPath(item)}: route is not sitemap eligible.`);
 }
 
 if (validPaths.has('/nutrients/')) violations.push('Retired /nutrients/ route is indexable.');
 
 const landing = await readFile(join(projectRoot, 'src', 'components', 'content', 'SectionLanding.astro'), 'utf8');
-if (!/m06ContentItems/u.test(landing) || !/getM06Path/u.test(landing)) {
-  violations.push('Section landing discovery is not connected to the M06 content manifest.');
+if (!/contentItems/u.test(landing) || !/getContentPath/u.test(landing)) {
+  violations.push('Section landing discovery is not connected to the content manifest.');
 }
 
 if (violations.length > 0) {
@@ -159,5 +178,5 @@ if (violations.length > 0) {
 }
 
 process.stdout.write(
-  `HydroRigor M06 content validation passed: ${m06ContentItems.length} production pages, ${m06EditorialSources.length} source records, unique routes/titles/descriptions, resolved links, no fixture or commercial-integrity leakage.\n`,
+  `HydroRigor content validation passed: ${contentItems.length} production pages (${m06ContentItems.length} launch + ${phase2ContentItems.length} Phase 2+), ${m06EditorialSources.length} source records, unique routes/titles/descriptions, resolved links, no fixture or commercial-integrity leakage.\n`,
 );

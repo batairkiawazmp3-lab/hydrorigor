@@ -76,5 +76,10 @@ disagree, `AGENTS.md` wins.
 - Do not add affiliate links or merchants until the owner confirms an approved programme.
 - Do not touch `.github/workflows/ci.yml` budgets or gates.
 - Never put credentials, tokens or the owner's personal email in the repo or in requests.
-- The 25-item manifest in `src/data/m06-content.ts` is asserted by tests. Adding new articles
-  (plan IDs 26+) needs a Phase 2 manifest and tests in its own PR first.
+- The 25 launch guides in `src/data/m06-content.ts` stay at exactly 25 entries (their titles
+  and sources may be updated).
+  New guides (plan IDs 26–100, listed with proposed routes in
+  `docs/research/PHASE2_CONTENT_PLAN.md`) go in `phase2ContentItems` in
+  `src/data/content-manifest.ts`: add the entry, the MDX file in the matching collection, its
+  photo key, and remove its section from `EMPTY_SECTION_PATHS` if it is the first guide there.
+  `tests/content-manifest.test.mjs` and `npm run test:content` enforce this.
