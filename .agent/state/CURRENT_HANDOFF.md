@@ -19,8 +19,9 @@ Updated: 2026-11-05
 - CI Lighthouse steps have failed before when GitHub's Chrome version changed. If only those
   steps fail, re-run the job once and report it; do not weaken the budgets.
 - Backlinks (the site has none yet, per Ubersuggest 2026-11-03): link to HydroRigor from the
-  owner's foundation site bio; create a Pinterest business account for pins of guide images;
-  answer r/Hydroponics questions where a guide genuinely helps.
+  owner's foundation site bio; create a Pinterest business account and post the ready-made
+  1000x1500 pins (one per guide at `https://hydrorigor.com/pins/<route>.jpg`, linking to the
+  guide); answer r/Hydroponics questions where a guide genuinely helps.
 - Author profiles: send real LinkedIn / organisation URLs to add as `sameAs` in `src/data/authors.ts`.
 - Search Console: Claude needs Chrome with the Claude extension open to read indexing data.
 - OpenRush has no credits; the monthly SEO review uses Ubersuggest (10 live SERP refreshes/month).

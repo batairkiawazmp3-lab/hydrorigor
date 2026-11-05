@@ -67,6 +67,10 @@ disagree, `AGENTS.md` wins.
   public figures or product packaging with brand names.
 - Unsplash search pages are behind a bot check; do not bypass it. When a new photo is needed
   and no browser is available, reuse a suitable registry photo and note the gap.
+- Share images and Pinterest pins (`public/og/`, `public/pins/`) carry each guide's title.
+  After adding a guide, changing a title or changing a guide's photo, run
+  `npm run images:share` and commit the regenerated files; `tests/share-images.test.mjs`
+  fails when they are missing or stale.
 
 ## Guardrails
 

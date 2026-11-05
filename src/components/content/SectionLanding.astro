@@ -8,7 +8,7 @@ import { contentItems, getContentPath } from '../../data/content-manifest.ts';
 import { EMPTY_SECTION_PATHS } from '../../lib/indexing.ts';
 import { readingMinutes } from '../../lib/reading.ts';
 import { photoForGuide, photoForSection } from '../../data/photos.ts';
-import { socialImage } from '../../lib/social-image.ts';
+import { brandedShareImage } from '../../lib/social-image.ts';
 import Photo from '../Photo.astro';
 import PhotoCredit from '../PhotoCredit.astro';
 import { getCollection } from 'astro:content';
@@ -26,7 +26,7 @@ const entries = [
 ];
 const bodies = new Map(entries.map((entry) => [entry.data.route, entry.body]));
 const banner = photoForSection(section.id);
-const image = await socialImage(banner);
+const image = brandedShareImage(`section-${section.id}`, section.title, banner);
 ---
 <BaseLayout title={pageTitle(section.title)} description={section.description} noindex={EMPTY_SECTION_PATHS.has(pathname)} image={image}>
   <section class="py-14 sm:py-20">
