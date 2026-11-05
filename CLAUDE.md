@@ -72,6 +72,25 @@ disagree, `AGENTS.md` wins.
   `npm run images:share` and commit the regenerated files; `tests/share-images.test.mjs`
   fails when they are missing or stale.
 
+### Images that earn their place (policy, 2026-11-05)
+
+Stock photos set the mood; original visuals answer the search. Every rebuilt or new guide gets:
+- **At least two original visuals made for that page's intent**, as SVG in
+  `public/images/guides/` with a descriptive file name: a how-to gets a step diagram, a system
+  guide a labelled cross-section, a numbers guide a chart or target card, a problem guide a
+  symptom-identification illustration. Each sits next to the text it explains, has a caption,
+  and alt text that states the information, not just "diagram". Every number in a visual must
+  appear in the page's sourced text.
+- **No AI-generated photorealistic images** of plants, roots, setups, products, harvests or
+  symptoms, and never an illustration presented as a photo. Fake-looking images cost trust on an
+  evidence site (John Mueller, Google, Dec 2023), and readers judge plant health from pictures.
+- **Stock photos** (free Unsplash) only as hero and atmosphere. Prefer home-scale setups over
+  commercial greenhouses when choosing or replacing one.
+- **Owner photos** of real HydroRigor grows replace stock as soon as they exist (credit
+  "Photo: Najeeb"); they are the strongest trust and experience signal the site can show.
+- **Product images** in buyer guides only from a merchant's approved assets after its affiliate
+  programme is approved (for Amazon, only images served through Amazon's own tools).
+
 ## Guardrails
 
 - The site is live. Do not pause or roll back production, change domains or DNS, edit Vercel
