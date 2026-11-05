@@ -17,7 +17,7 @@ and `Publishing Sequence` stages 1–2. The workbook was read only.
 | 7 | `/crops/nft-hydroponic-strawberries/` | Crops | NFT Hydroponic Strawberries: Setup, Flow and Plant Care | Informational | nft hydroponic strawberries | VERIFIED_2026-09-12: 390 / SD 15 | 3 | Validated |
 | 8 | `/crops/hydroponic-lettuce/` | Crops | Hydroponic Lettuce: pH, EC, Light & Best Varieties | Informational | hydroponic lettuce | VERIFIED_2026-09-12: 4,400 / SD 27 | 3 | Validated |
 | 9 | `/crops/hydroponic-lettuce-systems/` | Crops | Hydroponic Lettuce Systems Compared: DWC, NFT and Kratky | Transactional research | hydroponic lettuce systems | VERIFIED_2026-09-12: 1,000 / SD 28 | 3 | Validated |
-| 10 | `/crops/hydroponic-lettuce-seeds/` | Crops | Hydroponic Lettuce Seeds: How to Choose Indoor Varieties | Transactional research | hydroponic lettuce seed | VERIFIED_2026-09-12: 2,400 / SD 20 | 2 | Validated |
+| 10 | `/crops/hydroponic-lettuce-seeds/` | Crops | Hydroponic Lettuce Seeds: Varieties, Germination & Storage | Transactional research | hydroponic lettuce seed | VERIFIED_2026-09-12: 2,400 / SD 20 | 2 | Validated |
 | 11 | `/crops/hydroponic-tomatoes/` | Crops | Hydroponic Tomatoes: Complete Indoor Growing Guide | Transactional research | hydroponic tomatoes | VERIFIED_2026-09-12: 1,900 / SD 29 | 3 | Validated |
 | 12 | `/crops/hydroponic-tomato-seeds/` | Crops | Hydroponic Tomato Seeds: Varieties That Fit Indoor Systems | Transactional research | hydroponic tomatoes seeds | VERIFIED_2026-09-12: 480 / SD 16 | 3 | Validated |
 | 13 | `/nutrients-water/hydroponic-nutrients/` | Nutrients & Water | Hydroponic Nutrients: pH, EC & Mixing Guide for Beginners | Informational | hydroponic nutrients | VERIFIED_2026-09-12: 3,600 / SD 22 | 3 | Validated |
