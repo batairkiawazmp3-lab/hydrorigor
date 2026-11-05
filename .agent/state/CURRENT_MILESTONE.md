@@ -34,7 +34,7 @@ Ordered on 2026-11-03 by opportunity: informational topics with low difficulty f
 listings and "best, tested" product roundups (Ubersuggest SERP, 2026-11-03); it needs a
 buyer-oriented rewrite with named system types, done after the informational guides.
 
-1. [ ] `/crops/hydroponic-lettuce-seeds/` — hydroponic lettuce seed (2,400, difficulty 20)
+1. [x] `/crops/hydroponic-lettuce-seeds/` — hydroponic lettuce seed (2,400, difficulty 20); rebuilt 2026-11-05
 2. [ ] Phase 2 manifest (plan IDs 26+) with tests, in its own PR, so new guides can be added
 3. [ ] New guide `/crops/hydroponic-basil/` — hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03)
 4. [ ] `/crops/hydroponic-tomatoes/` — hydroponic tomatoes (1,900, difficulty 29)

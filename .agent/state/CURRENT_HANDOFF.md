@@ -1,6 +1,6 @@
 # Current Handoff
 
-Updated: 2026-11-03
+Updated: 2026-11-05
 
 ## State
 
@@ -30,7 +30,7 @@ Updated: 2026-11-03
 Guides published by automated runs under `HydroRigor Editorial`. When Najeeb has read one
 and approves, switch its byline to `Najeeb`.
 
-- (none yet)
+- `/crops/hydroponic-lettuce-seeds/` — "Hydroponic Lettuce Seeds: Varieties, Germination & Storage" (2026-11-05). Sources: Kentucky CCD-CP-63, UF/IFAS HS1258/HS1422 and thermodormancy, Ohio State e-GRO tipburn trial, Cornell CEA handbook, Nebraska G2090, Illinois and SDSU seed storage. Note: extension sources disagree on lettuce seed life (2, 5 and 6 years); the page shows all three.
 
 ## Next agent instruction
 
