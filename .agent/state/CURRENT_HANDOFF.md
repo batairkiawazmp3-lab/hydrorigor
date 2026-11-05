@@ -27,7 +27,7 @@ Updated: 2026-11-05
   need a pin row too; dates in the past are rejected.
 - Author profiles: send real LinkedIn / organisation URLs to add as `sameAs` in `src/data/authors.ts`.
 - Search Console: Claude reads it in the owner's Chrome (Claude extension, Google account
-  authuser=0, property `sc-domain:hydrorigor.com`). A weekly scheduled check logs figures in
+  authuser=0, property `sc-domain:hydrorigor.com`). A daily scheduled check (13:55 PKT) logs figures in
   `docs/research/search-console/log.md` against `2026-11-05-baseline.md`; it only runs while
   the owner's computer and Chrome are on.
 - OpenRush has no credits; the monthly SEO review uses Ubersuggest (10 live SERP refreshes/month).

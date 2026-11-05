@@ -70,7 +70,7 @@ first is the fastest route to page 1. Keep each page's route and title intent.
 20. [ ] Reviews: `/reviews/masterblend-hydroponic-nutrients/`, `/reviews/general-hydroponics-nutrients/`
 21. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, after item 6
 
-Any page that the weekly Search Console check finds at positions 8–20 with 30+ impressions
+Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the
 benchmark in the baseline file get a title and description review instead.
 

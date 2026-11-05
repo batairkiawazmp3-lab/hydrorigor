@@ -1,9 +1,9 @@
 # Search Console log
 
-One entry per weekly check, newest first. Baseline: `2026-11-05-baseline.md`.
+One entry per daily check (only when Search Console has new data), newest first. Full tables for the newest check are in `latest.md`. Baseline: `2026-11-05-baseline.md`.
 Figures are copied from Search Console (web search, last 28 days unless noted); never estimate.
 
-| Week of | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
+| Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-11-05 (baseline, Nov 1–3) | 0 | 12 | 0% | 48.4 | 7 | 12 | processing | Lettuce seeds rebuild (#24, #26), share images and pins (#25), Pinterest claim (#27), internal links and queue re-order (this change) |
 
