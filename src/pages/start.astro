@@ -5,10 +5,10 @@ import Photo from '../components/Photo.astro';
 import PhotoCredit from '../components/PhotoCredit.astro';
 import { photos } from '../data/photos.ts';
 import { getPublicSectionPath } from '../lib/sections.ts';
-import { socialImage } from '../lib/social-image.ts';
+import { brandedShareImage } from '../lib/social-image.ts';
 
 const banner = photos['lettuce-net-pots-clay'];
-const image = await socialImage(banner);
+const image = brandedShareImage('start', 'Start with the decision you need to make.', banner);
 
 const decisionPaths = [
   {

@@ -7,8 +7,7 @@ import SEO from '../components/seo/SEO.astro';
 import JsonLd from '../components/seo/JsonLd.astro';
 import { buildWebsiteJsonLd } from '../lib/structured-data.ts';
 import type { SeoImage } from '../lib/seo.ts';
-import { socialImage } from '../lib/social-image.ts';
-import { photos } from '../data/photos.ts';
+import { brandedShareImage } from '../lib/social-image.ts';
 
 interface Props {
   title: string;
@@ -23,7 +22,7 @@ interface Props {
   omitCanonical?: boolean | undefined;
 }
 const { title, description, canonical, noindex, type, publishDate, updatedDate, image, jsonLd, omitCanonical } = Astro.props;
-const shareImage = image ?? await socialImage(photos['systems-home-nft-lights']);
+const shareImage = image ?? brandedShareImage('home', 'Grow indoors with evidence, not guesswork.');
 const structuredData = [buildWebsiteJsonLd(), ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
 const searchable = !noindex;
 ---

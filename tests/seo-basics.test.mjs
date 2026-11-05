@@ -26,7 +26,7 @@ test('favicon and touch icon are published and linked without extra render-path 
   assert.match(layout, /rel="apple-touch-icon"/u);
   // An SVG icon or a web manifest is fetched before first paint and costs Lighthouse time.
   assert.doesNotMatch(layout, /favicon\.svg|rel="manifest"/u);
-  assert.match(layout, /image \?\? await socialImage/u, 'pages without their own photo need a default share image');
+  assert.match(layout, /image \?\? brandedShareImage\('home'/u, 'pages without their own share image fall back to the branded home image');
 });
 
 test('author structured data carries the real credential and the publisher logo', () => {

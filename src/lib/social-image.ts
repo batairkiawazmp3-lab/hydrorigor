@@ -2,11 +2,20 @@ import { getImage } from 'astro:assets';
 import type { SitePhoto } from '../data/photos.ts';
 import type { SeoImage } from './seo.ts';
 
-/** A 1200x630 JPEG crop of a site photo for Open Graph and Twitter cards. */
-export async function socialImage(photo: SitePhoto | undefined): Promise<SeoImage | undefined> {
-  if (!photo) return undefined;
-  const result = await getImage({ src: photo.image, width: 1200, height: 630, format: 'jpg', quality: 78 });
-  return { src: result.src, alt: photo.alt };
+/**
+ * Branded 1200x630 share image rendered by `npm run images:share` into public/og/.
+ * `name` is a guide route, `section-<id>`, `home` or `start`.
+ */
+export function brandedShareImage(name: string, title: string, photo?: SitePhoto): SeoImage {
+  return {
+    src: `/og/${name}.jpg`,
+    alt: photo ? `${title}, over a photo: ${photo.alt}` : `${title} — HydroRigor`,
+  };
+}
+
+/** Tall Pinterest image rendered by `npm run images:share` into public/pins/. */
+export function pinImagePath(route: string): string {
+  return `/pins/${route}.jpg`;
 }
 
 /**

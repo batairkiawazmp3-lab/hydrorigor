@@ -13,7 +13,8 @@ import SourcesList from '../../components/content/SourcesList.astro';
 import Photo from '../../components/Photo.astro';
 import PhotoCredit from '../../components/PhotoCredit.astro';
 import { photoForGuide } from '../../data/photos.ts';
-import { schemaImages, socialImage } from '../../lib/social-image.ts';
+import { brandedShareImage, pinImagePath, schemaImages } from '../../lib/social-image.ts';
+import { absoluteUrl } from '../../lib/site.ts';
 import Breadcrumbs from '../../components/seo/Breadcrumbs.astro';
 import { resolveCommercialPageState } from '../../lib/commercial/registry.ts';
 import { getSectionDefinition } from '../../lib/sections.ts';
@@ -42,7 +43,10 @@ const articleJsonLd = buildArticleJsonLd({
   updatedDate: data.updatedDate,
   reviewer: data.reviewer,
 });
-const image = data.hero ? { src: data.hero.src, alt: data.hero.alt } : await socialImage(heroPhoto);
+const inManifest = contentItems.some((item) => item.route === data.route);
+const image = data.hero
+  ? { src: data.hero.src, alt: data.hero.alt }
+  : inManifest ? brandedShareImage(data.route, data.title, heroPhoto) : undefined;
 const commercialState = resolveCommercialPageState(data);
 const minutes = readingMinutes(entry.body);
 const toc = headings.filter(({ depth }) => depth === 2);
@@ -91,7 +95,7 @@ const related = contentItems
       {heroPhoto && (
         <figure class="mt-6 sm:mt-8" data-pagefind-ignore="all">
           <div class="aspect-[16/9] overflow-hidden rounded-[1.75rem] bg-water-mist sm:aspect-[21/9]">
-            <Photo photo={heroPhoto} eager sizes="(min-width: 1232px) 1200px, calc(100vw - 2rem)" class="h-full w-full object-cover" />
+            <Photo photo={heroPhoto} eager pinMedia={inManifest ? absoluteUrl(pinImagePath(data.route)) : undefined} sizes="(min-width: 1232px) 1200px, calc(100vw - 2rem)" class="h-full w-full object-cover" />
           </div>
           <figcaption><PhotoCredit photo={heroPhoto} class="mt-2" /></figcaption>
         </figure>

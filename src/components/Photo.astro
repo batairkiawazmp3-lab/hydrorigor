@@ -13,9 +13,11 @@ interface Props {
   eager?: boolean;
   /** Decorative use (e.g. inside a link that already has a text label). */
   decorative?: boolean;
+  /** Absolute URL of a tall Pinterest image to use when this photo is saved to Pinterest. */
+  pinMedia?: string | undefined;
 }
 
-const { photo, sizes, class: className, widths = [400, 640, 960, 1280, 1600], priority = false, eager = false, decorative = false } = Astro.props;
+const { photo, sizes, class: className, widths = [400, 640, 960, 1280, 1600], priority = false, eager = false, decorative = false, pinMedia } = Astro.props;
 const maxWidth = photo.image.width;
 const usable = widths.filter((width) => width <= maxWidth);
 ---
@@ -31,4 +33,5 @@ const usable = widths.filter((width) => width <= maxWidth);
   decoding={priority ? 'sync' : 'async'}
   fetchpriority={priority ? 'high' : 'auto'}
   data-pagefind-ignore="all"
+  data-pin-media={pinMedia}
 />
