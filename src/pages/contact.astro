@@ -1,31 +1,34 @@
 ---
 import InfoPageLayout from '../layouts/InfoPageLayout.astro';
+
+const email = 'hello@hydrorigor.com';
+const mailto = (subject: string) => `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 ---
 <InfoPageLayout
   eyebrow="Corrections, feedback & partnerships"
   title="Contact HydroRigor"
-  description="The planned contact architecture for corrections, reader feedback, source updates, and partnership inquiries."
+  description="Email HydroRigor with corrections, questions about a guide, source updates or partnership inquiries. Every message is read by Najeeb."
   pathname="/contact/"
   relatedLinks={[
     { label: 'Editorial Policy', href: '/editorial-policy/' },
     { label: 'About HydroRigor', href: '/about/' },
-    { label: 'Search HydroRigor', href: '/search/' },
+    { label: 'Privacy Policy', href: '/privacy/' },
   ]}
 >
-  <aside class="rounded-xl border border-amber-measure/30 bg-mineral-sand p-5">
-    <strong class="font-heading text-hydro-deep">Contact is not active yet</strong>
-    <p class="mt-2">No email address, form backend, or third-party contact service has been authorized. A working contact channel will be activated and tested before production publishing.</p>
+  <aside class="rounded-xl border border-line bg-water-mist p-5">
+    <strong class="font-heading text-hydro-deep">Email us at <a href={`mailto:${email}`}>{email}</a></strong>
+    <p class="mt-2">Every message goes to Najeeb, who runs HydroRigor. We aim to reply within a few days. Please don't send passwords, payment details or other private information.</p>
   </aside>
 
   <h2>Correction requests</h2>
-  <p>The future correction path will ask for the page URL, the statement in question, the proposed correction, and a supporting source where available. Reports will be evaluated against the editorial policy.</p>
+  <p>If a figure or statement on a guide looks wrong, tell us the page address, the sentence in question, what you think is correct, and a source if you have one. We check every report against the sources and our <a href="/editorial-policy/">editorial policy</a>, fix confirmed errors, and update the page date. <a href={mailto('Correction: ')}>Email a correction</a>.</p>
 
-  <h2>Reader feedback</h2>
-  <p>Feedback about navigation, clarity, accessibility, missing context, or useful future topics will have a dedicated route once contact functionality is authorized.</p>
+  <h2>Reader questions and feedback</h2>
+  <p>Questions about a guide, ideas for topics we haven't covered, and problems with navigation or accessibility are all welcome. Questions that come up often may become new guides. <a href={mailto('Question or feedback')}>Send feedback</a>.</p>
 
   <h2>Source and product updates</h2>
-  <p>Publishers and manufacturers will be able to flag changed specifications or documentation. A submitted update will be treated as a lead for verification, not as automatically accepted evidence.</p>
+  <p>Publishers and manufacturers can tell us about changed specifications or documentation. We treat an update as a lead to verify against the published source, not as accepted evidence on its own. <a href={mailto('Source or product update')}>Send an update</a>.</p>
 
   <h2>Partnership inquiries</h2>
-  <p>Future partnership messages will be separated from editorial corrections. Any material relationship relevant to published content must be disclosed under the affiliate and editorial policies.</p>
+  <p>Partnership messages are handled separately from corrections. Payment never decides what a guide recommends, and any material relationship is disclosed under our <a href="/affiliate-disclosure/">affiliate disclosure</a>. <a href={mailto('Partnership inquiry')}>Email about a partnership</a>.</p>
 </InfoPageLayout>
