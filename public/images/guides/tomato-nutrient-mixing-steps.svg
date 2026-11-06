@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d">
+  <title id="t">How to mix a hydroponic tomato nutrient solution</title>
+  <desc id="d">Two concentrated stock solutions are kept in separate containers: stock A holds the tomato base fertilizer with magnesium sulfate, and stock B holds calcium nitrate, because calcium forms solids with sulfates and phosphates when concentrated, which can clog drip lines. Each stock is added separately to a reservoir already filled with water. The six steps: 1, test the source water for pH, alkalinity and EC; 2, fill the reservoir with water; 3, add one stock and stir; 4, add the other stock and stir; 5, measure EC, aiming for 2.0 to 3.0 mS/cm for fruiting plants; 6, adjust pH last, to 5.8 to 6.2.</desc>
+  <rect width="960" height="560" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Mixing a tomato solution: two stocks, never combined</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Stock split from Penn State and Ohio State HYG-1437; EC from Tennessee W 844-C; pH from UF/IFAS HS796</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="60" y="130" width="150" height="170" rx="18" fill="#FFFFFF" stroke="#0F6B4F" stroke-width="3"/>
+    <rect x="100" y="112" width="70" height="22" rx="6" fill="#0F6B4F"/>
+    <rect x="66" y="196" width="138" height="98" rx="12" fill="#CFE8D8"/>
+    <text x="135" y="168" font-size="20" font-weight="800" fill="#0F6B4F" text-anchor="middle">Stock A</text>
+    <text x="135" y="226" font-size="13" fill="#0E1A14" text-anchor="middle">Tomato base</text>
+    <text x="135" y="244" font-size="13" fill="#0E1A14" text-anchor="middle">fertilizer +</text>
+    <text x="135" y="262" font-size="13" fill="#0E1A14" text-anchor="middle">magnesium</text>
+    <text x="135" y="280" font-size="13" fill="#0E1A14" text-anchor="middle">sulfate</text>
+
+    <rect x="250" y="130" width="150" height="170" rx="18" fill="#FFFFFF" stroke="#3E6E9B" stroke-width="3"/>
+    <rect x="290" y="112" width="70" height="22" rx="6" fill="#3E6E9B"/>
+    <rect x="256" y="196" width="138" height="98" rx="12" fill="#D6E4F1"/>
+    <text x="325" y="168" font-size="20" font-weight="800" fill="#3E6E9B" text-anchor="middle">Stock B</text>
+    <text x="325" y="236" font-size="13" fill="#0E1A14" text-anchor="middle">Calcium</text>
+    <text x="325" y="254" font-size="13" fill="#0E1A14" text-anchor="middle">nitrate</text>
+
+    <rect x="60" y="318" width="340" height="56" rx="10" fill="#FBEDEA" stroke="#D9534F" stroke-width="1.5"/>
+    <text x="76" y="341" font-size="13" font-weight="700" fill="#8A2E2B">Do not mix A and B as concentrates:</text>
+    <text x="76" y="361" font-size="13" fill="#8A2E2B">calcium + sulfate or phosphate forms solids</text>
+
+    <path d="M135 374 L135 402 L200 430" fill="none" stroke="#0F6B4F" stroke-width="3"/>
+    <path d="M325 374 L325 402 L260 430" fill="none" stroke="#3E6E9B" stroke-width="3"/>
+    <rect x="110" y="430" width="240" height="96" rx="10" fill="#BFDDF0" stroke="#3F5248" stroke-width="3"/>
+    <text x="230" y="470" font-size="16" font-weight="800" fill="#0E1A14" text-anchor="middle">Reservoir</text>
+    <text x="230" y="492" font-size="13" fill="#0E1A14" text-anchor="middle">filled with water first;</text>
+    <text x="230" y="510" font-size="13" fill="#0E1A14" text-anchor="middle">add each stock separately</text>
+
+    <rect x="470" y="112" width="450" height="414" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="494" y="148" font-size="18" font-weight="800" fill="#0E1A14">Six steps, in this order</text>
+
+    <circle cx="510" cy="186" r="16" fill="#0F6B4F"/><text x="510" y="191" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="538" y="184" font-size="15" font-weight="700" fill="#0E1A14">Test the source water</text>
+    <text x="538" y="203" font-size="13" fill="#3F5248">pH, alkalinity and EC, before you buy or mix</text>
+
+    <circle cx="510" cy="242" r="16" fill="#0F6B4F"/><text x="510" y="247" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="538" y="240" font-size="15" font-weight="700" fill="#0E1A14">Fill the reservoir with water</text>
+    <text x="538" y="259" font-size="13" fill="#3F5248">the stocks are diluted into it</text>
+
+    <circle cx="510" cy="298" r="16" fill="#0F6B4F"/><text x="510" y="303" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="538" y="296" font-size="15" font-weight="700" fill="#0E1A14">Add one stock and stir</text>
+    <text x="538" y="315" font-size="13" fill="#3F5248">measure each part by the label rate</text>
+
+    <circle cx="510" cy="354" r="16" fill="#0F6B4F"/><text x="510" y="359" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="538" y="352" font-size="15" font-weight="700" fill="#0E1A14">Add the other stock and stir</text>
+    <text x="538" y="371" font-size="13" fill="#3F5248">same reservoir, after the first is mixed in</text>
+
+    <circle cx="510" cy="410" r="16" fill="#3E6E9B"/><text x="510" y="415" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="538" y="408" font-size="15" font-weight="700" fill="#0E1A14">Measure EC</text>
+    <text x="538" y="427" font-size="13" fill="#3F5248">2.0–3.0 mS/cm for fruiting plants</text>
+
+    <circle cx="510" cy="466" r="16" fill="#3E6E9B"/><text x="510" y="471" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+    <text x="538" y="464" font-size="15" font-weight="700" fill="#0E1A14">Adjust pH last</text>
+    <text x="538" y="483" font-size="13" fill="#3F5248">to 5.8–6.2, once EC is where you want it</text>
+  </g>
+  <text x="40" y="548" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5B6F64">HydroRigor · hydrorigor.com/nutrients-water/hydroponic-nutrients-for-tomatoes/</text>
+</svg>

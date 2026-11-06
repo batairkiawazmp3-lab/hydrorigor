@@ -51,7 +51,7 @@ Figures are US monthly volume / SEO difficulty from Ubersuggest (2026-11-06) unl
 Rule: thin pages Google already shows come first, then the highest volume-to-difficulty topics,
 mixing in one new guide for every two or three rebuilds.
 
-4. [ ] `/nutrients-water/hydroponic-nutrients-for-tomatoes/` — rebuild. Search Console:
+4. [x] `/nutrients-water/hydroponic-nutrients-for-tomatoes/` — rebuilt 2026-11-06 ("Hydroponic Nutrients for Tomatoes: EC, pH & Feeding by Stage"). Search Console:
        "hydroponic fertilizer tomatoes" (position 62) and "best hydroponic nutrients for
        tomatoes" (position 66); "hydroponic nutrients tomatoes" 140 / 20.
 5. [x] `/systems/diy-hydroponic-system-for-beginners/` — rebuilt 2026-11-06 ("DIY Hydroponic System for Beginners: 3 Builds, Step by Step"). Search Console:
