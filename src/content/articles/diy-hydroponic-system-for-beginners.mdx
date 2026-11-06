@@ -1,66 +1,211 @@
 ---
-title: "DIY Hydroponic System for Beginners: A Simple Home Build"
-description: "Plan a small DIY hydroponic system around a safe reservoir, crop support, light exclusion, aeration, access, and honest limits."
+title: "DIY Hydroponic System for Beginners: 3 Builds, Step by Step"
+description: "Build a Kratky bucket (no pump, 1–1.5 gal per lettuce), an aerated DWC tote (7–10 ppm oxygen) or Dutch buckets on drip for tomatoes. Parts and steps."
 route: "diy-hydroponic-system-for-beginners"
 publishDate: 2026-09-12
+updatedDate: 2026-11-06
 author: "HydroRigor Editorial"
 category: "systems"
 tags: ["diy", "beginner", "system-planning"]
 sources:
-  - id: "uga-home-hydroponics"
-    title: "Hydroponic Gardening for the Homeowner and Small Grower"
-    url: "https://extension.uga.edu/publications/detail.html?number=C1315&title=hydroponic-gardening-for-the-homeowner-and-small-grower"
-    publisher: "University of Georgia Cooperative Extension"
-    accessedDate: 2026-09-12
-  - id: "unh-home-hydroponics"
+  - id: "ifas-kratky-set-and-forget"
+    title: "\"Set It and Forget It\" Hydroponic Lettuce (HS1488)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1488"
+    publisher: "UF/IFAS Extension (H. Eason)"
+    accessedDate: 2026-11-06
+  - id: "kratky-noncirculating-lettuce"
+    title: "Three Non-circulating Hydroponic Methods for Growing Lettuce (Acta Horticulturae 843)"
+    url: "https://www3.ctahr.hawaii.edu/Hawaii/downloads/Three_Non-circulating_Hydroponic_Methods_for_Growing_lettuce.pdf"
+    publisher: "B.A. Kratky, University of Hawaii CTAHR"
+    accessedDate: 2026-11-03
+  - id: "illinois-hydroponics-at-home"
     title: "Hydroponics at Home"
-    url: "https://extension.unh.edu/resource/hydroponics-home"
-    publisher: "University of New Hampshire Extension"
-    accessedDate: 2026-09-12
+    url: "https://extension.illinois.edu/sites/default/files/inline-files/Home%20Hydroponics.pdf"
+    publisher: "University of Illinois Extension"
+    accessedDate: 2026-11-06
+  - id: "ifas-volusia-dwc-bucket"
+    title: "Making Your Own, Inexpensive Hydroponic Bucket (Deep Water Culture)"
+    url: "https://www.volusia.org/core/fileparse.php/4461/urlt/making-your-own-hydroponic-bucket.pdf"
+    publisher: "UF/IFAS Extension Volusia County (J. Sewards)"
+    accessedDate: 2026-11-06
+  - id: "osu-hydro-hints-dwc"
+    title: "Hydro hints: Deep water culture (EM 9455)"
+    url: "https://extension.oregonstate.edu/catalog/pub/em-9455-hydro-hints-deep-water-culture"
+    publisher: "Oregon State University Extension Service"
+    accessedDate: 2026-11-06
+  - id: "osu-hydro-hints-buckets"
+    title: "Hydro hints: Buckets (EM 9456)"
+    url: "https://extension.oregonstate.edu/catalog/pub/em-9456-hydro-hints-buckets"
+    publisher: "Oregon State University Extension Service"
+    accessedDate: 2026-11-06
+  - id: "osu-hydro-hints-nft"
+    title: "Hydro hints: Nutrient film technique (EM 9457)"
+    url: "https://extension.oregonstate.edu/sites/extd8/files/catalog/auto/EM9457.pdf"
+    publisher: "Oregon State University Extension Service"
+    accessedDate: 2026-11-06
+  - id: "vt-system-crop-comparisons"
+    title: "Hydroponic Production of Edible Crops: System and Crop Comparisons (SPES-466NP)"
+    url: "https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html"
+    publisher: "Virginia Cooperative Extension"
+    accessedDate: 2026-11-06
+  - id: "okstate-hydroponics-hla6442"
+    title: "Hydroponics (HLA-6442)"
+    url: "https://pods.okstate.edu/fact-sheets/HLA-6442pod.pdf"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-06
 affiliateDisclosure: false
 commercialDestinationIds: []
 draft: false
 ---
 
-For a first DIY build, use a small opaque reservoir with a removable plant-support lid and choose either passive operation or separately aerated deep water culture. Build for one compact leafy crop, easy inspection, and easy cleaning. Avoid copying a large channel network before you know how you will manage water, light, nutrients, and failures.
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-## Define the build before choosing parts
+The easiest DIY hydroponic system is a **Kratky bucket**: a food-grade 5-gallon bucket, a lid with three 2-inch net cups, and about **1–1.5 gallons of nutrient solution for each lettuce plant**. It needs no pump and no electricity (UF/IFAS). When you want more plants, build an **aerated deep water culture (DWC) tote**: a tank with covered sides, a floating foam board, and an air pump, air stone and check valve (University of Illinois Extension). For **tomatoes, peppers and cucumbers**, build **Dutch buckets**, food-grade buckets of perlite fed by drip lines. In a Virginia Tech trial, media systems like these gave the best tomato and pepper yields.
 
-Write down the crop, plant count, location, light source, and whether the design depends on electricity. University of Georgia Extension emphasizes that a functioning hydroponic setup still needs light, air, water, and nutrient solution. The container is only one part of that system.
+This guide gives the parts, steps and checks for each build, easiest first. If you are not sure which system suits your crop, start with [the best hydroponic system for home growers](/best/hydroponic-system-for-home-growers/). Every figure below is tied to a university or extension source listed at the end.
 
-For a beginner, a compact reservoir is easier to understand than a network of hidden tubing. It should be sturdy when full, safe for the intended use, resistant to light penetration, and positioned where a spill can be managed.
+<KeyTargets
+  title="DIY builds: the numbers to know"
+  source="UF/IFAS, University of Illinois and Virginia Tech Extension"
+  items={[
+    { label: 'Kratky solution', value: '1–1.5 gal', note: 'per lettuce plant, seed to harvest' },
+    { label: 'Kratky air gap', value: 'About 1 inch', note: 'below the lid at the start' },
+    { label: 'DWC oxygen', value: '7–10 ppm', note: '4 ppm is the minimum' },
+    { label: 'Solution pH', value: '5.5–6.2', note: 'check it weekly' },
+  ]}
+/>
 
-## Choose passive or aerated operation
+## Quick answer: what to build and the numbers that matter
 
-A passive approach has no water or air pump. The solution level and an air space around part of the roots become part of the design. An aerated DWC approach keeps roots in solution and adds an air pump and diffuser.
+| Question | Answer | Source |
+| --- | --- | --- |
+| Easiest DIY build | Kratky bucket: no pumps or electricity | UF/IFAS HS1488 |
+| Kratky bucket parts | Food-grade 5-gallon bucket and lid, three 2-inch net cups, nutrient solution | UF/IFAS HS1488 |
+| Solution per lettuce plant | 1–1.5 gal from seed to harvest; Kratky's own trials used 3–6 litres per plant | UF/IFAS HS1488; Kratky (University of Hawaii) |
+| Air gap at the start (Kratky) | About 1 inch below the lid | UF/IFAS HS1488 |
+| Nutrient strength for Kratky lettuce | EC about 1.25 mS/cm (about 800 ppm on a TDS meter) | UF/IFAS HS1488 |
+| Build for more greens | Aerated DWC tote: covered tank, floating foam board, air pump, air stone and check valve | University of Illinois Extension |
+| DWC dissolved oxygen | 7–10 ppm; 4 ppm is the minimum | Virginia Tech SPES-466 |
+| Solution pH | 5.5–6.0 (UF/IFAS) or about 5.8–6.2 (Illinois): keep it within 5.5–6.2 and check it weekly | UF/IFAS HS1488; University of Illinois Extension |
+| Build for tomatoes and peppers | Dutch buckets: perlite-filled food-grade buckets on drip, draining back to a reservoir | Oregon State EM 9456; Virginia Tech SPES-466 |
+| Drip rate used in the Virginia Tech trial | Two drip stakes per bucket at 0.5 gal per hour each | Virginia Tech SPES-466 |
+| Light | 6–8 hours a day from a sunny spot or a grow light | University of Illinois Extension |
 
-Neither method is maintenance-free. Passive does not mean “fill once and forget,” and active does not mean a bubbler corrects every root-zone problem. Read the [DWC guide](/systems/deep-water-culture-hydroponics/) before choosing continuous immersion.
+![Three DIY builds compared, easiest first. Kratky bucket: no power; lettuce and short-cycle greens; a 5-gallon food-grade bucket, three 2-inch net cups and 1–1.5 gal of solution per lettuce plant with about 1 inch of air at the start. Aerated DWC tote: an air pump running all the time; lettuce, spinach, kale and herbs; a tank with covered sides, a floating foam board, an air pump, air stone and check valve; 7–10 ppm oxygen. Dutch buckets: a pump on a timer; tomatoes, peppers and cucumbers; perlite-filled buckets with screened outlets and two drip stakes per bucket at 0.5 gal per hour.](/images/guides/diy-hydroponic-builds-compared.svg)
 
-## A simple component checklist
+*Start with build 1; move up when you want more plants or fruiting crops. Figures from UF/IFAS HS1488, University of Illinois Extension, Virginia Tech SPES-466 and Oregon State EM 9456.*
 
-- Opaque reservoir with enough strength for the filled weight
-- Removable lid that stays stable around the plant openings
-- Net cup or clean propagation support matched to the opening
-- Air pump, check valve, tubing, and diffuser if using DWC
-- Adjustable light source if the site lacks suitable daylight
-- Current manufacturer-labeled hydroponic nutrient product
-- Separate, appropriate instruments if you intend to monitor pH or conductivity
-- Spill-safe power arrangement with drip loops
+## Which build first?
 
-Do not use an unknown container that may have held hazardous material. Avoid transparent walls unless they are fully and durably shielded from light.
+- **Never grown hydroponically?** Build 1. It has the fewest parts, and UF/IFAS says a well-lit Kratky bucket rarely needs pH or nutrient adjustments.
+- **Unreliable power?** Build 1. Nothing in it can switch off.
+- **Want salad every week?** Build 2. A DWC tank holds more plants and keeps a stable temperature, though Oregon State notes it is heavy and must sit on the ground.
+- **Want tomatoes, peppers or cucumbers?** Build 3. Oregon State recommends buckets for long-lived and vining crops because the bigger root zone is more forgiving.
 
-## Assemble for inspection, not appearance
+Leave NFT channels for later. Oregon State gives a minimum 2% slope for the channels and warns that if the power or pump fails, plants can wilt almost at once because the nutrient film stops. That makes NFT a poor first build.
 
-Place openings so mature leaves have room and the lid remains strong. Keep tubing visible where practical. Make sure the lid can be lifted without dragging roots across a sharp edge. Before adding a plant, fill with plain water and check stability, leakage, airflow, noise, and whether the reservoir can actually be emptied.
+## Materials that keep a build safe
 
-Start the seed in a clean medium suited to the system. Keep the young root zone moist while avoiding burial of the stem or crown. Once roots establish, record water additions, nutrient additions, measurements, cleaning, and plant observations.
+- **Food-grade containers.** Oregon State specifies food-grade buckets and containers. Do not use anything that has held chemicals.
+- **Block the light.** Illinois Extension says to cover the sides of a clear container to prevent algae. Oregon State adds that the raft should cover the tank with no gaps that let light reach the solution.
+- **Plan for the weight.** Water is heavy. Oregon State says a DWC tank must sit on the ground, with its bottom level to within one inch.
+- **Make emptying easy.** Oregon State suggests a bulkhead fitting and a valve at the bottom of a DWC tank for draining.
+- **Keep electricity dry.** Keep the air pump outside the tank and fit a check valve in the air line, which Illinois says stops water flowing back. Keep plugs and power strips above and away from any spill path.
+- **Use fresh media in buckets.** Oregon State advises against reusing media between crops.
 
-## Nutrient dosing stays product-specific
+## Build 1: a Kratky lettuce bucket
 
-A DIY container does not determine a nutrient dose. Use the actual product label and calculate each component separately when a manufacturer uses multiple parts. HydroRigor’s [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) scales a manufacturer-provided mL-per-liter or mL-per-US-gallon dose to reservoir volume. It does not formulate nutrients or predict final EC.
+**Parts:** a food-grade 5-gallon bucket with a lid, three 2-inch net cups, a drill with a 2-inch hole saw, a hydroponic nutrient, a pH test kit or meter, and three lettuce seedlings in starter cubes.
 
-## Know when to stop and redesign
+1. **Cut the lid.** Drill three 2-inch holes for the net cups, one plant per cup. Three lettuce plants at 1–1.5 gal each fit a 5-gallon bucket.
+2. **Mix the solution.** Follow your nutrient label. UF/IFAS uses about EC 1.25 mS/cm (roughly 800 ppm on a TDS meter) and a pH of 5.5–6.0. The [mixing guide](/nutrients-water/how-to-mix-hydroponic-nutrients/) and the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) help with the doses.
+3. **Fill it.** Bring the solution up until it reaches about halfway up the net cups, leaving about an inch of air below the lid.
+4. **Plant.** Set seedlings that are one to three weeks old into the net cups.
+5. **Give it light.** Illinois Extension recommends 6–8 hours a day from a sunny spot or a grow light.
+6. **Leave the level alone.** The whole crop can grow on the first fill. As the plants drink, the level falls and the roots above it get air, which is how Kratky's non-circulating method works.
+7. **Harvest.** UF/IFAS gives about three to four more weeks after transplanting for its Florida cool-season crop. Indoors, timing depends on your light and temperature.
 
-Redesign if the reservoir flexes, leaks, admits light, cannot be cleaned, places electricity in a spill path, or cannot support the mature crop. If the first version is difficult to inspect while empty, it will not become easier when roots fill the space.
+## Build 2: an aerated DWC tote
 
-The goal of a beginner build is a transparent learning system. A neat but inaccessible system is not an upgrade.
+**Parts (University of Illinois Extension):** a container such as an aquarium, tote or bucket; an air stone, air pump and check valve; a foam board; rockwool or coconut coir starter cubes; a hydroponic nutrient; a pH test kit or meter; and a sunny spot or grow light.
+
+1. **Start seedlings first** in rockwool or coir cubes, so they are ready when the tank is.
+2. **Cover the sides** of a clear container to keep light out and prevent algae.
+3. **Place the tank** on a level floor where it can stay. Fit a drain valve near the bottom if you can (Oregon State).
+4. **Cut the board** to fit loosely so it floats on the solution, then cut holes for the cubes or net cups.
+5. **Connect the air.** Air stone, tubing, check valve, then pump. The stone goes on the bottom of the tank; the pump stays outside.
+6. **Fill and mix.** Fill the tank with water and mix in a pre-formulated hydroponic nutrient. Illinois advises against fertilizers made for soil.
+7. **Start the air and float the board.** Turn the pump on, float the board, and push each cube in so its bottom reaches the solution.
+8. **Run the air all the time.** Virginia Tech keeps dissolved oxygen at 7–10 ppm, with 4 ppm as the minimum. Few home growers measure it, so the practical rule is to keep the air stone running and check it bubbles evenly. Check pH weekly and keep it around 5.8–6.2 (Illinois).
+
+![A labelled cross-section of a DIY deep water culture tank: a foam board cut to fit loosely so it floats, seedling cubes whose bottoms reach the solution, sides covered to block light, an air stone on the bottom feeding 7–10 ppm oxygen, an air line running over the rim to a pump outside the tank with a check valve in the line, a drain valve near the bottom, a level floor, and a weekly pH check at 5.8–6.2.](/images/guides/diy-dwc-tote-build.svg)
+
+*How the DWC parts fit together. Parts from University of Illinois Extension and Oregon State EM 9455; oxygen target from Virginia Tech SPES-466.*
+
+**A one-plant variation for a tomato.** UF/IFAS Volusia County Extension publishes a single-plant DWC bucket: a 5-gallon bucket with a 6-inch pot set into a 6-inch hole in the lid, a four-leg tomato cage pushed through four ¼-inch holes, and a 1-inch side hole for the air tube and for topping up. An aquarium pump drives one or two air stones. The author notes that roots can stay submerged as long as the solution is well oxygenated. It works, but Virginia Tech's trial got higher tomato yields from media systems, which is why build 3 is the main recommendation for fruiting crops. The [deep water culture guide](/systems/deep-water-culture-hydroponics/) covers DWC in more depth.
+
+## Build 3: Dutch buckets for tomatoes and peppers
+
+**Parts (Oregon State EM 9456):** food-grade buckets, perlite or a similar media, drip lines with a screen on each bucket outlet, a reservoir, a pump and a timer.
+
+1. **Set out the buckets** on a frame or shelf above the reservoir, so the drain line from each bucket can run back to it.
+2. **Screen each outlet** so media cannot wash into the drain and clog it (Oregon State).
+3. **Fill with fresh perlite** or similar media. Do not reuse media from an earlier crop.
+4. **Run the drip line.** Virginia Tech's trial used two drip stakes per bucket, each delivering 0.5 gal per hour.
+5. **Set the timer.** The sources here do not give a home timer schedule. Start with your drip kit maker's setting and adjust so the media never dries out.
+6. **Plant and support.** Set a transplant in each bucket and give it a stake or cage, because fruiting crops need support as well as root room (Virginia Tech).
+
+Oregon State describes systems that scale "from a four-bucket system to a 16-bucket system", so a few buckets is a sensible first build. For crop targets, see [hydroponic tomatoes](/crops/hydroponic-tomatoes/).
+
+## Your first month: the checks that matter
+
+| Check | How often | Why | Source |
+| --- | --- | --- | --- |
+| pH | Weekly | Keep it within 5.5–6.2 | University of Illinois Extension; UF/IFAS HS1488 |
+| Root start | Before transplanting | Gently lift a cube to see roots coming through | University of Illinois Extension |
+| Air pump and air stone (DWC) | Every check | Roots need oxygen; 4 ppm is the minimum | Oregon State EM 9455; Virginia Tech SPES-466 |
+| Light leaks and algae | Weekly | Green growth means light is reaching the solution | University of Illinois Extension; Oregon State EM 9455 |
+| Drip outlets (Dutch buckets) | Every check | Clogged outlets leave plants dry | Oregon State EM 9456 |
+| Kratky solution level | Every few days | It should fall as plants drink; the first fill can carry the whole crop | UF/IFAS HS1488 |
+
+For crop-specific pH and nutrient strength, use the [pH and EC target table](/tools/ph-ec-targets/).
+
+## Troubleshooting a DIY build
+
+| Problem | Likely cause | What to do | Source |
+| --- | --- | --- | --- |
+| Green slime on the tank walls or board | Light reaching the solution | Cover the sides; close gaps around the board | University of Illinois Extension; Oregon State EM 9455 |
+| Water backing up the air line | No check valve | Fit a check valve and keep the pump outside the tank | University of Illinois Extension |
+| Brown, slimy roots in DWC | Too little oxygen | Keep the air running; check the stone; Virginia Tech's target is 7–10 ppm | Virginia Tech SPES-466; Oregon State EM 9455 |
+| Seedling wilts after transplant | Cube not reaching the solution | Push the cube down so its bottom touches the solution | University of Illinois Extension |
+| Kratky bucket runs dry before harvest | Too many plants for the volume | Allow 1–1.5 gal per lettuce plant | UF/IFAS HS1488 |
+| Some Dutch buckets dry, others wet | Clogged drip lines or media in outlets | Clean the lines; screen every outlet | Oregon State EM 9456 |
+| Tank sits unevenly or the board tilts | Floor not level | Level the surface to within one inch | Oregon State EM 9455 |
+
+## Frequently asked questions
+
+### What is the easiest DIY hydroponic system?
+
+A Kratky bucket. UF/IFAS calls it "set it and forget it": no pumps, no electricity, and in good light it rarely needs adjusting. Oklahoma State calls the wick system the simplest design overall, but the sources here give little crop guidance for it.
+
+### Do I need an air pump?
+
+Not for a Kratky bucket, because the falling solution level leaves air for the roots. A DWC tank does need one, running all the time, with an air stone and a check valve.
+
+### What container can I use?
+
+A food-grade bucket or tote with a lid (Oregon State). Clear containers work if you cover the sides to keep out light (Illinois). Avoid anything that has held chemicals.
+
+### How many plants fit in a 5-gallon bucket?
+
+For Kratky lettuce, three: UF/IFAS uses three net cups, and each plant needs 1–1.5 gallons over the crop. The UF/IFAS Volusia DWC bucket holds a single tomato.
+
+### Can I build an NFT system myself?
+
+Yes, but not as a first build. Oregon State gives a minimum 2% channel slope, and the pump has to run nonstop; if it stops, plants can wilt almost immediately. See [hydroponic lettuce systems compared](/crops/hydroponic-lettuce-systems/) for how NFT stacks up for lettuce.
+
+### Which nutrients should I use?
+
+A complete, pre-formulated hydroponic nutrient, not a fertilizer made for soil (Illinois). Dose it by the label and check the result with an EC or TDS meter. The [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) and the [hydroponic lettuce guide](/crops/hydroponic-lettuce/) give the crop targets.
+
+*Figures in this guide come from the university and extension sources listed below. Home builds vary, so treat them as starting points and check your own system as it grows. HydroRigor has not built and timed these designs itself for this guide.*

@@ -49,7 +49,7 @@ first is the fastest route to page 1. Keep each page's route and title intent.
 4. [ ] `/nutrients-water/hydroponic-nutrients-for-tomatoes/` — rebuild. Search Console:
        "hydroponic fertilizer tomatoes" (position 62) and "best hydroponic nutrients for
        tomatoes" (position 66).
-5. [ ] `/systems/diy-hydroponic-system-for-beginners/` — rebuild. Search Console:
+5. [x] `/systems/diy-hydroponic-system-for-beginners/` — rebuilt 2026-11-06 ("DIY Hydroponic System for Beginners: 3 Builds, Step by Step"). Search Console:
        "diy hydroponics systems" (position 81) and "hydroponics diy system" (position 99).
 6. [ ] New guide `/crops/hydroponic-basil/` — hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03)
 7. [ ] `/crops/hydroponic-tomatoes/` — hydroponic tomatoes (1,900, difficulty 29)

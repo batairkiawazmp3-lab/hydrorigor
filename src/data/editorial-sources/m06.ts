@@ -405,6 +405,24 @@ export const m06EditorialSources = [
     sourceType: 'university-extension',
     locator: 'HLA-6442: wick is the simplest system; drip probably the most widely used; NFT has constant flow so no timer; aeroponics needs a short-cycle timer running every few minutes; short-term crops like lettuce usually in NFT or flood-and-drain, longer-term crops in non-recirculating media systems; pH 5.0–6.0, EC 1.5–3 dS/m',
   },
+  {
+    id: 'illinois-hydroponics-at-home',
+    title: 'Hydroponics at Home',
+    publisher: 'University of Illinois Extension',
+    url: 'https://extension.illinois.edu/sites/default/files/inline-files/Home%20Hydroponics.pdf',
+    accessedDate: '2026-11-06',
+    sourceType: 'university-extension',
+    locator: 'Setting up a hydroponic grow tank: materials (container, air stone, pump and check valve, foam board, rockwool or coir cubes, pH test); cover clear sides to prevent algae; cut the board to fit loosely so it floats; check valve prevents backflow; cube bottom reaches the solution; pH about 5.8–6.2, check weekly; 6–8 hours of light; lettuce, spinach, kale and herbs to start',
+  },
+  {
+    id: 'ifas-volusia-dwc-bucket',
+    title: 'Making Your Own, Inexpensive Hydroponic Bucket (Deep Water Culture)',
+    publisher: 'UF/IFAS Extension Volusia County (J. Sewards)',
+    url: 'https://www.volusia.org/core/fileparse.php/4461/urlt/making-your-own-hydroponic-bucket.pdf',
+    accessedDate: '2026-11-06',
+    sourceType: 'university-extension',
+    locator: 'One-plant 5-gallon DWC bucket: 6-inch pot in a 6-inch lid hole, four 1/4-inch holes for a tomato cage, a 1-inch side hole for the air tube and topping up; aquarium pump with one or two air stones; roots can stay submerged if the solution is well oxygenated; suited to long-term crops such as tomatoes, peppers and cucumbers',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(
