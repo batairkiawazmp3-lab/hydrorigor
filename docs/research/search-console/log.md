@@ -15,4 +15,5 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 | 2026-11-05 | /best/hydroponic-system-for-home-growers/ | Answer-first description; 4 new internal links | 2026-11-19 |
 | 2026-11-06 | /best/hydroponic-system-for-home-growers/ | Full rebuild (title, 2,480 words, 2 diagrams, 10 sources); baseline position 14 for "most effective hydroponic system" | 2026-11-20, 2026-12-04 |
 | 2026-11-05 | /systems/diy-hydroponic-system-for-beginners/ | 4 new internal links | 2026-11-19 |
+| 2026-11-06 | /systems/diy-hydroponic-system-for-beginners/ | Full rebuild (title, 2,130 words, 2 diagrams, 9 sources); baseline positions 81 and 99 | 2026-11-20, 2026-12-04 |
 | 2026-11-05 | /nutrients-water/hydroponic-nutrients-for-tomatoes/ | 1 new internal link | 2026-11-19 |

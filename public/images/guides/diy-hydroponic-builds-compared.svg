@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Three DIY hydroponic builds, easiest first</title>
+  <desc id="d">Three home builds compared. Build 1, Kratky bucket: easiest; no pump or power; for lettuce and other short-cycle greens; a 5-gallon bucket with three 2-inch net cups and 1 to 1.5 gallons of solution per lettuce plant (UF/IFAS HS1488). Build 2, aerated DWC tote: moderate; an air pump runs all the time; for lettuce, spinach, kale and herbs; a covered tank, a floating foam raft, an air stone and a check valve, with dissolved oxygen at 7 to 10 ppm (University of Illinois Extension, Virginia Tech). Build 3, Dutch buckets: hardest; a pump on a timer; for tomatoes, peppers and cucumbers; perlite-filled buckets fed by two drip stakes each at 0.5 gallons per hour (Oregon State EM 9456, Virginia Tech).</desc>
+  <rect width="960" height="560" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Three DIY builds, easiest first</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Start with build 1; move up when you want more plants or fruiting crops</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="40" y="108" width="280" height="400" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="40" y="108" width="280" height="56" rx="16" fill="#0F6B4F"/>
+    <rect x="40" y="140" width="280" height="24" fill="#0F6B4F"/>
+    <text x="60" y="144" font-size="20" font-weight="800" fill="#FFFFFF">1. Kratky bucket</text>
+    <text x="60" y="194" font-size="13" fill="#3F5248">Difficulty</text>
+    <circle cx="150" cy="190" r="7" fill="#0F6B4F"/><circle cx="170" cy="190" r="7" fill="#DCE7E0"/><circle cx="190" cy="190" r="7" fill="#DCE7E0"/>
+    <text x="60" y="226" font-size="13" fill="#3F5248">Power</text>
+    <text x="150" y="226" font-size="14" font-weight="700" fill="#0E1A14">None</text>
+    <text x="60" y="258" font-size="13" fill="#3F5248">Grow</text>
+    <text x="150" y="258" font-size="14" fill="#0E1A14">Lettuce, short-cycle</text>
+    <text x="150" y="276" font-size="14" fill="#0E1A14">greens</text>
+    <text x="60" y="314" font-size="13" font-weight="700" fill="#0E1A14">Parts</text>
+    <text x="60" y="338" font-size="14" fill="#0E1A14">5-gallon food-grade bucket + lid</text>
+    <text x="60" y="360" font-size="14" fill="#0E1A14">Three 2-inch net cups</text>
+    <text x="60" y="382" font-size="14" fill="#0E1A14">Nutrient solution, pH test</text>
+    <rect x="56" y="404" width="248" height="58" rx="10" fill="#E3F1E8"/>
+    <text x="72" y="428" font-size="15" font-weight="800" fill="#0E1A14">1–1.5 gal per lettuce</text>
+    <text x="72" y="449" font-size="13" fill="#0E1A14">about 1 inch of air at the start</text>
+    <text x="60" y="492" font-size="12" fill="#5B6F64">UF/IFAS HS1488</text>
+
+    <rect x="340" y="108" width="280" height="400" rx="16" fill="#FFFFFF" stroke="#CBDAE8" stroke-width="2"/>
+    <rect x="340" y="108" width="280" height="56" rx="16" fill="#3E6E9B"/>
+    <rect x="340" y="140" width="280" height="24" fill="#3E6E9B"/>
+    <text x="360" y="144" font-size="20" font-weight="800" fill="#FFFFFF">2. Aerated DWC tote</text>
+    <text x="360" y="194" font-size="13" fill="#3F5248">Difficulty</text>
+    <circle cx="450" cy="190" r="7" fill="#3E6E9B"/><circle cx="470" cy="190" r="7" fill="#3E6E9B"/><circle cx="490" cy="190" r="7" fill="#DCE7E0"/>
+    <text x="360" y="226" font-size="13" fill="#3F5248">Power</text>
+    <text x="450" y="226" font-size="14" font-weight="700" fill="#0E1A14">Air pump, 24/7</text>
+    <text x="360" y="258" font-size="13" fill="#3F5248">Grow</text>
+    <text x="450" y="258" font-size="14" fill="#0E1A14">Lettuce, spinach,</text>
+    <text x="450" y="276" font-size="14" fill="#0E1A14">kale, herbs</text>
+    <text x="360" y="314" font-size="13" font-weight="700" fill="#0E1A14">Parts</text>
+    <text x="360" y="338" font-size="14" fill="#0E1A14">Tank with covered sides</text>
+    <text x="360" y="360" font-size="14" fill="#0E1A14">Floating foam board</text>
+    <text x="360" y="382" font-size="14" fill="#0E1A14">Air pump, air stone, check valve</text>
+    <rect x="356" y="404" width="248" height="58" rx="10" fill="#E5EEF6"/>
+    <text x="372" y="428" font-size="15" font-weight="800" fill="#0E1A14">7–10 ppm oxygen</text>
+    <text x="372" y="449" font-size="13" fill="#0E1A14">4 ppm is the minimum</text>
+    <text x="360" y="492" font-size="12" fill="#5B6F64">Illinois Extension; Virginia Tech SPES-466</text>
+
+    <rect x="640" y="108" width="280" height="400" rx="16" fill="#FFFFFF" stroke="#E7D3C8" stroke-width="2"/>
+    <rect x="640" y="108" width="280" height="56" rx="16" fill="#9A4B2E"/>
+    <rect x="640" y="140" width="280" height="24" fill="#9A4B2E"/>
+    <text x="660" y="144" font-size="20" font-weight="800" fill="#FFFFFF">3. Dutch buckets</text>
+    <text x="660" y="194" font-size="13" fill="#3F5248">Difficulty</text>
+    <circle cx="750" cy="190" r="7" fill="#9A4B2E"/><circle cx="770" cy="190" r="7" fill="#9A4B2E"/><circle cx="790" cy="190" r="7" fill="#9A4B2E"/>
+    <text x="660" y="226" font-size="13" fill="#3F5248">Power</text>
+    <text x="750" y="226" font-size="14" font-weight="700" fill="#0E1A14">Pump on a timer</text>
+    <text x="660" y="258" font-size="13" fill="#3F5248">Grow</text>
+    <text x="750" y="258" font-size="14" fill="#0E1A14">Tomatoes, peppers,</text>
+    <text x="750" y="276" font-size="14" fill="#0E1A14">cucumbers</text>
+    <text x="660" y="314" font-size="13" font-weight="700" fill="#0E1A14">Parts</text>
+    <text x="660" y="338" font-size="14" fill="#0E1A14">Food-grade buckets + perlite</text>
+    <text x="660" y="360" font-size="14" fill="#0E1A14">Drip line, screened outlets</text>
+    <text x="660" y="382" font-size="14" fill="#0E1A14">Reservoir, pump, timer</text>
+    <rect x="656" y="404" width="248" height="58" rx="10" fill="#F6EAE3"/>
+    <text x="672" y="428" font-size="15" font-weight="800" fill="#0E1A14">2 stakes × 0.5 gal/hr</text>
+    <text x="672" y="449" font-size="13" fill="#0E1A14">per bucket (Virginia Tech trial)</text>
+    <text x="660" y="492" font-size="12" fill="#5B6F64">Oregon State EM 9456; Virginia Tech</text>
+  </g>
+  <text x="40" y="540" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5B6F64">HydroRigor · hydrorigor.com/systems/diy-hydroponic-system-for-beginners/</text>
+</svg>

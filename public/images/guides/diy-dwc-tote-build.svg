@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Parts of a DIY deep water culture tote</title>
+  <desc id="d">A labelled cross-section of a DIY deep water culture tank. A foam board, cut to fit loosely so it floats, holds seedlings in rockwool or coir cubes whose bottoms touch the solution. The tank's clear sides are covered to keep light out and prevent algae. An air stone sits on the bottom, connected by tubing to an air pump outside the tank, with a check valve in the line to stop water flowing back. A drain valve near the bottom makes emptying easier, and the tank sits on a level floor because it is heavy when full. Aim for 7 to 10 ppm dissolved oxygen, with 4 ppm as the minimum, and check pH weekly, keeping it around 5.8 to 6.2.</desc>
+  <rect width="960" height="560" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Inside a DIY deep water culture tote</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Parts from University of Illinois Extension and Oregon State EM 9455; oxygen target from Virginia Tech</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <path d="M300 214 C284 186 282 172 290 164 C302 172 308 190 310 210 Z M330 214 C346 186 348 172 340 164 C328 172 322 190 320 210 Z M420 214 C404 186 402 172 410 164 C422 172 428 190 430 210 Z M450 214 C466 186 468 172 460 164 C448 172 442 190 440 210 Z M540 214 C524 186 522 172 530 164 C542 172 548 190 550 210 Z M570 214 C586 186 588 172 580 164 C568 172 562 190 560 210 Z" fill="#7FC48E"/>
+    <rect x="246" y="214" width="368" height="18" rx="3" fill="#F2EDE2" stroke="#3F5248" stroke-width="2"/>
+    <rect x="304" y="208" width="22" height="30" fill="#C9B79A"/>
+    <rect x="424" y="208" width="22" height="30" fill="#C9B79A"/>
+    <rect x="544" y="208" width="22" height="30" fill="#C9B79A"/>
+    <rect x="230" y="222" width="400" height="200" fill="#BFDDF0" stroke="#3F5248" stroke-width="4"/>
+    <rect x="224" y="196" width="8" height="230" fill="#3F5248"/>
+    <rect x="628" y="196" width="8" height="230" fill="#3F5248"/>
+    <path d="M312 238 C310 280 302 320 298 360 M318 238 C320 290 324 330 326 372 M432 238 C430 280 424 320 420 360 M438 238 C440 290 444 330 446 372 M552 238 C550 280 544 320 540 360 M558 238 C560 290 564 330 566 372" fill="none" stroke="#F1E6C8" stroke-width="3"/>
+    <rect x="400" y="400" width="70" height="12" rx="6" fill="#5B6F64"/>
+    <circle cx="414" cy="388" r="4" fill="#FFFFFF"/><circle cx="430" cy="372" r="5" fill="#FFFFFF"/><circle cx="446" cy="390" r="4" fill="#FFFFFF"/><circle cx="440" cy="352" r="5" fill="#FFFFFF"/><circle cx="424" cy="334" r="4" fill="#FFFFFF"/><circle cx="452" cy="318" r="4" fill="#FFFFFF"/>
+    <path d="M470 406 L600 406 L600 184 L700 184 L700 301 L760 301" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="686" y="232" width="28" height="18" rx="4" fill="#D9A441" stroke="#0E1A14" stroke-width="2"/>
+    <rect x="760" y="284" width="70" height="34" rx="6" fill="#0E1A14"/>
+    <text x="795" y="306" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">AIR PUMP</text>
+    <rect x="630" y="400" width="26" height="14" fill="#3F5248"/>
+    <rect x="656" y="396" width="12" height="22" rx="3" fill="#D9534F"/>
+    <rect x="200" y="426" width="460" height="10" fill="#9DB8A8"/>
+
+    <path d="M250 214 L214 160" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="128" font-size="15" font-weight="700" fill="#0E1A14">Floating foam board</text>
+    <text x="40" y="148" font-size="13" fill="#3F5248">cut to fit loosely so it floats;</text>
+    <text x="40" y="166" font-size="13" fill="#3F5248">no gaps that let light in</text>
+
+    <path d="M304 220 L190 238" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="222" font-size="15" font-weight="700" fill="#0E1A14">Seedling cube</text>
+    <text x="40" y="242" font-size="13" fill="#3F5248">bottom of the cube</text>
+    <text x="40" y="260" font-size="13" fill="#3F5248">reaches the solution</text>
+
+    <path d="M224 320 L190 320" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="316" font-size="15" font-weight="700" fill="#0E1A14">Covered sides</text>
+    <text x="40" y="336" font-size="13" fill="#3F5248">block light to stop algae</text>
+
+    <path d="M400 406 L190 410" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="398" font-size="15" font-weight="700" fill="#0E1A14">Air stone on the bottom</text>
+    <text x="40" y="418" font-size="13" fill="#3F5248">aim for 7–10 ppm oxygen;</text>
+    <text x="40" y="436" font-size="13" fill="#3F5248">4 ppm is the minimum</text>
+
+    <path d="M714 238 L740 222" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="744" y="206" font-size="15" font-weight="700" fill="#0E1A14">Check valve in the air line</text>
+    <text x="744" y="226" font-size="13" fill="#3F5248">stops water flowing</text>
+    <text x="744" y="244" font-size="13" fill="#3F5248">back to the pump</text>
+
+    <text x="764" y="340" font-size="15" font-weight="700" fill="#0E1A14">Pump outside</text>
+    <text x="764" y="358" font-size="13" fill="#3F5248">never in the water</text>
+
+    <path d="M662 418 L700 470" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="704" y="474" font-size="15" font-weight="700" fill="#0E1A14">Drain valve</text>
+    <text x="704" y="494" font-size="13" fill="#3F5248">near the bottom for emptying</text>
+
+    <text x="230" y="466" font-size="15" font-weight="700" fill="#0E1A14">Level floor</text>
+    <text x="230" y="486" font-size="13" fill="#3F5248">a full tank is heavy; keep the</text>
+    <text x="230" y="504" font-size="13" fill="#3F5248">bottom level to within 1 inch</text>
+
+    <text x="440" y="466" font-size="15" font-weight="700" fill="#0E1A14">Check pH weekly</text>
+    <text x="440" y="486" font-size="13" fill="#3F5248">keep it around 5.8–6.2</text>
+  </g>
+</svg>
