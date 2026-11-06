@@ -1,6 +1,6 @@
 # Current Handoff
 
-Updated: 2026-11-05
+Updated: 2026-11-06
 
 ## State
 
@@ -14,6 +14,14 @@ Updated: 2026-11-05
 
 ## Open items for the owner
 
+- Growth plan (2026-11-06, `docs/research/GROWTH_PLAN_2026-11.md`): the Ascend application for
+  True Leaf Market was denied on 2026-11-06. Do not reapply to strict networks until the
+  network-ready milestone in the plan is met (target mid-January 2027). Owner parts of it:
+  real grow photos, credentials (and full name, if he chooses) on the About page, a Payoneer
+  account in his own name for network payouts, and approval to run content on weekdays instead
+  of twice a week. Programme order in the plan: Awin and FlexOffers at the milestone, Amazon
+  Associates when Google clicks are steady, Impact/CJ later; skip Skimlinks and Ascend direct
+  (PayPal-only for Pakistan-based publishers).
 - Owner photos: a shot list of 10 home-setup photos and an author photo were requested; when
   they arrive, crop to 1600x900, add to `src/data/photos.ts`, and prefer them over stock.
   Best route (2026-11-05 plan): one real home grow (Kratky or small DWC with lettuce or basil),
