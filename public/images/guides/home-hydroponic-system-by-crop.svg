@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" role="img" aria-labelledby="t d">
+  <title id="t">Which home hydroponic system fits your crop</title>
+  <desc id="d">A decision chart. Start with the crop. Leafy greens and herbs: a Kratky bucket if you want no pump or power (1 to 1.5 gallons of solution per lettuce plant, UF/IFAS); deep water culture for more plants with floor space (air pump, aim for 7 to 10 ppm dissolved oxygen, Virginia Tech); NFT channels for rows or vertical racks (at least a 2 percent slope, pump runs nonstop, Oregon State). Tomatoes, peppers and cucumbers: Dutch buckets on drip (two drip stakes per bucket at 0.5 gallons per hour; media systems gave the highest tomato and pepper yields and NFT the lowest, Virginia Tech). Seedlings and mixed pots: ebb and flow trays (flood to about 1 inch below the media top, Oregon State).</desc>
+  <rect width="960" height="640" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Which home hydroponic system fits your crop?</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Guidance from UF/IFAS, Virginia Tech and Oregon State University Extension</text>
+
+  <rect x="330" y="104" width="300" height="46" rx="23" fill="#0E1A14"/>
+  <text x="480" y="133" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">Start here: what will you grow?</text>
+  <path d="M400 150 L190 196 M480 150 L490 196 M560 150 L780 196" fill="none" stroke="#9DB8A8" stroke-width="3"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="40" y="196" width="300" height="34" rx="8" fill="#0F6B4F"/>
+    <text x="190" y="219" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Leafy greens and herbs</text>
+    <rect x="360" y="196" width="260" height="34" rx="8" fill="#9A4B2E"/>
+    <text x="490" y="219" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Tomatoes, peppers, cucumbers</text>
+    <rect x="640" y="196" width="280" height="34" rx="8" fill="#3E6E9B"/>
+    <text x="780" y="219" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Seedlings and mixed pots</text>
+
+    <rect x="40" y="244" width="300" height="104" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="56" y="268" font-size="13" fill="#3F5248">No pump, no power?</text>
+    <text x="56" y="292" font-size="19" font-weight="800" fill="#0E1A14">Kratky bucket</text>
+    <text x="56" y="316" font-size="14" fill="#0E1A14">1–1.5 gal of solution per lettuce plant</text>
+    <text x="56" y="336" font-size="12" fill="#5B6F64">UF/IFAS HS1488</text>
+
+    <rect x="40" y="362" width="300" height="104" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="56" y="386" font-size="13" fill="#3F5248">More plants, room for a heavy tank?</text>
+    <text x="56" y="410" font-size="19" font-weight="800" fill="#0E1A14">Deep water culture</text>
+    <text x="56" y="434" font-size="14" fill="#0E1A14">Air pump; aim for 7–10 ppm oxygen</text>
+    <text x="56" y="454" font-size="12" fill="#5B6F64">Virginia Tech SPES-466</text>
+
+    <rect x="40" y="480" width="300" height="104" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="56" y="504" font-size="13" fill="#3F5248">Rows of small plants or a vertical rack?</text>
+    <text x="56" y="528" font-size="19" font-weight="800" fill="#0E1A14">NFT channels</text>
+    <text x="56" y="552" font-size="14" fill="#0E1A14">At least 2% slope; pump runs nonstop</text>
+    <text x="56" y="572" font-size="12" fill="#5B6F64">Oregon State EM 9457</text>
+
+    <rect x="360" y="244" width="260" height="222" rx="12" fill="#FFFFFF" stroke="#E7D3C8" stroke-width="2"/>
+    <text x="376" y="268" font-size="13" fill="#3F5248">Big roots, long season</text>
+    <text x="376" y="292" font-size="19" font-weight="800" fill="#0E1A14">Dutch buckets on drip</text>
+    <text x="376" y="316" font-size="14" fill="#0E1A14">2 drip stakes per bucket</text>
+    <text x="376" y="336" font-size="14" fill="#0E1A14">at 0.5 gal per hour each</text>
+    <text x="376" y="370" font-size="13" fill="#3F5248">In the Virginia Tech trial, media</text>
+    <text x="376" y="388" font-size="13" fill="#3F5248">systems gave the highest tomato</text>
+    <text x="376" y="406" font-size="13" fill="#3F5248">and pepper yields; NFT the lowest.</text>
+    <text x="376" y="452" font-size="12" fill="#5B6F64">Virginia Tech SPES-466</text>
+
+    <rect x="640" y="244" width="280" height="222" rx="12" fill="#FFFFFF" stroke="#CBDAE8" stroke-width="2"/>
+    <text x="656" y="268" font-size="13" fill="#3F5248">Trays of pots that you move around</text>
+    <text x="656" y="292" font-size="19" font-weight="800" fill="#0E1A14">Ebb and flow trays</text>
+    <text x="656" y="316" font-size="14" fill="#0E1A14">Flood to about 1 inch below</text>
+    <text x="656" y="336" font-size="14" fill="#0E1A14">the top of the media, drain,</text>
+    <text x="656" y="356" font-size="14" fill="#0E1A14">reflood before it dries out</text>
+    <text x="656" y="390" font-size="13" fill="#3F5248">Needs a pump on a reliable timer.</text>
+    <text x="656" y="452" font-size="12" fill="#5B6F64">Oregon State EM 9458</text>
+
+    <rect x="360" y="480" width="560" height="104" rx="12" fill="#E3F1E8"/>
+    <text x="380" y="510" font-size="15" font-weight="700" fill="#0E1A14">Rule of thumb</text>
+    <text x="380" y="534" font-size="14" fill="#0E1A14">Choose the crop first; the system follows. Pumped systems fail</text>
+    <text x="380" y="554" font-size="14" fill="#0E1A14">fastest in a power cut: NFT plants can wilt quickly (Oregon State).</text>
+  </g>
+  <text x="40" y="616" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5B6F64">HydroRigor · hydrorigor.com/best/hydroponic-system-for-home-growers/</text>
+</svg>

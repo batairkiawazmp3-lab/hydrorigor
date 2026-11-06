@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Four home hydroponic systems in cross-section</title>
+  <desc id="d">Cross-sections of four systems. Kratky bucket: a net cup in the lid, roots in the solution, and an air gap that grows as the plant drinks; no pump or power; 1 to 1.5 gallons per lettuce plant. Deep water culture: plants on a floating raft over a tank, with an air pump feeding an air stone; keep dissolved oxygen at 7 to 10 ppm, with 4 ppm as the minimum. NFT: a sloped channel carrying a thin film of solution back to a reservoir, with a pump that runs nonstop; slope at least 2 percent. Dutch bucket: a bucket of media fed by drip stakes at 0.5 gallons per hour, draining back to a reservoir.</desc>
+  <rect width="960" height="520" fill="#F5F7F2"/>
+  <text x="30" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Four home systems, side by side</text>
+  <text x="30" y="80" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Figures from UF/IFAS HS1488, Virginia Tech SPES-466 and Oregon State EM 9457</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="30" y="100" width="210" height="390" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="135" y="132" font-size="18" font-weight="800" fill="#0E1A14" text-anchor="middle">Kratky bucket</text>
+    <path d="M118 196 C100 170 96 158 104 150 C116 158 122 172 126 190 Z M152 196 C170 170 174 158 166 150 C154 158 148 172 144 190 Z M135 192 C128 166 130 150 135 142 C140 150 142 166 135 192 Z" fill="#7FC48E"/>
+    <rect x="78" y="200" width="114" height="10" fill="#3F5248"/>
+    <path d="M120 200 L150 200 L146 226 L124 226 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <rect x="80" y="210" width="110" height="170" fill="none" stroke="#3F5248" stroke-width="3"/>
+    <rect x="82" y="262" width="106" height="116" fill="#BFDDF0"/>
+    <path d="M128 226 C126 260 118 300 112 350 M135 226 C135 270 136 310 134 360 M142 226 C146 260 154 300 158 345" fill="none" stroke="#F1E6C8" stroke-width="3"/>
+    <text x="196" y="244" font-size="12" fill="#3F5248">air gap</text>
+    <path d="M194 240 L184 240" stroke="#3F5248" stroke-width="2"/>
+    <text x="135" y="414" font-size="14" font-weight="700" fill="#0E1A14" text-anchor="middle">No pump or power</text>
+    <text x="135" y="436" font-size="13" fill="#0E1A14" text-anchor="middle">1–1.5 gal per lettuce plant</text>
+    <text x="135" y="456" font-size="13" fill="#3F5248" text-anchor="middle">Air gap grows as the</text>
+    <text x="135" y="474" font-size="13" fill="#3F5248" text-anchor="middle">plant drinks the solution</text>
+
+    <rect x="260" y="100" width="210" height="390" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="365" y="132" font-size="18" font-weight="800" fill="#0E1A14" text-anchor="middle">Deep water culture</text>
+    <path d="M318 226 C306 204 304 194 310 188 C320 194 324 206 326 222 Z M342 226 C354 204 356 194 350 188 C340 194 336 206 334 222 Z M398 226 C386 204 384 194 390 188 C400 194 404 206 406 222 Z M422 226 C434 204 436 194 430 188 C420 194 416 206 414 222 Z" fill="#7FC48E"/>
+    <rect x="284" y="226" width="162" height="12" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <rect x="280" y="238" width="170" height="142" fill="#BFDDF0" stroke="#3F5248" stroke-width="3"/>
+    <path d="M330 238 C328 280 322 310 318 340 M410 238 C412 280 418 310 420 340" fill="none" stroke="#F1E6C8" stroke-width="3"/>
+    <rect x="345" y="362" width="40" height="10" rx="5" fill="#5B6F64"/>
+    <circle cx="355" cy="350" r="4" fill="#FFFFFF"/><circle cx="368" cy="336" r="5" fill="#FFFFFF"/><circle cx="360" cy="318" r="4" fill="#FFFFFF"/><circle cx="374" cy="300" r="5" fill="#FFFFFF"/><circle cx="364" cy="280" r="4" fill="#FFFFFF"/>
+    <rect x="418" y="150" width="40" height="26" rx="5" fill="#0E1A14"/>
+    <text x="438" y="168" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">PUMP</text>
+    <path d="M438 176 L438 200 L456 200 L456 388 L385 388 L385 372" fill="none" stroke="#0E1A14" stroke-width="2"/>
+    <text x="365" y="414" font-size="14" font-weight="700" fill="#0E1A14" text-anchor="middle">Air pump + air stone</text>
+    <text x="365" y="436" font-size="13" fill="#0E1A14" text-anchor="middle">Keep oxygen at 7–10 ppm</text>
+    <text x="365" y="456" font-size="13" fill="#3F5248" text-anchor="middle">4 ppm is the minimum</text>
+    <text x="365" y="474" font-size="13" fill="#3F5248" text-anchor="middle">Heavy: keep it on the floor</text>
+
+    <rect x="490" y="100" width="210" height="390" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="595" y="132" font-size="18" font-weight="800" fill="#0E1A14" text-anchor="middle">NFT channel</text>
+    <path d="M530 212 C522 196 522 188 528 184 C536 190 538 200 538 210 Z M582 220 C574 204 574 196 580 192 C588 198 590 208 590 218 Z M634 228 C626 212 626 204 632 200 C640 206 642 216 642 226 Z" fill="#7FC48E"/>
+    <path d="M506 214 L686 242 L686 264 L506 236 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <path d="M508 232 L684 260" stroke="#7FB8DC" stroke-width="4"/>
+    <text x="596" y="292" font-size="12" fill="#3F5248" text-anchor="middle">slope ≥ 2% →</text>
+    <rect x="606" y="320" width="80" height="54" fill="#BFDDF0" stroke="#3F5248" stroke-width="3"/>
+    <path d="M684 264 L684 318" stroke="#3F5248" stroke-width="2"/>
+    <rect x="530" y="338" width="40" height="26" rx="5" fill="#0E1A14"/>
+    <text x="550" y="356" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">PUMP</text>
+    <path d="M606 351 L570 351 M530 351 L512 351 L512 238" fill="none" stroke="#0E1A14" stroke-width="2"/>
+    <text x="595" y="414" font-size="14" font-weight="700" fill="#0E1A14" text-anchor="middle">Thin film, nonstop flow</text>
+    <text x="595" y="436" font-size="13" fill="#0E1A14" text-anchor="middle">Slope at least 2%</text>
+    <text x="595" y="456" font-size="13" fill="#3F5248" text-anchor="middle">Small roots only; plan a</text>
+    <text x="595" y="474" font-size="13" fill="#3F5248" text-anchor="middle">backup for power cuts</text>
+
+    <rect x="720" y="100" width="210" height="390" rx="14" fill="#FFFFFF" stroke="#E7D3C8" stroke-width="2"/>
+    <text x="825" y="132" font-size="18" font-weight="800" fill="#0E1A14" text-anchor="middle">Dutch bucket</text>
+    <path d="M822 150 L822 300" stroke="#8A6A4A" stroke-width="3"/>
+    <path d="M824 290 C800 268 796 252 806 244 C818 252 824 266 826 284 Z M824 250 C846 230 852 214 842 206 C830 214 826 228 824 244 Z M824 212 C806 196 802 182 810 176 C820 182 824 194 826 208 Z" fill="#7FC48E"/>
+    <circle cx="842" cy="226" r="7" fill="#D9534F"/><circle cx="806" cy="262" r="7" fill="#D9534F"/>
+    <path d="M780 296 L870 296 L862 380 L788 380 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="3"/>
+    <circle cx="800" cy="320" r="3" fill="#C9B79A"/><circle cx="818" cy="336" r="3" fill="#C9B79A"/><circle cx="840" cy="318" r="3" fill="#C9B79A"/><circle cx="852" cy="344" r="3" fill="#C9B79A"/><circle cx="808" cy="358" r="3" fill="#C9B79A"/><circle cx="836" cy="362" r="3" fill="#C9B79A"/>
+    <path d="M760 286 L800 286 L800 300 M760 286 L850 286 L850 300" fill="none" stroke="#0E1A14" stroke-width="2"/>
+    <text x="756" y="278" font-size="11" fill="#3F5248">drip</text>
+    <path d="M825 380 L825 392 L900 392" fill="none" stroke="#3F5248" stroke-width="3"/>
+    <text x="825" y="414" font-size="14" font-weight="700" fill="#0E1A14" text-anchor="middle">Media + drip, drains back</text>
+    <text x="825" y="436" font-size="13" fill="#0E1A14" text-anchor="middle">2 stakes × 0.5 gal/hour</text>
+    <text x="825" y="456" font-size="13" fill="#3F5248" text-anchor="middle">Room for big roots and</text>
+    <text x="825" y="474" font-size="13" fill="#3F5248" text-anchor="middle">a support stake</text>
+  </g>
+</svg>

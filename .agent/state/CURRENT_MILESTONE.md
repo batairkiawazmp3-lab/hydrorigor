@@ -43,7 +43,7 @@ first is the fastest route to page 1. Keep each page's route and title intent.
 
 1. [x] `/crops/hydroponic-lettuce-seeds/` — hydroponic lettuce seed (2,400, difficulty 20); rebuilt 2026-11-05
 2. [x] Phase 2 manifest (plan IDs 26+) with tests, in its own PR, so new guides can be added (PR #23)
-3. [ ] `/best/hydroponic-system-for-home-growers/` — rebuild to the content standard. Search
+3. [x] `/best/hydroponic-system-for-home-growers/` — rebuilt 2026-11-06 ("Best Hydroponic System for Home Growers: DWC, NFT or Drip?"). Search
        Console: position 14 for "most effective hydroponic system", 3 impressions, page average 30.
        Answer "which system is most effective / best for a home" directly by crop, with sources.
 4. [ ] `/nutrients-water/hydroponic-nutrients-for-tomatoes/` — rebuild. Search Console:
