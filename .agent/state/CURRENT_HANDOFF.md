@@ -51,6 +51,7 @@ Updated: 2026-11-05
 Guides published by automated runs under `HydroRigor Editorial`. When Najeeb has read one
 and approves, switch its byline to `Najeeb`.
 
+- `/best/hydroponic-system-for-home-growers/` — "Best Hydroponic System for Home Growers: DWC, NFT or Drip?" (2026-11-06). Sources: UF/IFAS HS1488 (Kratky) and HS1422, Kratky Acta Hort 843, Virginia Tech SPES-466 trial, Oregon State Hydro hints EM 9453/9455/9456/9457/9458, Oklahoma State HLA-6442. Note: Virginia Tech yields are one trial at one site; the page says so.
 - `/crops/hydroponic-lettuce-seeds/` — "Hydroponic Lettuce Seeds: Varieties, Germination & Storage" (2026-11-05). Sources: Kentucky CCD-CP-63, UF/IFAS HS1258/HS1422 and thermodormancy, Ohio State e-GRO tipburn trial, Cornell CEA handbook, Nebraska G2090, Illinois and SDSU seed storage. Note: extension sources disagree on lettuce seed life (2, 5 and 6 years); the page shows all three.
 
 ## Next agent instruction
