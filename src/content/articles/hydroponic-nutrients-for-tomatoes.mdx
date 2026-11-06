@@ -1,66 +1,274 @@
 ---
-title: "Hydroponic Nutrients for Tomatoes: Feeding by Growth Stage"
-description: "Manage tomato nutrients by documented stage, source water, complete formulation, recirculating-system changes, and product-specific rates."
+title: "Hydroponic Nutrients for Tomatoes: EC, pH & Feeding by Stage"
+description: "Feed hydroponic tomatoes 70–150 ppm N and 120–200 ppm K as clusters set, at EC 2.0–3.0 mS/cm and pH 5.8–6.2. Stage tables, mixing steps and fixes."
 route: "hydroponic-nutrients-for-tomatoes"
 publishDate: 2026-09-12
+updatedDate: 2026-11-06
 author: "HydroRigor Editorial"
 category: "nutrients"
 tags: ["tomatoes", "nutrients", "growth-stage"]
 sources:
+  - id: "ifas-hydroponic-tomato-formulation"
+    title: "Nutrient Solution Formulation for Hydroponic (Perlite, Rockwool, NFT) Tomatoes in Florida (HS796)"
+    url: "https://ask.ifas.ufl.edu/publication/CV216"
+    publisher: "UF/IFAS Extension (G. J. Hochmuth, R. C. Hochmuth)"
+    accessedDate: 2026-11-06
   - id: "tennessee-fruiting-crops"
     title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems"
     url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
     publisher: "University of Tennessee Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-06
+  - id: "ohio-state-tomato-nutrient-solution"
+    title: "Hydroponic Nutrient Solution for Optimized Greenhouse Tomato Production (HYG-1437)"
+    url: "https://cfaes.osu.edu/fact-sheet/hydroponic-nutrient-solution-optimized-greenhouse-tomato-production"
+    publisher: "The Ohio State University CFAES (M. Kroggel, C. Kubota)"
+    accessedDate: 2026-11-06
   - id: "psu-nutrient-programs"
     title: "Hydroponics Systems: Nutrient Solution Programs and Recipes"
     url: "https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes"
     publisher: "Penn State Extension"
-    accessedDate: 2026-09-12
-  - id: "mu-nutrient-solutions"
-    title: "Hydroponic Nutrient Solutions"
-    url: "https://extension.missouri.edu/publications/g6984"
-    publisher: "University of Missouri Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-06
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-06
+  - id: "uky-monitoring-ph-ec"
+    title: "Monitoring pH and EC (CCD-TA-01)"
+    url: "https://ccd.uky.edu/sites/default/files/2025-06/ccd-ta-01_monitoring-ph-ec.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification"
+    accessedDate: 2026-11-06
+  - id: "msstate-tomato-ph"
+    title: "Greenhouse Tomatoes: What pH Should I Use?"
+    url: "https://extension.msstate.edu/agriculture/crops/commercial-horticulture/greenhouse-tomatoes/what-ph-should-i-use"
+    publisher: "Mississippi State University Extension"
+    accessedDate: 2026-11-06
+  - id: "msstate-tomato-fertilizer"
+    title: "Greenhouse Tomatoes: What Kind of Fertilizer Can I Use?"
+    url: "https://extension.msstate.edu/agriculture/crops/commercial-horticulture/greenhouse-tomatoes/what-kind-fertilizer-can-i-use-for-greenhouse-tomatoes"
+    publisher: "Mississippi State University Extension"
+    accessedDate: 2026-11-06
+  - id: "msstate-blossom-end-rot"
+    title: "How Can I Prevent Blossom End Rot?"
+    url: "https://extension.msstate.edu/agriculture/crops/commercial-horticulture/tomato-pepper-and-eggplant/how-can-i-prevent-blossom-end-rot"
+    publisher: "Mississippi State University Extension"
+    accessedDate: 2026-11-06
+  - id: "ifas-volusia-dwc-bucket"
+    title: "Making Your Own, Inexpensive Hydroponic Bucket (Deep Water Culture)"
+    url: "https://www.volusia.org/core/fileparse.php/4461/urlt/making-your-own-hydroponic-bucket.pdf"
+    publisher: "UF/IFAS Extension Volusia County (J. Sewards)"
+    accessedDate: 2026-11-06
 affiliateDisclosure: false
 commercialDestinationIds: []
 draft: false
 ---
 
-Feed hydroponic tomatoes with a complete tomato-appropriate program whose instructions distinguish establishment, vegetative growth, flowering, and fruiting where relevant. Stage labels do not justify an invented recipe: follow the exact formulation, water assumptions, and current manufacturer or institutional program.
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-## Why stage matters
+Hydroponic tomatoes need a **tomato-specific nutrient** that starts low in nitrogen and rises as fruit clusters set. UF/IFAS recommends **70 ppm nitrogen and 120 ppm potassium** in the final solution from transplant to the first cluster, climbing to **150 ppm nitrogen and 200 ppm potassium** after the fifth cluster, with **calcium at 150 ppm** throughout and the solution at **pH 5.8–6.2**. University of Tennessee Extension grows fruiting crops at an **EC of 2.0–3.0 mS/cm** for most of the season, after starting seedlings at half strength. An all-purpose 20-20-20 fertilizer is a poor choice: tomatoes need much less nitrogen and much more potassium (Mississippi State Extension).
 
-A seedling, rapidly growing vine, flowering plant, and fruit-loaded plant differ in size and demand. Penn State Extension describes fertilizer programs that supplement a base tomato formula and may vary by variety or stage. That is a property of a documented program, not permission to increase any nutrient whenever flowers appear.
+This guide gives the numbers by stage, what to buy, how to mix and check the solution, and how to fix the problems that nutrition causes or gets blamed for. Every figure is tied to a university or extension source listed at the end. For growing the plants themselves (light, support, pollination), see [how to grow hydroponic tomatoes](/crops/hydroponic-tomatoes/).
 
-Use stage as a checkpoint for reviewing instructions, root volume, irrigation, support, and plant condition.
+<KeyTargets
+  title="Hydroponic tomato nutrients: the targets"
+  source="UF/IFAS HS796 and University of Tennessee W 844-C"
+  items={[
+    { label: 'Solution pH', value: '5.8–6.2', note: 'final solution, all stages' },
+    { label: 'EC while fruiting', value: '2.0–3.0', note: 'mS/cm for most of the season' },
+    { label: 'Nitrogen', value: '70–150 ppm', note: 'rising from transplant to the 5th cluster' },
+    { label: 'Potassium', value: '120–200 ppm', note: 'rising as fruit loads' },
+  ]}
+/>
 
-## Establishment
+## Quick answer: tomato nutrient targets
 
-Young plants need a stable transition from propagation into the production root zone. University of Tennessee Extension recommends beginning dilute nutrition after germination in its small-scale fruiting-crop context. Apply only the rate documented for the exact product and stage.
+| Question | Answer | Source |
+| --- | --- | --- |
+| Nitrogen (N) | 70–150 ppm: 70 from transplant to the first cluster, rising in steps to 150 after the fifth cluster | UF/IFAS HS796 |
+| Potassium (K) | 120–200 ppm: 120 early, 150 from the second cluster, 200 after the fifth | UF/IFAS HS796 |
+| Phosphorus and calcium | P 50 ppm and Ca 150 ppm at every stage | UF/IFAS HS796 |
+| Magnesium | 40 ppm, rising to 50 ppm from the third cluster | UF/IFAS HS796 |
+| EC for seedlings | 0.5–1.0 mS/cm (half strength), reaching 1.0–1.5 mS/cm at transplanting | University of Tennessee W 844-C |
+| EC while fruiting | 2.0–3.0 mS/cm for most of the season | University of Tennessee W 844-C |
+| Solution pH | 5.8–6.2 in the final solution; other extension ranges run from 5.5 to 6.5 | UF/IFAS HS796; see the pH section |
+| What to buy | A complete fertilizer made for tomatoes (low N, high K), not 20-20-20; some programs add calcium nitrate and magnesium sulfate | Mississippi State Extension; Penn State Extension |
+| How often to check | EC and pH daily, at the same time of day | Oklahoma State HLA-6722 |
+| When to replace the solution | Every one to two weeks in small recirculating systems | University of Tennessee W 844-C |
+| Source water | Test pH, alkalinity and EC first; alkalinity above 75 ppm pushes pH up | Oklahoma State HLA-6722 |
 
-Avoid keeping a young plug continuously saturated without oxygen. Record transplant date and early root development.
+![Bar chart of the nitrogen and potassium UF/IFAS recommends for hydroponic tomatoes, in ppm. Transplant to first cluster: N 70, K 120. First to second cluster: N 80, K 120. Second to third: N 100, K 150. Third to fifth: N 120, K 150. Fifth cluster to the end of the crop: N 150, K 200. Phosphorus 50, calcium 150, magnesium 40–50 and sulfur 50–60 ppm throughout; pH 5.8–6.2.](/images/guides/tomato-nutrients-by-growth-stage.svg)
 
-## Vegetative growth
+*Nitrogen and potassium rise in steps as clusters set; phosphorus and calcium stay level. Figures from UF/IFAS HS796 (Hochmuth and Hochmuth), Table 1.*
 
-As leaf and stem area expand, water use and support requirements increase. Check emitter delivery or aeration across the system, not only at the reservoir. A rapid change in EC can reflect water movement as well as nutrient uptake.
+## Why tomatoes need their own formula
 
-Do not interpret dark green growth as proof of balance or add nitrogen from a generic symptom list without ruling out water, roots, light, and other context.
+A tomato's needs change more than a lettuce plant's because it keeps growing and fruiting for months. UF/IFAS puts it simply: small amounts of nutrients are needed early, and demand climbs as the crop grows, especially once several fruit clusters are set.
 
-## Flowering and fruiting
+Two things go wrong when the formula does not fit:
 
-Follow the program’s defined component ratios and crop-stage directions. Do not substitute a “bloom” product from another line or mix concentrates together. Fruit set also depends on pollination and environment; nutrition cannot correct every flowering problem.
+- **Too much nitrogen early** makes a leafy, overly vegetative plant. UF/IFAS keeps nitrogen at 60–70 ppm early in the season to avoid this "bullishness", and Ohio State's tomato program limits nitrogen in young plants for the same reason.
+- **Too much potassium early** can interfere with calcium and magnesium uptake, leading to magnesium deficiency and blossom-end rot (UF/IFAS).
 
-The [indoor tomato guide](/crops/hydroponic-tomatoes/) covers light, support, and pollination alongside root-zone management.
+That is why Mississippi State Extension calls an all-purpose 20-20-20 a poor choice and tells growers to buy a premixed soluble fertilizer formulated for greenhouse tomatoes, with much lower nitrogen and much higher potassium.
 
-## Recirculating systems need records
+## What to buy
 
-Tennessee Extension notes that large fruiting plants can use nutrients rapidly and create imbalances in recirculating solution. Repeatedly adding fertilizer to restore one EC number cannot reveal which ions remain. Record top-ups and complete solution changes, and use source-water data when interpreting trends.
+You need a complete program, two meters and a way to correct pH. In order of importance:
 
-For the accepted tomato pH/EC records and their distinct source contexts, use HydroRigor’s [pH and EC target reference](/tools/ph-ec-targets/). This page does not merge or average them.
+1. **A tomato or fruiting-crop base fertilizer.** A complete, water-soluble formula with low nitrogen and high potassium. Penn State's example tomato program uses a 4-18-38 base supplemented with calcium nitrate and magnesium sulfate, the amounts depending on variety and stage.
+2. **Calcium nitrate and magnesium sulfate,** if your program calls for them. They are the usual supplements in tomato programs (Penn State). Do not add them to a one-part product unless its label says to.
+3. **An EC meter.** EC is how you know the solution strength and when to top up or replace it. Every target in this guide is in mS/cm.
+4. **A pH meter and pH adjusters.** Oklahoma State lists phosphoric acid, citric acid or a pH-down product to lower pH, and potassium hydroxide, potassium carbonate or a pH-up product to raise it.
+5. **Two stock containers,** if you mix concentrates from dry salts. Calcium has to be kept apart from sulfates and phosphates (see the next section).
 
-## Scale only a verified product rate
+Multi-part bottled nutrients from hydroponic brands work the same way: the parts are separate so they do not react in the bottle. Follow one line's full feeding chart rather than mixing parts from different brands. Our [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) explains one-part, two-part and three-part products, and the [buyer's guide to nutrients for home growers](/best/hydroponic-nutrients-for-home-growers/) covers how to compare labels.
 
-If the label gives a liquid dose per liter or US gallon, the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) can scale it to the actual reservoir. Calculate every part separately. The calculator does not choose a tomato dose, calculate elemental ppm, or predict final EC.
+## Feeding by growth stage
 
-The safe stage-based method is simple: identify the stage, consult the current program, measure each component, document the result, and keep the whole crop environment in view.
+Tomato programs change the recipe by the number of flower or fruit clusters (trusses), not by calendar date. Here are two university programs side by side. They differ because they were developed for different systems and growers, so pick one and follow it whole.
+
+| Stage (UF/IFAS) | N ppm | K ppm | Ca ppm | Mg ppm |
+| --- | --- | --- | --- | --- |
+| Transplant to 1st cluster | 70 | 120 | 150 | 40 |
+| 1st to 2nd cluster | 80 | 120 | 150 | 40 |
+| 2nd to 3rd cluster | 100 | 150 | 150 | 40 |
+| 3rd to 5th cluster | 120 | 150 | 150 | 50 |
+| 5th cluster to end of crop | 150 | 200 | 150 | 50 |
+
+UF/IFAS developed these for perlite, rockwool and NFT tomatoes in Florida. Phosphorus stays at 50 ppm and sulfur at 50–60 ppm throughout, and calcium, magnesium and sulfur may need adjusting for what your water already contains.
+
+Ohio State's three-stage program (HYG-1437, from Dr. Jensen's University of Arizona recipe) runs richer and was written for greenhouse production:
+
+| Stage (Ohio State) | When | Nitrate-N ppm | K ppm | Ca ppm | EC (mS/cm) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Seedling to the 2nd truss with open flowers | 90 | 144 | 144 | About 2.0 |
+| 2 | 3rd to 5th truss with open flowers | 120 | 350 | 160 | Not given |
+| 3 | Beyond the 5th truss | 190 | 350 | 200 | Closer to 2.4 |
+
+Ohio State raises calcium in stage 3 "largely to prevent blossom end rot" and raises potassium for fruit sugar loading and quality. If you buy a bottled program instead, follow its stage directions the same way, moving up a stage as clusters set.
+
+## EC: how strong to make the solution
+
+EC (electrical conductivity) measures total dissolved salts, so it tells you strength, not which nutrients are present. The extension figures for tomatoes differ, so here they are together:
+
+| Source | Seedlings | Fruiting |
+| --- | --- | --- |
+| University of Tennessee W 844-C | 0.5–1.0 mS/cm, 1.0–1.5 at transplanting | 2.0–3.0 mS/cm for most of the season |
+| Ohio State HYG-1437 | About 2.0 (stage 1) | Closer to 2.4 (stage 3) |
+| University of Kentucky CCD-TA-01 (fruiting crops) | Not given for tomatoes | Up to 2.5–3.5 mS/cm |
+| Oklahoma State HLA-6722 | Not given | 2.0–4.0 mS/cm |
+
+**What we recommend:** start transplants at 1.0–1.5 mS/cm and run fruiting plants at 2.0–3.0 mS/cm, the Tennessee range written for small-scale systems. It sits inside Oklahoma State's range and overlaps Ohio State's and Kentucky's. If your meter reads ppm instead, check which conversion factor it uses before comparing; the [pH and EC target reference](/tools/ph-ec-targets/) keeps the units straight.
+
+## pH: keep it in a narrow band
+
+| Source | Tomato solution pH |
+| --- | --- |
+| UF/IFAS HS796 | 5.8–6.2 (final solution) |
+| University of Tennessee W 844-C | Often 5.5–6.0 |
+| Ohio State HYG-1437 | 5.5–6.5 at the drip |
+| Mississippi State Extension | 5.6–5.8 in aggregate media |
+| Oklahoma State HLA-6722 | 6.0–6.5 |
+
+**What we recommend:** aim for 5.8–6.2. It is the UF/IFAS range for hydroponic tomatoes and overlaps or touches every other range above. Oklahoma State's order of work is worth copying: get EC right first, then adjust pH, adding acid or base slowly and waiting a few minutes between additions.
+
+## Mixing the solution: two stocks, never combined
+
+![How to mix a hydroponic tomato solution. Stock A holds the tomato base fertilizer with magnesium sulfate; stock B holds calcium nitrate. They are never mixed as concentrates, because calcium forms solids with sulfate or phosphate. Six steps: test the source water for pH, alkalinity and EC; fill the reservoir with water; add one stock and stir; add the other and stir; measure EC, aiming for 2.0–3.0 mS/cm for fruiting plants; adjust pH last, to 5.8–6.2.](/images/guides/tomato-nutrient-mixing-steps.svg)
+
+*Calcium goes in its own stock. Stock split from Penn State Extension and Ohio State HYG-1437; EC from Tennessee W 844-C; pH from UF/IFAS HS796.*
+
+Penn State Extension explains why concentrated tomato nutrients come in two parts: calcium reacts with phosphates and sulfates at high concentration and forms precipitates that clog drip lines. Its example keeps calcium nitrate in one stock tank and the 4-18-38 base with magnesium sulfate in the other. Ohio State's recipe does the same with 100X stock solutions, calcium nitrate in one tank and the potassium, phosphate and magnesium salts in the other.
+
+Step by step:
+
+1. **Test your source water** for pH, alkalinity and EC (Oklahoma State). UF/IFAS calls a water test one of the first steps in any nutrient program, because calcium, magnesium and carbonates already in the water change what you need to add.
+2. **Fill the reservoir with water** to the volume you will use.
+3. **Add one stock or part at its label rate and stir.** Measure each part separately; the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) scales a label rate to your reservoir size.
+4. **Add the other part and stir.** Never pour one concentrate into the other.
+5. **Measure EC.** Aim for 2.0–3.0 mS/cm for fruiting plants, lower for transplants. If it is high, add water; if it is low, add concentrate until it is in range (Oklahoma State).
+6. **Adjust pH last** to 5.8–6.2.
+
+The full method, including how to handle one-part and three-part products, is in [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/).
+
+## Source water comes first
+
+Your water is part of the recipe. Three thresholds from the sources:
+
+- **Alkalinity above 75 ppm** will push the solution pH up (Oklahoma State). Acid fertilizers, added acid or reverse osmosis bring it down.
+- **Sodium and chloride:** University of Tennessee Extension uses 75 ppm as an upper limit for source water. High sodium can cause blossom drop and blossom-end rot.
+- **Calcium and magnesium already in the water** count toward the targets. UF/IFAS notes that Florida well water may carry 40–60 ppm calcium, and Ohio State's recipes assume reverse-osmosis water.
+
+If you use tap water, your water supplier's annual quality report is a free starting point for alkalinity, sodium and hardness; an EC reading of plain tap water shows how much of your EC target is already taken.
+
+## Keeping the solution balanced
+
+Tomatoes drink and feed fast once they are large. Tennessee Extension warns that bigger plants take up nutrients more rapidly, which leads to quicker nutrient imbalances in recirculating systems. Topping up to hold one EC number cannot tell you which nutrients are running low.
+
+A simple routine that follows the sources:
+
+- **Daily:** check EC and pH at the same time of day (Oklahoma State).
+- **Between changes:** top up with plain water to lower EC, or add concentrate to raise it (Tennessee).
+- **Every one to two weeks:** replace the solution in small recirculating systems, to prevent imbalances and reduce disease risk (Tennessee).
+- **When a new cluster stage begins:** move to the next stage's recipe or feeding-chart rate.
+
+Keep a notebook or spreadsheet with the date, cluster count, EC, pH, top-ups and changes. It turns a vague problem into a pattern you can see.
+
+## Blossom-end rot: calcium, water and temperature
+
+Blossom-end rot (a dark, sunken patch at the bottom of the fruit) is the problem most often blamed on nutrients, and calcium is involved, but adding more calcium is rarely the whole answer:
+
+- **Calcium has to reach the fruit.** Tennessee Extension says blossom-end rot is more likely when the water movement carrying calcium through the plant and fruit is out of balance, and links it to high or fluctuating temperatures.
+- **Uneven water is a classic trigger.** Mississippi State says the deficiency is normally induced by uneven water availability, and that moisture stress severe enough to wilt plants will guarantee it.
+- **Too much potassium early** can block calcium and magnesium uptake (UF/IFAS).
+- **Calcium in the recipe matters too.** Ohio State raises calcium in its fruiting stage largely to prevent it.
+
+Affected fruit will not recover; Mississippi State advises removing it. Fix the cause (steady irrigation, temperature, a balanced recipe) so the next fruits form cleanly.
+
+## Troubleshooting tomato nutrition
+
+| Problem | Likely cause | What to do | Source |
+| --- | --- | --- | --- |
+| Dark, sunken spots at the blossom end of fruit | Calcium not reaching the fruit: uneven water, heat swings, or high potassium early | Keep irrigation steady, avoid temperature swings, check the recipe's K and Ca | Tennessee W 844-C; Mississippi State; UF/IFAS HS796 |
+| Big, leafy plants with few flowers | Too much nitrogen early ("bullish" growth) | Use the early-stage recipe: about 70 ppm N until the first cluster | UF/IFAS HS796; Ohio State HYG-1437 |
+| pH keeps drifting up | Alkaline source water | Test alkalinity; above 75 ppm, acidify or use RO water | Oklahoma State HLA-6722 |
+| EC climbs between changes | Plants drinking water faster than they take up salts | Top up with plain water; replace the tank every 1–2 weeks | University of Tennessee W 844-C |
+| EC falls fast | Large plants feeding heavily | Add concentrate; check you are on the right stage rate | University of Tennessee W 844-C |
+| White crust or clogged drip emitters | Calcium mixed with sulfate or phosphate concentrates | Keep calcium in a separate stock; clean the lines | Penn State Extension |
+| Flowers drop and fruit has blossom-end rot despite a good recipe | High sodium in source water | Test sodium and chloride; above 75 ppm, change water source | University of Tennessee W 844-C |
+
+## Beyond the nutrient tank
+
+Nutrition cannot make up for the rest of the environment. Tennessee Extension's figures for small-scale fruiting crops: natural light of eight hours or more, daytime temperatures in the 70s °F with growth slowing above the mid-80s, and hand pollination three to four times a week, most effective at 60–80% humidity. It lists 2–4 weeks from seeding to transplant and 7–10 weeks from transplant to harvest. Choosing a compact variety matters indoors; see [hydroponic tomato seeds](/crops/hydroponic-tomato-seeds/). If you are still choosing a system, Dutch buckets on drip suit tomatoes best among the [three DIY builds](/systems/diy-hydroponic-system-for-beginners/).
+
+## Frequently asked questions
+
+### What are the best hydroponic nutrients for tomatoes?
+
+A complete fertilizer formulated for tomatoes or fruiting crops, with low nitrogen and high potassium, used with an EC meter and pH meter. Mississippi State Extension advises against all-purpose 20-20-20 for tomatoes. Penn State's example program is a 4-18-38 base plus calcium nitrate and magnesium sulfate. Bottled two- or three-part hydroponic lines also work if you follow one line's whole feeding chart.
+
+### What EC should hydroponic tomatoes be?
+
+2.0–3.0 mS/cm for most of the fruiting season, after starting seedlings at 0.5–1.0 mS/cm and transplants at 1.0–1.5 mS/cm (University of Tennessee). Other extension ranges run from about 2.0 up to 4.0 mS/cm.
+
+### What pH do hydroponic tomatoes need?
+
+5.8–6.2 in the final solution (UF/IFAS). Extension ranges run from 5.5 to 6.5, and 5.8–6.2 overlaps or touches all of them.
+
+### When should I switch to a bloom or fruiting formula?
+
+Switch by cluster count, not by date. UF/IFAS raises nitrogen from the first cluster and potassium from the second, with the biggest step for both after the fifth cluster. Ohio State moves to its second stage at the third truss with open flowers.
+
+### Do hydroponic tomatoes need extra calcium?
+
+They need a steady supply: 150 ppm at every stage in the UF/IFAS program, and up to 200 ppm in Ohio State's fruiting stage. Penn State's and Ohio State's programs supply it as calcium nitrate in a separate stock. Extra calcium will not fix blossom-end rot caused by uneven watering or heat.
+
+### How often should I change the nutrient solution for tomatoes?
+
+Every one to two weeks in small recirculating systems, topping up between changes (University of Tennessee). Check EC and pH daily (Oklahoma State).
+
+### Can I grow tomatoes in a Kratky or DWC bucket?
+
+Yes. UF/IFAS Volusia County's DWC bucket is sized for a single tomato. The feeding targets on this page still apply; in a non-circulating container, watch EC and pH more closely as the plant grows.
+
+*Figures in this guide come from the university and extension sources listed below. Programs differ, so treat them as starting points, follow one program consistently and check your own solution as the crop grows. HydroRigor has not run its own tomato feeding trial for this guide.*
