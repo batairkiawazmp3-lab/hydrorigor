@@ -32,6 +32,11 @@ disagree, `AGENTS.md` wins.
 
 ## Content standard (rewrites and new guides)
 
+- **Research packs:** before researching a queue item, check `docs/research/source-packs/` for
+  a pack on its route. A pack lists verified sources, figures and locators, so a run without
+  web access can still write the page; every number must come from a pack, a registered
+  source or new reading. When a run has web access and the next items lack packs, adding a
+  pack for a later item is good use of spare time.
 - Lead with a direct answer and the numbers searchers want (pH, EC, temperature, light,
   spacing, days to harvest), each tied to a named university, extension or peer-reviewed
   source that is listed on the page and registered in `src/data/editorial-sources/m06.ts`
