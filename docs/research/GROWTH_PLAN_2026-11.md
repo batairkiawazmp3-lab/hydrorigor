@@ -76,7 +76,8 @@ Payment from Pakistan decides the order as much as approval odds do.
 2. **Awin (at the network-ready milestone).** Manual review, no published traffic minimum,
    $20 / £20 payment threshold, £5 deposit. True Leaf Market appears to have an Awin profile
    (not confirmed), which would be a second route to the brand Ascend declined.
-3. **FlexOffers (same time).** Lists Gardyn at 16% with a 30-day cookie, and has listings for
+3. **FlexOffers or Impact for Gardyn (same time).** Gardyn is listed on Impact (LinkClicky, 2024) and
+   FlexOffers lists it at 16% with a 30-day cookie; FlexOffers also has listings for
    Click & Grow, Lettuce Grow and True Leaf Market. Confirm its payment options for Pakistan
    before relying on it.
 4. **Amazon Associates US (when Google clicks are steady).** Applying now risks a closed account

@@ -37,6 +37,9 @@ disagree, `AGENTS.md` wins.
   web access can still write the page; every number must come from a pack, a registered
   source or new reading. When a run has web access and the next items lack packs, adding a
   pack for a later item is good use of spare time.
+- **Beat the competitors' gaps** (`docs/research/COMPETITORS_2026-11.md`): give the numbers
+  top-ranking pages skip (EC by stage, dissolved oxygen, spacing, pump timing, DLI), show
+  source conflicts instead of printing two numbers without comment, and never claim testing.
 - Lead with a direct answer and the numbers searchers want (pH, EC, temperature, light,
   spacing, days to harvest), each tied to a named university, extension or peer-reviewed
   source that is listed on the page and registered in `src/data/editorial-sources/m06.ts`
