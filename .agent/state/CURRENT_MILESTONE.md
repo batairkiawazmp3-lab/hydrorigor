@@ -56,7 +56,7 @@ mixing in one new guide for every two or three rebuilds.
        tomatoes" (position 66); "hydroponic nutrients tomatoes" 140 / 20.
 5. [x] `/systems/diy-hydroponic-system-for-beginners/` — rebuilt 2026-11-06 ("DIY Hydroponic System for Beginners: 3 Builds, Step by Step"). Search Console:
        "diy hydroponics systems" (position 81) and "hydroponics diy system" (position 99).
-6. [ ] `/systems/deep-water-culture-hydroponics/` — rebuild. "hydroponic system deep water culture"
+6. [x] `/systems/deep-water-culture-hydroponics/` — rebuilt 2026-11-07 ("Deep Water Culture Hydroponics: DWC Setup, Oxygen & pH"). "hydroponic system deep water culture"
        4,400 / 25; "hydroponic system dwc" 2,900 / 28. Search Console: 4 impressions, position 54.
 7. [ ] New guide, plan ID 59 (repurposed): hydroponic towers — "hydroponic tower" 6,600 / 33,
        "hydroponic tower diy" 1,300 / 32. How towers work, crops, light, DIY versus kits;

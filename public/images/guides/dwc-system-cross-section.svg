@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-labelledby="t d">
+  <title id="t">Deep water culture system: the parts and the targets</title>
+  <desc id="d">A labelled cross-section of a deep water culture raft tank. Lettuce plants sit in a floating raft at 3 to 4 plants per square foot, with the raft matched to the tank so no light reaches the solution. The opaque tank holds solution at least 12 inches deep, kept at 65 to 80 degrees Fahrenheit, pH 5.5 to 6.2 and EC 1.2 to 1.8 for lettuce. An air stone on the bottom runs all the time to keep dissolved oxygen at 7 to 10 ppm, with 4 ppm as the minimum; the air pump sits outside the tank with a check valve in the line. A drain valve sits near the bottom and the tank stands on a floor level to within one inch.</desc>
+  <rect width="960" height="600" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">How a deep water culture tank works</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Targets from Virginia Tech SPES-466, UF/IFAS HS1422, University of Kentucky CCD-CP-63 and Oregon State EM 9455</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <path d="M330 232 C312 200 310 184 320 176 C334 186 340 206 342 228 Z M360 232 C378 200 380 184 370 176 C356 186 350 206 348 228 Z M460 232 C442 200 440 184 450 176 C464 186 470 206 472 228 Z M490 232 C508 200 510 184 500 176 C486 186 480 206 478 228 Z M590 232 C572 200 570 184 580 176 C594 186 600 206 602 228 Z M620 232 C638 200 640 184 630 176 C616 186 610 206 608 228 Z" fill="#7FC48E"/>
+    <rect x="270" y="232" width="400" height="20" rx="3" fill="#F2EDE2" stroke="#3F5248" stroke-width="2"/>
+    <rect x="334" y="226" width="22" height="34" fill="#C9B79A"/>
+    <rect x="464" y="226" width="22" height="34" fill="#C9B79A"/>
+    <rect x="594" y="226" width="22" height="34" fill="#C9B79A"/>
+    <rect x="262" y="246" width="416" height="210" fill="#BFDDF0"/>
+    <rect x="254" y="214" width="10" height="250" fill="#2E3B34"/>
+    <rect x="676" y="214" width="10" height="250" fill="#2E3B34"/>
+    <rect x="254" y="456" width="432" height="10" fill="#2E3B34"/>
+    <path d="M342 260 C340 310 332 350 328 400 M348 260 C350 320 356 360 358 412 M472 260 C470 310 462 350 458 400 M478 260 C480 320 486 360 488 412 M602 260 C600 310 592 350 588 400 M608 260 C610 320 616 360 618 412" fill="none" stroke="#F1E6C8" stroke-width="3"/>
+    <rect x="430" y="434" width="80" height="12" rx="6" fill="#5B6F64"/>
+    <circle cx="446" cy="420" r="4" fill="#FFFFFF"/><circle cx="462" cy="402" r="5" fill="#FFFFFF"/><circle cx="480" cy="422" r="4" fill="#FFFFFF"/><circle cx="472" cy="380" r="5" fill="#FFFFFF"/><circle cx="456" cy="360" r="4" fill="#FFFFFF"/><circle cx="488" cy="344" r="4" fill="#FFFFFF"/><circle cx="466" cy="318" r="4" fill="#FFFFFF"/>
+    <path d="M510 440 L650 440 L650 200 L730 200 L730 320 L780 320" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="716" y="250" width="28" height="18" rx="4" fill="#D9A441" stroke="#0E1A14" stroke-width="2"/>
+    <rect x="780" y="303" width="72" height="34" rx="6" fill="#0E1A14"/>
+    <text x="816" y="325" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">AIR PUMP</text>
+    <rect x="686" y="432" width="24" height="14" fill="#3F5248"/>
+    <rect x="710" y="428" width="12" height="22" rx="3" fill="#D9534F"/>
+    <rect x="224" y="466" width="500" height="10" fill="#9DB8A8"/>
+    <path d="M240 252 L240 456" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M232 252 L248 252 M232 456 L248 456" stroke="#0E1A14" stroke-width="2"/>
+
+    <path d="M272 236 L238 180" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="132" font-size="15" font-weight="700" fill="#0E1A14">Floating raft</text>
+    <text x="40" y="152" font-size="13" fill="#3F5248">lettuce at 3–4 plants per sq ft;</text>
+    <text x="40" y="170" font-size="13" fill="#3F5248">sized to the tank, no light gaps</text>
+
+    <text x="40" y="262" font-size="15" font-weight="700" fill="#0E1A14">Solution depth</text>
+    <text x="40" y="282" font-size="13" fill="#3F5248">at least 12 in for a raft</text>
+    <text x="40" y="300" font-size="13" fill="#3F5248">system (Kentucky)</text>
+
+    <text x="40" y="344" font-size="15" font-weight="700" fill="#0E1A14">Opaque, covered sides</text>
+    <text x="40" y="364" font-size="13" fill="#3F5248">light in the solution</text>
+    <text x="40" y="382" font-size="13" fill="#3F5248">grows algae</text>
+
+    <path d="M430 440 L226 440" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="426" font-size="15" font-weight="700" fill="#0E1A14">Air stone, on all the time</text>
+    <text x="40" y="446" font-size="13" fill="#3F5248">7–10 ppm dissolved oxygen;</text>
+    <text x="40" y="464" font-size="13" fill="#3F5248">4 ppm is the minimum</text>
+
+    <rect x="300" y="290" width="340" height="96" rx="10" fill="#FFFFFF" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="470" y="316" font-size="15" font-weight="700" fill="#0E1A14" text-anchor="middle">Keep the solution at</text>
+    <text x="470" y="340" font-size="14" fill="#0E1A14" text-anchor="middle">65–80 °F  ·  pH 5.5–6.2</text>
+    <text x="470" y="364" font-size="14" fill="#0E1A14" text-anchor="middle">EC 1.2–1.8 mS/cm for lettuce</text>
+
+    <path d="M744 258 L770 236" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="774" y="214" font-size="15" font-weight="700" fill="#0E1A14">Check valve</text>
+    <text x="774" y="234" font-size="13" fill="#3F5248">stops back-flow</text>
+
+    <text x="780" y="362" font-size="15" font-weight="700" fill="#0E1A14">Pump outside</text>
+    <text x="780" y="380" font-size="13" fill="#3F5248">the tank, above</text>
+    <text x="780" y="398" font-size="13" fill="#3F5248">the water line</text>
+
+    <path d="M722 450 L752 500" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="756" y="506" font-size="15" font-weight="700" fill="#0E1A14">Drain valve</text>
+    <text x="756" y="526" font-size="13" fill="#3F5248">makes emptying easy</text>
+
+    <text x="254" y="510" font-size="15" font-weight="700" fill="#0E1A14">On the floor, level to within 1 inch</text>
+    <text x="254" y="530" font-size="13" fill="#3F5248">a full tank is heavy; the water volume also buffers temperature</text>
+  </g>
+</svg>

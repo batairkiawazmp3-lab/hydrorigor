@@ -16,7 +16,7 @@ export const m06EditorialSources = [
     url: 'https://extension.missouri.edu/publications/g6986',
     accessedDate: '2026-09-12',
     sourceType: 'university-extension',
-    locator: 'Types of hydroponic systems; crop fit; advantages and disadvantages',
+    locator: 'Types of hydroponic systems; crop fit; advantages and disadvantages; DWC (floating raft) is among the simpler systems to build and plants keep root contact with water if a pump stops',
   },
   {
     id: 'mu-nutrient-solutions',
@@ -124,7 +124,7 @@ export const m06EditorialSources = [
     url: 'https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf',
     accessedDate: '2026-11-03',
     sourceType: 'university-extension',
-    locator: 'Lettuce pH 5.5-6.0, EC about 1.5 (1.0 seedlings), DLI 12-17, PPFD, air temperature, humidity, dissolved oxygen, timeline, spacing, tipburn and bolting',
+    locator: 'Lettuce pH 5.5-6.0, EC about 1.5 (1.0 seedlings), DLI 12-17, PPFD, air temperature (days up to 75 °F, nights up to 65 °F), humidity, dissolved oxygen 6-8 ppm in DWC, timeline (germination about 3 days, transplant 14-21 days after seeding at 3-4 true leaves, harvest 21-35 days after transplanting), spacing (raft at least 12 in deep, 3-4 plants per sq ft), top up every few days and replace every 3-4 weeks, tipburn and bolting',
   },
   {
     id: 'kratky-noncirculating-lettuce',
@@ -142,7 +142,7 @@ export const m06EditorialSources = [
     url: 'https://cpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf',
     accessedDate: '2026-11-05',
     sourceType: 'university-extension',
-    locator: 'Section 1.1 (humidity covers needed for bare, not pelleted, seed; one seed per 1-inch rockwool plug); Chapter 4 Day 0-3 (20 °C germination, 50 then 250 µmol/m²/s, germination percentage check on Day 3, transplant Day 21, harvest Day 35)',
+    locator: 'Section 1.1 (humidity covers needed for bare, not pelleted, seed; one seed per 1-inch rockwool plug); Chapter 4 Day 0-3 (20 °C germination, 50 then 250 µmol/m²/s, germination percentage check on Day 3, transplant Day 21, harvest Day 35); pond (deep-flow raft) production system',
   },
   {
     id: 'egro-lettuce-tipburn-2023',

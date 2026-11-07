@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" width="960" height="460" role="img" aria-labelledby="t d">
+  <title id="t">A DWC lettuce crop from seed to harvest</title>
+  <desc id="d">A timeline for lettuce in deep water culture. Seed into rockwool or coir cubes; seedlings germinate in about 3 days and get a weak solution of about EC 1.0. Transplant to the raft 14 to 21 days after seeding, at 3 to 4 true leaves. Harvest 21 to 35 days after transplanting. Along the way, top up the tank every few days, check pH weekly and keep it in the 5.5 to 6.2 range, and replace the solution every 3 to 4 weeks.</desc>
+  <rect width="960" height="460" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">A DWC lettuce crop, seed to harvest</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Timing from University of Kentucky CCD-CP-63; pH from Kentucky and University of Illinois Extension</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="60" y="150" width="300" height="34" rx="6" fill="#D9EBD9"/>
+    <rect x="360" y="150" width="540" height="34" rx="6" fill="#7FC48E"/>
+    <text x="210" y="172" font-size="14" font-weight="700" fill="#0E1A14" text-anchor="middle">Seedlings in cubes</text>
+    <text x="630" y="172" font-size="14" font-weight="700" fill="#0E1A14" text-anchor="middle">On the raft</text>
+
+    <circle cx="60" cy="226" r="10" fill="#0E1A14"/>
+    <circle cx="360" cy="226" r="10" fill="#0E1A14"/>
+    <circle cx="900" cy="226" r="10" fill="#0E1A14"/>
+    <path d="M60 226 L900 226" stroke="#0E1A14" stroke-width="3"/>
+
+    <text x="60" y="262" font-size="15" font-weight="700" fill="#0E1A14">Day 0: seed</text>
+    <text x="60" y="282" font-size="13" fill="#3F5248">germinates in about 3 days;</text>
+    <text x="60" y="300" font-size="13" fill="#3F5248">weak feed, about EC 1.0</text>
+
+    <text x="360" y="262" font-size="15" font-weight="700" fill="#0E1A14" text-anchor="middle">Transplant</text>
+    <text x="360" y="282" font-size="13" fill="#3F5248" text-anchor="middle">14–21 days after seeding,</text>
+    <text x="360" y="300" font-size="13" fill="#3F5248" text-anchor="middle">at 3–4 true leaves</text>
+
+    <text x="900" y="262" font-size="15" font-weight="700" fill="#0E1A14" text-anchor="end">Harvest</text>
+    <text x="900" y="282" font-size="13" fill="#3F5248" text-anchor="end">21–35 days after</text>
+    <text x="900" y="300" font-size="13" fill="#3F5248" text-anchor="end">transplanting</text>
+
+    <rect x="60" y="336" width="260" height="84" rx="10" fill="#FFFFFF" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="80" y="366" font-size="15" font-weight="700" fill="#0E1A14">Every few days</text>
+    <text x="80" y="390" font-size="13" fill="#3F5248">top up the tank as plants drink</text>
+
+    <rect x="350" y="336" width="260" height="84" rx="10" fill="#FFFFFF" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="370" y="366" font-size="15" font-weight="700" fill="#0E1A14">Every week</text>
+    <text x="370" y="390" font-size="13" fill="#3F5248">check pH; keep it at 5.5–6.2</text>
+
+    <rect x="640" y="336" width="260" height="84" rx="10" fill="#FFFFFF" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="660" y="366" font-size="15" font-weight="700" fill="#0E1A14">Every 3–4 weeks</text>
+    <text x="660" y="390" font-size="13" fill="#3F5248">replace the solution, fully or partly</text>
+  </g>
+</svg>
