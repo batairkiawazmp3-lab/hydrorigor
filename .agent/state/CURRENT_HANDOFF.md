@@ -22,6 +22,10 @@ Updated: 2026-11-07
   of twice a week. Programme order in the plan: Awin and FlexOffers at the milestone, Amazon
   Associates when Google clicks are steady, Impact/CJ later; skip Skimlinks and Ascend direct
   (PayPal-only for Pakistan-based publishers).
+- Competitor analysis (2026-11-07, `docs/research/COMPETITORS_2026-11.md`): niche sites earn through
+  Gardyn (Impact or FlexOffers; sign-up at mygardyn.com/affiliate-sign-up/), Amazon and brand
+  programmes. A short video or photos of a real HydroRigor grow would add the experience signal no
+  competitor page proves.
 - Owner photos: a shot list of 10 home-setup photos and an author photo were requested; when
   they arrive, crop to 1600x900, add to `src/data/photos.ts`, and prefer them over stock.
   Best route (2026-11-05 plan): one real home grow (Kratky or small DWC with lettuce or basil),
