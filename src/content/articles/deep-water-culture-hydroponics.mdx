@@ -1,67 +1,260 @@
 ---
-title: "Deep Water Culture Hydroponics: Complete DWC System Guide"
-description: "Understand how deep water culture supports plants, which crops fit, what aeration changes, and where a simple DWC setup can fail."
+title: "Deep Water Culture Hydroponics: DWC Setup, Oxygen & pH"
+description: "DWC grows plants with roots in aerated solution: aim for 7–10 ppm oxygen, 65–80 °F water, pH 5.5–6.2 and EC 1.2–1.8 for lettuce. Setup, crops and fixes."
 route: "deep-water-culture-hydroponics"
 publishDate: 2026-09-12
+updatedDate: 2026-11-07
 author: "HydroRigor Editorial"
 category: "systems"
 tags: ["dwc", "systems", "root-zone"]
 sources:
+  - id: "osu-hydro-hints-dwc"
+    title: "Hydro hints: Deep water culture (EM 9455)"
+    url: "https://extension.oregonstate.edu/catalog/pub/em-9455-hydro-hints-deep-water-culture"
+    publisher: "Oregon State University Extension Service"
+    accessedDate: 2026-11-06
+  - id: "vt-system-crop-comparisons"
+    title: "Hydroponic Production of Edible Crops: System and Crop Comparisons (SPES-466NP)"
+    url: "https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html"
+    publisher: "Virginia Cooperative Extension"
+    accessedDate: 2026-11-06
+  - id: "ifas-lettuce-small-systems"
+    title: "Growing Lettuce in Small Hydroponic Systems (HS1422)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1422"
+    publisher: "UF/IFAS Extension"
+    accessedDate: 2026-09-12
+  - id: "uky-hydroponic-lettuce"
+    title: "Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)"
+    url: "https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification"
+    accessedDate: 2026-11-03
+  - id: "illinois-hydroponics-at-home"
+    title: "Hydroponics at Home"
+    url: "https://extension.illinois.edu/sites/default/files/inline-files/Home%20Hydroponics.pdf"
+    publisher: "University of Illinois Extension"
+    accessedDate: 2026-11-06
+  - id: "cornell-cea-lettuce-handbook"
+    title: "Cornell Controlled Environment Agriculture Hydroponic Lettuce Handbook"
+    url: "https://cpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf"
+    publisher: "Cornell University CEA Program"
+    accessedDate: 2026-11-05
+  - id: "ifas-volusia-dwc-bucket"
+    title: "Making Your Own, Inexpensive Hydroponic Bucket (Deep Water Culture)"
+    url: "https://www.volusia.org/core/fileparse.php/4461/urlt/making-your-own-hydroponic-bucket.pdf"
+    publisher: "UF/IFAS Extension Volusia County (J. Sewards)"
+    accessedDate: 2026-11-06
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics (HLA-6722)"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-06
+  - id: "kratky-noncirculating-lettuce"
+    title: "Three Non-circulating Hydroponic Methods for Growing Lettuce (Acta Horticulturae 843)"
+    url: "https://www3.ctahr.hawaii.edu/Hawaii/downloads/Three_Non-circulating_Hydroponic_Methods_for_Growing_lettuce.pdf"
+    publisher: "B.A. Kratky, University of Hawaii CTAHR"
+    accessedDate: 2026-11-03
   - id: "mu-hydroponic-farming"
     title: "Controlled Environment Agriculture: Hydroponic Farming"
     url: "https://extension.missouri.edu/publications/g6986"
     publisher: "University of Missouri Extension"
-    accessedDate: 2026-09-12
-  - id: "unh-home-hydroponics"
-    title: "Hydroponics at Home"
-    url: "https://extension.unh.edu/resource/hydroponics-home"
-    publisher: "University of New Hampshire Extension"
     accessedDate: 2026-09-12
 affiliateDisclosure: false
 commercialDestinationIds: []
 draft: false
 ---
 
-Deep water culture keeps roots in a comparatively deep reservoir of nutrient solution while a lid, raft, or net cup supports the plant. An air pump and diffuser commonly add oxygen. The design is mechanically simple, but success still depends on light control, oxygenation, clean equipment, solution management, and crop fit.
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-## What makes DWC different
+**Deep water culture (DWC)** grows plants with their roots hanging in a tank of nutrient solution, held up by a floating raft or a lid with net cups, while an air pump and air stone keep the water full of oxygen. To run it well, keep **dissolved oxygen at 7–10 ppm, never below 4 ppm** (Virginia Tech), the **solution at 65–80 °F** (UF/IFAS), **pH between 5.5 and 6.2** (University of Kentucky; University of Illinois) and, for lettuce, **EC at 1.2–1.8 mS/cm** (UF/IFAS). A raft tank should hold **at least 12 inches of solution** and carries about **3–4 lettuce plants per square foot** (University of Kentucky).
 
-In NFT, a shallow moving film contacts part of the root system. In DWC, roots remain immersed. University of Missouri Extension describes DWC as a floating-raft approach and notes that it is among the simpler water-based systems to construct. The same comparison also points out a practical benefit: plants do not immediately lose all root contact with water if a circulation pump stops.
+DWC suits lettuce, spinach, kale and herbs (Oregon State). In a Virginia Tech side-by-side trial, greens and herbs gave their best yields in DWC and NFT, while tomatoes and peppers did best in growing media. This guide covers how DWC works, which crops fit, the build, the weekly routine and how to fix the problems that come up. Every number is tied to a university or extension source listed at the end.
 
-Immersion does not mean roots can be ignored. Roots need oxygen for respiration. A small home DWC setup usually supplies it with an air pump, tubing, and diffuser. The air system, water temperature, root condition, and cleanliness all deserve routine observation.
+<KeyTargets
+  title="Deep water culture: the targets"
+  source="Virginia Tech, UF/IFAS and University of Kentucky Extension"
+  items={[
+    { label: 'Dissolved oxygen', value: '7–10 ppm', note: '4 ppm is the minimum' },
+    { label: 'Solution temperature', value: '65–80 °F', note: '18–27 °C' },
+    { label: 'Solution pH', value: '5.5–6.2', note: 'check it weekly' },
+    { label: 'Lettuce EC', value: '1.2–1.8', note: 'mS/cm' },
+  ]}
+/>
 
-## Crops that fit—and crops that add demands
+## Quick answer: DWC numbers and where they come from
 
-Leafy greens and many herbs are common DWC crops because their structure is relatively compact. A larger fruiting plant may be possible in a bucket-style system, but it needs stronger support, more root volume, and a plan for a much longer crop cycle.
+| Question | Answer | Source |
+| --- | --- | --- |
+| Dissolved oxygen | 7–10 ppm; 4 ppm is the minimum. Kentucky gives 6–8 ppm for lettuce and UF/IFAS 5 mg/L (ppm and mg/L are the same unit) | Virginia Tech SPES-466; University of Kentucky CCD-CP-63; UF/IFAS HS1422 |
+| Solution temperature | 65–80 °F (18–27 °C) | UF/IFAS HS1422 |
+| Solution pH | 5.5–6.0 (Kentucky) or about 5.8–6.2 (Illinois); keep it within 5.5–6.2 | University of Kentucky; University of Illinois Extension |
+| EC for lettuce | 1.2–1.8 mS/cm (UF/IFAS); about 1.5 for growing plants and 1.0 for seedlings (Kentucky) | UF/IFAS HS1422; University of Kentucky |
+| Solution depth (raft) | At least 12 inches | University of Kentucky |
+| Lettuce spacing (raft) | 3–4 plants per square foot | University of Kentucky |
+| Lettuce timing | Transplant 14–21 days after seeding; harvest 21–35 days after transplanting | University of Kentucky |
+| Light for lettuce | Daily light integral (DLI) 12–17 mol/m²/day | University of Kentucky |
+| Air temperature for lettuce | Days up to 75 °F (24 °C), nights up to 65 °F (18 °C) | University of Kentucky |
+| Solution care | Top up every few days; replace fully or partly every 3–4 weeks | University of Kentucky |
+| Best DWC crops | Lettuce, spinach, kale and herbs | Oregon State EM 9455 |
 
-Choose the plant before drilling a lid. The opening must support the transplant without pinching the stem, and spacing must reflect mature foliage rather than seedling size. For lettuce-specific tradeoffs, see [DWC, NFT, and Kratky for lettuce](/crops/hydroponic-lettuce-systems/).
+Why three oxygen figures? The sources were written for different systems and crops. Virginia Tech's 7–10 ppm is the highest and comes with a hard floor of 4 ppm, so it is the safest target. Few home growers own a dissolved oxygen meter, so in practice that means: keep the air pump running all the time, check the stone bubbles evenly, and keep the water inside the 65–80 °F range, because warm water holds less oxygen.
 
-## The minimum functional system
+![Cross-section of a deep water culture raft tank. Lettuce in a floating raft at 3–4 plants per square foot, raft sized to the tank so no light gets in; opaque sides; at least 12 inches of solution at 65–80 °F, pH 5.5–6.2 and EC 1.2–1.8 for lettuce; an air stone on the bottom running all the time for 7–10 ppm oxygen, 4 ppm minimum; the air pump outside the tank with a check valve; a drain valve near the bottom; the tank on a floor level to within 1 inch.](/images/guides/dwc-system-cross-section.svg)
 
-A basic active DWC system needs:
+*The parts of a DWC tank and the numbers that keep it healthy. Targets from Virginia Tech SPES-466, UF/IFAS HS1422, University of Kentucky CCD-CP-63 and Oregon State EM 9455.*
 
-- an opaque, water-safe reservoir with access for cleaning;
-- a stable lid or plant support;
-- appropriate net cups or plugs;
-- an air pump, tubing, and diffuser sized for continuous operation;
-- a controllable light source when sunlight is insufficient;
-- a hydroponic nutrient product used according to its current label;
-- a repeatable way to observe solution level and measure relevant conditions.
+## How deep water culture works
 
-Opaque surfaces matter because light reaching nutrient solution encourages unwanted biological growth. Electrical equipment should be arranged with drip loops and kept away from spill paths.
+In DWC the roots stay in the solution all the time. Plants sit in net cups or starter cubes pushed through a floating foam board (a raft) or a lid, and the roots grow down into an aerated tank. Roots need oxygen to respire, and standing water runs short of it, so an air pump pushes air through an air stone on the tank floor. The bubbles mix the solution and add oxygen.
 
-## Start and maintain the root zone
+This is different from the two systems it is most often compared with:
 
-Begin seedlings in a clean propagation medium and transplant only after roots can reach a moist zone without burying the plant crown. Keep the young plug moist while leaving stem and crown tissue appropriately exposed. As roots extend into solution, inspect their appearance and smell rather than relying only on a display.
+- **NFT** (nutrient film technique) runs a thin stream of solution along sloped channels. If the pump stops, the roots soon dry out.
+- **Kratky** is a passive method developed by B.A. Kratky at the University of Hawaii. All the solution goes in before planting, and nothing is added. As the plant drinks, the level drops and roots in the moist air gap take in oxygen, so no pump is needed.
 
-Record additions, measurements, cleaning, and plant response. Electrical conductivity is a measure of dissolved ionic conductivity—not a complete nutrient analysis—and pH affects nutrient availability. Use the [source-supported pH and EC reference](/tools/ph-ec-targets/) for stored crop records and their context rather than assuming one universal DWC value.
+DWC sits between them. It needs an air pump, but University of Missouri Extension points out a real advantage: if a pump stops, the roots are still in water, so plants do not lose contact with the solution straight away. Oregon State adds that the large volume of water buffers temperature, so the root zone warms and cools slowly.
 
-## Failure points to plan for
+### Raft tank or bucket?
 
-Common preventable failures include light leaks, a blocked airline, an unplugged pump, inaccessible corners that cannot be cleaned, unstable plant supports, and allowing a solution reading to replace visual inspection. A larger reservoir can change how quickly conditions move, but it also becomes heavier and harder to empty.
+There are two common home formats:
 
-The safest beginner design is not necessarily the one with the most accessories. It is the one whose water path, air path, cleaning access, and failure response are easy to understand.
+- **A raft tank or tote.** A wide, shallow-looking container with a foam board floating on the solution. It holds many small plants and is the format the University of Kentucky and Oregon State describe for lettuce and greens.
+- **A single bucket.** UF/IFAS Volusia County Extension publishes a one-plant 5-gallon DWC bucket: a 6-inch pot in a 6-inch hole in the lid, four ¼-inch holes for a tomato cage, and a 1-inch side hole for the air tube and topping up. An aquarium pump runs one or two air stones. It is built for long-term crops such as tomatoes, peppers and cucumbers.
+
+## Which crops grow well in DWC?
+
+**Leafy greens and herbs are the best fit.** Oregon State lists lettuce, spinach, kale and herbs for DWC, and UF/IFAS calls a floating raft ideal for short-term crops such as lettuce. In Virginia Tech's trial, greens and herbs gave their highest yields in NFT and DWC.
+
+| Crop | DWC fit | What the sources say |
+| --- | --- | --- |
+| Lettuce | Excellent | Floating raft ideal for short-term crops (UF/IFAS); 3–4 plants per sq ft and 21–35 days from transplant to harvest (Kentucky) |
+| Spinach | Good, watch for root rot | Among the best yields in DWC and NFT, but Virginia Tech's spinach developed Pythium root rot in both |
+| Kale | Good | Listed for DWC by Oregon State |
+| Herbs (basil, parsley and others) | Good | Parsley yielded more in DWC than NFT in the Virginia Tech trial (4.63 oz against 3.78 oz) |
+| Tomatoes, peppers, cucumbers | Possible, not the first choice | The UF/IFAS Volusia bucket grows one plant; Virginia Tech got its best tomato and pepper yields from media systems, and Oregon State recommends buckets of media for long-lived and vining crops |
+
+**Recommendation:** use DWC for greens and herbs. For fruiting crops, a Dutch bucket of perlite on drip is the stronger choice, as covered in [the best hydroponic system for home growers](/best/hydroponic-system-for-home-growers/). If you want one tomato plant and already run DWC, the Volusia bucket design shows it can be done.
+
+## What you need
+
+From University of Illinois Extension and Oregon State EM 9455:
+
+- **A container** such as a tote, aquarium or food-grade bucket. If it is clear, cover the sides so light cannot reach the solution and grow algae.
+- **A raft** of foam board cut to fit loosely so it floats, or a lid with holes for net cups. Oregon State says to match the raft to the tank so no gaps let light in.
+- **An air pump, airline tubing, an air stone and a check valve.** The check valve stops water flowing back down the line to the pump.
+- **Starter cubes** of rockwool or coconut coir, or net cups.
+- **A pre-formulated hydroponic nutrient.** Illinois advises against fertilizers made for soil.
+- **A pH test kit or meter**, and ideally an EC meter.
+- **Light**: a sunny spot or a grow light. Illinois gives 6–8 hours of light a day for a home tank; for lettuce, Kentucky's target is a DLI of 12–17 mol/m²/day.
+- **Optional but useful:** a bulkhead fitting and valve near the bottom so you can drain the tank (Oregon State).
+
+## Step-by-step DWC setup
+
+1. **Start seedlings first.** Sow into rockwool or coir cubes. Kentucky reports lettuce germinating in about 3 days near 68 °F (20 °C), fed with a weak solution of about EC 1.0.
+2. **Pick the spot before you fill.** Oregon State says a DWC tank must sit on the ground, with its bottom level to within one inch. Water is heavy, and you will not move it once full.
+3. **Block the light.** Cover clear sides. Light reaching the solution feeds algae.
+4. **Fit the air system.** Air stone on the tank floor, tubing over the rim, check valve in the line, pump outside the tank. Keep plugs and power strips above and away from any spill path.
+5. **Fill and mix.** Fill to at least 12 inches for a raft tank (Kentucky). Mix the nutrient by its label, then measure. Aim for EC 1.2–1.8 for lettuce (UF/IFAS). Oklahoma State advises getting EC right first and adjusting pH only once EC is in range. The [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) and the guide to [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/) help with doses.
+6. **Set the pH.** Bring it into the 5.5–6.2 range.
+7. **Start the air before planting.** Turn the pump on and check the stone bubbles across its whole surface.
+8. **Float the raft and plant.** Cut holes at about 3–4 plants per square foot for lettuce. Transplant 14–21 days after seeding, at 3–4 true leaves (Kentucky), pushing each cube in so its bottom reaches the solution (Illinois).
+9. **Leave the pump on.** DWC aeration runs 24 hours a day; it is not a timer system.
+
+For a full parts list and a step-by-step tote build, see the [DIY hydroponic system guide](/systems/diy-hydroponic-system-for-beginners/).
+
+## The weekly routine
+
+DWC is simple, but it is not set-and-forget. These checks come from the University of Kentucky, University of Illinois Extension and Oklahoma State:
+
+| How often | Check | Target or action | Source |
+| --- | --- | --- | --- |
+| Daily, at a glance | Air stone bubbling, pump running, water level | Even bubbles; level touching the cubes or roots | Virginia Tech; Illinois |
+| Daily if you can | pH and EC, at the same time each day | EC first, then pH | Oklahoma State HLA-6722 |
+| Every few days | Top up | Add water or solution as plants drink | University of Kentucky |
+| Weekly | pH | 5.5–6.2 | University of Illinois; University of Kentucky |
+| Weekly | Solution temperature | 65–80 °F | UF/IFAS HS1422 |
+| Every 3–4 weeks | Replace the solution | Fully or partly | University of Kentucky |
+| Between crops | Drain and clean the tank and raft | Use the drain valve if fitted | Oregon State EM 9455 |
+
+If EC climbs, Oklahoma State says to dilute with water; if it falls, add concentrate. For crop-by-crop pH and EC records, use the [pH and EC targets tool](/tools/ph-ec-targets/).
+
+![Timeline for a DWC lettuce crop. Seed into cubes on day 0; germination in about 3 days with a weak feed of about EC 1.0. Transplant to the raft 14–21 days after seeding at 3–4 true leaves. Harvest 21–35 days after transplanting. Top up every few days, check pH weekly at 5.5–6.2, and replace the solution every 3–4 weeks.](/images/guides/dwc-lettuce-crop-timeline.svg)
+
+*A lettuce crop in DWC, with the routine checks underneath. Timing from University of Kentucky CCD-CP-63; pH from Kentucky and University of Illinois Extension.*
+
+Cornell's commercial pond (deep-flow raft) schedule lines up with Kentucky's: transplant on day 21 and harvest on day 35 under controlled light. Home timing will usually be slower if your light falls short of the 12–17 mol/m²/day target.
+
+## Light and room temperature
+
+The tank looks after the roots; the room looks after the leaves. For lettuce, the University of Kentucky recommends days no warmer than 75 °F (24 °C) and nights no warmer than 65 °F (18 °C). Heat brings bolting and tipburn. Virginia Tech found that a DLI of at least 17 mol/m²/day favoured higher yields of greens and herbs, which sits at the top of Kentucky's 12–17 range for lettuce.
+
+A warm room also warms the tank. If the solution creeps above 80 °F, oxygen falls just as the roots need more of it. That is the most common route to root rot in DWC.
+
+## Root rot, oxygen and temperature
+
+Root rot is the problem DWC growers talk about most. In Virginia Tech's trial, spinach developed **Pythium root rot** in both NFT and DWC. The authors note that raising oxygen helps control it in DWC and float beds. The practical defence is the same set of numbers in the targets box: oxygen at 7–10 ppm, solution no warmer than 80 °F, a light-tight tank, and clean equipment between crops.
+
+The sources do not give a home-scale treatment protocol for Pythium once it takes hold, and this guide does not invent one. If roots turn brown and slimy across the tank, the safe course is to improve aeration and cooling, discard badly affected plants, and drain and clean the system before replanting.
+
+## Troubleshooting DWC
+
+| Problem | Likely cause | What to do | Source |
+| --- | --- | --- | --- |
+| Brown, slimy roots; plants wilting with wet roots | Low oxygen, warm solution, Pythium root rot | Check the pump and stone; aim for 7–10 ppm; cool the solution to 80 °F or below | Virginia Tech SPES-466; UF/IFAS HS1422 |
+| Green film or slime on the walls or raft | Light reaching the solution | Cover clear sides; size the raft to the tank so no gaps let light in | Illinois; Oregon State EM 9455 |
+| Water in the airline or a dead pump after an outage | No check valve | Fit a check valve; keep the pump outside and above the tank | University of Illinois Extension |
+| Seedlings drying out after transplant | Cube bottoms not reaching the solution | Push cubes down or raise the level so the bottom of each cube touches the solution | University of Illinois Extension |
+| pH drifting outside 5.5–6.2 | Normal drift as plants feed | Check EC first, then adjust pH; test at the same time each day | Oklahoma State HLA-6722 |
+| EC climbing between top-ups | Plants taking more water than nutrients | Top up with plain water; replace the solution every 3–4 weeks | Oklahoma State HLA-6722; University of Kentucky |
+| Lettuce bolting or tipburn | Room too warm | Keep days at or below 75 °F and nights at or below 65 °F | University of Kentucky |
+| Tank hard to clean or empty | No drain fitted | Add a bulkhead fitting and valve near the bottom | Oregon State EM 9455 |
 
 ## When DWC is the wrong choice
 
-Choose another approach if continuous aeration is impractical, the reservoir cannot be safely placed and serviced, or the crop needs extensive support that the planned container cannot provide. Compare alternatives in the [home system guide](/systems/indoor-hydroponic-systems-for-home/) and [the best hydroponic system for home growers](/best/hydroponic-system-for-home-growers/) before committing to a build. If DWC fits, the [DIY hydroponic system guide](/systems/diy-hydroponic-system-for-beginners/) covers a simple home build.
+Choose a different system if:
+
+- **You cannot keep a pump running.** A [Kratky bucket](/systems/diy-hydroponic-system-for-beginners/) needs no power at all.
+- **The tank cannot sit on a level floor.** Oregon State is clear that DWC tanks belong on the ground.
+- **You mainly want tomatoes, peppers or cucumbers.** Media systems such as Dutch buckets gave the best fruiting-crop yields in the Virginia Tech trial; see [hydroponic tomatoes](/crops/hydroponic-tomatoes/).
+- **Your room runs hot and you cannot cool the water.** The 65–80 °F solution range is hard to hold in a hot space, and warm water holds less oxygen.
+
+To compare DWC with NFT and Kratky for lettuce specifically, read [hydroponic lettuce systems compared](/crops/hydroponic-lettuce-systems/). For a wider look at home setups, see [indoor hydroponic systems for home](/systems/indoor-hydroponic-systems-for-home/).
+
+## Frequently asked questions
+
+### What is deep water culture in hydroponics?
+
+A system where plant roots hang in a tank of aerated nutrient solution, supported by a floating raft or a lid with net cups. An air pump and air stone keep oxygen in the water. Oregon State recommends it for lettuce, spinach, kale and herbs.
+
+### How much oxygen does a DWC system need?
+
+Virginia Tech keeps dissolved oxygen at 7–10 ppm, with 4 ppm as the minimum. The University of Kentucky gives 6–8 ppm for lettuce and UF/IFAS 5 mg/L. Aiming for 7–10 ppm covers all three.
+
+### What water temperature is best for DWC?
+
+UF/IFAS gives 65–80 °F (18–27 °C) for the nutrient solution. Warmer water holds less oxygen, which raises the risk of root rot.
+
+### What pH should a DWC system run at?
+
+Between 5.5 and 6.2. The University of Kentucky gives 5.5–6.0 for lettuce and University of Illinois Extension about 5.8–6.2. Check it at least weekly.
+
+### How deep should the water be in DWC?
+
+The University of Kentucky describes raft systems with solution at least 12 inches deep. The UF/IFAS Volusia single-plant design uses a 5-gallon bucket.
+
+### Should the air pump run all the time?
+
+Yes. DWC roots sit in the solution full time, so aeration has to be continuous. Fit a check valve so water cannot flow back into the pump if it stops.
+
+### How often should I change the water?
+
+The University of Kentucky's advice is to top up every few days and replace the solution, fully or partly, every 3–4 weeks.
+
+### Can I grow tomatoes in DWC?
+
+You can: UF/IFAS Volusia County Extension publishes a one-plant DWC bucket for tomatoes, peppers and cucumbers. But Virginia Tech's best tomato and pepper yields came from media systems, so for fruiting crops a Dutch bucket is the stronger choice.
+
+### Is DWC better than Kratky?
+
+They suit different needs. Kratky needs no pump or power and suits a first crop. DWC needs an air pump but holds more plants and keeps roots in water if the pump stops. The [hydroponic lettuce guide](/crops/hydroponic-lettuce/) recommends Kratky to learn the crop, then a small DWC tub.
+
+*Figures in this guide come from the university and extension sources listed below. Home systems vary, so treat them as starting points and watch your own plants and roots. HydroRigor has not grown and measured a DWC crop for this guide.*
