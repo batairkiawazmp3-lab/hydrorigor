@@ -35,7 +35,22 @@ export interface ContentItem {
   toolLinks: readonly string[];
 }
 
-export const phase2ContentItems: readonly ContentItem[] = [];
+export const phase2ContentItems: readonly ContentItem[] = [
+  {
+    id: 59,
+    collection: 'articles',
+    category: 'systems',
+    title: 'Hydroponic Tower Garden: How It Works, Crops & DIY Build',
+    route: 'hydroponic-tower-garden',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic tower',
+    metricStatus: 'UBERSUGGEST_2026-11-06',
+    volume: 6600,
+    seoDifficulty: 33,
+    sourceIds: ['okstate-vertical-tower-hla6724', 'ifas-stlucie-vertical-towers', 'touliatos-vertical-lettuce-2016', 'wortman-vertical-strawberry-2016', 'osu-ph-ec-guide', 'uky-hydroponic-lettuce', 'ua-strawberry-irrigation', 'osu-hydro-hints-nft', 'osu-hydro-hints-dwc', 'ifas-kratky-set-and-forget'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
+];
 
 export const contentItems: readonly ContentItem[] = [
   ...m06ContentItems.map((item: M06ContentItem): ContentItem => ({ ...item })),

@@ -12,6 +12,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-07 | /systems/hydroponic-tower-garden/ | New guide (hydroponic tower 6,600 / 33) | 2026-11-21, 2026-12-05 |
 | 2026-11-05 | /crops/hydroponic-lettuce-seeds/ | Full rebuild | 2026-11-19, 2026-12-03 |
 | 2026-11-05 | /best/hydroponic-system-for-home-growers/ | Answer-first description; 4 new internal links | 2026-11-19 |
 | 2026-11-06 | /best/hydroponic-system-for-home-growers/ | Full rebuild (title, 2,480 words, 2 diagrams, 10 sources); baseline position 14 for "most effective hydroponic system" | 2026-11-20, 2026-12-04 |
