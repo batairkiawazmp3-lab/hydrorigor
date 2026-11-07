@@ -106,6 +106,7 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-systems-for-sale': 'tower-pink-led',
   'hydroponic-system-for-home-growers': 'tower-lettuce-closeup',
   'smart-indoor-hydroponic-systems': 'bok-choy-indoor-unit',
+  'hydroponic-tower-garden': 'tower-garden-greens',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-labelledby="t d">
+  <title id="t">How a vertical hydroponic tower works</title>
+  <desc id="d">Labelled cross-section of a DIY vertical hydroponic tower based on Oklahoma State Extension fact sheet HLA-6724. A submersible pump rated at 400 gallons per hour sits in a 45-gallon tank and runs on a timer. Tubing carries nutrient solution to the top of the tower, where about 10 holes spread it, and it trickles down inside the tower past the roots of plants in 3-inch net pots, then drains back into the tank. The net pots are staggered on each side so they do not touch inside. The recommended tower height is 5 to 6 feet, one tower holds 28 plants, and indoors lights must be placed above the tower. Light reaching the plants falls from the top of the tower to the base, so lower plants grow less.</desc>
+  <rect width="960" height="600" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Inside a vertical hydroponic tower</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Parts from Oklahoma State HLA-6724; light gradient from Touliatos et al. (2016)</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="390" y="104" width="180" height="16" rx="8" fill="#D9A441"/>
+    <path d="M410 128 L400 148 M440 128 L436 148 M480 128 L480 148 M520 128 L524 148 M550 128 L560 148" stroke="#D9A441" stroke-width="3"/>
+
+    <rect x="440" y="160" width="80" height="330" fill="#FFFFFF" stroke="#3F5248" stroke-width="4"/>
+    <rect x="432" y="152" width="96" height="16" rx="3" fill="#3F5248"/>
+    <circle cx="452" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="466" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="480" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="494" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="508" cy="160" r="2.5" fill="#BFDDF0"/>
+    <path d="M454 176 L452 480 M470 176 L472 480 M490 176 L488 480 M506 176 L508 480" stroke="#7FB7DA" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <g fill="#C9B79A" stroke="#3F5248" stroke-width="1.5">
+      <path d="M440 196 L412 184 L412 212 L440 220 Z"/>
+      <path d="M520 246 L548 234 L548 262 L520 270 Z"/>
+      <path d="M440 296 L412 284 L412 312 L440 320 Z"/>
+      <path d="M520 346 L548 334 L548 362 L520 370 Z"/>
+      <path d="M440 396 L412 384 L412 412 L440 420 Z"/>
+      <path d="M520 446 L548 434 L548 462 L520 470 Z"/>
+    </g>
+    <g fill="#5FAE72">
+      <path d="M412 188 C392 168 378 166 372 176 C384 182 396 190 410 196 Z M412 192 C396 196 384 206 384 216 C398 212 406 206 412 200 Z"/>
+      <path d="M548 238 C568 218 582 216 588 226 C576 232 564 240 550 246 Z M548 242 C564 246 576 256 576 266 C562 262 554 256 548 250 Z"/>
+      <path d="M412 288 C394 272 384 270 380 278 C390 284 400 290 410 296 Z M412 292 C398 296 390 304 390 312 C402 308 408 304 412 300 Z"/>
+      <path d="M548 338 C564 322 574 320 578 328 C568 334 558 340 550 346 Z M548 342 C562 346 570 354 570 362 C558 358 552 354 548 350 Z"/>
+      <path d="M412 388 C398 376 390 374 388 380 C396 386 404 392 410 396 Z M412 392 C402 396 396 402 396 408 C404 406 410 402 412 398 Z"/>
+      <path d="M548 438 C560 426 568 424 570 430 C562 436 556 440 550 446 Z M548 442 C558 446 564 452 564 458 C556 456 550 452 548 448 Z"/>
+    </g>
+    <path d="M440 216 C452 220 458 226 462 236 M520 266 C508 270 502 276 498 286 M440 316 C452 320 458 326 462 336 M520 366 C508 370 502 376 498 386 M440 416 C452 420 458 426 462 436" fill="none" stroke="#F1E6C8" stroke-width="2.5"/>
+
+    <rect x="360" y="490" width="240" height="70" rx="8" fill="#BFDDF0" stroke="#3F5248" stroke-width="4"/>
+    <rect x="370" y="528" width="44" height="24" rx="5" fill="#0E1A14"/>
+    <text x="392" y="545" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">PUMP</text>
+    <path d="M414 540 L480 540 L480 170" fill="none" stroke="#0E1A14" stroke-width="3"/>
+
+    <path d="M392 112 L300 112" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="108" font-size="15" font-weight="700" fill="#0E1A14">Indoors: lights above</text>
+    <text x="40" y="128" font-size="13" fill="#3F5248">the tower are required</text>
+
+    <path d="M432 160 L300 176" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="170" font-size="15" font-weight="700" fill="#0E1A14">Top: about 10 holes</text>
+    <text x="40" y="190" font-size="13" fill="#3F5248">spread the solution</text>
+
+    <path d="M412 300 L300 300" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="292" font-size="15" font-weight="700" fill="#0E1A14">3-inch net pots, staggered</text>
+    <text x="40" y="312" font-size="13" fill="#3F5248">so they do not touch inside;</text>
+    <text x="40" y="330" font-size="13" fill="#3F5248">28 plants per tower</text>
+
+    <path d="M452 420 L300 420" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="412" font-size="15" font-weight="700" fill="#0E1A14">Solution trickles down</text>
+    <text x="40" y="432" font-size="13" fill="#3F5248">past the roots and drains</text>
+    <text x="40" y="450" font-size="13" fill="#3F5248">back into the tank</text>
+
+    <path d="M370 540 L300 520" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="40" y="508" font-size="15" font-weight="700" fill="#0E1A14">Submersible pump</text>
+    <text x="40" y="528" font-size="13" fill="#3F5248">400 gal/hr, on a timer,</text>
+    <text x="40" y="546" font-size="13" fill="#3F5248">in a 45-gallon tank</text>
+
+    <path d="M600 165 L600 485" stroke="#0E1A14" stroke-width="1.5"/>
+    <path d="M594 165 L606 165 M594 485 L606 485" stroke="#0E1A14" stroke-width="1.5"/>
+    <text x="616" y="330" font-size="15" font-weight="700" fill="#0E1A14">5–6 ft tall</text>
+
+    <rect x="720" y="150" width="200" height="300" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="740" y="182" font-size="15" font-weight="800" fill="#0E1A14">Light falls toward</text>
+    <text x="740" y="202" font-size="15" font-weight="800" fill="#0E1A14">the base</text>
+    <rect x="740" y="220" width="36" height="200" rx="6" fill="#FBEFD0"/>
+    <rect x="740" y="220" width="36" height="70" rx="6" fill="#D9A441"/>
+    <rect x="740" y="290" width="36" height="60" fill="#E8C878"/>
+    <text x="790" y="240" font-size="13" fill="#0E1A14">Top: most light,</text>
+    <text x="790" y="258" font-size="13" fill="#0E1A14">biggest plants</text>
+    <text x="790" y="396" font-size="13" fill="#0E1A14">Base: less light,</text>
+    <text x="790" y="414" font-size="13" fill="#0E1A14">smaller plants</text>
+    <text x="740" y="440" font-size="11" fill="#5B6F64">Touliatos et al. 2016</text>
+  </g>
+  <text x="40" y="584" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5B6F64">HydroRigor · hydrorigor.com/systems/hydroponic-tower-garden/</text>
+</svg>

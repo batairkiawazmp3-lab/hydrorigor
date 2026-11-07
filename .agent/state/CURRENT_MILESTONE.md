@@ -58,7 +58,7 @@ mixing in one new guide for every two or three rebuilds.
        "diy hydroponics systems" (position 81) and "hydroponics diy system" (position 99).
 6. [x] `/systems/deep-water-culture-hydroponics/` — rebuilt 2026-11-07 ("Deep Water Culture Hydroponics: DWC Setup, Oxygen & pH"). "hydroponic system deep water culture"
        4,400 / 25; "hydroponic system dwc" 2,900 / 28. Search Console: 4 impressions, position 54.
-7. [ ] New guide, plan ID 59 (repurposed): hydroponic towers — "hydroponic tower" 6,600 / 33,
+7. [x] New guide, plan ID 59 (repurposed): hydroponic towers — published 2026-11-07 at `/systems/hydroponic-tower-garden/` — "hydroponic tower" 6,600 / 33,
        "hydroponic tower diy" 1,300 / 32. How towers work, crops, light, DIY versus kits;
        research-based, no product picks until an affiliate programme is approved.
 8. [ ] `/systems/indoor-hydroponic-systems-for-home/` — buyer-oriented rebuild. "hydroponic system
