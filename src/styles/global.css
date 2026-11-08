@@ -252,6 +252,12 @@ body {
 }
 
 @media (min-width: 640px) {
+  .hr-prose .hr-figure-tall {
+    max-width: 32rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .hr-prose .hr-figure-zoom-phone {
     display: none;
   }

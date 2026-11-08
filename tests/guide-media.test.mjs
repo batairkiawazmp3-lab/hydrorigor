@@ -35,8 +35,9 @@ test('diagrams link to their full-size file, reserve their space and carry the c
   assert.equal(link.properties.href, src);
   const img = link.children[0];
   assert.equal(img.properties.alt, 'Cross-section', 'the alt text names the link');
-  assert.equal(img.properties.width, 960);
-  assert.equal(img.properties.height, 600);
+  assert.equal(img.properties.width, 640);
+  assert.equal(img.properties.height, 1110);
+  assert.deepEqual(figure.properties.className, ['hr-figure', 'hr-figure-tall'], 'portrait diagrams get a narrower desktop frame');
   assert.equal(img.properties.loading, 'lazy');
   assert.ok(link.children.slice(1).every((hint) => hint.properties.ariaHidden === 'true'), 'hints are not read twice');
   assert.equal(caption.tagName, 'figcaption');
@@ -51,12 +52,8 @@ const LEGACY_DIAGRAMS = new Set([
   'diy-hydroponic-builds-compared.svg',
   'dwc-lettuce-crop-timeline.svg',
   'dwc-system-cross-section.svg',
-  'home-hydroponic-system-by-crop.svg',
-  'home-hydroponic-systems-cross-section.svg',
   'indoor-crop-light-needs-dli.svg',
   'indoor-hydroponic-system-types-compared.svg',
-  'hydroponic-tower-cross-section.svg',
-  'hydroponic-tower-spacing-by-crop.svg',
   'lettuce-quick-reference.svg',
   'lettuce-seed-germination-timeline.svg',
   'nutrients-mixing-steps.svg',

@@ -1,5 +1,5 @@
 ---
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { getCollection } from 'astro:content';
 import { getImage } from 'astro:assets';
@@ -81,12 +81,21 @@ const latest = liveItems
   .slice(0, 5);
 const shortDate = (date: Date) => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 
-const diagrams = [
+const diagramList = [
   { file: 'hydroponic-tower-cross-section.svg', route: 'hydroponic-tower-garden', caption: 'How a tower moves water', alt: 'Diagram of a vertical hydroponic tower: pump in the tank, solution fed to the top and trickling past staggered net pots' },
   { file: 'tomato-nutrients-by-growth-stage.svg', route: 'hydroponic-nutrients-for-tomatoes', caption: 'Tomato feeding by stage', alt: 'Bar chart of nitrogen and potassium for hydroponic tomatoes rising from transplant to the fifth fruit cluster' },
   { file: 'dwc-system-cross-section.svg', route: 'deep-water-culture-hydroponics', caption: 'Inside a DWC tank', alt: 'Labelled cross-section of a deep water culture tank with floating raft, air stone and roots in the solution' },
   { file: 'lettuce-quick-reference.svg', route: 'hydroponic-lettuce', caption: 'Lettuce at a glance', alt: 'Reference card of hydroponic lettuce targets for pH, EC, light and temperature' },
 ];
+
+// Width and height from each SVG's viewBox, so the tile reserves the right space.
+const diagrams = diagramList.map((diagram) => {
+  const svg = readFileSync(join(process.cwd(), 'public/images/guides', diagram.file), 'utf8');
+  const [, width, height] = svg.match(/viewBox="[\d.-]+[\s,]+[\d.-]+[\s,]+([\d.]+)[\s,]+([\d.]+)"/u) ?? [];
+  // Portrait diagrams show their top (title and first panel); landscape ones fit whole.
+  const fit = Number(height) > Number(width) ? 'object-cover object-top' : 'object-contain';
+  return { ...diagram, width, height, fit };
+});
 
 const guidePhoto = (route: string): SitePhoto => photoForGuide(route) ?? heroPhoto;
 const shownPhotos: SitePhoto[] = [heroPhoto, ...crops.map((crop) => photos[crop.photo]), ...topics.flatMap((topic) => (topic.photo ? [topic.photo] : [])), ...latest.map((candidate) => guidePhoto(candidate.route))];
@@ -230,7 +239,7 @@ const credits = [...new Map(shownPhotos.map((shown) => [shown.username, shown]))
           <li class="w-[78%] shrink-0 snap-start sm:w-auto">
             <a class="hr-focus group block h-full overflow-hidden rounded-[1.25rem] border border-line bg-white no-underline transition hover:border-hydro-teal hover:shadow-[var(--hr-shadow-soft)]" href={getContentPath(item(diagram.route))}>
               <span class="block bg-[#F5F7F2] p-2">
-                <img src={`/images/guides/${diagram.file}`} alt={diagram.alt} width="960" height="560" loading="lazy" decoding="async" class="h-auto w-full" />
+                <img src={`/images/guides/${diagram.file}`} alt={diagram.alt} width={diagram.width} height={diagram.height} loading="lazy" decoding="async" class:list={['aspect-[4/3] w-full', diagram.fit]} />
               </span>
               <span class="block p-4">
                 <span class="block font-heading font-bold text-hydro-deep group-hover:text-hydro-teal">{diagram.caption}</span>

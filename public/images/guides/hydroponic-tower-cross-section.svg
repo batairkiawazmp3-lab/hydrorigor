@@ -1,80 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1110" width="640" height="1110" role="img" aria-labelledby="t d">
   <title id="t">How a vertical hydroponic tower works</title>
-  <desc id="d">Labelled cross-section of a DIY vertical hydroponic tower based on Oklahoma State Extension fact sheet HLA-6724. A submersible pump rated at 400 gallons per hour sits in a 45-gallon tank and runs on a timer. Tubing carries nutrient solution to the top of the tower, where about 10 holes spread it, and it trickles down inside the tower past the roots of plants in 3-inch net pots, then drains back into the tank. The net pots are staggered on each side so they do not touch inside. The recommended tower height is 5 to 6 feet, one tower holds 28 plants, and indoors lights must be placed above the tower. Light reaching the plants falls from the top of the tower to the base, so lower plants grow less.</desc>
-  <rect width="960" height="600" fill="#F5F7F2"/>
-  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Inside a vertical hydroponic tower</text>
-  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Parts from Oklahoma State HLA-6724; light gradient from Touliatos et al. (2016)</text>
-
+  <desc id="d">Labelled cross-section of a DIY vertical hydroponic tower based on Oklahoma State Extension fact sheet HLA-6724. The tower is 5 to 6 feet tall and holds 28 plants. A submersible pump rated at 400 gallons per hour sits in a 45-gallon tank and runs on a timer. A pipe carries nutrient solution to the top of the tower, where about 10 holes spread it, and it trickles down inside the tower past the roots of plants in 3-inch net pots, then drains back into the tank. The net pots are staggered on each side so they do not touch inside. Indoors, lights above the tower are required. Light falls from the top of the tower to the base, so plants near the top get more light and grow bigger, and plants near the base get less light and grow smaller (Touliatos et al. 2016).</desc>
+  <defs><linearGradient id="light" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2C94C"/><stop offset="1" stop-color="#DCD6C8"/></linearGradient></defs>
+  <rect width="640" height="1110" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Inside a vertical tower</text>
   <g font-family="Inter, Arial, sans-serif">
-    <rect x="390" y="104" width="180" height="16" rx="8" fill="#D9A441"/>
-    <path d="M410 128 L400 148 M440 128 L436 148 M480 128 L480 148 M520 128 L524 148 M550 128 L560 148" stroke="#D9A441" stroke-width="3"/>
-
-    <rect x="440" y="160" width="80" height="330" fill="#FFFFFF" stroke="#3F5248" stroke-width="4"/>
-    <rect x="432" y="152" width="96" height="16" rx="3" fill="#3F5248"/>
-    <circle cx="452" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="466" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="480" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="494" cy="160" r="2.5" fill="#BFDDF0"/><circle cx="508" cy="160" r="2.5" fill="#BFDDF0"/>
-    <path d="M454 176 L452 480 M470 176 L472 480 M490 176 L488 480 M506 176 L508 480" stroke="#7FB7DA" stroke-width="2" stroke-dasharray="6 6"/>
-
-    <g fill="#C9B79A" stroke="#3F5248" stroke-width="1.5">
-      <path d="M440 196 L412 184 L412 212 L440 220 Z"/>
-      <path d="M520 246 L548 234 L548 262 L520 270 Z"/>
-      <path d="M440 296 L412 284 L412 312 L440 320 Z"/>
-      <path d="M520 346 L548 334 L548 362 L520 370 Z"/>
-      <path d="M440 396 L412 384 L412 412 L440 420 Z"/>
-      <path d="M520 446 L548 434 L548 462 L520 470 Z"/>
-    </g>
-    <g fill="#5FAE72">
-      <path d="M412 188 C392 168 378 166 372 176 C384 182 396 190 410 196 Z M412 192 C396 196 384 206 384 216 C398 212 406 206 412 200 Z"/>
-      <path d="M548 238 C568 218 582 216 588 226 C576 232 564 240 550 246 Z M548 242 C564 246 576 256 576 266 C562 262 554 256 548 250 Z"/>
-      <path d="M412 288 C394 272 384 270 380 278 C390 284 400 290 410 296 Z M412 292 C398 296 390 304 390 312 C402 308 408 304 412 300 Z"/>
-      <path d="M548 338 C564 322 574 320 578 328 C568 334 558 340 550 346 Z M548 342 C562 346 570 354 570 362 C558 358 552 354 548 350 Z"/>
-      <path d="M412 388 C398 376 390 374 388 380 C396 386 404 392 410 396 Z M412 392 C402 396 396 402 396 408 C404 406 410 402 412 398 Z"/>
-      <path d="M548 438 C560 426 568 424 570 430 C562 436 556 440 550 446 Z M548 442 C558 446 564 452 564 458 C556 456 550 452 548 448 Z"/>
-    </g>
-    <path d="M440 216 C452 220 458 226 462 236 M520 266 C508 270 502 276 498 286 M440 316 C452 320 458 326 462 336 M520 366 C508 370 502 376 498 386 M440 416 C452 420 458 426 462 436" fill="none" stroke="#F1E6C8" stroke-width="2.5"/>
-
-    <rect x="360" y="490" width="240" height="70" rx="8" fill="#BFDDF0" stroke="#3F5248" stroke-width="4"/>
-    <rect x="370" y="528" width="44" height="24" rx="5" fill="#0E1A14"/>
-    <text x="392" y="545" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">PUMP</text>
-    <path d="M414 540 L480 540 L480 170" fill="none" stroke="#0E1A14" stroke-width="3"/>
-
-    <path d="M392 112 L300 112" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="108" font-size="15" font-weight="700" fill="#0E1A14">Indoors: lights above</text>
-    <text x="40" y="128" font-size="13" fill="#3F5248">the tower are required</text>
-
-    <path d="M432 160 L300 176" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="170" font-size="15" font-weight="700" fill="#0E1A14">Top: about 10 holes</text>
-    <text x="40" y="190" font-size="13" fill="#3F5248">spread the solution</text>
-
-    <path d="M412 300 L300 300" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="292" font-size="15" font-weight="700" fill="#0E1A14">3-inch net pots, staggered</text>
-    <text x="40" y="312" font-size="13" fill="#3F5248">so they do not touch inside;</text>
-    <text x="40" y="330" font-size="13" fill="#3F5248">28 plants per tower</text>
-
-    <path d="M452 420 L300 420" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="412" font-size="15" font-weight="700" fill="#0E1A14">Solution trickles down</text>
-    <text x="40" y="432" font-size="13" fill="#3F5248">past the roots and drains</text>
-    <text x="40" y="450" font-size="13" fill="#3F5248">back into the tank</text>
-
-    <path d="M370 540 L300 520" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="508" font-size="15" font-weight="700" fill="#0E1A14">Submersible pump</text>
-    <text x="40" y="528" font-size="13" fill="#3F5248">400 gal/hr, on a timer,</text>
-    <text x="40" y="546" font-size="13" fill="#3F5248">in a 45-gallon tank</text>
-
-    <path d="M600 165 L600 485" stroke="#0E1A14" stroke-width="1.5"/>
-    <path d="M594 165 L606 165 M594 485 L606 485" stroke="#0E1A14" stroke-width="1.5"/>
-    <text x="616" y="330" font-size="15" font-weight="700" fill="#0E1A14">5–6 ft tall</text>
-
-    <rect x="720" y="150" width="200" height="300" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
-    <text x="740" y="182" font-size="15" font-weight="800" fill="#0E1A14">Light falls toward</text>
-    <text x="740" y="202" font-size="15" font-weight="800" fill="#0E1A14">the base</text>
-    <rect x="740" y="220" width="36" height="200" rx="6" fill="#FBEFD0"/>
-    <rect x="740" y="220" width="36" height="70" rx="6" fill="#D9A441"/>
-    <rect x="740" y="290" width="36" height="60" fill="#E8C878"/>
-    <text x="790" y="240" font-size="13" fill="#0E1A14">Top: most light,</text>
-    <text x="790" y="258" font-size="13" fill="#0E1A14">biggest plants</text>
-    <text x="790" y="396" font-size="13" fill="#0E1A14">Base: less light,</text>
-    <text x="790" y="414" font-size="13" fill="#0E1A14">smaller plants</text>
-    <text x="740" y="440" font-size="11" fill="#5B6F64">Touliatos et al. 2016</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Parts: Oklahoma State HLA-6724</text>
+    <text x="20" y="112" font-size="20" fill="#3F5248">Light gradient: Touliatos et al. 2016</text>
+    <text x="20" y="150" font-size="22" font-weight="800" fill="#0F6B4F">5–6 ft tall · 28 plants per tower</text>
+    <path d="M200 198 L330 198 L372 250 L158 250 Z" fill="#F2C94C" fill-opacity="0.35"/>
+    <rect x="180" y="176" width="170" height="22" rx="6" fill="#0E1A14"/>
+    <text x="380" y="192" font-size="22" font-weight="800" fill="#0E1A14">Lights above</text>
+    <text x="380" y="218" font-size="20" fill="#3F5248">are required indoors</text>
+    <rect x="24" y="252" width="14" height="648" rx="7" fill="url(#light)"/>
+    <text x="48" y="272" font-size="21" font-weight="700" fill="#0E1A14">More light,</text>
+    <text x="48" y="296" font-size="20" fill="#3F5248">bigger plants</text>
+    <text x="48" y="866" font-size="21" font-weight="700" fill="#0E1A14">Less light,</text>
+    <text x="48" y="890" font-size="20" fill="#3F5248">smaller plants</text>
+    <text x="48" y="914" font-size="20" fill="#5B6F64">Touliatos 2016</text>
+    <rect x="144" y="920" width="222" height="12" fill="#3F5248"/>
+    <rect x="150" y="932" width="210" height="108" rx="6" fill="#BFDDF0" stroke="#3F5248" stroke-width="3"/>
+    <rect x="236" y="900" width="58" height="20" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <rect x="230" y="252" width="70" height="648" rx="10" fill="#F1ECE2" stroke="#3F5248" stroke-width="3"/>
+    <rect x="224" y="244" width="82" height="14" rx="4" fill="#3F5248"/>
+    <path d="M245 292 L245 868 M285 292 L285 868" stroke="#7FB8DC" stroke-width="3" stroke-dasharray="10 8"/>
+    <path d="M238 866 L252 866 L245 880 Z M278 866 L292 866 L285 880 Z" fill="#4F97C4"/>
+    <path d="M265 995 L265 266" stroke="#0E1A14" stroke-width="3"/>
+    <circle cx="247" cy="276" r="3.5" fill="#4F97C4"/><circle cx="256" cy="284" r="3.5" fill="#4F97C4"/><circle cx="274" cy="284" r="3.5" fill="#4F97C4"/><circle cx="283" cy="276" r="3.5" fill="#4F97C4"/>
+    <rect x="230" y="995" width="70" height="34" rx="6" fill="#0E1A14"/>
+    <text x="265" y="1019" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">PUMP</text>
+    <circle cx="255" cy="944" r="3.5" fill="#4F97C4"/><circle cx="275" cy="952" r="3.5" fill="#4F97C4"/>
+    <path d="M230 366 L206 354 L198 380 L230 390 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="205.0" cy="333.5" rx="11.2" ry="30.0" transform="rotate(12 205.0 333.5)" fill="#7FC48E"/>
+    <ellipse cx="227.5" cy="343.5" rx="11.2" ry="28.8" transform="rotate(48 227.5 343.5)" fill="#7FC48E"/>
+    <ellipse cx="187.5" cy="338.5" rx="10.0" ry="26.2" transform="rotate(-22 187.5 338.5)" fill="#7FC48E"/>
+    <path d="M230 516 L206 504 L198 530 L230 540 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="204.4" cy="487.4" rx="9.9" ry="26.4" transform="rotate(12 204.4 487.4)" fill="#7FC48E"/>
+    <ellipse cx="224.2" cy="496.2" rx="9.9" ry="25.3" transform="rotate(48 224.2 496.2)" fill="#7FC48E"/>
+    <ellipse cx="189.0" cy="491.8" rx="8.8" ry="23.1" transform="rotate(-22 189.0 491.8)" fill="#7FC48E"/>
+    <path d="M230 666 L206 654 L198 680 L230 690 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="203.8" cy="641.3" rx="8.5" ry="22.8" transform="rotate(12 203.8 641.3)" fill="#7FC48E"/>
+    <ellipse cx="220.9" cy="648.9" rx="8.5" ry="21.8" transform="rotate(48 220.9 648.9)" fill="#7FC48E"/>
+    <ellipse cx="190.5" cy="645.1" rx="7.6" ry="19.9" transform="rotate(-22 190.5 645.1)" fill="#7FC48E"/>
+    <path d="M230 816 L206 804 L198 830 L230 840 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="203.2" cy="795.2" rx="7.2" ry="19.2" transform="rotate(12 203.2 795.2)" fill="#7FC48E"/>
+    <ellipse cx="217.6" cy="801.6" rx="7.2" ry="18.4" transform="rotate(48 217.6 801.6)" fill="#7FC48E"/>
+    <ellipse cx="192.0" cy="798.4" rx="6.4" ry="16.8" transform="rotate(-22 192.0 798.4)" fill="#7FC48E"/>
+    <path d="M300 423 L324 411 L332 437 L300 447 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="325.3" cy="392.3" rx="10.6" ry="28.3" transform="rotate(-12 325.3 392.3)" fill="#7FC48E"/>
+    <ellipse cx="304.0" cy="401.8" rx="10.6" ry="27.1" transform="rotate(-48 304.0 401.8)" fill="#7FC48E"/>
+    <ellipse cx="341.8" cy="397.0" rx="9.4" ry="24.8" transform="rotate(22 341.8 397.0)" fill="#7FC48E"/>
+    <path d="M300 573 L324 561 L332 587 L300 597 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="325.9" cy="546.2" rx="9.3" ry="24.7" transform="rotate(-12 325.9 546.2)" fill="#7FC48E"/>
+    <ellipse cx="307.3" cy="554.5" rx="9.3" ry="23.7" transform="rotate(-48 307.3 554.5)" fill="#7FC48E"/>
+    <ellipse cx="340.3" cy="550.3" rx="8.2" ry="21.6" transform="rotate(22 340.3 550.3)" fill="#7FC48E"/>
+    <path d="M300 723 L324 711 L332 737 L300 747 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="326.5" cy="700.1" rx="7.9" ry="21.1" transform="rotate(-12 326.5 700.1)" fill="#7FC48E"/>
+    <ellipse cx="310.6" cy="707.2" rx="7.9" ry="20.2" transform="rotate(-48 310.6 707.2)" fill="#7FC48E"/>
+    <ellipse cx="338.8" cy="703.6" rx="7.0" ry="18.5" transform="rotate(22 338.8 703.6)" fill="#7FC48E"/>
+    <path d="M300 873 L324 861 L332 887 L300 897 Z" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="327.0" cy="853.8" rx="6.7" ry="17.8" transform="rotate(-12 327.0 853.8)" fill="#7FC48E"/>
+    <ellipse cx="313.7" cy="859.7" rx="6.7" ry="17.0" transform="rotate(-48 313.7 859.7)" fill="#7FC48E"/>
+    <ellipse cx="337.4" cy="856.7" rx="5.9" ry="15.5" transform="rotate(22 337.4 856.7)" fill="#7FC48E"/>
+    <path d="M290 280 L372 280" fill="none" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="380" y="284" font-size="22" font-weight="800" fill="#0E1A14">About 10 holes</text>
+    <text x="380" y="310" font-size="20" fill="#3F5248">at the top spread</text>
+    <text x="380" y="336" font-size="20" fill="#3F5248">the solution</text>
+    <path d="M334 440 L356 440 L356 480 L372 480" fill="none" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="380" y="486" font-size="22" font-weight="800" fill="#0E1A14">3-inch net pots,</text>
+    <text x="380" y="512" font-size="20" fill="#3F5248">staggered so they</text>
+    <text x="380" y="538" font-size="20" fill="#3F5248">don’t touch inside</text>
+    <path d="M287 630 L372 630" fill="none" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="380" y="636" font-size="22" font-weight="800" fill="#0E1A14">Trickles down</text>
+    <text x="380" y="662" font-size="20" fill="#3F5248">past the roots and</text>
+    <text x="380" y="688" font-size="20" fill="#3F5248">drains to the tank</text>
+    <path d="M300 1012 L372 1012" fill="none" stroke="#3F5248" stroke-width="1.5"/>
+    <text x="380" y="980" font-size="22" font-weight="800" fill="#0E1A14">Submersible pump</text>
+    <text x="380" y="1006" font-size="20" fill="#3F5248">400 gal/hr, on a timer,</text>
+    <text x="380" y="1032" font-size="20" fill="#3F5248">in a 45-gallon tank</text>
+    <text x="20" y="1090" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
   </g>
-  <text x="40" y="584" font-family="Inter, Arial, sans-serif" font-size="12" fill="#5B6F64">HydroRigor · hydrorigor.com/systems/hydroponic-tower-garden/</text>
 </svg>

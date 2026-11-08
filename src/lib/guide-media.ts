@@ -9,7 +9,8 @@
  *
  * Diagram images (`/images/guides/*.svg`) become a <figure>: the image links to the full-size
  * SVG so a phone reader can open and zoom it, gets width/height from its viewBox (no layout
- * shift) and loads lazily. An italic paragraph right after the image becomes its <figcaption>.
+ * shift) and loads lazily; portrait diagrams also get `hr-figure-tall`, which keeps them at a
+ * readable width on desktop. An italic paragraph right after the image becomes its <figcaption>.
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -151,7 +152,8 @@ export function diagramFigure(source: GuideHastNode, caption?: GuideHastNode): G
   const figure: GuideHastNode = {
     type: 'element',
     tagName: 'figure',
-    properties: { className: ['hr-figure'] },
+    // Portrait diagrams (drawn for phones) get a narrower frame on wide screens.
+    properties: { className: size && size.height > size.width * 1.15 ? ['hr-figure', 'hr-figure-tall'] : ['hr-figure'] },
     children: [
       {
         type: 'element',
