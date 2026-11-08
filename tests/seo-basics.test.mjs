@@ -91,7 +91,8 @@ test('phone first screen: one-row header and a photo above the fold', async () =
   assert.match(header, /<span class="sr-only sm:not-sr-only">Explore topics<\/span>/u);
   assert.doesNotMatch(header, /order-3|border-t border-line pt-3/u, 'the old three-row phone header is back');
   const home = await read('src/pages/index.astro');
-  assert.match(home, /grid grid-cols-2 gap-3 lg:hidden/u, 'homepage needs a phone photo strip');
+  assert.match(home, /<Photo photo=\{heroPhoto\} priority sizes="100vw"/u, 'homepage needs a full-width hero photo above the fold on phones');
+  assert.match(home, /aria-labelledby="hero-heading"[\s\S]*<Photo photo=\{heroPhoto\}[\s\S]*id="hero-heading"/u, 'the hero photo must sit inside the hero section, before the heading');
   assert.match(home, /chip: 'pH 5\.5–6\.0 · EC ~1\.0'/u);
 });
 

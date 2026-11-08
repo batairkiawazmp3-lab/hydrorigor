@@ -15,9 +15,11 @@ interface Props {
   decorative?: boolean;
   /** Absolute URL of a tall Pinterest image to use when this photo is saved to Pinterest. */
   pinMedia?: string | undefined;
+  /** WebP quality; lower it only for photos under a dark overlay (default 64). */
+  quality?: number;
 }
 
-const { photo, sizes, class: className, widths = [400, 640, 960, 1280, 1600], priority = false, eager = false, decorative = false, pinMedia } = Astro.props;
+const { photo, sizes, class: className, widths = [400, 640, 960, 1280, 1600], priority = false, eager = false, decorative = false, pinMedia, quality = 64 } = Astro.props;
 const maxWidth = photo.image.width;
 const usable = widths.filter((width) => width <= maxWidth);
 ---
@@ -27,7 +29,7 @@ const usable = widths.filter((width) => width <= maxWidth);
   widths={usable.length > 0 ? usable : [maxWidth]}
   sizes={sizes}
   format="webp"
-  quality={64}
+  quality={quality}
   class={className}
   loading={priority || eager ? 'eager' : 'lazy'}
   decoding={priority ? 'sync' : 'async'}

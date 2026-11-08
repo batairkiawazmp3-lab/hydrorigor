@@ -1,104 +1,175 @@
 ---
+import { readdirSync } from 'node:fs';
+import { join } from 'node:path';
 import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Photo from '../components/Photo.astro';
-import { photos, photographerUrl, UNSPLASH_URL, type PhotoKey } from '../data/photos.ts';
+import { photos, photoForGuide, photoForSection, photographerUrl, UNSPLASH_URL, type PhotoKey, type SitePhoto } from '../data/photos.ts';
 import { contentItems, getContentPath } from '../data/content-manifest.ts';
 import { sectionDefinitions } from '../lib/sections.ts';
 import { EMPTY_SECTION_PATHS } from '../lib/indexing.ts';
 import { readingMinutes } from '../lib/reading.ts';
 
-const articles = await getCollection('articles', ({ data }) => !data.draft);
-const byRoute = new Map(articles.map((entry) => [entry.data.route, entry]));
+const published = [
+  ...(await getCollection('articles', ({ data }) => !data.draft)),
+  ...(await getCollection('reviews', ({ data }) => !data.draft)),
+  ...(await getCollection('comparisons', ({ data }) => !data.draft)),
+];
+const entryByRoute = new Map(published.map((entry) => [entry.data.route, entry]));
 const item = (route: string) => contentItems.find((candidate) => candidate.route === route)!;
+const liveItems = contentItems.filter((candidate) => entryByRoute.has(candidate.route));
+
+// Honest, computed site figures: they change on their own as guides are added.
+const guideCount = liveItems.length;
+const sourceCount = new Set(liveItems.flatMap((candidate) => candidate.sourceIds)).size;
+const diagramCount = readdirSync(join(process.cwd(), 'public/images/guides')).filter((file) => file.endsWith('.svg')).length;
+
+const heroPhoto = photos['systems-home-nft-lights'];
+// The hero sits under a dark overlay, so it can be compressed harder; it is also preloaded
+// from the head because it is the page's largest paint on phones.
+const heroWidths = [480, 760, 960, 1280, 1600];
+const heroQuality = 42;
+const heroPreload = await getImage({ src: heroPhoto.image, widths: heroWidths, sizes: '100vw', format: 'webp', quality: heroQuality });
+const heroChips = [
+  { label: 'Hydroponic tower', route: 'hydroponic-tower-garden' },
+  { label: 'DWC setup', route: 'deep-water-culture-hydroponics' },
+  { label: 'Tomato nutrients', route: 'hydroponic-nutrients-for-tomatoes' },
+  { label: 'Strawberries', route: 'hydroponic-strawberries' },
+];
+
+const trust = [
+  { title: 'Every number cited', note: 'Each target links to its source' },
+  { title: 'University research', note: 'Extension and journal sources' },
+  { title: 'Rankings not for sale', note: 'No paid placements' },
+  { title: 'Original diagrams', note: 'Drawn for each guide' },
+];
+
+const steps = [
+  { route: 'hydroponic-system-for-home-growers', label: 'Choose a system', note: 'DWC, NFT or drip, matched to your crop and space' },
+  { route: 'diy-hydroponic-system-for-beginners', label: 'Build or buy it', note: 'Three beginner builds, easiest first' },
+  { route: 'hydroponic-nutrients', label: 'Mix nutrients', note: 'Set pH and EC the way the research does' },
+  { route: 'hydroponic-lettuce', label: 'Grow your first crop', note: 'Lettuce is ready in weeks and forgives mistakes' },
+];
 
 // `chip` values are the sourced quick-answer figures shown in each linked guide
 // (or, for tomatoes, in the nutrients guide's crop table). Do not add unsourced numbers.
-const crops: Array<{ route: string; label: string; note: string; photo: PhotoKey; chip: string }> = [
-  { route: 'hydroponic-lettuce', label: 'Lettuce & greens', note: 'The easiest first crop for any system', photo: 'butterhead-lettuce-hands', chip: 'pH 5.5–6.0 · EC ~1.5' },
-  { route: 'hydroponic-strawberries', label: 'Strawberries', note: 'Day-neutral varieties fruit for months', photo: 'strawberries-gutter', chip: 'pH 5.5–6.0 · EC ~1.0' },
-  { route: 'hydroponic-tomatoes', label: 'Tomatoes', note: 'Big plants with big light needs', photo: 'tomato-truss', chip: 'EC 2.0 and up' },
-  { route: 'hydroponic-nutrients', label: 'Nutrients & water', note: 'pH, EC and mixing, explained', photo: 'meter-probe', chip: 'pH 5.5–6.5 · check daily' },
+const crops: Array<{ route: string; label: string; photo: PhotoKey; chip: string }> = [
+  { route: 'hydroponic-lettuce', label: 'Lettuce & greens', photo: 'butterhead-lettuce-hands', chip: 'pH 5.5–6.0 · EC ~1.5' },
+  { route: 'hydroponic-strawberries', label: 'Strawberries', photo: 'strawberries-gutter', chip: 'pH 5.5–6.0 · EC ~1.0' },
+  { route: 'hydroponic-tomatoes', label: 'Tomatoes', photo: 'tomato-truss', chip: 'EC 2.0 and up' },
+  { route: 'hydroponic-nutrients', label: 'Nutrients & water', photo: 'meter-probe', chip: 'pH 5.5–6.5 · check daily' },
 ];
 
-const topics = sectionDefinitions.filter((section) => !EMPTY_SECTION_PATHS.has(`/${section.slug}/`));
+const topics = sectionDefinitions
+  .filter((section) => !EMPTY_SECTION_PATHS.has(`/${section.slug}/`) && section.slug !== 'tools')
+  .map((section) => ({
+    section,
+    photo: photoForSection(section.id),
+    count: liveItems.filter((candidate) => getContentPath(candidate).split('/')[1] === section.slug).length,
+  }))
+  .filter((topic) => topic.count > 0);
 
-const featured: Array<{ route: string; photo: PhotoKey; tag: string }> = [
-  { route: 'deep-water-culture-hydroponics', photo: 'dwc-net-pot-roots', tag: 'Systems' },
-  { route: 'hydroponic-lettuce-systems', photo: 'lettuce-channel-net-pot', tag: 'Crops' },
-  { route: 'how-to-mix-hydroponic-nutrients', photo: 'beaker-measure', tag: 'Nutrients' },
+// In-depth guides only (8+ minutes), newest update first.
+const dateOf = (route: string) => {
+  const data = entryByRoute.get(route)?.data;
+  return new Date(data?.updatedDate ?? data?.publishDate ?? 0);
+};
+const latest = liveItems
+  .filter((candidate) => readingMinutes(entryByRoute.get(candidate.route)?.body) >= 8)
+  .sort((a, b) => dateOf(b.route).getTime() - dateOf(a.route).getTime())
+  .slice(0, 5);
+const shortDate = (date: Date) => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+
+const diagrams = [
+  { file: 'hydroponic-tower-cross-section.svg', route: 'hydroponic-tower-garden', caption: 'How a tower moves water', alt: 'Diagram of a vertical hydroponic tower: pump in the tank, solution fed to the top and trickling past staggered net pots' },
+  { file: 'tomato-nutrients-by-growth-stage.svg', route: 'hydroponic-nutrients-for-tomatoes', caption: 'Tomato feeding by stage', alt: 'Bar chart of nitrogen and potassium for hydroponic tomatoes rising from transplant to the fifth fruit cluster' },
+  { file: 'dwc-system-cross-section.svg', route: 'deep-water-culture-hydroponics', caption: 'Inside a DWC tank', alt: 'Labelled cross-section of a deep water culture tank with floating raft, air stone and roots in the solution' },
+  { file: 'lettuce-quick-reference.svg', route: 'hydroponic-lettuce', caption: 'Lettuce at a glance', alt: 'Reference card of hydroponic lettuce targets for pH, EC, light and temperature' },
 ];
 
-const heroKeys: PhotoKey[] = ['systems-home-nft-lights-tall', 'systems-home-nft-lights', 'strawberries-hanging-close'];
-const usedKeys = [...new Set<PhotoKey>([...heroKeys, ...crops.map((crop) => crop.photo), ...featured.map((feature) => feature.photo)])];
-const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[key]])).values()];
+const guidePhoto = (route: string): SitePhoto => photoForGuide(route) ?? heroPhoto;
+const shownPhotos: SitePhoto[] = [heroPhoto, ...crops.map((crop) => photos[crop.photo]), ...topics.flatMap((topic) => (topic.photo ? [topic.photo] : [])), ...latest.map((candidate) => guidePhoto(candidate.route))];
+const credits = [...new Map(shownPhotos.map((shown) => [shown.username, shown])).values()];
 ---
 <BaseLayout title="HydroRigor — Evidence-based hydroponics for home growers" description="Clear hydroponic guides for home growers: sourced pH, EC, light and temperature targets, the systems worth buying, and fixes for common problems.">
-  <section class="pt-8 pb-14 sm:py-20" aria-labelledby="hero-heading">
-    <div class="hr-container grid items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
-      <div>
-        <p class="mb-6 inline-flex items-center gap-2 rounded-full bg-water-mist px-3.5 py-1.5 text-sm font-semibold text-hydro-emerald-dark">
-          <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7" /></svg>
-          Every target sourced to university research
-        </p>
-        <h1 id="hero-heading" class="font-heading text-[2.6rem] leading-[1.02] font-extrabold tracking-[-0.04em] text-hydro-deep sm:text-6xl lg:text-[4.1rem]">Grow indoors with evidence, not guesswork.</h1>
-        <p class="mt-5 max-w-xl text-lg leading-8 text-slate sm:mt-6">Clear hydroponic guides for home growers: the exact pH, EC, light and temperature targets, the systems worth buying, and what to do when plants struggle.</p>
-        <div class="mt-6 grid grid-cols-2 gap-3 lg:hidden">
-          <a class="hr-focus group relative block h-36 overflow-hidden rounded-2xl no-underline sm:h-48" href={getContentPath(item('indoor-hydroponic-systems-for-home'))}>
-            <Photo photo={photos['systems-home-nft-lights']} decorative sizes="(min-width: 640px) 45vw, 50vw" widths={[320, 480, 640]} class="h-full w-full object-cover" />
-            <span class="absolute bottom-2 left-2 rounded-full bg-white/[0.94] px-2.5 py-1 text-xs font-bold text-hydro-deep">Home systems</span>
-          </a>
-          <a class="hr-focus group relative block h-36 overflow-hidden rounded-2xl no-underline sm:h-48" href={getContentPath(item('hydroponic-strawberries'))}>
-            <Photo photo={photos['strawberries-hanging-close']} decorative sizes="(min-width: 640px) 45vw, 50vw" widths={[320, 480, 640]} class="h-full w-full object-cover" />
-            <span class="absolute bottom-2 left-2 rounded-full bg-white/[0.94] px-2.5 py-1 text-xs font-bold text-hydro-deep">Strawberries</span>
-          </a>
-        </div>
-        <form class="mt-8 flex max-w-xl flex-wrap gap-3" role="search" action="/search/" method="get">
-          <label class="sr-only" for="home-search">Search HydroRigor guides</label>
-          <input id="home-search" name="q" type="search" placeholder="Try “strawberries pH” or “DWC”" class="hr-focus min-h-13 flex-[1_1_16rem] rounded-full border-[1.5px] border-line bg-white px-5 text-base text-ink placeholder:text-slate/70" />
-          <button type="submit" class="hr-focus min-h-13 rounded-full bg-hydro-deep px-6 font-semibold text-white hover:bg-hydro-teal">Search</button>
-        </form>
-        <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
-          <a class="hr-focus rounded-sm text-hydro-teal" href="/start/">New to hydroponics? Start here →</a>
-          <a class="hr-focus rounded-sm text-hydro-teal" href="/tools/">Free tools →</a>
-        </div>
-      </div>
-
-      <div class="hidden grid-cols-2 gap-3.5 lg:grid">
-        <a class="hr-focus group relative row-span-2 min-h-[26rem] overflow-hidden rounded-[1.75rem] no-underline" href={getContentPath(item('indoor-hydroponic-systems-for-home'))}>
-          <Photo photo={photos['systems-home-nft-lights-tall']} decorative sizes="270px" widths={[320, 480, 640]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
-          <span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-hydro-deep/45 via-transparent to-transparent"></span>
-          <span class="absolute inset-x-4 bottom-4 rounded-2xl bg-white/[0.94] p-4">
-            <span class="block font-mono text-[0.7rem] font-bold tracking-[0.1em] text-hydro-teal uppercase">Systems</span>
-            <span class="mt-1 block font-heading font-bold leading-tight text-hydro-deep">Indoor hydroponic systems for home</span>
-          </span>
-        </a>
-        <a class="hr-focus group relative min-h-[12.5rem] overflow-hidden rounded-[1.75rem] no-underline" href={getContentPath(item('hydroponic-strawberries'))}>
-          <Photo photo={photos['strawberries-hanging-close']} decorative sizes="270px" widths={[320, 480, 640]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
-          <span class="absolute bottom-3 left-3 rounded-full bg-white/[0.94] px-3 py-1.5 text-sm font-bold text-hydro-deep">Strawberries</span>
-        </a>
-        <div class="flex min-h-[12.5rem] flex-col justify-between rounded-[1.75rem] bg-hydro-deep p-5">
-          <p class="font-mono text-[0.7rem] font-bold tracking-[0.12em] text-leaf-bright uppercase">Sourced target</p>
-          <p class="text-white"><span class="block text-sm font-semibold text-white/[0.75]">Strawberries</span><span class="block font-mono text-xl leading-tight font-bold sm:text-3xl">pH 5.5–6.0</span></p>
-          <a class="hr-focus rounded-sm text-sm font-semibold text-leaf-bright" href="/tools/ph-ec-targets/">All crop targets →</a>
-        </div>
+  <link slot="head" rel="preload" as="image" type="image/webp" imagesrcset={heroPreload.srcSet.attribute} imagesizes="100vw" fetchpriority="high" />
+  <section class="relative isolate overflow-hidden bg-hydro-deep" aria-labelledby="hero-heading">
+    <Photo photo={heroPhoto} priority sizes="100vw" widths={heroWidths} quality={heroQuality} class="absolute inset-0 -z-10 h-full w-full object-cover" />
+    <span aria-hidden="true" class="absolute inset-0 -z-10 bg-gradient-to-t from-hydro-deep from-35% via-hydro-deep/[0.78] via-60% to-hydro-deep/[0.05]"></span>
+    <div class="hr-container flex min-h-[42rem] flex-col justify-end pt-40 pb-10 sm:min-h-[36rem] sm:pb-14 lg:min-h-[40rem]">
+      <p class="inline-flex w-fit items-center gap-2 rounded-full bg-hydro-deep/[0.85] px-3.5 py-1.5 text-sm font-semibold text-white">
+        <svg aria-hidden="true" class="h-4 w-4 text-leaf-bright" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7" /></svg>
+        Every target sourced to university research
+      </p>
+      <h1 id="hero-heading" class="mt-5 max-w-3xl font-heading text-[2.6rem] leading-[1.02] font-extrabold tracking-[-0.04em] text-white sm:text-6xl lg:text-[4.4rem]">Grow indoors with evidence, not guesswork.</h1>
+      <p class="mt-4 max-w-xl text-lg leading-8 text-white/[0.88]">Exact pH, EC, light and temperature targets for home hydroponics, the systems worth buying, and what to do when plants struggle.</p>
+      <form class="mt-7 flex max-w-xl flex-wrap gap-2.5" role="search" action="/search/" method="get">
+        <label class="sr-only" for="home-search">Search HydroRigor guides</label>
+        <input id="home-search" name="q" type="search" placeholder="Search “strawberries pH” or “DWC”" class="hr-focus min-h-13 flex-[1_1_15rem] rounded-full border-0 bg-white px-5 text-base text-ink placeholder:text-slate" />
+        <button type="submit" class="hr-focus min-h-13 rounded-full bg-leaf-bright px-6 font-semibold text-hydro-deep hover:bg-white">Search</button>
+      </form>
+      <div class="mt-5">
+        <p class="text-sm font-semibold text-white/[0.8]">Popular guides</p>
+        <ul class="mt-2 flex flex-wrap gap-2">
+          {heroChips.map((chip) => (
+            <li><a class="hr-focus inline-flex min-h-10 items-center rounded-full border border-white/[0.35] px-4 text-sm font-semibold text-white no-underline hover:bg-white hover:text-hydro-deep" href={getContentPath(item(chip.route))}>{chip.label}</a></li>
+          ))}
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="pb-16" aria-labelledby="grow-heading">
+  <section class="border-b border-line bg-white" aria-label="Why HydroRigor">
+    <ul class="hr-container grid grid-cols-2 gap-x-4 gap-y-5 py-6 lg:grid-cols-4">
+      {trust.map((point) => (
+        <li class="flex items-start gap-3">
+          <span aria-hidden="true" class="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-water-mist text-hydro-teal">
+            <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3 3 7-7" /></svg>
+          </span>
+          <span>
+            <span class="block text-sm font-bold text-hydro-deep">{point.title}</span>
+            <span class="block text-xs leading-5 text-slate">{point.note}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="py-14 sm:py-20" aria-labelledby="start-heading">
+    <div class="hr-container">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="font-mono text-xs font-bold tracking-[0.12em] text-hydro-teal uppercase">Start here</p>
+          <h2 id="start-heading" class="mt-2 font-heading text-3xl font-extrabold tracking-[-0.025em] text-hydro-deep">Your first grow in four steps</h2>
+        </div>
+        <a class="hr-focus rounded-sm text-sm font-semibold text-hydro-teal" href="/start/">The full beginner path →</a>
+      </div>
+      <ol class="mt-7 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+        {steps.map((step, index) => (
+          <li>
+            <a class="hr-focus group flex h-full flex-col rounded-[1.25rem] border border-line bg-white p-4 no-underline transition hover:-translate-y-0.5 hover:border-hydro-teal hover:shadow-[var(--hr-shadow-soft)] sm:p-5" href={getContentPath(item(step.route))}>
+              <span class="flex h-9 w-9 items-center justify-center rounded-full bg-hydro-deep font-mono text-sm font-bold text-leaf-bright">{index + 1}</span>
+              <span class="mt-4 block font-heading text-base leading-snug font-bold text-hydro-deep group-hover:text-hydro-teal sm:text-lg">{step.label}</span>
+              <span class="mt-1.5 block text-sm leading-5 text-slate">{step.note}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="pb-14 sm:pb-20" aria-labelledby="grow-heading">
     <div class="hr-container">
       <h2 id="grow-heading" class="font-heading text-3xl font-extrabold tracking-[-0.025em] text-hydro-deep">What do you want to grow?</h2>
-      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-6 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         {crops.map((crop) => (
-          <a class="hr-focus group overflow-hidden rounded-[1.4rem] border border-line bg-white no-underline transition hover:-translate-y-0.5 hover:shadow-[var(--hr-shadow-soft)]" href={getContentPath(item(crop.route))}>
-            <span class="relative block h-44 overflow-hidden">
-              <Photo photo={photos[crop.photo]} decorative sizes="(min-width: 1024px) 300px, (min-width: 640px) 50vw, 100vw" widths={[320, 480, 640, 800]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />
-              <span class="absolute bottom-3 left-3 rounded-full bg-hydro-deep/90 px-3 py-1 font-mono text-xs font-bold text-leaf-bright">{crop.chip}</span>
-            </span>
-            <span class="block p-5">
-              <span class="block font-heading text-lg font-bold text-hydro-deep group-hover:text-hydro-teal">{crop.label}</span>
-              <span class="mt-1 block text-sm text-slate">{crop.note}</span>
+          <a class="hr-focus group relative block aspect-[4/5] overflow-hidden rounded-[1.25rem] no-underline sm:aspect-[4/3]" href={getContentPath(item(crop.route))}>
+            <Photo photo={photos[crop.photo]} decorative sizes="(min-width: 1024px) 300px, 50vw" widths={[240, 360, 480, 640]} quality={50} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />
+            <span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-hydro-deep/90 via-hydro-deep/25 to-transparent"></span>
+            <span class="absolute inset-x-3 bottom-3">
+              <span class="block font-heading text-lg leading-tight font-bold text-white">{crop.label}</span>
+              <span class="mt-1.5 inline-block rounded-full bg-hydro-deep/90 px-2.5 py-1 font-mono text-[0.68rem] font-bold text-leaf-bright">{crop.chip}</span>
             </span>
           </a>
         ))}
@@ -106,55 +177,112 @@ const credits = [...new Map(usedKeys.map((key) => [photos[key].username, photos[
     </div>
   </section>
 
-  <section class="pb-16" aria-labelledby="topics-heading">
+  <section class="bg-water-mist/60 py-14 sm:py-20" aria-labelledby="latest-heading">
+    <div class="hr-container grid gap-10 lg:grid-cols-[1.1fr_.9fr]">
+      <div>
+        <p class="font-mono text-xs font-bold tracking-[0.12em] text-hydro-teal uppercase">In-depth guides</p>
+        <h2 id="latest-heading" class="mt-2 font-heading text-3xl font-extrabold tracking-[-0.025em] text-hydro-deep">New and updated</h2>
+        <ol class="mt-6 space-y-3">
+          {latest.map((candidate, index) => {
+            const entry = entryByRoute.get(candidate.route);
+            return (
+              <li>
+                <a class="hr-focus group flex items-center gap-4 rounded-[1.25rem] bg-white p-3 no-underline transition hover:shadow-[var(--hr-shadow-soft)]" href={getContentPath(candidate)}>
+                  <span class="relative block h-20 w-24 shrink-0 overflow-hidden rounded-xl sm:h-24 sm:w-32">
+                    <Photo photo={guidePhoto(candidate.route)} decorative sizes="128px" widths={[160, 320]} class="h-full w-full object-cover" />
+                    <span class="absolute top-1.5 left-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-hydro-deep font-mono text-xs font-bold text-leaf-bright">{index + 1}</span>
+                  </span>
+                  <span class="min-w-0">
+                    <span class="block font-heading text-base leading-snug font-bold text-hydro-deep group-hover:text-hydro-teal sm:text-lg">{candidate.title}</span>
+                    <span class="mt-1 block text-xs font-semibold text-slate">Updated {shortDate(dateOf(candidate.route))} · {readingMinutes(entry?.body)} min read</span>
+                  </span>
+                </a>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+      <div>
+        <p class="font-mono text-xs font-bold tracking-[0.12em] text-hydro-teal uppercase">Browse by topic</p>
+        <h2 class="mt-2 font-heading text-3xl font-extrabold tracking-[-0.025em] text-hydro-deep">Find your answer</h2>
+        <div class="mt-6 grid grid-cols-2 gap-3">
+          {topics.map((topic) => (
+            <a class="hr-focus group relative block h-32 overflow-hidden rounded-[1.25rem] no-underline sm:h-36" href={`/${topic.section.slug}/`}>
+              {topic.photo && <Photo photo={topic.photo} decorative sizes="(min-width: 1024px) 220px, 50vw" widths={[320, 480]} class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />}
+              <span aria-hidden="true" class="absolute inset-0 bg-gradient-to-t from-hydro-deep/90 via-hydro-deep/40 to-hydro-deep/10"></span>
+              <span class="absolute inset-x-3 bottom-3">
+                <span class="block font-heading text-base font-bold text-white">{topic.section.navLabel}</span>
+                <span class="block text-xs font-semibold text-white/[0.85]">{topic.count} {topic.count === 1 ? 'guide' : 'guides'}</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 sm:py-20" aria-labelledby="diagrams-heading">
     <div class="hr-container">
-      <h2 id="topics-heading" class="font-heading text-xl font-extrabold text-hydro-deep">Browse by topic</h2>
-      <ul class="mt-4 flex flex-wrap gap-2.5">
-        {topics.map((section) => (
-          <li><a class="hr-focus inline-flex min-h-11 items-center rounded-full border border-line bg-white px-4 text-sm font-semibold text-hydro-deep no-underline hover:border-hydro-teal hover:text-hydro-teal" href={`/${section.slug}/`}>{section.navLabel}</a></li>
+      <p class="font-mono text-xs font-bold tracking-[0.12em] text-hydro-teal uppercase">See it, don’t just read it</p>
+      <h2 id="diagrams-heading" class="mt-2 max-w-2xl font-heading text-3xl font-extrabold tracking-[-0.025em] text-hydro-deep">Original diagrams with every number sourced</h2>
+      <ul class="-mx-4 mt-7 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-3 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 lg:grid-cols-4">
+        {diagrams.map((diagram) => (
+          <li class="w-[78%] shrink-0 snap-start sm:w-auto">
+            <a class="hr-focus group block h-full overflow-hidden rounded-[1.25rem] border border-line bg-white no-underline transition hover:border-hydro-teal hover:shadow-[var(--hr-shadow-soft)]" href={getContentPath(item(diagram.route))}>
+              <span class="block bg-[#F5F7F2] p-2">
+                <img src={`/images/guides/${diagram.file}`} alt={diagram.alt} width="960" height="560" loading="lazy" decoding="async" class="h-auto w-full" />
+              </span>
+              <span class="block p-4">
+                <span class="block font-heading font-bold text-hydro-deep group-hover:text-hydro-teal">{diagram.caption}</span>
+                <span class="mt-1 block text-sm text-slate">{item(diagram.route).title}</span>
+              </span>
+            </a>
+          </li>
         ))}
       </ul>
     </div>
   </section>
 
-  <section class="bg-hydro-deep py-16 text-white sm:py-20" aria-labelledby="guides-heading">
+  <section class="bg-hydro-deep py-14 text-white sm:py-16" aria-labelledby="numbers-heading">
     <div class="hr-container">
-      <div class="flex flex-wrap items-end justify-between gap-4">
-        <h2 id="guides-heading" class="font-heading text-3xl font-extrabold tracking-[-0.025em]">Start with these guides</h2>
-        <a class="hr-focus rounded-sm font-semibold text-leaf-bright" href="/start/">Find your path →</a>
-      </div>
-      <div class="mt-8 grid gap-5 md:grid-cols-3">
-        {featured.map((feature) => {
-          const meta = item(feature.route);
-          const entry = byRoute.get(feature.route);
-          return (
-            <a class="hr-focus group overflow-hidden rounded-[1.4rem] bg-night-panel no-underline" href={getContentPath(meta)}>
-              <span class="block h-52 overflow-hidden">
-                <Photo photo={photos[feature.photo]} decorative sizes="(min-width: 768px) 33vw, 100vw" widths={[400, 640, 960]} class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]" />
-              </span>
-              <span class="block p-6">
-                <span class="text-sm font-semibold text-leaf-bright">{feature.tag} · {readingMinutes(entry?.body)} min read</span>
-                <span class="mt-2 block font-heading text-xl leading-snug font-bold text-white">{meta.title}</span>
-              </span>
-            </a>
-          );
-        })}
-      </div>
+      <h2 id="numbers-heading" class="font-heading text-2xl font-extrabold tracking-[-0.02em] sm:text-3xl">HydroRigor in numbers</h2>
+      <dl class="mt-8 grid grid-cols-3 gap-4 text-center sm:gap-8">
+        <div class="flex flex-col-reverse">
+          <dt class="mt-1 text-xs leading-5 text-white/[0.8] sm:text-sm">guides published</dt>
+          <dd class="font-heading text-4xl font-extrabold text-leaf-bright sm:text-5xl">{guideCount}</dd>
+        </div>
+        <div class="flex flex-col-reverse">
+          <dt class="mt-1 text-xs leading-5 text-white/[0.8] sm:text-sm">sources cited</dt>
+          <dd class="font-heading text-4xl font-extrabold text-leaf-bright sm:text-5xl">{sourceCount}</dd>
+        </div>
+        <div class="flex flex-col-reverse">
+          <dt class="mt-1 text-xs leading-5 text-white/[0.8] sm:text-sm">original diagrams</dt>
+          <dd class="font-heading text-4xl font-extrabold text-leaf-bright sm:text-5xl">{diagramCount}</dd>
+        </div>
+      </dl>
+      <p class="mt-8 text-center text-sm text-white/[0.75]">Counted from the site itself each time it is published.</p>
     </div>
   </section>
 
-  <section class="py-16 sm:py-20" aria-labelledby="tools-heading">
+  <section class="py-14 sm:py-20" aria-labelledby="tools-heading">
     <div class="hr-container grid gap-5 lg:grid-cols-2">
-      <div class="rounded-[1.75rem] bg-water-mist p-8">
+      <div class="rounded-[1.75rem] bg-water-mist p-7 sm:p-8">
         <p class="font-mono text-xs font-bold tracking-[0.12em] text-hydro-emerald-dark uppercase">Free tools</p>
         <h2 id="tools-heading" class="mt-3 font-heading text-[1.75rem] leading-tight font-extrabold text-hydro-deep">Mix nutrients and check targets in seconds</h2>
-        <p class="mt-3 leading-7 text-slate">Scale any nutrient label dose to your reservoir and look up sourced pH and EC ranges for each crop.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a class="hr-focus inline-flex min-h-11 items-center rounded-full bg-hydro-teal px-5 text-sm font-semibold text-white no-underline hover:bg-hydro-emerald-dark" href="/tools/nutrient-mixing-calculator/">Nutrient calculator</a>
-          <a class="hr-focus inline-flex min-h-11 items-center rounded-full border-[1.5px] border-hydro-teal px-5 text-sm font-semibold text-hydro-teal no-underline" href="/tools/ph-ec-targets/">pH &amp; EC targets</a>
+        <div class="mt-6 grid grid-cols-2 gap-3">
+          <a class="hr-focus rounded-2xl bg-white p-4 no-underline hover:shadow-[var(--hr-shadow-soft)]" href="/tools/nutrient-mixing-calculator/">
+            <span class="block font-mono text-sm font-bold text-hydro-teal">ml / gal</span>
+            <span class="mt-2 block font-heading font-bold text-hydro-deep">Nutrient calculator</span>
+            <span class="mt-1 block text-xs leading-5 text-slate">Scale a label dose to your reservoir</span>
+          </a>
+          <a class="hr-focus rounded-2xl bg-white p-4 no-underline hover:shadow-[var(--hr-shadow-soft)]" href="/tools/ph-ec-targets/">
+            <span class="block font-mono text-sm font-bold text-hydro-teal">pH · EC</span>
+            <span class="mt-2 block font-heading font-bold text-hydro-deep">Crop targets</span>
+            <span class="mt-1 block text-xs leading-5 text-slate">Sourced ranges for each crop</span>
+          </a>
         </div>
       </div>
-      <div class="rounded-[1.75rem] border border-line bg-white p-8">
+      <div class="rounded-[1.75rem] border border-line bg-white p-7 sm:p-8">
         <p class="font-mono text-xs font-bold tracking-[0.12em] text-slate uppercase">Why trust HydroRigor</p>
         <h2 class="mt-3 font-heading text-[1.75rem] leading-tight font-extrabold text-hydro-deep">Run by a scientist. Every target cited.</h2>
         <p class="mt-3 leading-7 text-slate">Najeeb checks each guide against university and extension research and lists every source. There are no affiliate links on HydroRigor yet; if a page ever earns from a link, it will say so clearly, and that will never decide a recommendation.</p>
