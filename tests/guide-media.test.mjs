@@ -43,9 +43,9 @@ test('diagrams link to their full-size file, reserve their space and carry the c
   assert.equal(caption.children[0].value, 'How a tower works.');
 });
 
-// Guide diagrams drawn before 2026-11-08 used a 960-wide canvas with 11–16 unit labels, which
-// shrink to about 5 px in a phone's article column; they open full size on tap instead. Every
-// new diagram must be readable in place on a phone.
+// Guide diagrams drawn before this rule landed (PR #41, 2026-11-08) used a 960-wide canvas with
+// 11–16 unit labels, which shrink to about 5 px in a phone's article column; they open full size
+// on tap instead. Every new diagram must be readable in place on a phone.
 const LEGACY_DIAGRAMS = new Set([
   'diy-dwc-tote-build.svg',
   'diy-hydroponic-builds-compared.svg',
@@ -53,6 +53,8 @@ const LEGACY_DIAGRAMS = new Set([
   'dwc-system-cross-section.svg',
   'home-hydroponic-system-by-crop.svg',
   'home-hydroponic-systems-cross-section.svg',
+  'indoor-crop-light-needs-dli.svg',
+  'indoor-hydroponic-system-types-compared.svg',
   'hydroponic-tower-cross-section.svg',
   'hydroponic-tower-spacing-by-crop.svg',
   'lettuce-quick-reference.svg',
