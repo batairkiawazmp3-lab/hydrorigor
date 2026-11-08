@@ -513,6 +513,15 @@ export const m06EditorialSources = [
     sourceType: 'university-research',
     locator: 'News release: vertical hydroponic towers in a high tunnel, two years at two Illinois sites; yield highest in perlite mixed with coco coir or vermiculite with synthetic fertilizer; organic nutrient source about 15% lower yield; top cultivars varied by site-year; authors advise location-specific cultivar testing',
   },
+  {
+    id: 'purdue-supplemental-light-lettuce',
+    title: 'Determining the Economic Value of Providing Supplemental Light to Lettuce During Winter Production (HO-283-W)',
+    publisher: 'Purdue University Extension (K. Nemali, P. Langenhoven)',
+    url: 'https://ag.purdue.edu/department/hla/extension/extension-publications-library/_docs/ho-283-w.pdf',
+    accessedDate: '2026-11-08',
+    sourceType: 'university-extension',
+    locator: 'HO-283-W (March 2018), p. 1: DLI needs by crop type (propagation 8–10, potted plants 10–15, leafy greens 15–20, tomatoes and strawberries more than 20 mol/m²/day); winter greenhouse sunlight about 5 mol/m²/day; Figure 1 (West Lafayette, Indiana greenhouse): below 10 mol/m²/day from November through February; p. 4: 15 lettuce varieties for 28 days at DLI 5.6, 10.8 and 19.8 averaged 0.90, 2.1 and 6.7 lb/m² fresh weight',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

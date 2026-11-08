@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d">
+  <title id="t">How much daily light indoor crops need</title>
+  <desc id="d">Daily light integral (DLI) targets in mol per square metre per day. Purdue Extension: seedlings and cuttings 8 to 10, potted plants 10 to 15, leafy greens 15 to 20, tomatoes and strawberries more than 20. University of Kentucky: lettuce 12 to 17. Virginia Tech: at least 17 favoured higher yields of greens and herbs. For comparison, a Purdue greenhouse in Indiana received less than 10 from November through February.</desc>
+  <rect width="960" height="560" fill="#F5F7F2"/>
+  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">How much light indoor crops need</text>
+  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Daily light integral (DLI), mol/m²/day. Purdue HO-283-W, University of Kentucky CCD-CP-63, Virginia Tech SPES-466</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="330.0" y="110" width="228" height="350" fill="#E4E9F2"/>
+    <text x="444" y="128" font-size="12" font-weight="700" fill="#3A4A66" text-anchor="middle">Indiana greenhouse,</text>
+    <text x="444" y="144" font-size="12" font-weight="700" fill="#3A4A66" text-anchor="middle">Nov–Feb: under 10</text>
+    <text x="40" y="184" font-size="15" font-weight="700" fill="#0E1A14">Seedlings and cuttings</text>
+    <text x="40" y="202" font-size="12" fill="#3F5248">Purdue</text>
+    <rect x="512" y="170" width="46" height="30" rx="6" fill="#7FC48E"/>
+    <text x="520" y="190" font-size="14" font-weight="700" fill="#0E1A14">8–10</text>
+    <text x="40" y="232" font-size="15" font-weight="700" fill="#0E1A14">Potted plants</text>
+    <text x="40" y="250" font-size="12" fill="#3F5248">Purdue</text>
+    <rect x="558" y="218" width="114" height="30" rx="6" fill="#7FC48E"/>
+    <text x="566" y="238" font-size="14" font-weight="700" fill="#0E1A14">10–15</text>
+    <text x="40" y="280" font-size="15" font-weight="700" fill="#0E1A14">Lettuce</text>
+    <text x="40" y="298" font-size="12" fill="#3F5248">Univ. of Kentucky</text>
+    <rect x="604" y="266" width="114" height="30" rx="6" fill="#7FC48E"/>
+    <text x="612" y="286" font-size="14" font-weight="700" fill="#0E1A14">12–17</text>
+    <text x="40" y="328" font-size="15" font-weight="700" fill="#0E1A14">Leafy greens</text>
+    <text x="40" y="346" font-size="12" fill="#3F5248">Purdue</text>
+    <rect x="672" y="314" width="114" height="30" rx="6" fill="#7FC48E"/>
+    <text x="680" y="334" font-size="14" font-weight="700" fill="#0E1A14">15–20</text>
+    <text x="40" y="376" font-size="15" font-weight="700" fill="#0E1A14">Greens and herbs, higher yields</text>
+    <text x="40" y="394" font-size="12" fill="#3F5248">Virginia Tech</text>
+    <rect x="718" y="362" width="182" height="30" rx="6" fill="#2F8F5B"/>
+    <text x="726" y="382" font-size="14" font-weight="700" fill="#FFFFFF">17 or more</text>
+    <text x="40" y="424" font-size="15" font-weight="700" fill="#0E1A14">Tomatoes and strawberries</text>
+    <text x="40" y="442" font-size="12" fill="#3F5248">Purdue</text>
+    <rect x="786" y="410" width="114" height="30" rx="6" fill="#2F8F5B"/>
+    <text x="794" y="430" font-size="14" font-weight="700" fill="#FFFFFF">more than 20</text>
+    <path d="M330 462 L900 462" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M330 462 L330 470" stroke="#0E1A14" stroke-width="2"/>
+    <text x="330" y="488" font-size="13" fill="#0E1A14" text-anchor="middle">0</text>
+    <path d="M444 462 L444 470" stroke="#0E1A14" stroke-width="2"/>
+    <text x="444" y="488" font-size="13" fill="#0E1A14" text-anchor="middle">5</text>
+    <path d="M558 462 L558 470" stroke="#0E1A14" stroke-width="2"/>
+    <text x="558" y="488" font-size="13" fill="#0E1A14" text-anchor="middle">10</text>
+    <path d="M672 462 L672 470" stroke="#0E1A14" stroke-width="2"/>
+    <text x="672" y="488" font-size="13" fill="#0E1A14" text-anchor="middle">15</text>
+    <path d="M786 462 L786 470" stroke="#0E1A14" stroke-width="2"/>
+    <text x="786" y="488" font-size="13" fill="#0E1A14" text-anchor="middle">20</text>
+    <path d="M900 462 L900 470" stroke="#0E1A14" stroke-width="2"/>
+    <text x="900" y="488" font-size="13" fill="#0E1A14" text-anchor="middle">25</text>
+    <text x="615" y="512" font-size="13" fill="#3F5248" text-anchor="middle">mol/m²/day</text>
+    <text x="40" y="540" font-size="13" fill="#3F5248">DLI = light intensity (µmol/m²/s) × hours on × 0.0036. Bars ending at the right edge are open-ended.</text>
+  </g>
+</svg>

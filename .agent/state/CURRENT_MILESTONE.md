@@ -61,7 +61,7 @@ mixing in one new guide for every two or three rebuilds.
 7. [x] New guide, plan ID 59 (repurposed): hydroponic towers — published 2026-11-07 at `/systems/hydroponic-tower-garden/` — "hydroponic tower" 6,600 / 33,
        "hydroponic tower diy" 1,300 / 32. How towers work, crops, light, DIY versus kits;
        research-based, no product picks until an affiliate programme is approved.
-8. [ ] `/systems/indoor-hydroponic-systems-for-home/` — buyer-oriented rebuild. "hydroponic system
+8. [x] `/systems/indoor-hydroponic-systems-for-home/` — rebuilt 2026-11-08 ("Indoor Hydroponic Systems for Home: 6 Types Compared"); buyer-oriented, no product picks. "hydroponic system
        indoor" 3,600 / 25; "indoor hydroponic system" 2,900 / 33; "indoor gardening hydroponic
        system" 2,400 / 16 (CPC $3.29). Results page is shopping-heavy (2026-11-03 note above).
 9. [ ] `/crops/nft-hydroponic-strawberries/` — rebuild. "strawberry hydroponic system" 2,400 / 26.
