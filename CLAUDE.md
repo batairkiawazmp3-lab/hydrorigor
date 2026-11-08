@@ -89,6 +89,14 @@ Stock photos set the mood; original visuals answer the search. Every rebuilt or 
   symptom-identification illustration. Each sits next to the text it explains, has a caption,
   and alt text that states the information, not just "diagram". Every number in a visual must
   appear in the page's sourced text.
+- **Draw for phones** (2026-11-08). A phone's article column is about 380 px wide, so a
+  960-wide canvas shrinks 14-unit labels to about 5 px. Use a `viewBox` no wider than 720 with
+  labels of 20 or more (at least 10.5 px on a phone; `tests/guide-media.test.mjs` enforces it for
+  every diagram not on its legacy list), keep labels to a few words, put detail in the caption,
+  and prefer tall layouts to wide ones. Write each diagram as `![alt](/images/guides/<file>.svg)`
+  followed by an italic caption paragraph: the build (`src/lib/guide-media.ts`) turns it into a
+  figure that opens full size on tap. Tables of three or more columns become cards on phones
+  automatically, so keep header cells short (they become the card labels).
 - **No AI-generated photorealistic images** of plants, roots, setups, products, harvests or
   symptoms, and never an illustration presented as a photo. Fake-looking images cost trust on an
   evidence site (John Mueller, Google, Dec 2023), and readers judge plant health from pictures.

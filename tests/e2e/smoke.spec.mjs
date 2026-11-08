@@ -61,6 +61,26 @@ test('mobile navigation remains visible, keyboard operable, and contained', asyn
   expect(overflow).toBeLessThanOrEqual(1);
 });
 
+test('guide tables become cards and diagrams open full size on a phone', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  await page.goto('/systems/hydroponic-tower-garden/');
+
+  const table = page.locator('table.hr-table-stack').first();
+  await expect(table).toBeVisible();
+  await expect(table.locator('thead')).toHaveCSS('position', 'absolute');
+  await expect(table.locator('tbody tr').first()).toHaveCSS('display', 'block');
+  await expect(page.getByRole('table').first()).toBeVisible();
+
+  const diagram = page.locator('figure.hr-figure a.hr-figure-link').first();
+  await expect(diagram).toHaveAttribute('href', /^\/images\/guides\/.+\.svg$/u);
+  await expect(diagram.locator('.hr-figure-zoom-phone')).toBeVisible();
+  await expect(diagram.locator('.hr-figure-zoom-wide')).toBeHidden();
+  await expect(page.locator('figure.hr-figure figcaption').first()).toContainText('Oklahoma State');
+
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  expect(overflow).toBeLessThanOrEqual(1);
+});
+
 test('static search returns a legitimate public page and an honest empty state', async ({ page }) => {
   const browserFailures = collectBrowserFailures(page);
   await page.goto('/search/');

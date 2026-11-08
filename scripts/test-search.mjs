@@ -46,7 +46,10 @@ globalThis.fetch = async (input, init) => {
 const normalizePath = (url) => new URL(url, 'https://hydrorigor.com').pathname;
 const routeFile = (route) => route === '/'
   ? join(distRoot, 'index.html')
-  : join(distRoot, ...route.split('/').filter(Boolean), 'index.html');
+  : extname(route)
+    // A link to a file (a full-size guide diagram, say) must point at that file in dist.
+    ? join(distRoot, ...route.split('/').filter(Boolean))
+    : join(distRoot, ...route.split('/').filter(Boolean), 'index.html');
 const readRoute = (route) => readFile(routeFile(route), 'utf8');
 const extractMeta = (html, name) => html.match(
   new RegExp(`<meta name="${name}" content="([^"]+)"`),
