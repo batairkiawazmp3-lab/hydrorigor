@@ -84,7 +84,8 @@ const glance = (() => {
   const src = `/images/guides/${choice.file}`;
   const svg = readFileSync(join(process.cwd(), 'public', src), 'utf8');
   const [, width, height] = svg.match(/viewBox="[\d.-]+[\s,]+[\d.-]+[\s,]+([\d.]+)[\s,]+([\d.]+)"/u) ?? [];
-  return { src, alt: match[1], caption: match[2], width, height, guideTitle: item.title, guideHref: getContentPath(item) };
+  const tall = Number(height) > Number(width) * 1.15;
+  return { src, alt: match[1], caption: match[2], width, height, tall, guideTitle: item.title, guideHref: getContentPath(item) };
 })();
 ---
 <BaseLayout title={pageTitle(section.title)} description={section.description} noindex={EMPTY_SECTION_PATHS.has(pathname)} image={image}>
@@ -151,7 +152,7 @@ const glance = (() => {
       {glance && (
         <section class="mt-12 sm:mt-14" aria-labelledby="glance-heading">
           <h2 id="glance-heading" class="font-heading text-2xl font-extrabold tracking-[-0.02em] text-hydro-deep">At a glance</h2>
-          <figure class="mt-5 max-w-4xl sm:mt-6">
+          <figure class:list={['mt-5 sm:mt-6', glance.tall ? 'max-w-lg' : 'max-w-4xl']}>
             <a class="hr-focus block rounded-[1.4rem] border border-line bg-white p-1 text-right no-underline sm:p-2" href={glance.src}>
               <img src={glance.src} alt={glance.alt} width={glance.width} height={glance.height} loading="lazy" decoding="async" class="h-auto w-full rounded-[1rem]" />
               <span aria-hidden="true" class="mt-2 mr-1 mb-1 inline-block rounded-full bg-water-mist px-3 py-1.5 font-heading text-[0.8125rem] font-bold text-hydro-teal sm:hidden">Tap to enlarge</span>

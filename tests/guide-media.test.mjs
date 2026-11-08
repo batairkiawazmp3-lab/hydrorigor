@@ -35,48 +35,28 @@ test('diagrams link to their full-size file, reserve their space and carry the c
   assert.equal(link.properties.href, src);
   const img = link.children[0];
   assert.equal(img.properties.alt, 'Cross-section', 'the alt text names the link');
-  assert.equal(img.properties.width, 960);
-  assert.equal(img.properties.height, 600);
+  assert.equal(img.properties.width, 640);
+  assert.equal(img.properties.height, 1110);
+  assert.deepEqual(figure.properties.className, ['hr-figure', 'hr-figure-tall'], 'portrait diagrams get a narrower desktop frame');
   assert.equal(img.properties.loading, 'lazy');
   assert.ok(link.children.slice(1).every((hint) => hint.properties.ariaHidden === 'true'), 'hints are not read twice');
   assert.equal(caption.tagName, 'figcaption');
   assert.equal(caption.children[0].value, 'How a tower works.');
 });
 
-// Guide diagrams drawn before this rule landed (PR #41, 2026-11-08) used a 960-wide canvas with
-// 11–16 unit labels, which shrink to about 5 px in a phone's article column; they open full size
-// on tap instead. Every new diagram must be readable in place on a phone.
-const LEGACY_DIAGRAMS = new Set([
-  'diy-dwc-tote-build.svg',
-  'diy-hydroponic-builds-compared.svg',
-  'dwc-lettuce-crop-timeline.svg',
-  'dwc-system-cross-section.svg',
-  'home-hydroponic-system-by-crop.svg',
-  'home-hydroponic-systems-cross-section.svg',
-  'indoor-crop-light-needs-dli.svg',
-  'indoor-hydroponic-system-types-compared.svg',
-  'hydroponic-tower-cross-section.svg',
-  'hydroponic-tower-spacing-by-crop.svg',
-  'lettuce-quick-reference.svg',
-  'lettuce-seed-germination-timeline.svg',
-  'nutrients-mixing-steps.svg',
-  'strawberry-quick-reference.svg',
-  'tomato-nutrient-mixing-steps.svg',
-  'tomato-nutrients-by-growth-stage.svg',
-]);
+// Every guide diagram must be readable in place on a phone (the last legacy diagrams were
+// redrawn on 2026-11-08).
 const PHONE_COLUMN_PX = 380;
 const MIN_PHONE_TEXT_PX = 10.5;
 
-test('new guide diagrams have phone-readable text', () => {
+test('guide diagrams have phone-readable text', () => {
   const dir = new URL('../public/images/guides/', import.meta.url);
   const files = readdirSync(dir).filter((file) => file.endsWith('.svg'));
-  for (const legacy of LEGACY_DIAGRAMS) assert.ok(files.includes(legacy), `${legacy} is listed as legacy but missing`);
   for (const file of files) {
     const svg = readFileSync(new URL(file, dir), 'utf8');
     assert.match(svg, /role="img"/u, `${file} needs role="img"`);
     assert.match(svg, /<title[\s>]/u, `${file} needs a <title>`);
     assert.doesNotMatch(svg, /\sstyle=/u, `${file} uses inline style; use presentation attributes`);
-    if (LEGACY_DIAGRAMS.has(file)) continue;
     const width = Number(svg.match(/viewBox="[\d.-]+[\s,]+[\d.-]+[\s,]+([\d.]+)/u)?.[1]);
     assert.ok(width > 0, `${file} needs a viewBox`);
     const sizes = [...svg.matchAll(/font-size="([\d.]+)"/gu)].map((match) => Number(match[1]));

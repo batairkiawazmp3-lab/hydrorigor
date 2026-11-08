@@ -1,66 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d">
-  <title id="t">Parts of a DIY deep water culture tote</title>
-  <desc id="d">A labelled cross-section of a DIY deep water culture tank. A foam board, cut to fit loosely so it floats, holds seedlings in rockwool or coir cubes whose bottoms touch the solution. The tank's clear sides are covered to keep light out and prevent algae. An air stone sits on the bottom, connected by tubing to an air pump outside the tank, with a check valve in the line to stop water flowing back. A drain valve near the bottom makes emptying easier, and the tank sits on a level floor because it is heavy when full. Aim for 7 to 10 ppm dissolved oxygen, with 4 ppm as the minimum, and check pH weekly, keeping it around 5.8 to 6.2.</desc>
-  <rect width="960" height="560" fill="#F5F7F2"/>
-  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Inside a DIY deep water culture tote</text>
-  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">Parts from University of Illinois Extension and Oregon State EM 9455; oxygen target from Virginia Tech</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1225" width="640" height="1225" role="img" aria-labelledby="t d">
+  <title id="t">Inside a DIY deep water culture tote</title>
+  <desc id="d">A labelled cross-section of a DIY deep water culture tank. Check pH weekly and keep it around 5.8 to 6.2. 1: a floating foam board, cut to fit loosely so it floats, with no gaps that let light in. 2: seedlings in rockwool or coir cubes whose bottoms reach the solution. 3: the sides are covered to block light and stop algae. 4: an air stone on the bottom; aim for 7 to 10 ppm dissolved oxygen, with 4 ppm as the minimum. 5: a check valve in the air line stops water flowing back to the pump. 6: the air pump sits outside the tank, never in the water. 7: a drain valve near the bottom for emptying. 8: a level floor, because a full tank is heavy; keep the bottom level to within 1 inch.</desc>
+  <rect width="640" height="1225" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Inside a DIY DWC tote</text>
   <g font-family="Inter, Arial, sans-serif">
-    <path d="M300 214 C284 186 282 172 290 164 C302 172 308 190 310 210 Z M330 214 C346 186 348 172 340 164 C328 172 322 190 320 210 Z M420 214 C404 186 402 172 410 164 C422 172 428 190 430 210 Z M450 214 C466 186 468 172 460 164 C448 172 442 190 440 210 Z M540 214 C524 186 522 172 530 164 C542 172 548 190 550 210 Z M570 214 C586 186 588 172 580 164 C568 172 562 190 560 210 Z" fill="#7FC48E"/>
-    <rect x="246" y="214" width="368" height="18" rx="3" fill="#F2EDE2" stroke="#3F5248" stroke-width="2"/>
-    <rect x="304" y="208" width="22" height="30" fill="#C9B79A"/>
-    <rect x="424" y="208" width="22" height="30" fill="#C9B79A"/>
-    <rect x="544" y="208" width="22" height="30" fill="#C9B79A"/>
-    <rect x="230" y="222" width="400" height="200" fill="#BFDDF0" stroke="#3F5248" stroke-width="4"/>
-    <rect x="224" y="196" width="8" height="230" fill="#3F5248"/>
-    <rect x="628" y="196" width="8" height="230" fill="#3F5248"/>
-    <path d="M312 238 C310 280 302 320 298 360 M318 238 C320 290 324 330 326 372 M432 238 C430 280 424 320 420 360 M438 238 C440 290 444 330 446 372 M552 238 C550 280 544 320 540 360 M558 238 C560 290 564 330 566 372" fill="none" stroke="#F1E6C8" stroke-width="3"/>
-    <rect x="400" y="400" width="70" height="12" rx="6" fill="#5B6F64"/>
-    <circle cx="414" cy="388" r="4" fill="#FFFFFF"/><circle cx="430" cy="372" r="5" fill="#FFFFFF"/><circle cx="446" cy="390" r="4" fill="#FFFFFF"/><circle cx="440" cy="352" r="5" fill="#FFFFFF"/><circle cx="424" cy="334" r="4" fill="#FFFFFF"/><circle cx="452" cy="318" r="4" fill="#FFFFFF"/>
-    <path d="M470 406 L600 406 L600 184 L700 184 L700 301 L760 301" fill="none" stroke="#0E1A14" stroke-width="3"/>
-    <rect x="686" y="232" width="28" height="18" rx="4" fill="#D9A441" stroke="#0E1A14" stroke-width="2"/>
-    <rect x="760" y="284" width="70" height="34" rx="6" fill="#0E1A14"/>
-    <text x="795" y="306" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">AIR PUMP</text>
-    <rect x="630" y="400" width="26" height="14" fill="#3F5248"/>
-    <rect x="656" y="396" width="12" height="22" rx="3" fill="#D9534F"/>
-    <rect x="200" y="426" width="460" height="10" fill="#9DB8A8"/>
-
-    <path d="M250 214 L214 160" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="128" font-size="15" font-weight="700" fill="#0E1A14">Floating foam board</text>
-    <text x="40" y="148" font-size="13" fill="#3F5248">cut to fit loosely so it floats;</text>
-    <text x="40" y="166" font-size="13" fill="#3F5248">no gaps that let light in</text>
-
-    <path d="M304 220 L190 238" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="222" font-size="15" font-weight="700" fill="#0E1A14">Seedling cube</text>
-    <text x="40" y="242" font-size="13" fill="#3F5248">bottom of the cube</text>
-    <text x="40" y="260" font-size="13" fill="#3F5248">reaches the solution</text>
-
-    <path d="M224 320 L190 320" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="316" font-size="15" font-weight="700" fill="#0E1A14">Covered sides</text>
-    <text x="40" y="336" font-size="13" fill="#3F5248">block light to stop algae</text>
-
-    <path d="M400 406 L190 410" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="40" y="398" font-size="15" font-weight="700" fill="#0E1A14">Air stone on the bottom</text>
-    <text x="40" y="418" font-size="13" fill="#3F5248">aim for 7–10 ppm oxygen;</text>
-    <text x="40" y="436" font-size="13" fill="#3F5248">4 ppm is the minimum</text>
-
-    <path d="M714 238 L740 222" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="744" y="206" font-size="15" font-weight="700" fill="#0E1A14">Check valve in the air line</text>
-    <text x="744" y="226" font-size="13" fill="#3F5248">stops water flowing</text>
-    <text x="744" y="244" font-size="13" fill="#3F5248">back to the pump</text>
-
-    <text x="764" y="340" font-size="15" font-weight="700" fill="#0E1A14">Pump outside</text>
-    <text x="764" y="358" font-size="13" fill="#3F5248">never in the water</text>
-
-    <path d="M662 418 L700 470" stroke="#3F5248" stroke-width="1.5"/>
-    <text x="704" y="474" font-size="15" font-weight="700" fill="#0E1A14">Drain valve</text>
-    <text x="704" y="494" font-size="13" fill="#3F5248">near the bottom for emptying</text>
-
-    <text x="230" y="466" font-size="15" font-weight="700" fill="#0E1A14">Level floor</text>
-    <text x="230" y="486" font-size="13" fill="#3F5248">a full tank is heavy; keep the</text>
-    <text x="230" y="504" font-size="13" fill="#3F5248">bottom level to within 1 inch</text>
-
-    <text x="440" y="466" font-size="15" font-weight="700" fill="#0E1A14">Check pH weekly</text>
-    <text x="440" y="486" font-size="13" fill="#3F5248">keep it around 5.8–6.2</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Parts: Illinois Extension, Oregon State</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">EM 9455. Oxygen: Virginia Tech SPES-466</text>
+    <rect x="20" y="146" width="600" height="84" rx="14" fill="#0E1A14"/>
+    <text x="44" y="180" font-size="22" font-weight="800" fill="#C6F35E">Check pH weekly</text>
+    <text x="44" y="212" font-size="22" fill="#FFFFFF">keep it around 5.8–6.2</text>
+    <path d="M20 652 L620 652" stroke="#5B6F64" stroke-width="4"/>
+    <path d="M40 652 L28 666 M80 652 L68 666 M120 652 L108 666 M160 652 L148 666 M200 652 L188 666 M240 652 L228 666 M280 652 L268 666 M320 652 L308 666 M360 652 L348 666 M400 652 L388 666 M440 652 L428 666 M480 652 L468 666 M520 652 L508 666 M560 652 L548 666 M600 652 L588 666" stroke="#9AA8A0" stroke-width="2"/>
+    <path d="M70 432 L94 640 L426 640 L450 432 Z" fill="#BFDDF0"/>
+    <path d="M60 404 L88 644 L432 644 L460 404" fill="none" stroke="#3F5248" stroke-width="9" stroke-linejoin="round"/>
+    <rect x="74" y="418" width="372" height="20" fill="#F4F1EA" stroke="#3F5248" stroke-width="2"/>
+    <rect x="137" y="412" width="26" height="40" fill="#C9B79A" stroke="#3F5248" stroke-width="2"/>
+    <path d="M150 412 L150 384" stroke="#5FA672" stroke-width="3"/>
+    <ellipse cx="138" cy="380" rx="13" ry="7" transform="rotate(-25 138 380)" fill="#7FC48E"/><ellipse cx="162" cy="380" rx="13" ry="7" transform="rotate(25 162 380)" fill="#7FC48E"/>
+    <path d="M145 452 C142 470 138 486 136 500 M155 452 C158 470 162 486 164 500" fill="none" stroke="#C9A96E" stroke-width="2.5"/>
+    <rect x="247" y="412" width="26" height="40" fill="#C9B79A" stroke="#3F5248" stroke-width="2"/>
+    <path d="M260 412 L260 384" stroke="#5FA672" stroke-width="3"/>
+    <ellipse cx="248" cy="380" rx="13" ry="7" transform="rotate(-25 248 380)" fill="#7FC48E"/><ellipse cx="272" cy="380" rx="13" ry="7" transform="rotate(25 272 380)" fill="#7FC48E"/>
+    <path d="M255 452 C252 470 248 486 246 500 M265 452 C268 470 272 486 274 500" fill="none" stroke="#C9A96E" stroke-width="2.5"/>
+    <rect x="357" y="412" width="26" height="40" fill="#C9B79A" stroke="#3F5248" stroke-width="2"/>
+    <path d="M370 412 L370 384" stroke="#5FA672" stroke-width="3"/>
+    <ellipse cx="358" cy="380" rx="13" ry="7" transform="rotate(-25 358 380)" fill="#7FC48E"/><ellipse cx="382" cy="380" rx="13" ry="7" transform="rotate(25 382 380)" fill="#7FC48E"/>
+    <path d="M365 452 C362 470 358 486 356 500 M375 452 C378 470 382 486 384 500" fill="none" stroke="#C9A96E" stroke-width="2.5"/>
+    <rect x="226" y="612" width="64" height="14" rx="7" fill="#5B6F64"/>
+    <circle cx="244" cy="594" r="5" fill="#FFFFFF"/><circle cx="260" cy="574" r="6" fill="#FFFFFF"/><circle cx="248" cy="550" r="5" fill="#FFFFFF"/><circle cx="266" cy="526" r="6" fill="#FFFFFF"/><circle cx="252" cy="500" r="5" fill="#FFFFFF"/>
+    <path d="M290 619 L404 619 L428 410 L428 390 L566 390 L566 370" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="488" y="380" width="22" height="20" rx="3" fill="#E39B3B" stroke="#0E1A14" stroke-width="2"/>
+    <rect x="512" y="330" width="108" height="40" rx="8" fill="#0E1A14"/>
+    <text x="566" y="357" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">AIR PUMP</text>
+    <path d="M500 370 L620 370" stroke="#8A6A4A" stroke-width="5"/>
+    <path d="M430 616 L470 616" stroke="#3F5248" stroke-width="8"/>
+    <rect x="458" y="600" width="10" height="32" rx="3" fill="#D9534F"/>
+    <circle cx="36" cy="420" r="16" fill="#0F6B4F"/>
+    <text x="36" y="427" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <circle cx="188" cy="350" r="16" fill="#0F6B4F"/>
+    <text x="188" y="357" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <circle cx="36" cy="540" r="16" fill="#0F6B4F"/>
+    <text x="36" y="547" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <circle cx="318" cy="619" r="16" fill="#0F6B4F"/>
+    <text x="318" y="626" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <circle cx="499" cy="424" r="16" fill="#0F6B4F"/>
+    <text x="499" y="431" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+    <circle cx="566" cy="304" r="16" fill="#0F6B4F"/>
+    <text x="566" y="311" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+    <circle cx="500" cy="616" r="16" fill="#0F6B4F"/>
+    <text x="500" y="623" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">7</text>
+    <circle cx="596" cy="626" r="16" fill="#0F6B4F"/>
+    <text x="596" y="633" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">8</text>
+    <circle cx="36" cy="705" r="16" fill="#0F6B4F"/>
+    <text x="36" y="712" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="64" y="712" font-size="22" font-weight="800" fill="#0E1A14">Floating foam board</text>
+    <text x="64" y="739" font-size="20" fill="#3F5248">cut to fit loosely so it floats; no light gaps</text>
+    <circle cx="36" cy="765" r="16" fill="#0F6B4F"/>
+    <text x="36" y="772" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="64" y="772" font-size="22" font-weight="800" fill="#0E1A14">Seedling cube</text>
+    <text x="64" y="799" font-size="20" fill="#3F5248">the bottom of the cube reaches the solution</text>
+    <circle cx="36" cy="825" r="16" fill="#0F6B4F"/>
+    <text x="36" y="832" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="64" y="832" font-size="22" font-weight="800" fill="#0E1A14">Covered sides</text>
+    <text x="64" y="859" font-size="20" fill="#3F5248">block light to stop algae</text>
+    <circle cx="36" cy="885" r="16" fill="#0F6B4F"/>
+    <text x="36" y="892" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="64" y="892" font-size="22" font-weight="800" fill="#0E1A14">Air stone on the bottom</text>
+    <text x="64" y="919" font-size="20" fill="#3F5248">aim for 7–10 ppm oxygen; 4 ppm is the minimum</text>
+    <circle cx="36" cy="945" r="16" fill="#0F6B4F"/>
+    <text x="36" y="952" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="64" y="952" font-size="22" font-weight="800" fill="#0E1A14">Check valve in the air line</text>
+    <text x="64" y="979" font-size="20" fill="#3F5248">stops water flowing back to the pump</text>
+    <circle cx="36" cy="1005" r="16" fill="#0F6B4F"/>
+    <text x="36" y="1012" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+    <text x="64" y="1012" font-size="22" font-weight="800" fill="#0E1A14">Pump outside</text>
+    <text x="64" y="1039" font-size="20" fill="#3F5248">never in the water</text>
+    <circle cx="36" cy="1065" r="16" fill="#0F6B4F"/>
+    <text x="36" y="1072" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">7</text>
+    <text x="64" y="1072" font-size="22" font-weight="800" fill="#0E1A14">Drain valve</text>
+    <text x="64" y="1099" font-size="20" fill="#3F5248">near the bottom for emptying</text>
+    <circle cx="36" cy="1125" r="16" fill="#0F6B4F"/>
+    <text x="36" y="1132" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">8</text>
+    <text x="64" y="1132" font-size="22" font-weight="800" fill="#0E1A14">Level floor</text>
+    <text x="64" y="1159" font-size="20" fill="#3F5248">a full tank is heavy; level to within 1 inch</text>
+    <text x="20" y="1203" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
   </g>
 </svg>

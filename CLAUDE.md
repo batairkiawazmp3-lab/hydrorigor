@@ -92,7 +92,7 @@ Stock photos set the mood; original visuals answer the search. Every rebuilt or 
 - **Draw for phones** (2026-11-08). A phone's article column is about 380 px wide, so a
   960-wide canvas shrinks 14-unit labels to about 5 px. Use a `viewBox` no wider than 720 with
   labels of 20 or more (at least 10.5 px on a phone; `tests/guide-media.test.mjs` enforces it for
-  every diagram not on its legacy list), keep labels to a few words, put detail in the caption,
+  every diagram), keep labels to a few words, put detail in the caption,
   and prefer tall layouts to wide ones. Write each diagram as `![alt](/images/guides/<file>.svg)`
   followed by an italic caption paragraph: the build (`src/lib/guide-media.ts`) turns it into a
   figure that opens full size on tap. Tables of three or more columns become cards on phones
