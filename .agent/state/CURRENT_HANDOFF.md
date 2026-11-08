@@ -1,6 +1,6 @@
 # Current Handoff
 
-Updated: 2026-11-07
+Updated: 2026-11-08
 
 ## State
 
@@ -63,6 +63,7 @@ Updated: 2026-11-07
 Guides published by automated runs under `HydroRigor Editorial`. When Najeeb has read one
 and approves, switch its byline to `Najeeb`.
 
+- `/systems/indoor-hydroponic-systems-for-home/` — "Indoor Hydroponic Systems for Home: 6 Types Compared" (2026-11-08). Buyer-oriented: six system types, crop fit, light (DLI) and a what-to-check-before-buying table; no products named or ranked. Sources: UF/IFAS HS1488 and HS1422, Oregon State EM 9453/9455/9456/9457/9458, Oklahoma State HLA-6442/6722/6724, Touliatos et al. 2016, Virginia Tech SPES-466, Kentucky CCD-CP-63, Tennessee W 844-C, Illinois, Missouri G6986, UGA C1315, and one new source: Purdue HO-283-W (DLI by crop type; Indiana greenhouse under 10 mol/m²/day Nov–Feb). Note: light sources differ (Kentucky lettuce 12–17, Purdue leafy greens 15–20, Virginia Tech 17+, Illinois 6–8 hours); the page shows all and explains why. Photo kept (registry home NFT shelf under LEDs). Named product picks wait for an approved affiliate programme.
 - `/systems/hydroponic-tower-garden/` — "Hydroponic Tower Garden: How It Works, Crops & DIY Build" (new guide, 2026-11-07). Sources: Oklahoma State HLA-6724 and HLA-6722, UF/IFAS St. Lucie County, Touliatos et al. 2016, Wortman et al. 2016, Kentucky CCD-CP-63, Arizona strawberry irrigation, Oregon State EM 9455/9457, UF/IFAS HS1488. Photo reuses the registry tower photo; an owner photo of a real tower would be better.
 - `/systems/deep-water-culture-hydroponics/` — "Deep Water Culture Hydroponics: DWC Setup, Oxygen & pH" (2026-11-07). Sources: Oregon State EM 9455, Virginia Tech SPES-466, UF/IFAS HS1422 and Volusia DWC bucket, University of Kentucky CCD-CP-63, University of Illinois Extension, Cornell CEA lettuce handbook, Oklahoma State HLA-6722, Kratky Acta Hort 843, Missouri G6986. Note: the sources give three dissolved oxygen targets (5, 6–8 and 7–10 ppm); the page shows all three and recommends Virginia Tech's 7–10 ppm. Web fetching was unavailable in this unattended run, so every figure comes from sources already registered and used on other guides; no new sources were added.
 - `/nutrients-water/hydroponic-nutrients-for-tomatoes/` — "Hydroponic Nutrients for Tomatoes: EC, pH & Feeding by Stage" (2026-11-06). Sources: UF/IFAS HS796 (Hochmuth), University of Tennessee W 844-C, Ohio State HYG-1437, Penn State nutrient programs, Oklahoma State HLA-6722, Kentucky CCD-TA-01, Mississippi State tomato FAQs (pH, fertilizer, blossom-end rot), UF/IFAS Volusia DWC bucket. Note: the sources give different EC and pH ranges; the page shows them all and recommends the Tennessee EC (2.0–3.0 mS/cm) and UF/IFAS pH (5.8–6.2).
