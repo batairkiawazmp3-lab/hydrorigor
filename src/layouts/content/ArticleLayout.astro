@@ -10,6 +10,7 @@ import ContentProse from '../../components/content/ContentProse.astro';
 import DevelopmentNotice from '../../components/content/DevelopmentNotice.astro';
 import PublicationMeta from '../../components/content/PublicationMeta.astro';
 import SourcesList from '../../components/content/SourcesList.astro';
+import EmailSignup from '../../components/newsletter/EmailSignup.astro';
 import Photo from '../../components/Photo.astro';
 import PhotoCredit from '../../components/PhotoCredit.astro';
 import { photoForGuide } from '../../data/photos.ts';
@@ -148,6 +149,7 @@ const related = contentItems
           <ContentProse><slot /></ContentProse>
           <AuthorBio name={data.author} />
           <SourcesList sources={data.sources} />
+          <EmailSignup id="guide-signup" class="mt-14" />
 
           {related.length > 0 && (
             <section class="mt-14" aria-labelledby="related-heading">

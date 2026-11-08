@@ -151,3 +151,21 @@ for (const route of ['/systems/', '/crops/', '/nutrients-water/', '/best/', '/re
     expect(overflow).toBeLessThanOrEqual(1);
   });
 }
+
+test('the email sign-up posts to Kit and is labelled, on the home page and a guide', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  for (const route of ['/', '/systems/hydroponic-tower-garden/']) {
+    await page.goto(route);
+    const region = page.getByRole('region', { name: 'Get new guides by email' });
+    await expect(region).toBeVisible();
+    const email = region.getByLabel('Email address');
+    await expect(email).toHaveAttribute('type', 'email');
+    await expect(email).toHaveAttribute('required', '');
+    const form = region.locator('form');
+    await expect(form).toHaveAttribute('action', /^https:\/\/app\.kit\.com\/forms\/\d+\/subscriptions$/u);
+    await expect(form).toHaveAttribute('method', 'post');
+    await expect(region.getByRole('button', { name: 'Subscribe' })).toBeVisible();
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
+  }
+});

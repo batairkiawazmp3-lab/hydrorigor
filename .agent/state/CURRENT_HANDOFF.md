@@ -14,6 +14,13 @@ Updated: 2026-11-08
 
 ## Open items for the owner
 
+- Email newsletter (Kit, form 10159921, set up by the owner 2026-11-08): the sign-up card on the
+  home page and at the end of every guide posts straight to Kit (no Kit script; CSP
+  `form-action` allows https://app.kit.com only). Owner: (1) once live, sign up once with your
+  own address to confirm Kit receives it and the confirm email arrives; (2) to email subscribers
+  when guides go up, point Kit's RSS-to-email feature at https://hydrorigor.com/rss.xml (rebuilt
+  guides appear as new items); (3) optionally edit Kit's confirmation email and the form name.
+  The privacy policy has an "Email newsletter" section; update it if Kit settings change.
 - Growth plan (2026-11-06, `docs/research/GROWTH_PLAN_2026-11.md`): the Ascend application for
   True Leaf Market was denied on 2026-11-06. Do not reapply to strict networks until the
   network-ready milestone in the plan is met (target mid-January 2027). Owner parts of it:
