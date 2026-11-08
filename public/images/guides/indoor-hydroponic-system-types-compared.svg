@@ -1,54 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" role="img" aria-labelledby="t d">
-  <title id="t">Six indoor hydroponic system types compared</title>
-  <desc id="d">Kratky bucket: power none; best for lettuce and leafy greens; 1–1.5 gal of water per lettuce plant. DWC tub: power air pump, 24 h; best for lettuce, spinach, kale, herbs; 3–4 lettuce per sq ft; 12 in deep. NFT channels: power pump, constant flow; best for lettuce, herbs, leafy greens; 2% slope; roots dry fast if pump stops. Vertical tower: power pump; best for lettuce, greens, herbs, strawberries; 28 plants; light falls toward the base. Ebb and flow: power pump and reliable timer; best for seedlings, herbs, peppers, greens; Flood to about 1 in below media top. Dutch buckets (drip): power pump and timer; best for tomatoes, peppers, cucumbers; perlite media; best tomato and pepper yields.</desc>
-  <rect width="960" height="620" fill="#F5F7F2"/>
-  <text x="40" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Six indoor system types at a glance</text>
-  <text x="40" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#3F5248">UF/IFAS HS1488, Oregon State EM 9455–9458, Kentucky CCD-CP-63, Oklahoma State HLA-6724, Virginia Tech SPES-466</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1180" width="640" height="1180" role="img" aria-labelledby="t d">
+  <title id="t">Six indoor hydroponic system types at a glance</title>
+  <desc id="d">Six system types, each with the power it needs, the crops it suits best and its key number or risk. Kratky bucket: no power; lettuce and leafy greens; 1 to 1.5 gallons of water per lettuce plant. DWC tub: air pump running 24 hours; lettuce, spinach, kale and herbs; 3 to 4 lettuce per square foot, 12 inches deep. NFT channels: pump with constant flow; lettuce, herbs and leafy greens; 2 percent slope, roots dry fast if the pump stops. Vertical tower: pump; lettuce, greens, herbs and strawberries; 28 plants, light falls toward the base. Ebb and flow: pump and a reliable timer; seedlings, herbs, peppers and greens; flood to about 1 inch below the media top. Dutch buckets on drip: pump and timer; tomatoes, peppers and cucumbers; perlite media, best tomato and pepper yields. Buying a countertop smart garden? Check which of these root-zone designs it uses before comparing features.</desc>
+  <rect width="640" height="1180" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Six indoor system types</text>
   <g font-family="Inter, Arial, sans-serif">
-    <rect x="30" y="104" width="900" height="38" rx="6" fill="#0E1A14"/>
-    <text x="50" y="129" font-size="14" font-weight="700" fill="#FFFFFF">System</text>
-    <text x="260" y="129" font-size="14" font-weight="700" fill="#FFFFFF">Power needed</text>
-    <text x="460" y="129" font-size="14" font-weight="700" fill="#FFFFFF">Best crops</text>
-    <text x="710" y="129" font-size="14" font-weight="700" fill="#FFFFFF">Key number or risk</text>
-    <rect x="30" y="150" width="900" height="66" rx="6" fill="#FFFFFF"/>
-    <text x="50" y="188" font-size="16" font-weight="700" fill="#0E1A14">Kratky bucket</text>
-    <text x="260" y="188" font-size="14" fill="#0E1A14">None</text>
-    <text x="460" y="178" font-size="14" fill="#0E1A14">Lettuce and leafy greens</text>
-    <text x="710" y="178" font-size="14" fill="#2F5B40">1–1.5 gal of water per</text>
-    <text x="710" y="196" font-size="14" fill="#2F5B40">lettuce plant</text>
-    <rect x="30" y="222" width="900" height="66" rx="6" fill="#E7F1E7"/>
-    <text x="50" y="260" font-size="16" font-weight="700" fill="#0E1A14">DWC tub</text>
-    <text x="260" y="260" font-size="14" fill="#0E1A14">Air pump, 24 h</text>
-    <text x="460" y="250" font-size="14" fill="#0E1A14">Lettuce, spinach, kale,</text>
-    <text x="460" y="268" font-size="14" fill="#0E1A14">herbs</text>
-    <text x="710" y="250" font-size="14" fill="#2F5B40">3–4 lettuce per sq ft; 12 in</text>
-    <text x="710" y="268" font-size="14" fill="#2F5B40">deep</text>
-    <rect x="30" y="294" width="900" height="66" rx="6" fill="#FFFFFF"/>
-    <text x="50" y="332" font-size="16" font-weight="700" fill="#0E1A14">NFT channels</text>
-    <text x="260" y="332" font-size="14" fill="#0E1A14">Pump, constant flow</text>
-    <text x="460" y="322" font-size="14" fill="#0E1A14">Lettuce, herbs, leafy greens</text>
-    <text x="710" y="322" font-size="14" fill="#2F5B40">2% slope; roots dry fast if</text>
-    <text x="710" y="340" font-size="14" fill="#2F5B40">pump stops</text>
-    <rect x="30" y="366" width="900" height="66" rx="6" fill="#E7F1E7"/>
-    <text x="50" y="404" font-size="16" font-weight="700" fill="#0E1A14">Vertical tower</text>
-    <text x="260" y="404" font-size="14" fill="#0E1A14">Pump</text>
-    <text x="460" y="394" font-size="14" fill="#0E1A14">Lettuce, greens, herbs,</text>
-    <text x="460" y="412" font-size="14" fill="#0E1A14">strawberries</text>
-    <text x="710" y="394" font-size="14" fill="#2F5B40">28 plants; light falls</text>
-    <text x="710" y="412" font-size="14" fill="#2F5B40">toward the base</text>
-    <rect x="30" y="438" width="900" height="66" rx="6" fill="#FFFFFF"/>
-    <text x="50" y="476" font-size="16" font-weight="700" fill="#0E1A14">Ebb and flow</text>
-    <text x="260" y="476" font-size="14" fill="#0E1A14">Pump and reliable timer</text>
-    <text x="460" y="466" font-size="14" fill="#0E1A14">Seedlings, herbs, peppers,</text>
-    <text x="460" y="484" font-size="14" fill="#0E1A14">greens</text>
-    <text x="710" y="466" font-size="14" fill="#2F5B40">Flood to about 1 in below</text>
-    <text x="710" y="484" font-size="14" fill="#2F5B40">media top</text>
-    <rect x="30" y="510" width="900" height="66" rx="6" fill="#E7F1E7"/>
-    <text x="50" y="548" font-size="16" font-weight="700" fill="#0E1A14">Dutch buckets (drip)</text>
-    <text x="260" y="548" font-size="14" fill="#0E1A14">Pump and timer</text>
-    <text x="460" y="538" font-size="14" fill="#0E1A14">Tomatoes, peppers, cucumbers</text>
-    <text x="710" y="538" font-size="14" fill="#2F5B40">Perlite media; best tomato</text>
-    <text x="710" y="556" font-size="14" fill="#2F5B40">and pepper yields</text>
-    <text x="40" y="598" font-size="13" fill="#3F5248">Buying a countertop smart garden? Check which of these root-zone designs it uses before comparing features.</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">UF/IFAS, Oregon State, Kentucky,</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">Oklahoma State, Virginia Tech</text>
+    <rect x="20" y="150" width="600" height="124" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="188" font-size="24" font-weight="800" fill="#0E1A14">Kratky bucket</text>
+    <rect x="484" y="164" width="116" height="34" rx="17" fill="#E6F1EA"/>
+    <text x="542.0" y="188" font-size="20" font-weight="800" fill="#0F6B4F" text-anchor="middle">No power</text>
+    <text x="40" y="222" font-size="21" fill="#3F5248"><tspan font-weight="700" fill="#0E1A14">Best for </tspan>lettuce and leafy greens</text>
+    <text x="40" y="254" font-size="21" font-weight="800" fill="#0F6B4F">1–1.5 gal of water per lettuce plant</text>
+    <rect x="20" y="288" width="600" height="124" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="326" font-size="24" font-weight="800" fill="#0E1A14">DWC tub</text>
+    <rect x="418" y="302" width="182" height="34" rx="17" fill="#EEF0EC"/>
+    <text x="509.0" y="326" font-size="20" font-weight="800" fill="#3F5248" text-anchor="middle">Air pump, 24 h</text>
+    <text x="40" y="360" font-size="21" fill="#3F5248"><tspan font-weight="700" fill="#0E1A14">Best for </tspan>lettuce, spinach, kale, herbs</text>
+    <text x="40" y="392" font-size="21" font-weight="800" fill="#0F6B4F">3–4 lettuce per sq ft; 12 in deep</text>
+    <rect x="20" y="426" width="600" height="124" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="464" font-size="24" font-weight="800" fill="#0E1A14">NFT channels</text>
+    <rect x="363" y="440" width="237" height="34" rx="17" fill="#EEF0EC"/>
+    <text x="481.5" y="464" font-size="20" font-weight="800" fill="#3F5248" text-anchor="middle">Pump, constant flow</text>
+    <text x="40" y="498" font-size="21" fill="#3F5248"><tspan font-weight="700" fill="#0E1A14">Best for </tspan>lettuce, herbs, leafy greens</text>
+    <text x="40" y="530" font-size="21" font-weight="800" fill="#0F6B4F">2% slope; roots dry fast if pump stops</text>
+    <rect x="20" y="564" width="600" height="124" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="602" font-size="24" font-weight="800" fill="#0E1A14">Vertical tower</text>
+    <rect x="528" y="578" width="72" height="34" rx="17" fill="#EEF0EC"/>
+    <text x="564.0" y="602" font-size="20" font-weight="800" fill="#3F5248" text-anchor="middle">Pump</text>
+    <text x="40" y="636" font-size="21" fill="#3F5248"><tspan font-weight="700" fill="#0E1A14">Best for </tspan>lettuce, greens, herbs, strawberries</text>
+    <text x="40" y="668" font-size="21" font-weight="800" fill="#0F6B4F">28 plants; light falls toward the base</text>
+    <rect x="20" y="702" width="600" height="124" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="740" font-size="24" font-weight="800" fill="#0E1A14">Ebb and flow</text>
+    <rect x="319" y="716" width="281" height="34" rx="17" fill="#EEF0EC"/>
+    <text x="459.5" y="740" font-size="20" font-weight="800" fill="#3F5248" text-anchor="middle">Pump and reliable timer</text>
+    <text x="40" y="774" font-size="21" fill="#3F5248"><tspan font-weight="700" fill="#0E1A14">Best for </tspan>seedlings, herbs, peppers, greens</text>
+    <text x="40" y="806" font-size="21" font-weight="800" fill="#0F6B4F">Flood to about 1 in below media top</text>
+    <rect x="20" y="840" width="600" height="124" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="878" font-size="24" font-weight="800" fill="#0E1A14">Dutch buckets (drip)</text>
+    <rect x="418" y="854" width="182" height="34" rx="17" fill="#EEF0EC"/>
+    <text x="509.0" y="878" font-size="20" font-weight="800" fill="#3F5248" text-anchor="middle">Pump and timer</text>
+    <text x="40" y="912" font-size="21" fill="#3F5248"><tspan font-weight="700" fill="#0E1A14">Best for </tspan>tomatoes, peppers, cucumbers</text>
+    <text x="40" y="944" font-size="21" font-weight="800" fill="#0F6B4F">Perlite media; best tomato and pepper yields</text>
+    <rect x="20" y="990" width="600" height="124" rx="16" fill="#0E1A14"/>
+    <text x="44" y="1028" font-size="22" font-weight="800" fill="#C6F35E">Buying a countertop smart garden?</text>
+    <text x="44" y="1060" font-size="21" fill="#FFFFFF">Check which of these root-zone designs it</text>
+    <text x="44" y="1090" font-size="21" fill="#FFFFFF">uses before comparing features.</text>
+    <text x="20" y="1158" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
   </g>
 </svg>

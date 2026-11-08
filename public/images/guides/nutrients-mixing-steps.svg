@@ -1,35 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="t d">
-  <title id="t">How to mix hydroponic nutrients in four steps</title>
-  <desc id="d">Step 1: start with clean water. Step 2: add part A and stir until dissolved. Step 3: add part B and stir. Step 4: check EC first, then adjust pH last. Never mix concentrates A and B directly.</desc>
-  <rect width="960" height="420" fill="#F5F7F2"/>
-  <text x="40" y="56" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Mixing order matters</text>
-  <text x="40" y="86" font-family="Inter, Arial, sans-serif" font-size="16" fill="#3F5248">Calcium fertilizers react with phosphate and sulfate fertilizers when concentrates meet (University of Missouri)</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 870" width="640" height="870" role="img" aria-labelledby="t d">
+  <title id="t">Mixing order for a two-part hydroponic nutrient</title>
+  <desc id="d">Step 1: start with clean water. Step 2: add part A and stir until dissolved. Step 3: add part B and stir. Step 4: check EC first, then adjust pH last. Calcium fertilizers react with phosphate and sulfate fertilizers when concentrates meet (University of Missouri), so never pour concentrate A straight into concentrate B; dilute each in the full volume of water first.</desc>
+  <rect width="640" height="870" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Mixing order matters</text>
   <g font-family="Inter, Arial, sans-serif">
-    <rect x="40" y="116" width="200" height="250" rx="18" fill="#FFFFFF" stroke="#DCE4DD" stroke-width="2"/>
-    <circle cx="78" cy="152" r="18" fill="#0E1A14"/><text x="78" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#C6F35E">1</text>
-    <path d="M90 230h100v90a14 14 0 0 1-14 14H104a14 14 0 0 1-14-14z" fill="#E3F1E8" stroke="#0F6B4F" stroke-width="3"/>
-    <path d="M92 262h96" stroke="#7FC48E" stroke-width="3"/>
-    <text x="60" y="210" font-size="17" font-weight="700" fill="#0E1A14">Clean water</text>
-
-    <rect x="260" y="116" width="200" height="250" rx="18" fill="#FFFFFF" stroke="#DCE4DD" stroke-width="2"/>
-    <circle cx="298" cy="152" r="18" fill="#0E1A14"/><text x="298" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#C6F35E">2</text>
-    <rect x="330" y="244" width="60" height="96" rx="12" fill="#0F6B4F"/><rect x="346" y="228" width="28" height="20" rx="5" fill="#0E1A14"/>
-    <text x="360" y="302" text-anchor="middle" font-size="26" font-weight="800" fill="#FFFFFF">A</text>
-    <text x="280" y="210" font-size="17" font-weight="700" fill="#0E1A14">Add A, stir</text>
-
-    <rect x="480" y="116" width="200" height="250" rx="18" fill="#FFFFFF" stroke="#DCE4DD" stroke-width="2"/>
-    <circle cx="518" cy="152" r="18" fill="#0E1A14"/><text x="518" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#C6F35E">3</text>
-    <rect x="550" y="244" width="60" height="96" rx="12" fill="#3E9B6A"/><rect x="566" y="228" width="28" height="20" rx="5" fill="#0E1A14"/>
-    <text x="580" y="302" text-anchor="middle" font-size="26" font-weight="800" fill="#FFFFFF">B</text>
-    <text x="500" y="210" font-size="17" font-weight="700" fill="#0E1A14">Add B, stir</text>
-
-    <rect x="700" y="116" width="220" height="250" rx="18" fill="#0E1A14"/>
-    <circle cx="738" cy="152" r="18" fill="#C6F35E"/><text x="738" y="158" text-anchor="middle" font-size="16" font-weight="700" fill="#0E1A14">4</text>
-    <text x="720" y="210" font-size="17" font-weight="700" fill="#FFFFFF">Check EC, then pH</text>
-    <rect x="726" y="232" width="168" height="48" rx="10" fill="#17271F" stroke="#3E9B6A" stroke-width="2"/>
-    <text x="742" y="263" font-family="JetBrains Mono, Consolas, monospace" font-size="18" font-weight="700" fill="#C6F35E">EC first</text>
-    <rect x="726" y="292" width="168" height="48" rx="10" fill="#17271F" stroke="#3E9B6A" stroke-width="2"/>
-    <text x="742" y="323" font-family="JetBrains Mono, Consolas, monospace" font-size="18" font-weight="700" fill="#FFFFFF">pH last</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Calcium fertilizers react with phosphate and</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">sulfate when concentrates meet (Missouri)</text>
+    <rect x="20" y="150" width="130" height="108" rx="14" fill="#E3EEF6"/>
+    <path d="M48 176 L122 176 L114 242 L56 242 Z" fill="#FFFFFF" stroke="#3F5248" stroke-width="3"/>
+    <path d="M52 200 L118 200 L114 240 L56 240 Z" fill="#8EC3E2"/>
+    <circle cx="186" cy="192" r="16" fill="#0F6B4F"/>
+    <text x="186" y="199" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="214" y="200" font-size="24" font-weight="800" fill="#0E1A14">Clean water</text>
+    <text x="214" y="232" font-size="21" fill="#3F5248">start with the full volume</text>
+    <rect x="20" y="278" width="130" height="108" rx="14" fill="#DCEFE3"/>
+    <rect x="55" y="296" width="60" height="78" rx="12" fill="#FFFFFF" stroke="#3F5248" stroke-width="3"/>
+    <rect x="72" y="286" width="26" height="12" fill="#3F5248"/>
+    <text x="85" y="348" font-size="32" font-weight="800" fill="#0E1A14" text-anchor="middle">A</text>
+    <circle cx="186" cy="320" r="16" fill="#0F6B4F"/>
+    <text x="186" y="327" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="214" y="328" font-size="24" font-weight="800" fill="#0E1A14">Add A, stir</text>
+    <text x="214" y="360" font-size="21" fill="#3F5248">until it dissolves</text>
+    <rect x="20" y="406" width="130" height="108" rx="14" fill="#E7E3F3"/>
+    <rect x="55" y="424" width="60" height="78" rx="12" fill="#FFFFFF" stroke="#3F5248" stroke-width="3"/>
+    <rect x="72" y="414" width="26" height="12" fill="#3F5248"/>
+    <text x="85" y="476" font-size="32" font-weight="800" fill="#0E1A14" text-anchor="middle">B</text>
+    <circle cx="186" cy="448" r="16" fill="#0F6B4F"/>
+    <text x="186" y="455" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="214" y="456" font-size="24" font-weight="800" fill="#0E1A14">Add B, stir</text>
+    <text x="214" y="488" font-size="21" fill="#3F5248">into the same water</text>
+    <rect x="20" y="534" width="130" height="108" rx="14" fill="#E3EEF6"/>
+    <rect x="50" y="546" width="70" height="86" rx="10" fill="#0E1A14"/>
+    <rect x="58" y="556" width="54" height="32" rx="4" fill="#C6F35E"/>
+    <text x="85" y="579" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="middle">EC</text>
+    <text x="85" y="618" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">pH</text>
+    <circle cx="186" cy="576" r="16" fill="#0F6B4F"/>
+    <text x="186" y="583" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="214" y="584" font-size="24" font-weight="800" fill="#0E1A14">Check EC, then pH</text>
+    <text x="214" y="616" font-size="21" fill="#3F5248">EC first, pH last</text>
+    <rect x="20" y="676" width="600" height="140" rx="16" fill="#0E1A14"/>
+    <text x="44" y="714" font-size="22" font-weight="800" fill="#C6F35E">Never pour A straight into B</text>
+    <text x="44" y="748" font-size="21" fill="#FFFFFF">Dilute each concentrate in the full</text>
+    <text x="44" y="778" font-size="21" fill="#FFFFFF">volume of water first.</text>
+    <text x="20" y="848" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
   </g>
-  <text x="40" y="398" font-family="Inter, Arial, sans-serif" font-size="14" fill="#3F5248">Never pour concentrate A straight into concentrate B. Dilute each in the full volume of water first.</text>
 </svg>

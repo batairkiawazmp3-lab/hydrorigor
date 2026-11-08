@@ -1,49 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-labelledby="t d">
-  <title id="t">Hydroponic lettuce quick reference</title>
-  <desc id="d">A lettuce head floating on a raft over aerated solution, beside target cards: pH 5.5 to 6.0, EC about 1.5, daily light 12 to 17 mol per square metre per day, days up to 24 °C and nights up to 18 °C, and harvest 3 to 5 weeks after transplanting.</desc>
-  <rect width="960" height="540" fill="#F5F7F2"/>
-  <text x="40" y="58" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">Hydroponic lettuce: the targets</text>
-  <text x="40" y="88" font-family="Inter, Arial, sans-serif" font-size="16" fill="#3F5248">Starting points from University of Kentucky and UF/IFAS extension work</text>
-
-  <rect x="40" y="114" width="380" height="390" rx="18" fill="#FFFFFF" stroke="#DCE4DD" stroke-width="2"/>
-  <ellipse cx="230" cy="232" rx="118" ry="64" fill="#0F6B4F"/>
-  <ellipse cx="180" cy="214" rx="70" ry="48" fill="#3E9B6A"/>
-  <ellipse cx="280" cy="214" rx="70" ry="48" fill="#3E9B6A"/>
-  <ellipse cx="230" cy="196" rx="62" ry="48" fill="#7FC48E"/>
-  <path d="M230 160v76M204 184l26 26 26-26" fill="none" stroke="#E3F1E8" stroke-width="4" stroke-linecap="round"/>
-  <rect x="80" y="282" width="300" height="22" rx="6" fill="#E9E2D4" stroke="#B9AE98" stroke-width="2"/>
-  <rect x="80" y="304" width="300" height="160" rx="10" fill="#E3F1E8" stroke="#CFE3D6" stroke-width="2"/>
-  <path d="M220 304c-6 40-14 80-26 130M230 304c0 50 2 90-2 140M240 304c8 40 18 80 30 126" fill="none" stroke="#EADFC8" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="320" cy="440" r="6" fill="#FFFFFF"/><circle cx="330" cy="420" r="4" fill="#FFFFFF"/><circle cx="312" cy="404" r="5" fill="#FFFFFF"/>
-  <rect x="300" y="452" width="40" height="10" rx="5" fill="#0E1A14"/>
-  <text x="62" y="490" font-family="Inter, Arial, sans-serif" font-size="13" fill="#3F5248">Raft over aerated solution · DO 6–8 ppm</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 935" width="640" height="935" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic lettuce targets at a glance</title>
+  <desc id="d">A lettuce head floating on a raft over aerated solution with dissolved oxygen at 6 to 8 ppm, beside target cards: solution pH 5.5 to 6.0 (tap water often starts above 7); EC about 1.5 mS/cm, about 1.0 for seedlings; daily light 12 to 17 mol per square metre per day, 200 to 300 µmol; days up to 24 °C (75 °F) and nights up to 18 °C (65 °F), because heat causes bolting. Transplant at 14 to 21 days, harvest 21 to 35 days after transplanting, and start with butterhead or looseleaf types.</desc>
+  <rect width="640" height="935" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Hydroponic lettuce: targets</text>
   <g font-family="Inter, Arial, sans-serif">
-    <rect x="448" y="114" width="226" height="118" rx="16" fill="#0E1A14"/>
-    <text x="468" y="146" font-size="14" fill="#C6F35E">Solution pH</text>
-    <text x="468" y="190" font-family="JetBrains Mono, Consolas, monospace" font-size="34" font-weight="700" fill="#FFFFFF">5.5–6.0</text>
-    <text x="468" y="216" font-size="13" fill="#E3F1E8">Tap water often starts above 7</text>
-
-    <rect x="694" y="114" width="226" height="118" rx="16" fill="#0F6B4F"/>
-    <text x="714" y="146" font-size="14" fill="#E3F1E8">EC (feed strength)</text>
-    <text x="714" y="190" font-family="JetBrains Mono, Consolas, monospace" font-size="34" font-weight="700" fill="#FFFFFF">~1.5</text>
-    <text x="714" y="216" font-size="13" fill="#E3F1E8">mS/cm · seedlings ~1.0</text>
-
-    <rect x="448" y="250" width="226" height="118" rx="16" fill="#E3F1E8" stroke="#CFE3D6" stroke-width="2"/>
-    <text x="468" y="282" font-size="14" fill="#3F5248">Daily light (DLI)</text>
-    <text x="468" y="326" font-family="JetBrains Mono, Consolas, monospace" font-size="30" font-weight="700" fill="#0E1A14">12–17</text>
-    <text x="468" y="352" font-size="13" fill="#3F5248">mol/m²/day · 200–300 µmol</text>
-
-    <rect x="694" y="250" width="226" height="118" rx="16" fill="#E3F1E8" stroke="#CFE3D6" stroke-width="2"/>
-    <text x="714" y="282" font-size="14" fill="#3F5248">Day / night max</text>
-    <text x="714" y="326" font-family="JetBrains Mono, Consolas, monospace" font-size="28" font-weight="700" fill="#0E1A14">24 / 18 °C</text>
-    <text x="714" y="352" font-size="13" fill="#3F5248">75 / 65 °F · heat = bolting</text>
-
-    <rect x="448" y="386" width="472" height="118" rx="16" fill="#FFFFFF" stroke="#DCE4DD" stroke-width="2"/>
-    <circle cx="492" cy="445" r="20" fill="#3E9B6A"/>
-    <path d="M482 445 L 489 452 L 503 437" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="528" y="430" font-size="17" font-weight="700" fill="#0E1A14">Transplant at 14–21 days</text>
-    <text x="528" y="454" font-size="14" fill="#3F5248">Harvest 21–35 days after transplanting</text>
-    <text x="528" y="478" font-size="14" fill="#3F5248">Start with butterhead or looseleaf types</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Starting points from University of Kentucky</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">and UF/IFAS extension work</text>
+    <rect x="20" y="150" width="600" height="176" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="40" y="250" width="230" height="60" rx="6" fill="#BFDDF0"/>
+    <rect x="36" y="238" width="238" height="16" rx="3" fill="#E9E2D4" stroke="#3F5248" stroke-width="2"/>
+    <ellipse cx="127.5" cy="212.5" rx="20.0" ry="32.5" transform="rotate(-40 127.5 212.5)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="182.5" cy="212.5" rx="20.0" ry="32.5" transform="rotate(40 182.5 212.5)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="142.5" cy="197.5" rx="17.5" ry="35.0" transform="rotate(-12 142.5 197.5)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="167.5" cy="197.5" rx="17.5" ry="35.0" transform="rotate(12 167.5 197.5)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="155.0" cy="217.5" rx="25.0" ry="22.5" transform="rotate(0 155.0 217.5)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <path d="M150 254 C146 272 140 290 136 304 M160 254 C164 272 170 290 174 304" fill="none" stroke="#C9A96E" stroke-width="3"/>
+    <circle cx="220" cy="296" r="4" fill="#FFFFFF"/><circle cx="230" cy="280" r="5" fill="#FFFFFF"/><circle cx="222" cy="266" r="4" fill="#FFFFFF"/>
+    <text x="300" y="222" font-size="22" font-weight="800" fill="#0E1A14">Raft over aerated</text>
+    <text x="300" y="252" font-size="22" font-weight="800" fill="#0E1A14">solution</text>
+    <text x="300" y="286" font-size="20" fill="#3F5248">dissolved oxygen 6–8 ppm</text>
+    <rect x="20" y="346" width="290" height="176" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="42" y="382" font-size="20" font-weight="800" fill="#5B6F64">Solution pH</text>
+    <text x="42" y="424" font-size="34" font-weight="800" fill="#0E1A14">5.5–6.0</text>
+    <text x="42" y="460" font-size="20" fill="#3F5248">Tap water often</text>
+    <text x="42" y="486" font-size="20" fill="#3F5248">starts above 7</text>
+    <rect x="330" y="346" width="290" height="176" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="352" y="382" font-size="20" font-weight="800" fill="#5B6F64">EC (feed strength)</text>
+    <text x="352" y="424" font-size="34" font-weight="800" fill="#0E1A14">~1.5</text>
+    <text x="352" y="460" font-size="20" fill="#3F5248">mS/cm</text>
+    <text x="352" y="486" font-size="20" fill="#3F5248">seedlings ~1.0</text>
+    <rect x="20" y="538" width="290" height="176" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="42" y="574" font-size="20" font-weight="800" fill="#5B6F64">Daily light (DLI)</text>
+    <text x="42" y="616" font-size="34" font-weight="800" fill="#0E1A14">12–17</text>
+    <text x="42" y="652" font-size="20" fill="#3F5248">mol/m²/day</text>
+    <text x="42" y="678" font-size="20" fill="#3F5248">200–300 µmol</text>
+    <rect x="330" y="538" width="290" height="176" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="352" y="574" font-size="20" font-weight="800" fill="#5B6F64">Day / night max</text>
+    <text x="352" y="612" font-size="30" font-weight="800" fill="#0E1A14">24 / 18 °C</text>
+    <text x="352" y="648" font-size="20" fill="#3F5248">75 / 65 °F</text>
+    <text x="352" y="674" font-size="20" fill="#3F5248">heat = bolting</text>
+    <rect x="20" y="746" width="600" height="130" rx="16" fill="#0E1A14"/>
+    <text x="44" y="786" font-size="22" font-weight="800" fill="#C6F35E">Transplant at 14–21 days</text>
+    <text x="44" y="820" font-size="21" fill="#FFFFFF">Harvest 21–35 days after transplanting</text>
+    <text x="44" y="852" font-size="21" fill="#FFFFFF">Start with butterhead or looseleaf types</text>
+    <text x="20" y="913" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
   </g>
 </svg>

@@ -1,50 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-labelledby="t d">
-  <title id="t">Lettuce seed to transplant timeline</title>
-  <desc id="d">A timeline from sowing to transplant. Day 0: one seed per pre-wetted plug at about 20 °C (68 °F). Days 2 to 3: seedlings emerge and the dome comes off. Day 3: count germination. Days 14 to 21: transplant at 3 to 4 true leaves. A temperature bar below shows germination is best near 20 °C and that above 25 °C (77 °F) lettuce seed can go thermodormant.</desc>
-  <rect width="960" height="540" fill="#F5F7F2"/>
-  <text x="40" y="58" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">From lettuce seed to transplant</text>
-  <text x="40" y="88" font-family="Inter, Arial, sans-serif" font-size="16" fill="#3F5248">Timing from University of Kentucky and Cornell CEA; temperature limit from UF/IFAS</text>
-
-  <line x1="100" y1="230" x2="860" y2="230" stroke="#CFE3D6" stroke-width="8" stroke-linecap="round"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1190" width="640" height="1190" role="img" aria-labelledby="t d">
+  <title id="t">From lettuce seed to transplant</title>
+  <desc id="d">A timeline from sowing to transplant. Day 0: sow one seed per pre-wetted plug at about 20 °C with the dome on. Days 2 to 3: seedlings emerge, the dome comes off, and light is about 50 µmol. Day 3: count germination, thin doubles, and raise light to 200 to 300. Days 14 to 21: transplant at 3 to 4 true leaves, with roots through the plug. Germination temperature: cool temperatures give a slower start, germination is best near 20 °C (68 °F), and above 25 °C (77 °F) lettuce seed risks thermodormancy and may not sprout. Keep plugs moist and humid, above 88 percent relative humidity, until emergence.</desc>
+  <rect width="640" height="1190" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Lettuce, seed to transplant</text>
   <g font-family="Inter, Arial, sans-serif">
-    <circle cx="120" cy="230" r="26" fill="#0E1A14"/>
-    <ellipse cx="120" cy="230" rx="8" ry="5" fill="#E9E2D4"/>
-    <text x="120" y="292" font-size="16" font-weight="700" fill="#0E1A14" text-anchor="middle">Day 0</text>
-    <text x="120" y="314" font-size="13" fill="#3F5248" text-anchor="middle">Sow 1 seed</text>
-    <text x="120" y="332" font-size="13" fill="#3F5248" text-anchor="middle">per plug</text>
-    <text x="120" y="350" font-size="13" fill="#3F5248" text-anchor="middle">~20 °C · dome on</text>
-
-    <circle cx="340" cy="230" r="26" fill="#0F6B4F"/>
-    <path d="M340 244v-18M340 230c-10-10-18-8-20-2c8 4 14 4 20 2zM340 226c8-10 16-10 20-4c-6 5-13 6-20 4z" fill="#7FC48E" stroke="#E3F1E8" stroke-width="2"/>
-    <text x="340" y="292" font-size="16" font-weight="700" fill="#0E1A14" text-anchor="middle">Days 2–3</text>
-    <text x="340" y="314" font-size="13" fill="#3F5248" text-anchor="middle">Seedlings emerge</text>
-    <text x="340" y="332" font-size="13" fill="#3F5248" text-anchor="middle">Dome off</text>
-    <text x="340" y="350" font-size="13" fill="#3F5248" text-anchor="middle">Light ~50 µmol</text>
-
-    <circle cx="560" cy="230" r="26" fill="#3E9B6A"/>
-    <path d="M547 230 L 556 239 L 573 221" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="560" y="292" font-size="16" font-weight="700" fill="#0E1A14" text-anchor="middle">Day 3</text>
-    <text x="560" y="314" font-size="13" fill="#3F5248" text-anchor="middle">Count germination</text>
-    <text x="560" y="332" font-size="13" fill="#3F5248" text-anchor="middle">Thin doubles</text>
-    <text x="560" y="350" font-size="13" fill="#3F5248" text-anchor="middle">Raise light to 200–300</text>
-
-    <circle cx="840" cy="230" r="26" fill="#C6F35E"/>
-    <path d="M840 246v-26M840 226c-14-14-26-10-28-2c10 6 20 6 28 2zM840 220c12-14 24-12 28-4c-9 7-19 8-28 4z" fill="#3E9B6A" stroke="#0F6B4F" stroke-width="2"/>
-    <text x="840" y="292" font-size="16" font-weight="700" fill="#0E1A14" text-anchor="middle">Days 14–21</text>
-    <text x="840" y="314" font-size="13" fill="#3F5248" text-anchor="middle">Transplant at</text>
-    <text x="840" y="332" font-size="13" fill="#3F5248" text-anchor="middle">3–4 true leaves</text>
-    <text x="840" y="350" font-size="13" fill="#3F5248" text-anchor="middle">Roots through plug</text>
-
-    <text x="40" y="410" font-size="15" font-weight="700" fill="#0E1A14">Germination temperature</text>
-    <rect x="40" y="424" width="300" height="40" rx="8" fill="#E3F1E8" stroke="#CFE3D6" stroke-width="2"/>
-    <rect x="340" y="424" width="300" height="40" fill="#3E9B6A"/>
-    <rect x="640" y="424" width="280" height="40" rx="8" fill="#B4532A"/>
-    <text x="190" y="449" font-size="14" fill="#0E1A14" text-anchor="middle">Cool: slower start</text>
-    <text x="490" y="449" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Best near 20 °C (68 °F)</text>
-    <text x="780" y="449" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Above 25 °C (77 °F)</text>
-    <text x="780" y="490" font-size="13" fill="#3F5248" text-anchor="middle">Risk of thermodormancy:</text>
-    <text x="780" y="508" font-size="13" fill="#3F5248" text-anchor="middle">seed may not sprout</text>
-    <text x="40" y="490" font-size="13" fill="#3F5248">Keep plugs moist and humid (above 88% RH) until emergence.</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Timing: University of Kentucky and Cornell</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">CEA. Temperature limit: UF/IFAS</text>
+    <path d="M56 180 L56 640" stroke="#9BD1A9" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="56" cy="180" r="17" fill="#0E1A14"/><circle cx="56" cy="180" r="7" fill="#C6F35E"/>
+    <text x="92" y="188" font-size="22" font-weight="800" fill="#0F6B4F">Day 0</text>
+    <text x="92" y="222" font-size="23" font-weight="800" fill="#0E1A14">Sow 1 seed per plug</text>
+    <text x="92" y="254" font-size="21" fill="#3F5248">~20 °C · dome on</text>
+    <circle cx="56" cy="334" r="17" fill="#0E1A14"/><circle cx="56" cy="334" r="7" fill="#C6F35E"/>
+    <text x="92" y="342" font-size="22" font-weight="800" fill="#0F6B4F">Days 2–3</text>
+    <text x="92" y="376" font-size="23" font-weight="800" fill="#0E1A14">Seedlings emerge</text>
+    <text x="92" y="408" font-size="21" fill="#3F5248">Dome off · light ~50 µmol</text>
+    <circle cx="56" cy="488" r="17" fill="#0E1A14"/><circle cx="56" cy="488" r="7" fill="#C6F35E"/>
+    <text x="92" y="496" font-size="22" font-weight="800" fill="#0F6B4F">Day 3</text>
+    <text x="92" y="530" font-size="23" font-weight="800" fill="#0E1A14">Count germination</text>
+    <text x="92" y="562" font-size="21" fill="#3F5248">Thin doubles · raise light to 200–300</text>
+    <circle cx="56" cy="642" r="17" fill="#0E1A14"/><circle cx="56" cy="642" r="7" fill="#C6F35E"/>
+    <text x="92" y="650" font-size="22" font-weight="800" fill="#0F6B4F">Days 14–21</text>
+    <text x="92" y="684" font-size="23" font-weight="800" fill="#0E1A14">Transplant at 3–4 true leaves</text>
+    <text x="92" y="716" font-size="21" fill="#3F5248">Roots through the plug</text>
+    <rect x="20" y="760" width="600" height="290" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="44" y="800" font-size="23" font-weight="800" fill="#0E1A14">Germination temperature</text>
+    <defs><linearGradient id="temp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8EC3E2"/><stop offset="0.55" stop-color="#7FC48E"/><stop offset="0.72" stop-color="#7FC48E"/><stop offset="1" stop-color="#E06A4F"/></linearGradient></defs>
+    <rect x="44" y="822" width="552" height="26" rx="13" fill="url(#temp)"/>
+    <path d="M348 816 L348 856 M444 816 L444 856" stroke="#0E1A14" stroke-width="3"/>
+    <text x="348" y="882" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="middle">20 °C</text>
+    <text x="444" y="882" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="middle">25 °C</text>
+    <circle cx="54" cy="917" r="9" fill="#8EC3E2"/>
+    <text x="74" y="924" font-size="21" font-weight="700" fill="#0E1A14">Cool<tspan font-weight="400" fill="#3F5248">: slower start</tspan></text>
+    <circle cx="54" cy="955" r="9" fill="#7FC48E"/>
+    <text x="74" y="962" font-size="21" font-weight="800" fill="#0E1A14">Best near 20 °C (68 °F)</text>
+    <circle cx="54" cy="993" r="9" fill="#E06A4F"/>
+    <text x="74" y="1000" font-size="21" font-weight="800" fill="#0E1A14">Above 25 °C (77 °F)</text>
+    <text x="74" y="1030" font-size="20" fill="#3F5248">risk of thermodormancy: seed may not sprout</text>
+    <rect x="20" y="1066" width="600" height="76" rx="14" fill="#E3EEF6"/>
+    <text x="44" y="1098" font-size="21" font-weight="800" fill="#0E1A14">Keep plugs moist and humid</text>
+    <text x="44" y="1126" font-size="21" fill="#0E1A14">above 88% RH until emergence</text>
+    <text x="20" y="1168" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
   </g>
 </svg>
