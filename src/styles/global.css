@@ -204,3 +204,140 @@ body {
   height: auto;
   border-radius: var(--hr-radius-card);
 }
+
+/* Diagrams (see src/lib/rehype-guide-media.ts): a card that links to the full-size SVG. */
+.hr-prose .hr-figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hr-prose .hr-figure-link {
+  display: block;
+  border: 1px solid rgb(14 26 20 / 0.14);
+  border-radius: var(--hr-radius-card);
+  background: var(--color-white);
+  padding: 0.5rem 0.5rem 0.6rem;
+  text-align: right;
+  text-decoration: none;
+}
+
+.hr-prose .hr-figure-link img {
+  border-radius: calc(var(--hr-radius-card) - 0.5rem);
+}
+
+.hr-prose .hr-figure-zoom {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  border-radius: 999px;
+  background: var(--color-water-mist);
+  color: var(--color-hydro-teal);
+  padding: 0.3rem 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hr-prose .hr-figure-link:hover .hr-figure-zoom {
+  background: var(--color-hydro-teal);
+  color: var(--color-white);
+}
+
+.hr-prose figcaption {
+  margin-top: 0.75rem;
+  color: var(--color-slate);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .hr-prose .hr-figure-zoom-phone {
+    display: none;
+  }
+}
+
+@media (max-width: 639.98px) {
+  .hr-prose .hr-figure-zoom-wide {
+    display: none;
+  }
+
+  .hr-prose .hr-figure-link {
+    padding: 0.25rem 0.25rem 0.5rem;
+  }
+
+  /* Tables with three or more columns: each row becomes a card, each cell keeps its heading. */
+  .hr-prose table.hr-table-stack {
+    display: block;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .hr-prose .hr-table-stack thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .hr-prose .hr-table-stack tbody {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .hr-prose .hr-table-stack tr {
+    display: block;
+    border: 1px solid rgb(14 26 20 / 0.14);
+    border-radius: var(--hr-radius-card);
+    background: var(--color-white);
+    padding: 0.9rem 1rem;
+  }
+
+  .hr-prose .hr-table-stack td,
+  .hr-prose .hr-table-stack tbody tr:nth-child(even) td {
+    display: block;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .hr-prose .hr-table-stack td:empty {
+    display: none;
+  }
+
+  .hr-prose .hr-table-stack td:first-child {
+    color: var(--color-hydro-deep);
+    font-family: var(--font-heading);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .hr-prose .hr-table-stack td + td {
+    margin-top: 0.6rem;
+  }
+
+  .hr-prose .hr-table-stack td + td::before {
+    display: block;
+    margin-bottom: 0.1rem;
+    color: var(--color-slate);
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    content: attr(data-label);
+    /* Screen readers already announce the column heading; hide the visual copy from them. */
+    content: attr(data-label) / "";
+  }
+
+  .hr-prose .hr-table-stack .hr-cell-source {
+    color: var(--color-slate);
+    font-size: 0.875rem;
+  }
+}
