@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-08 (Nov 1–6; last update 2.5 h before check) | 4 | 150 | 2.7% | 30.3 | 45 | 28 | processing | DWC rebuild (#35), hydroponic tower guide (#37), indoor systems for home rebuild (#42), phone layout (#41), section pages (#43) |
 | 2026-11-06 (Nov 1–4; last update 7.5 h before check) | 2 | 52 | 3.8% | 30.3 | 7 (queries table not yet updated for Nov 4) | 24 | processing | Home-growers rebuild (#30) |
 | 2026-11-05 (baseline, Nov 1–3) | 0 | 12 | 0% | 48.4 | 7 | 12 | processing | Lettuce seeds rebuild (#24, #26), share images and pins (#25), Pinterest claim (#27), internal links and queue re-order (this change) |
 
@@ -12,6 +13,8 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-08 | /systems/indoor-hydroponic-systems-for-home/ | Full rebuild (#42, 6 types compared); before: 4 impressions, position 82.8 (Nov 1–6) | 2026-11-22, 2026-12-06 |
+| 2026-11-07 | /systems/deep-water-culture-hydroponics/ | Full rebuild (#35); before: 17 impressions, position 60.9 (Nov 1–6) | 2026-11-21, 2026-12-05 |
 | 2026-11-07 | /systems/hydroponic-tower-garden/ | New guide (hydroponic tower 6,600 / 33) | 2026-11-21, 2026-12-05 |
 | 2026-11-05 | /crops/hydroponic-lettuce-seeds/ | Full rebuild | 2026-11-19, 2026-12-03 |
 | 2026-11-05 | /best/hydroponic-system-for-home-growers/ | Answer-first description; 4 new internal links | 2026-11-19 |
