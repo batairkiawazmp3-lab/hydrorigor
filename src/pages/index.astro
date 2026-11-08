@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { getCollection } from 'astro:content';
 import { getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import EmailSignup from '../components/newsletter/EmailSignup.astro';
 import Photo from '../components/Photo.astro';
 import { photos, photoForGuide, photoForSection, photographerUrl, UNSPLASH_URL, type PhotoKey, type SitePhoto } from '../data/photos.ts';
 import { contentItems, getContentPath } from '../data/content-manifest.ts';
@@ -301,6 +302,9 @@ const credits = [...new Map(shownPhotos.map((shown) => [shown.username, shown]))
           <a class="hr-focus rounded-sm text-hydro-teal" href="/testing-methodology/">Testing methodology</a>
         </div>
       </div>
+    </div>
+    <div class="hr-container mt-5">
+      <EmailSignup id="home-signup" />
     </div>
     <div class="hr-container mt-10">
       <p class="text-xs leading-5 text-slate" data-pagefind-ignore>

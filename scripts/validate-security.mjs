@@ -46,7 +46,8 @@ const requiredCspDirectives = [
   "object-src 'none'",
   "frame-ancestors 'none'",
   "frame-src 'none'",
-  "form-action 'self'",
+  // Forms may post only to the site and to Kit's newsletter endpoint (src/data/newsletter.ts).
+  "form-action 'self' https://app.kit.com;",
   "script-src 'self'",
   "script-src-attr 'none'",
   "style-src 'self'",

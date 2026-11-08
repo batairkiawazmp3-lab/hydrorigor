@@ -22,6 +22,7 @@ const { omitCanonical } = Astro.props;
 <meta name="robots" content={metadata.robots} />
 {metadata.robots === 'index, follow' && <meta name="googlebot" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
 {!omitCanonical && <link rel="canonical" href={metadata.canonical} />}
+<link rel="alternate" type="application/rss+xml" title="HydroRigor guides" href="/rss.xml" />
 <!-- Pinterest website claim for the HydroRigor business account (owner-provided 2026-11-05). Removing it unclaims the site. -->
 <meta name="p:domain_verify" content="b514115b231c664860c90262b5b918de" />
 

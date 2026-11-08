@@ -1,0 +1,32 @@
+---
+/**
+ * Email sign-up card. A plain HTML form that posts to Kit (no third-party script): Kit shows its
+ * own confirmation page and sends a confirm-your-subscription email. Use once per page with a
+ * unique `id`.
+ */
+import { KIT_FORM_ACTION } from '../../data/newsletter.ts';
+
+interface Props {
+  id: string;
+  class?: string;
+}
+
+const { id, class: className } = Astro.props;
+---
+<section class:list={['rounded-[1.75rem] bg-hydro-deep p-7 text-white sm:p-9', className]} aria-labelledby={`${id}-heading`} data-pagefind-ignore="all">
+  <div class="grid gap-6 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-10">
+    <div>
+      <p class="font-mono text-xs font-bold tracking-[0.12em] text-leaf-bright uppercase">Email updates</p>
+      <h2 id={`${id}-heading`} class="mt-2 font-heading text-[1.75rem] leading-tight font-extrabold text-white">Get new guides by email</h2>
+      <p class="mt-3 leading-7 text-white/[0.8]">We’ll email you when a new or rebuilt guide goes up. No spam; unsubscribe any time.</p>
+    </div>
+    <form class="grid gap-3" action={KIT_FORM_ACTION} method="post">
+      <label class="text-sm font-semibold text-white/[0.85]" for={`${id}-email`}>Email address</label>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <input class="hr-focus min-h-12 w-full min-w-0 rounded-full border-0 bg-white px-5 text-base text-ink placeholder:text-slate" id={`${id}-email`} name="email_address" type="email" required autocomplete="email" placeholder="you@example.com" />
+        <button class="hr-focus min-h-12 shrink-0 cursor-pointer rounded-full bg-leaf-bright px-6 font-heading font-bold text-hydro-deep transition hover:bg-white" type="submit">Subscribe</button>
+      </div>
+      <p class="text-xs leading-5 text-white/[0.7]">Sign-up is handled by Kit, our email service; you’ll get one email to confirm. See the <a class="hr-focus rounded-sm text-white underline underline-offset-2 hover:text-leaf-bright" href="/privacy/">privacy policy</a>.</p>
+    </form>
+  </div>
+</section>
