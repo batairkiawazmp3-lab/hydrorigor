@@ -29,7 +29,9 @@ export interface SectionDefinitionShape {
   description: string;
   eyebrow: string;
   intro: string;
+  /** Shown on the section page only while it has no published guides. */
   availability: string;
+  /** Planned topics; shown on the section page only while it has no published guides. */
   groups: readonly SectionTopicGroup[];
   nextSteps: readonly SectionLink[];
 }
