@@ -130,3 +130,24 @@ for (const route of fixtureRoutes) {
     await expect(page.locator('main')).not.toHaveAttribute('data-pagefind-body', 'true');
   });
 }
+
+for (const route of ['/systems/', '/crops/', '/nutrients-water/', '/best/', '/reviews/']) {
+  test(`${route} lists dated guides compactly on a phone and never repeats a photo`, async ({ page }) => {
+    await page.setViewportSize({ width: 360, height: 740 });
+    await page.goto(route);
+
+    const guides = page.getByRole('region', { name: 'Published guides' }).getByRole('listitem');
+    expect(await guides.count()).toBeGreaterThan(0);
+    await expect(guides.first()).toContainText(/Updated [A-Z][a-z]{2} \d{1,2}, 20\d\d/u);
+    const firstCard = await guides.first().boundingBox();
+    expect(firstCard.height, 'phone guide cards are compact rows, not tall photo cards').toBeLessThan(170);
+    await expect(page.getByText('What this section will cover')).toHaveCount(0);
+
+    const photoSources = await page.locator('main img[src^="/_astro/"]').evaluateAll((images) =>
+      images.map((image) => image.getAttribute('src').replace(/^\/_astro\//u, '').split('.')[0]));
+    expect(new Set(photoSources).size, `${route} repeats a photo`).toBe(photoSources.length);
+
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
+  });
+}
