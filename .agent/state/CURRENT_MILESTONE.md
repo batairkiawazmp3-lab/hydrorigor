@@ -65,30 +65,37 @@ mixing in one new guide for every two or three rebuilds.
        indoor" 3,600 / 25; "indoor hydroponic system" 2,900 / 33; "indoor gardening hydroponic
        system" 2,400 / 16 (CPC $3.29). Results page is shopping-heavy (2026-11-03 note above).
 9. [x] `/crops/nft-hydroponic-strawberries/` — rebuilt 2026-11-09 ("NFT Hydroponic Strawberries: Slope, Flow, pH & EC Setup"). "strawberry hydroponic system" 2,400 / 26.
-10. [ ] New guide `/crops/hydroponic-basil/` (plan ID 41) — hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03).
-11. [ ] `/crops/hydroponic-tomatoes/` — rebuild. hydroponic tomatoes (1,900, difficulty 29).
-12. [ ] `/best/hydroponic-systems-for-sale/` — rebuild. "hydroponic system sale" 1,600 / 24;
+Moved to the top on 2026-11-09 by the daily Search Console check (rule: position 8–20 with 30+
+impressions in 28 days).
+
+10. [ ] `/best/hydroponic-system-for-home-growers/` — strengthening pass (already rebuilt 2026-11-06, #30):
+        clearer direct answer, intent match for "most effective hydroponic system" (position 14.0),
+        more internal links. Search Console (Nov 1–7): 32 impressions, position 15.5,
+        0 clicks; previous check 29 impressions, position 10.9. Keep the title (changed 2026-11-06).
+11. [ ] New guide `/crops/hydroponic-basil/` (plan ID 41) — hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03).
+12. [ ] `/crops/hydroponic-tomatoes/` — rebuild. hydroponic tomatoes (1,900, difficulty 29).
+13. [ ] `/best/hydroponic-systems-for-sale/` — rebuild. "hydroponic system sale" 1,600 / 24;
         "hydroponic system for sale" 1,300 / 28.
-13. [ ] `/best/hydroponic-systems-for-beginners/` — rebuild. Search Console: 6 impressions, position 46.5.
-14. [ ] `/crops/hydroponic-lettuce-systems/` — rebuild. "nutrient film hydroponic system" 1,300 / 30;
+14. [ ] `/best/hydroponic-systems-for-beginners/` — rebuild. Search Console: 6 impressions, position 46.5.
+15. [ ] `/crops/hydroponic-lettuce-systems/` — rebuild. "nutrient film hydroponic system" 1,300 / 30;
         hydroponic lettuce systems (1,000, difficulty 28).
-15. [ ] `/nutrients-water/hydroponic-nutrient-solution/` — rebuild. "hydroponic nutrients solution" 720 / 25.
-16. [ ] New guide, plan ID 28: Kratky hydroponics (supports the Kratky sections of three rebuilt guides).
-17. [ ] New guide, plan ID 66: pH meters for hydroponics — "ph meter hydroponics" 590 / 15,
+16. [ ] `/nutrients-water/hydroponic-nutrient-solution/` — rebuild. "hydroponic nutrients solution" 720 / 25.
+17. [ ] New guide, plan ID 28: Kratky hydroponics (supports the Kratky sections of three rebuilt guides).
+18. [ ] New guide, plan ID 66: pH meters for hydroponics — "ph meter hydroponics" 590 / 15,
         "digital ph meter hydroponics" 140 / 14. Publish as a how-to-choose guide; add named
         picks only after an affiliate programme is approved.
-18. [ ] `/crops/hydroponic-tomato-seeds/` — rebuild. hydroponic tomatoes seeds (480, difficulty 16).
-19. [ ] `/nutrients-water/organic-hydroponic-nutrients/` — rebuild. "organic hydroponic nutrients" 390 / 18.
-20. [ ] `/systems/smart-indoor-hydroponic-systems/` — rebuild ("click and grow" 5,400 / 35 is the
+19. [ ] `/crops/hydroponic-tomato-seeds/` — rebuild. hydroponic tomatoes seeds (480, difficulty 16).
+20. [ ] `/nutrients-water/organic-hydroponic-nutrients/` — rebuild. "organic hydroponic nutrients" 390 / 18.
+21. [ ] `/systems/smart-indoor-hydroponic-systems/` — rebuild ("click and grow" 5,400 / 35 is the
         nearest brand demand). Move to the top of the queue if Click & Grow approves the owner.
-21. [ ] Remaining launch-guide rebuilds, one per run: `/nutrients-water/how-to-mix-hydroponic-nutrients/`
+22. [ ] Remaining launch-guide rebuilds, one per run: `/nutrients-water/how-to-mix-hydroponic-nutrients/`
         ("mixing hydroponic nutrients" 140 / 19), `/nutrients-water/powder-vs-liquid-hydroponic-nutrients/`
         ("hydroponic nutrients powder" 170 / 19), `/nutrients-water/hydroponic-nutrients-for-vegetables/`
         ("hydroponic nutrients vegetables" 140 / 15), `/best/indoor-hydroponic-system-kits/`,
         `/best/hydroponic-nutrients-for-home-growers/` ("best hydroponic nutrients" 260 / 20),
         `/reviews/masterblend-hydroponic-nutrients/` ("masterblend hydroponic nutrients" 210 / 22),
         `/reviews/general-hydroponics-nutrients/` (170 / 23).
-22. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.
+23. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the
