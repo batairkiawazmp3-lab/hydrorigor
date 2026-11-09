@@ -54,10 +54,14 @@ Updated: 2026-11-09
 - Backlinks (the site has none yet, per Ubersuggest 2026-11-03): link to HydroRigor from the
   owner's foundation site bio; answer r/Hydroponics questions where a guide genuinely helps.
 - Pinterest: business account "HydroRigor" created by the owner (2026-11-05); website claim tag
-  is in `src/components/seo/SEO.astro` (keep it). Owner uploads pins with Settings → Bulk
-  create Pins using a CSV (Title, Media URL `https://hydrorigor.com/pins/<route>.jpg`,
-  Pinterest board, Thumbnail, Description, Link, Publish date YYYY-MM-DD, Keywords). New guides
-  need a pin row too; dates in the past are rejected.
+  is in `src/components/seo/SEO.astro` (keep it). **To upload (owner):** Pinterest → Create →
+  Bulk create Pins → upload `docs/marketing/pinterest/pins-2026-11-11.csv` (12 Pins, one a day
+  Nov 11–22; boards are created automatically). Dates in the past are rejected, so if it is
+  uploaded after Nov 11, ask Claude to regenerate it with a later `--start`. Short launch guides
+  get a Pin when rebuilt (`node scripts/pinterest-csv.mjs --only <route>`).
+- Bing Webmaster Tools (owner, about 5 minutes): sign in at bing.com/webmasters and choose
+  "Import from Google Search Console" so the site and sitemap are verified without DNS changes.
+  IndexNow submissions already run after every deploy (`.github/workflows/indexnow.yml`).
 - Author profiles: send real LinkedIn / organisation URLs to add as `sameAs` in `src/data/authors.ts`.
 - Search Console: Claude reads it in the owner's Chrome (Claude extension, Google account
   authuser=0, property `sc-domain:hydrorigor.com`). A daily scheduled check (13:55 PKT) logs figures in
