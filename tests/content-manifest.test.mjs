@@ -60,5 +60,5 @@ test('the Phase 2+ plan lists plan IDs 26–100 with unique routes per collectio
   assert.equal(new Set(keys).size, keys.length, 'proposed routes must not repeat within a collection');
   const existing = new Set(m06ContentItems.map(({ collection, route }) => `${collection}/${route}`));
   assert.deepEqual(keys.filter((key) => existing.has(key)), [], 'proposed routes must not reuse a launch guide file');
-  assert.match(plan, /\| 41 \| Stage 3 \| crops \| articles \| How to Grow Basil Hydroponically Indoors .*`hydroponic-basil`/u);
+  assert.match(plan, /\| 41 \| Stage 3 \| crops \| articles \| Hydroponic Basil: pH, EC, Light & Harvest Guide .*`hydroponic-basil`/u);
 });
