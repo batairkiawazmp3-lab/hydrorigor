@@ -50,6 +50,20 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['okstate-vertical-tower-hla6724', 'ifas-stlucie-vertical-towers', 'touliatos-vertical-lettuce-2016', 'wortman-vertical-strawberry-2016', 'osu-ph-ec-guide', 'uky-hydroponic-lettuce', 'ua-strawberry-irrigation', 'osu-hydro-hints-nft', 'osu-hydro-hints-dwc', 'ifas-kratky-set-and-forget'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 41,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Basil: pH, EC, Light & Harvest Guide',
+    route: 'hydroponic-basil',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic basil',
+    metricStatus: 'UBERSUGGEST_2026-11-03',
+    volume: 880,
+    seoDifficulty: 11,
+    sourceIds: ['osu-ph-ec-guide', 'gomez-basil-small-scale-2020', 'walters-basil-dli-temperature-2023', 'walters-basil-density-2015', 'osu-hydro-hints-nft'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

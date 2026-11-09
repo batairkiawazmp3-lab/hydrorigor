@@ -28,7 +28,7 @@ Stages from the workbook's Publishing Sequence:
 | 38 | Stage 3 | equipment | articles | Best Growing Media for Hydroponics: A Practical Comparison | hydroponic growing media | Commercial | Editorial gap |  |  | `hydroponic-growing-media` |  |
 | 39 | Stage 3 | equipment | articles | Rockwool vs Coco Coir for Hydroponics | rockwool vs coco coir hydroponics | Commercial | Editorial gap |  |  | `rockwool-vs-coco-coir` | Method/media comparison: publish as an article, not a product comparison |
 | 40 | Stage 3 | equipment | articles | LECA for Hydroponics: When It Works Best | hydroponic leca | Informational | Editorial gap |  |  | `leca-hydroponics` |  |
-| 41 | Stage 3 | crops | articles | How to Grow Basil Hydroponically Indoors | hydroponic basil | Informational | Suggestion-derived |  |  | `hydroponic-basil` |  |
+| 41 | Stage 3 | crops | articles | Hydroponic Basil: pH, EC, Light & Harvest Guide | hydroponic basil | Informational | Metric-validated | 880 | 11 | `hydroponic-basil` | Published 2026-11-09 from the research pack (`docs/research/source-packs/hydroponic-basil.md`) |
 | 42 | Stage 3 | crops | articles | How to Grow Peppers Hydroponically Indoors | hydroponic peppers | Informational | Suggestion-derived |  |  | `hydroponic-peppers` |  |
 | 43 | Stage 3 | crops | articles | How to Grow Cucumbers Hydroponically Indoors | hydroponic cucumbers | Informational | Editorial gap |  |  | `hydroponic-cucumbers` |  |
 | 44 | Stage 3 | crops | articles | How to Grow Microgreens Hydroponically | microgreen hydroponic system | Informational | Suggestion-derived |  |  | `hydroponic-microgreens` |  |
