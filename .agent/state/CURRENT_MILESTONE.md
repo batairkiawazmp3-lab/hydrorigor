@@ -64,7 +64,7 @@ mixing in one new guide for every two or three rebuilds.
 8. [x] `/systems/indoor-hydroponic-systems-for-home/` — rebuilt 2026-11-08 ("Indoor Hydroponic Systems for Home: 6 Types Compared"); buyer-oriented, no product picks. "hydroponic system
        indoor" 3,600 / 25; "indoor hydroponic system" 2,900 / 33; "indoor gardening hydroponic
        system" 2,400 / 16 (CPC $3.29). Results page is shopping-heavy (2026-11-03 note above).
-9. [ ] `/crops/nft-hydroponic-strawberries/` — rebuild. "strawberry hydroponic system" 2,400 / 26.
+9. [x] `/crops/nft-hydroponic-strawberries/` — rebuilt 2026-11-09 ("NFT Hydroponic Strawberries: Slope, Flow, pH & EC Setup"). "strawberry hydroponic system" 2,400 / 26.
 10. [ ] New guide `/crops/hydroponic-basil/` (plan ID 41) — hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03).
 11. [ ] `/crops/hydroponic-tomatoes/` — rebuild. hydroponic tomatoes (1,900, difficulty 29).
 12. [ ] `/best/hydroponic-systems-for-sale/` — rebuild. "hydroponic system sale" 1,600 / 24;
