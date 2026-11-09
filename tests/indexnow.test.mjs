@@ -48,10 +48,11 @@ test('deleted files, drafts and development fixtures are never submitted', () =>
 
 test('IndexNow runs only after a successful Vercel deploy of main, outside ci.yml', async () => {
   const workflow = await read('.github/workflows/indexnow.yml');
-  assert.match(workflow, /^on:\n  status:/mu);
-  assert.match(workflow, /github\.event\.context == 'Vercel'/u);
-  assert.match(workflow, /github\.event\.state == 'success'/u);
-  assert.match(workflow, /contains\(github\.event\.branches\.\*\.name, 'main'\)/u);
-  assert.match(workflow, /node scripts\/indexnow\.mjs "\$DEPLOYED_SHA"/u);
+  assert.match(workflow, /^on:\n  push:\n    branches: \[main\]\n  workflow_dispatch:/mu);
+  assert.match(workflow, /select\(\.context == "Vercel"\)/u);
+  assert.match(workflow, /if \[ "\$state" = "success" \]; then exit 0; fi/u);
+  const wait = workflow.indexOf('Wait for Vercel');
+  const submit = workflow.indexOf('node scripts/indexnow.mjs "$DEPLOYED_SHA"');
+  assert.ok(wait > 0 && submit > wait, 'submits only after the Vercel wait step');
   assert.doesNotMatch(await read('.github/workflows/ci.yml'), /indexnow/iu);
 });

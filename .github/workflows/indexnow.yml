@@ -1,29 +1,48 @@
 name: indexnow
 
-# After Vercel reports a successful deploy of main, tell IndexNow search engines (Bing and others)
-# which guides changed in that commit (scripts/indexnow.mjs). Runs after the deploy, never gates a
-# merge, and is separate from ci.yml.
+# After each push to main, wait until Vercel reports the deploy of that commit as successful, then
+# tell IndexNow search engines (Bing and others) which guides the commit added or changed
+# (scripts/indexnow.mjs). Never gates a merge and is separate from ci.yml. To resubmit an earlier
+# commit, run it by hand (Actions → indexnow → Run workflow) with that commit's SHA.
 on:
-  status:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      sha:
+        description: Commit SHA on main to submit (defaults to the latest)
+        required: false
 
 permissions:
   contents: read
+  statuses: read
 
 jobs:
   submit:
-    if: github.event.context == 'Vercel' && github.event.state == 'success' && contains(github.event.branches.*.name, 'main')
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 20
+    env:
+      DEPLOYED_SHA: ${{ inputs.sha || github.sha }}
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ github.event.sha }}
-          fetch-depth: 2
+          fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
-      - name: Submit changed guides to IndexNow
+      - name: Wait for Vercel to finish deploying the commit
         env:
-          DEPLOYED_SHA: ${{ github.event.sha }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 60); do
+            state=$(gh api "repos/${GITHUB_REPOSITORY}/commits/${DEPLOYED_SHA}/statuses" --jq '[.[] | select(.context == "Vercel")][0].state // "missing"')
+            echo "Vercel status: ${state}"
+            if [ "$state" = "success" ]; then exit 0; fi
+            if [ "$state" = "failure" ] || [ "$state" = "error" ]; then exit 1; fi
+            sleep 15
+          done
+          echo "Vercel did not report success within 15 minutes."
+          exit 1
+      - name: Submit changed guides to IndexNow
         run: node scripts/indexnow.mjs "$DEPLOYED_SHA"
