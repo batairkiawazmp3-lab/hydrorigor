@@ -522,6 +522,24 @@ export const m06EditorialSources = [
     sourceType: 'university-extension',
     locator: 'HO-283-W (March 2018), p. 1: DLI needs by crop type (propagation 8–10, potted plants 10–15, leafy greens 15–20, tomatoes and strawberries more than 20 mol/m²/day); winter greenhouse sunlight about 5 mol/m²/day; Figure 1 (West Lafayette, Indiana greenhouse): below 10 mol/m²/day from November through February; p. 4: 15 lettuce varieties for 28 days at DLI 5.6, 10.8 and 19.8 averaged 0.90, 2.1 and 6.7 lb/m² fresh weight',
   },
+  {
+    id: 'purdue-hydroponics-opportunities-2016',
+    title: 'Opportunities in Hydroponics',
+    publisher: 'Purdue University (P. Langenhoven, Horticulture and Hydroponic Crops Specialist), Indiana Vegetable Growers slides',
+    url: 'https://ag.purdue.edu/department/hla/extension/_docs/langenhoven_hydroponics_ivgs2016b.pdf',
+    accessedDate: '2026-11-09',
+    sourceType: 'university-extension',
+    locator: 'Slide deck dated 2016-01-05, slide "Solution culture / Nutrient film technique": shallow stream (film) recirculated past bare roots in a watertight, dark channel; slope of 1:100 recommended, but 1:30 and 1:40 are used; flow rate 1 L (0.26 gal) per minute with an upper limit of 2 L (0.53 gal) per minute; channel length should not exceed 10–15 m (33–49 ft); attention to nutrient balances, water temperature and pathogens',
+  },
+  {
+    id: 'sato-modified-nft-2007',
+    title: 'A Modified Nutrient Film Technique System Offers a More Uniform Nutrient Supply to Plants',
+    publisher: 'HortTechnology 17(2):227 (Sato et al., Chiba University, 2007), doi:10.21273/HORTTECH.17.2.227',
+    url: 'https://journals.ashs.org/view/journals/horttech/17/2/article-p227.xml',
+    accessedDate: '2026-11-09',
+    sourceType: 'university-research',
+    locator: 'Lettuce trial. Materials and methods: conventional NFT channel 18 m long with a 1% slope, 150 L catchment tank, EC held at 1.2 ± 0.2 dS/m, pH kept between 5.5 and 6.5, holes 15 cm apart; flows 1.5 L/min (conventional) and 3.8 then 7.5 L/min (modified). Introduction/discussion: a flow rate between 1 and 2 L/min is widely recommended for NFT (Cooper 1979; Jones 1997); channels no longer than 9 m recommended (Jones 1997); oxygen below 8 mg/L reduces Ca, K and P absorption (Pepkowitz and Shive 1943, cited). Results (Expt. 2): dissolved oxygen fell by up to 0.9 mg/L from inlet to outlet in the conventional channel; outlet solution 0.3–1.4 °C warmer than inlet; tank averaged 28.3 °C (high 38.9 °C), too warm for lettuce roots (cited optimum 13–18 °C)',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

@@ -14,7 +14,7 @@ and `Publishing Sequence` stages 1–2. The workbook was read only.
 | 4 | `/systems/deep-water-culture-hydroponics/` | Systems | Deep Water Culture Hydroponics: Complete DWC System Guide | Transactional research | hydroponic system deep water culture | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 5 | `/systems/diy-hydroponic-system-for-beginners/` | Systems | DIY Hydroponic System for Beginners: A Simple Home Build | Informational | do it yourself hydroponic system | METRIC_NOT_REVERIFIED | 2 | Validated |
 | 6 | `/crops/hydroponic-strawberries/` | Crops | Hydroponic Strawberries: pH, EC, Light & Variety Guide | Informational | hydroponic strawberries | VERIFIED_2026-09-12: 8,100 / SD 14 | 5 | Validated |
-| 7 | `/crops/nft-hydroponic-strawberries/` | Crops | NFT Hydroponic Strawberries: Setup, Flow and Plant Care | Informational | nft hydroponic strawberries | VERIFIED_2026-09-12: 390 / SD 15 | 3 | Validated |
+| 7 | `/crops/nft-hydroponic-strawberries/` | Crops | NFT Hydroponic Strawberries: Slope, Flow, pH & EC Setup | Informational | nft hydroponic strawberries | VERIFIED_2026-09-12: 390 / SD 15 | 3 | Validated |
 | 8 | `/crops/hydroponic-lettuce/` | Crops | Hydroponic Lettuce: pH, EC, Light & Best Varieties | Informational | hydroponic lettuce | VERIFIED_2026-09-12: 4,400 / SD 27 | 3 | Validated |
 | 9 | `/crops/hydroponic-lettuce-systems/` | Crops | Hydroponic Lettuce Systems Compared: DWC, NFT and Kratky | Transactional research | hydroponic lettuce systems | VERIFIED_2026-09-12: 1,000 / SD 28 | 3 | Validated |
 | 10 | `/crops/hydroponic-lettuce-seeds/` | Crops | Hydroponic Lettuce Seeds: Varieties, Germination & Storage | Transactional research | hydroponic lettuce seed | VERIFIED_2026-09-12: 2,400 / SD 20 | 2 | Validated |
