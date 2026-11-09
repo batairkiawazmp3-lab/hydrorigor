@@ -68,7 +68,7 @@ mixing in one new guide for every two or three rebuilds.
 Moved to the top on 2026-11-09 by the daily Search Console check (rule: position 8–20 with 30+
 impressions in 28 days).
 
-10. [ ] `/best/hydroponic-system-for-home-growers/` — strengthening pass (already rebuilt 2026-11-06, #30):
+10. [x] `/best/hydroponic-system-for-home-growers/` — strengthening pass done 2026-11-09 (crop-by-crop answer in the first sentence, trial yields in the "most effective" FAQ, equipment table by system, kit and equipment FAQs, links from the strawberries and nutrients guides). Was: strengthening pass (already rebuilt 2026-11-06, #30):
         clearer direct answer, intent match for "most effective hydroponic system" (position 14.0),
         more internal links. Search Console (Nov 1–7): 32 impressions, position 15.5,
         0 clicks; previous check 29 impressions, position 10.9. Keep the title (changed 2026-11-06).
