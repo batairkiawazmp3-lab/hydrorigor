@@ -72,7 +72,7 @@ impressions in 28 days).
         clearer direct answer, intent match for "most effective hydroponic system" (position 14.0),
         more internal links. Search Console (Nov 1–7): 32 impressions, position 15.5,
         0 clicks; previous check 29 impressions, position 10.9. Keep the title (changed 2026-11-06).
-11. [ ] New guide `/crops/hydroponic-basil/` (plan ID 41) — hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03).
+11. [x] New guide `/crops/hydroponic-basil/` (plan ID 41) — published 2026-11-09 ("Hydroponic Basil: pH, EC, Light & Harvest Guide"). hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03).
 12. [ ] `/crops/hydroponic-tomatoes/` — rebuild. hydroponic tomatoes (1,900, difficulty 29).
 13. [ ] `/best/hydroponic-systems-for-sale/` — rebuild. "hydroponic system sale" 1,600 / 24;
         "hydroponic system for sale" 1,300 / 28.

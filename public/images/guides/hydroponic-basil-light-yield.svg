@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 925" width="640" height="925" role="img" aria-labelledby="t d">
+  <title id="t">Basil grown indoors versus in a greenhouse</title>
+  <desc id="d">Bar chart from a University of Florida study (Solis-Toapanta, Fisher and Gómez 2020). Four basil plants per 2-gallon aerated unit, grown for 8 weeks. Indoors, at a constant 21 °C (70 °F) and a daily light integral of 9 mol per square metre per day, each unit produced 344 grams of fresh basil when the solution was replaced and 359 grams when it was only topped up. In a greenhouse at 29 °C by day and 24 °C by night, with a daily light integral averaging 26.1, units produced 1,417 grams (replaced) and 1,452 grams (topped up). More light and warmth gave about four times the basil; replacing or topping up the solution made no difference.</desc>
+  <rect width="640" height="925" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">More light, more basil</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Fresh basil per 4-plant unit after 8 weeks.</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">Solis-Toapanta, Fisher and Gómez 2020</text>
+    <path d="M24 150 L24 668" stroke="#E1E6E2" stroke-width="2" stroke-dasharray="5 6"/>
+    <text x="24" y="698" font-size="20" fill="#3F5248" text-anchor="middle">0</text>
+    <path d="M204 150 L204 668" stroke="#E1E6E2" stroke-width="2" stroke-dasharray="5 6"/>
+    <text x="204" y="698" font-size="20" fill="#3F5248" text-anchor="middle">500</text>
+    <path d="M384 150 L384 668" stroke="#E1E6E2" stroke-width="2" stroke-dasharray="5 6"/>
+    <text x="384" y="698" font-size="20" fill="#3F5248" text-anchor="middle">1,000</text>
+    <path d="M564 150 L564 668" stroke="#E1E6E2" stroke-width="2" stroke-dasharray="5 6"/>
+    <text x="564" y="698" font-size="20" fill="#3F5248" text-anchor="middle">1,500 g</text>
+    <text x="24" y="184" font-size="24" font-weight="800" fill="#0E1A14">Indoors</text>
+    <text x="24" y="214" font-size="20" fill="#3F5248">DLI 9 · constant 21 °C (70 °F)</text>
+    <text x="24" y="252" font-size="20" fill="#3F5248">Replaced</text>
+    <rect x="24" y="262" width="124" height="34" rx="5" fill="#8EC3E2"/>
+    <text x="160" y="287" font-size="22" font-weight="800" fill="#0E1A14">344 g</text>
+    <text x="24" y="326" font-size="20" fill="#3F5248">Topped up</text>
+    <rect x="24" y="336" width="129" height="34" rx="5" fill="#8EC3E2"/>
+    <text x="165" y="361" font-size="22" font-weight="800" fill="#0E1A14">359 g</text>
+    <text x="24" y="444" font-size="24" font-weight="800" fill="#0E1A14">Greenhouse</text>
+    <text x="24" y="474" font-size="20" fill="#3F5248">DLI 26.1 · 29 °C day, 24 °C night</text>
+    <text x="24" y="512" font-size="20" fill="#3F5248">Replaced</text>
+    <rect x="24" y="522" width="510" height="34" rx="5" fill="#0F6B4F"/>
+    <text x="522" y="547" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="end">1,417 g</text>
+    <text x="24" y="586" font-size="20" fill="#3F5248">Topped up</text>
+    <rect x="24" y="596" width="523" height="34" rx="5" fill="#0F6B4F"/>
+    <text x="535" y="621" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="end">1,452 g</text>
+    <rect x="20" y="726" width="600" height="146" rx="16" fill="#0E1A14"/>
+    <text x="44" y="764" font-size="22" font-weight="800" fill="#C6F35E">About 4 times the basil</text>
+    <text x="44" y="798" font-size="21" fill="#FFFFFF">with more light and warmth. Topping up or</text>
+    <text x="44" y="828" font-size="21" fill="#FFFFFF">replacing the solution made no difference.</text>
+    <text x="20" y="903" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

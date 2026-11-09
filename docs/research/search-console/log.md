@@ -14,6 +14,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-09 | /crops/hydroponic-basil/ | New guide (hydroponic basil 880 / 11) | 2026-11-23, 2026-12-07 |
 | 2026-11-09 | /best/hydroponic-system-for-home-growers/ | Strengthening pass: crop-by-crop answer first, trial yields in the "most effective" FAQ, equipment table by system, kit and equipment FAQs, 2 new inbound links; before: 32 impressions, position 15.5 (Nov 1–7) | 2026-11-23, 2026-12-07 |
 | 2026-11-08 | /systems/indoor-hydroponic-systems-for-home/ | Full rebuild (#42, 6 types compared); before: 4 impressions, position 82.8 (Nov 1–6) | 2026-11-22, 2026-12-06 |
 | 2026-11-07 | /systems/deep-water-culture-hydroponics/ | Full rebuild (#35); before: 17 impressions, position 60.9 (Nov 1–6) | 2026-11-21, 2026-12-05 |

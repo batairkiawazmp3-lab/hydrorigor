@@ -107,6 +107,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-system-for-home-growers': 'tower-lettuce-closeup',
   'smart-indoor-hydroponic-systems': 'bok-choy-indoor-unit',
   'hydroponic-tower-garden': 'tower-garden-greens',
+  // No basil photo in the registry yet; lettuce and herbs on a pipe frame until an owner or Unsplash basil photo is added.
+  'hydroponic-basil': 'diy-pvc-nft-frame',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
