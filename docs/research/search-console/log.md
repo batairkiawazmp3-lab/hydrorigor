@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-09 (Nov 1–7; last update 2.5 h before check) | 5 | 207 | 2.4% | 33 | 59 | 29 | 34 indexed, 14 not indexed | NFT strawberries rebuild (#48), email sign-up and RSS (#47), phone-size diagrams (#46); home-growers strengthening pass moved to top of queue (this change) |
 | 2026-11-08 (Nov 1–6; last update 2.5 h before check) | 4 | 150 | 2.7% | 30.3 | 45 | 28 | processing | DWC rebuild (#35), hydroponic tower guide (#37), indoor systems for home rebuild (#42), phone layout (#41), section pages (#43) |
 | 2026-11-06 (Nov 1–4; last update 7.5 h before check) | 2 | 52 | 3.8% | 30.3 | 7 (queries table not yet updated for Nov 4) | 24 | processing | Home-growers rebuild (#30) |
 | 2026-11-05 (baseline, Nov 1–3) | 0 | 12 | 0% | 48.4 | 7 | 12 | processing | Lettuce seeds rebuild (#24, #26), share images and pins (#25), Pinterest claim (#27), internal links and queue re-order (this change) |
