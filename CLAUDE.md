@@ -56,6 +56,11 @@ disagree, `AGENTS.md` wins.
   Change the title in both the MDX frontmatter and `src/data/m06-content.ts`.
 - Descriptions: 155 characters or fewer, leading with the answer and its numbers.
 - Write plainly for home growers. Recommend clearly and say what each recommendation rests on.
+- **Write for US readers** (most search traffic is from the US): American spelling (color,
+  flavor, liter, meter, center, mold) and US units beside metric for every temperature, volume
+  and length: "20–24 °C (68–75 °F)", "2 L (about ½ gal)", "10–20 cm (4–8 in)". When a source
+  gives °F, use its figure rather than a converted one. Keep scientific units (EC, ppm, mg/L,
+  DLI, µmol) as they are.
 - Never invent testing, personal experience, prices, ratings, affiliate terms, search volumes
   or crop targets. If a source does not give a number, say so instead of guessing.
 - Byline: `author: "Najeeb"` only on pages Najeeb has reviewed. Automated rewrites ship as
@@ -106,6 +111,16 @@ Stock photos set the mood; original visuals answer the search. Every rebuilt or 
   "Photo: Najeeb"); they are the strongest trust and experience signal the site can show.
 - **Product images** in buyer guides only from a merchant's approved assets after its affiliate
   programme is approved (for Amazon, only images served through Amazon's own tools).
+
+## Search engines and Pinterest
+
+- **IndexNow (Bing, Yahoo, DuckDuckGo):** `.github/workflows/indexnow.yml` runs
+  `scripts/indexnow.mjs` after Vercel reports a successful deploy of `main` and submits the guides
+  that commit added or changed, their section pages and the home page. The key file
+  `public/<key>.txt` is public by design; keep it.
+- **Pinterest:** `node scripts/pinterest-csv.mjs --start <YYYY-MM-DD>` writes a bulk-upload CSV
+  (`docs/marketing/pinterest/`). After publishing or rebuilding a guide, make its row with
+  `--only <route>` and list the CSV in the handoff for the owner to upload.
 
 ## Guardrails
 

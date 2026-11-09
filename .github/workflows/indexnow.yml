@@ -1,0 +1,29 @@
+name: indexnow
+
+# After Vercel reports a successful deploy of main, tell IndexNow search engines (Bing and others)
+# which guides changed in that commit (scripts/indexnow.mjs). Runs after the deploy, never gates a
+# merge, and is separate from ci.yml.
+on:
+  status:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    if: github.event.context == 'Vercel' && github.event.state == 'success' && contains(github.event.branches.*.name, 'main')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.sha }}
+          fetch-depth: 2
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - name: Submit changed guides to IndexNow
+        env:
+          DEPLOYED_SHA: ${{ github.event.sha }}
+        run: node scripts/indexnow.mjs "$DEPLOYED_SHA"

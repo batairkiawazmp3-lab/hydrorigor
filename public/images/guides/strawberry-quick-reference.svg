@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 975" width="640" height="975" role="img" aria-labelledby="t d">
   <title id="t">Hydroponic strawberry targets at a glance</title>
-  <desc id="d">A strawberry plant in substrate with its crown sitting above the media line, in at least 2 litres of airy media with 20 to 40 percent of each watering draining out, beside target cards: solution pH 5.5 to 6.0 (above 7, iron locks out); EC about 1.0 dS/m, kept at or below 1.2; day air 20 to 24 °C and night 10 to 15 °C, with cool nights making sweeter fruit; daily light 12 to 20 mol per square metre per day, 200 to 250 µmol. Start with day-neutral plants such as Albion, San Andreas, Monterey or Seascape, and hand-pollinate open flowers every 1 to 2 days.</desc>
+  <desc id="d">A strawberry plant in substrate with its crown sitting above the media line, in at least 2 liters of airy media with 20 to 40 percent of each watering draining out, beside target cards: solution pH 5.5 to 6.0 (above 7, iron locks out); EC about 1.0 dS/m, kept at or below 1.2; day air 20 to 24 °C (68 to 75 °F) and night 10 to 15 °C (50 to 59 °F), with cool nights making sweeter fruit; daily light 12 to 20 mol per square meter per day, 200 to 250 µmol. Start with day-neutral plants such as Albion, San Andreas, Monterey or Seascape, and hand-pollinate open flowers every 1 to 2 days.</desc>
   <rect width="640" height="975" fill="#F5F7F2"/>
   <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Hydroponic strawberries: targets</text>
   <g font-family="Inter, Arial, sans-serif">
@@ -37,7 +37,7 @@
     <rect x="20" y="558" width="290" height="176" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
     <text x="42" y="594" font-size="20" font-weight="800" fill="#5B6F64">Day / night air</text>
     <text x="42" y="630" font-size="28" font-weight="800" fill="#0E1A14">20–24 / 10–15</text>
-    <text x="42" y="666" font-size="20" fill="#3F5248">°C</text>
+    <text x="42" y="666" font-size="20" fill="#3F5248">°C · 68–75 / 50–59 °F</text>
     <text x="42" y="692" font-size="20" fill="#3F5248">cool nights = sweeter</text>
     <rect x="330" y="558" width="290" height="176" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
     <text x="352" y="594" font-size="20" font-weight="800" fill="#5B6F64">Daily light (DLI)</text>

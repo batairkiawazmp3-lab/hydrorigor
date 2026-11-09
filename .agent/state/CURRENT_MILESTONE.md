@@ -29,6 +29,8 @@ that ships it. Volumes are US monthly searches from `docs/research/M06_KEYWORD_R
 - [x] Email: ImprovMX forwarding live (DNS 2026-11-04); /contact/ shows hello@hydrorigor.com (2026-11-05)
 - [x] Branded share images (public/og/) and Pinterest pins (public/pins/) for every guide;
       regenerate with `npm run images:share` after a title or photo change
+- [x] US readers (2026-11-09): °F, gallons and inches beside metric, American spelling, IndexNow
+      after each deploy, Pinterest bulk-upload CSV generator
 
 ### Queue (work top to bottom; one item per run)
 Ordered on 2026-11-03 by opportunity: informational topics with low difficulty first.

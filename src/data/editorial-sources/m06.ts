@@ -232,7 +232,7 @@ export const m06EditorialSources = [
     url: 'https://ceac.arizona.edu/sites/default/files/2026-04/2-Karla-Garcia-BERRIES-IN-CEA-PDF.pdf',
     accessedDate: '2026-11-02',
     sourceType: 'industry-technical',
-    locator: 'Strawberry DLI minimum/optimum, indoor PPFD, humidity, substrate volume and porosity, night temperature and flavour',
+    locator: 'Strawberry DLI minimum/optimum, indoor PPFD, humidity, substrate volume and porosity, night temperature and flavor',
   },
   {
     id: 'tennessee-fruiting-crops',

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 925" width="640" height="925" role="img" aria-labelledby="t d">
   <title id="t">Basil grown indoors versus in a greenhouse</title>
-  <desc id="d">Bar chart from a University of Florida study (Solis-Toapanta, Fisher and Gómez 2020). Four basil plants per 2-gallon aerated unit, grown for 8 weeks. Indoors, at a constant 21 °C (70 °F) and a daily light integral of 9 mol per square metre per day, each unit produced 344 grams of fresh basil when the solution was replaced and 359 grams when it was only topped up. In a greenhouse at 29 °C by day and 24 °C by night, with a daily light integral averaging 26.1, units produced 1,417 grams (replaced) and 1,452 grams (topped up). More light and warmth gave about four times the basil; replacing or topping up the solution made no difference.</desc>
+  <desc id="d">Bar chart from a University of Florida study (Solis-Toapanta, Fisher and Gómez 2020). Four basil plants per 2-gallon aerated unit, grown for 8 weeks. Indoors, at a constant 21 °C (70 °F) and a daily light integral of 9 mol per square meter per day, each unit produced 344 grams of fresh basil when the solution was replaced and 359 grams when it was only topped up. In a greenhouse at 29 °C (84 °F) by day and 24 °C (75 °F) by night, with a daily light integral averaging 26.1, units produced 1,417 grams (replaced) and 1,452 grams (topped up). More light and warmth gave about four times the basil; replacing or topping up the solution made no difference.</desc>
   <rect width="640" height="925" fill="#F5F7F2"/>
   <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">More light, more basil</text>
   <g font-family="Inter, Arial, sans-serif">
@@ -23,7 +23,7 @@
     <rect x="24" y="336" width="129" height="34" rx="5" fill="#8EC3E2"/>
     <text x="165" y="361" font-size="22" font-weight="800" fill="#0E1A14">359 g</text>
     <text x="24" y="444" font-size="24" font-weight="800" fill="#0E1A14">Greenhouse</text>
-    <text x="24" y="474" font-size="20" fill="#3F5248">DLI 26.1 · 29 °C day, 24 °C night</text>
+    <text x="24" y="474" font-size="20" fill="#3F5248">DLI 26.1 · day 29 °C (84 °F), night 24 °C (75 °F)</text>
     <text x="24" y="512" font-size="20" fill="#3F5248">Replaced</text>
     <rect x="24" y="522" width="510" height="34" rx="5" fill="#0F6B4F"/>
     <text x="522" y="547" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="end">1,417 g</text>
