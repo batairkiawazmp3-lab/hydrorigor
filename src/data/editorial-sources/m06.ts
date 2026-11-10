@@ -567,6 +567,33 @@ export const m06EditorialSources = [
     sourceType: 'university-research',
     locator: 'Lettuce trial. Materials and methods: conventional NFT channel 18 m long with a 1% slope, 150 L catchment tank, EC held at 1.2 ± 0.2 dS/m, pH kept between 5.5 and 6.5, holes 15 cm apart; flows 1.5 L/min (conventional) and 3.8 then 7.5 L/min (modified). Introduction/discussion: a flow rate between 1 and 2 L/min is widely recommended for NFT (Cooper 1979; Jones 1997); channels no longer than 9 m recommended (Jones 1997); oxygen below 8 mg/L reduces Ca, K and P absorption (Pepkowitz and Shive 1943, cited). Results (Expt. 2): dissolved oxygen fell by up to 0.9 mg/L from inlet to outlet in the conventional channel; outlet solution 0.3–1.4 °C warmer than inlet; tank averaged 28.3 °C (high 38.9 °C), too warm for lettuce roots (cited optimum 13–18 °C)',
   },
+  {
+    id: 'aces-greenhouse-tomato-anr2955',
+    title: 'Greenhouse Tomato Production (ANR-2955)',
+    publisher: 'Alabama Cooperative Extension System (C. Blanchard, J. Pickens, A. da Silva, D. Wells, Auburn University)',
+    url: 'https://www.aces.edu/wp-content/uploads/2023/02/ANR-2955_GreenhouseTomatoProduction_022223L-G.pdf',
+    accessedDate: '2026-11-10',
+    sourceType: 'university-extension',
+    locator: 'ANR-2955 (new January 2023). Seedling Production: transplants in 4 to 6 weeks at 4 to 6 inches high; seedling root zone 84 °F on heat mats. Plant Spacing and Training: 3.5 to 5 sq ft per plant, 16 in between plants in the row and 5 ft between rows; single leader, remove suckers when small and at least once a week; overhead cables 8 to 10 ft above the crop; remove the terminal bud at the wire six weeks before the crop ends. Temperature: day 80 to 85 °F, night printed as "between 65 and 60 degrees F but no lower"; excessive heat causes cracked fruit and reduced fruit set; cold turns leaves purple and curled; 30 to 50 percent shade cloth. Pollination: midday at 60 to 70 percent humidity, three times a week as new flowers develop; bumblebees, mechanical or electric vibrators; leaf blowers least effective. Fertilization and Irrigation: EC 2.0 to 2.5 mS/cm and pH 5.5 to 6.5; about 2 quarts of water per plant per day. Fruit Thinning: slicing types to 4 to 5 fruits per cluster',
+  },
+  {
+    id: 'vt-management-basics-spes462',
+    title: 'Hydroponic Production of Edible Crops: Management Basics (SPES-462NP)',
+    publisher: 'Virginia Cooperative Extension',
+    url: 'https://pubs.ext.vt.edu/SPES/spes-462/spes-462.html',
+    accessedDate: '2026-11-10',
+    sourceType: 'university-extension',
+    locator: 'SPES-462NP (July 21, 2023). Managing Environmental Conditions: tomato production requires higher temperatures (80 °F day/60 °F night), and the optimum may change with growth stage; venting lowers relative humidity and reduces disease; Botrytis and powdery mildew with high humidity and wet leaves; plants supported on a wire system and older leaves removed to improve airflow. Growing Conditions - Nutrition: lack of calcium causes blossom-end rot in tomatoes and peppers; air circulation improves nutrient uptake and distribution; pH must be managed for nutrients to stay available',
+  },
+  {
+    id: 'utk-trust-tomato-density-2012',
+    title: "Optimizing Plant Density and Production Systems to Maximize Yield of Greenhouse-grown 'Trust' Tomatoes",
+    publisher: 'HortTechnology 22(1):44 (University of Tennessee Plateau Research and Education Center study, 2012)',
+    url: 'https://journals.ashs.org/view/journals/horttech/22/1/article-p44.xml',
+    accessedDate: '2026-11-10',
+    sourceType: 'university-research',
+    locator: "Materials and Methods: 'Trust' in perlite bags, Crossville TN greenhouse; in-row spacings 12, 16, 20, 24 and 28 in with rows 4 ft apart; single leader (all suckers removed) versus double leader; plants clipped to a string on an overhead wire, topped at the 10th flower cluster; clusters thinned to four or five fruit; bumblebee pollination; seeded 27 June 2008 and 26 Dec 2008, transplanted at the fourth to fifth true leaf after about 6 weeks (22 Aug 2008 and 7 Feb 2009); harvest began 3 Nov 2008 and 20 Apr 2009 (about 10 weeks after transplant), picked at pink weekly for 12 weeks; temperatures averaged 83/62 °F (fall) and 85/64 °F (spring) day/night. Introduction: indeterminate greenhouse tomatoes typically pruned to one stem; literature cited gives 4–4.3 sq ft per plant. Abstract/conclusion: in-row spacing of 16–20 in, 18 in ideal; closer spacing raises disease and pest risk; Botrytis cinerea can cost a whole double-leader plant",
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(
