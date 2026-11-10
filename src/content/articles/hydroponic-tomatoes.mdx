@@ -1,8 +1,9 @@
 ---
-title: "Hydroponic Tomatoes: Complete Indoor Growing Guide"
-description: "Plan hydroponic tomatoes indoors around cultivar habit, root support, trellising, light, pollination, water, nutrition, and observation."
+title: "Hydroponic Tomatoes: pH, EC, Light, Spacing & Pruning"
+description: "Hydroponic tomatoes: pH 5.8–6.2, EC 2.0–3.0 mS/cm, DLI above 20, 80 °F days and 60 °F nights. Train one stem 16–20 in apart; first fruit about 10 weeks."
 route: "hydroponic-tomatoes"
 publishDate: 2026-09-12
+updatedDate: 2026-11-10
 author: "HydroRigor Editorial"
 category: "crops"
 tags: ["tomatoes", "indoor-growing", "fruiting-crops"]
@@ -11,12 +12,57 @@ sources:
     title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems"
     url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
     publisher: "University of Tennessee Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-06
+  - id: "aces-greenhouse-tomato-anr2955"
+    title: "Greenhouse Tomato Production (ANR-2955)"
+    url: "https://www.aces.edu/wp-content/uploads/2023/02/ANR-2955_GreenhouseTomatoProduction_022223L-G.pdf"
+    publisher: "Alabama Cooperative Extension System (Auburn University)"
+    accessedDate: 2026-11-10
+  - id: "utk-trust-tomato-density-2012"
+    title: "Optimizing Plant Density and Production Systems to Maximize Yield of Greenhouse-grown 'Trust' Tomatoes"
+    url: "https://journals.ashs.org/view/journals/horttech/22/1/article-p44.xml"
+    publisher: "HortTechnology 22(1):44 (University of Tennessee study, 2012)"
+    accessedDate: 2026-11-10
+  - id: "vt-management-basics-spes462"
+    title: "Hydroponic Production of Edible Crops: Management Basics (SPES-462NP)"
+    url: "https://pubs.ext.vt.edu/SPES/spes-462/spes-462.html"
+    publisher: "Virginia Cooperative Extension"
+    accessedDate: 2026-11-10
   - id: "vt-system-crop-comparisons"
     title: "Hydroponic Production of Edible Crops: System and Crop Comparisons"
     url: "https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html"
     publisher: "Virginia Cooperative Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-06
+  - id: "purdue-supplemental-light-lettuce"
+    title: "Determining the Economic Value of Providing Supplemental Light to Lettuce During Winter Production (HO-283-W)"
+    url: "https://ag.purdue.edu/department/hla/extension/extension-publications-library/_docs/ho-283-w.pdf"
+    publisher: "Purdue University Extension"
+    accessedDate: 2026-11-08
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-06
+  - id: "ifas-hydroponic-tomato-formulation"
+    title: "Nutrient Solution Formulation for Hydroponic (Perlite, Rockwool, NFT) Tomatoes in Florida (HS796)"
+    url: "https://ask.ifas.ufl.edu/publication/CV216"
+    publisher: "UF/IFAS Extension"
+    accessedDate: 2026-11-06
+  - id: "osu-hydro-hints-buckets"
+    title: "Hydro hints: Buckets (EM 9456)"
+    url: "https://extension.oregonstate.edu/catalog/pub/em-9456-hydro-hints-buckets"
+    publisher: "Oregon State University Extension Service"
+    accessedDate: 2026-11-06
+  - id: "ifas-volusia-dwc-bucket"
+    title: "Making Your Own, Inexpensive Hydroponic Bucket (Deep Water Culture)"
+    url: "https://www.volusia.org/core/fileparse.php/4461/urlt/making-your-own-hydroponic-bucket.pdf"
+    publisher: "UF/IFAS Extension Volusia County"
+    accessedDate: 2026-11-06
+  - id: "msstate-blossom-end-rot"
+    title: "How Can I Prevent Blossom End Rot?"
+    url: "https://extension.msstate.edu/agriculture/crops/commercial-horticulture/tomato-pepper-and-eggplant/how-can-i-prevent-blossom-end-rot"
+    publisher: "Mississippi State University Extension"
+    accessedDate: 2026-11-06
   - id: "mu-hydroponic-farming"
     title: "Controlled Environment Agriculture: Hydroponic Farming"
     url: "https://extension.missouri.edu/publications/g6986"
@@ -27,40 +73,151 @@ commercialDestinationIds: []
 draft: false
 ---
 
-Indoor hydroponic tomatoes require a system built for a long-lived, heavy, fruiting vine. Choose a compact or otherwise manageable cultivar, provide root volume and drainage, install support before plants become large, and plan light, airflow, pollination, water, and nutrient management as one system.
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-## Choose the plant before the equipment
+Hydroponic tomatoes do best in a bucket or bag of media with drip feeding, at **pH 5.8–6.2** (UF/IFAS) and **EC 2.0–3.0 mS/cm** for most of the season (University of Tennessee), under strong light: Purdue puts tomatoes at a **daily light integral (DLI) above 20 mol/m²/day**, more than leafy greens need. Keep days near **80 °F (27 °C)** and nights near **60 °F (16 °C)** (Virginia Tech), train each plant to **one stem** on a string, give it **3.5–5 sq ft** of floor space (Alabama Extension), and pollinate **three times a week**. In a University of Tennessee greenhouse trial, transplants went in about 6 weeks after sowing and the first fruit was picked about **10 weeks after transplant**.
 
-Tomatoes may be determinate, indeterminate, or dwarf. Indeterminate plants continue producing vegetative growth and require substantial vertical support. A dwarf or compact habit can fit a smaller room, but cultivar descriptions still need to be checked against actual space.
+Tomatoes are a long, heavy crop, so they reward planning more than any leafy green. Every number below is tied to a university or research source listed at the end. Most of the sources are greenhouse publications; where they give nothing for a home setup, this guide says so.
 
-The [hydroponic tomato seed guide](/crops/hydroponic-tomato-seeds/) explains the selection criteria in detail.
+<KeyTargets
+  title="Hydroponic tomatoes: the targets"
+  source="UF/IFAS HS796, University of Tennessee W 844-C, Purdue HO-283-W, Virginia Tech SPES-462, Alabama ANR-2955"
+  items={[
+    { label: 'Solution pH', value: '5.8–6.2' },
+    { label: 'EC', value: '2.0–3.0', note: 'mS/cm' },
+    { label: 'Light', value: 'DLI 20+', note: 'mol/m²/day' },
+    { label: 'Day / night', value: '80 / 60 °F', note: '27 / 16 °C' },
+    { label: 'Space per plant', value: '3.5–5 sq ft' },
+  ]}
+/>
 
-## Use a system that supports a fruiting crop
+## Quick answer: tomato targets and timing
 
-Virginia Cooperative Extension notes that tomatoes can be challenging in NFT because of root structure and the support needs of a large vining crop. Its trials found stronger fit for tomatoes in substrate-filled bags or buckets than in the compared NFT context. Missouri Extension likewise identifies Dutch buckets as a common approach for tomatoes and other vining crops.
+| Measure | Target | Source |
+| --- | --- | --- |
+| Solution pH | 5.8–6.2 (other sources: 5.5–6.0, 5.5–6.5, 6.0–6.5) | UF/IFAS HS796; Tennessee W 844-C; Alabama ANR-2955; Oklahoma State HLA-6722 |
+| EC | 2.0–3.0 mS/cm for much of the season; 0.5–1.0 for seedlings, 1.0–1.5 at transplant | Tennessee W 844-C |
+| Light | DLI above 20 mol/m²/day | Purdue HO-283-W |
+| Day temperature | 80 °F (27 °C); Alabama gives 80–85 °F (27–29 °C) | Virginia Tech SPES-462; Alabama ANR-2955 |
+| Night temperature | 60 °F (16 °C), no lower | Virginia Tech SPES-462; Alabama ANR-2955 |
+| Space per plant | 3.5–5 sq ft | Alabama ANR-2955 |
+| In-row spacing | 16–20 in (40–50 cm), 18 in ideal | Tennessee trial, HortTechnology 2012 |
+| Training | One stem; remove suckers at least weekly | Alabama ANR-2955 |
+| Pollination | 3 times a week at midday, 60–70% humidity | Alabama ANR-2955 |
+| Seed to transplant | 4–6 weeks, at 4–6 in (10–15 cm) tall; Tennessee gives 2–4 weeks | Alabama ANR-2955; Tennessee W 844-C |
+| Transplant to first fruit | 7–10 weeks; about 10 weeks in the Tennessee trial | Tennessee W 844-C; HortTechnology 2012 |
+| Water use | About 2 quarts (1.9 L) per plant per day | Alabama ANR-2955 |
+| Small tank change | Every 1–2 weeks | Tennessee W 844-C |
 
-A media-based container can anchor roots and receive nutrient solution through drip irrigation. It still needs a drainage strategy, uniform emitters, and a reservoir sized for the crop and operating method.
+## Which hydroponic system suits tomatoes
 
-## Install support early
+**Buckets or bags of media with drip feeding are the proven choice.** In Virginia Tech's side-by-side trials, tomatoes and peppers yielded best in media-filled bags and lowest in NFT channels, the reverse of lettuce and herbs. Missouri Extension names Dutch buckets as a common method for tomatoes and other vining crops, and Oregon State's bucket guide lists tomatoes first, noting that the larger root volume buffers the plant better than NFT. Oregon State's setup is perlite plus a drip line, with a screen on each outlet so roots and grit do not block the drain.
 
-Trellis wires, strings, clips, stakes, or cages must carry mature vegetative and fruit weight. Install and test support before roots, lights, and neighboring plants make access difficult. Keep ties from cutting stems and maintain a clear path for pruning and harvest.
+**A single deep water culture bucket works for one plant.** UF/IFAS Volusia County describes a 5-gallon (19 L) bucket with a 6-inch net pot in the lid, an aquarium air pump with one or two air stones, and four small holes in the lid for a tomato cage. The roots can stay submerged as long as the solution is well oxygenated. It is the cheapest way to try one tomato indoors; the [deep water culture guide](/systems/deep-water-culture-hydroponics/) covers air and oxygen targets.
 
-## Light and air determine the possible crop
+**Avoid NFT and small countertop units for full-size tomatoes.** A mature vine is too big and too thirsty for a shallow channel. The [best hydroponic system for home growers](/best/hydroponic-system-for-home-growers/) compares the options crop by crop, and the [DIY hydroponic system guide](/systems/diy-hydroponic-system-for-beginners/) shows a Dutch bucket build.
 
-Fruiting places a larger demand on the indoor light environment than keeping seedlings alive. Use a light plan based on measured crop-level conditions and fixture documentation. Keep air moving through the canopy and manage heat from the room and equipment.
+![Cross-section of one hydroponic tomato in a Dutch bucket. A single stem is clipped to a string tied to an overhead wire 8 to 10 feet up. Suckers between leaf and stem are pinched off at least weekly. A drip line feeds solution at EC 2.0 to 3.0 and pH 5.8 to 6.2 onto perlite; the excess drains through a screened outlet back to the reservoir. Each plant gets 3.5 to 5 square feet.](/images/guides/hydroponic-tomato-dutch-bucket.svg)
 
-Do not copy an exact light duration or temperature from a greenhouse guide without cultivar and facility context.
+*One plant, one stem, one string: the layout used in the greenhouse sources (Alabama ANR-2955; Oregon State EM 9456; University of Tennessee).*
 
-## Pollination needs attention indoors
+## Choose the variety before the equipment
 
-Tomato flowers are self-fertile, but movement helps release pollen. Indoor production may use gentle vibration or managed airflow. Check flowering and fruit set across the plant, and consider temperature and plant condition before attributing a problem to one cause.
+Tomatoes come as **determinate** (bushy, stop growing, fruit over a short period), **indeterminate** (keep growing and fruiting until you top them) and dwarf types. The greenhouse sources here all grow indeterminate varieties trained up a string; the Tennessee trial used 'Trust', a greenhouse slicing tomato. Indeterminate plants give the longest harvest but need the most height. If your ceiling or light hangs low, a compact or dwarf variety is the practical choice, though none of the sources here gives yields for dwarf tomatoes in hydroponics. The [hydroponic tomato seed guide](/crops/hydroponic-tomato-seeds/) covers how to pick a variety for the space you have.
 
-## Nutrition changes through a long crop
+## Light and temperature
 
-University of Tennessee Extension emphasizes monitoring recirculating solution in fruiting-crop systems because large plants use water and nutrients rapidly and the solution can become imbalanced. Use a complete crop-appropriate program, follow product-specific instructions, and keep water-quality context visible.
+**Tomatoes need much more light than lettuce.** Purdue Extension sets leafy greens at a DLI of 15–20 mol/m²/day and tomatoes at more than 20. Sunlight alone often falls well short in winter: Purdue measured under 10 mol/m²/day inside an Indiana greenhouse from November through February. Tennessee Extension asks for at least 8 hours of natural light for fruiting crops. Indoors, the light is the whole story. As a worked conversion (not a figure from the sources), a DLI of 20 over a 16-hour day means an average of about 350 µmol/m²/s at the top of the canopy. Check your light's rated output at the hanging height you will use; the [indoor systems guide](/systems/indoor-hydroponic-systems-for-home/) explains how to read a light's DLI.
 
-See [tomato nutrients by growth stage](/nutrients-water/hydroponic-nutrients-for-tomatoes/) for the management framework. HydroRigor’s [pH and EC reference](/tools/ph-ec-targets/) provides source-specific records without pretending one number applies to every stage and system.
+**Warm days, cooler nights.** Virginia Tech gives 80 °F (27 °C) day and 60 °F (16 °C) night, and notes the best temperature can shift with the crop's stage. Alabama Extension holds days at 80–85 °F (27–29 °C) and prints the night target as "between 65 and 60 degrees F but no lower", so treat 60–65 °F (16–18 °C) as the night band. The Tennessee trial averaged 83/62 °F in fall and 85/64 °F in spring. Tennessee's small-scale guide gives daytime temperatures in the 70s °F, with growth slowing above the mid-80s °F. Too hot is a problem as well: Alabama links excessive heat to cracked fruit and poor fruit set, and cold to leaves that turn purple and curl inward. In a heated home, a spot that runs in the 70s °F by day and drops a little at night is a reasonable target.
 
-## Record the whole system
+## Feeding: pH, EC and the solution
 
-Track cultivar, sowing and transplant dates, pruning, support, flowering, water additions, nutrient additions, measurements, solution changes, environmental changes, and symptoms. A tomato crop is a sequence of changing demands; isolated readings do not explain it.
+**pH.** The sources give four overlapping ranges: UF/IFAS 5.8–6.2, Tennessee 5.5–6.0, Alabama 5.5–6.5 and Oklahoma State 6.0–6.5. HydroRigor recommends the UF/IFAS 5.8–6.2 band because it sits inside or touches every other range and comes from a tomato-specific solution guide.
+
+**EC.** Tennessee runs seedlings at 0.5–1.0 mS/cm, raises the solution to 1.0–1.5 at transplant, then holds 2.0–3.0 for much of the season. Alabama gives 2.0–2.5 and Oklahoma State 2.0–4.0. Start in the low 2s once plants are flowering and move up only if growth is soft and leafy. Feed changes through the season, so nitrogen and potassium go up as fruit clusters set; the [tomato nutrients by growth stage guide](/nutrients-water/hydroponic-nutrients-for-tomatoes/) gives the ppm tables and mixing order. Use the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) to hit a target EC, and the [pH and EC target table](/tools/ph-ec-targets/) to compare crops.
+
+**Water and tank changes.** Alabama's rule of thumb is about 2 quarts (1.9 L) of water per plant per day for greenhouse tomatoes, so a small reservoir empties fast once plants are large. Tennessee recommends changing small recirculating tanks every one to two weeks, because big plants unbalance the solution quickly. Top up between changes with plain water or diluted feed, and check pH and EC after every top-up.
+
+## Spacing, pruning and support
+
+**Spacing.** Alabama Extension gives each plant 3.5–5 sq ft, with 16 inches (40 cm) between plants in the row and 5 feet (1.5 m) between rows. In the Tennessee trial, rows 4 ft (1.2 m) apart with plants 12 to 28 inches apart in the row were compared; the authors recommend 16–20 inches (40–50 cm), with 18 inches (46 cm) ideal, and warn that closer planting raises disease and pest risk.
+
+| In-row spacing | Rows apart | Source |
+| --- | --- | --- |
+| 16 in (40 cm) | 5 ft (1.5 m) | Alabama ANR-2955 |
+| 16–20 in (40–50 cm), 18 in ideal | 4 ft (1.2 m) | Tennessee trial, HortTechnology 2012 |
+
+**One stem.** Indeterminate greenhouse tomatoes are usually pruned to a single stem by removing every side shoot (sucker), the small shoot that grows where a leaf meets the main stem. Alabama says to take suckers off while small and at least once a week. The Tennessee trial also tested two stems, keeping the sucker just below the first flower cluster as a second leader; with *Botrytis* present, the authors note that a two-stem plant is more likely to be lost whole. Virginia Tech adds that removing older lower leaves improves airflow through the canopy.
+
+**Support.** Clip each stem to a string tied to an overhead wire. Alabama hangs its wires 8 to 10 feet (2.4–3 m) above the crop; few homes have that, so a lower wire with a variety that fits the height is the realistic option. About six weeks before you want the crop to end, Alabama removes the growing tip at the wire so the last fruit can ripen. The Tennessee trial topped plants at the 10th flower cluster.
+
+**Fruit thinning.** Both Alabama and the Tennessee trial thin large slicing tomatoes to four or five fruit per cluster, which keeps fruit size up.
+
+## Pollination indoors
+
+Tomato flowers pollinate themselves, but the pollen has to be shaken loose. Greenhouses use bumblebees or vibrating tools; the Tennessee trial used bumblebees. At home that means doing it by hand. Alabama recommends pollinating at midday when humidity is 60–70%, three times a week as new flowers open, by vibrating the flower clusters; it rates a leaf blower as the least effective method. Tennessee's small-scale guide says three to four times a week at 60–80% humidity. A fan moving air over the plants helps, but none of the sources says a fan alone is enough indoors.
+
+## Step by step: one tomato in a Dutch bucket
+
+1. **Sow.** Start seed in rockwool or a plug tray. Alabama grows transplants on heat mats with the root zone at 84 °F (29 °C) and starts at EC 0.5–1.0 (Tennessee).
+2. **Grow on for 4–6 weeks.** Transplant when seedlings are 4–6 in (10–15 cm) tall (Alabama). The Tennessee trial transplanted at the fourth to fifth true leaf, about 6 weeks after sowing.
+3. **Set up the bucket.** Fill a food-grade bucket with perlite, fit a drip line from a pump in the reservoir, and screen the drain outlet (Oregon State EM 9456). Hang a string from an overhead wire or hook.
+4. **Mix the solution.** EC 1.0–1.5 at transplant, rising to 2.0–3.0 as the plant flowers (Tennessee); pH 5.8–6.2 (UF/IFAS).
+5. **Plant and clip.** Set the transplant in the perlite, loop the string loosely under a lower leaf and clip the stem to it as it grows.
+6. **Prune weekly.** Pinch out every sucker while small and remove old yellow lower leaves.
+7. **Pollinate.** Vibrate the open flower clusters at midday, three times a week.
+8. **Feed and check.** Expect the plant to drink about 2 quarts (1.9 L) a day when large; check pH and EC after every top-up and change a small tank every one to two weeks.
+9. **Thin and harvest.** Thin slicing types to four or five fruit per cluster. Expect first fruit about 7–10 weeks after transplant.
+10. **Top the plant.** About six weeks before you want to finish, pinch out the growing tip.
+
+![Timeline for a hydroponic tomato: sow on day 0 with the root zone at 84 °F; transplant at 4 to 6 weeks when 4 to 6 inches tall; flowers open and need pollinating three times a week; first fruit about 7 to 10 weeks after transplant, about 10 weeks in the Tennessee trial; pinch the growing tip six weeks before the crop ends.](/images/guides/hydroponic-tomato-timeline.svg)
+
+*From seed to the last truss, following Alabama ANR-2955, Tennessee W 844-C and the University of Tennessee trial.*
+
+## Troubleshooting
+
+| Problem | Likely cause | What to do | Source |
+| --- | --- | --- | --- |
+| Dark, sunken patch at the bottom of the fruit (blossom-end rot) | Calcium not reaching the fruit, usually from uneven watering | Keep watering steady, never let plants wilt; remove affected fruit | Mississippi State; Virginia Tech SPES-462 |
+| Cracked fruit, few fruit set | Too hot | Keep days near 80–85 °F (27–29 °C) at most | Alabama ANR-2955 |
+| Purple, inward-curling leaves | Too cold | Keep nights at 60 °F (16 °C) or above | Alabama ANR-2955 |
+| Flowers drop without fruit | Poor pollination | Vibrate clusters at midday, 3 times a week, at 60–70% humidity | Alabama ANR-2955 |
+| Gray mold on leaves and stems | High humidity, wet leaves | More airflow and venting; remove lower leaves | Virginia Tech SPES-462 |
+| Tall, thin plants with few flowers | Too little light | Raise light toward a DLI above 20 | Purdue HO-283-W |
+| Solution EC and pH drifting fast | Large plants unbalancing a small tank | Check after top-ups; change the tank every 1–2 weeks | Tennessee W 844-C |
+| Lower yield in a channel system | NFT does not suit tomatoes | Move to media bags or buckets | Virginia Tech SPES-466 |
+
+Mississippi State notes that wilting stress severe enough to show is enough to cause blossom-end rot, and that affected fruit cannot recover, so pick it off. The sources here do not give targets for treating specific diseases or pests, so this guide gives none.
+
+## Frequently asked questions
+
+### What pH do hydroponic tomatoes need?
+
+UF/IFAS gives pH 5.8–6.2 for tomato solutions. Tennessee gives 5.5–6.0, Alabama 5.5–6.5 and Oklahoma State 6.0–6.5. Holding 5.8–6.2 keeps you within or at the edge of all four.
+
+### What EC is best for tomatoes?
+
+About 2.0–3.0 mS/cm once plants are established (Tennessee), with 0.5–1.0 for seedlings and 1.0–1.5 at transplant. Alabama's narrower 2.0–2.5 is a safe start.
+
+### How long do hydroponic tomatoes take?
+
+Transplants take 4–6 weeks from seed in Alabama's greenhouse guide and 2–4 weeks in Tennessee's small-scale guide, which then gives 7–10 weeks from transplant to harvest; and in the Tennessee greenhouse trial the first fruit was picked about 10 weeks after transplant, roughly 16–18 weeks after sowing.
+
+### Can I grow tomatoes in deep water culture?
+
+Yes, one plant per 5-gallon (19 L) bucket with an air pump running all the time (UF/IFAS Volusia County). For several plants, media buckets with drip feeding yielded better in Virginia Tech's trials than NFT.
+
+### How far apart should hydroponic tomatoes be?
+
+Give each plant 3.5–5 sq ft (Alabama), or about 16–20 inches (40–50 cm) in the row with 4–5 ft (1.2–1.5 m) between rows.
+
+### Do I need to pollinate indoor tomatoes?
+
+Yes. Without wind or bees the flowers need shaking. Vibrate the flower clusters at midday three times a week (Alabama) or three to four times a week (Tennessee).
+
+### How much light do indoor tomatoes need?
+
+Purdue puts tomatoes at a DLI above 20 mol/m²/day. That is more than most small countertop lights give, which is why compact varieties and strong lights matter indoors.
+
+*Figures in this guide come from the university and research sources listed below. Most were measured in greenhouses; home conditions vary, so use them as starting points. HydroRigor has not grown tomatoes for this guide.*

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1100" width="640" height="1100" role="img" aria-labelledby="t d">
+  <title id="t">One hydroponic tomato in a Dutch bucket</title>
+  <desc id="d">Cross-section of a single tomato plant trained to one stem. The stem is clipped to a string tied to an overhead wire; Alabama Extension hangs the wire 8 to 10 feet above the crop. Suckers that grow where a leaf meets the stem are pinched off at least once a week, and old lower leaves are removed for airflow. A drip line feeds nutrient solution at EC 2.0 to 3.0 mS/cm and pH 5.8 to 6.2 onto perlite in the bucket. Excess solution drains through a screened outlet back to the reservoir. Each plant gets 3.5 to 5 square feet of floor space, about 16 to 20 inches apart in the row.</desc>
+  <rect width="640" height="1100" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">One tomato, one stem</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Dutch bucket layout from extension sources</text>
+    <!-- overhead wire -->
+    <path d="M20 140 L620 140" stroke="#0E1A14" stroke-width="5"/>
+    <text x="300" y="126" font-size="21" font-weight="800" fill="#0E1A14">Overhead wire</text>
+    <text x="300" y="172" font-size="20" fill="#3F5248">8–10 ft up in a greenhouse</text>
+    <!-- string -->
+    <path d="M200 140 L200 760" stroke="#B9862F" stroke-width="3" stroke-dasharray="8 6"/>
+    <text x="20" y="230" font-size="21" font-weight="800" fill="#0E1A14">String</text>
+    <text x="20" y="258" font-size="20" fill="#3F5248">clip stem as</text>
+    <text x="20" y="284" font-size="20" fill="#3F5248">it grows</text>
+    <!-- stem -->
+    <path d="M208 770 C212 640 200 520 210 400 C216 320 206 260 210 210" stroke="#3E7D52" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- clips -->
+    <rect x="196" y="300" width="22" height="12" rx="4" fill="#0F6B4F"/>
+    <rect x="196" y="470" width="22" height="12" rx="4" fill="#0F6B4F"/>
+    <rect x="196" y="640" width="22" height="12" rx="4" fill="#0F6B4F"/>
+    <!-- leaves -->
+    <ellipse cx="262" cy="250" rx="46" ry="18" transform="rotate(-20 262 250)" fill="#5FA672"/>
+    <ellipse cx="160" cy="350" rx="44" ry="17" transform="rotate(20 160 350)" fill="#5FA672"/>
+    <ellipse cx="266" cy="430" rx="50" ry="19" transform="rotate(-15 266 430)" fill="#5FA672"/>
+    <ellipse cx="156" cy="560" rx="48" ry="18" transform="rotate(15 156 560)" fill="#5FA672"/>
+    <!-- fruit truss -->
+    <circle cx="246" cy="520" r="20" fill="#D9453B"/>
+    <circle cx="276" cy="536" r="18" fill="#D9453B"/>
+    <circle cx="256" cy="556" r="17" fill="#E9785E"/>
+    <!-- sucker with cross -->
+    <path d="M210 712 C234 700 250 684 262 660" stroke="#3E7D52" stroke-width="5" fill="none"/>
+    <path d="M224 670 L254 704 M254 670 L224 704" stroke="#B3261E" stroke-width="5"/>
+    <text x="330" y="684" font-size="21" font-weight="800" fill="#B3261E">Pinch suckers</text>
+    <text x="330" y="712" font-size="20" fill="#3F5248">at least weekly</text>
+    <text x="330" y="420" font-size="21" font-weight="800" fill="#0E1A14">Thin to 4–5 fruit</text>
+    <text x="330" y="448" font-size="20" fill="#3F5248">per cluster</text>
+    <text x="330" y="556" font-size="21" font-weight="800" fill="#0E1A14">Remove old</text>
+    <text x="330" y="584" font-size="20" fill="#3F5248">lower leaves</text>
+    <!-- drip line -->
+    <path d="M560 990 L560 760 L250 760 L250 790" stroke="#2C6FA8" stroke-width="5" fill="none"/>
+    <circle cx="250" cy="796" r="6" fill="#2C6FA8"/>
+    <text x="400" y="748" font-size="21" font-weight="800" fill="#2C6FA8">Drip line</text>
+    <!-- bucket -->
+    <path d="M110 790 L310 790 L292 960 L128 960 Z" fill="#E7DCC7" stroke="#0E1A14" stroke-width="4"/>
+    <g fill="#FFFFFF" stroke="#B5A88E" stroke-width="1.5">
+      <circle cx="150" cy="830" r="7"/><circle cx="185" cy="850" r="7"/><circle cx="230" cy="830" r="7"/><circle cx="265" cy="855" r="7"/>
+      <circle cx="160" cy="890" r="7"/><circle cx="205" cy="905" r="7"/><circle cx="250" cy="895" r="7"/><circle cx="180" cy="935" r="7"/><circle cx="235" cy="935" r="7"/>
+    </g>
+    <path d="M208 790 L196 860 M208 790 L222 870 M208 790 L208 900" stroke="#C9A97A" stroke-width="3"/>
+    <text x="20" y="830" font-size="21" font-weight="800" fill="#0E1A14">Perlite</text>
+    <!-- drain -->
+    <path d="M210 960 L210 1000 L470 1000" stroke="#0E1A14" stroke-width="5" fill="none"/>
+    <rect x="198" y="958" width="24" height="10" fill="#7A8C82"/>
+    <text x="20" y="990" font-size="20" fill="#3F5248">Screened drain</text>
+    <!-- reservoir -->
+    <rect x="470" y="960" width="150" height="90" rx="10" fill="#E3EEF6" stroke="#0E1A14" stroke-width="4"/>
+    <text x="486" y="996" font-size="20" font-weight="800" fill="#0E1A14">Reservoir</text>
+    <text x="486" y="1024" font-size="20" fill="#0E1A14">pump</text>
+    <rect x="330" y="800" width="290" height="120" rx="14" fill="#FFFFFF" stroke="#9BD1A9" stroke-width="3"/>
+    <text x="346" y="834" font-size="21" font-weight="800" fill="#0E1A14">EC 2.0–3.0 mS/cm</text>
+    <text x="346" y="864" font-size="21" font-weight="800" fill="#0E1A14">pH 5.8–6.2</text>
+    <text x="346" y="896" font-size="20" fill="#3F5248">3.5–5 sq ft per plant</text>
+    <text x="20" y="1080" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1000" width="640" height="1000" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic tomato from seed to last harvest</title>
+  <desc id="d">A timeline for one indeterminate tomato. Day 0: sow, with the seedling root zone at 84 degrees F on a heat mat and the solution at EC 0.5 to 1.0. At 4 to 6 weeks: transplant when 4 to 6 inches tall, at EC 1.0 to 1.5. When flowers open: pollinate at midday three times a week at 60 to 70 percent humidity, and raise EC to 2.0 to 3.0. About 7 to 10 weeks after transplant: first ripe fruit; in the University of Tennessee trial picking began about 10 weeks after transplant. Six weeks before the crop ends: pinch out the growing tip so the last fruit ripens.</desc>
+  <rect width="640" height="1000" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Tomato, seed to harvest</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Alabama ANR-2955, Tennessee W 844-C</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">and a University of Tennessee trial</text>
+    <path d="M56 176 L56 790" stroke="#9BD1A9" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="56" cy="176" r="17" fill="#0E1A14"/><circle cx="56" cy="176" r="7" fill="#C6F35E"/>
+    <text x="92" y="184" font-size="21" font-weight="800" fill="#0F6B4F">Day 0</text>
+    <text x="92" y="218" font-size="24" font-weight="800" fill="#0E1A14">Sow</text>
+    <text x="92" y="250" font-size="21" fill="#3F5248">root zone 84 °F, EC 0.5–1.0</text>
+    <circle cx="56" cy="330" r="17" fill="#0E1A14"/><circle cx="56" cy="330" r="7" fill="#C6F35E"/>
+    <text x="92" y="338" font-size="21" font-weight="800" fill="#0F6B4F">4–6 weeks</text>
+    <text x="92" y="372" font-size="24" font-weight="800" fill="#0E1A14">Transplant</text>
+    <text x="92" y="404" font-size="21" fill="#3F5248">4–6 in tall, EC 1.0–1.5</text>
+    <circle cx="56" cy="484" r="17" fill="#0E1A14"/><circle cx="56" cy="484" r="7" fill="#C6F35E"/>
+    <text x="92" y="492" font-size="21" font-weight="800" fill="#0F6B4F">Flowers open</text>
+    <text x="92" y="526" font-size="24" font-weight="800" fill="#0E1A14">Pollinate 3 times a week</text>
+    <text x="92" y="558" font-size="21" fill="#3F5248">midday, raise EC to 2.0–3.0</text>
+    <circle cx="56" cy="638" r="17" fill="#0E1A14"/><circle cx="56" cy="638" r="7" fill="#C6F35E"/>
+    <text x="92" y="646" font-size="21" font-weight="800" fill="#0F6B4F">7–10 weeks after transplant</text>
+    <text x="92" y="680" font-size="24" font-weight="800" fill="#0E1A14">First ripe fruit</text>
+    <text x="92" y="712" font-size="21" fill="#3F5248">about 10 weeks in the trial</text>
+    <circle cx="560" cy="676" r="24" fill="#D9453B"/>
+    <circle cx="596" cy="694" r="20" fill="#E9785E"/>
+    <circle cx="56" cy="790" r="17" fill="#0E1A14"/><circle cx="56" cy="790" r="7" fill="#C6F35E"/>
+    <text x="92" y="798" font-size="21" font-weight="800" fill="#0F6B4F">6 weeks before the end</text>
+    <text x="92" y="832" font-size="24" font-weight="800" fill="#0E1A14">Pinch the growing tip</text>
+    <rect x="20" y="868" width="600" height="80" rx="14" fill="#E3EEF6"/>
+    <text x="44" y="900" font-size="21" font-weight="800" fill="#0E1A14">Every week: pinch suckers</text>
+    <text x="44" y="928" font-size="21" fill="#0E1A14">change a small tank every 1–2 weeks</text>
+    <text x="20" y="976" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
