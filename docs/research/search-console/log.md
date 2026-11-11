@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-11 (Nov 1–9; last update 3 h before check) | 6 | 280 | 2.1% | 35.9 | 75 | 29 | 34 indexed, 14 not indexed (unchanged, last update Nov 6) | Hydroponic systems for sale rebuild (#59); log only (this change) |
 | 2026-11-10 (Nov 1–8; last update 3.5 h before check) | 6 | 250 | 2.4% | 35.3 | 69 | 29 | 34 indexed, 14 not indexed (unchanged, last update Nov 6) | Hydroponic tomatoes rebuild (#54), US units and IndexNow (#52, #53), owner byline approvals (#55–#57); log only (this change) |
 | 2026-11-09 (Nov 1–7; last update 2.5 h before check) | 5 | 207 | 2.4% | 33 | 59 | 29 | 34 indexed, 14 not indexed | NFT strawberries rebuild (#48), email sign-up and RSS (#47), phone-size diagrams (#46); home-growers strengthening pass moved to top of queue (this change) |
 | 2026-11-08 (Nov 1–6; last update 2.5 h before check) | 4 | 150 | 2.7% | 30.3 | 45 | 28 | processing | DWC rebuild (#35), hydroponic tower guide (#37), indoor systems for home rebuild (#42), phone layout (#41), section pages (#43) |
