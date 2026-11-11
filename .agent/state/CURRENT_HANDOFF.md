@@ -1,6 +1,6 @@
 # Current Handoff
 
-Updated: 2026-11-10
+Updated: 2026-11-11
 
 ## State
 
@@ -74,7 +74,7 @@ Updated: 2026-11-10
 Guides published by automated runs under `HydroRigor Editorial`. When Najeeb has read one
 and approves, switch its byline to `Najeeb`.
 
-None at the moment (all approved by the owner on 2026-11-10).
+- `/best/hydroponic-systems-for-sale/` — "Hydroponic Systems for Sale: 9 Checks Before You Buy" (rebuild, 2026-11-11). Nine buyer checks (system type by crop, power-cut behavior, light as DLI from PPFD, real capacity, reservoir size, extras not in the box, electricity from watts, convenience claims, buying used), a step-by-step, troubleshooting and FAQ, with two new diagrams (three listing checks; in the box versus extras). No products, sellers or current prices. New sources, taken from the pH-meter research pack (read 2026-11-07): UMass Extension pH/EC pens (Cox, 2016), Michigan State Extension meter calibration (Wollaeger, 2016) and Purdue OFA Bulletin 917 (Camberato and Lopez, 2009). Reused: Oregon State EM 9453/9455–9458, UF/IFAS HS1488 and HS1422, Kentucky CCD-CP-63, Purdue HO-283-W, Oklahoma State HLA-6722/6724, Tennessee W 844-C, Illinois, Virginia Tech SPES-466, Touliatos et al. 2016, Missouri, UGA, UNH. Notes: (1) web pages could not be opened in this run (fetch permission timed out), so every figure comes from registered sources or the pack; (2) the only prices are dated and labelled (UMass 2016 meter pens $50–60, combo about $80; Oklahoma State 2021 tower around $500 or more); (3) no source here gives a disinfectant strength for cleaning a used system or a meter accuracy figure, and the page says so; (4) the electricity and capacity examples are labelled arithmetic. Photo kept (registry tower under pink LEDs). Pinterest row: `docs/marketing/pinterest/pins-systems-for-sale-2026-11-11.csv`.
 
 ## Next agent instruction
 

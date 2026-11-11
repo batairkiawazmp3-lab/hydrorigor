@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1000" width="640" height="1000" role="img" aria-labelledby="t d">
+  <title id="t">What a hydroponic system for sale includes and what you add</title>
+  <desc id="d">Often in the box: reservoir, net cups, a lid or channels, a pump or air pump, and sometimes a light and timer. Often extra: a pH and EC meter, calibration buffers pH 4.01 and 7.01 and an EC standard of 1.41 mS/cm (Michigan State Extension), a hydroponic nutrient, pH up and down, starter plugs or media, a pump backup for NFT, and a grow light if none is included or it lists no PPFD.</desc>
+  <rect width="640" height="1000" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">In the box, and what you add</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Price both lists before comparing systems</text>
+
+    <rect x="20" y="112" width="600" height="300" rx="16" fill="#FFFFFF" stroke="#D3DAD5" stroke-width="2"/>
+    <rect x="20" y="112" width="600" height="56" rx="16" fill="#0F6B4F"/>
+    <rect x="20" y="146" width="600" height="22" fill="#0F6B4F"/>
+    <text x="44" y="150" font-size="24" font-weight="800" fill="#FFFFFF">Often in the box</text>
+    <g font-size="22" fill="#0E1A14">
+      <path d="M46 204 l8 8 l16 -18" stroke="#0F6B4F" stroke-width="4" fill="none"/>
+      <text x="84" y="214">Reservoir and lid</text>
+      <path d="M46 252 l8 8 l16 -18" stroke="#0F6B4F" stroke-width="4" fill="none"/>
+      <text x="84" y="262">Net cups or channels</text>
+      <path d="M46 300 l8 8 l16 -18" stroke="#0F6B4F" stroke-width="4" fill="none"/>
+      <text x="84" y="310">Pump or air pump</text>
+      <path d="M46 348 l8 8 l16 -18" stroke="#0F6B4F" stroke-width="4" fill="none"/>
+      <text x="84" y="358">Sometimes a light and timer</text>
+    </g>
+
+    <rect x="20" y="436" width="600" height="540" rx="16" fill="#FFFFFF" stroke="#D3DAD5" stroke-width="2"/>
+    <rect x="20" y="436" width="600" height="56" rx="16" fill="#B5651D"/>
+    <rect x="20" y="470" width="600" height="22" fill="#B5651D"/>
+    <text x="44" y="474" font-size="24" font-weight="800" fill="#FFFFFF">Often extra</text>
+    <g font-size="22" fill="#0E1A14">
+      <circle cx="58" cy="530" r="9" fill="#B5651D"/>
+      <text x="84" y="538">pH and EC meter</text>
+      <circle cx="58" cy="588" r="9" fill="#B5651D"/>
+      <text x="84" y="596">Buffers pH 4.01 and 7.01</text>
+      <circle cx="58" cy="646" r="9" fill="#B5651D"/>
+      <text x="84" y="654">EC standard 1.41 mS/cm</text>
+      <circle cx="58" cy="704" r="9" fill="#B5651D"/>
+      <text x="84" y="712">Hydroponic nutrient</text>
+      <circle cx="58" cy="762" r="9" fill="#B5651D"/>
+      <text x="84" y="770">pH up and pH down</text>
+      <circle cx="58" cy="820" r="9" fill="#B5651D"/>
+      <text x="84" y="828">Starter plugs or media</text>
+      <circle cx="58" cy="878" r="9" fill="#B5651D"/>
+      <text x="84" y="886">Pump backup (NFT)</text>
+      <circle cx="58" cy="936" r="9" fill="#B5651D"/>
+      <text x="84" y="944">Grow light with a PPFD figure</text>
+    </g>
+  </g>
+</svg>

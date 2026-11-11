@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1010" width="640" height="1010" role="img" aria-labelledby="t d">
+  <title id="t">Three checks to run on a hydroponic system listing</title>
+  <desc id="d">Light: PPFD times hours on times 0.0036 gives DLI; 200 micromoles for 16 hours gives 11.5, short of the 12 to 17 lettuce needs (University of Kentucky). Capacity: lighted area times 3 to 4 lettuce plants per square foot; 2 square feet holds 6 to 8 lettuce. Water: 1 to 1.5 gallons per lettuce plant in a Kratky system (UF/IFAS); 6 plants need 6 to 9 gallons over the crop.</desc>
+  <rect width="640" height="1010" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Check a listing in 3 numbers</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Kentucky CCD-CP-63, Purdue HO-283-W, UF/IFAS HS1488</text>
+
+    <rect x="20" y="116" width="600" height="276" rx="16" fill="#FFFFFF" stroke="#D3DAD5" stroke-width="2"/>
+    <circle cx="62" cy="160" r="24" fill="#0F6B4F"/>
+    <text x="62" y="168" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="100" y="168" font-size="26" font-weight="800" fill="#0E1A14">Light</text>
+    <text x="44" y="216" font-size="22" fill="#0E1A14">PPFD × hours on × 0.0036 = DLI</text>
+    <rect x="44" y="236" width="552" height="60" rx="10" fill="#E9F2EC"/>
+    <text x="60" y="274" font-size="22" fill="#0E1A14">200 µmol × 16 h × 0.0036 = <tspan font-weight="800">11.5</tspan></text>
+    <text x="44" y="334" font-size="21" fill="#3F5248">Lettuce needs 12–17: just short.</text>
+    <text x="44" y="366" font-size="21" fill="#3F5248">No PPFD listed = light unknown.</text>
+
+    <rect x="20" y="412" width="600" height="276" rx="16" fill="#FFFFFF" stroke="#D3DAD5" stroke-width="2"/>
+    <circle cx="62" cy="456" r="24" fill="#0F6B4F"/>
+    <text x="62" y="464" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="100" y="464" font-size="26" font-weight="800" fill="#0E1A14">Capacity</text>
+    <text x="44" y="512" font-size="22" fill="#0E1A14">Lighted area × 3–4 lettuce per sq ft</text>
+    <rect x="44" y="532" width="552" height="60" rx="10" fill="#E9F2EC"/>
+    <text x="60" y="570" font-size="22" fill="#0E1A14">2 sq ft × 3–4 = <tspan font-weight="800">6–8 lettuce</tspan></text>
+    <text x="44" y="630" font-size="21" fill="#3F5248">Count lighted area, not holes.</text>
+    <text x="44" y="662" font-size="21" fill="#3F5248">Towers: less light toward the base.</text>
+
+    <rect x="20" y="708" width="600" height="276" rx="16" fill="#FFFFFF" stroke="#D3DAD5" stroke-width="2"/>
+    <circle cx="62" cy="752" r="24" fill="#0F6B4F"/>
+    <text x="62" y="760" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="100" y="760" font-size="26" font-weight="800" fill="#0E1A14">Water</text>
+    <text x="44" y="808" font-size="22" fill="#0E1A14">Kratky: 1–1.5 gal per lettuce plant</text>
+    <rect x="44" y="828" width="552" height="60" rx="10" fill="#E9F2EC"/>
+    <text x="60" y="866" font-size="22" fill="#0E1A14">6 plants × 1–1.5 gal = <tspan font-weight="800">6–9 gal</tspan></text>
+    <text x="44" y="926" font-size="21" fill="#3F5248">Smaller tank: top up more often.</text>
+    <text x="44" y="958" font-size="21" fill="#3F5248">Seed to harvest, whole crop.</text>
+  </g>
+</svg>

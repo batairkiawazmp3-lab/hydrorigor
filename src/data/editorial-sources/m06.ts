@@ -594,6 +594,33 @@ export const m06EditorialSources = [
     sourceType: 'university-research',
     locator: "Materials and Methods: 'Trust' in perlite bags, Crossville TN greenhouse; in-row spacings 12, 16, 20, 24 and 28 in with rows 4 ft apart; single leader (all suckers removed) versus double leader; plants clipped to a string on an overhead wire, topped at the 10th flower cluster; clusters thinned to four or five fruit; bumblebee pollination; seeded 27 June 2008 and 26 Dec 2008, transplanted at the fourth to fifth true leaf after about 6 weeks (22 Aug 2008 and 7 Feb 2009); harvest began 3 Nov 2008 and 20 Apr 2009 (about 10 weeks after transplant), picked at pink weekly for 12 weeks; temperatures averaged 83/62 °F (fall) and 85/64 °F (spring) day/night. Introduction: indeterminate greenhouse tomatoes typically pruned to one stem; literature cited gives 4–4.3 sq ft per plant. Abstract/conclusion: in-row spacing of 16–20 in, 18 in ideal; closer spacing raises disease and pest risk; Botrytis cinerea can cost a whole double-leader plant",
   },
+  {
+    id: 'umass-ph-ec-pens',
+    title: 'How to Use pH/EC Pens to Monitor Greenhouse Crop Nutrition',
+    publisher: 'UMass Amherst Extension (D. Cox), updated 2016-10-26',
+    url: 'https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/how-to-use-ph-ec-pens-to-monitor-greenhouse-crop-nutrition',
+    accessedDate: '2026-11-07',
+    sourceType: 'university-extension',
+    locator: '"Calibration is a must to get any useful information from pens and meters!"; pH pens calibrated with pH 7 buffer or two-point with pH 4 and pH 7; calibrate at the start of every testing session until drift between sessions is known; readings drift over time even on expensive meters; discard used calibration solutions; pens and bench meters give the same readings when properly calibrated; prices in 2016: single pH or EC pens $50–60, combination pH/EC pen about $80',
+  },
+  {
+    id: 'msu-calibrate-ph-ec',
+    title: 'Calibrate your pH and EC meter in your greenhouse',
+    publisher: 'Michigan State University Extension (H. Wollaeger), 2016-03-14',
+    url: 'https://www.canr.msu.edu/news/calibrate_your_ph_and_ec_meter_in_your_greenhouse',
+    accessedDate: '2026-11-07',
+    sourceType: 'university-extension',
+    locator: 'Buffers pH 4.01 and 7.01; EC standard 1.41 mS/cm (about 1413 µS/cm; meter and packet may use different units); pH changes with temperature, so check solution temperature before calibrating; rinse the electrode with distilled water before and between calibrations; a probe left unused will likely dry out: soak in storage solution for at least an hour, then calibrate; never dip the probe into the large bottle of standard; check standards are not expired',
+  },
+  {
+    id: 'purdue-inhouse-ph-ec',
+    title: 'In-House pH and Electrical Conductivity Measurements in Soilless Substrates (OFA Bulletin 917)',
+    publisher: 'Purdue University (D. Camberato, R. Lopez), 2009',
+    url: 'https://www.canr.msu.edu/uploads/resources/pdfs/ofa_ph_and_ec.pdf',
+    accessedDate: '2026-11-07',
+    sourceType: 'university-extension',
+    locator: 'Portable, affordable units are available and very accurate; units with automatic calibration and temperature compensation are desirable; calibrate to the pH range being tested; store instruments and solutions at room temperature in a low-humidity room, never in the greenhouse or outside',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

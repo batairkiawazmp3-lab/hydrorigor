@@ -76,7 +76,7 @@ impressions in 28 days).
         0 clicks; previous check 29 impressions, position 10.9. Keep the title (changed 2026-11-06).
 11. [x] New guide `/crops/hydroponic-basil/` (plan ID 41) — published 2026-11-09 ("Hydroponic Basil: pH, EC, Light & Harvest Guide"). hydroponic basil (880, difficulty 11; Ubersuggest 2026-11-03).
 12. [x] `/crops/hydroponic-tomatoes/` — rebuilt 2026-11-10 ("Hydroponic Tomatoes: pH, EC, Light, Spacing & Pruning"). hydroponic tomatoes (1,900, difficulty 29).
-13. [ ] `/best/hydroponic-systems-for-sale/` — rebuild. "hydroponic system sale" 1,600 / 24;
+13. [x] `/best/hydroponic-systems-for-sale/` — rebuilt 2026-11-11 ("Hydroponic Systems for Sale: 9 Checks Before You Buy"). "hydroponic system sale" 1,600 / 24;
         "hydroponic system for sale" 1,300 / 28.
 14. [ ] `/best/hydroponic-systems-for-beginners/` — rebuild. Search Console: 6 impressions, position 46.5.
 15. [ ] `/crops/hydroponic-lettuce-systems/` — rebuild. "nutrient film hydroponic system" 1,300 / 30;
