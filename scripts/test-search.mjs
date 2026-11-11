@@ -215,7 +215,7 @@ try {
     ['root support water and oxygen', '/systems/deep-water-culture-hydroponics/'],
     ['essential macro and micronutrients', '/nutrients-water/hydroponic-nutrients/'],
     ['three-component base nutrient system', '/reviews/general-hydroponics-nutrients/'],
-    ['requirements sheet crop space root zone', '/best/hydroponic-systems-for-sale/'],
+    ['lighted area plant capacity calibration buffers', '/best/hydroponic-systems-for-sale/'],
     ['single best hydroponic system every home', '/best/hydroponic-system-for-home-growers/'],
   ];
   for (const [query, expectedPath] of waveQueries) {
