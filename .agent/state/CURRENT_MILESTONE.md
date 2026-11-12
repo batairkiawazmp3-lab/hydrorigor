@@ -78,7 +78,7 @@ impressions in 28 days).
 12. [x] `/crops/hydroponic-tomatoes/` — rebuilt 2026-11-10 ("Hydroponic Tomatoes: pH, EC, Light, Spacing & Pruning"). hydroponic tomatoes (1,900, difficulty 29).
 13. [x] `/best/hydroponic-systems-for-sale/` — rebuilt 2026-11-11 ("Hydroponic Systems for Sale: 9 Checks Before You Buy"). "hydroponic system sale" 1,600 / 24;
         "hydroponic system for sale" 1,300 / 28.
-14. [ ] `/best/hydroponic-systems-for-beginners/` — rebuild. Search Console: 6 impressions, position 46.5.
+14. [x] `/best/hydroponic-systems-for-beginners/` — rebuilt 2026-11-12 ("Best Hydroponic System for Beginners: What to Start With"). Search Console: 6 impressions, position 46.5.
 15. [ ] `/crops/hydroponic-lettuce-systems/` — rebuild. "nutrient film hydroponic system" 1,300 / 30;
         hydroponic lettuce systems (1,000, difficulty 28).
 16. [ ] `/nutrients-water/hydroponic-nutrient-solution/` — rebuild. "hydroponic nutrients solution" 720 / 25.

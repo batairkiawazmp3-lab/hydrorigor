@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1090" width="640" height="1090" role="img" aria-labelledby="t d">
+  <title id="t">Beginner hydroponic systems ranked by what happens when something goes wrong</title>
+  <desc id="d">Four systems from most to least forgiving. Kratky bucket: nothing to switch off; the main mistake is topping it up over the air roots. Deep water culture: if the air pump stops, oxygen in the solution falls; keep it at 7 to 10 ppm with 4 ppm the minimum. Dutch buckets on drip: a clogged outlet or a failed timer leaves the media dry; screen every outlet. NFT channels: if the pump or power fails, the film stops and plants can wilt quickly.</desc>
+  <rect width="640" height="1090" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">If something goes wrong</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Beginner systems, most to least forgiving</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(Oregon State, Virginia Tech, UF/IFAS, Kratky)</text>
+    <rect x="20" y="170" width="600" height="196" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="170" width="14" height="196" rx="7" fill="#2E8B57"/>
+    <text x="56" y="214" font-size="26" font-weight="800" fill="#0E1A14">Kratky bucket</text>
+    <rect x="435.0" y="188" width="169.0" height="36" rx="18" fill="#2E8B57"/>
+    <text x="515.5" y="213" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">Most forgiving</text>
+    <text x="56" y="250" font-size="21" font-weight="800" fill="#0F6B4F">No pump, no power</text>
+    <text x="56" y="290" font-size="21" fill="#3F5248">Mistake to avoid: topping up</text>
+    <text x="56" y="320" font-size="21" fill="#3F5248">over the air roots</text>
+    <rect x="20" y="384" width="600" height="196" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="384" width="14" height="196" rx="7" fill="#7FB069"/>
+    <text x="56" y="428" font-size="26" font-weight="800" fill="#0E1A14">Deep water culture</text>
+    <text x="56" y="464" font-size="21" font-weight="800" fill="#0F6B4F">Air pump runs all the time</text>
+    <text x="56" y="504" font-size="21" fill="#3F5248">If air stops, oxygen falls</text>
+    <text x="56" y="534" font-size="21" fill="#3F5248">Keep 7–10 ppm, 4 ppm minimum</text>
+    <rect x="20" y="598" width="600" height="196" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="598" width="14" height="196" rx="7" fill="#E0A23B"/>
+    <text x="56" y="642" font-size="26" font-weight="800" fill="#0E1A14">Dutch buckets (drip)</text>
+    <text x="56" y="678" font-size="21" font-weight="800" fill="#0F6B4F">Pump on a timer</text>
+    <text x="56" y="718" font-size="21" fill="#3F5248">A clogged outlet dries the media</text>
+    <text x="56" y="748" font-size="21" fill="#3F5248">Screen every outlet</text>
+    <rect x="20" y="812" width="600" height="196" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="812" width="14" height="196" rx="7" fill="#D1603D"/>
+    <text x="56" y="856" font-size="26" font-weight="800" fill="#0E1A14">NFT channels</text>
+    <rect x="423.5" y="830" width="180.5" height="36" rx="18" fill="#D1603D"/>
+    <text x="509.75" y="855" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">Least forgiving</text>
+    <text x="56" y="892" font-size="21" font-weight="800" fill="#0F6B4F">Pump runs nonstop</text>
+    <text x="56" y="932" font-size="21" fill="#3F5248">If pump or power fails,</text>
+    <text x="56" y="962" font-size="21" fill="#3F5248">plants can wilt quickly</text>
+    <text x="20" y="1068" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
