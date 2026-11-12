@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1080" width="640" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">A first hydroponic grow: lettuce in a Kratky bucket</title>
+  <desc id="d">Timeline. Day 0: sow lettuce in rockwool or similar plugs and keep them near 68 °F (20 °C); seedlings come up in about 3 days (University of Kentucky). Days 14 to 21: transplant three seedlings with 3 to 4 true leaves into a 5-gallon Kratky bucket with three 2-inch net cups, solution at about EC 1.25 and pH 5.5 to 6.0, filled to about 1 inch below the lid (UF/IFAS). Do not top up over the air roots. Harvest about 3 to 4 weeks after transplant (UF/IFAS), or about 6 to 7 weeks from seeding in Kratky's trials.</desc>
+  <rect width="640" height="1080" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Your first grow</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Lettuce in a Kratky bucket</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(University of Kentucky, UF/IFAS, Kratky)</text>
+    <path d="M56 178 L56 840" stroke="#9BD1A9" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="56" cy="178" r="17" fill="#0E1A14"/><circle cx="56" cy="178" r="7" fill="#C6F35E"/>
+    <text x="92" y="186" font-size="21" font-weight="800" fill="#0F6B4F">Day 0</text>
+    <text x="92" y="220" font-size="24" font-weight="800" fill="#0E1A14">Sow in plugs</text>
+    <text x="92" y="252" font-size="21" fill="#3F5248">Keep near 68 °F (20 °C)</text>
+    <circle cx="56" cy="318" r="17" fill="#0E1A14"/><circle cx="56" cy="318" r="7" fill="#C6F35E"/>
+    <text x="92" y="326" font-size="21" font-weight="800" fill="#0F6B4F">About day 3</text>
+    <text x="92" y="360" font-size="24" font-weight="800" fill="#0E1A14">Seedlings come up</text>
+    <ellipse cx="552.3" cy="370.3" rx="5.6" ry="9.1" transform="rotate(-40 552.3 370.3)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="567.7" cy="370.3" rx="5.6" ry="9.1" transform="rotate(40 567.7 370.3)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="556.5" cy="366.1" rx="4.9" ry="9.8" transform="rotate(-12 556.5 366.1)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="563.5" cy="366.1" rx="4.9" ry="9.8" transform="rotate(12 563.5 366.1)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="560.0" cy="371.7" rx="7.0" ry="6.3" transform="rotate(0 560.0 371.7)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <circle cx="56" cy="458" r="17" fill="#0E1A14"/><circle cx="56" cy="458" r="7" fill="#C6F35E"/>
+    <text x="92" y="466" font-size="21" font-weight="800" fill="#0F6B4F">Days 14–21</text>
+    <text x="92" y="500" font-size="24" font-weight="800" fill="#0E1A14">Transplant 3 plants</text>
+    <text x="92" y="532" font-size="21" fill="#3F5248">3–4 true leaves</text>
+    <text x="92" y="560" font-size="21" fill="#3F5248">EC 1.25, pH 5.5–6.0</text>
+    <ellipse cx="546.8" cy="504.8" rx="9.6" ry="15.6" transform="rotate(-40 546.8 504.8)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="573.2" cy="504.8" rx="9.6" ry="15.6" transform="rotate(40 573.2 504.8)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="554.0" cy="497.6" rx="8.4" ry="16.8" transform="rotate(-12 554.0 497.6)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="566.0" cy="497.6" rx="8.4" ry="16.8" transform="rotate(12 566.0 497.6)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="560.0" cy="507.2" rx="12.0" ry="10.8" transform="rotate(0 560.0 507.2)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <circle cx="56" cy="640" r="17" fill="#0E1A14"/><circle cx="56" cy="640" r="7" fill="#C6F35E"/>
+    <text x="92" y="648" font-size="21" font-weight="800" fill="#0F6B4F">After transplant</text>
+    <text x="92" y="682" font-size="24" font-weight="800" fill="#0E1A14">Leave the level alone</text>
+    <text x="92" y="714" font-size="21" fill="#3F5248">Never top up over</text>
+    <text x="92" y="742" font-size="21" fill="#3F5248">the air roots</text>
+    <ellipse cx="541.3" cy="681.3" rx="13.6" ry="22.1" transform="rotate(-40 541.3 681.3)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="578.7" cy="681.3" rx="13.6" ry="22.1" transform="rotate(40 578.7 681.3)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="551.5" cy="671.1" rx="11.9" ry="23.8" transform="rotate(-12 551.5 671.1)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="568.5" cy="671.1" rx="11.9" ry="23.8" transform="rotate(12 568.5 671.1)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="560.0" cy="684.7" rx="17.0" ry="15.3" transform="rotate(0 560.0 684.7)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <circle cx="56" cy="840" r="17" fill="#0E1A14"/><circle cx="56" cy="840" r="7" fill="#C6F35E"/>
+    <text x="92" y="848" font-size="21" font-weight="800" fill="#0F6B4F">6–7 weeks from seeding</text>
+    <text x="92" y="882" font-size="24" font-weight="800" fill="#0E1A14">Harvest</text>
+    <text x="92" y="914" font-size="21" fill="#3F5248">3–4 weeks after transplant</text>
+    <ellipse cx="534.7" cy="874.7" rx="18.4" ry="29.9" transform="rotate(-40 534.7 874.7)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="585.3" cy="874.7" rx="18.4" ry="29.9" transform="rotate(40 585.3 874.7)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="548.5" cy="860.9" rx="16.1" ry="32.2" transform="rotate(-12 548.5 860.9)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="571.5" cy="860.9" rx="16.1" ry="32.2" transform="rotate(12 571.5 860.9)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <ellipse cx="560.0" cy="879.3" rx="23.0" ry="20.7" transform="rotate(0 560.0 879.3)" fill="#7FC48E" stroke="#5FA672" stroke-width="1.5"/>
+    <rect x="20" y="960" width="600" height="76" rx="14" fill="#E3EEF6"/>
+    <text x="44" y="992" font-size="21" font-weight="800" fill="#0E1A14">5-gal bucket, three 2-in net cups</text>
+    <text x="44" y="1020" font-size="21" fill="#0E1A14">Fill to about 1 in below the lid</text>
+    <text x="20" y="1058" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
