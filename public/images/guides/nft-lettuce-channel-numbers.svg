@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1160" width="640" height="1160" role="img" aria-labelledby="t d">
+  <title id="t">NFT channel numbers for lettuce</title>
+  <desc id="d">Slope: 1:100 recommended, 1:30 to 1:40 also used (Purdue); Oregon State gives a 2 percent minimum. Flow per channel: 1 liter (0.26 gallon) per minute, upper limit 2 liters (0.53 gallon) per minute. Channel length: no more than 10 to 15 meters (33 to 49 feet) per Purdue, or 9 meters (30 feet) per Jones as cited by Sato and colleagues. Along an 18 meter channel, dissolved oxygen fell by up to 0.9 mg/L and the outlet ran 0.3 to 1.4 °C warmer than the inlet. The pump runs nonstop with no timer, so back up power and the pump.</desc>
+  <rect width="640" height="1160" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">NFT channel numbers</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">For lettuce in nutrient film channels</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(Purdue, Oregon State, Oklahoma State, Sato)</text>
+    <rect x="20" y="150" width="600" height="176" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="150" width="14" height="176" rx="7" fill="#3A7CA5"/>
+    <text x="56" y="192" font-size="24" font-weight="800" fill="#0E1A14">Slope</text>
+    <text x="56" y="230" font-size="22" font-weight="800" fill="#0F6B4F">1:100 recommended</text>
+    <text x="56" y="264" font-size="21" fill="#3F5248">1:30–1:40 also used (Purdue)</text>
+    <text x="56" y="300" font-size="20" fill="#5B6B62">Oregon State: 2% minimum</text>
+    <rect x="20" y="344" width="600" height="176" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="344" width="14" height="176" rx="7" fill="#2E8B57"/>
+    <text x="56" y="386" font-size="24" font-weight="800" fill="#0E1A14">Flow per channel</text>
+    <text x="56" y="424" font-size="22" font-weight="800" fill="#0F6B4F">1 L/min (0.26 gal/min)</text>
+    <text x="56" y="458" font-size="21" fill="#3F5248">Upper limit 2 L/min (0.53 gal/min)</text>
+    <text x="56" y="494" font-size="20" fill="#5B6B62">Purdue; Sato et al. 2007</text>
+    <rect x="20" y="538" width="600" height="176" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="538" width="14" height="176" rx="7" fill="#7FB069"/>
+    <text x="56" y="580" font-size="24" font-weight="800" fill="#0E1A14">Channel length</text>
+    <text x="56" y="618" font-size="22" font-weight="800" fill="#0F6B4F">10–15 m (33–49 ft) max</text>
+    <text x="56" y="652" font-size="21" fill="#3F5248">9 m (30 ft) per Jones, cited</text>
+    <text x="56" y="688" font-size="20" fill="#5B6B62">Purdue; Sato et al. 2007</text>
+    <rect x="20" y="732" width="600" height="176" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="732" width="14" height="176" rx="7" fill="#C8A96B"/>
+    <text x="56" y="774" font-size="24" font-weight="800" fill="#0E1A14">Along the channel</text>
+    <text x="56" y="812" font-size="22" font-weight="800" fill="#0F6B4F">Oxygen fell up to 0.9 mg/L</text>
+    <text x="56" y="846" font-size="21" fill="#3F5248">Outlet 0.3–1.4 °C warmer</text>
+    <text x="56" y="882" font-size="20" fill="#5B6B62">Sato et al. 2007 (18 m run)</text>
+    <rect x="20" y="926" width="600" height="176" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="926" width="14" height="176" rx="7" fill="#0F6B4F"/>
+    <text x="56" y="968" font-size="24" font-weight="800" fill="#0E1A14">Pump timing</text>
+    <text x="56" y="1006" font-size="22" font-weight="800" fill="#0F6B4F">Runs nonstop, no timer</text>
+    <text x="56" y="1040" font-size="21" fill="#3F5248">Back up power and pump</text>
+    <text x="56" y="1076" font-size="20" fill="#5B6B62">Oklahoma State; Oregon State</text>
+  </g>
+</svg>

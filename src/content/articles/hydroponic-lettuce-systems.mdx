@@ -1,64 +1,270 @@
 ---
-title: "Hydroponic Lettuce Systems Compared: DWC, NFT and Kratky"
-description: "Compare DWC, NFT, and Kratky-style passive lettuce systems by oxygen, flow dependence, scale, inspection, and failure response."
+title: "Hydroponic Lettuce Systems: NFT vs DWC vs Kratky Compared"
+description: "Best lettuce system: Kratky for 1–3 plants (1–1.5 gal each), DWC rafts at 7–10 ppm oxygen, or NFT at a 1:100–2% slope and 1 L/min. Setup and fixes."
 route: "hydroponic-lettuce-systems"
 publishDate: 2026-09-12
+updatedDate: 2026-11-12
 author: "HydroRigor Editorial"
 category: "crops"
 tags: ["lettuce", "dwc", "nft", "kratky"]
 sources:
+  - id: "uky-hydroponic-lettuce"
+    title: "Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)"
+    url: "https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification"
+    accessedDate: 2026-11-03
   - id: "ifas-lettuce-small-systems"
     title: "Growing Lettuce in Small Hydroponic Systems"
     url: "https://ask.ifas.ufl.edu/publication/HS1422"
     publisher: "UF/IFAS Extension"
     accessedDate: 2026-09-12
-  - id: "ifas-lettuce-cultivars"
-    title: "An Overview of Lettuce Production Systems and Cultivars Used in Hydroponics and Protected Culture in Florida"
-    url: "https://ask.ifas.ufl.edu/publication/HS1258"
-    publisher: "UF/IFAS Extension"
-    accessedDate: 2026-09-12
+  - id: "ifas-kratky-set-and-forget"
+    title: "\"Set It and Forget It\" Hydroponic Lettuce (HS1488)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1488"
+    publisher: "UF/IFAS Extension (H. Eason)"
+    accessedDate: 2026-11-06
+  - id: "kratky-noncirculating-lettuce"
+    title: "Three Non-circulating Hydroponic Methods for Growing Lettuce (Acta Horticulturae 843)"
+    url: "https://www3.ctahr.hawaii.edu/Hawaii/downloads/Three_Non-circulating_Hydroponic_Methods_for_Growing_lettuce.pdf"
+    publisher: "B.A. Kratky, University of Hawaii CTAHR"
+    accessedDate: 2026-11-03
+  - id: "vt-system-crop-comparisons"
+    title: "Hydroponic Production of Edible Crops: System and Crop Comparisons"
+    url: "https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html"
+    publisher: "Virginia Cooperative Extension"
+    accessedDate: 2026-11-06
+  - id: "purdue-hydroponics-opportunities-2016"
+    title: "Opportunities in Hydroponics"
+    url: "https://ag.purdue.edu/department/hla/extension/_docs/langenhoven_hydroponics_ivgs2016b.pdf"
+    publisher: "Purdue University (P. Langenhoven, Horticulture and Hydroponic Crops Specialist), Indiana Vegetable Growers slides"
+    accessedDate: 2026-11-09
+  - id: "sato-modified-nft-2007"
+    title: "A Modified Nutrient Film Technique System Offers a More Uniform Nutrient Supply to Plants"
+    url: "https://journals.ashs.org/view/journals/horttech/17/2/article-p227.xml"
+    publisher: "HortTechnology 17(2):227 (Sato et al., Chiba University, 2007), doi:10.21273/HORTTECH.17.2.227"
+    accessedDate: 2026-11-09
+  - id: "osu-hydro-hints-nft"
+    title: "Hydro hints: Nutrient film technique (EM 9457)"
+    url: "https://extension.oregonstate.edu/sites/extd8/files/catalog/auto/EM9457.pdf"
+    publisher: "Oregon State University Extension Service"
+    accessedDate: 2026-11-06
+  - id: "osu-hydro-hints-dwc"
+    title: "Hydro hints: Deep water culture (EM 9455)"
+    url: "https://extension.oregonstate.edu/catalog/pub/em-9455-hydro-hints-deep-water-culture"
+    publisher: "Oregon State University Extension Service"
+    accessedDate: 2026-11-06
+  - id: "okstate-hydroponics-hla6442"
+    title: "Hydroponics (HLA-6442)"
+    url: "https://pods.okstate.edu/fact-sheets/HLA-6442pod.pdf"
+    publisher: "Oklahoma State University Extension (A. Shrestha, B. Dunn)"
+    accessedDate: 2026-11-06
   - id: "mu-hydroponic-farming"
     title: "Controlled Environment Agriculture: Hydroponic Farming"
     url: "https://extension.missouri.edu/publications/g6986"
     publisher: "University of Missouri Extension"
     accessedDate: 2026-09-12
+  - id: "purdue-supplemental-light-lettuce"
+    title: "Determining the Economic Value of Providing Supplemental Light to Lettuce During Winter Production (HO-283-W)"
+    url: "https://ag.purdue.edu/department/hla/extension/extension-publications-library/_docs/ho-283-w.pdf"
+    publisher: "Purdue University Extension (K. Nemali, P. Langenhoven)"
+    accessedDate: 2026-11-08
+  - id: "egro-lettuce-tipburn-2023"
+    title: "Lettuce tipburn sensitivity trial 2023 – Preliminary results (e-GRO Edible Alert 8-10)"
+    url: "https://www.e-gro.org/pdf/E810.pdf"
+    publisher: "C. Kubota and J. Ertle, The Ohio State University (e-GRO)"
+    accessedDate: 2026-11-05
+  - id: "okstate-vertical-tower-hla6724"
+    title: "Building a Vertical Hydroponic Tower (HLA-6724)"
+    url: "https://extension.okstate.edu/fact-sheets/building-a-vertical-hydroponic-tower.html"
+    publisher: "Oklahoma State University Extension (H. Singh, B. Dunn)"
+    accessedDate: 2026-11-07
+  - id: "touliatos-vertical-lettuce-2016"
+    title: "Vertical farming increases lettuce yield per unit area compared to conventional horizontal hydroponics"
+    url: "https://eprints.lancs.ac.uk/id/eprint/80256"
+    publisher: "Food and Energy Security 5(3):184–191 (Touliatos, Dodd, McAinsh, 2016)"
+    accessedDate: 2026-11-07
+  - id: "ifas-lettuce-cultivars"
+    title: "An Overview of Lettuce Production Systems and Cultivars Used in Hydroponics and Protected Culture in Florida"
+    url: "https://ask.ifas.ufl.edu/publication/HS1258"
+    publisher: "UF/IFAS Extension"
+    accessedDate: 2026-09-12
+  - id: "cornell-cea-lettuce-handbook"
+    title: "Cornell Controlled Environment Agriculture Hydroponic Lettuce Handbook"
+    url: "https://cpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf"
+    publisher: "Cornell University CEA Program (M. Brechner, A.J. Both)"
+    accessedDate: 2026-11-05
 affiliateDisclosure: false
 commercialDestinationIds: []
 draft: false
 ---
 
-DWC, NFT, and Kratky-style passive reservoirs can all support lettuce, but they manage water and root oxygen differently. Choose DWC for an inspectable immersed root zone with active aeration, NFT for multiple plants with dependable circulation, or passive culture when reducing moving parts matters more than active control.
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-## Quick comparison
+The best hydroponic system for lettuce depends on how many heads you want. For **one to three plants**, use a **Kratky bucket**: no pump, about **1–1.5 gallons of solution per plant** for the whole crop, and harvest about 3–4 weeks after transplanting (UF/IFAS). For **a tray of heads**, use **deep water culture (DWC)**: a floating raft on solution **at least 12 inches deep**, **3–4 plants per square foot**, and an air pump holding dissolved oxygen at **7–10 ppm** (University of Kentucky; Virginia Tech). For **long rows or many plants**, use a **nutrient film technique (NFT) channel** with a slope of **1:100 to 2%** and about **1 liter (0.26 gallon) per minute** of flow per channel (Purdue; Oregon State). All three run lettuce at **pH 5.5–6.0** and **EC about 1.5 mS/cm**.
 
-| Decision | DWC | NFT | Passive reservoir |
+Virginia Tech's trials got the best leafy-green yields from NFT and DWC, so the real choice is which failure you can live with. A Kratky bucket has nothing to break. DWC roots stay wet if the air pump stops. In NFT, Oregon State warns plants can wilt quickly if the pump stops.
+
+<KeyTargets
+  title="Lettuce systems: the numbers to know"
+  source="University of Kentucky, UF/IFAS, Virginia Tech and Purdue"
+  items={[
+    { label: 'Solution pH', value: '5.5–6.0', note: 'all three systems' },
+    { label: 'EC', value: '1.5 mS/cm', note: '1.0 for seedlings' },
+    { label: 'DWC oxygen', value: '7–10 ppm', note: '4 ppm minimum' },
+    { label: 'NFT flow', value: '1 L/min', note: 'per channel, 2 L/min upper limit' },
+  ]}
+/>
+
+## Quick answer: lettuce system numbers
+
+| Factor | Target | Source |
+| --- | --- | --- |
+| Solution pH | 5.5–6.0 | University of Kentucky |
+| EC | About 1.5 mS/cm for growing plants, 1.0 for seedlings; UF/IFAS gives 1.2–1.8 | University of Kentucky; UF/IFAS HS1422 |
+| Solution temperature | 65–80 °F (18–27 °C) | UF/IFAS HS1422 |
+| Air temperature | Days up to 75 °F (24 °C), nights up to 65 °F (18 °C) | University of Kentucky |
+| Daily light integral (DLI) | 12–17 mol/m²/day | University of Kentucky |
+| Kratky solution per plant | 1–1.5 gal (UF/IFAS); 3–6 L, about 0.8–1.6 gal (Kratky) | UF/IFAS HS1488; Kratky, University of Hawaii |
+| Kratky air gap at the start | About 1 inch | UF/IFAS HS1488 |
+| DWC dissolved oxygen | 7–10 ppm, 4 ppm minimum; Kentucky gives 6–8 ppm and UF/IFAS 5 mg/L | Virginia Tech SPES-466; University of Kentucky; UF/IFAS HS1422 |
+| DWC raft depth and spacing | Solution at least 12 in (30 cm) deep; 3–4 plants per sq ft | University of Kentucky |
+| NFT slope | 1:100 recommended, 1:30–1:40 also used (Purdue); 2% minimum (Oregon State) | Purdue; Oregon State EM 9457 |
+| NFT flow per channel | 1 L/min (0.26 gal/min), upper limit 2 L/min (0.53 gal/min) | Purdue; Sato et al. 2007 |
+| NFT channel length | No more than 10–15 m (33–49 ft) | Purdue |
+| Transplant | 14–21 days after seeding, at 3–4 true leaves | University of Kentucky |
+| Harvest | 21–35 days after transplanting | University of Kentucky |
+
+## Which lettuce system to choose
+
+![Three lettuce systems in cross-section. Kratky: all the solution goes in at the start, about 1 to 1.5 gallons per lettuce plant, and the air gap under the lid grows as the level drops. Deep water culture: a raft floats on aerated solution at least 12 inches deep, 3 to 4 plants per square foot, dissolved oxygen 7 to 10 ppm with 4 ppm the minimum. NFT: a thin film flows down a sloped channel past bare roots at a slope of 1:100 to 2 percent and 1 to 2 liters per minute; if the pump stops, roots dry fast.](/images/guides/lettuce-systems-cross-section.svg)
+
+*How each system feeds and aerates lettuce roots. Figures from UF/IFAS HS1488, the University of Kentucky, Virginia Tech SPES-466, Purdue and Oregon State EM 9457.*
+
+| | Kratky | DWC | NFT |
 | --- | --- | --- | --- |
-| Water contact | Roots remain in a deeper solution | Shallow solution moves past roots | Solution level falls as plants use water |
-| Active equipment | Usually an air pump | Water pump and return path | None for solution movement |
-| Main failure concern | Loss of aeration or degraded root zone | Interrupted flow, clog, or leak | Incorrect level, inadequate root-air zone, or exhausted solution |
-| Practical scale | One container to rafts | Rows or channels | Small independent containers |
-| Best fit | Grower can monitor aeration and reservoir | Grower can monitor continuous flow | Grower understands the passive method and wants few moving parts |
+| Best for | 1–3 plants, a first grow | A tray of heads, steady harvests | Many plants in rows or on a wall |
+| Powered parts | None | Air pump, running all the time | Water pump, running nonstop |
+| If power fails | Nothing changes | Roots stay in water; oxygen slowly falls | Film stops; plants can wilt quickly |
+| What you check | Level and air gap | Air flow, pH, EC, top-ups | Flow, leaks, clogs, solution heat |
+| Spacing guide | 3 plants per 5-gal bucket | 3–4 plants per sq ft | Not given for home channels (see below) |
+| Main source | UF/IFAS HS1488 | University of Kentucky | Purdue; Oregon State |
 
-## DWC: simple structure, active oxygen
+How to pick:
 
-Missouri Extension describes DWC as comparatively simple to establish. Lettuce is supported above a reservoir, roots remain immersed, and aeration supplies oxygen. It is easy to observe in a small container, but the air system and solution still need attention.
+- **Pick Kratky** if you want two or three heads on a windowsill or under one light and no moving parts. UF/IFAS says the method needs no pumps or electricity and notes that fruiting crops do better in other methods, so this is a greens system.
+- **Pick DWC** if you want a steady supply from one tub or tote. Missouri Extension rates floating-raft DWC among the simpler systems to build, and plants keep their roots in water if a pump stops. UF/IFAS calls the floating raft ideal for short-term crops such as lettuce.
+- **Pick NFT** if you want many plants in a compact run, or a wall or tower. Oklahoma State notes that short-term crops like lettuce are usually grown in NFT or flood-and-drain, and that NFT's constant flow means no timer. The trade-off is that Oregon State calls pump and power backups crucial, because plants can wilt quickly when the film stops.
 
-## NFT: efficient layout, tighter interruption tolerance
+For a broader look at all six home system types, see [indoor hydroponic systems compared](/systems/indoor-hydroponic-systems-for-home/). If this is your first grow of anything, the [beginner system guide](/best/hydroponic-systems-for-beginners/) explains why Kratky comes first.
 
-In NFT, a shallow stream moves through sloped channels and returns to the reservoir. UF/IFAS describes NFT among small-system options, and Missouri Extension notes its common use for lettuce. It can organize many plants compactly, but a failed pump or blocked channel can affect roots quickly.
+## Kratky: lettuce with no pump
 
-## Kratky-style passive culture: no pump, not no management
+In Kratky's non-circulating method all the solution goes in before planting and none is added afterwards. As the lettuce drinks, the level falls, and the upper roots grow into the moist air gap and take in oxygen there, so no air stone is needed (Kratky, University of Hawaii). Kratky reports each lettuce plant used 3–6 liters (about 0.8–1.6 gallons) over the crop, starting at an EC of about 1.5.
 
-In a passive reservoir, the solution level declines and part of the root system occupies the developing air space. The container must exclude light and support the plant while preserving the intended root-zone relationship. It is easiest to reason about at small scale with a crop whose cycle and demand fit the available solution.
+UF/IFAS turns this into a home build: a food-grade 5-gallon bucket and lid with three 2-inch net cups, 1–1.5 gallons of water per lettuce plant from seed to harvest, about 1 inch of air between the solution and the lid at the start, EC about 1,250 µS/cm (1.25 mS/cm) and pH 5.5–6. Transplant after 1–3 weeks, then expect about 3–4 more weeks to harvest.
 
-## Other decisions do not disappear
+The one rule that matters: **do not top the bucket back up to the lid.** The air gap is where the roots breathe. Refilling it drowns those roots.
 
-All three methods still require a suitable cultivar, propagation, light, canopy space, water context, complete nutrition, and sanitation. System choice cannot compensate for a lettuce variety poorly matched to the environment.
+## Deep water culture: the raft system
 
-The general [lettuce growing guide](/crops/hydroponic-lettuce/) connects those crop decisions. For stored source-specific nutrient ranges, use the [pH and EC reference](/tools/ph-ec-targets/) rather than assigning one value to every system.
+In DWC, lettuce sits in holes in a floating raft and its roots hang in a deep, aerated tank. Kentucky gives a solution depth of at least 12 inches (30 cm), 3–4 plants per square foot, topping up every few days and replacing the solution fully or partly every 3–4 weeks. The Cornell CEA lettuce handbook schedules its pond (deep-flow raft) crop at transplant on Day 21 and harvest on Day 35.
 
-## A conservative beginner choice
+Oxygen is the number to watch, and the sources disagree on it:
 
-Choose the method whose failure mode you can see and respond to. If power reliability is poor, NFT needs a clear contingency. If continuous aeration is not practical, active DWC is a poor fit. If the passive root-air mechanism is unclear, do not treat “no pump” as sufficient instruction.
+- **Virginia Tech (SPES-466):** 7–10 ppm, with 4 ppm the minimum.
+- **University of Kentucky:** 6–8 ppm for lettuce in DWC.
+- **UF/IFAS (HS1422):** 5 mg/L (mg/L and ppm are the same unit).
 
-There is no absolute winner; the best fit changes with scale, power, crop duration, and observation routine.
+We suggest Virginia Tech's 7–10 ppm, which also covers Kentucky's range, and treating anything below 4 ppm as an emergency. Run the air pump all day, not on a timer.
+
+Oregon State adds two practical points. The large water volume buffers temperature, but it is heavy, so the tank must sit on the ground. And the raft should fit the reservoir closely, because gaps let light in and algae grow. The full build, from tote to air stone, is in the [deep water culture guide](/systems/deep-water-culture-hydroponics/).
+
+## NFT: the nutrient film system
+
+A nutrient film technique (NFT) system runs a shallow stream of solution down a sloped, watertight and dark channel past bare roots, then back to the tank to recirculate (Purdue). Oregon State says the limited rooting space suits short-lived or small-rooted crops and lists lettuce first.
+
+![NFT channel numbers for lettuce. Slope: 1:100 recommended, 1:30 to 1:40 also used (Purdue); Oregon State gives a 2 percent minimum. Flow per channel: 1 liter (0.26 gallon) per minute, upper limit 2 liters (0.53 gallon) per minute. Channel length: no more than 10 to 15 meters (33 to 49 feet), or 9 meters (30 feet) per Jones as cited by Sato and colleagues. Along an 18 meter channel, dissolved oxygen fell by up to 0.9 mg/L and the outlet ran 0.3 to 1.4 °C warmer than the inlet. The pump runs nonstop, so back up power and the pump.](/images/guides/nft-lettuce-channel-numbers.svg)
+
+*Slope, flow and length for an NFT lettuce channel. From Purdue (Langenhoven, 2016), Oregon State EM 9457, Oklahoma State HLA-6442 and Sato et al. (2007).*
+
+**Slope: the sources conflict.** Purdue recommends a slope of 1:100 (a 1% fall) and notes 1:30 and 1:40 are also used. Oregon State asks for at least 2% in horizontal channels. For a short home channel we suggest 2%, about ¼ inch of fall per foot. It meets Oregon State's minimum, sits inside the range Purdue says growers use, and makes sure the channel drains rather than pooling. Pooling matters: UF/IFAS warns that too much water in NFT can cause root rot.
+
+**Flow.** Purdue gives 1 liter (0.26 gallon) per minute per channel, with an upper limit of 2 liters (0.53 gallon) per minute, and Sato and colleagues note that 1–2 liters per minute is widely recommended. One liter per minute is about 16 gallons per hour, per channel, so size the pump for the number of channels plus the height it has to lift.
+
+**Length.** Purdue says a channel should not exceed 10–15 m (33–49 ft); Sato's team cites 9 m (30 ft) or less. Home channels are far shorter, but the reason still applies. In Sato's 18 m lettuce channel, dissolved oxygen fell by up to 0.9 mg/L from inlet to outlet, and the outlet ran 0.3–1.4 °C warmer than the inlet. Plants at the far end get warmer, less oxygenated solution, so keep runs short.
+
+**Heat.** In the same trial the tank averaged 28.3 °C (83 °F) and peaked at 38.9 °C (102 °F), which the authors called too warm for lettuce roots, citing an optimum of 13–18 °C (55–64 °F). That cited optimum is cooler than UF/IFAS's 65–80 °F (18–27 °C) working range for small systems. Keep the tank in the shade and at room temperature; a thin film in a warm room heats quickly.
+
+**Pump timing.** NFT runs continuously, so it needs no timer (Oklahoma State). Oklahoma State's vertical tower plan also runs lettuce continuously, 24 hours a day. Because the roots have no reserve, Oregon State calls power and pump backups crucial.
+
+**Spacing.** None of our sources gives a plant spacing for home NFT channels. In Sato's research channel, holes were 15 cm (6 in) apart, but that was a trial setup, not a recommendation. On a vertical tower, Oklahoma State gives 6–8 inches for thin-leaf lettuce and 12 inches for head lettuce, a reasonable guide for loose-leaf versus heading types. On towers and walls, Touliatos and colleagues measured less light and lower shoot weight from top to base, so plan light for the bottom row (see the [hydroponic tower guide](/systems/hydroponic-tower-garden/)). The same NFT numbers, applied to a longer-lived crop, are in the [NFT strawberry guide](/crops/nft-hydroponic-strawberries/).
+
+## Light, temperature and timing are the same in every system
+
+| Daily light integral (mol/m²/day) | Lettuce fresh weight after 28 days | Source |
+| --- | --- | --- |
+| 5.6 | 0.90 lb per m² | Purdue HO-283-W |
+| 10.8 | 2.1 lb per m² | Purdue HO-283-W |
+| 19.8 | 6.7 lb per m² | Purdue HO-283-W |
+
+Purdue's trial of 15 lettuce varieties shows why light comes first: raising the light about 3.5 times, from 5.6 to 19.8 mol/m²/day, gave about seven times the yield. The targets differ by source. Kentucky gives 12–17 mol/m²/day for lettuce, Purdue 15–20 for leafy greens, and Virginia Tech at least 17 for greens and herbs. We suggest 12–17 as the working range for home growers and the top of it if your light allows.
+
+Keep days up to 75 °F (24 °C) and nights up to 65 °F (18 °C) (Kentucky, which also covers tipburn and bolting). Tipburn is a crop problem, not a system problem. In an Ohio State tipburn trial run in NFT at 23/19 °C (73/66 °F), DLI 17 and 16 hours of light, most of 20 cultivars showed tipburn 16–24 days after transplanting, while 'Rabello' and 'Rouxai' showed none by day 28.
+
+For variety choice, seed starting and the full feeding plan, see the main [hydroponic lettuce guide](/crops/hydroponic-lettuce/) and [hydroponic lettuce seeds](/crops/hydroponic-lettuce-seeds/).
+
+## Step-by-step: set up a lettuce system
+
+1. **Start seedlings.** Sow one seed per 1-inch rockwool plug (Cornell). Kentucky transplants 14–21 days after seeding, at 3–4 true leaves; feed seedlings at about EC 1.0.
+2. **Mix the solution.** Mix to EC about 1.5 mS/cm (Kratky: about 1.25 per UF/IFAS) and pH 5.5–6.0; see [hydroponic nutrient solution](/nutrients-water/hydroponic-nutrient-solution/). Use the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) to scale the label dose to your tank.
+3. **Fill to the system's level.**
+   - Kratky: leave about 1 inch of air under the lid.
+   - DWC: at least 12 inches deep, with the air stone running before plants go in.
+   - NFT: check the channel slope (aim for 2%), then run the pump and measure flow by timing how long one channel takes to fill a 1-liter jug (aim for about 1 minute).
+4. **Transplant.** Kratky: three plants per 5-gallon bucket. DWC: 3–4 plants per square foot of raft. NFT and towers: 6–8 inches for loose-leaf, 12 inches for heads.
+5. **Light it.** Aim for 12–17 mol/m²/day and keep days up to 75 °F (24 °C).
+6. **Maintain it.**
+   - Kratky: don't refill; check the level and the plants.
+   - DWC: top up every few days and replace the solution every 3–4 weeks; keep the air on.
+   - NFT: check flow and look for leaks and root mats daily; keep the tank cool.
+7. **Harvest.** Kentucky gives 21–35 days after transplanting; UF/IFAS gives about 3–4 weeks for Kratky lettuce.
+
+Check pH and EC against our [pH and EC target table](/tools/ph-ec-targets/) as you go.
+
+## Troubleshooting by system
+
+| Problem | Likely cause | Fix | Source |
+| --- | --- | --- | --- |
+| Kratky plants wilt or roots brown | Bucket topped up over the air roots | Let the level fall again; refill only to below the upper roots | Kratky, University of Hawaii |
+| DWC roots brown and slimy | Low dissolved oxygen | Check the air pump and stone; aim for 7–10 ppm | Virginia Tech SPES-466 |
+| Green film on the raft or in the tank | Light reaching the solution | Fit the raft closely and cover clear sides | Oregon State EM 9455 |
+| NFT plants wilt suddenly | Pump stopped, power cut or a clog | Restore flow at once; add a backup pump or power | Oregon State EM 9457 |
+| NFT roots rot in a channel | Water pooling; too little slope | Raise the fall toward 2%; check the outlet | UF/IFAS HS1422; Oregon State EM 9457 |
+| Brown leaf edges (tipburn) | Warm, fast growth and a sensitive cultivar | Keep days up to 75 °F (24 °C); try 'Rabello' or 'Rouxai' | University of Kentucky; Ohio State e-GRO |
+| Slow, leggy plants | Too little light | Raise DLI toward 12–17 mol/m²/day | University of Kentucky; Purdue HO-283-W |
+
+## FAQ
+
+### What is the best hydroponic system for lettuce?
+
+For one to three plants, a Kratky bucket; for a tray of heads, DWC; for many plants in rows, NFT. Virginia Tech's trials found leafy greens yielded best in NFT and DWC, so both grow good lettuce. DWC is more forgiving because roots stay in water if the pump stops.
+
+### What is a nutrient film hydroponic system?
+
+A nutrient film technique (NFT) system pumps a thin film of solution down a sloped, dark channel past bare roots and back to the tank. Purdue recommends a 1:100 slope and about 1 liter (0.26 gallon) per minute per channel; Oregon State gives a 2% minimum slope.
+
+### Is NFT or DWC better for lettuce?
+
+Both suit lettuce. NFT fits long rows or walls; DWC's large volume buffers temperature and keeps roots wet if power fails. For most home growers DWC is safer unless you can back up the NFT pump.
+
+### How far apart should lettuce be in hydroponics?
+
+In a DWC raft, 3–4 plants per square foot (University of Kentucky). On a tower, 6–8 inches for thin-leaf lettuce and 12 inches for head lettuce (Oklahoma State). Our sources give no spacing for home NFT channels.
+
+### How long does hydroponic lettuce take?
+
+Transplant 14–21 days after seeding and harvest 21–35 days after transplanting (University of Kentucky), so about five to eight weeks from seed in total. In a Kratky bucket UF/IFAS gives about 3–4 weeks from transplant.
+
+## How we built this guide
+
+This guide is based on university extension publications and peer-reviewed trials, listed below. HydroRigor has not tested these systems. Where sources give different numbers, we show each one and explain the figure we suggest. UF/IFAS HS1258 describes the lettuce types used in hydroponic and protected culture if you want to read further on varieties.

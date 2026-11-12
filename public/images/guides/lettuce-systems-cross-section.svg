@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1302" width="640" height="1302" role="img" aria-labelledby="t d">
+  <title id="t">Three hydroponic lettuce systems in cross-section: Kratky, deep water culture and NFT</title>
+  <desc id="d">Kratky: all solution goes in at the start, about 1 to 1.5 gallons per lettuce plant, and the air gap under the lid grows as the level drops. Deep water culture: a raft floats on aerated solution; keep dissolved oxygen at 7 to 10 ppm with 4 ppm the minimum, at least 12 inches deep and 3 to 4 plants per square foot. NFT: a thin film of solution flows down a sloped channel past bare roots, at a slope of 1:100 to 2 percent and 1 to 2 liters per minute; if the pump stops, roots dry fast.</desc>
+  <rect width="640" height="1302" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Three ways to grow lettuce</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">How each system feeds and aerates roots</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(UF/IFAS, Kentucky, Virginia Tech, Purdue)</text>
+    <rect x="20" y="150" width="600" height="340" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="150" width="14" height="340" rx="7" fill="#2E8B57"/>
+    <text x="56" y="194" font-size="26" font-weight="800" fill="#0E1A14">Kratky (no pump)</text>
+    <rect x="200" y="250" width="240" height="120" rx="8" fill="#E8F1EC" stroke="#3F5248" stroke-width="3"/>
+    <rect x="203" y="310" width="234" height="57" fill="#9CC9E0"/>
+    <rect x="190" y="240" width="260" height="14" rx="4" fill="#3F5248"/>
+    <path d="M246 254 L274 254 L268 284 L252 284 Z" fill="#CFE3D6" stroke="#3F5248" stroke-width="2"/>
+    <path d="M260 284 L260 350 M260 290 L242 345 M260 290 L278 345" stroke="#C8A96B" stroke-width="3" fill="none"/>
+    <ellipse cx="260" cy="224" rx="30" ry="16" fill="#7FB069"/>
+    <path d="M366 254 L394 254 L388 284 L372 284 Z" fill="#CFE3D6" stroke="#3F5248" stroke-width="2"/>
+    <path d="M380 284 L380 350 M380 290 L362 345 M380 290 L398 345" stroke="#C8A96B" stroke-width="3" fill="none"/>
+    <ellipse cx="380" cy="224" rx="30" ry="16" fill="#7FB069"/>
+    <text x="460" y="294" font-size="20" font-weight="800" fill="#0F6B4F">Air gap</text>
+    <text x="460" y="350" font-size="20" font-weight="800" fill="#1F5F86">Solution</text>
+    <text x="56" y="406" font-size="21" font-weight="800" fill="#0F6B4F">All solution added at the start</text>
+    <text x="56" y="436" font-size="21" fill="#3F5248">1–1.5 gal per lettuce plant</text>
+    <text x="56" y="466" font-size="21" fill="#3F5248">Air gap grows as level drops</text>
+    <rect x="20" y="514" width="600" height="340" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="514" width="14" height="340" rx="7" fill="#7FB069"/>
+    <text x="56" y="558" font-size="26" font-weight="800" fill="#0E1A14">Deep water culture</text>
+    <rect x="170" y="624" width="300" height="110" rx="8" fill="#9CC9E0" stroke="#3F5248" stroke-width="3"/>
+    <rect x="174" y="626" width="292" height="16" fill="#F2E6C9" stroke="#3F5248" stroke-width="2"/>
+    <path d="M230 642 L230 709 M230 646 L214 704 M230 646 L246 704" stroke="#C8A96B" stroke-width="3" fill="none"/>
+    <ellipse cx="230" cy="614" rx="30" ry="16" fill="#7FB069"/>
+    <path d="M320 642 L320 709 M320 646 L304 704 M320 646 L336 704" stroke="#C8A96B" stroke-width="3" fill="none"/>
+    <ellipse cx="320" cy="614" rx="30" ry="16" fill="#7FB069"/>
+    <path d="M410 642 L410 709 M410 646 L394 704 M410 646 L426 704" stroke="#C8A96B" stroke-width="3" fill="none"/>
+    <ellipse cx="410" cy="614" rx="30" ry="16" fill="#7FB069"/>
+    <rect x="300" y="718" width="40" height="10" rx="5" fill="#3F5248"/>
+    <circle cx="290" cy="708" r="5" fill="#FFFFFF" stroke="#1F5F86" stroke-width="2"/>
+    <circle cx="330" cy="700" r="5" fill="#FFFFFF" stroke="#1F5F86" stroke-width="2"/>
+    <circle cx="350" cy="710" r="5" fill="#FFFFFF" stroke="#1F5F86" stroke-width="2"/>
+    <circle cx="310" cy="692" r="5" fill="#FFFFFF" stroke="#1F5F86" stroke-width="2"/>
+    <text x="482" y="644" font-size="20" font-weight="800" fill="#0F6B4F">Raft</text>
+    <text x="482" y="722" font-size="20" font-weight="800" fill="#1F5F86">Air stone</text>
+    <text x="56" y="770" font-size="21" font-weight="800" fill="#0F6B4F">Raft floats on aerated solution</text>
+    <text x="56" y="800" font-size="21" fill="#3F5248">Oxygen 7–10 ppm (VT), 4 ppm minimum</text>
+    <text x="56" y="830" font-size="21" fill="#3F5248">At least 12 in deep, 3–4 plants/sq ft</text>
+    <rect x="20" y="878" width="600" height="340" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="878" width="14" height="340" rx="7" fill="#3A7CA5"/>
+    <text x="56" y="922" font-size="26" font-weight="800" fill="#0E1A14">NFT channel</text>
+    <path d="M120 1018 L520 1068 L520 1096 L120 1046 Z" fill="#E8F1EC" stroke="#3F5248" stroke-width="3"/>
+    <path d="M124 1038 L516 1087 L516 1093 L124 1044 Z" fill="#3A7CA5"/>
+    <ellipse cx="190" cy="1007" rx="28" ry="15" fill="#7FB069"/>
+    <path d="M190 1027 L196 1053" stroke="#C8A96B" stroke-width="3"/>
+    <ellipse cx="300" cy="1020" rx="28" ry="15" fill="#7FB069"/>
+    <path d="M300 1040 L306 1066" stroke="#C8A96B" stroke-width="3"/>
+    <ellipse cx="410" cy="1034" rx="28" ry="15" fill="#7FB069"/>
+    <path d="M410 1054 L416 1080" stroke="#C8A96B" stroke-width="3"/>
+    <path d="M90 1048 L90 1018 L118 1018" stroke="#3F5248" stroke-width="3" fill="none"/>
+    <text x="530" y="1058" font-size="20" font-weight="800" fill="#1F5F86">Film</text>
+    <text x="40" y="994" font-size="20" font-weight="800" fill="#0F6B4F">Pump in</text>
+    <text x="56" y="1134" font-size="21" font-weight="800" fill="#0F6B4F">Thin film flows past bare roots</text>
+    <text x="56" y="1164" font-size="21" fill="#3F5248">Slope 1:100 to 2%, 1–2 L/min</text>
+    <text x="56" y="1194" font-size="21" fill="#3F5248">Pump stops: roots dry fast</text>
+  </g>
+</svg>
