@@ -21,6 +21,10 @@ Updated: 2026-11-11
   when guides go up, point Kit's RSS-to-email feature at https://hydrorigor.com/rss.xml (rebuilt
   guides appear as new items); (3) optionally edit Kit's confirmation email and the form name.
   The privacy policy has an "Email newsletter" section; update it if Kit settings change.
+- Affiliate readiness (2026-11-12, `docs/research/AFFILIATE_READINESS_2026-11-12.md`): commercial
+  plumbing, disclosure page and privacy policy are ready; content depth (14 of 40+ full guides),
+  search history (until mid-January 2027), real grow photos and a Payoneer account are what remain.
+  Owner: photos of a real grow, Payoneer, and the choice of showing the full name on About.
 - Growth plan (2026-11-06, `docs/research/GROWTH_PLAN_2026-11.md`): the Ascend application for
   True Leaf Market was denied on 2026-11-06. Do not reapply to strict networks until the
   network-ready milestone in the plan is met (target mid-January 2027). Owner parts of it:
