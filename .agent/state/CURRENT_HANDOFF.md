@@ -1,6 +1,6 @@
 # Current Handoff
 
-Updated: 2026-11-12
+Updated: 2026-11-13
 
 ## State
 
@@ -14,6 +14,10 @@ Updated: 2026-11-12
 
 ## Open items for the owner
 
+- **GitHub Actions blocked (2026-11-13):** CI jobs on PR #66 were not started: "recent account
+  payments have failed or your spending limit needs to be increased" (GitHub Billing & plans).
+  Until billing is fixed no PR can go green, so Claude leaves PRs open instead of merging.
+  PR #66 (Search Console log + 4 internal links) passed every local check and is waiting.
 - Email newsletter (Kit, form 10159921, set up by the owner 2026-11-08): the sign-up card on the
   home page and at the end of every guide posts straight to Kit (no Kit script; CSP
   `form-action` allows https://app.kit.com only). Owner: (1) once live, sign up once with your
