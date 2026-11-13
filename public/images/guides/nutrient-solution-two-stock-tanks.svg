@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1205" width="640" height="1205" role="img" aria-labelledby="t d">
+  <title id="t">Two stock tanks for a hydroponic nutrient solution</title>
+  <desc id="d">Concentrated nutrients are kept in two stock tanks at 50 to 200 times normal strength. Stock A holds the calcium fertilizer, such as calcium nitrate. Stock B holds the phosphates and sulfates, such as a complete base fertilizer and magnesium sulfate. They are never combined as concentrates because calcium forms solids with phosphate and sulfate. Six steps: fill the reservoir with water; add stock A and stir; add stock B and stir; measure EC first, adding water if it is too high or stock if it is too low; adjust pH last, to 5.5 to 6.5 for most crops; check pH and EC daily and replace the solution every two weeks.</desc>
+  <rect width="640" height="1205" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Two stocks, one reservoir</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Stocks are 50–200 times normal strength</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(Penn State, Missouri, Oklahoma State)</text>
+    <path d="M80 168 L80 152 L140 152 L140 168" fill="none" stroke="#3F5248" stroke-width="3"/>
+    <rect x="30" y="168" width="160" height="200" rx="18" fill="#E3EEF6" stroke="#3F5248" stroke-width="3"/>
+    <text x="110" y="204" font-size="24" font-weight="800" fill="#0E1A14" text-anchor="middle">Stock A</text>
+    <text x="110" y="238" font-size="20" fill="#0E1A14" text-anchor="middle">Calcium</text>
+    <text x="110" y="264" font-size="20" fill="#0E1A14" text-anchor="middle">fertilizer</text>
+    <text x="110" y="290" font-size="20" fill="#0E1A14" text-anchor="middle">(calcium</text>
+    <text x="110" y="316" font-size="20" fill="#0E1A14" text-anchor="middle">nitrate)</text>
+    <path d="M300 168 L300 152 L360 152 L360 168" fill="none" stroke="#3F5248" stroke-width="3"/>
+    <rect x="250" y="168" width="160" height="200" rx="18" fill="#DCEFE3" stroke="#3F5248" stroke-width="3"/>
+    <text x="330" y="204" font-size="24" font-weight="800" fill="#0E1A14" text-anchor="middle">Stock B</text>
+    <text x="330" y="238" font-size="20" fill="#0E1A14" text-anchor="middle">Phosphates</text>
+    <text x="330" y="264" font-size="20" fill="#0E1A14" text-anchor="middle">and sulfates</text>
+    <text x="330" y="290" font-size="20" fill="#0E1A14" text-anchor="middle">(base mix,</text>
+    <text x="330" y="316" font-size="20" fill="#0E1A14" text-anchor="middle">Mg sulfate)</text>
+    <circle cx="220" cy="268" r="20" fill="#D9534F"/><path d="M211 259 L229 277 M229 259 L211 277" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="436" y="198" font-size="20" font-weight="800" fill="#A34A2E">Never mix A and B</text>
+    <text x="436" y="226" font-size="20" fill="#3F5248">as concentrates:</text>
+    <text x="436" y="254" font-size="20" fill="#3F5248">calcium reacts</text>
+    <text x="436" y="282" font-size="20" fill="#3F5248">and forms solids</text>
+    <text x="436" y="310" font-size="20" fill="#3F5248">roots can’t use</text>
+    <path d="M110 372 L110 420 M330 372 L330 420" stroke="#0E1A14" stroke-width="3"/>
+    <path d="M100 412 L110 428 L120 412 Z M320 412 L330 428 L340 412 Z" fill="#0E1A14"/>
+    <rect x="30" y="432" width="590" height="84" rx="12" fill="#BFDDF0" stroke="#3F5248" stroke-width="3"/>
+    <text x="54" y="466" font-size="21" font-weight="800" fill="#0E1A14">Reservoir: water goes in first;</text>
+    <text x="54" y="496" font-size="21" fill="#0E1A14">each stock is added separately</text>
+    <rect x="20" y="546" width="600" height="604" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="44" y="588" font-size="23" font-weight="800" fill="#0E1A14">Six steps, in this order</text>
+    <circle cx="60" cy="633" r="16" fill="#0F6B4F"/><text x="60" y="640" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="92" y="640" font-size="22" font-weight="800" fill="#0E1A14">Fill the reservoir with water</text>
+    <text x="92" y="670" font-size="20" fill="#3F5248">dilute stocks into it, never into each other</text>
+    <circle cx="60" cy="723" r="16" fill="#0F6B4F"/><text x="60" y="730" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="92" y="730" font-size="22" font-weight="800" fill="#0E1A14">Add stock A and stir</text>
+    <text x="92" y="760" font-size="20" fill="#3F5248">calcium fertilizer, fully dissolved</text>
+    <circle cx="60" cy="813" r="16" fill="#0F6B4F"/><text x="60" y="820" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="92" y="820" font-size="22" font-weight="800" fill="#0E1A14">Add stock B and stir</text>
+    <text x="92" y="850" font-size="20" fill="#3F5248">phosphates, sulfates and the rest</text>
+    <circle cx="60" cy="903" r="16" fill="#0F6B4F"/><text x="60" y="910" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="92" y="910" font-size="22" font-weight="800" fill="#0E1A14">Measure EC first</text>
+    <text x="92" y="940" font-size="20" fill="#3F5248">too high: add water; too low: add stock</text>
+    <circle cx="60" cy="993" r="16" fill="#0F6B4F"/><text x="60" y="1000" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="92" y="1000" font-size="22" font-weight="800" fill="#0E1A14">Adjust pH last</text>
+    <text x="92" y="1030" font-size="20" fill="#3F5248">5.5–6.5 for most crops</text>
+    <circle cx="60" cy="1083" r="16" fill="#0F6B4F"/><text x="60" y="1090" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+    <text x="92" y="1090" font-size="22" font-weight="800" fill="#0E1A14">Check daily, replace every 2 weeks</text>
+    <text x="92" y="1120" font-size="20" fill="#3F5248">same time each day</text>
+    <text x="20" y="1183" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

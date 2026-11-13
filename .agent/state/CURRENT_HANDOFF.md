@@ -1,6 +1,6 @@
 # Current Handoff
 
-Updated: 2026-11-12
+Updated: 2026-11-13
 
 ## State
 
@@ -78,6 +78,7 @@ Updated: 2026-11-12
 Guides published by automated runs under `HydroRigor Editorial`. When Najeeb has read one
 and approves, switch its byline to `Najeeb`.
 
+- `/nutrients-water/hydroponic-nutrient-solution/` — "Hydroponic Nutrient Solution: Recipe, EC, pH & Mixing" (rebuild, 2026-11-13; title changed from "...How to Choose, Mix and Use It"; Pinterest row `docs/marketing/pinterest/pins-nutrient-solution-2026-11-14.csv`). What a solution contains with the modified Sonneveld recipe in ppm, leafy versus tomato recipes, three ways to make a solution, why two parts, 7-step mixing, EC by crop, pH conflict table, temperature and dissolved oxygen, source-water limits (Missouri versus Oklahoma State), upkeep, troubleshooting and FAQ, with two new diagrams (recipe bar chart, two stock tanks). Ships as HydroRigor Editorial; approve to change the byline to Najeeb.
 - `/crops/hydroponic-lettuce-systems/` — "Hydroponic Lettuce Systems: NFT vs DWC vs Kratky Compared" (rebuild, 2026-11-12). Answer by number of plants (Kratky 1–3, DWC raft for a tray, NFT for rows), system comparison table, NFT numbers (slope, flow, length, heat and oxygen along the run) for "nutrient film hydroponic system", DLI-versus-yield table, step-by-step, troubleshooting and FAQ; two new diagrams (three-system cross-section; NFT channel numbers). Source conflicts shown and resolved on the page: NFT slope (Purdue 1:100 vs Oregon State 2% minimum; page suggests 2%), DWC oxygen (VT 7–10, Kentucky 6–8, UF/IFAS 5), lettuce DLI (Kentucky 12–17, Purdue 15–20, VT 17+), root-zone temperature (Sato's cited 13–18 °C vs UF/IFAS 65–80 °F). No source gives a home NFT plant spacing; the page says so. Web pages could not be opened in this run (fetch permission timed out), so every figure comes from 17 registered sources. Photo kept. Pinterest row: `docs/marketing/pinterest/pins-lettuce-systems-2026-11-14.csv`.
 
 - `/best/hydroponic-systems-for-beginners/` (rebuilt 2026-11-12; Pinterest row `docs/marketing/pinterest/pins-beginners-2026-11-13.csv`): Kratky-first answer, systems ranked by

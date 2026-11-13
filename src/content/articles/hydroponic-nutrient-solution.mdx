@@ -1,8 +1,9 @@
 ---
-title: "Hydroponic Nutrient Solution: How to Choose, Mix and Use It"
-description: "Choose and manage a hydroponic nutrient solution through crop fit, water analysis, complete formulation, mixing order, and measurement."
+title: "Hydroponic Nutrient Solution: Recipe, EC, pH & Mixing"
+description: "A hydroponic nutrient solution is water plus 14 dissolved nutrients, kept at pH 5.5–6.5. Recipes in ppm, EC by crop, mixing order, oxygen and fixes."
 route: "hydroponic-nutrient-solution"
 publishDate: 2026-09-12
+updatedDate: 2026-11-13
 author: "HydroRigor Editorial"
 category: "nutrients"
 tags: ["nutrient-solution", "mixing", "water-quality"]
@@ -11,56 +12,256 @@ sources:
     title: "Hydroponic Nutrient Solutions"
     url: "https://extension.missouri.edu/publications/g6984"
     publisher: "University of Missouri Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-13
   - id: "psu-nutrient-programs"
     title: "Hydroponics Systems: Nutrient Solution Programs and Recipes"
     url: "https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes"
     publisher: "Penn State Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-13
+  - id: "psu-plant-nutrition"
+    title: "Hydroponics Systems and Principles of Plant Nutrition"
+    url: "https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess"
+    publisher: "Penn State Extension"
+    accessedDate: 2026-11-13
   - id: "osu-ph-ec-guide"
     title: "Electrical Conductivity and pH Guide for Hydroponics"
     url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
     publisher: "Oklahoma State University Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-13
+  - id: "cornell-cea-lettuce-handbook"
+    title: "Cornell Controlled Environment Agriculture Hydroponic Lettuce Handbook"
+    url: "https://cpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf"
+    publisher: "Cornell University CEA Program (M. Brechner, A.J. Both)"
+    accessedDate: 2026-11-13
+  - id: "ifas-hydroponic-tomato-formulation"
+    title: "Nutrient Solution Formulation for Hydroponic (Perlite, Rockwool, NFT) Tomatoes in Florida (HS796)"
+    url: "https://ask.ifas.ufl.edu/publication/CV216"
+    publisher: "UF/IFAS Extension (G. J. Hochmuth, R. C. Hochmuth)"
+    accessedDate: 2026-11-13
+  - id: "tennessee-fruiting-crops"
+    title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems"
+    url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
+    publisher: "University of Tennessee Extension"
+    accessedDate: 2026-11-13
 affiliateDisclosure: false
 commercialDestinationIds: []
 draft: false
 ---
 
-A hydroponic nutrient solution is source water plus dissolved fertilizers in a crop- and system-specific program. Choose it by checking completeness, crop scope, water assumptions, component compatibility, and current instructions. Mix one component at a time, then verify the solution with maintained instruments and plant observations.
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-## Choose a documented approach
+A hydroponic nutrient solution is water with every mineral a plant needs dissolved in it. Plants take carbon, hydrogen and oxygen from air and water; the other **14 essential elements** have to be in the solution (Penn State Extension). A typical leafy-green recipe holds about **150 ppm nitrogen, 31 ppm phosphorus, 210 ppm potassium, 90 ppm calcium and 24 ppm magnesium**, plus traces of six micronutrients (Penn State's modified Sonneveld recipe). Keep the solution at **pH 5.5–6.5** (University of Missouri), at the EC your crop needs, at **72–75 °F (22–24 °C)** (Oklahoma State), and with **more than 6 ppm dissolved oxygen** (University of Missouri).
 
-Penn State Extension groups preparation approaches into fertilizer programs, recipes, and complete soluble fertilizers. Each changes the balance between convenience and control.
+Most home growers never weigh out a recipe. They buy a two-part product, dilute it and check it with two meters. This guide explains what is in the bottle, how strong to make it for each crop, the order to mix it in, and how to keep it healthy between changes. Every number is tied to a university or extension source listed at the end.
 
-A prepared program may require several products. A complete fertilizer may be simpler but less adjustable. A recipe can account for source-water nutrients but requires accurate technical execution. Do not combine pieces from different programs unless a qualified source documents the combination.
+<KeyTargets
+  title="Hydroponic nutrient solution: the targets"
+  source="University of Missouri G6984, Oklahoma State HLA-6722 and Penn State Extension"
+  items={[
+    { label: 'Solution pH', value: '5.5–6.5', note: 'most crops' },
+    { label: 'Nitrogen', value: '150 ppm', note: 'leafy-green recipe; K 210 ppm' },
+    { label: 'Temperature', value: '72–75 °F', note: '22–24 °C' },
+    { label: 'Dissolved oxygen', value: 'Above 6 ppm', note: 'optimum' },
+  ]}
+/>
 
-## Analyze the water before troubleshooting the fertilizer
+## Quick answer: nutrient solution targets
 
-University of Missouri Extension calls source-water testing the only way to determine suitability. Useful analysis includes pH, EC, alkalinity, and individual elements. Alkalinity and dissolved minerals can change how the solution behaves even when a label dose is followed exactly.
+| Question | Answer | Source |
+| --- | --- | --- |
+| What is in it? | Water plus 14 essential elements: N, P, K, Ca, Mg, S and eight micronutrients | Penn State Extension |
+| A leafy-green recipe | N 150 ppm, P 31, K 210, Ca 90, Mg 24, Fe 1 ppm | Penn State (modified Sonneveld) |
+| A tomato recipe | N 70–150 ppm, P 50, K 120–200, Ca 150, Mg 40–50, rising as clusters set | UF/IFAS HS796 |
+| Solution pH | 5.5–6.5 for most crops | University of Missouri G6984 |
+| EC (strength) | By crop: lettuce 1.2–1.8 mS/cm, tomato 2.0–4.0 mS/cm | Oklahoma State HLA-6722 |
+| Temperature | 72–75 °F (22–24 °C) | Oklahoma State HLA-6722 |
+| Dissolved oxygen | Above 6 ppm | University of Missouri G6984 |
+| Mixing rule | Calcium in one concentrate, phosphates and sulfates in another; never combine concentrates | Penn State; University of Missouri |
+| How often to check | pH and EC daily, at the same time of day | Oklahoma State HLA-6722 |
+| When to replace | Completely, every two weeks | Oklahoma State HLA-6722 |
+| Source water | EC 0.2–0.8 dS/m, alkalinity 40–160 ppm, sodium below 50 ppm | University of Missouri G6984 |
 
-Record the water source and whether it changed. A new filter, seasonal well-water shift, or change from tap to purified water can matter.
+## What a nutrient solution contains
 
-## Separate incompatible concentrates
+Penn State Extension lists 17 elements plants cannot grow without. Three come from air and water. The remaining 14 are nitrogen, phosphorus and potassium (the N-P-K on every label), calcium, magnesium and sulfur, and eight micronutrients needed in tiny amounts. Soil supplies many of these on its own. Water supplies almost none, which is why a hydroponic fertilizer has to be complete.
 
-Solubility changes with fertilizer and temperature. Penn State warns that concentrated nutrients can precipitate; calcium is commonly kept separate from concentrated phosphates and sulfates. Follow the product’s order and stock-solution instructions exactly.
+A recipe states how much of each element the finished solution should hold, in parts per million (ppm; 1 ppm is the same as 1 mg/L). Penn State publishes one for herbs, the modified Sonneveld recipe:
 
-Never pour separate concentrates together and then add water unless the manufacturer explicitly directs that method. The safer general pattern is water first, one component, thorough mixing, then the next component.
+![Bar chart of the modified Sonneveld nutrient solution recipe for herbs from Penn State Extension, in ppm in the final solution: potassium 210, nitrogen 150, calcium 90, phosphorus 31, magnesium 24. Micronutrients: iron 1, manganese 0.25, boron 0.16, zinc 0.13, molybdenum 0.024 and copper 0.023 ppm.](/images/guides/nutrient-solution-recipe-ppm.svg)
 
-## Use label dose as an input, not a recommendation
+*Potassium and nitrogen make up most of a leafy-green solution; micronutrients are measured in fractions of a ppm. Recipe from Penn State Extension (credited there to Mattson and Peters). Penn State does not list a sulfur target for it.*
 
-Product formulations are not interchangeable. Read the current label or technical chart for the exact product, crop or stage, water basis, and unit. A rate for one formula cannot be transferred to another.
+Two things stand out. Potassium, not nitrogen, is the largest ingredient. And the micronutrients are so small (copper is 0.023 ppm) that Penn State says a high-precision scale is required to weigh them, which is the main reason home growers buy them premixed.
 
-HydroRigor’s [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) multiplies a manufacturer-provided liquid dose by reservoir volume after unit conversion. It does not choose the dose, calculate elemental ppm, or predict final EC.
+## Recipes change with the crop
 
-## Measure after mixing
+There is no single best hydroponic solution. A fruiting crop needs more of almost everything than a leafy one, and its needs rise as fruit sets. Here are two published recipes side by side:
 
-EC reports combined ionic conductivity, while pH describes acidity. Both can support management, but neither identifies every nutrient or proves plant availability. Calibrate and clean probes using the instrument instructions and appropriate standards.
+| Element | Herbs and leafy greens | Tomatoes |
+| --- | --- | --- |
+| Nitrogen (N) | 150 ppm | 70–150 ppm |
+| Phosphorus (P) | 31 ppm | 50 ppm |
+| Potassium (K) | 210 ppm | 120–200 ppm |
+| Calcium (Ca) | 90 ppm | 150 ppm |
+| Magnesium (Mg) | 24 ppm | 40–50 ppm |
+| Solution pH | Not given with the recipe | 5.8–6.2 |
 
-Compare readings only when the sampling and timing are consistent. Record temperature if the instrument or method makes it relevant.
+The leafy-green column is Penn State's modified Sonneveld recipe; the tomato column is the UF/IFAS program (HS796), which starts at 70 ppm nitrogen and 120 ppm potassium and climbs in steps to 150 and 200 after the fifth fruit cluster. The stage-by-stage tomato table is in [hydroponic nutrients for tomatoes](/nutrients-water/hydroponic-nutrients-for-tomatoes/).
 
-## Use the solution in context
+**What we recommend:** if you grow lettuce, herbs and other greens, one leafy-green solution suits them all. Give fruiting crops their own reservoir and a fruiting formula. [Hydroponic nutrients for vegetables](/nutrients-water/hydroponic-nutrients-for-vegetables/) explains how to group crops that will share a tank.
 
-Closed recirculating systems reuse solution, so plants and water loss change composition over time. Open systems discharge solution after delivery and raise separate water-use and environmental questions. Organic media can also make the root-zone pH and EC differ from the reservoir.
+## Three ways to make a solution
 
-Monitor plants, roots, water level, equipment, and recent interventions alongside numbers. Use the [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) for the essential-element foundation and the [pH and EC reference](/tools/ph-ec-targets/) for source-specific crop records.
+Penn State Extension describes three approaches. They trade convenience against control:
+
+| Approach | What you do | Good for | Drawback |
+| --- | --- | --- | --- |
+| Complete fertilizer | Dissolve one product that includes micronutrients, dosed by the crop's nitrogen need (100–150 ppm N for lettuce) | The simplest start: one product, one measurement | May not balance nutrients; calcium and magnesium may be missing |
+| Fertilizer program | Follow a company's set of products for your crop, often a base plus calcium nitrate and magnesium sulfate | Most home growers: little or no math | Hard to adjust single nutrients or credit what is already in your water |
+| Recipe | Weigh individual fertilizer salts to hit a ppm target for each element | Growers who want full control and lower cost | Needs calculations and a high-precision scale |
+
+Bottled two-part and three-part hydroponic nutrients are fertilizer programs: the manufacturer has done the recipe math, and the label rate is the dose. That is the route we recommend for a home system. Follow one line's whole chart and do not combine parts from different brands. For help choosing, see [the best hydroponic nutrients for home growers](/best/hydroponic-nutrients-for-home-growers/) and [powder vs liquid hydroponic nutrients](/nutrients-water/powder-vs-liquid-hydroponic-nutrients/); if you are weighing an organic program against a mineral one, read [organic hydroponic nutrients](/nutrients-water/organic-hydroponic-nutrients/) first.
+
+A recipe's one real advantage is that it can account for your water. Penn State's example: if the recipe calls for 210 ppm potassium and your water already supplies 30 ppm, you add only 180 ppm.
+
+## Why solutions come in two parts
+
+Concentrated nutrients cannot all share a bottle. The University of Missouri explains that calcium immediately reacts with phosphorus and sulfate from the other fertilizers and forms insoluble particles, which plants cannot use. Penn State adds that these precipitates can clog drip lines.
+
+The fix is the same at every scale: keep calcium in one concentrate and phosphates and sulfates in the other. Missouri notes that a common pairing is a calcium fertilizer (15-0-0) with a 5-12-26 formula carrying the rest of the nutrients. Penn State's example puts calcium nitrate in one stock tank and a 4-18-38 base with magnesium sulfate in the second. Commercial stock solutions are made at 50, 100 or 200 times normal strength (Penn State); a home grower's bottles of "part A" and "part B" are the same idea.
+
+![Two stock tanks for a hydroponic nutrient solution, held at 50 to 200 times normal strength. Stock A holds the calcium fertilizer, such as calcium nitrate; stock B holds the phosphates and sulfates, such as a base fertilizer and magnesium sulfate. They are never mixed as concentrates. Six steps: fill the reservoir with water; add stock A and stir; add stock B and stir; measure EC first; adjust pH last, to 5.5–6.5 for most crops; check daily and replace the solution every two weeks.](/images/guides/nutrient-solution-two-stock-tanks.svg)
+
+*Each concentrate is diluted in the full reservoir, so calcium never meets phosphate or sulfate at full strength. Stock split and strength from Penn State Extension; pH from the University of Missouri; checking and replacement from Oklahoma State.*
+
+## How to mix a nutrient solution, step by step
+
+1. **Check your water first.** Have it tested, or read your supplier's report, for pH, EC and alkalinity (see the water table below).
+2. **Fill the reservoir with water** to the volume you will use. Oklahoma State's steps start the same way: tap or filtered water first, then fertilizer.
+3. **Add part A at the label rate and stir** until it has fully dissolved. Missouri advises dissolving each formulation separately.
+4. **Add part B (and C, if there is one) and stir.** Never pour one concentrate into another. The [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) scales a label rate to your reservoir size.
+5. **Measure EC.** If it is above your crop's range, dilute with water; if it is below, add concentrate until it is in range (Oklahoma State).
+6. **Adjust pH last.** Oklahoma State is firm that pH is always checked after EC is in range. Add pH-up or pH-down slowly and wait several minutes before adding more.
+7. **Write it down:** date, volume, doses, EC and pH.
+
+For one-part and three-part products and the mistakes to avoid, see [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/).
+
+## EC: how strong to make it
+
+Electrical conductivity (EC) measures the total dissolved salts, so it tells you how strong the solution is, not which nutrients are in it. Oklahoma State reads it in mS/cm and publishes optimum ranges by crop:
+
+| Crop | EC (mS/cm) | pH |
+| --- | --- | --- |
+| Basil | 1.0–1.6 | 5.5–6.0 |
+| Lettuce | 1.2–1.8 | 6.0–7.0 |
+| Peppers | 0.8–1.8 | 5.5–6.0 |
+| Cucumber | 1.7–2.0 | 5.0–5.5 |
+| Strawberry | 1.8–2.2 | 6.0 |
+| Spinach | 1.8–2.3 | 6.0–7.0 |
+| Tomato | 2.0–4.0 | 6.0–6.5 |
+
+Crop-specific sources are often narrower. Cornell's lettuce handbook runs its ponds at 1,150–1,250 µS/cm (about 1.2 mS/cm) **above the EC of the source water**, the low end of Oklahoma State's lettuce range, and the University of Tennessee runs fruiting tomatoes at 2.0–3.0 mS/cm. Start at the low end of a range, and use the crop guide when there is one: the [pH and EC target table](/tools/ph-ec-targets/) lists each crop with its source.
+
+Cornell's wording carries a useful point: your water has an EC of its own. If plain tap water reads 0.4 mS/cm, that much of the meter reading is not fertilizer.
+
+## pH: keeping nutrients available
+
+pH decides whether roots can take up what you dissolved. The sources give slightly different ranges:
+
+| Source | Solution pH |
+| --- | --- |
+| University of Missouri G6984 | 5.5–6.5 for most hydroponic crops |
+| Oklahoma State HLA-6722 | 5 to 6, usually 5.5, so the root zone stays at 6–6.5 |
+| Cornell lettuce handbook | 5.8 optimum; 5.6–6.0 acceptable |
+| UF/IFAS HS796 (tomatoes) | 5.8–6.2 |
+
+**What we recommend:** aim for 5.8 and treat 5.5–6.5 as the working band. A reading of 5.8 sits inside every range above. Oklahoma State's crop table lists higher figures for some crops (lettuce 6.0–7.0), which conflicts with Cornell's lettuce-specific 5.6–6.0; where a crop-specific source exists we follow it.
+
+To lower pH, Missouri lists citric or acetic acid as the safest to handle, then phosphoric acid; to raise it, potassium bicarbonate or potassium hydroxide. Avoid sodium-based products. Commercial pH-down and pH-up bottles contain these same ingredients.
+
+## Temperature and oxygen
+
+Roots need oxygen, and they get it from the solution. Warm water holds less of it, so these two numbers belong together:
+
+| Measure | Target | Source |
+| --- | --- | --- |
+| Solution temperature | 72–75 °F (22–24 °C) is optimal | Oklahoma State HLA-6722 |
+| Solution temperature, lettuce ponds | No higher than 25 °C (77 °F) | Cornell lettuce handbook |
+| Dissolved oxygen | Above 6 ppm is optimum | University of Missouri G6984 |
+| Dissolved oxygen, lettuce ponds | 7 ppm set point; at least 4 ppm for satisfactory growth; crop failure below 3 ppm | Cornell lettuce handbook |
+
+Missouri gives a sense of the ceiling: at 35 °C (95 °F) and a very strong solution, water can hold only 6.85 ppm of oxygen even when fully saturated. Cornell warns that without added oxygen a pond's level can fall to nearly zero. In practice that means an air pump and air stone in any [deep water culture](/systems/deep-water-culture-hydroponics/) reservoir, and a reservoir kept out of direct sun so it stays cool. A dissolved-oxygen meter costs more than $500 (Missouri), so home growers manage oxygen by aeration and temperature instead of measuring it.
+
+## Start with suitable water
+
+Tap and well water bring their own minerals. The University of Missouri and Oklahoma State both publish limits, and they do not fully agree:
+
+| Measure | University of Missouri | Oklahoma State |
+| --- | --- | --- |
+| EC | 0.2–0.8 dS/m | Not given |
+| pH | 5.5–7 | Not given |
+| Alkalinity | 40–160 ppm | Above 75 ppm raises solution pH |
+| Sodium | Below 50 ppm | Below 50 ppm |
+| Calcium | Below 150 ppm | Below 150 ppm |
+| Sulfate | Below 90 ppm | Below 100 ppm |
+| Chlorine / chloride | Chlorine below 70 ppm | Chloride below 140 ppm |
+| Boron | Below 0.5 ppm | Not given |
+
+Alkalinity is the one that surprises people. Above 160 ppm you need noticeably more acid to move pH, and below 40 ppm pH swings constantly (Missouri). Oklahoma State's lower threshold, 75 ppm, is the point where pH starts creeping up between checks. If your water fails several rows, reverse-osmosis or filtered water is the simpler fix.
+
+## Keeping the solution balanced
+
+A fresh solution is balanced; a week-old one is not. Plants take up water and each nutrient at different rates, so the mix drifts even while the EC number looks steady.
+
+- **Daily:** check pH and EC, at the same time of day (Oklahoma State).
+- **As the level drops:** add water. Oklahoma State notes that water may need adding daily, depending on tank size.
+- **Every two weeks:** replace the solution completely (Oklahoma State). The University of Tennessee gives one to two weeks for small recirculating systems with fruiting crops.
+- **Weekly:** calibrate the pH meter at pH 4 and pH 7 (Missouri). EC meters are calibrated against a standard, usually 1.41 mS/cm (Oklahoma State).
+- **Between crops:** clean tanks and trays. Cornell's lettuce program uses a weak (2%) bleach solution.
+
+Passive Kratky containers are the exception to topping up, because the falling level is what lets roots breathe; see the Kratky section of [the lettuce guide](/crops/hydroponic-lettuce/).
+
+## Troubleshooting a nutrient solution
+
+| Problem | Likely cause | What to do | Source |
+| --- | --- | --- | --- |
+| White sediment or cloudy solution after mixing | Calcium met phosphate or sulfate at high concentration | Remix: water first, one part at a time; never combine concentrates | University of Missouri; Penn State |
+| pH climbs between checks | Alkaline source water (above 75 ppm) | Adjust more often, use an acid, or switch to RO water | Oklahoma State HLA-6722 |
+| pH swings widely | Very low alkalinity (below 40 ppm) | Adjust in smaller steps and check more often | University of Missouri G6984 |
+| EC rises as the level falls | Plants taking water faster than salts | Add plain water | Oklahoma State HLA-6722 |
+| EC falls | Plants feeding faster than they drink | Add concentrate to return to range | Oklahoma State HLA-6722 |
+| Stressed plants with EC above the crop's range | Solution too strong (osmotic stress) | Dilute with water until EC is back in range | Oklahoma State HLA-6722 |
+| Slow growth in warm weather | Low dissolved oxygen in warm solution | Add aeration; bring the solution toward 72–75 °F | University of Missouri; Oklahoma State |
+| Readings that do not match the plants | Meter out of calibration | Calibrate with pH 4 and 7 buffers and a 1.41 mS/cm standard | University of Missouri; Oklahoma State |
+
+## Frequently asked questions
+
+### What is the best nutrient solution for hydroponics?
+
+The one written for your crop. For lettuce, herbs and greens that is a complete leafy-green formula of about 150 ppm nitrogen and 210 ppm potassium (Penn State's modified Sonneveld recipe); for tomatoes, a low-nitrogen, high-potassium program that rises as fruit sets (UF/IFAS). A complete two-part product used at its label rate is the practical choice for a home system.
+
+### What is the ratio of nutrients to water?
+
+There is no universal ratio, because products differ in concentration. Use the rate on your product's label, then confirm with an EC meter that the result is in your crop's range. The sources here do not give a per-gallon dose that applies across products.
+
+### Can I make my own hydroponic nutrient solution?
+
+Yes, from individual fertilizer salts and a recipe. Penn State lists the usual ones: calcium nitrate, potassium nitrate, monopotassium phosphate, magnesium sulfate and chelated iron, plus tiny amounts of five micronutrient salts. It takes calculations and a high-precision scale, which is why most small growers buy a program.
+
+### How often should I change the nutrient solution?
+
+Every two weeks, completely (Oklahoma State), topping up with water in between. Small recirculating systems with large fruiting plants may need it weekly (University of Tennessee).
+
+### What temperature should the nutrient solution be?
+
+72–75 °F (22–24 °C) according to Oklahoma State. Cornell keeps lettuce ponds no higher than 25 °C (77 °F). Warmer solution holds less oxygen.
+
+### Does EC tell me the solution is balanced?
+
+No. EC is the total of all dissolved salts. It cannot show that one nutrient has run low, which is why the solution is replaced on a schedule instead of topped up forever.
+
+### Can I use regular fertilizer?
+
+Only if it is complete and fully water-soluble. Penn State recommends greenhouse-grade fertilizers for their purity and solubility, and warns that a single complete fertilizer may lack calcium and magnesium. The [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) covers what "complete" means.
+
+*Figures in this guide come from the university and extension sources listed below. Recipes and ranges differ between sources, so treat them as starting points, follow your product's label for doses and check your own solution. HydroRigor has not run its own nutrient trial for this guide.*

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 932" width="640" height="932" role="img" aria-labelledby="t d">
+  <title id="t">What is in a hydroponic nutrient solution: a leafy-green recipe in ppm</title>
+  <desc id="d">Bar chart of the modified Sonneveld recipe for herbs published by Penn State Extension, in parts per million in the final solution: potassium 210, nitrogen 150, calcium 90, phosphorus 31, magnesium 24. Micronutrients: iron 1, manganese 0.25, boron 0.16, zinc 0.13, molybdenum 0.024 and copper 0.023 ppm.</desc>
+  <rect width="640" height="932" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">What a solution contains</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Modified Sonneveld recipe for herbs,</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">final solution (Penn State Extension)</text>
+    <text x="20" y="150" font-size="21" font-weight="800" fill="#0E1A14">Potassium (K)</text>
+    <rect x="20" y="162" width="400" height="34" rx="6" fill="#0F6B4F"/>
+    <text x="432" y="187" font-size="22" font-weight="800" fill="#0E1A14">210 ppm</text>
+    <text x="20" y="242" font-size="21" font-weight="800" fill="#0E1A14">Nitrogen (N)</text>
+    <rect x="20" y="254" width="286" height="34" rx="6" fill="#0F6B4F"/>
+    <text x="318" y="279" font-size="22" font-weight="800" fill="#0E1A14">150 ppm</text>
+    <text x="20" y="334" font-size="21" font-weight="800" fill="#0E1A14">Calcium (Ca)</text>
+    <rect x="20" y="346" width="171" height="34" rx="6" fill="#0F6B4F"/>
+    <text x="203" y="371" font-size="22" font-weight="800" fill="#0E1A14">90 ppm</text>
+    <text x="20" y="426" font-size="21" font-weight="800" fill="#0E1A14">Phosphorus (P)</text>
+    <rect x="20" y="438" width="59" height="34" rx="6" fill="#0F6B4F"/>
+    <text x="91" y="463" font-size="22" font-weight="800" fill="#0E1A14">31 ppm</text>
+    <text x="20" y="518" font-size="21" font-weight="800" fill="#0E1A14">Magnesium (Mg)</text>
+    <rect x="20" y="530" width="46" height="34" rx="6" fill="#0F6B4F"/>
+    <text x="78" y="555" font-size="22" font-weight="800" fill="#0E1A14">24 ppm</text>
+    <rect x="20" y="600" width="600" height="274" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="44" y="640" font-size="22" font-weight="800" fill="#0E1A14">Micronutrients (ppm)</text>
+    <text x="44" y="678" font-size="20" fill="#3F5248">Iron</text><text x="596" y="678" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="end">1</text>
+    <text x="44" y="712" font-size="20" fill="#3F5248">Manganese</text><text x="596" y="712" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="end">0.25</text>
+    <text x="44" y="746" font-size="20" fill="#3F5248">Boron</text><text x="596" y="746" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="end">0.16</text>
+    <text x="44" y="780" font-size="20" fill="#3F5248">Zinc</text><text x="596" y="780" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="end">0.13</text>
+    <text x="44" y="814" font-size="20" fill="#3F5248">Molybdenum</text><text x="596" y="814" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="end">0.024</text>
+    <text x="44" y="848" font-size="20" fill="#3F5248">Copper</text><text x="596" y="848" font-size="20" font-weight="800" fill="#0E1A14" text-anchor="end">0.023</text>
+    <text x="20" y="914" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

@@ -25,7 +25,7 @@ export const m06EditorialSources = [
     url: 'https://extension.missouri.edu/publications/g6984',
     accessedDate: '2026-09-12',
     sourceType: 'university-extension',
-    locator: 'Water quality, preparation, measurement, and nutrient-solution management',
+    locator: 'Water quality, preparation, measurement, and nutrient-solution management; Table 1 (source water: pH 5.5–7, EC 0.2–0.8 dS/m, alkalinity 40–160 ppm, dissolved oxygen >6 ppm, sodium <50, chlorine <70, sulfates <90, boron <0.5, calcium <150 ppm); pH: optimum 5.5–6.5 for most crops; Dissolved oxygen: over 6 ppm optimum, 6.85 ppm solubility at 35 °C and 5 dS/m; Preparing nutrient solutions: calcium (15-0-0) reacts with phosphorus and sulfate from a 5-12-26 formulation; Meter calibration and care: weekly at pH 4 and 7, DO meters over $500; Increasing/Lowering pH',
   },
   {
     id: 'uga-home-hydroponics',
@@ -142,7 +142,7 @@ export const m06EditorialSources = [
     url: 'https://cpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/8/8824/files/2019/06/Cornell-CEA-Lettuce-Handbook-.pdf',
     accessedDate: '2026-11-05',
     sourceType: 'university-extension',
-    locator: 'Section 1.1 (humidity covers needed for bare, not pelleted, seed; one seed per 1-inch rockwool plug); Chapter 4 Day 0-3 (20 °C germination, 50 then 250 µmol/m²/s, germination percentage check on Day 3, transplant Day 21, harvest Day 35); pond (deep-flow raft) production system',
+    locator: 'Section 1.1 (humidity covers needed for bare, not pelleted, seed; one seed per 1-inch rockwool plug); Chapter 4 Day 0-3 (20 °C germination, 50 then 250 µmol/m²/s, germination percentage check on Day 3, transplant Day 21, harvest Day 35); pond (deep-flow raft) production system; Section 3.1 (pH 5.8 optimum, 5.6–6.0 acceptable; DO at least 4 ppm for satisfactory growth, near 0 without added oxygen); Section 3.3 set-points (water no higher than 25 °C; DO 7 mg/L, crop failure below 3 ppm; EC 1150–1250 µS/cm above source water); sanitation with weak (2%) bleach solution',
   },
   {
     id: 'egro-lettuce-tipburn-2023',
@@ -268,7 +268,7 @@ export const m06EditorialSources = [
     url: 'https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes',
     accessedDate: '2026-11-06',
     sourceType: 'university-extension',
-    locator: 'Fertilizer programs: tomato example with a 4-18-38 base supplemented with calcium nitrate and magnesium sulfate by variety and stage; Nutrient solution concentration and fertilizer compatibility: two stock tanks keep calcium apart from phosphates and sulfates to avoid precipitates that clog drip lines',
+    locator: 'Fertilizer programs: tomato example with a 4-18-38 base supplemented with calcium nitrate and magnesium sulfate by variety and stage; Nutrient solution concentration and fertilizer compatibility: two stock tanks keep calcium apart from phosphates and sulfates to avoid precipitates that clog drip lines; Nutrient solution recipes: modified Sonneveld recipe for herbs (N 150, P 31, K 210, Ca 90, Mg 24, Fe 1, Mn 0.25, B 0.16, Zn 0.13, Cu 0.023, Mo 0.024 ppm; no sulfur target), fertilizer table, 210 − 30 = 180 ppm potassium example, high-precision scale for micronutrients; Complete soluble fertilizer approach: 100 to 150 ppm nitrogen for lettuce; stock solutions at 50, 100 or 200 times normal strength; How to choose fertilizers: greenhouse grade',
   },
   {
     id: 'psu-plant-nutrition',
@@ -286,7 +286,7 @@ export const m06EditorialSources = [
     url: 'https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics',
     accessedDate: '2026-11-06',
     sourceType: 'university-extension',
-    locator: 'HLA-6722 Table 2: tomato EC 2.0–4.0 mS/cm, pH 6.0–6.5; lettuce EC 1.2–1.8, pH 6.0–7.0; basil EC 1.0–1.6, pH 5.5–6.0; spinach EC 1.8–2.3, pH 6.0–7.0; strawberry EC 1.8–2.2, pH 6; broccoli EC 2.8–3.5, pH 6.0–6.8; kale and Swiss chard not listed; check pH and EC daily at the same time; adjust pH only after EC is in range; dilute with water if EC is high, add concentrate if low; pH adjusters; test source water for pH, EC and alkalinity; alkalinity above 75 ppm raises pH',
+    locator: 'HLA-6722 Table 2: tomato EC 2.0–4.0 mS/cm, pH 6.0–6.5; lettuce EC 1.2–1.8, pH 6.0–7.0; basil EC 1.0–1.6, pH 5.5–6.0; spinach EC 1.8–2.3, pH 6.0–7.0; strawberry EC 1.8–2.2, pH 6; broccoli EC 2.8–3.5, pH 6.0–6.8; kale and Swiss chard not listed; check pH and EC daily at the same time; adjust pH only after EC is in range; dilute with water if EC is high, add concentrate if low; pH adjusters; test source water for pH, EC and alkalinity; alkalinity above 75 ppm raises pH; Table 1 (water: sodium <50, calcium <150, chloride <140, sulfate <100 ppm); What is pH: solution pH 5 to 6, usually 5.5, root environment 6 to 6.5; Table 2 also peppers 0.8–1.8/5.5–6.0 and cucumber 1.7–2.0/5.0–5.5; EC Management: 1.41 mS/cm buffer; Important Points: water temperature 72 to 75 °F; Refreshing the Nutrient Solution: replace completely every two weeks, add water daily as needed',
   },
   {
     id: 'usda-organic-certification',
