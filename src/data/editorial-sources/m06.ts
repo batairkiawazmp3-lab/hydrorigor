@@ -25,7 +25,7 @@ export const m06EditorialSources = [
     url: 'https://extension.missouri.edu/publications/g6984',
     accessedDate: '2026-09-12',
     sourceType: 'university-extension',
-    locator: 'Water quality, preparation, measurement, and nutrient-solution management',
+    locator: 'Water quality, preparation, measurement, and nutrient-solution management: pH 5.5–6.5 rule of thumb for most hydroponic crops; source water EC 0.2–0.8 dS/m (ideally below 1), pH 5.5–7.0, alkalinity 40–160 ppm as CaCO3, sodium below 50 ppm, chlorine below 70 ppm, calcium below 150 ppm, boron below 0.5 ppm; calcium reacts with phosphates and sulfates to form insoluble solids roots cannot use, so dissolve each formulation completely before combining; EC shows the total, not the balance of individual nutrients',
   },
   {
     id: 'uga-home-hydroponics',
@@ -268,7 +268,7 @@ export const m06EditorialSources = [
     url: 'https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes',
     accessedDate: '2026-11-06',
     sourceType: 'university-extension',
-    locator: 'Fertilizer programs: tomato example with a 4-18-38 base supplemented with calcium nitrate and magnesium sulfate by variety and stage; Nutrient solution concentration and fertilizer compatibility: two stock tanks keep calcium apart from phosphates and sulfates to avoid precipitates that clog drip lines',
+    locator: 'Preparation approaches grouped as fertilizer programs, recipes and complete soluble fertilizers; Fertilizer programs: tomato example with a 4-18-38 base supplemented with calcium nitrate and magnesium sulfate by variety and stage; Nutrient solution concentration and fertilizer compatibility: two stock tanks keep calcium apart from phosphates and sulfates to avoid precipitates that clog drip lines',
   },
   {
     id: 'psu-plant-nutrition',
@@ -277,7 +277,7 @@ export const m06EditorialSources = [
     url: 'https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess',
     accessedDate: '2026-09-12',
     sourceType: 'university-extension',
-    locator: 'Essential nutrients, availability, monitoring, deficiency, and soluble salts',
+    locator: 'Essential nutrients, availability, monitoring, deficiency, and soluble salts: 17 essential elements, carbon, hydrogen and oxygen from air and water; antagonisms (excess of one nutrient, e.g. potassium, reduces uptake of another such as calcium or magnesium); interveinal yellowing of new leaves from iron deficiency, often caused by high pH; calcium-related tipburn and blossom-end rot; excess salts cause wilting and leaf burn',
   },
   {
     id: 'osu-ph-ec-guide',
@@ -286,7 +286,7 @@ export const m06EditorialSources = [
     url: 'https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics',
     accessedDate: '2026-11-06',
     sourceType: 'university-extension',
-    locator: 'HLA-6722 Table 2: tomato EC 2.0–4.0 mS/cm, pH 6.0–6.5; lettuce EC 1.2–1.8, pH 6.0–7.0; basil EC 1.0–1.6, pH 5.5–6.0; spinach EC 1.8–2.3, pH 6.0–7.0; strawberry EC 1.8–2.2, pH 6; broccoli EC 2.8–3.5, pH 6.0–6.8; kale and Swiss chard not listed; check pH and EC daily at the same time; adjust pH only after EC is in range; dilute with water if EC is high, add concentrate if low; pH adjusters; test source water for pH, EC and alkalinity; alkalinity above 75 ppm raises pH',
+    locator: 'HLA-6722 Table 2: tomato EC 2.0–4.0 mS/cm, pH 6.0–6.5; lettuce EC 1.2–1.8, pH 6.0–7.0; basil EC 1.0–1.6, pH 5.5–6.0; spinach EC 1.8–2.3, pH 6.0–7.0; strawberry EC 1.8–2.2, pH 6; broccoli EC 2.8–3.5, pH 6.0–6.8; kale and Swiss chard not listed; check pH and EC daily at the same time; adjust pH only after EC is in range; dilute with water if EC is high, add concentrate if low; pH adjusters; test source water for pH, EC and alkalinity; alkalinity above 75 ppm raises pH; solution temperature about 72–75 °F (22–24 °C); replace the solution completely about every two weeks; EC calibration standard 1.41 mS/cm',
   },
   {
     id: 'usda-organic-certification',

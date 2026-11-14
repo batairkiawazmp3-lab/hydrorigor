@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1180" width="640" height="1180" role="img" aria-labelledby="t d">
+  <title id="t">Nutrient solution upkeep cycle</title>
+  <desc id="d">Four steps. 1, mix: fill with water first, add part A and stir until dissolved, then part B; never pour concentrates together (University of Missouri, Penn State). 2, check daily at the same time: EC first, then pH (Oklahoma State). 3, correct: if EC is high, dilute with water; if low, add concentrate; top up the water plants use (Oklahoma State, Tennessee). 4, replace: small recirculating tanks every 1 to 2 weeks (Tennessee), about every 2 weeks (Oklahoma State), lettuce rafts every 3 to 4 weeks (Kentucky). Then mix a fresh batch.</desc>
+  <rect width="640" height="1180" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Keep a solution healthy</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Mix, check, correct, replace</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(Missouri, Penn State, Oklahoma State,</text>
+    <text x="20" y="140" font-size="20" fill="#3F5248">Tennessee, Kentucky)</text>
+    <rect x="20" y="170" width="600" height="200" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="70" cy="222" r="30" fill="#3A7CA5"/>
+    <text x="70" y="231" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="116" y="216" font-size="24" font-weight="800" fill="#0E1A14">Mix</text>
+    <text x="116" y="252" font-size="22" font-weight="800" fill="#0F6B4F">Water first, then A, then B</text>
+    <text x="116" y="288" font-size="21" fill="#3F5248">Stir until each dissolves</text>
+    <text x="116" y="322" font-size="21" fill="#3F5248">Never pour A into B</text>
+    <text x="116" y="352" font-size="20" fill="#5B6B62">Missouri; Penn State</text>
+    <path d="M320 374 L320 404" stroke="#7FB069" stroke-width="5"/>
+    <path d="M308 396 L320 414 L332 396 Z" fill="#7FB069"/>
+    <rect x="20" y="418" width="600" height="176" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="70" cy="470" r="30" fill="#2E8B57"/>
+    <text x="70" y="479" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="116" y="464" font-size="24" font-weight="800" fill="#0E1A14">Check daily</text>
+    <text x="116" y="500" font-size="22" font-weight="800" fill="#0F6B4F">EC first, then pH</text>
+    <text x="116" y="536" font-size="21" fill="#3F5248">Same time each day</text>
+    <text x="116" y="570" font-size="20" fill="#5B6B62">Oklahoma State</text>
+    <path d="M320 598 L320 628" stroke="#7FB069" stroke-width="5"/>
+    <path d="M308 620 L320 638 L332 620 Z" fill="#7FB069"/>
+    <rect x="20" y="642" width="600" height="200" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="70" cy="694" r="30" fill="#C8A96B"/>
+    <text x="70" y="703" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="116" y="688" font-size="24" font-weight="800" fill="#0E1A14">Correct</text>
+    <text x="116" y="724" font-size="22" font-weight="800" fill="#0F6B4F">EC high: add water</text>
+    <text x="116" y="760" font-size="22" font-weight="800" fill="#0F6B4F">EC low: add concentrate</text>
+    <text x="116" y="796" font-size="21" fill="#3F5248">Top up what plants drink</text>
+    <text x="116" y="826" font-size="20" fill="#5B6B62">Oklahoma State; Tennessee</text>
+    <path d="M320 846 L320 876" stroke="#7FB069" stroke-width="5"/>
+    <path d="M308 868 L320 886 L332 868 Z" fill="#7FB069"/>
+    <rect x="20" y="890" width="600" height="230" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="70" cy="942" r="30" fill="#0F6B4F"/>
+    <text x="70" y="951" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="116" y="936" font-size="24" font-weight="800" fill="#0E1A14">Replace</text>
+    <text x="116" y="972" font-size="22" font-weight="800" fill="#0F6B4F">Small tanks: 1–2 weeks</text>
+    <text x="116" y="1006" font-size="21" fill="#3F5248">Tennessee; about 2 weeks</text>
+    <text x="116" y="1036" font-size="21" fill="#3F5248">per Oklahoma State</text>
+    <text x="116" y="1070" font-size="21" fill="#3F5248">Lettuce rafts: 3–4 weeks</text>
+    <text x="116" y="1100" font-size="20" fill="#5B6B62">Kentucky; then mix fresh</text>
+  </g>
+</svg>
