@@ -31,5 +31,9 @@ test('short launch guides wait for a rebuild unless named, and the CSV quotes co
   const [header, first] = csv.split('\n');
   assert.equal(header, HEADER.join(','));
   assert.match(first, /^"?[^,]+.*,https:\/\/hydrorigor\.com\/pins\//u);
-  assert.match(csv, /"Hydroponic Nutrients, pH & EC"/u);
+  assert.match(csv, /^"Hydroponic Tower Garden: How It Works, Crops & DIY Build",/mu);
+  assert.match(csv, /^pH Meter for Hydroponics: How to Choose & Calibrate,[^,]+,Hydroponic Nutrients & pH,/mu);
+  const boards = new Set(pinRows({ start: '2030-01-01' }).map((row) => row['Pinterest board']));
+  const existing = ['Hydroponic Systems & DIY Builds', 'Hydroponic Nutrients & pH', 'Hydroponic Tomatoes', 'Hydroponic Lettuce & Greens'];
+  assert.deepEqual([...boards].filter((board) => !existing.includes(board)), [], 'only boards that exist on the account');
 });
