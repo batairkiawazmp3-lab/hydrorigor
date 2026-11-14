@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1236" width="640" height="1236" role="img" aria-labelledby="t d">
+  <title id="t">Nutrient solution targets</title>
+  <desc id="d">pH 5.5 to 6.5 for most crops, lettuce 5.5 to 6.0. EC 1.2 to 1.8 mS/cm for leafy greens and 1.0 to 1.6 for basil. EC 2.0 to 3.0 mS/cm for fruiting crops, 1.0 to 1.5 at transplanting. Solution temperature 65 to 80 degrees F (18 to 27 degrees C). Dissolved oxygen in deep water culture 7 to 10 ppm, 4 ppm minimum. Check pH and EC daily; top up every few days and replace the tank every 2 to 4 weeks.</desc>
+  <rect width="640" height="1236" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Nutrient solution targets</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">For a home reservoir (Missouri, Oklahoma State,</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">UF/IFAS, Tennessee, Virginia Tech, Kentucky)</text>
+    <rect x="20" y="150" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="150" width="14" height="160" rx="7" fill="#3A7CA5"/>
+    <text x="56" y="190" font-size="24" font-weight="800" fill="#0E1A14">pH</text>
+    <text x="56" y="228" font-size="22" font-weight="800" fill="#0F6B4F">5.5–6.5, most crops</text>
+    <text x="56" y="260" font-size="21" fill="#3F5248">Lettuce 5.5–6.0</text>
+    <text x="56" y="292" font-size="20" fill="#5B6B62">Missouri; Kentucky</text>
+    <rect x="20" y="326" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="326" width="14" height="160" rx="7" fill="#2E8B57"/>
+    <text x="56" y="366" font-size="24" font-weight="800" fill="#0E1A14">EC, leafy greens</text>
+    <text x="56" y="404" font-size="22" font-weight="800" fill="#0F6B4F">1.2–1.8 mS/cm</text>
+    <text x="56" y="436" font-size="21" fill="#3F5248">Basil 1.0–1.6</text>
+    <text x="56" y="468" font-size="20" fill="#5B6B62">Oklahoma State; UF/IFAS</text>
+    <rect x="20" y="502" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="502" width="14" height="160" rx="7" fill="#7FB069"/>
+    <text x="56" y="542" font-size="24" font-weight="800" fill="#0E1A14">EC, fruiting crops</text>
+    <text x="56" y="580" font-size="22" font-weight="800" fill="#0F6B4F">2.0–3.0 mS/cm</text>
+    <text x="56" y="612" font-size="21" fill="#3F5248">1.0–1.5 at transplanting</text>
+    <text x="56" y="644" font-size="20" fill="#5B6B62">University of Tennessee</text>
+    <rect x="20" y="678" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="678" width="14" height="160" rx="7" fill="#C8A96B"/>
+    <text x="56" y="718" font-size="24" font-weight="800" fill="#0E1A14">Solution temperature</text>
+    <text x="56" y="756" font-size="22" font-weight="800" fill="#0F6B4F">65–80 °F (18–27 °C)</text>
+    <text x="56" y="788" font-size="21" fill="#3F5248">Warm water holds less oxygen</text>
+    <text x="56" y="820" font-size="20" fill="#5B6B62">UF/IFAS HS1422</text>
+    <rect x="20" y="854" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="854" width="14" height="160" rx="7" fill="#0F6B4F"/>
+    <text x="56" y="894" font-size="24" font-weight="800" fill="#0E1A14">Dissolved oxygen</text>
+    <text x="56" y="932" font-size="22" font-weight="800" fill="#0F6B4F">7–10 ppm in DWC</text>
+    <text x="56" y="964" font-size="21" fill="#3F5248">4 ppm minimum</text>
+    <text x="56" y="996" font-size="20" fill="#5B6B62">Virginia Tech SPES-466</text>
+    <rect x="20" y="1030" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="1030" width="14" height="160" rx="7" fill="#5B8C85"/>
+    <text x="56" y="1070" font-size="24" font-weight="800" fill="#0E1A14">Routine</text>
+    <text x="56" y="1108" font-size="22" font-weight="800" fill="#0F6B4F">Check pH and EC daily</text>
+    <text x="56" y="1140" font-size="21" fill="#3F5248">Replace every 2–4 weeks</text>
+    <text x="56" y="1172" font-size="20" fill="#5B6B62">Oklahoma State; Kentucky</text>
+  </g>
+</svg>

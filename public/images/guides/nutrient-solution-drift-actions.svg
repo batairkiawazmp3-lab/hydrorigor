@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1060" width="640" height="1060" role="img" aria-labelledby="t d">
+  <title id="t">When readings drift</title>
+  <desc id="d">If EC is high, add plain water to dilute it. If EC is low, add concentrate at the label ratio. Fix EC first, then pH, adjusting pH in small steps. Top up every few days as the level drops. Replace the whole tank every 2 to 4 weeks, or sooner if readings will not settle.</desc>
+  <rect width="640" height="1060" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">When readings drift</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Daily check, in this order</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(Oklahoma State, Kentucky, Tennessee)</text>
+    <rect x="20" y="150" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="150" width="14" height="160" rx="7" fill="#3A7CA5"/>
+    <text x="56" y="190" font-size="24" font-weight="800" fill="#0E1A14">1. EC too high</text>
+    <text x="56" y="228" font-size="22" font-weight="800" fill="#0F6B4F">Add plain water</text>
+    <text x="56" y="260" font-size="21" fill="#3F5248">Dilute, stir, read again</text>
+    <text x="56" y="292" font-size="20" fill="#5B6B62">Oklahoma State HLA-6722</text>
+    <rect x="20" y="326" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="326" width="14" height="160" rx="7" fill="#2E8B57"/>
+    <text x="56" y="366" font-size="24" font-weight="800" fill="#0E1A14">2. EC too low</text>
+    <text x="56" y="404" font-size="22" font-weight="800" fill="#0F6B4F">Add concentrate</text>
+    <text x="56" y="436" font-size="21" fill="#3F5248">At the label ratio</text>
+    <text x="56" y="468" font-size="20" fill="#5B6B62">Oklahoma State HLA-6722</text>
+    <rect x="20" y="502" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="502" width="14" height="160" rx="7" fill="#7FB069"/>
+    <text x="56" y="542" font-size="24" font-weight="800" fill="#0E1A14">3. Then pH</text>
+    <text x="56" y="580" font-size="22" font-weight="800" fill="#0F6B4F">Adjust in small steps</text>
+    <text x="56" y="612" font-size="21" fill="#3F5248">Only once EC is in range</text>
+    <text x="56" y="644" font-size="20" fill="#5B6B62">Oklahoma State HLA-6722</text>
+    <rect x="20" y="678" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="678" width="14" height="160" rx="7" fill="#C8A96B"/>
+    <text x="56" y="718" font-size="24" font-weight="800" fill="#0E1A14">4. Level dropping</text>
+    <text x="56" y="756" font-size="22" font-weight="800" fill="#0F6B4F">Top up every few days</text>
+    <text x="56" y="788" font-size="21" fill="#3F5248">Read EC to pick water or mix</text>
+    <text x="56" y="820" font-size="20" fill="#5B6B62">Kentucky; Tennessee</text>
+    <rect x="20" y="854" width="600" height="160" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="854" width="14" height="160" rx="7" fill="#0F6B4F"/>
+    <text x="56" y="894" font-size="24" font-weight="800" fill="#0E1A14">5. Every 2–4 weeks</text>
+    <text x="56" y="932" font-size="22" font-weight="800" fill="#0F6B4F">Replace the whole tank</text>
+    <text x="56" y="964" font-size="21" fill="#3F5248">Sooner if readings won’t settle</text>
+    <text x="56" y="996" font-size="20" fill="#5B6B62">Kentucky; Oklahoma State</text>
+  </g>
+</svg>

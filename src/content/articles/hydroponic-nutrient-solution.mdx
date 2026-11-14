@@ -1,8 +1,9 @@
 ---
-title: "Hydroponic Nutrient Solution: How to Choose, Mix and Use It"
-description: "Choose and manage a hydroponic nutrient solution through crop fit, water analysis, complete formulation, mixing order, and measurement."
+title: "Hydroponic Nutrient Solution: pH, EC, Mixing & Changing"
+description: "Run a hydroponic nutrient solution at pH 5.5–6.5 and EC 1.2–1.8 for greens or 2.0–3.0 for fruiting crops. Check daily; replace every 2–4 weeks."
 route: "hydroponic-nutrient-solution"
 publishDate: 2026-09-12
+updatedDate: 2026-11-14
 author: "HydroRigor Editorial"
 category: "nutrients"
 tags: ["nutrient-solution", "mixing", "water-quality"]
@@ -11,56 +12,277 @@ sources:
     title: "Hydroponic Nutrient Solutions"
     url: "https://extension.missouri.edu/publications/g6984"
     publisher: "University of Missouri Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-03
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics (HLA-6722)"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-03
   - id: "psu-nutrient-programs"
     title: "Hydroponics Systems: Nutrient Solution Programs and Recipes"
     url: "https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes"
     publisher: "Penn State Extension"
+    accessedDate: 2026-11-06
+  - id: "psu-plant-nutrition"
+    title: "Hydroponics Systems and Principles of Plant Nutrition"
+    url: "https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess"
+    publisher: "Penn State Extension"
+    accessedDate: 2026-11-03
+  - id: "uky-hydroponic-lettuce"
+    title: "Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)"
+    url: "https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification"
+    accessedDate: 2026-11-03
+  - id: "ifas-lettuce-small-systems"
+    title: "Growing Lettuce in Small Hydroponic Systems (HS1422)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1422"
+    publisher: "UF/IFAS Extension"
     accessedDate: 2026-09-12
-  - id: "osu-ph-ec-guide"
-    title: "Electrical Conductivity and pH Guide for Hydroponics"
-    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
-    publisher: "Oklahoma State University Extension"
-    accessedDate: 2026-09-12
+  - id: "tennessee-fruiting-crops"
+    title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems (W 844-C)"
+    url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
+    publisher: "University of Tennessee Extension"
+    accessedDate: 2026-11-06
+  - id: "ifas-hydroponic-tomato-formulation"
+    title: "Nutrient Solution Formulation for Hydroponic (Perlite, Rockwool, NFT) Tomatoes in Florida (HS796)"
+    url: "https://ask.ifas.ufl.edu/publication/CV216"
+    publisher: "UF/IFAS Extension (G. J. Hochmuth, R. C. Hochmuth)"
+    accessedDate: 2026-11-06
+  - id: "ohio-state-tomato-nutrient-solution"
+    title: "Hydroponic Nutrient Solution for Optimized Greenhouse Tomato Production (HYG-1437)"
+    url: "https://cfaes.osu.edu/fact-sheet/hydroponic-nutrient-solution-optimized-greenhouse-tomato-production"
+    publisher: "The Ohio State University CFAES (M. Kroggel, C. Kubota)"
+    accessedDate: 2026-11-06
+  - id: "vt-system-crop-comparisons"
+    title: "Hydroponic Production of Edible Crops: System and Crop Comparisons (SPES-466)"
+    url: "https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html"
+    publisher: "Virginia Cooperative Extension"
+    accessedDate: 2026-11-06
+  - id: "gomez-basil-small-scale-2020"
+    title: "Growth Rate and Nutrient Uptake of Basil in Small-scale Hydroponics"
+    url: "https://journals.ashs.org/downloadpdf/view/journals/hortsci/55/4/article-p507.pdf"
+    publisher: "HortScience 55(4):507–514 (Solis-Toapanta, Fisher and Gómez, University of Florida, 2020)"
+    accessedDate: 2026-11-09
+  - id: "ifas-kratky-set-and-forget"
+    title: "\"Set It and Forget It\" Hydroponic Lettuce (HS1488)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1488"
+    publisher: "UF/IFAS Extension (H. Eason)"
+    accessedDate: 2026-11-06
+  - id: "sato-modified-nft-2007"
+    title: "A Modified Nutrient Film Technique System Offers a More Uniform Nutrient Supply to Plants"
+    url: "https://journals.ashs.org/view/journals/horttech/17/2/article-p227.xml"
+    publisher: "HortTechnology 17(2):227 (Sato et al., Chiba University, 2007)"
+    accessedDate: 2026-11-09
+  - id: "msu-calibrate-ph-ec"
+    title: "Calibrate your pH and EC meter in your greenhouse"
+    url: "https://www.canr.msu.edu/news/calibrate_your_ph_and_ec_meter_in_your_greenhouse"
+    publisher: "Michigan State University Extension (H. Wollaeger)"
+    accessedDate: 2026-11-07
+  - id: "ua-strawberry-irrigation"
+    title: "Hydroponic Strawberry Irrigation"
+    url: "https://cales.arizona.edu/strawberry/Hydroponic_Strawberry_Information_Website/Irrigation.html"
+    publisher: "University of Arizona CEAC Hydroponic Strawberry Information Website"
+    accessedDate: 2026-11-02
 affiliateDisclosure: false
 commercialDestinationIds: []
 draft: false
 ---
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-A hydroponic nutrient solution is source water plus dissolved fertilizers in a crop- and system-specific program. Choose it by checking completeness, crop scope, water assumptions, component compatibility, and current instructions. Mix one component at a time, then verify the solution with maintained instruments and plant observations.
+A hydroponic nutrient solution is water with a complete fertilizer dissolved in it, and in a hydroponic system it is the plant's only source of food. **Run it at pH 5.5–6.5** (most crops; University of Missouri), **EC 1.2–1.8 mS/cm for leafy greens** and **2.0–3.0 mS/cm for fruiting crops** (Oklahoma State; University of Tennessee), and **65–80 °F (18–27 °C)** with **5 mg/L or more of dissolved oxygen** (UF/IFAS). Check pH and EC every day, top up as the level drops, and replace the whole tank about every 2–4 weeks.
 
-## Choose a documented approach
+Below: where each number comes from, where sources disagree, and how to mix and maintain a home reservoir.
 
-Penn State Extension groups preparation approaches into fertilizer programs, recipes, and complete soluble fertilizers. Each changes the balance between convenience and control.
+<KeyTargets
+  title="Nutrient solution: the targets"
+  source="University of Missouri, Oklahoma State, UF/IFAS, University of Tennessee and University of Kentucky Extension"
+  items={[
+    { label: 'Solution pH', value: '5.5–6.5', note: 'lettuce 5.5–6.0' },
+    { label: 'EC, leafy greens', value: '1.2–1.8', note: 'mS/cm' },
+    { label: 'EC, fruiting crops', value: '2.0–3.0', note: 'mS/cm' },
+    { label: 'Solution temperature', value: '65–80 °F', note: '18–27 °C' },
+    { label: 'Check pH and EC', value: 'Daily', note: 'same time each day' },
+    { label: 'Replace the tank', value: '2–4 weeks', note: 'top up in between' },
+  ]}
+/>
 
-A prepared program may require several products. A complete fertilizer may be simpler but less adjustable. A recipe can account for source-water nutrients but requires accurate technical execution. Do not combine pieces from different programs unless a qualified source documents the combination.
+## Quick answer: nutrient solution numbers
 
-## Analyze the water before troubleshooting the fertilizer
+| Measure | Target | Source |
+| --- | --- | --- |
+| pH | 5.5–6.5 for most crops; lettuce 5.5–6.0 | University of Missouri; University of Kentucky |
+| EC, leafy greens | 1.2–1.8 mS/cm; lettuce about 1.5, seedlings 1.0 | Oklahoma State HLA-6722; UF/IFAS HS1422; University of Kentucky |
+| EC, basil | 1.0–1.6 mS/cm | Oklahoma State HLA-6722 |
+| EC, tomatoes, peppers, cucumbers | 2.0–3.0 mS/cm for much of the season; 1.0–1.5 at transplanting | University of Tennessee W 844-C |
+| Solution temperature | 65–80 °F (18–27 °C) | UF/IFAS HS1422 |
+| Dissolved oxygen (DWC) | 7–10 ppm, 4 ppm minimum; Kentucky gives 6–8 ppm, UF/IFAS 5 mg/L | Virginia Tech SPES-466; University of Kentucky; UF/IFAS HS1422 |
+| Check pH and EC | Daily, at the same time of day | Oklahoma State HLA-6722 |
+| Top up | Every few days | University of Kentucky |
+| Replace | Every 3–4 weeks (Kentucky); about 2 weeks (Oklahoma State); 1–2 weeks for small recirculating tanks of fruiting crops (Tennessee) | See "Top up or replace?" |
+| Kratky (no pump) volume | About 1–1.5 gal (3.8–5.7 L) per lettuce plant for the whole crop | UF/IFAS HS1488 |
+| Source water EC | 0.2–0.8 dS/m, ideally below 1 | University of Missouri |
 
-University of Missouri Extension calls source-water testing the only way to determine suitability. Useful analysis includes pH, EC, alkalinity, and individual elements. Alkalinity and dissolved minerals can change how the solution behaves even when a label dose is followed exactly.
+One unit note: 1 mS/cm is the same as 1 dS/m, so the two can be compared directly. Meters that show "ppm" convert EC with a built-in factor that differs between brands, so record EC in mS/cm and check your meter's manual before comparing a ppm reading with a chart.
 
-Record the water source and whether it changed. A new filter, seasonal well-water shift, or change from tap to purified water can matter.
+![Nutrient solution target card. pH 5.5 to 6.5 for most crops, lettuce 5.5 to 6.0. EC 1.2 to 1.8 mS/cm for leafy greens, 1.0 to 1.6 for basil, 2.0 to 3.0 for fruiting crops. Solution temperature 65 to 80 °F (18 to 27 °C). Dissolved oxygen 7 to 10 ppm with 4 ppm the minimum in deep water culture. Check pH and EC daily; replace the tank every 2 to 4 weeks.](/images/guides/nutrient-solution-target-card.svg)
 
-## Separate incompatible concentrates
+*The six numbers to keep a reservoir in range. Figures from University of Missouri, Oklahoma State HLA-6722, UF/IFAS HS1422, University of Tennessee W 844-C, Virginia Tech SPES-466 and University of Kentucky CCD-CP-63.*
 
-Solubility changes with fertilizer and temperature. Penn State warns that concentrated nutrients can precipitate; calcium is commonly kept separate from concentrated phosphates and sulfates. Follow the product’s order and stock-solution instructions exactly.
+## What is in a hydroponic nutrient solution
 
-Never pour separate concentrates together and then add water unless the manufacturer explicitly directs that method. The safer general pattern is water first, one component, thorough mixing, then the next component.
+Penn State Extension lists 17 elements plants need. Carbon, hydrogen and oxygen come from air and water; the other 14, from nitrogen, phosphorus and potassium down to micronutrients such as iron, boron and molybdenum, must be dissolved in the solution, because there is no soil to supply them. That is why a hydroponic solution starts from a fertilizer labeled for hydroponics, with calcium, magnesium and micronutrients listed, not from a garden N-P-K product. The [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) explains what each element does.
 
-## Use label dose as an input, not a recommendation
+### How strong each element is: a worked example
 
-Product formulations are not interchangeable. Read the current label or technical chart for the exact product, crop or stage, water basis, and unit. A rate for one formula cannot be transferred to another.
+UF/IFAS publishes complete elemental targets for hydroponic tomatoes, in parts per million (ppm, the same as mg/L), showing how a solution changes as the crop grows:
 
-HydroRigor’s [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) multiplies a manufacturer-provided liquid dose by reservoir volume after unit conversion. It does not choose the dose, calculate elemental ppm, or predict final EC.
+| Element | Transplant to first cluster | After the fifth cluster |
+| --- | --- | --- |
+| Nitrogen (N) | 70 ppm | 150 ppm |
+| Potassium (K) | 120 ppm | 200 ppm |
+| Phosphorus (P) | 50 ppm | 50 ppm |
+| Calcium (Ca) | 150 ppm | 150 ppm |
+| Magnesium (Mg) | 40 ppm | 50 ppm |
+| Sulfur (S) | 50 ppm | 60 ppm |
 
-## Measure after mixing
+*UF/IFAS HS796 (Hochmuth and Hochmuth), Table 1; intermediate stages step between these values.*
 
-EC reports combined ionic conductivity, while pH describes acidity. Both can support management, but neither identifies every nutrient or proves plant availability. Calibrate and clean probes using the instrument instructions and appropriate standards.
+Ohio State's greenhouse tomato program (HYG-1437, from the University of Arizona's Jensen recipe) runs richer: nitrate-N 90, 120 and 190 ppm, potassium 144, 350 and 350 ppm, and calcium 144, 160 and 200 ppm across its three stages. For a leafy crop, the University of Florida basil study by Solis-Toapanta and colleagues fed 178 mg/L nitrogen. None of our sources gives elemental ppm targets for home lettuce, so for greens the practical control is EC with a complete fertilizer. Tomato details by stage are in [hydroponic nutrients for tomatoes](/nutrients-water/hydroponic-nutrients-for-tomatoes/).
 
-Compare readings only when the sampling and timing are consistent. Record temperature if the instrument or method makes it relevant.
+## Three ways to make a solution
 
-## Use the solution in context
+Penn State Extension groups the options into three approaches. Each trades convenience for control:
 
-Closed recirculating systems reuse solution, so plants and water loss change composition over time. Open systems discharge solution after delivery and raise separate water-use and environmental questions. Organic media can also make the root-zone pH and EC differ from the reservoir.
+| Approach | What it is | Best for |
+| --- | --- | --- |
+| Complete soluble fertilizer | One product, one dose | Simple home systems; Penn State notes it may not suit every situation |
+| Fertilizer program | A base plus supplements, e.g. Penn State's 4-18-38 base with calcium nitrate and magnesium sulfate | Growers who want to adjust by crop and stage |
+| Recipe from single salts | You weigh each salt to hit ppm targets, usually as stock solutions | Larger systems and growers with a water analysis |
 
-Monitor plants, roots, water level, equipment, and recent interventions alongside numbers. Use the [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) for the essential-element foundation and the [pH and EC reference](/tools/ph-ec-targets/) for source-specific crop records.
+**What we recommend for home growers:** a complete two-part (A/B) hydroponic nutrient, dosed from its label. It skips a recipe's arithmetic while keeping calcium apart from phosphates and sulfates. Do not mix parts from different brands; their formulas are not interchangeable.
+
+## Start with the water
+
+Everything already dissolved in your water counts toward the solution. The University of Missouri gives these source-water targets and calls testing the only way to know whether your water is suitable:
+
+| Measure | Target (Missouri) |
+| --- | --- |
+| EC | 0.2–0.8 dS/m, ideally below 1 |
+| pH | 5.5–7.0 |
+| Alkalinity | 40–160 ppm as calcium carbonate |
+| Sodium | Below 50 ppm |
+| Chloride | Below 70 ppm |
+| Calcium | Below 150 ppm |
+| Boron | Below 0.5 ppm |
+
+**Where sources differ:** the University of Tennessee gives 75 ppm as the upper limit for sodium and chloride in fruiting-crop systems, looser than Missouri's 50 ppm sodium. We suggest using Missouri's lower figure for a new setup, since sodium builds up as a recirculating tank is topped up, and treating Tennessee's figure as the point where the water needs replacing or filtering.
+
+Alkalinity is the number beginners miss: above 75 ppm it pushes pH up over time (Oklahoma State), so check pH more often if your water is hard. Well water can carry 40–60 ppm calcium (UF/IFAS), which counts toward a recipe. Ask your utility for its water report or send a jar to a lab; if the water fails the table, filtered or reverse-osmosis water gives a cleaner start.
+
+## How to mix a nutrient solution, step by step
+
+1. **Test or look up your source water** for EC, pH and alkalinity (University of Missouri).
+2. **Fill the reservoir with the full volume of water** first, close to your target temperature, 65–80 °F (18–27 °C) (UF/IFAS).
+3. **Add part A** at the label rate for that volume and stir until it is fully dissolved. Missouri advises dissolving each formulation completely before adding the next. Use the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) to scale a label dose to your reservoir.
+4. **Add part B** (and C, if your program has one) the same way. Never pour concentrate A into concentrate B: Missouri and Penn State explain that concentrated calcium reacts with phosphates and sulfates and forms solids roots cannot use.
+5. **Read EC.** Oklahoma State says to get EC in range first: add concentrate if it is low, dilute with water if it is high.
+6. **Adjust pH last,** in small steps, because adding nutrients or water changes pH. Missouri lists citric or acetic acid as the safest acids to handle; for raising pH, use potassium-based "pH up" and avoid sodium-based bases, which Missouri warns can be toxic to plants.
+7. **Write down** the date, EC, pH, temperature and volume. Those records make every later reading meaningful.
+
+The [how to mix hydroponic nutrients guide](/nutrients-water/how-to-mix-hydroponic-nutrients/) covers the mixing in more detail, including measuring small doses.
+
+### If you mix your own stock solutions
+
+Recipe growers usually make concentrated stocks and dilute them. Ohio State's tomato recipe uses 100X stock solutions, meaning each liter of stock is diluted into 100 liters of final solution, with calcium nitrate in one tank and the potassium, phosphate and magnesium salts in the other. Penn State's example keeps calcium nitrate in one stock tank and the 4-18-38 base with magnesium sulfate in the other, to avoid precipitates that clog drip lines. Solubility depends on the compound and temperature (Penn State), so keep to a published recipe's stock strengths.
+
+## EC and pH by crop
+
+Oklahoma State's chart gives a range for each crop. The ones home growers ask about most:
+
+| Crop | EC (mS/cm) | pH |
+| --- | --- | --- |
+| Basil | 1.0–1.6 | 5.5–6.0 |
+| Lettuce | 1.2–1.8 | 6.0–7.0 |
+| Spinach | 1.8–2.3 | 6.0–7.0 |
+| Strawberry | 1.8–2.2 | 6.0 |
+| Tomato | 2.0–4.0 | 6.0–6.5 |
+
+**Two source conflicts worth knowing.** For lettuce pH, Oklahoma State's 6.0–7.0 sits higher than the University of Kentucky's 5.5–6.0 and UF/IFAS's 5.5–6 for Kratky lettuce. We suggest 5.5–6.0, the range both lettuce-specific sources agree on, and it overlaps Missouri's 5.5–6.5 rule of thumb. For strawberries, the University of Arizona's controlled-environment program runs EC at or below 1.0 with pH 5.5–6.0, far weaker than Oklahoma State's 1.8–2.2. The [hydroponic strawberries guide](/crops/hydroponic-strawberries/) uses Arizona's crop-specific figure. Every crop is in the [pH and EC target table](/tools/ph-ec-targets/).
+
+## Temperature and oxygen in the solution
+
+Roots need oxygen from the water as much as they need nutrients. In deep water culture, Virginia Tech gives 7–10 ppm dissolved oxygen with 4 ppm as the minimum, the University of Kentucky gives 6–8 ppm, and UF/IFAS gives 5 mg/L (the same unit as ppm). All sit above Virginia Tech's 4 ppm floor, so run an air pump and stone nonstop wherever roots sit in solution. A study by Sato and colleagues cites older research finding that oxygen below 8 mg/L reduces calcium, potassium and phosphorus uptake, one reason growers aim for the top of the range.
+
+Warm water holds less oxygen. UF/IFAS gives 65–80 °F (18–27 °C) for small lettuce systems and Oklahoma State about 72–75 °F (22–24 °C). In Sato's NFT trial a tank averaging 28.3 °C (83 °F) was too warm for lettuce roots. Keep the reservoir out of direct sun, in an opaque tank so algae cannot grow.
+
+## Keeping the solution in range
+
+![Reading nutrient solution drift. If EC is high, add plain water to dilute it. If EC is low, add concentrate at the label ratio. Fix EC first, then pH. If pH is out of range after EC is right, adjust in small steps. Top up every few days as the level drops. Replace the whole tank every 2 to 4 weeks, or sooner if readings will not settle.](/images/guides/nutrient-solution-drift-actions.svg)
+
+*What to do when a daily reading drifts. Actions from Oklahoma State HLA-6722 and the University of Kentucky; replacement range from Kentucky, Oklahoma State and the University of Tennessee.*
+
+Plants take up water and nutrients at different rates, so the solution changes every day. Oklahoma State's rule is to check pH and EC daily, at the same time, and to fix EC before pH: **if EC is high, dilute with water; if it is low, add concentrate.** A rising EC as the level drops usually means plants are drinking faster than they feed; a falling EC means the reverse. Penn State warns against fixing a problem by adding single nutrients by guesswork, because too much of one, such as potassium, can block uptake of another, such as calcium or magnesium.
+
+### Top up or replace?
+
+This is where the sources differ most:
+
+| Source | Advice |
+| --- | --- |
+| University of Kentucky (lettuce) | Top up every few days; replace every 3–4 weeks |
+| Oklahoma State HLA-6722 | Replace completely about every two weeks |
+| University of Tennessee (fruiting crops) | Change small recirculating tanks every one to two weeks; top up with source water or concentrate |
+| Solis-Toapanta et al. 2020 (basil) | Topping up without replacing gave the same growth as replacing; indoors, EC rose to 5.5 dS/m by week 6 without reducing growth |
+
+**What we recommend:** top up with plain water or dilute solution every few days, and replace the whole tank every 2–4 weeks: closer to 2 weeks for big fruiting plants in small tanks, where Tennessee notes imbalances come faster, and up to 3–4 weeks for lettuce, as Kentucky allows. The basil study shows topping up can work for a short leafy crop, but it covered one crop in 2 gal (7.6 L) units, so we would not stretch it to tomatoes. Replace sooner if EC or pH will not settle, the solution smells or roots turn brown.
+
+### Kratky: the solution you never top up
+
+In the Kratky method all the solution goes in at the start and is not circulated. UF/IFAS gives about 1–1.5 gal (3.8–5.7 L) of solution per lettuce plant from seed to harvest, at EC about 1250 µS/cm (1.25 mS/cm) and pH 5.5–6. As the level drops, an air gap opens and the upper roots take oxygen from the air, so do not refill to the brim. Kratky suits lettuce and herbs; UF/IFAS notes that fruiting crops do better in other methods.
+
+## Look after the meters
+
+A drifting meter gives wrong numbers that look right. Calibrate pH with 4.01 and 7.01 buffers and EC with a 1.41 mS/cm standard, and rinse the probe with distilled water between readings (Michigan State). Calibrate the pH meter weekly, store the probe in storage solution or pH 4 buffer, never plain water, and expect it to last 1–2 years (University of Missouri).
+
+## Troubleshooting a nutrient solution
+
+| Problem | Likely cause | What to do | Source |
+| --- | --- | --- | --- |
+| White crust or cloudy solution after mixing | Calcium mixed with phosphate or sulfate concentrate | Remix: water first, one part at a time | University of Missouri; Penn State |
+| EC climbs day after day | Plants drinking more water than nutrients; warm room | Dilute with water; replace if it keeps rising | Oklahoma State |
+| EC keeps falling | Plants using nutrients quickly | Add concentrate at the label ratio | Oklahoma State |
+| pH creeps up | High-alkalinity source water | Check pH more often; consider filtered or RO water | Oklahoma State; University of Missouri |
+| Yellowing between veins on new leaves | Iron shortage, often caused by high pH | Bring pH back into range | Penn State |
+| Brown, slimy roots in DWC | Low dissolved oxygen or warm solution | Check the air pump; aim for 7–10 ppm; keep 65–80 °F | Virginia Tech; UF/IFAS |
+| Wilting with wet roots, burned leaf edges | Solution too strong | Dilute or replace the solution | Penn State |
+| Readings jump between days | Meter out of calibration or dry probe | Calibrate with fresh buffers and standard | Michigan State; University of Missouri |
+
+For problems in a specific system, the [deep water culture guide](/systems/deep-water-culture-hydroponics/) covers air pumps and root rot, and the [hydroponic lettuce guide](/crops/hydroponic-lettuce/) covers tipburn and bolting.
+
+## Frequently asked questions
+
+### What is the best nutrient solution for hydroponics?
+
+A complete hydroponic fertilizer that lists calcium, magnesium and micronutrients, in water that meets Missouri's targets, run at your crop's EC and pH. A two-part (A/B) product suits most home growers. For organic options and their limits, see [organic hydroponic nutrients](/nutrients-water/organic-hydroponic-nutrients/).
+
+### How do I know if my nutrient solution is too strong?
+
+Measure EC. Above your crop's range (for example, above 1.8 mS/cm for lettuce) the solution is too strong; Penn State lists wilting with wet roots and burned leaf edges as signs of excess salts. Dilute with water and re-read.
+
+### How often should I change hydroponic nutrient solution?
+
+Every 2–4 weeks for most home reservoirs, topping up in between. Kentucky allows 3–4 weeks for lettuce, Oklahoma State suggests about two weeks, and Tennessee suggests one to two weeks for small tanks of fruiting crops.
+
+### Can I just top up instead of changing the solution?
+
+For a short leafy crop, sometimes: in the 2020 basil study, topping up gave the same growth as replacing. Most extension guides still recommend a full change every few weeks. Our reasoning for following them: whatever plants do not take up, such as sodium from the water, stays behind and concentrates as the tank is topped up.
+
+### What temperature should a hydroponic nutrient solution be?
+
+65–80 °F (18–27 °C) by UF/IFAS, with Oklahoma State targeting about 72–75 °F (22–24 °C). Warmer water holds less oxygen.
+
+## Next steps
+
+Look up your crop in the [pH and EC target table](/tools/ph-ec-targets/), scale your label dose with the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/), and read the [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/) for deficiency symptoms. Growing herbs? The [hydroponic basil guide](/crops/hydroponic-basil/) gives basil's own solution numbers.
+
+*This guide summarizes the university extension and peer-reviewed sources listed below. Always follow your nutrient manufacturer's label for doses. HydroRigor has not run its own nutrient trial for this guide.*

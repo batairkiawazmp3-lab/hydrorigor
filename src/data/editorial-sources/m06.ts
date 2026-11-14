@@ -25,7 +25,7 @@ export const m06EditorialSources = [
     url: 'https://extension.missouri.edu/publications/g6984',
     accessedDate: '2026-09-12',
     sourceType: 'university-extension',
-    locator: 'Water quality, preparation, measurement, and nutrient-solution management',
+    locator: 'Water quality: source-water EC 0.2–0.8 dS/m (ideally below 1), pH 5.5–7.0, alkalinity 40–160 ppm CaCO3, sodium below 50 ppm, chloride below 70 ppm, calcium below 150 ppm, boron below 0.5 ppm; testing the only way to determine suitability; solution pH 5.5–6.5 rule of thumb; calcium reacts with phosphate and sulfate to form insoluble solids, dissolve each formulation completely before combining; EC gives the total, not nutrient balance; acids (citric or acetic safest, nitric most hazardous), avoid sodium-based bases; calibrate pH weekly with pH 4 and 7 buffers, store probe in storage solution or pH 4 buffer, probe life 1–2 years; avoid pH strips (fertilizer dyes)',
   },
   {
     id: 'uga-home-hydroponics',
@@ -268,7 +268,7 @@ export const m06EditorialSources = [
     url: 'https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes',
     accessedDate: '2026-11-06',
     sourceType: 'university-extension',
-    locator: 'Fertilizer programs: tomato example with a 4-18-38 base supplemented with calcium nitrate and magnesium sulfate by variety and stage; Nutrient solution concentration and fertilizer compatibility: two stock tanks keep calcium apart from phosphates and sulfates to avoid precipitates that clog drip lines',
+    locator: 'Three approaches (fertilizer programs, recipes, complete soluble fertilizers; a single complete fertilizer may not suit every situation); fertilizer solubility varies by compound and temperature; Fertilizer programs: tomato example with a 4-18-38 base supplemented with calcium nitrate and magnesium sulfate by variety and stage; Nutrient solution concentration and fertilizer compatibility: two stock tanks keep calcium apart from phosphates and sulfates to avoid precipitates that clog drip lines',
   },
   {
     id: 'psu-plant-nutrition',
@@ -277,7 +277,7 @@ export const m06EditorialSources = [
     url: 'https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess',
     accessedDate: '2026-09-12',
     sourceType: 'university-extension',
-    locator: 'Essential nutrients, availability, monitoring, deficiency, and soluble salts',
+    locator: 'Essential nutrients: 17 elements, carbon, hydrogen and oxygen from air and water, 14 from the solution; deficiency and excess symptoms (iron chlorosis on new leaves often from high pH; excess salts cause wilting with wet roots and burned edges); antagonisms such as excess potassium reducing calcium or magnesium uptake',
   },
   {
     id: 'osu-ph-ec-guide',
@@ -286,7 +286,7 @@ export const m06EditorialSources = [
     url: 'https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics',
     accessedDate: '2026-11-06',
     sourceType: 'university-extension',
-    locator: 'HLA-6722 Table 2: tomato EC 2.0–4.0 mS/cm, pH 6.0–6.5; lettuce EC 1.2–1.8, pH 6.0–7.0; basil EC 1.0–1.6, pH 5.5–6.0; spinach EC 1.8–2.3, pH 6.0–7.0; strawberry EC 1.8–2.2, pH 6; broccoli EC 2.8–3.5, pH 6.0–6.8; kale and Swiss chard not listed; check pH and EC daily at the same time; adjust pH only after EC is in range; dilute with water if EC is high, add concentrate if low; pH adjusters; test source water for pH, EC and alkalinity; alkalinity above 75 ppm raises pH',
+    locator: 'HLA-6722: replace the solution about every two weeks; water temperature about 72–75 °F (22–24 °C); Table 2: tomato EC 2.0–4.0 mS/cm, pH 6.0–6.5; lettuce EC 1.2–1.8, pH 6.0–7.0; basil EC 1.0–1.6, pH 5.5–6.0; spinach EC 1.8–2.3, pH 6.0–7.0; strawberry EC 1.8–2.2, pH 6; broccoli EC 2.8–3.5, pH 6.0–6.8; kale and Swiss chard not listed; check pH and EC daily at the same time; adjust pH only after EC is in range; dilute with water if EC is high, add concentrate if low; pH adjusters; test source water for pH, EC and alkalinity; alkalinity above 75 ppm raises pH',
   },
   {
     id: 'usda-organic-certification',

@@ -1,6 +1,6 @@
 # Current Handoff
 
-Updated: 2026-11-12
+Updated: 2026-11-14
 
 ## State
 
@@ -77,6 +77,8 @@ Updated: 2026-11-12
 
 Guides published by automated runs under `HydroRigor Editorial`. When Najeeb has read one
 and approves, switch its byline to `Najeeb`.
+
+- `/nutrients-water/hydroponic-nutrient-solution/` — "Hydroponic Nutrient Solution: pH, EC, Mixing & Changing" (rebuild, 2026-11-14). Direct answer with targets (pH, EC by crop group, solution temperature, dissolved oxygen, check and replace intervals), quick-answer table, worked elemental ppm example (UF/IFAS HS796 tomato; Ohio State HYG-1437), three ways to make a solution (Penn State), source-water table, step-by-step mixing and 100X stocks, EC/pH by crop, temperature and oxygen, top-up versus replace, Kratky volume, meters, troubleshooting and FAQ; two new diagrams (target card; drift actions). Source conflicts shown and resolved: sodium limit (Missouri 50 ppm vs Tennessee 75 ppm), lettuce pH (Oklahoma State 6.0–7.0 vs Kentucky and UF/IFAS 5.5–6.0), strawberry EC (Arizona ≤1.0 vs Oklahoma State 1.8–2.2), replacement interval (Kentucky 3–4 weeks, Oklahoma State 2 weeks, Tennessee 1–2 weeks, basil study: topping up matched replacing), dissolved oxygen (VT 7–10, Kentucky 6–8, UF/IFAS 5). No source here gives elemental ppm targets for home lettuce or a meter ppm conversion factor; the page says so. Web pages could not be opened in this run (fetch permission timed out), so every figure comes from 15 registered sources; locators for Missouri G6984, Oklahoma State HLA-6722 and the two Penn State pages were expanded to list the figures already used on the owner-reviewed nutrients guide. Photo kept (lab glassware). Pinterest row: `docs/marketing/pinterest/pins-nutrient-solution-2026-11-16.csv`.
 
 - `/crops/hydroponic-lettuce-systems/` — "Hydroponic Lettuce Systems: NFT vs DWC vs Kratky Compared" (rebuild, 2026-11-12). Answer by number of plants (Kratky 1–3, DWC raft for a tray, NFT for rows), system comparison table, NFT numbers (slope, flow, length, heat and oxygen along the run) for "nutrient film hydroponic system", DLI-versus-yield table, step-by-step, troubleshooting and FAQ; two new diagrams (three-system cross-section; NFT channel numbers). Source conflicts shown and resolved on the page: NFT slope (Purdue 1:100 vs Oregon State 2% minimum; page suggests 2%), DWC oxygen (VT 7–10, Kentucky 6–8, UF/IFAS 5), lettuce DLI (Kentucky 12–17, Purdue 15–20, VT 17+), root-zone temperature (Sato's cited 13–18 °C vs UF/IFAS 65–80 °F). No source gives a home NFT plant spacing; the page says so. Web pages could not be opened in this run (fetch permission timed out), so every figure comes from 17 registered sources. Photo kept. Pinterest row: `docs/marketing/pinterest/pins-lettuce-systems-2026-11-14.csv`.
 

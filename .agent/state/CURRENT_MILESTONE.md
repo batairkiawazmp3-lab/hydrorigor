@@ -81,7 +81,7 @@ impressions in 28 days).
 14. [x] `/best/hydroponic-systems-for-beginners/` — rebuilt 2026-11-12 ("Best Hydroponic System for Beginners: What to Start With"). Search Console: 6 impressions, position 46.5.
 15. [x] `/crops/hydroponic-lettuce-systems/` — rebuilt 2026-11-12 ("Hydroponic Lettuce Systems: NFT vs DWC vs Kratky Compared"). "nutrient film hydroponic system" 1,300 / 30;
         hydroponic lettuce systems (1,000, difficulty 28).
-16. [ ] `/nutrients-water/hydroponic-nutrient-solution/` — rebuild. "hydroponic nutrients solution" 720 / 25.
+16. [x] `/nutrients-water/hydroponic-nutrient-solution/` — rebuilt 2026-11-14 ("Hydroponic Nutrient Solution: pH, EC, Mixing & Changing"). "hydroponic nutrients solution" 720 / 25.
 17. [ ] New guide, plan ID 28: Kratky hydroponics (supports the Kratky sections of three rebuilt guides).
 18. [ ] New guide, plan ID 66: pH meters for hydroponics — "ph meter hydroponics" 590 / 15,
         "digital ph meter hydroponics" 140 / 14. Publish as a how-to-choose guide; add named
