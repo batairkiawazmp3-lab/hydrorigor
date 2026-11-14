@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1150" width="640" height="1150" role="img" aria-labelledby="t d">
+  <title id="t">Choose hydroponic tomato seed by the space you have</title>
+  <desc id="d">Four sizes. Micro-dwarf such as Micro-Tom or Micro-Tina: 4 to 10 inches tall in a 1-liter pot, first fruit color 71 to 100 days from seeding (UF/IFAS trials). Compact indoor such as Tiny Tim, Terenzo or Lizzano: 1 to 2 feet across, 1-gallon pot for the smallest, 2 to 3 gallons for larger ones (Utah State). Determinate bush, common in home gardens: stops growing once flowers form at the stem tips and fruits over a shorter period (UF/IFAS). Indeterminate greenhouse type such as Trust: keeps growing and fruiting on one stem trained up a string; most greenhouse cultivars are indeterminate (Tennessee, UF/IFAS).</desc>
+  <rect width="640" height="1150" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Pick seed by your space</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Smallest at the top</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(UF/IFAS, Utah State, Tennessee)</text>
+    <rect x="20" y="170" width="600" height="214" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="170" width="14" height="214" rx="7" fill="#2E8B57"/>
+    <text x="56" y="214" font-size="26" font-weight="800" fill="#0E1A14">Micro-dwarf</text>
+    <text x="56" y="248" font-size="21" font-weight="800" fill="#0F6B4F">Micro-Tom, Micro-Tina</text>
+    <text x="56" y="284" font-size="21" fill="#3F5248">4–10 in tall, 1-liter pot</text>
+    <text x="56" y="314" font-size="21" fill="#3F5248">First color 71–100 days</text>
+    <text x="56" y="356" font-size="21" font-weight="800" fill="#5B6F64">Fits: Countertop units</text>
+    <rect x="20" y="400" width="600" height="214" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="400" width="14" height="214" rx="7" fill="#7FB069"/>
+    <text x="56" y="444" font-size="26" font-weight="800" fill="#0E1A14">Compact indoor</text>
+    <text x="56" y="478" font-size="21" font-weight="800" fill="#0F6B4F">Tiny Tim, Terenzo, Lizzano</text>
+    <text x="56" y="514" font-size="21" fill="#3F5248">1–2 ft across</text>
+    <text x="56" y="544" font-size="21" fill="#3F5248">1–3 gallon container</text>
+    <text x="56" y="586" font-size="21" font-weight="800" fill="#5B6F64">Fits: Windowsill, small buckets</text>
+    <rect x="20" y="630" width="600" height="214" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="630" width="14" height="214" rx="7" fill="#E0A23B"/>
+    <text x="56" y="674" font-size="26" font-weight="800" fill="#0E1A14">Determinate bush</text>
+    <text x="56" y="708" font-size="21" font-weight="800" fill="#0F6B4F">Common in home gardens</text>
+    <text x="56" y="744" font-size="21" fill="#3F5248">Stops at its own height</text>
+    <text x="56" y="774" font-size="21" fill="#3F5248">Fruits over a short period</text>
+    <text x="56" y="816" font-size="21" font-weight="800" fill="#5B6F64">Fits: Buckets with a cage</text>
+    <rect x="20" y="860" width="600" height="214" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="860" width="14" height="214" rx="7" fill="#D1603D"/>
+    <text x="56" y="904" font-size="26" font-weight="800" fill="#0E1A14">Indeterminate</text>
+    <text x="56" y="938" font-size="21" font-weight="800" fill="#0F6B4F">Greenhouse types, e.g. Trust</text>
+    <text x="56" y="974" font-size="21" fill="#3F5248">Keeps growing; one stem</text>
+    <text x="56" y="1004" font-size="21" fill="#3F5248">Needs a string and wire</text>
+    <text x="56" y="1046" font-size="21" font-weight="800" fill="#5B6F64">Fits: Dutch buckets, tall room</text>
+    <text x="20" y="1128" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

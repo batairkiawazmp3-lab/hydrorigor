@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1060" width="640" height="1060" role="img" aria-labelledby="t d">
+  <title id="t">Starting hydroponic tomato seed: from sowing to first fruit</title>
+  <desc id="d">Timeline. Day 0: sow in cubes at least 1.5 inches, 10 to 15 percent extra, kept moist at 75 to 85 °F (24 to 29 °C); above 90 °F germination falls. Cotyledons open: feed half strength, EC 0.5 to 1.0 mS/cm. Transplant at 2 to 4 weeks (Tennessee) or 4 to 6 weeks at 4 to 6 inches tall (Alabama), with EC raised to 1.0 to 1.5. First ripe fruit about 90 to 120 days from seed for standard tomatoes (Tennessee); micro-dwarfs showed first fruit color 71 to 100 days from seeding (UF/IFAS).</desc>
+  <rect width="640" height="1060" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Seed to first fruit</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Standard and micro-dwarf tomatoes</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(Tennessee, Alabama, UF/IFAS)</text>
+    <path d="M56 178 L56 880" stroke="#9BD1A9" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="56" cy="178" r="17" fill="#0E1A14"/><circle cx="56" cy="178" r="7" fill="#C6F35E"/>
+    <text x="92" y="186" font-size="21" font-weight="800" fill="#0F6B4F">Day 0</text>
+    <text x="92" y="220" font-size="24" font-weight="800" fill="#0E1A14">Sow in 1.5-in cubes</text>
+    <text x="92" y="252" font-size="21" fill="#3F5248">75–85 °F (24–29 °C)</text>
+    <text x="92" y="280" font-size="21" fill="#3F5248">Sow 10–15% extra</text>
+    <circle cx="56" cy="360" r="17" fill="#0E1A14"/><circle cx="56" cy="360" r="7" fill="#C6F35E"/>
+    <text x="92" y="368" font-size="21" font-weight="800" fill="#0F6B4F">Leaves open</text>
+    <text x="92" y="402" font-size="24" font-weight="800" fill="#0E1A14">Feed half strength</text>
+    <text x="92" y="434" font-size="21" fill="#3F5248">EC 0.5–1.0 mS/cm</text>
+    <circle cx="56" cy="500" r="17" fill="#0E1A14"/><circle cx="56" cy="500" r="7" fill="#C6F35E"/>
+    <text x="92" y="508" font-size="21" font-weight="800" fill="#0F6B4F">2–6 weeks</text>
+    <text x="92" y="542" font-size="24" font-weight="800" fill="#0E1A14">Transplant</text>
+    <text x="92" y="574" font-size="21" fill="#3F5248">EC up to 1.0–1.5</text>
+    <text x="92" y="602" font-size="21" fill="#3F5248">Alabama: 4–6 in tall</text>
+    <circle cx="56" cy="690" r="17" fill="#0E1A14"/><circle cx="56" cy="690" r="7" fill="#C6F35E"/>
+    <text x="92" y="698" font-size="21" font-weight="800" fill="#0F6B4F">71–100 days</text>
+    <text x="92" y="732" font-size="24" font-weight="800" fill="#0E1A14">Micro-dwarf color</text>
+    <text x="92" y="764" font-size="21" fill="#3F5248">First fruit coloring</text>
+    <circle cx="56" cy="840" r="17" fill="#0E1A14"/><circle cx="56" cy="840" r="7" fill="#C6F35E"/>
+    <text x="92" y="848" font-size="21" font-weight="800" fill="#0F6B4F">90–120 days</text>
+    <text x="92" y="882" font-size="24" font-weight="800" fill="#0E1A14">Standard first fruit</text>
+    <text x="92" y="914" font-size="21" fill="#3F5248">Ripe fruit from seed</text>
+    <rect x="20" y="950" width="600" height="56" rx="14" fill="#FBE9D7"/>
+    <text x="44" y="986" font-size="21" font-weight="800" fill="#0E1A14">Above 90 °F (32 °C) germination falls</text>
+    <text x="20" y="1038" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
