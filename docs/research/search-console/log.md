@@ -17,6 +17,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-14 | /best/hydroponic-ph-meter/ | New guide (ph meter hydroponics 590 / 15) | 2026-11-28, 2026-12-12 |
 | 2026-11-13 | /nutrients-water/hydroponic-nutrients-for-vegetables/ | 3 new internal links (nutrients, nutrient solution, lettuce guides); before: 13 impressions, position 57.6 (Nov 1–10) | 2026-11-27 |
 | 2026-11-13 | /nutrients-water/organic-hydroponic-nutrients/ | 1 new internal link (nutrient solution guide); before: 10 impressions, position 36.5 (Nov 1–10) | 2026-11-27 |
 | 2026-11-13 | /reviews/masterblend-hydroponic-nutrients/ | 1 new internal link (powder vs liquid guide); before: 14 impressions, position 9.8 (Nov 1–10) | 2026-11-27 |

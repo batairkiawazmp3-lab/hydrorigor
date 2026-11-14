@@ -75,6 +75,19 @@ export const phase2ContentItems: readonly ContentItem[] = [
     metricStatus: 'NOT_MEASURED',
     sourceIds: ['ifas-kratky-set-and-forget', 'kratky-noncirculating-lettuce', 'ctahr-kratky-vc1', 'kratky-suspended-pot-2004', 'uky-hydroponic-lettuce', 'osu-hydro-hints-dwc', 'osu-hydro-hints-nft'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },  {
+    id: 66,
+    collection: 'articles',
+    category: 'best',
+    title: 'pH Meter for Hydroponics: How to Choose & Calibrate',
+    route: 'hydroponic-ph-meter',
+    primaryIntent: 'commercial research',
+    primaryTopic: 'ph meter hydroponics',
+    metricStatus: 'UBERSUGGEST_2026-11-06',
+    volume: 590,
+    seoDifficulty: 15,
+    sourceIds: ['umass-ph-ec-pens', 'msu-calibrate-ph-ec', 'purdue-inhouse-ph-ec', 'osu-ph-ec-guide', 'uky-monitoring-ph-ec'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
 ];
 

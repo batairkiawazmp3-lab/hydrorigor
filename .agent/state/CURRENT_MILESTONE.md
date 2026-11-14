@@ -83,9 +83,9 @@ impressions in 28 days).
         hydroponic lettuce systems (1,000, difficulty 28).
 16. [x] `/nutrients-water/hydroponic-nutrient-solution/` — rebuilt 2026-11-13 ("Hydroponic Nutrient Solution: ppm, EC, pH & When to Change"). "hydroponic nutrients solution" 720 / 25.
 17. [x] New guide `/systems/kratky-hydroponics/` (plan ID 28) — published 2026-11-13 ("Kratky Hydroponics: No-Pump Setup, Air Gap & Crops"); linked from five guides.
-18. [ ] New guide, plan ID 66: pH meters for hydroponics — "ph meter hydroponics" 590 / 15,
-        "digital ph meter hydroponics" 140 / 14. Publish as a how-to-choose guide; add named
-        picks only after an affiliate programme is approved.
+18. [x] New guide `/best/hydroponic-ph-meter/` (plan ID 66) — published 2026-11-14 ("pH Meter for
+        Hydroponics: How to Choose & Calibrate"). "ph meter hydroponics" 590 / 15. No named picks;
+        add them only after an affiliate programme is approved.
 19. [ ] `/crops/hydroponic-tomato-seeds/` — rebuild. hydroponic tomatoes seeds (480, difficulty 16).
 20. [ ] `/nutrients-water/organic-hydroponic-nutrients/` — rebuild. "organic hydroponic nutrients" 390 / 18.
 21. [ ] `/systems/smart-indoor-hydroponic-systems/` — rebuild ("click and grow" 5,400 / 35 is the

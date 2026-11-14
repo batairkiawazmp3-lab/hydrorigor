@@ -62,4 +62,5 @@ test('the Phase 2+ plan lists plan IDs 26–100 with unique routes per collectio
   assert.deepEqual(keys.filter((key) => existing.has(key)), [], 'proposed routes must not reuse a launch guide file');
   assert.match(plan, /\| 41 \| Stage 3 \| crops \| articles \| Hydroponic Basil: pH, EC, Light & Harvest Guide .*`hydroponic-basil`/u);
   assert.match(plan, /\| 28 \| Stage 3 \| systems \| articles \| Kratky Hydroponics: No-Pump Setup, Air Gap & Crops .*`kratky-hydroponics`/u);
+  assert.match(plan, /\| 66 \| Stage 3 \| best \| articles \| pH Meter for Hydroponics: How to Choose & Calibrate .*`hydroponic-ph-meter`/u);
 });

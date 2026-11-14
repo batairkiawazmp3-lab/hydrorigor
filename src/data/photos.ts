@@ -111,6 +111,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-basil': 'diy-pvc-nft-frame',
   // No Kratky bucket or jar photo in the registry yet; lettuce in net pots until an owner or Unsplash photo is added.
   'kratky-hydroponics': 'lettuce-net-pots-clay',
+  // No photo of a pH meter in the registry yet; a measuring beaker until an owner or Unsplash photo is added.
+  'hydroponic-ph-meter': 'beaker-measure',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
