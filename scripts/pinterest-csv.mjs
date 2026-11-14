@@ -24,14 +24,26 @@ export const HEADER = ['Title', 'Media URL', 'Pinterest board', 'Thumbnail', 'De
 export const MIN_WORDS = 1500;
 const UTM = 'utm_source=pinterest&utm_medium=social&utm_campaign=guide-pins';
 
-/** Keyword-rich board names, one per section. */
+/**
+ * Boards that already exist on the HydroRigor Pinterest account (checked 2026-11-14). Pinterest
+ * creates a board for any new name, so keep to these unless the owner adds one.
+ */
 export const BOARDS = {
   systems: { board: 'Hydroponic Systems & DIY Builds', keyword: 'hydroponic system' },
-  crops: { board: 'Grow Vegetables & Herbs Hydroponically', keyword: 'grow vegetables indoors' },
-  'nutrients-water': { board: 'Hydroponic Nutrients, pH & EC', keyword: 'hydroponic nutrients' },
-  best: { board: 'Choosing a Hydroponic System', keyword: 'best hydroponic system' },
-  reviews: { board: 'Hydroponic Nutrients, pH & EC', keyword: 'hydroponic nutrients' },
+  crops: { board: 'Hydroponic Lettuce & Greens', keyword: 'grow vegetables indoors' },
+  'nutrients-water': { board: 'Hydroponic Nutrients & pH', keyword: 'hydroponic nutrients' },
+  best: { board: 'Hydroponic Systems & DIY Builds', keyword: 'best hydroponic system' },
+  reviews: { board: 'Hydroponic Nutrients & pH', keyword: 'hydroponic nutrients' },
 };
+
+/** The board for one guide: tomato, nutrient and meter guides go to their topic board whatever their section. */
+export function boardFor(section, route) {
+  const base = BOARDS[section] ?? BOARDS.systems;
+  if (/nutrient|ph-meter/u.test(route)) return { ...base, board: BOARDS['nutrients-water'].board };
+  if (section === 'crops' && /tomato/u.test(route)) return { ...base, board: 'Hydroponic Tomatoes' };
+  if (section === 'crops' && /strawberr/u.test(route)) return { ...base, board: BOARDS.systems.board };
+  return base;
+}
 
 const csvCell = (value) => (/[",\n]/u.test(value) ? `"${value.replace(/"/gu, '""')}"` : value);
 
@@ -61,7 +73,7 @@ export function pinRows({ start, perDay = 1, only } = {}) {
   return guides.map(({ item, file }, index) => {
     const path = getContentPath(item);
     const section = path.split('/')[1];
-    const { board, keyword } = BOARDS[section] ?? BOARDS.systems;
+    const { board, keyword } = boardFor(section, item.route);
     const description = file.frontmatter.match(/^description:\s*"(.*)"\s*$/mu)?.[1] ?? '';
     const media = `/pins/${item.route}.jpg`;
     if (!existsSync(`public${media}`)) throw new Error(`Missing pin image public${media}; run npm run images:share`);
