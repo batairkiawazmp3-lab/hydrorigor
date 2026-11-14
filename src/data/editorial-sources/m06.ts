@@ -621,6 +621,24 @@ export const m06EditorialSources = [
     sourceType: 'university-extension',
     locator: 'Portable, affordable units are available and very accurate; units with automatic calibration and temperature compensation are desirable; calibrate to the pH range being tested; store instruments and solutions at room temperature in a low-humidity room, never in the greenhouse or outside',
   },
+  {
+    id: 'ctahr-kratky-vc1',
+    title: 'A Suspended Net-Pot, Non-Circulating Hydroponic Method for Commercial Production of Leafy, Romaine, and Semi-Head Lettuce (VC-1)',
+    publisher: 'University of Hawai‘i CTAHR (B.A. Kratky), September 2010',
+    url: 'https://www3.ctahr.hawaii.edu/oc/freepubs/pdf/vc-1.pdf',
+    accessedDate: '2026-11-07',
+    sourceType: 'university-extension',
+    locator: 'Tanks filled with 1.5–2 gallons of nutrient solution per plant before planting (50-head tank about 75–100 gallons); lower ½–1 inch of each net pot in the solution at transplanting; moist air space and "oxygen roots"; never raise the solution level, do not lift the cover; if the tank will run dry add about ½–1 inch of water or half-strength solution; two stocks (8-15-36 with magnesium sulfate; calcium nitrate) mixed to EC 1.5 mS, 1.2–1.5 in hot weather, 1.6–2.0 in cool weather, wary over 2.0, avoid over 3.0; pH 5.5–6.5, below 4.0 or above 7.0 abnormal; ½–1-inch polystyrene cover with 2-inch holes, painted white; tank depth 5½ inches; harvest about 4–6 weeks after transplanting 1–3-week-old seedlings; lettuce best at 60–70 °F, seed thermodormancy from 82 °F; crops list; tomatoes and cucumbers not suited; rain and mosquito problems',
+  },
+  {
+    id: 'kratky-suspended-pot-2004',
+    title: 'A Suspended Pot, Non-circulating Hydroponic Method (Acta Horticulturae 648:83–89)',
+    publisher: 'University of Hawai‘i CTAHR (B.A. Kratky), 2004',
+    url: 'https://www3.ctahr.hawaii.edu/hawaii/downloads/A_Suspended_Pot_Non-circulating_Hydroponic_Method.pdf',
+    accessedDate: '2026-11-07',
+    sourceType: 'university-research',
+    locator: 'Home bottle method: 4-litre plastic bottle, 7.5-cm net pot, lower 3 cm of the pot in the solution at the start; 5 g of 10-8-22 hydroponic fertilizer in 4 L gives EC 1.5 mS; lettuce ready about 6 weeks from seeding; level usually drops 15–25 cm; a 200-gram lettuce plant uses about 3–4 L; no solution added during the crop; raising the level more than 2 cm after the air gap forms may injure plants; cover or darken the bottle against algae; bottle method suits only short crops like lettuce',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

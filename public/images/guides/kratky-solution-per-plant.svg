@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 860" width="640" height="860" role="img" aria-labelledby="t d">
+  <title id="t">Nutrient solution per lettuce plant in the Kratky method, by source</title>
+  <desc id="d">Range chart of how much nutrient solution one lettuce plant needs for a whole Kratky crop. UF/IFAS 5-gallon bucket: 1 to 1.5 gallons. Kratky's VC-1 tank method: 1.5 to 2 gallons. Kratky's 2004 4-liter bottle: 3 to 4 liters, about 0.8 to 1.1 gallons, for a 200-gram head. Kratky's lettuce trials: 3 to 6 liters, about 0.8 to 1.6 gallons. All of it is added before planting.</desc>
+  <rect width="640" height="860" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Solution per lettuce plant</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Whole crop, added before planting.</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">Gallons; 1 gal is about 3.8 L.</text>
+    <path d="M40 140 L40 520" stroke="#CFD8D2" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="40" y="552" font-size="20" fill="#3F5248" text-anchor="middle">0</text>
+    <path d="M155.0 140 L155.0 520" stroke="#CFD8D2" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="155.0" y="552" font-size="20" fill="#3F5248" text-anchor="middle">0.5</text>
+    <path d="M270 140 L270 520" stroke="#CFD8D2" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="270" y="552" font-size="20" fill="#3F5248" text-anchor="middle">1</text>
+    <path d="M385.0 140 L385.0 520" stroke="#CFD8D2" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="385.0" y="552" font-size="20" fill="#3F5248" text-anchor="middle">1.5</text>
+    <path d="M500 140 L500 520" stroke="#CFD8D2" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="500" y="552" font-size="20" fill="#3F5248" text-anchor="middle">2 gal</text>
+    <text x="40" y="172" font-size="21" fill="#0E1A14" stroke="#F5F7F2" stroke-width="8" paint-order="stroke">5-gallon bucket (UF/IFAS)</text>
+    <rect x="270" y="184" width="115" height="30" rx="4" fill="#0F6B4F"/>
+    <text x="395" y="207" font-size="22" font-weight="800" fill="#0E1A14">1–1.5 gal</text>
+    <text x="40" y="266" font-size="21" fill="#0E1A14" stroke="#F5F7F2" stroke-width="8" paint-order="stroke">Tank (Kratky, VC-1)</text>
+    <rect x="385.0" y="278" width="115" height="30" rx="4" fill="#0F6B4F"/>
+    <text x="510" y="301" font-size="22" font-weight="800" fill="#0E1A14">1.5–2 gal</text>
+    <text x="40" y="360" font-size="21" fill="#0E1A14" stroke="#F5F7F2" stroke-width="8" paint-order="stroke">4 L bottle (Kratky 2004)</text>
+    <rect x="224.0" y="372" width="69" height="30" rx="4" fill="#0F6B4F"/>
+    <text x="303" y="395" font-size="22" font-weight="800" fill="#0E1A14">3–4 L</text>
+    <text x="40" y="454" font-size="21" fill="#0E1A14" stroke="#F5F7F2" stroke-width="8" paint-order="stroke">Lettuce trials (Kratky)</text>
+    <rect x="224.0" y="466" width="184" height="30" rx="4" fill="#0F6B4F"/>
+    <text x="418" y="489" font-size="22" font-weight="800" fill="#0E1A14">3–6 L</text>
+    <rect x="20" y="590" width="600" height="190" rx="16" fill="#E6F1EA"/>
+    <text x="40" y="630" font-size="23" font-weight="800" fill="#0F6B4F">Plan on 1.5 gal per plant</text>
+    <text x="40" y="666" font-size="20" fill="#0E1A14">That covers most of these ranges.</text>
+    <text x="40" y="696" font-size="20" fill="#0E1A14">A 5-gallon bucket holds three plants.</text>
+    <text x="40" y="726" font-size="20" fill="#0E1A14">Running dry early? Add only ½–1 in</text>
+    <text x="40" y="756" font-size="20" fill="#0E1A14">of water, or use a deeper container.</text>
+    <text x="20" y="832" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
