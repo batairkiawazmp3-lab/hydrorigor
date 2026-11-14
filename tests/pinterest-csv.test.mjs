@@ -23,8 +23,8 @@ test('Pinterest rows follow the bulk-upload rules and point at real pin images',
 test('short launch guides wait for a rebuild unless named, and the CSV quotes commas', () => {
   const links = pinRows({ start: '2030-01-01' }).map((row) => row.Link);
   assert.ok(links.some((link) => link.includes('/crops/hydroponic-basil/')));
-  assert.ok(!links.some((link) => link.includes('/crops/hydroponic-tomato-seeds/')));
-  const named = pinRows({ start: '2030-01-01', only: ['hydroponic-tomato-seeds'], perDay: 2 });
+  assert.ok(!links.some((link) => link.includes('/nutrients-water/hydroponic-nutrients-for-vegetables/')));
+  const named = pinRows({ start: '2030-01-01', only: ['hydroponic-nutrients-for-vegetables'], perDay: 2 });
   assert.equal(named.length, 1);
 
   const csv = toCsv(pinRows({ start: '2030-01-01', perDay: 2 }));
