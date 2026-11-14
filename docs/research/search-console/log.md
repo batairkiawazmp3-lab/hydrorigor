@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-14 (Nov 1–11; last update 4 h before check) | 6 | 366 | 1.6% | 35.5 | 84 | 29 | 35 indexed, 13 not indexed (unchanged, last update Nov 9) | Kratky guide (#69), nutrient solution rebuild (#70), pH meter guide (#71), Pinterest upload (#72), tomato seeds rebuild (#73); log only (this change) |
 | 2026-11-13 (Nov 1–10; last update 12 h before check) | 6 | 333 | 1.8% | 35.2 | 81 | 29 | 35 indexed, 13 not indexed (last update Nov 9) | Beginners rebuild (#64), lettuce systems rebuild (#65), what-to-buy parts lists (#63); internal links to 4 nutrient pages (this change) |
 | 2026-11-11 (Nov 1–9; last update 3 h before check) | 6 | 280 | 2.1% | 35.9 | 75 | 29 | 34 indexed, 14 not indexed (unchanged, last update Nov 6) | Hydroponic systems for sale rebuild (#59); log only (this change) |
 | 2026-11-10 (Nov 1–8; last update 3.5 h before check) | 6 | 250 | 2.4% | 35.3 | 69 | 29 | 34 indexed, 14 not indexed (unchanged, last update Nov 6) | Hydroponic tomatoes rebuild (#54), US units and IndexNow (#52, #53), owner byline approvals (#55–#57); log only (this change) |
