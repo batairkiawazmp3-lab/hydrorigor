@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1040" width="640" height="1040" role="img" aria-labelledby="t d">
+  <title id="t">Two-point pH meter calibration in six steps</title>
+  <desc id="d">Steps. 1: check that the buffers are in date and check their temperature, because pH changes with temperature. 2: rinse the probe with distilled water. 3: calibrate in pH 7.01 buffer poured into a small cup. 4: rinse again. 5: calibrate in pH 4.01 buffer. 6: rinse, then measure the nutrient solution. Discard used buffer and never dip the probe into the stock bottle. From Michigan State University Extension and UMass Amherst Extension.</desc>
+  <rect width="640" height="1040" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Two-point calibration</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">pH 7.01 first, then pH 4.01</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(Michigan State, UMass Extension)</text>
+    <path d="M56 198 L56 808" stroke="#9BD1A9" stroke-width="8" stroke-linecap="round"/>
+    <rect x="96" y="156" width="524" height="100" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="56" cy="198" r="16" fill="#0F6B4F"/>
+    <text x="56" y="205" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="118" y="194" font-size="24" font-weight="800" fill="#0E1A14">Check the buffers</text>
+    <text x="118" y="226" font-size="21" fill="#3F5248">In date; check the temperature</text>
+    <rect x="96" y="278" width="524" height="100" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="56" cy="320" r="16" fill="#0F6B4F"/>
+    <text x="56" y="327" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="118" y="316" font-size="24" font-weight="800" fill="#0E1A14">Rinse the probe</text>
+    <text x="118" y="348" font-size="21" fill="#3F5248">Distilled water</text>
+    <rect x="96" y="400" width="524" height="100" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="56" cy="442" r="16" fill="#0F6B4F"/>
+    <text x="56" y="449" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="118" y="438" font-size="24" font-weight="800" fill="#0E1A14">Calibrate in pH 7.01</text>
+    <text x="118" y="470" font-size="21" fill="#3F5248">Pour a little into a small cup</text>
+    <rect x="96" y="522" width="524" height="100" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="56" cy="564" r="16" fill="#0F6B4F"/>
+    <text x="56" y="571" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="118" y="560" font-size="24" font-weight="800" fill="#0E1A14">Rinse again</text>
+    <text x="118" y="592" font-size="21" fill="#3F5248">Distilled water</text>
+    <rect x="96" y="644" width="524" height="100" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="56" cy="686" r="16" fill="#0F6B4F"/>
+    <text x="56" y="693" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="118" y="682" font-size="24" font-weight="800" fill="#0E1A14">Calibrate in pH 4.01</text>
+    <text x="118" y="714" font-size="21" fill="#3F5248">Fresh cup, fresh buffer</text>
+    <rect x="96" y="766" width="524" height="100" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="56" cy="808" r="16" fill="#0F6B4F"/>
+    <text x="56" y="815" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+    <text x="118" y="804" font-size="24" font-weight="800" fill="#0E1A14">Rinse, then measure</text>
+    <text x="118" y="836" font-size="21" fill="#3F5248">Your nutrient solution</text>
+    <rect x="20" y="912" width="600" height="76" rx="14" fill="#FBE9D7"/>
+    <text x="44" y="944" font-size="21" font-weight="800" fill="#0E1A14">Throw away used buffer</text>
+    <text x="44" y="972" font-size="21" fill="#0E1A14">Never dip the probe in the bottle</text>
+    <text x="20" y="1018" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

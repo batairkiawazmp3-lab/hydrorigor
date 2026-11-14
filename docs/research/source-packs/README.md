@@ -22,7 +22,7 @@ How to use a pack:
 | [hydroponic-tower-garden.md](hydroponic-tower-garden.md) | 7 (plan ID 59; published 2026-11-07) | `/systems/hydroponic-tower-garden/` |
 | [hydroponic-basil.md](hydroponic-basil.md) | 10 (plan ID 41, new) | `/crops/hydroponic-basil/` |
 | [kratky-hydroponics.md](kratky-hydroponics.md) | 17 (plan ID 28; published 2026-11-13) | `/systems/kratky-hydroponics/` |
-| [hydroponic-ph-meter.md](hydroponic-ph-meter.md) | 17 (plan ID 66, new) | `/best/hydroponic-ph-meter/` |
+| [hydroponic-ph-meter.md](hydroponic-ph-meter.md) | 18 (plan ID 66; published 2026-11-14) | `/best/hydroponic-ph-meter/` |
 | [organic-hydroponic-nutrients.md](organic-hydroponic-nutrients.md) | 19 (rebuild) | `/nutrients-water/organic-hydroponic-nutrients/` |
 
 Rebuilds of launch guides (indoor systems, NFT strawberries, lettuce systems, nutrient
