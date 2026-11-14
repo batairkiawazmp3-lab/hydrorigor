@@ -82,7 +82,7 @@ impressions in 28 days).
 15. [x] `/crops/hydroponic-lettuce-systems/` — rebuilt 2026-11-12 ("Hydroponic Lettuce Systems: NFT vs DWC vs Kratky Compared"). "nutrient film hydroponic system" 1,300 / 30;
         hydroponic lettuce systems (1,000, difficulty 28).
 16. [x] `/nutrients-water/hydroponic-nutrient-solution/` — rebuilt 2026-11-13 ("Hydroponic Nutrient Solution: ppm, EC, pH & When to Change"). "hydroponic nutrients solution" 720 / 25.
-17. [ ] New guide, plan ID 28: Kratky hydroponics (supports the Kratky sections of three rebuilt guides).
+17. [x] New guide `/systems/kratky-hydroponics/` (plan ID 28) — published 2026-11-13 ("Kratky Hydroponics: No-Pump Setup, Air Gap & Crops"); linked from five guides.
 18. [ ] New guide, plan ID 66: pH meters for hydroponics — "ph meter hydroponics" 590 / 15,
         "digital ph meter hydroponics" 140 / 14. Publish as a how-to-choose guide; add named
         picks only after an affiliate programme is approved.

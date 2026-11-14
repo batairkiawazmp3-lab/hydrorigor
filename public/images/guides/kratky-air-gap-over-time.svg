@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1150" width="640" height="1150" role="img" aria-labelledby="t d">
+  <title id="t">How the Kratky air gap forms as the solution level falls</title>
+  <desc id="d">Three cross-sections of a Kratky container. Day 1: the tank is filled once and the bottom half inch to 1 inch of the net pot sits in the solution. Mid-crop: the plant has drunk the level down, leaving a moist air gap where oxygen roots grow; do not top up. Harvest, about 4 to 6 weeks after transplanting: the level is well down and the lower roots still reach the solution.</desc>
+  <rect width="640" height="1150" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Kratky: the air gap over time</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Fill once. The falling level makes the gap.</text>
+    <rect x="20" y="120" width="600" height="300" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="42" y="230" width="196" height="162" fill="#BFE0EC"/>
+    <path d="M40 198 L40 394 L240 394 L240 198" fill="none" stroke="#0E1A14" stroke-width="4"/>
+    <rect x="32" y="186" width="216" height="14" rx="4" fill="#3F5248"/>
+    <path d="M112 186 L168 186 L160 242 L120 242 Z" fill="#E9C46A" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M122 242 Q111 251 100 260" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M134 242 Q130 251 127 260" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M146 242 Q150 251 153 260" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M158 242 Q169 251 180 260" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <circle cx="140" cy="176" r="12" fill="#0F6B4F"/>
+    <circle cx="132" cy="180" r="8" fill="#2E8B63"/>
+    <circle cx="148" cy="180" r="8" fill="#2E8B63"/>
+    <text x="280" y="182" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0F6B4F">Day 1</text>
+    <text x="280" y="222" font-size="21" fill="#0E1A14">Pot bottom sits</text>
+    <text x="280" y="252" font-size="21" fill="#0E1A14">½–1 in deep</text>
+    <text x="280" y="282" font-size="21" fill="#0E1A14">in the solution.</text>
+    <text x="280" y="312" font-size="21" fill="#0E1A14">Fill the tank once.</text>
+    <rect x="20" y="440" width="600" height="300" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="42" y="618" width="196" height="94" fill="#BFE0EC"/>
+    <path d="M40 518 L40 714 L240 714 L240 518" fill="none" stroke="#0E1A14" stroke-width="4"/>
+    <rect x="32" y="506" width="216" height="14" rx="4" fill="#3F5248"/>
+    <path d="M112 506 L168 506 L160 562 L120 562 Z" fill="#E9C46A" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M122 562 Q111 612 100 662" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M134 562 Q130 612 127 662" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M146 562 Q150 612 153 662" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M158 562 Q169 612 180 662" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <circle cx="140" cy="487" r="24" fill="#0F6B4F"/>
+    <circle cx="123" cy="494" r="17" fill="#2E8B63"/>
+    <circle cx="157" cy="494" r="17" fill="#2E8B63"/>
+    <path d="M222 524 L222 614 M214 524 L230 524 M214 614 L230 614" stroke="#C2410C" stroke-width="3" fill="none"/>
+    <text x="280" y="502" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0F6B4F">Mid-crop</text>
+    <text x="280" y="542" font-size="21" fill="#0E1A14">Level falls and a</text>
+    <text x="280" y="572" font-size="21" fill="#0E1A14">moist air gap forms.</text>
+    <text x="280" y="602" font-size="21" fill="#0E1A14">Oxygen roots grow</text>
+    <text x="280" y="632" font-size="21" fill="#0E1A14">here. Don’t top up.</text>
+    <rect x="20" y="760" width="600" height="300" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="42" y="998" width="196" height="34" fill="#BFE0EC"/>
+    <path d="M40 838 L40 1034 L240 1034 L240 838" fill="none" stroke="#0E1A14" stroke-width="4"/>
+    <rect x="32" y="826" width="216" height="14" rx="4" fill="#3F5248"/>
+    <path d="M112 826 L168 826 L160 882 L120 882 Z" fill="#E9C46A" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M122 882 Q111 953 100 1024" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M134 882 Q130 953 127 1024" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M146 882 Q150 953 153 1024" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <path d="M158 882 Q169 953 180 1024" fill="none" stroke="#8A6D3B" stroke-width="3"/>
+    <circle cx="140" cy="799" r="34" fill="#0F6B4F"/>
+    <circle cx="116" cy="809" r="24" fill="#2E8B63"/>
+    <circle cx="164" cy="809" r="24" fill="#2E8B63"/>
+    <path d="M222 844 L222 994 M214 844 L230 844 M214 994 L230 994" stroke="#C2410C" stroke-width="3" fill="none"/>
+    <text x="280" y="822" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0F6B4F">Harvest</text>
+    <text x="280" y="862" font-size="21" fill="#0E1A14">4–6 weeks after</text>
+    <text x="280" y="892" font-size="21" fill="#0E1A14">transplanting.</text>
+    <text x="280" y="922" font-size="21" fill="#0E1A14">Lower roots still</text>
+    <text x="280" y="952" font-size="21" fill="#0E1A14">reach the solution.</text>
+    <rect x="20" y="1076" width="22" height="6" fill="#C2410C"/>
+    <text x="52" y="1086" font-size="20" fill="#3F5248">Air gap</text>
+    <rect x="160" y="1068" width="22" height="18" rx="3" fill="#BFE0EC"/>
+    <text x="192" y="1086" font-size="20" fill="#3F5248">Nutrient solution</text>
+    <text x="20" y="1128" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

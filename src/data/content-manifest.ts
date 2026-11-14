@@ -64,6 +64,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['osu-ph-ec-guide', 'gomez-basil-small-scale-2020', 'walters-basil-dli-temperature-2023', 'walters-basil-density-2015', 'osu-hydro-hints-nft'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 28,
+    collection: 'articles',
+    category: 'systems',
+    title: 'Kratky Hydroponics: No-Pump Setup, Air Gap & Crops',
+    route: 'kratky-hydroponics',
+    primaryIntent: 'informational',
+    primaryTopic: 'kratky hydroponic system',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['ifas-kratky-set-and-forget', 'kratky-noncirculating-lettuce', 'ctahr-kratky-vc1', 'kratky-suspended-pot-2004', 'uky-hydroponic-lettuce', 'osu-hydro-hints-dwc', 'osu-hydro-hints-nft'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
