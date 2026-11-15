@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 834" width="640" height="834" role="img" aria-labelledby="t d">
+  <title id="t">Upkeep schedule for a smart indoor hydroponic garden</title>
+  <desc id="d">Daily: check the water level, check the light timer, look for mosquito larvae and remove dried leaves. Weekly: add nutrients as the maker directs, at least once a week. Every three months: take the unit apart and wash the reservoir, pods and cover to remove algae and disease. From the Singapore Food Agency buying guide.</desc>
+  <rect width="640" height="834" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Smart garden upkeep</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="90" font-size="20" fill="#3F5248">Even "fuss-free" kits need it</text>
+    <text x="20" y="118" font-size="20" fill="#3F5248">(Singapore Food Agency)</text>
+    <rect x="20" y="150" width="600" height="224" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="150" width="14" height="224" rx="7" fill="#2E8B57"/>
+    <text x="56" y="194" font-size="26" font-weight="800" fill="#0E1A14">Daily</text>
+    <text x="56" y="236" font-size="21" fill="#3F5248">• Check the water level</text>
+    <text x="56" y="272" font-size="21" fill="#3F5248">• Check the light timer</text>
+    <text x="56" y="308" font-size="21" fill="#3F5248">• Look for mosquito larvae</text>
+    <text x="56" y="344" font-size="21" fill="#3F5248">• Remove dried leaves</text>
+    <rect x="20" y="394" width="600" height="152" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="394" width="14" height="152" rx="7" fill="#E0A23B"/>
+    <text x="56" y="438" font-size="26" font-weight="800" fill="#0E1A14">Weekly</text>
+    <text x="56" y="480" font-size="21" fill="#3F5248">• Add nutrients as directed</text>
+    <text x="56" y="516" font-size="21" fill="#3F5248">• At least once a week</text>
+    <rect x="20" y="566" width="600" height="188" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="566" width="14" height="188" rx="7" fill="#D1603D"/>
+    <text x="56" y="610" font-size="26" font-weight="800" fill="#0E1A14">Every 3 months</text>
+    <text x="56" y="652" font-size="21" fill="#3F5248">• Take the unit apart</text>
+    <text x="56" y="688" font-size="21" fill="#3F5248">• Wash reservoir, pods, cover</text>
+    <text x="56" y="724" font-size="21" fill="#3F5248">• Removes algae and disease</text>
+    <text x="20" y="812" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

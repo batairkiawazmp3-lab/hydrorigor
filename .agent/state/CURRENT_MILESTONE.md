@@ -88,8 +88,8 @@ impressions in 28 days).
         add them only after an affiliate programme is approved.
 19. [x] `/crops/hydroponic-tomato-seeds/` — rebuilt 2026-11-14 ("Hydroponic Tomato Seeds: Best Varieties & How to Start Them"). hydroponic tomatoes seeds (480, difficulty 16).
 20. [x] `/nutrients-water/organic-hydroponic-nutrients/` — rebuilt 2026-11-15 ("Organic Hydroponic Nutrients: Yields, Problems & Fixes"). "organic hydroponic nutrients" 390 / 18.
-21. [ ] `/systems/smart-indoor-hydroponic-systems/` — rebuild ("click and grow" 5,400 / 35 is the
-        nearest brand demand). Move to the top of the queue if Click & Grow approves the owner.
+21. [x] `/systems/smart-indoor-hydroponic-systems/` — rebuilt 2026-11-15 ("Smart Indoor Hydroponic Systems: Light, Crops & Upkeep"); no brands or product picks
+        ("click and grow" 5,400 / 35 is the nearest brand demand; add named units only if Click & Grow approves the owner).
 22. [ ] Remaining launch-guide rebuilds, one per run: `/nutrients-water/how-to-mix-hydroponic-nutrients/`
         ("mixing hydroponic nutrients" 140 / 19), `/nutrients-water/powder-vs-liquid-hydroponic-nutrients/`
         ("hydroponic nutrients powder" 170 / 19), `/nutrients-water/hydroponic-nutrients-for-vegetables/`
