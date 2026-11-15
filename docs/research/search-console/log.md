@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-15 (Nov 1–13; last update 3.5 h before check) | 6 | 451 | 1.3% | 37.5 | 91 | 32 | 35 indexed, 13 not indexed (unchanged, last update Nov 9) | Organic nutrients rebuild (#75); log only (this change) |
 | 2026-11-14 (Nov 1–11; last update 4 h before check) | 6 | 366 | 1.6% | 35.5 | 84 | 29 | 35 indexed, 13 not indexed (unchanged, last update Nov 9) | Kratky guide (#69), nutrient solution rebuild (#70), pH meter guide (#71), Pinterest upload (#72), tomato seeds rebuild (#73); log only (this change) |
 | 2026-11-13 (Nov 1–10; last update 12 h before check) | 6 | 333 | 1.8% | 35.2 | 81 | 29 | 35 indexed, 13 not indexed (last update Nov 9) | Beginners rebuild (#64), lettuce systems rebuild (#65), what-to-buy parts lists (#63); internal links to 4 nutrient pages (this change) |
 | 2026-11-11 (Nov 1–9; last update 3 h before check) | 6 | 280 | 2.1% | 35.9 | 75 | 29 | 34 indexed, 14 not indexed (unchanged, last update Nov 6) | Hydroponic systems for sale rebuild (#59); log only (this change) |
@@ -18,6 +19,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-15 | /nutrients-water/organic-hydroponic-nutrients/ | Full rebuild (#75: yields vs mineral nutrients, causes and fixes, 2 diagrams); before: 43 impressions, position 60.8 (Nov 1–13) | 2026-11-29, 2026-12-13 |
 | 2026-11-14 | /crops/hydroponic-tomato-seeds/ | Full rebuild (seed by space, micro-dwarf trial data, 2 diagrams, 8 sources) | 2026-11-28, 2026-12-12 |
 | 2026-11-14 | /best/hydroponic-ph-meter/ | New guide (ph meter hydroponics 590 / 15) | 2026-11-28, 2026-12-12 |
 | 2026-11-13 | /nutrients-water/hydroponic-nutrients-for-vegetables/ | 3 new internal links (nutrients, nutrient solution, lettuce guides); before: 13 impressions, position 57.6 (Nov 1–10) | 2026-11-27 |
