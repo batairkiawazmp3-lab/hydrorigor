@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 920" width="640" height="920" role="img" aria-labelledby="t d">
+  <title id="t">Target EC by crop</title>
+  <desc id="d">Target EC in mS per cm. Lettuce 1.2 to 1.8 (UF/IFAS); Purdue recommends 1.3. Basil 1.0 to 1.6 (Oklahoma State). Pepper 0.8 to 1.8 (Oklahoma State). Fruiting crops 2.0 to 3.0 (University of Tennessee). Tomato 2.0 to 4.0 (Oklahoma State).</desc>
+  <rect width="640" height="920" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">EC after mixing</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="90" font-size="20" fill="#3F5248">Target range in mS/cm</text>
+    <path d="M40.0 150 L40.0 760" stroke="#DCE5DF" stroke-width="2"/>
+    <text x="40.0" y="794" font-size="20" fill="#5B6F64" text-anchor="middle">0</text>
+    <path d="M155.6 150 L155.6 760" stroke="#DCE5DF" stroke-width="2"/>
+    <text x="155.6" y="794" font-size="20" fill="#5B6F64" text-anchor="middle">1</text>
+    <path d="M271.1 150 L271.1 760" stroke="#DCE5DF" stroke-width="2"/>
+    <text x="271.1" y="794" font-size="20" fill="#5B6F64" text-anchor="middle">2</text>
+    <path d="M386.7 150 L386.7 760" stroke="#DCE5DF" stroke-width="2"/>
+    <text x="386.7" y="794" font-size="20" fill="#5B6F64" text-anchor="middle">3</text>
+    <path d="M502.2 150 L502.2 760" stroke="#DCE5DF" stroke-width="2"/>
+    <text x="502.2" y="794" font-size="20" fill="#5B6F64" text-anchor="middle">4</text>
+    <text x="40" y="186" font-size="22" font-weight="800" fill="#0E1A14">Lettuce 1.2–1.8</text>
+    <rect x="178.7" y="200" width="69.3" height="34" rx="8" fill="#2E8B57"/>
+    <text x="40" y="264" font-size="20" fill="#3F5248">UF/IFAS; Purdue 1.3</text>
+    <text x="40" y="306" font-size="22" font-weight="800" fill="#0E1A14">Basil 1.0–1.6</text>
+    <rect x="155.6" y="320" width="69.3" height="34" rx="8" fill="#2E8B57"/>
+    <text x="40" y="384" font-size="20" fill="#3F5248">Oklahoma State</text>
+    <text x="40" y="426" font-size="22" font-weight="800" fill="#0E1A14">Pepper 0.8–1.8</text>
+    <rect x="132.4" y="440" width="115.6" height="34" rx="8" fill="#2E8B57"/>
+    <text x="40" y="504" font-size="20" fill="#3F5248">Oklahoma State</text>
+    <text x="40" y="546" font-size="22" font-weight="800" fill="#0E1A14">Fruiting crops 2.0–3.0</text>
+    <rect x="271.1" y="560" width="115.6" height="34" rx="8" fill="#2E8B57"/>
+    <text x="40" y="624" font-size="20" fill="#3F5248">Tennessee</text>
+    <text x="40" y="666" font-size="22" font-weight="800" fill="#0E1A14">Tomato 2.0–4.0</text>
+    <rect x="271.1" y="680" width="231.1" height="34" rx="8" fill="#2E8B57"/>
+    <text x="40" y="744" font-size="20" fill="#3F5248">Oklahoma State</text>
+    <text x="20" y="896" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

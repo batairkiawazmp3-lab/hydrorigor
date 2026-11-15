@@ -90,8 +90,8 @@ impressions in 28 days).
 20. [x] `/nutrients-water/organic-hydroponic-nutrients/` — rebuilt 2026-11-15 ("Organic Hydroponic Nutrients: Yields, Problems & Fixes"). "organic hydroponic nutrients" 390 / 18.
 21. [x] `/systems/smart-indoor-hydroponic-systems/` — rebuilt 2026-11-15 ("Smart Indoor Hydroponic Systems: Light, Crops & Upkeep"); no brands or product picks
         ("click and grow" 5,400 / 35 is the nearest brand demand; add named units only if Click & Grow approves the owner).
-22. [ ] Remaining launch-guide rebuilds, one per run: `/nutrients-water/how-to-mix-hydroponic-nutrients/`
-        ("mixing hydroponic nutrients" 140 / 19), `/nutrients-water/powder-vs-liquid-hydroponic-nutrients/`
+22. [ ] Remaining launch-guide rebuilds, one per run: ~~`/nutrients-water/how-to-mix-hydroponic-nutrients/`~~
+        (rebuilt 2026-11-15, "How to Mix Hydroponic Nutrients: Order, Rates & EC Check"; "mixing hydroponic nutrients" 140 / 19), `/nutrients-water/powder-vs-liquid-hydroponic-nutrients/`
         ("hydroponic nutrients powder" 170 / 19), `/nutrients-water/hydroponic-nutrients-for-vegetables/`
         ("hydroponic nutrients vegetables" 140 / 15), `/best/indoor-hydroponic-system-kits/`,
         `/best/hydroponic-nutrients-for-home-growers/` ("best hydroponic nutrients" 260 / 20),
