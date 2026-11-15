@@ -87,7 +87,7 @@ impressions in 28 days).
         Hydroponics: How to Choose & Calibrate"). "ph meter hydroponics" 590 / 15. No named picks;
         add them only after an affiliate programme is approved.
 19. [x] `/crops/hydroponic-tomato-seeds/` — rebuilt 2026-11-14 ("Hydroponic Tomato Seeds: Best Varieties & How to Start Them"). hydroponic tomatoes seeds (480, difficulty 16).
-20. [ ] `/nutrients-water/organic-hydroponic-nutrients/` — rebuild. "organic hydroponic nutrients" 390 / 18.
+20. [x] `/nutrients-water/organic-hydroponic-nutrients/` — rebuilt 2026-11-15 ("Organic Hydroponic Nutrients: Yields, Problems & Fixes"). "organic hydroponic nutrients" 390 / 18.
 21. [ ] `/systems/smart-indoor-hydroponic-systems/` — rebuild ("click and grow" 5,400 / 35 is the
         nearest brand demand). Move to the top of the queue if Click & Grow approves the owner.
 22. [ ] Remaining launch-guide rebuilds, one per run: `/nutrients-water/how-to-mix-hydroponic-nutrients/`

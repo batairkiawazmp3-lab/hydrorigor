@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1200" width="640" height="1200" role="img" aria-labelledby="t d">
+  <title id="t">Why organic nutrient solutions struggle in hydroponics, and the fixes</title>
+  <desc id="d">Four problems from a Texas A&amp;M organic NFT lettuce study (Liu, Masabni and Niu 2025), each with a fix. One: nitrogen arrives in organic form, and microbes turn it into ammonium and nitrite; nitrite as low as 5 mg/L can harm lettuce. Fix: aerate and let the solution rest between flows. Two: biofilm coats roots and channels, most under continuous flow, and competes for oxygen. Fix: intermittent flow and cleaning between crops. Three: the organic fertilizer supplied only about 3 mg/L each of calcium and magnesium, against cited targets of 200–300 mg/L calcium and 30–50 mg/L magnesium. Fix: add a calcium and magnesium supplement. Four: a bottled microbial inoculant at 3.13 mL/L reduced lettuce growth. Fix: skip it unless a trial for your system supports it.</desc>
+  <rect width="640" height="1200" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Four problems, four fixes</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Why organic solutions underperform</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">in hydroponics, and what helps.</text>
+        <rect x="20" y="140" width="600" height="234" rx="12" fill="#FFFFFF" stroke="#C9D3CC" stroke-width="2"/>
+    <text x="40" y="178" font-size="24" font-weight="800" fill="#0E1A14">1  Nitrogen arrives unready</text>
+    <text x="40" y="212" font-size="20" fill="#3F5248">Microbes turn organic N into</text>
+    <text x="40" y="242" font-size="20" fill="#3F5248">ammonium and nitrite.</text>
+    <text x="40" y="272" font-size="20" fill="#3F5248">Nitrite: harmful from 5 mg/L</text>
+    <rect x="32" y="282" width="576" height="72" rx="8" fill="#E3F1E8"/>
+    <text x="44" y="306" font-size="20" font-weight="700" fill="#1F5E43">Fix: Aerate; let the solution</text>
+    <text x="44" y="336" font-size="20" font-weight="700" fill="#1F5E43">rest between flows</text>
+    <rect x="20" y="394" width="600" height="234" rx="12" fill="#FFFFFF" stroke="#C9D3CC" stroke-width="2"/>
+    <text x="40" y="432" font-size="24" font-weight="800" fill="#0E1A14">2  Biofilm takes oxygen</text>
+    <text x="40" y="466" font-size="20" fill="#3F5248">Slime coats roots and</text>
+    <text x="40" y="496" font-size="20" fill="#3F5248">channels, most with</text>
+    <text x="40" y="526" font-size="20" fill="#3F5248">nonstop flow</text>
+    <rect x="32" y="536" width="576" height="72" rx="8" fill="#E3F1E8"/>
+    <text x="44" y="560" font-size="20" font-weight="700" fill="#1F5E43">Fix: Intermittent flow;</text>
+    <text x="44" y="590" font-size="20" font-weight="700" fill="#1F5E43">clean between crops</text>
+    <rect x="20" y="648" width="600" height="234" rx="12" fill="#FFFFFF" stroke="#C9D3CC" stroke-width="2"/>
+    <text x="40" y="686" font-size="24" font-weight="800" fill="#0E1A14">3  Calcium and magnesium short</text>
+    <text x="40" y="720" font-size="20" fill="#3F5248">Organic mix: about 3 mg/L</text>
+    <text x="40" y="750" font-size="20" fill="#3F5248">Ca and Mg. Targets: Ca</text>
+    <text x="40" y="780" font-size="20" fill="#3F5248">200–300, Mg 30–50 mg/L</text>
+    <rect x="32" y="790" width="576" height="72" rx="8" fill="#E3F1E8"/>
+    <text x="44" y="814" font-size="20" font-weight="700" fill="#1F5E43">Fix: Add a calcium and</text>
+    <text x="44" y="844" font-size="20" font-weight="700" fill="#1F5E43">magnesium supplement</text>
+    <rect x="20" y="902" width="600" height="234" rx="12" fill="#FFFFFF" stroke="#C9D3CC" stroke-width="2"/>
+    <text x="40" y="940" font-size="24" font-weight="800" fill="#0E1A14">4  Bottled microbes no help</text>
+    <text x="40" y="974" font-size="20" fill="#3F5248">Inoculant at 3.13 mL/L</text>
+    <text x="40" y="1004" font-size="20" fill="#3F5248">reduced lettuce growth</text>
+    <text x="40" y="1034" font-size="20" fill="#3F5248">in the NFT trial</text>
+    <rect x="32" y="1044" width="576" height="72" rx="8" fill="#E3F1E8"/>
+    <text x="44" y="1068" font-size="20" font-weight="700" fill="#1F5E43">Fix: Skip it unless a trial</text>
+    <text x="44" y="1098" font-size="20" font-weight="700" fill="#1F5E43">for your system says so</text>
+    <text x="20" y="1172" font-size="20" fill="#3F5248">Liu, Masabni and Niu 2025 (HortScience)</text>
+  </g>
+</svg>

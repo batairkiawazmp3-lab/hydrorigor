@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 880" width="640" height="880" role="img" aria-labelledby="t d">
+  <title id="t">Organic hydroponic yield as a share of mineral-fertilizer yield</title>
+  <desc id="d">Bar chart of three university studies. Lettuce in a zero-runoff Dutch bucket system with perlite: the fish-based organic solution gave about 91% and the alginic-based organic solution about 90% of the mineral control's fresh weight (Alneyadi et al. 2024). Strawberries in vertical towers: an organic nutrient source gave about 85%, roughly 15% less (Wortman et al. 2016). Lettuce in NFT channels with organic solution: 40.3% of the mineral yield with 15 minutes of flow and 105 minutes off, 32.0% with 15 on and 45 off, and 23.5% with continuous flow (Liu et al. 2025).</desc>
+  <rect width="640" height="880" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Organic yield vs mineral</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Fresh weight or yield with organic</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">nutrients, as % of the mineral control.</text>
+        <path d="M24 140 L24 754" stroke="#E1E6E2" stroke-width="2" stroke-dasharray="5 6"/>
+    <text x="24" y="782" font-size="20" fill="#3F5248" text-anchor="middle">0%</text>
+    <path d="M284 140 L284 754" stroke="#E1E6E2" stroke-width="2" stroke-dasharray="5 6"/>
+    <text x="284" y="782" font-size="20" fill="#3F5248" text-anchor="middle">50%</text>
+    <path d="M544 140 L544 754" stroke="#E1E6E2" stroke-width="2" stroke-dasharray="5 6"/>
+    <text x="544" y="782" font-size="20" fill="#3F5248" text-anchor="middle">100%</text>
+        <text x="24" y="186" font-size="24" font-weight="800" fill="#0E1A14">Dutch bucket, perlite</text>
+    <text x="24" y="220" font-size="20" fill="#3F5248">Fish-based organic</text>
+    <rect x="24" y="230" width="473" height="34" rx="5" fill="#2F7D5B"/>
+    <text x="485" y="255" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="end">about 91%</text>
+    <text x="24" y="294" font-size="20" fill="#3F5248">Alginic-based organic</text>
+    <rect x="24" y="304" width="468" height="34" rx="5" fill="#2F7D5B"/>
+    <text x="480" y="329" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="end">about 90%</text>
+    <text x="24" y="384" font-size="24" font-weight="800" fill="#0E1A14">Vertical towers (strawberry)</text>
+    <text x="24" y="418" font-size="20" fill="#3F5248">Organic source</text>
+    <rect x="24" y="428" width="442" height="34" rx="5" fill="#8EC3E2"/>
+    <text x="478" y="453" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="start">about 85%</text>
+    <text x="24" y="508" font-size="24" font-weight="800" fill="#0E1A14">NFT channels (lettuce)</text>
+    <text x="24" y="542" font-size="20" fill="#3F5248">Flow 15 min on, 105 off</text>
+    <rect x="24" y="552" width="210" height="34" rx="5" fill="#E2A84B"/>
+    <text x="246" y="577" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="start">40.3%</text>
+    <text x="24" y="616" font-size="20" fill="#3F5248">Flow 15 min on, 45 off</text>
+    <rect x="24" y="626" width="166" height="34" rx="5" fill="#E2A84B"/>
+    <text x="202" y="651" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="start">32%</text>
+    <text x="24" y="690" font-size="20" fill="#3F5248">Continuous flow</text>
+    <rect x="24" y="700" width="122" height="34" rx="5" fill="#E2A84B"/>
+    <text x="158" y="725" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="start">23.5%</text>
+        <text x="24" y="824" font-size="20" fill="#3F5248">Mineral (non-organic) yield = 100%.</text>
+    <text x="24" y="852" font-size="20" fill="#3F5248">Alneyadi 2024; Wortman 2016; Liu 2025</text>
+  </g>
+</svg>

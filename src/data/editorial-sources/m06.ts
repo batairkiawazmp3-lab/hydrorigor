@@ -300,11 +300,11 @@ export const m06EditorialSources = [
   {
     id: 'psu-organic-nutrient-study',
     title: 'Organic-based nutrient solutions for sustainable vegetable production in a zero-runoff soilless growing system',
-    publisher: 'Penn State Research Portal',
+    publisher: 'Journal of Agriculture and Food Research 15:101035 (Alneyadi, Almheiri, Tzortzakis, Di Gioia, Ahmed; UAE University, Cyprus University of Technology, Penn State, 2024), doi 10.1016/j.jafr.2024.101035, via Penn State Research Portal',
     url: 'https://pure.psu.edu/en/publications/organic-based-nutrient-solutions-for-sustainable-vegetable-produc/',
-    accessedDate: '2026-09-12',
+    accessedDate: '2026-11-15',
     sourceType: 'university-research',
-    locator: 'Peer-reviewed study abstract; crop- and system-specific organic-solution comparison',
+    locator: "Sec. 2.1: romaine lettuce 'Parris Island cos', 60 days, zero-runoff Dutch bucket system (no pumps, 100 L tank, 40 cm pots of 25 L perlite), four liquid organic fertilizers (fish-based, humic-based, amino/alginic) versus a chemical control; all solutions set to EC 2.0 mS/cm (checked every 2 days) and pH 5.5–5.8 (adjusted three times a week). Abstract: shoot fresh weight 175.1 g control, 159.8 g fish-based and 157.9 g alginic-based, other organic solutions lower; all organic solutions gave fewer leaves, smaller leaf area, shorter plants and less fresh biomass; leaf nitrate 3.2–8.7 mg/kg DW organic versus 259.8 inorganic. Table 2: leaf calcium 11.90 mg/g control versus 4.58–6.87 organic; magnesium 2.88 versus 1.43–2.01. Table 4: phenolics 3.22–3.36 g GAE/100 g DW in two organic treatments versus 2.28 inorganic. Sec. 3.5: lower biomass attributed to lower availability of Ca, K and Mg; mineralization must match crop demand",
   },
   {
     id: 'masterblend-mixing-instructions',
@@ -656,6 +656,24 @@ export const m06EditorialSources = [
     accessedDate: '2026-11-07',
     sourceType: 'university-research',
     locator: 'Home bottle method: 4-litre plastic bottle, 7.5-cm net pot, lower 3 cm of the pot in the solution at the start; 5 g of 10-8-22 hydroponic fertilizer in 4 L gives EC 1.5 mS; lettuce ready about 6 weeks from seeding; level usually drops 15–25 cm; a 200-gram lettuce plant uses about 3–4 L; no solution added during the crop; raising the level more than 2 cm after the air gap forms may injure plants; cover or darken the bottle against algae; bottle method suits only short crops like lettuce',
+  },
+  {
+    id: 'liu-organic-nft-lettuce-2025',
+    title: 'Intermittent Flow Alleviated Root Zone Stress and Increased Organic Lettuce Yield in Nutrient Film Technique',
+    publisher: 'HortScience 60(7):1208–1217 (Liu, Masabni, Niu; Texas A&M AgriLife Research, 2025), doi 10.21273/HORTSCI18623-25',
+    url: 'https://journals.ashs.org/downloadpdf/view/journals/hortsci/60/7/article-p1208.pdf',
+    accessedDate: '2026-11-07',
+    sourceType: 'university-research',
+    locator: 'Abstract: organic lettuce often yields less than conventional hydroponics; fresh weight rose 71% as the no-flow period went from 0 to 105 min. Results: best organic scheme (15 min on / 105 min off) reached 40.3% of inorganic (Hoagland) shoot fresh weight, 15/45 reached 32.0%, continuous flow 23.5%; organic solutions held 91–214 mg/L ammonium and 43–103 mg/L nitrite versus about 1 mg/L each inorganic, with nitrite as low as 5 mg/L cited as harmful to lettuce; biofilm coated roots most under continuous flow and likely competed for oxygen; a microbial inoculant at 3.13 mL/L did not help and reduced growth; the organic fertilizer supplied about 3.18 mg/L each of Ca and Mg against cited targets of 200–300 mg/L Ca and 30–50 mg/L Mg; shoot Ca 0.29% organic versus 1.23% inorganic, Mg 0.17% versus 0.35%; pH set to 6.5 weekly. Discussion: use intermittent flow with longer off periods, aerate, consider biofilters, supplement Ca and Mg; intermittent flow also saved pump energy',
+  },
+  {
+    id: 'purdue-lettuce-ec-ho309',
+    title: 'Optimal Fertilizer Solution Concentration for Hydroponic Lettuce Production (HO-309-W)',
+    publisher: 'Purdue Extension (A. Miller, P. Langenhoven, K. Nemali), March 2020',
+    url: 'https://www.extension.purdue.edu/extmedia/HO/HO-309-W.pdf',
+    accessedDate: '2026-11-15',
+    sourceType: 'university-extension',
+    locator: 'Mineral-fertilizer trial: 24 lettuce varieties in NFT and CFT at EC 1.3, 2.0, 2.9 and 3.9 dS/m, harvested after 4 weeks; growth higher at 1.3 and 2.0 and lower at 2.9 and 3.9 (osmotic stress); optimal EC unaffected by system or variety; recommends EC 1.3 dS/m for lettuce in both systems. No organic fertilizers tested',
   },
 ] as const satisfies readonly M06EditorialSource[];
 
