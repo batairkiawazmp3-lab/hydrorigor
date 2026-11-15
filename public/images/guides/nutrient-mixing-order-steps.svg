@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 968" width="640" height="968" role="img" aria-labelledby="t d">
+  <title id="t">Mixing order for hydroponic nutrients</title>
+  <desc id="d">Six steps. 1: fill with the full volume of water. 2: add part one and stir until dissolved. 3: add part two and stir until dissolved. 4: add the calcium part last and stir until dissolved. 5: check EC and dilute or add concentrate. 6: then adjust pH, 5.5 to 6.5 for most crops.</desc>
+  <rect width="640" height="968" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Mixing order</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="90" font-size="20" fill="#3F5248">One part at a time, never combined</text>
+    <text x="20" y="118" font-size="20" fill="#3F5248">(Masterblend, Missouri, Oklahoma State)</text>
+    <rect x="20" y="150" width="600" height="110" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="74" cy="205" r="32" fill="#2E8B57"/>
+    <text x="74" y="215" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="126" y="198" font-size="25" font-weight="800" fill="#0E1A14">Fill with all the water</text>
+    <text x="126" y="234" font-size="21" fill="#3F5248">Final volume first</text>
+    <path d="M74 260 L74 278" stroke="#9BB5A5" stroke-width="4"/>
+    <rect x="20" y="278" width="600" height="110" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="74" cy="333" r="32" fill="#2E8B57"/>
+    <text x="74" y="343" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="126" y="326" font-size="25" font-weight="800" fill="#0E1A14">Add part one</text>
+    <text x="126" y="362" font-size="21" fill="#3F5248">Stir until dissolved</text>
+    <path d="M74 388 L74 406" stroke="#9BB5A5" stroke-width="4"/>
+    <rect x="20" y="406" width="600" height="110" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="74" cy="461" r="32" fill="#2E8B57"/>
+    <text x="74" y="471" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="126" y="454" font-size="25" font-weight="800" fill="#0E1A14">Add part two</text>
+    <text x="126" y="490" font-size="21" fill="#3F5248">Stir until dissolved</text>
+    <path d="M74 516 L74 534" stroke="#9BB5A5" stroke-width="4"/>
+    <rect x="20" y="534" width="600" height="110" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="74" cy="589" r="32" fill="#E0A23B"/>
+    <text x="74" y="599" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="126" y="582" font-size="25" font-weight="800" fill="#0E1A14">Add calcium last</text>
+    <text x="126" y="618" font-size="21" fill="#3F5248">Stir until dissolved</text>
+    <path d="M74 644 L74 662" stroke="#9BB5A5" stroke-width="4"/>
+    <rect x="20" y="662" width="600" height="110" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="74" cy="717" r="32" fill="#3B7FB0"/>
+    <text x="74" y="727" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="126" y="710" font-size="25" font-weight="800" fill="#0E1A14">Check EC</text>
+    <text x="126" y="746" font-size="21" fill="#3F5248">Dilute or add concentrate</text>
+    <path d="M74 772 L74 790" stroke="#9BB5A5" stroke-width="4"/>
+    <rect x="20" y="790" width="600" height="110" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="74" cy="845" r="32" fill="#3B7FB0"/>
+    <text x="74" y="855" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+    <text x="126" y="838" font-size="25" font-weight="800" fill="#0E1A14">Then adjust pH</text>
+    <text x="126" y="874" font-size="21" fill="#3F5248">5.5–6.5 for most crops</text>
+    <text x="20" y="950" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
