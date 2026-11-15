@@ -675,6 +675,33 @@ export const m06EditorialSources = [
     sourceType: 'university-extension',
     locator: 'Mineral-fertilizer trial: 24 lettuce varieties in NFT and CFT at EC 1.3, 2.0, 2.9 and 3.9 dS/m, harvested after 4 weeks; growth higher at 1.3 and 2.0 and lower at 2.9 and 3.9 (osmotic stress); optimal EC unaffected by system or variety; recommends EC 1.3 dS/m for lettuce in both systems. No organic fertilizers tested',
   },
+  {
+    id: 'sfa-home-growing-kit',
+    title: 'Choosing an Indoor Home Growing Kit',
+    publisher: 'Singapore Food Agency (sfa.gov.sg; no date or author shown)',
+    url: 'https://www.sfa.gov.sg/docs/default-source/default-document-library/choosing-an-indoor-hydroponics-home-growing-kit.pdf',
+    accessedDate: '2026-11-15',
+    sourceType: 'government',
+    locator: '01 How to choose: typical kit is a reservoir with cover, growing cups and grow lights, roots in the reservoir; without a reservoir too little water could reduce growth by 20–30%; plant food at least once a week; dedicated top-up point, water-level window or sensor, adjustable light height (leaves may scorch if they touch), easy dismantling (wash at least once every three months; vertical or hanging systems hard to wash). 02 Light requirements: minimum PPFD seedlings and microgreens 100–150, lettuce 150–200, other leafy vegetables such as pak choi and herbs 200–400, fruited vegetables 400–700 µmol/m²/s, based on typically 12 hours of light; rule of thumb cool white full-spectrum light of at least 200 µmol/m²/s at 10 cm from the plant surface; low PPFD gives tall weak stems that fall over, higher PPFD compact lettuce. 03 Maintenance: daily checks (water level, moist substrate, mosquito breeding, nutrients per manufacturer, light timer, dried leaves, cover tight, circulation working); every three months dismantle and clean, check electrical parts',
+  },
+  {
+    id: 'ifas-tabletop-hydroponics',
+    title: 'Tabletop Hydroponics Tutorial',
+    publisher: 'UF/IFAS Extension Gardening Solutions (no author or date shown)',
+    url: 'https://gardeningsolutions.ifas.ufl.edu/design/outdoor-living/tabletop-hydroponics/',
+    accessedDate: '2026-11-15',
+    sourceType: 'university-extension',
+    locator: 'Setting Up Your Hydroponics Unit (pod-based unit): fill until the water level indicator reaches the top, avoid well or soft water (can damage the system and affect growth), keep the float at the top without overfilling; most systems have a built-in timer running the light 16 hours per day from when it is plugged in; remove the domes once sprouting starts, 1–2 weeks; always a few inches between the plants and the lamp; follow each system’s directions. Results: herbs in as few as 3–4 weeks, lettuce within 40 days',
+  },
+  {
+    id: 'unl-lunchbox-hydroponics',
+    title: 'Lunchbox Hydroponics (G2358)',
+    publisher: 'Nebraska Extension, University of Nebraska–Lincoln (S. A. Adams), 2023, peer reviewed',
+    url: 'https://extensionpubs.unl.edu/publication/g2358/2023/html/view',
+    accessedDate: '2026-11-15',
+    sourceType: 'university-extension',
+    locator: 'Construction Method: place in bright light (windowsill or grow light) at comfortable room temperatures of 65–78 °F; keep at least 1/2 in of solution; harvest in as little as six weeks. Nutrient Solution: lettuce 125–150 ppm N; never more than the labeled fertilizer rate. Plant Care Tips: exclude light from the solution to limit algae. No pH, EC or light-intensity figures',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(
