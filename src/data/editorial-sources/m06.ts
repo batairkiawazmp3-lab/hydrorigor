@@ -10,6 +10,24 @@ export interface M06EditorialSource {
 
 export const m06EditorialSources = [
   {
+    id: 'msstate-fluid-fertilizers',
+    title: 'Fluid Fertilizers (P1466)',
+    publisher: 'Mississippi State University Extension (L. Oldham; reviewed by C. Bryant)',
+    url: 'https://extension.msstate.edu/publications/fluid-fertilizers',
+    accessedDate: '2026-11-16',
+    sourceType: 'university-extension',
+    locator: 'P1466 (web revision POD-10-23; PDF POD-06-20). Introduction: properly applied, fluid fertilizers "are no more or less efficient than dry fertilizers"; easy to handle, moved by pump, usually less labor. Common Solution Fertilizers: "no more than 11 percent potash will go into solution, and 9 percent is more practical to manufacture"; 32-0-0 UAN weighs 11.06 lb/gal and "salts out (solids separate from the liquid) at 32°F"; 28-0-0-5 salts out at about 0 °F; true solution fertilizers "can be stored as long as the temperature stays above freezing"; suspensions settle and should be applied the day they are blended. Summary: "no agronomic difference in the efficiency of liquid and dry fertilizers, so use the same rate of nutrients from either source". Field-crop publication; no cost-per-nutrient figure (read 2026-11-16)',
+  },
+  {
+    id: 'purdue-fertilizer-mixing-tips',
+    title: 'Taking Care of Plant Nutrition in Your High Tunnel – Fertilizer and Nutrient Solution Mixing Tips',
+    publisher: 'Purdue Extension, Vegetable Crops Hotline issue 630 (P. Langenhoven), June 22, 2017',
+    url: 'https://vegcropshotline.org/article/taking-care-of-plant-nutrition-in-your-high-tunnel-fertilizer-and-nutrient-solution-mixing-tips/',
+    accessedDate: '2026-11-16',
+    sourceType: 'university-extension',
+    locator: 'Developing a nutrient program: premixed fertilizer "might be perfect for beginner growers"; experienced growers can calculate their own formulations; compound blends developed for calcium-rich water may need calcium nitrate or magnesium sulfate added. Key Fertilizer Characteristics and Nutrient Solution Mixing Tips: check maximum solubility; lukewarm to hot water speeds dissolution; stir while mixing; use accurate scales; stock solution pH below 5 so all fertilizers dissolve; chelates break down at pH 3.5 or lower; most small greenhouse operations use 25 to 50 gallon stock tanks, usually two (calcium, iron and half the potassium nitrate in one); calcium, phosphorus and sulfate sources must not be mixed (calcium phosphate, calcium sulfate precipitates); a few hours for the solution to clear, sludge from anti-caking and anti-dust additives to rinse out; keep solution dark, protect chelates from daylight, replace chelates after disinfection (read 2026-11-16)',
+  },
+  {
     id: 'mu-hydroponic-farming',
     title: 'Controlled Environment Agriculture: Hydroponic Farming',
     publisher: 'University of Missouri Extension',
