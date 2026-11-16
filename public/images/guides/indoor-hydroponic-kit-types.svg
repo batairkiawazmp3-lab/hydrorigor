@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1206" width="640" height="1206" role="img" aria-labelledby="t d">
+  <title id="t">Six kinds of indoor hydroponic kit: what is in the box, what each grows and what it needs power for</title>
+  <desc id="d">Countertop pod garden: light, tank, pump and pods; grows herbs and lettuce; powers a light and pump. Kratky kit: tub, lid and net cups; lettuce and greens; no power. DWC bucket or tote: tub, lid, air pump and air stone; greens and herbs, or one tomato in a 5-gallon bucket; air pump runs all day. NFT channel kit: channels, tank and pump; lettuce and herbs; plants wilt fast if the pump stops. Tower kit: column, tank and pump; greens, herbs and strawberries; lower sites get less light. Dutch buckets on drip: buckets, drip lines and pump; tomatoes and peppers; pump and timer. From Oregon State EM 9453 to 9458, UF/IFAS HS1488 and the UF/IFAS tabletop tutorial, UF/IFAS Volusia County, Oklahoma State HLA-6724 and Touliatos et al. 2016.</desc>
+  <rect width="640" height="1206" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Six kinds of kit</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="92" font-size="20" fill="#3F5248">Find the design under the marketing,</text>
+    <text x="20" y="120" font-size="20" fill="#3F5248">then match it to your crop</text>
+    <rect x="20" y="160" width="600" height="150" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="160" width="14" height="150" rx="7" fill="#2E8B57"/>
+    <text x="56" y="200" font-size="25" font-weight="800" fill="#0E1A14">Countertop pod garden</text>
+    <text x="56" y="236" font-size="21" fill="#3F5248">Box: light, tank, pump, pods</text>
+    <text x="56" y="266" font-size="21" fill="#3F5248">Grows: herbs, lettuce</text>
+    <text x="56" y="296" font-size="21" fill="#3F5248">Power: light and pump</text>
+    <rect x="20" y="326" width="600" height="150" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="326" width="14" height="150" rx="7" fill="#4A90A4"/>
+    <text x="56" y="366" font-size="25" font-weight="800" fill="#0E1A14">Kratky (passive) kit</text>
+    <text x="56" y="402" font-size="21" fill="#3F5248">Box: tub, lid, net cups</text>
+    <text x="56" y="432" font-size="21" fill="#3F5248">Grows: lettuce, greens</text>
+    <text x="56" y="462" font-size="21" fill="#3F5248">Power: none</text>
+    <rect x="20" y="492" width="600" height="150" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="492" width="14" height="150" rx="7" fill="#E0A23B"/>
+    <text x="56" y="532" font-size="25" font-weight="800" fill="#0E1A14">DWC bucket or tote</text>
+    <text x="56" y="568" font-size="21" fill="#3F5248">Box: tub, lid, air pump, stone</text>
+    <text x="56" y="598" font-size="21" fill="#3F5248">Grows: greens, herbs; 1 tomato</text>
+    <text x="56" y="628" font-size="21" fill="#3F5248">Power: air pump, all day</text>
+    <rect x="20" y="658" width="600" height="150" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="658" width="14" height="150" rx="7" fill="#D1603D"/>
+    <text x="56" y="698" font-size="25" font-weight="800" fill="#0E1A14">NFT channel kit</text>
+    <text x="56" y="734" font-size="21" fill="#3F5248">Box: channels, tank, pump</text>
+    <text x="56" y="764" font-size="21" fill="#3F5248">Grows: lettuce, herbs</text>
+    <text x="56" y="794" font-size="21" fill="#3F5248">Power: pump; wilts fast if off</text>
+    <rect x="20" y="824" width="600" height="150" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="824" width="14" height="150" rx="7" fill="#7A6BB0"/>
+    <text x="56" y="864" font-size="25" font-weight="800" fill="#0E1A14">Tower kit</text>
+    <text x="56" y="900" font-size="21" fill="#3F5248">Box: column, tank, pump</text>
+    <text x="56" y="930" font-size="21" fill="#3F5248">Grows: greens, herbs, berries</text>
+    <text x="56" y="960" font-size="21" fill="#3F5248">Power: pump; base gets less light</text>
+    <rect x="20" y="990" width="600" height="150" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="990" width="14" height="150" rx="7" fill="#8A5A3C"/>
+    <text x="56" y="1030" font-size="25" font-weight="800" fill="#0E1A14">Dutch buckets on drip</text>
+    <text x="56" y="1066" font-size="21" fill="#3F5248">Box: buckets, drip lines, pump</text>
+    <text x="56" y="1096" font-size="21" fill="#3F5248">Grows: tomatoes, peppers</text>
+    <text x="56" y="1126" font-size="21" fill="#3F5248">Power: pump and timer</text>
+    <text x="20" y="1186" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

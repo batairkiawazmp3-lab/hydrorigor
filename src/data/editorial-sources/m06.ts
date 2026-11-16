@@ -720,6 +720,15 @@ export const m06EditorialSources = [
     sourceType: 'university-extension',
     locator: 'Construction Method: place in bright light (windowsill or grow light) at comfortable room temperatures of 65–78 °F; keep at least 1/2 in of solution; harvest in as little as six weeks. Nutrient Solution: lettuce 125–150 ppm N; never more than the labeled fertilizer rate. Plant Care Tips: exclude light from the solution to limit algae. No pH, EC or light-intensity figures',
   },
+  {
+    id: 'ucanr-kratky-starter-kits',
+    title: 'Opening the Door to Gardening in Small Spaces with Hydroponics',
+    publisher: 'UC Agriculture and Natural Resources, UC Master Gardener Program Statewide Blog (K. M. Salgado-Jacobo), April 6, 2026',
+    url: 'https://ucanr.edu/blog/uc-master-gardener-program-statewide-blog/article/opening-door-gardening-small-spaces',
+    accessedDate: '2026-11-16',
+    sourceType: 'university-extension',
+    locator: 'UC Master Gardener Program of Orange County project (2026 Search for Excellence). "No Soil, No Problem!": Kratky method, plants grow without pumps or electricity; repurposed containers (nut jars, milk jugs, yogurt containers); basic principles rather than specific products; mostly lettuce and leafy greens. "From Learning to Action": starter kits (container, net cup, growing medium, seeds, Kratky instructions) offered during classes and for $6 at outreach events, covering only the price of materials; 75% of participants set up their starter kit right away and 50% went on to build or purchase additional systems. No light, harvest-time or maintenance figures (read 2026-11-16)',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

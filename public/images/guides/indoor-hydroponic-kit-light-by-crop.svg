@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 880" width="640" height="880" role="img" aria-labelledby="t d">
+  <title id="t">Minimum light a kit should give each crop, in PPFD</title>
+  <desc id="d">Singapore Food Agency minimum PPFD at plant level, based on about 12 hours of light a day: seedlings and microgreens 100 to 150, lettuce 150 to 200, herbs and other leafy vegetables 200 to 400, fruiting vegetables 400 to 700 micromoles per square meter per second. For comparison, University of Kentucky's lettuce target of DLI 12 to 17 on a 16-hour timer works out to about 210 to 295 micromoles.</desc>
+  <rect width="640" height="880" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Light a kit must give</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="92" font-size="20" fill="#3F5248">Minimum PPFD at the leaves, µmol/m²/s</text>
+    <text x="20" y="120" font-size="20" fill="#3F5248">(Singapore Food Agency, 12 h of light)</text>
+    <text x="20" y="170" font-size="22" font-weight="700" fill="#0E1A14">Seedlings, microgreens</text>
+    <rect x="20" y="184" width="560" height="34" rx="8" fill="#E4ECE6"/>
+    <rect x="100" y="184" width="40" height="34" rx="8" fill="#7FB89A"/>
+    <text x="150" y="209" font-size="21" font-weight="700" fill="#0E1A14" text-anchor="start">100–150</text>
+    <text x="20" y="280" font-size="22" font-weight="700" fill="#0E1A14">Lettuce</text>
+    <rect x="20" y="294" width="560" height="34" rx="8" fill="#E4ECE6"/>
+    <rect x="140" y="294" width="40" height="34" rx="8" fill="#2E8B57"/>
+    <text x="190" y="319" font-size="21" font-weight="700" fill="#0E1A14" text-anchor="start">150–200</text>
+    <text x="20" y="390" font-size="22" font-weight="700" fill="#0E1A14">Herbs, leafy greens</text>
+    <rect x="20" y="404" width="560" height="34" rx="8" fill="#E4ECE6"/>
+    <rect x="180" y="404" width="160" height="34" rx="8" fill="#E0A23B"/>
+    <text x="350" y="429" font-size="21" font-weight="700" fill="#0E1A14" text-anchor="start">200–400</text>
+    <text x="20" y="500" font-size="22" font-weight="700" fill="#0E1A14">Fruiting crops</text>
+    <rect x="20" y="514" width="560" height="34" rx="8" fill="#E4ECE6"/>
+    <rect x="340" y="514" width="240" height="34" rx="8" fill="#D1603D"/>
+    <text x="330" y="539" font-size="21" font-weight="700" fill="#0E1A14" text-anchor="end">400–700</text>
+    <text x="20" y="610" font-size="20" fill="#5B6F64" text-anchor="start">0</text>
+    <text x="300" y="610" font-size="20" fill="#5B6F64" text-anchor="middle">350</text>
+    <text x="580" y="610" font-size="20" fill="#5B6F64" text-anchor="end">700</text>
+    <rect x="20" y="650" width="600" height="170" rx="18" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="650" width="14" height="170" rx="7" fill="#2E8B57"/>
+    <text x="56" y="692" font-size="24" font-weight="800" fill="#0E1A14">Kentucky lettuce target</text>
+    <text x="56" y="730" font-size="21" fill="#3F5248">DLI 12–17 on a 16 h timer</text>
+    <text x="56" y="764" font-size="21" fill="#3F5248">= about 210–295 µmol/m²/s</text>
+    <text x="56" y="798" font-size="21" fill="#3F5248">Higher than the minimum above</text>
+    <text x="20" y="860" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
