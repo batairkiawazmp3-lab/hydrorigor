@@ -1,42 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1010" width="640" height="1010" role="img" aria-labelledby="t d">
-  <title id="t">pH ranges for hydroponic vegetables: pH 6.0 fits every crop</title>
-  <desc id="d">Bar chart of pH from Oklahoma State HLA-6722 Table 2: basil 5.5 to 6.0, pepper 5.5 to 6.0, strawberry 6.0, tomato 6.0 to 6.5, broccoli 6.0 to 6.8, lettuce 6.0 to 7.0, spinach 6.0 to 7.0. A line at pH 6.0 crosses every range, so a shared tank can run at pH 6.0. The University of Missouri gives pH 5.5 to 6.5 as the rule of thumb for most hydroponic crops.</desc>
-  <rect width="640" height="1010" fill="#F5F7F2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1420" width="640" height="1420" role="img" aria-labelledby="t d">
+  <title id="t">pH ranges for hydroponic vegetables: pH 6.0 fits most crops</title>
+  <desc id="d">Bar chart of pH from Oklahoma State HLA-6722 Table 2. Ranges that include pH 6.0: basil 5.5 to 6.0, pepper 5.5 to 6.0, strawberry 6.0, tomato 6.0 to 6.5, broccoli 6.0 to 6.8, lettuce 6.0 to 7.0, spinach 6.0 to 7.0. Exceptions: cucumber 5.0 to 5.5, celery 6.5, cabbage 6.5 to 7.0, pak choi 7.0. The University of Missouri gives pH 5.5 to 6.5 as the rule of thumb for most hydroponic crops.</desc>
+  <rect width="640" height="1420" fill="#F5F7F2"/>
   <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">pH by vegetable</text>
   <g font-family="Inter, Arial, sans-serif">
-    <text x="20" y="88" font-size="20" fill="#3F5248">pH 6.0 fits every crop here</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">pH 6.0 fits most crops</text>
     <text x="20" y="114" font-size="20" fill="#3F5248">(Oklahoma State HLA-6722)</text>
-    <path d="M190 190 V774" stroke="#DCE7E0" stroke-width="2"/>
-    <text x="190.0" y="808" font-size="20" fill="#3F5248" text-anchor="middle">5.0</text>
-    <path d="M274 190 V774" stroke="#DCE7E0" stroke-width="2"/>
-    <text x="274.0" y="808" font-size="20" fill="#3F5248" text-anchor="middle">5.5</text>
-    <path d="M358 190 V774" stroke="#DCE7E0" stroke-width="2"/>
-    <text x="358.0" y="808" font-size="20" fill="#3F5248" text-anchor="middle">6.0</text>
-    <path d="M442 190 V774" stroke="#DCE7E0" stroke-width="2"/>
-    <text x="442.0" y="808" font-size="20" fill="#3F5248" text-anchor="middle">6.5</text>
-    <path d="M526 190 V774" stroke="#DCE7E0" stroke-width="2"/>
-    <text x="526.0" y="808" font-size="20" fill="#3F5248" text-anchor="middle">7.0</text>
-    <path d="M610 190 V774" stroke="#DCE7E0" stroke-width="2"/>
-    <text x="610.0" y="808" font-size="20" fill="#3F5248" text-anchor="middle">7.5</text>
+    <path d="M260 190 V1102" stroke="#DCE7E0" stroke-width="2"/>
+    <text x="260.0" y="1136" font-size="20" fill="#3F5248" text-anchor="middle">5.0</text>
+    <path d="M400 190 V1102" stroke="#DCE7E0" stroke-width="2"/>
+    <text x="400.0" y="1136" font-size="20" fill="#3F5248" text-anchor="middle">6.0</text>
+    <path d="M540 190 V1102" stroke="#DCE7E0" stroke-width="2"/>
+    <text x="540.0" y="1136" font-size="20" fill="#3F5248" text-anchor="middle">7.0</text>
     <text x="30" y="240" font-size="22" font-weight="800" fill="#0E1A14">Basil</text>
-    <rect x="274" y="216" width="84" height="36" rx="10" fill="#7FB069"/>
+    <rect x="330" y="216" width="70" height="36" rx="10" fill="#7FB069"/>
     <text x="30" y="322" font-size="22" font-weight="800" fill="#0E1A14">Pepper</text>
-    <rect x="274" y="298" width="84" height="36" rx="10" fill="#7FB069"/>
+    <rect x="330" y="298" width="70" height="36" rx="10" fill="#7FB069"/>
     <text x="30" y="404" font-size="22" font-weight="800" fill="#0E1A14">Strawberry</text>
-    <rect x="350" y="380" width="16" height="36" rx="6" fill="#7FB069"/>
+    <rect x="392" y="380" width="16" height="36" rx="6" fill="#7FB069"/>
     <text x="30" y="486" font-size="22" font-weight="800" fill="#0E1A14">Tomato</text>
-    <rect x="358" y="462" width="84" height="36" rx="10" fill="#7FB069"/>
+    <rect x="400" y="462" width="70" height="36" rx="10" fill="#7FB069"/>
     <text x="30" y="568" font-size="22" font-weight="800" fill="#0E1A14">Broccoli</text>
-    <rect x="358" y="544" width="134" height="36" rx="10" fill="#7FB069"/>
+    <rect x="400" y="544" width="112" height="36" rx="10" fill="#7FB069"/>
     <text x="30" y="650" font-size="22" font-weight="800" fill="#0E1A14">Lettuce</text>
-    <rect x="358" y="626" width="168" height="36" rx="10" fill="#7FB069"/>
+    <rect x="400" y="626" width="140" height="36" rx="10" fill="#7FB069"/>
     <text x="30" y="732" font-size="22" font-weight="800" fill="#0E1A14">Spinach</text>
-    <rect x="358" y="708" width="168" height="36" rx="10" fill="#7FB069"/>
-    <path d="M358 176 V782" stroke="#0F6B4F" stroke-width="5" stroke-dasharray="10 8"/>
-    <text x="358.0" y="168" font-size="21" font-weight="800" fill="#0F6B4F" text-anchor="middle">pH 6.0</text>
-    <text x="400" y="844" font-size="21" font-weight="800" fill="#3F5248" text-anchor="middle">pH</text>
-    <rect x="20" y="874" width="600" height="56" rx="14" fill="#E3EEF6"/>
-    <text x="44" y="910" font-size="21" font-weight="800" fill="#0E1A14">Missouri: pH 5.5–6.5 for most crops</text>
-    <text x="20" y="988" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+    <rect x="400" y="708" width="140" height="36" rx="10" fill="#7FB069"/>
+    <text x="30" y="814" font-size="22" font-weight="800" fill="#0E1A14">Cucumber</text>
+    <rect x="260" y="790" width="70" height="36" rx="10" fill="#E0A23B"/>
+    <text x="30" y="896" font-size="22" font-weight="800" fill="#0E1A14">Celery</text>
+    <rect x="462" y="872" width="16" height="36" rx="6" fill="#E0A23B"/>
+    <text x="30" y="978" font-size="22" font-weight="800" fill="#0E1A14">Cabbage</text>
+    <rect x="470" y="954" width="70" height="36" rx="10" fill="#E0A23B"/>
+    <text x="30" y="1060" font-size="22" font-weight="800" fill="#0E1A14">Pak choi</text>
+    <rect x="532" y="1036" width="16" height="36" rx="6" fill="#E0A23B"/>
+    <path d="M400 176 V1110" stroke="#0F6B4F" stroke-width="5" stroke-dasharray="10 8"/>
+    <text x="400.0" y="168" font-size="21" font-weight="800" fill="#0F6B4F" text-anchor="middle">pH 6.0</text>
+    <text x="400" y="1172" font-size="21" font-weight="800" fill="#3F5248" text-anchor="middle">pH</text>
+    <rect x="30" y="1192" width="26" height="26" rx="6" fill="#7FB069"/>
+    <text x="68" y="1212" font-size="21" fill="#3F5248">Includes pH 6.0</text>
+    <rect x="30" y="1230" width="26" height="26" rx="6" fill="#E0A23B"/>
+    <text x="68" y="1250" font-size="21" fill="#3F5248">Needs its own pH</text>
+    <rect x="20" y="1276" width="600" height="56" rx="14" fill="#E3EEF6"/>
+    <text x="44" y="1312" font-size="21" font-weight="800" fill="#0E1A14">Missouri: pH 5.5–6.5 for most crops</text>
+    <text x="20" y="1398" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
   </g>
 </svg>
