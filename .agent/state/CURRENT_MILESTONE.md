@@ -92,8 +92,8 @@ impressions in 28 days).
         ("click and grow" 5,400 / 35 is the nearest brand demand; add named units only if Click & Grow approves the owner).
 22. [ ] Remaining launch-guide rebuilds, one per run: ~~`/nutrients-water/how-to-mix-hydroponic-nutrients/`~~
         (rebuilt 2026-11-15, "How to Mix Hydroponic Nutrients: Order, Rates & EC Check"; "mixing hydroponic nutrients" 140 / 19), ~~`/nutrients-water/powder-vs-liquid-hydroponic-nutrients/`~~
-        (rebuilt 2026-11-16, "Powder vs Liquid Hydroponic Nutrients: Mixing, Storage & EC"; "hydroponic nutrients powder" 170 / 19), `/nutrients-water/hydroponic-nutrients-for-vegetables/`
-        ("hydroponic nutrients vegetables" 140 / 15), `/best/indoor-hydroponic-system-kits/`,
+        (rebuilt 2026-11-16, "Powder vs Liquid Hydroponic Nutrients: Mixing, Storage & EC"; "hydroponic nutrients powder" 170 / 19), ~~`/nutrients-water/hydroponic-nutrients-for-vegetables/`~~
+        (rebuilt 2026-11-16, "Hydroponic Nutrients for Vegetables: EC & pH by Crop"; "hydroponic nutrients vegetables" 140 / 15), `/best/indoor-hydroponic-system-kits/`,
         `/best/hydroponic-nutrients-for-home-growers/` ("best hydroponic nutrients" 260 / 20),
         `/reviews/masterblend-hydroponic-nutrients/` ("masterblend hydroponic nutrients" 210 / 22),
         `/reviews/general-hydroponics-nutrients/` (170 / 23).
