@@ -1,64 +1,229 @@
 ---
-title: "Hydroponic Nutrients for Vegetables: A Feeding Guide"
-description: "Feed hydroponic vegetables with a complete crop-appropriate program, water context, product-specific dosing, measurement, and records."
+title: "Hydroponic Nutrients for Vegetables: EC & pH by Crop"
+description: "Feed hydroponic vegetables a complete nutrient at pH 6.0. EC by crop: lettuce 1.2–1.8, spinach 1.8–2.3, tomato 2.0–4.0 mS/cm. Which crops share a tank."
 route: "hydroponic-nutrients-for-vegetables"
 publishDate: 2026-09-12
+updatedDate: 2026-11-16
 author: "HydroRigor Editorial"
 category: "nutrients"
-tags: ["vegetables", "nutrients", "feeding"]
+tags: ["vegetables", "nutrients", "feeding", "ec", "ph"]
 sources:
-  - id: "psu-plant-nutrition"
-    title: "Hydroponics Systems and Principles of Plant Nutrition"
-    url: "https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess"
-    publisher: "Penn State Extension"
-    accessedDate: 2026-09-12
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics (HLA-6722)"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-15
+  - id: "tennessee-fruiting-crops"
+    title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems (W 844-C)"
+    url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
+    publisher: "University of Tennessee Extension"
+    accessedDate: 2026-11-14
   - id: "mu-nutrient-solutions"
     title: "Hydroponic Nutrient Solutions"
     url: "https://extension.missouri.edu/publications/g6984"
     publisher: "University of Missouri Extension"
     accessedDate: 2026-09-12
+  - id: "psu-plant-nutrition"
+    title: "Hydroponics Systems and Principles of Plant Nutrition"
+    url: "https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess"
+    publisher: "Penn State Extension"
+    accessedDate: 2026-09-12
+  - id: "psu-nutrient-programs"
+    title: "Hydroponics Systems: Nutrient Solution Programs and Recipes"
+    url: "https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes"
+    publisher: "Penn State Extension"
+    accessedDate: 2026-11-15
+  - id: "uky-hydroponic-lettuce"
+    title: "Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)"
+    url: "https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification"
+    accessedDate: 2026-11-03
+  - id: "ifas-lettuce-small-systems"
+    title: "Growing Lettuce in Small Hydroponic Systems (HS1422)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1422"
+    publisher: "UF/IFAS Extension"
+    accessedDate: 2026-09-12
+  - id: "ua-strawberry-irrigation"
+    title: "Hydroponic Strawberry Irrigation"
+    url: "https://cales.arizona.edu/strawberry/Hydroponic_Strawberry_Information_Website/Irrigation.html"
+    publisher: "University of Arizona CEAC"
+    accessedDate: 2026-11-02
   - id: "vt-system-crop-comparisons"
-    title: "Hydroponic Production of Edible Crops: System and Crop Comparisons"
+    title: "Hydroponic Production of Edible Crops: System and Crop Comparisons (SPES-466NP)"
     url: "https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html"
     publisher: "Virginia Cooperative Extension"
-    accessedDate: 2026-09-12
+    accessedDate: 2026-11-06
 affiliateDisclosure: false
 commercialDestinationIds: []
 draft: false
 ---
 
-There is no single feeding schedule for “hydroponic vegetables.” Use a complete program documented for the crop and system, account for source water, scale only the current product-specific dose, and monitor both the solution and plant. Leafy and fruiting vegetables differ in duration, structure, and nutrient demand.
+import KeyTargets from '../../components/content/KeyTargets.astro';
 
-## Group vegetables by crop behavior
+Feed hydroponic vegetables a **complete hydroponic nutrient** (one that supplies calcium, magnesium and micronutrients, not just N-P-K), set to the **EC for the crop** and held near **pH 6.0**. Oklahoma State's crop table puts **lettuce at EC 1.2–1.8 mS/cm, basil 1.0–1.6, spinach 1.8–2.3, strawberry 1.8–2.2, broccoli 2.8–3.5 and tomato 2.0–4.0**. Leafy greens want a weaker solution than fruiting crops. Every crop in that table includes pH 6.0 in its range, so pH is easy to share. EC is not: group crops with overlapping EC ranges in one tank and give the rest their own.
 
-Leafy crops such as lettuce have a comparatively short cycle and compact structure. Fruiting crops such as tomatoes and peppers remain in the system longer, develop larger root systems, require support, and change through vegetative, flowering, and fruiting stages.
+The rest of this guide covers the full crop table, which vegetables can share a reservoir, how feeding changes from seedling to fruit, your water, and keeping a solution on track. Every figure comes from a university or extension source listed at the end.
 
-Virginia Cooperative Extension demonstrates that crop structure affects system fit. The same logic applies to feeding: do not use a crop name alone without stage and production context.
+<KeyTargets
+  title="Feeding vegetables: the numbers to know"
+  source="Oklahoma State HLA-6722, University of Tennessee W 844-C and University of Missouri Extension"
+  items={[
+    { label: 'Shared pH', value: '6.0', note: 'inside every crop range in the table' },
+    { label: 'Leafy greens EC', value: '1.2–1.8', note: 'mS/cm, lettuce' },
+    { label: 'Fruiting crops EC', value: '2.0–3.0', note: 'mS/cm, much of the season' },
+    { label: 'Seedlings EC', value: '0.5–1.0', note: 'mS/cm, fruiting crops' },
+  ]}
+/>
 
-## Begin with essential elements and complete instructions
+## Quick answer: EC and pH by vegetable
 
-Penn State Extension lists essential macro- and micronutrients and explains that deficiencies or excesses can appear quickly in hydroponic systems. Confirm that the whole program supplies required elements. A front-label N-P-K ratio does not prove completeness.
+| Vegetable | EC (mS/cm) | pH | Source |
+| --- | --- | --- | --- |
+| Basil | 1.0–1.6 | 5.5–6.0 | Oklahoma State HLA-6722 |
+| Pepper | 0.8–1.8 | 5.5–6.0 | Oklahoma State HLA-6722 |
+| Lettuce | 1.2–1.8 | 6.0–7.0 | Oklahoma State HLA-6722 |
+| Spinach | 1.8–2.3 | 6.0–7.0 | Oklahoma State HLA-6722 |
+| Strawberry | 1.8–2.2 | 6.0 | Oklahoma State HLA-6722 |
+| Tomato | 2.0–4.0 | 6.0–6.5 | Oklahoma State HLA-6722 |
+| Broccoli | 2.8–3.5 | 6.0–6.8 | Oklahoma State HLA-6722 |
+| Fruiting crops (tomato, pepper, cucumber) | 2.0–3.0 for much of the season | 5.5–6.0 | University of Tennessee W 844-C |
+| Fruiting-crop seedlings | 0.5–1.0, rising to 1.0–1.5 at transplant | — | University of Tennessee W 844-C |
+| Most hydroponic crops | — | 5.5–6.5 | University of Missouri Extension |
 
-If the program uses several parts, treat each as a separate measured component and follow the documented order. Do not improvise a supplement because two products use similar names.
+These are crop ranges from one table, without cultivar, stage or system attached. Where other sources disagree, the sections below say so. Look up any crop in the [pH and EC target table](/tools/ph-ec-targets/).
 
-## Include the water and root medium
+## Leafy greens and fruiting crops eat differently
 
-University of Missouri Extension advises source-water analysis for pH, EC, alkalinity, and individual elements. In inert media, reservoir and root-zone readings may be similar; organic media can interact with the solution and change root-zone conditions.
+![Bar chart of EC in mS/cm from Oklahoma State. Low group: pepper 0.8–1.8, basil 1.0–1.6, lettuce 1.2–1.8. Middle group: spinach 1.8–2.3, strawberry 1.8–2.2. High group: tomato 2.0–4.0, broccoli 2.8–3.5. Crops in the same group can share a tank.](/images/guides/hydroponic-vegetables-ec-by-crop.svg)
 
-Record whether the system recirculates. In a recirculating reservoir, plant uptake and water loss can alter composition over time. Adding concentrate to restore an EC reading does not prove the original nutrient ratios have been restored.
+*EC by crop from Oklahoma State HLA-6722 Table 2, sorted into three groups. The University of Tennessee runs fruiting crops, peppers included, at 2.0–3.0, higher than this table gives for pepper.*
 
-## Use measurements as evidence, not recipes
+The pattern is simple: **leafy crops and herbs run weaker, fruiting crops run stronger.** Lettuce and basil sit around EC 1.0–1.8, while Oklahoma State gives tomatoes 2.0–4.0 and the University of Tennessee holds tomatoes, peppers and cucumbers at 2.0–3.0 for most of the season.
 
-EC measures combined ionic conductivity. pH affects nutrient availability. Neither identifies every element. Calibrate instruments and measure consistently, then interpret the readings with roots, foliage, water level, environment, and recent actions.
+The reasons are practical. Lettuce is in the system for a few weeks; the University of Kentucky harvests it 21–35 days after transplant. Fruiting crops stay for months, grow large root systems and change as they flower and set fruit, and Tennessee notes that larger plants throw a recirculating solution out of balance more quickly.
 
-For accepted source-specific crop records, use the [pH and EC target reference](/tools/ph-ec-targets/). Do not average ranges across unrelated crop stages or systems.
+Systems follow the same split. In Virginia Tech's side-by-side trial, greens and herbs yielded best in NFT and deep water culture, while tomatoes and peppers did best in bags of media and worst in NFT. The [best hydroponic system for home growers](/best/hydroponic-system-for-home-growers/) matches each system to each crop.
 
-## Scale the label carefully
+**One conflict to know about: pepper.** Oklahoma State's table gives pepper EC 0.8–1.8, about the same as lettuce. Tennessee groups peppers with tomatoes and cucumbers at 2.0–3.0. HydroRigor's reading: start young pepper plants in Oklahoma State's range and move toward Tennessee's 2.0 once they flower.
 
-Use the manufacturer’s current rate for the exact formulation and crop context. HydroRigor’s [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) can scale a liquid mL-per-liter or mL-per-US-gallon label dose to reservoir volume. Calculate multi-part products separately. The output is concentrate volume—not a predicted EC or crop recommendation.
+## What "complete" means on a label
 
-## Keep a feeding record
+Penn State lists 17 elements plants need. Carbon, hydrogen and oxygen come from air and water; the other 14 have to come from the solution. A hydroponic nutrient has to supply them all, because there is no soil to fill the gaps.
 
-Record product and formulation, water source, reservoir volume, dose for each component, date, stage, measurements, water additions, solution changes, and plant observations. When something changes, prefer one documented adjustment at a time.
+- **Look past N-P-K.** The three numbers on the front cover nitrogen, phosphorus and potassium only. Check the label lists calcium, magnesium, sulfur and micronutrients such as iron.
+- **Two- and three-part products** exist because calcium reacts with phosphates and sulfates to form solids roots can't use (University of Missouri). Mix each part into the water separately; never combine concentrates.
+- **Some single-bag fertilizers leave out calcium and magnesium.** Penn State notes that magnesium and calcium may not be included in complete soluble fertilizers, which is why its tomato program adds calcium nitrate and magnesium sulfate to a 4-18-38 base.
+- **Too much of one nutrient blocks another.** Penn State gives potassium as the example: in excess, it reduces uptake of calcium or magnesium.
 
-Use the [beginner nutrient guide](/nutrients-water/hydroponic-nutrients/) for the underlying concepts and the [tomato stage guide](/nutrients-water/hydroponic-nutrients-for-tomatoes/) for a fruiting-crop example.
+For product types, see the [best hydroponic nutrients for home growers](/best/hydroponic-nutrients-for-home-growers/). For how much to add, follow the label and scale it to your reservoir with the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/).
+
+## Which vegetables can share a tank?
+
+![Bar chart of pH by crop from Oklahoma State: basil 5.5–6.0, pepper 5.5–6.0, strawberry 6.0, tomato 6.0–6.5, broccoli 6.0–6.8, lettuce 6.0–7.0, spinach 6.0–7.0. A dashed line at pH 6.0 crosses every range. The University of Missouri gives pH 5.5–6.5 for most crops.](/images/guides/hydroponic-vegetables-ph-by-crop.svg)
+
+*pH by crop from Oklahoma State HLA-6722 Table 2. pH 6.0 lies inside every range, so a shared tank can run at pH 6.0.*
+
+pH is the easy part: every crop in Oklahoma State's table includes 6.0. EC is what decides which crops can share a reservoir. HydroRigor worked out the overlaps from the table:
+
+| Crops in one tank | EC they share (mS/cm) | pH they share | Verdict |
+| --- | --- | --- | --- |
+| Basil + pepper | 1.0–1.6 | 5.5–6.0 | Good match |
+| Lettuce + basil | 1.2–1.6 | 6.0 | Good match |
+| Lettuce + pepper | 1.2–1.8 | 6.0 | Good match (young pepper) |
+| Spinach + strawberry | 1.8–2.2 | 6.0 | Good match |
+| Tomato + broccoli | 2.8–3.5 | 6.0–6.5 | Good match |
+| Tomato + strawberry | 2.0–2.2 | 6.0 | Narrow: low end for tomato |
+| Lettuce + spinach | 1.8 only | 6.0–7.0 | Narrow: one value |
+| Lettuce + tomato | None | 6.0 | Separate tanks |
+| Basil + tomato | None | 6.0 | Separate tanks |
+
+**Recommendation:** run one tank for greens and herbs at about EC 1.4–1.6 and pH 6.0, and a separate one for tomatoes at 2.0 or above. If you only have one reservoir, grow crops from one group, not a mix.
+
+## Feeding by growth stage
+
+Seedlings need a weaker solution than mature plants. The two sources that give stage figures:
+
+| Stage | Fruiting crops (Tennessee) | Lettuce (Kentucky) |
+| --- | --- | --- |
+| Seedlings | EC 0.5–1.0 once the seed leaves open | EC about 1.0 |
+| At transplant | EC 1.0–1.5 | EC about 1.5 |
+| Growing and fruiting | EC 2.0–3.0 for much of the season | EC about 1.5; pH 5.5–6.0 |
+
+Lettuce stays at about the same strength from transplant to harvest. Fruiting crops step up: start them gently and raise EC as they flower. The [tomato feeding guide](/nutrients-water/hydroponic-nutrients-for-tomatoes/) gives the full stage-by-stage plan, including Penn State's 4-18-38 program.
+
+## Start with your water
+
+What comes out of the tap is part of the solution. The University of Missouri gives these limits for source water:
+
+| Water test | Limit | Source |
+| --- | --- | --- |
+| EC | 0.2–0.8 dS/m (mS/cm), ideally below 1 | University of Missouri |
+| pH | 5.5–7.0 | University of Missouri |
+| Alkalinity | 40–160 ppm as CaCO₃ | University of Missouri |
+| Sodium | Below 50 ppm | University of Missouri |
+| Chloride | Below 70 ppm | University of Missouri |
+| Calcium | Below 150 ppm | University of Missouri |
+| Boron | Below 0.5 ppm | University of Missouri |
+
+Oklahoma State adds that alkalinity above 75 ppm pushes pH up, so hard water means correcting pH more often. Penn State's tip for custom recipes is to subtract what the water already supplies: with 30 ppm potassium in the water and a 210 ppm target, add 180. If your water fails these limits, filtered or reverse-osmosis water is the fix.
+
+## Mixing and managing the solution
+
+1. **Fill the reservoir** with water and note its starting EC.
+2. **Add each nutrient part separately**, stirring between parts, in the order the label gives. Never mix concentrates together (University of Missouri).
+3. **Read EC.** Oklahoma State says to stir and let the reading settle, which can take a couple of minutes. Dilute with water if it's high; add concentrate if it's low.
+4. **Adjust pH last.** Oklahoma State's rule is to get EC in range first. Add pH down or up slowly and wait several minutes before adding more. Aim for 6.0 in a mixed tank.
+5. **Check daily at the same time** (Oklahoma State) and log both numbers. A [pH meter](/best/hydroponic-ph-meter/) you calibrate is worth more than one you don't.
+6. **Top up** with source water or concentrate as plants drink (Tennessee).
+7. **Replace the solution.** Oklahoma State replaces it completely about every two weeks; Tennessee changes small recirculating tanks every one to two weeks; Kentucky replaces lettuce tanks every 3–4 weeks. Weekly topping up can't fix the balance: EC shows the total, not which nutrients are left (University of Missouri).
+
+Keep the solution at about 72–75 °F (22–24 °C), Oklahoma State's figure. For the full method, see [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/) and the [hydroponic nutrient solution guide](/nutrients-water/hydroponic-nutrient-solution/).
+
+## Troubleshooting
+
+| Symptom | Check first | What to do | Source |
+| --- | --- | --- | --- |
+| Yellowing between veins on new leaves | pH too high, locking out iron | Bring pH back to 6.0 | Penn State |
+| Brown leaf tips on lettuce | Calcium-related tipburn | Check calcium is in the nutrient; see the lettuce guide | Penn State |
+| Dark, sunken patch at the blossom end of tomatoes | Calcium movement into the fruit | Check calcium in the nutrient; avoid high or swinging temperatures | Penn State; Tennessee |
+| Wilting with leaf burn | Too many salts | Dilute or replace the solution | Penn State |
+| Greens fine, tomatoes weak in a shared tank | EC too low for fruiting crops | Give tomatoes their own tank at 2.0+ | Oklahoma State; Tennessee |
+| pH climbs a day after correcting | Alkaline source water | Test alkalinity; above 75 ppm pushes pH up | Oklahoma State |
+| EC right but plants decline over weeks | Nutrients out of balance | Replace the solution every 1–2 weeks | Tennessee; University of Missouri |
+| Strawberries struggle at the table's EC | Sources disagree | Try the University of Arizona's lower EC, at or below 1.0 | University of Arizona |
+
+For a full guide to reading leaf symptoms, see the [hydroponic nutrients guide](/nutrients-water/hydroponic-nutrients/).
+
+## Where the sources disagree
+
+- **Pepper:** Oklahoma State gives EC 0.8–1.8; Tennessee 2.0–3.0 for fruiting crops. Start low, raise at flowering.
+- **Strawberry:** Oklahoma State gives EC 1.8–2.2; the University of Arizona's hydroponic strawberry program runs at or below 1.0. The [hydroponic strawberries guide](/crops/hydroponic-strawberries/) explains which to follow.
+- **Lettuce pH:** Oklahoma State and UF/IFAS give 6.0–7.0; Kentucky gives 5.5–6.0. pH 6.0 sits at the edge of both.
+- **Tomato EC:** Oklahoma State's 2.0–4.0 is wider than Tennessee's 2.0–3.0. Stay in the shared 2.0–3.0 unless you have a reason to go higher.
+- **Kale and Swiss chard** aren't in Oklahoma State's table. No source here gives them a figure, so this guide doesn't.
+
+## Frequently asked questions
+
+### What is the best nutrient for hydroponic vegetables?
+
+A complete hydroponic nutrient: one whose label lists calcium, magnesium and micronutrients as well as N-P-K, made for hydroponics rather than soil. Penn State lists 14 elements plants need from the solution. Two- and three-part products keep calcium away from phosphates and sulfates until they reach the water.
+
+### Can I grow lettuce and tomatoes in the same reservoir?
+
+Not well. Oklahoma State puts lettuce at EC 1.2–1.8 and tomatoes at 2.0–4.0, so the ranges don't overlap. Give tomatoes their own tank. Lettuce shares well with basil (EC 1.2–1.6, pH 6.0).
+
+### What pH should hydroponic vegetables be at?
+
+pH 6.0 fits every crop in Oklahoma State's table, from basil (5.5–6.0) to lettuce and spinach (6.0–7.0). The University of Missouri's rule of thumb for most hydroponic crops is 5.5–6.5.
+
+### Do vegetables need different nutrients at different stages?
+
+Fruiting crops do. Tennessee starts seedlings at EC 0.5–1.0, raises it to 1.0–1.5 at transplant and holds 2.0–3.0 for much of the season. Lettuce stays at about EC 1.5 from transplant to harvest (Kentucky).
+
+### How often should I change the nutrient solution?
+
+About every two weeks (Oklahoma State), or every one to two weeks for small recirculating tanks (Tennessee). Lettuce tanks can go 3–4 weeks (Kentucky). Check pH and EC daily in between.
+
+### Can I use regular garden fertilizer?
+
+Use one made for hydroponics. Garden fertilizers often rely on the soil to supply calcium, magnesium and micronutrients, and Penn State notes that magnesium and calcium may be missing from complete soluble fertilizers. See the [lettuce guide](/crops/hydroponic-lettuce/) for a full crop example.

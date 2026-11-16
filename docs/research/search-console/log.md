@@ -19,6 +19,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-16 | /nutrients-water/hydroponic-nutrients-for-vegetables/ | Full rebuild (EC and pH by crop, shared-tank table, 2 charts, 9 sources) | 2026-11-30, 2026-12-14 |
 | 2026-11-15 | /nutrients-water/organic-hydroponic-nutrients/ | Full rebuild (#75: yields vs mineral nutrients, causes and fixes, 2 diagrams); before: 43 impressions, position 60.8 (Nov 1–13) | 2026-11-29, 2026-12-13 |
 | 2026-11-14 | /crops/hydroponic-tomato-seeds/ | Full rebuild (seed by space, micro-dwarf trial data, 2 diagrams, 8 sources) | 2026-11-28, 2026-12-12 |
 | 2026-11-14 | /best/hydroponic-ph-meter/ | New guide (ph meter hydroponics 590 / 15) | 2026-11-28, 2026-12-12 |
