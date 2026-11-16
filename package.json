@@ -26,7 +26,8 @@
     "test:production": "node scripts/test-production.mjs",
     "test:launch": "node scripts/test-production.mjs --local",
     "test:lighthouse:production": "node scripts/run-lighthouse.mjs lighthouserc.production.cjs",
-    "images:share": "node scripts/generate-share-images.mjs"
+    "images:share": "node scripts/generate-share-images.mjs",
+    "sc:trend": "node scripts/search-console-trend.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "0.4.1",
