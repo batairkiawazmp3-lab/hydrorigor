@@ -284,9 +284,9 @@ export const m06EditorialSources = [
     title: 'Hydroponics Systems: Nutrient Solution Programs and Recipes',
     publisher: 'Penn State Extension',
     url: 'https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes',
-    accessedDate: '2026-11-15',
+    accessedDate: '2026-11-17',
     sourceType: 'university-extension',
-    locator: 'Updated March 18, 2024. Fertilizer programs: 4-18-38 tomato base supplemented with calcium nitrate and magnesium sulfate by variety and stage. Nutrient Solution Recipes: Modified Sonneveld solution for herbs N 150, P 31, K 210, Ca 90, Mg 24 ppm; subtract what is in the water (30 ppm K in water, 210 target: add 180 ppm); a high precision scale is required for micronutrients. Complete Soluble Fertilizer Approach: lettuce might be 100 to 150 ppm N; magnesium and calcium may not be included. How to Choose Fertilizers, solubility table (g/100 mL cold water, citing Resh): calcium nitrate 121.2, potassium nitrate 13.3. Nutrient Solution Concentration and Fertilizer Compatibility: common stock concentrations 50, 100 or 200 times normal strength; two stock tanks keep calcium apart from phosphates and sulfates (calcium nitrate in one tank, 4-18-38 plus magnesium sulfate in the other) to avoid precipitates that clog drip lines. Keeping Nutrients in Solution: motor-driven propeller for large tanks, circulating pump, or air pump for small tanks',
+    locator: 'Updated March 18, 2024. Fertilizer programs: 4-18-38 tomato base supplemented with calcium nitrate and magnesium sulfate by variety and stage. Nutrient Solution Recipes: Modified Sonneveld solution for herbs N 150, P 31, K 210, Ca 90, Mg 24 ppm; subtract what is in the water (30 ppm K in water, 210 target: add 180 ppm); a high precision scale is required for micronutrients. Complete Soluble Fertilizer Approach: lettuce might be 100 to 150 ppm N; magnesium and calcium may not be included. How to Choose Fertilizers, solubility table (g/100 mL cold water, citing Resh): calcium nitrate 121.2, potassium nitrate 13.3. Nutrient Solution Concentration and Fertilizer Compatibility: common stock concentrations 50, 100 or 200 times normal strength; two stock tanks keep calcium apart from phosphates and sulfates (calcium nitrate in one tank, 4-18-38 plus magnesium sulfate in the other) to avoid precipitates that clog drip lines. Keeping Nutrients in Solution: motor-driven propeller for large tanks, circulating pump, or air pump for small tanks. Re-read 2026-11-17: use greenhouse-grade fertilizers (higher purity and greater solubility than standard grade); some growers use a complete soluble fertilizer including micronutrients; nitrate holds vegetative growth back compared with ammonium, while ammonium can cause excessive vegetative growth, especially in poor light, and ammonium toxicity; chelates keep metals available when pH changes; iron, manganese and zinc are easily made unavailable',
   },
   {
     id: 'psu-plant-nutrition',
@@ -728,6 +728,15 @@ export const m06EditorialSources = [
     accessedDate: '2026-11-16',
     sourceType: 'university-extension',
     locator: 'UC Master Gardener Program of Orange County project (2026 Search for Excellence). "No Soil, No Problem!": Kratky method, plants grow without pumps or electricity; repurposed containers (nut jars, milk jugs, yogurt containers); basic principles rather than specific products; mostly lettuce and leafy greens. "From Learning to Action": starter kits (container, net cup, growing medium, seeds, Kratky instructions) offered during classes and for $6 at outreach events, covering only the price of materials; 75% of participants set up their starter kit right away and 50% went on to build or purchase additional systems. No light, harvest-time or maintenance figures (read 2026-11-16)',
+  },
+  {
+    id: 'unr-flora-leafy-greens-2014',
+    title: 'Investigating the effects of hydroponic media on quality of greenhouse grown leafy greens',
+    publisher: 'International Journal of Agricultural Extension 2(3): 227–234 (S. D. Ferguson, R. P. Saliga III and S. T. Omaye, University of Nevada, Reno), 2014',
+    url: 'https://naes.agnt.unr.edu/PMS/Pubs/309_2015_01.pdf',
+    accessedDate: '2026-11-17',
+    sourceType: 'university-research',
+    locator: 'Methods p. 228: float culture, three continuous-flow systems; Rex butterhead and Nevada Summer Crisp lettuce and bok choy; pH buffered to 6.0–6.4, water at least 18 °C; tap water about 100 ppm TDS. Cycle 1: General Hydroponics Flora series 1:1:1 at 300, 400 and 500 ppm TDS, no significant difference in any crop (Figure 4, p. 230). Cycle 2: Flora at 400 ppm (low) versus 1,200 ppm, described as the manufacturer\'s commercial rate (high), versus a self-made organic solution of potash, rock phosphate and fish meal; significant difference in every crop (Figure 5, pp. 230–231): mean wet weight high/organic/low bok choy 619.1/239.8/384.7 g, butterhead 150.9/73.8/131.3 g, Nevada 197.1/96.2/133.1 g; organic "did not yield as much as even the low level conventional solution"; rock phosphate was insoluble and phosphate mineralization low; high nutrient cost about 4 times the low level. EC not reported (read 2026-11-17)',
   },
 ] as const satisfies readonly M06EditorialSource[];
 
