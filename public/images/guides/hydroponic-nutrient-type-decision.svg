@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1120" width="640" height="1120" role="img" aria-labelledby="t d">
+  <title id="t">Which hydroponic nutrient type fits your setup</title>
+  <desc id="d">Decision card. Greens or herbs in one small tank: a one-part complete premixed nutrient, the simplest. Tomatoes or peppers fed by stage: a two- or three-part program so ratios can change by stage. Batches of 5 gallons (19 liters) or more: a dry base plus calcium nitrate and Epsom salt. Must be organic: an organic liquid, but expect smaller yields. Whatever the type, check it is complete and set EC for the crop.</desc>
+  <rect width="640" height="1120" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Which nutrient type?</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="90" font-size="20" fill="#3F5248">Start at the top; first yes wins</text>
+    <rect x="20" y="130" width="600" height="170" rx="18" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <text x="44" y="174" font-size="22" font-weight="800" fill="#0E1A14">Greens or herbs,</text>
+    <text x="44" y="204" font-size="22" font-weight="800" fill="#0E1A14">one small tank?</text>
+    <rect x="44" y="224" width="552" height="62" rx="12" fill="#7FB069"/>
+    <text x="64" y="252" font-size="22" font-weight="800" fill="#0E1A14">Yes: One-part complete</text>
+    <text x="64" y="277" font-size="20" fill="#0E1A14">premixed, simplest</text>
+    <text x="320" y="330" font-size="20" fill="#3F5248" text-anchor="middle">No ↓</text>
+    <rect x="20" y="350" width="600" height="170" rx="18" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <text x="44" y="394" font-size="22" font-weight="800" fill="#0E1A14">Tomatoes, peppers,</text>
+    <text x="44" y="424" font-size="22" font-weight="800" fill="#0E1A14">feeding by stage?</text>
+    <rect x="44" y="444" width="552" height="62" rx="12" fill="#E0A23B"/>
+    <text x="64" y="472" font-size="22" font-weight="800" fill="#0E1A14">Yes: Two- or three-part</text>
+    <text x="64" y="497" font-size="20" fill="#0E1A14">change ratios by stage</text>
+    <text x="320" y="550" font-size="20" fill="#3F5248" text-anchor="middle">No ↓</text>
+    <rect x="20" y="570" width="600" height="170" rx="18" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <text x="44" y="614" font-size="22" font-weight="800" fill="#0E1A14">Batches of</text>
+    <text x="44" y="644" font-size="22" font-weight="800" fill="#0E1A14">5 gal (19 L) or more?</text>
+    <rect x="44" y="664" width="552" height="62" rx="12" fill="#5B8DB8"/>
+    <text x="64" y="692" font-size="22" font-weight="800" fill="#0E1A14">Yes: Dry base + calcium</text>
+    <text x="64" y="717" font-size="20" fill="#0E1A14">nitrate + Epsom salt</text>
+    <text x="320" y="770" font-size="20" fill="#3F5248" text-anchor="middle">No ↓</text>
+    <rect x="20" y="790" width="600" height="170" rx="18" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <text x="44" y="834" font-size="22" font-weight="800" fill="#0E1A14">Must be</text>
+    <text x="44" y="864" font-size="22" font-weight="800" fill="#0E1A14">organic?</text>
+    <rect x="44" y="884" width="552" height="62" rx="12" fill="#D1603D"/>
+    <text x="64" y="912" font-size="22" font-weight="800" fill="#0E1A14">Yes: Organic liquid</text>
+    <text x="64" y="937" font-size="20" fill="#0E1A14">expect smaller yields</text>
+    <text x="20" y="1020" font-size="20" fill="#3F5248">Any type: check it is complete</text>
+    <text x="20" y="1048" font-size="20" fill="#3F5248">and set EC for the crop.</text>
+    <text x="20" y="1096" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

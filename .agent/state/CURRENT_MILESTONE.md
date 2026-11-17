@@ -95,7 +95,7 @@ impressions in 28 days).
         (rebuilt 2026-11-16, "Powder vs Liquid Hydroponic Nutrients: Mixing, Storage & EC"; "hydroponic nutrients powder" 170 / 19), ~~`/nutrients-water/hydroponic-nutrients-for-vegetables/`~~
         (rebuilt 2026-11-16, "Hydroponic Nutrients for Vegetables: EC & pH by Crop"; "hydroponic nutrients vegetables" 140 / 15), ~~`/best/indoor-hydroponic-system-kits/`~~
         (rebuilt 2026-11-16, "Indoor Hydroponic System Kits: What's Included & What to Add"),
-        `/best/hydroponic-nutrients-for-home-growers/` ("best hydroponic nutrients" 260 / 20),
+        ~~`/best/hydroponic-nutrients-for-home-growers/`~~ (rebuilt 2026-11-17, "Best Hydroponic Nutrients: How to Choose by Crop & Type"; "best hydroponic nutrients" 260 / 20),
         `/reviews/masterblend-hydroponic-nutrients/` ("masterblend hydroponic nutrients" 210 / 22),
         `/reviews/general-hydroponics-nutrients/` (170 / 23).
 23. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.

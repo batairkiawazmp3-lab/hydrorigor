@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 872" width="640" height="872" role="img" aria-labelledby="t d">
+  <title id="t">Six things to check on a hydroponic nutrient label</title>
+  <desc id="d">Checklist card. 1: calcium and magnesium are listed, not just N-P-K. 2: iron and other micronutrients, with chelated iron, which stays available when pH changes. 3: every part of the program is listed, whether one, two or three parts. 4: the dose is given per gallon or liter, with a half rate for seedlings. 5: a mixing order, and a warning never to mix concentrates together. 6: the crop or growth stage the rate is for, since greens and fruiting crops differ.</desc>
+  <rect width="640" height="872" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Read the label for</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="20" y="96" width="600" height="104" rx="16" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <circle cx="66" cy="148" r="24" fill="#7FB069"/>
+    <text x="66" y="156" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="middle">1</text>
+    <text x="108" y="140" font-size="23" font-weight="800" fill="#0E1A14">Calcium and magnesium</text>
+    <text x="108" y="172" font-size="20" fill="#3F5248">not just N-P-K</text>
+    <rect x="20" y="216" width="600" height="104" rx="16" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <circle cx="66" cy="268" r="24" fill="#7FB069"/>
+    <text x="66" y="276" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="middle">2</text>
+    <text x="108" y="260" font-size="23" font-weight="800" fill="#0E1A14">Iron and micronutrients</text>
+    <text x="108" y="292" font-size="20" fill="#3F5248">chelated iron holds up</text>
+    <rect x="20" y="336" width="600" height="104" rx="16" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <circle cx="66" cy="388" r="24" fill="#7FB069"/>
+    <text x="66" y="396" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="middle">3</text>
+    <text x="108" y="380" font-size="23" font-weight="800" fill="#0E1A14">Every part listed</text>
+    <text x="108" y="412" font-size="20" fill="#3F5248">one, two or three</text>
+    <rect x="20" y="456" width="600" height="104" rx="16" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <circle cx="66" cy="508" r="24" fill="#7FB069"/>
+    <text x="66" y="516" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="middle">4</text>
+    <text x="108" y="500" font-size="23" font-weight="800" fill="#0E1A14">Dose per gallon or liter</text>
+    <text x="108" y="532" font-size="20" fill="#3F5248">and half rate for seedlings</text>
+    <rect x="20" y="576" width="600" height="104" rx="16" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <circle cx="66" cy="628" r="24" fill="#7FB069"/>
+    <text x="66" y="636" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="middle">5</text>
+    <text x="108" y="620" font-size="23" font-weight="800" fill="#0E1A14">Mixing order</text>
+    <text x="108" y="652" font-size="20" fill="#3F5248">never mix concentrates</text>
+    <rect x="20" y="696" width="600" height="104" rx="16" fill="#FFFFFF" stroke="#DCE7E0" stroke-width="2"/>
+    <circle cx="66" cy="748" r="24" fill="#7FB069"/>
+    <text x="66" y="756" font-size="22" font-weight="800" fill="#0E1A14" text-anchor="middle">6</text>
+    <text x="108" y="740" font-size="23" font-weight="800" fill="#0E1A14">Crop or stage</text>
+    <text x="108" y="772" font-size="20" fill="#3F5248">greens vs fruiting</text>
+    <text x="20" y="846" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

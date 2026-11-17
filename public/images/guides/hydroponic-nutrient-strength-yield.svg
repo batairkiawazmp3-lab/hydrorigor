@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 952" width="640" height="952" role="img" aria-labelledby="t d">
+  <title id="t">Nutrient strength and yield in a University of Nevada, Reno trial</title>
+  <desc id="d">Bar chart of mean wet weight per plant in grams. Bok choy: full manufacturer rate 619.1, one-third rate 384.7, organic 239.8. Butterhead lettuce: 150.9, 131.3 and 73.8. Nevada Summer Crisp lettuce: 197.1, 133.1 and 96.2. Full rate was 1,200 ppm and the low rate 400 ppm of the same three-part mineral nutrient; the organic solution yielded least.</desc>
+  <rect width="640" height="952" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Strength and yield</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="90" font-size="20" fill="#3F5248">Mean weight per plant, grams</text>
+    <text x="20" y="116" font-size="20" fill="#3F5248">(Univ. of Nevada, Reno, 2014)</text>
+    <text x="30" y="160" font-size="22" font-weight="800" fill="#0E1A14">Bok choy</text>
+    <rect x="30" y="174" width="419" height="38" rx="8" fill="#2F7D4F"/>
+    <text x="459" y="201" font-size="21" font-weight="800" fill="#0E1A14">619.1 g</text>
+    <rect x="30" y="222" width="261" height="38" rx="8" fill="#7FB069"/>
+    <text x="301" y="249" font-size="21" font-weight="800" fill="#0E1A14">384.7 g</text>
+    <rect x="30" y="270" width="162" height="38" rx="8" fill="#D1603D"/>
+    <text x="202" y="297" font-size="21" font-weight="800" fill="#0E1A14">239.8 g</text>
+    <text x="30" y="358" font-size="22" font-weight="800" fill="#0E1A14">Butterhead</text>
+    <rect x="30" y="372" width="102" height="38" rx="8" fill="#2F7D4F"/>
+    <text x="142" y="399" font-size="21" font-weight="800" fill="#0E1A14">150.9 g</text>
+    <rect x="30" y="420" width="89" height="38" rx="8" fill="#7FB069"/>
+    <text x="129" y="447" font-size="21" font-weight="800" fill="#0E1A14">131.3 g</text>
+    <rect x="30" y="468" width="50" height="38" rx="8" fill="#D1603D"/>
+    <text x="90" y="495" font-size="21" font-weight="800" fill="#0E1A14">73.8 g</text>
+    <text x="30" y="556" font-size="22" font-weight="800" fill="#0E1A14">Nevada lettuce</text>
+    <rect x="30" y="570" width="134" height="38" rx="8" fill="#2F7D4F"/>
+    <text x="174" y="597" font-size="21" font-weight="800" fill="#0E1A14">197.1 g</text>
+    <rect x="30" y="618" width="90" height="38" rx="8" fill="#7FB069"/>
+    <text x="130" y="645" font-size="21" font-weight="800" fill="#0E1A14">133.1 g</text>
+    <rect x="30" y="666" width="65" height="38" rx="8" fill="#D1603D"/>
+    <text x="105" y="693" font-size="21" font-weight="800" fill="#0E1A14">96.2 g</text>
+    <rect x="30" y="734" width="26" height="26" rx="6" fill="#2F7D4F"/>
+    <text x="68" y="754" font-size="21" fill="#3F5248">Full rate</text>
+    <rect x="30" y="772" width="26" height="26" rx="6" fill="#7FB069"/>
+    <text x="68" y="792" font-size="21" fill="#3F5248">One-third rate</text>
+    <rect x="30" y="810" width="26" height="26" rx="6" fill="#D1603D"/>
+    <text x="68" y="830" font-size="21" fill="#3F5248">Organic</text>
+    <text x="20" y="878" font-size="20" fill="#3F5248">Full rate 1,200 ppm; low 400 ppm</text>
+    <text x="20" y="928" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
