@@ -97,7 +97,7 @@ impressions in 28 days).
         (rebuilt 2026-11-16, "Indoor Hydroponic System Kits: What's Included & What to Add"),
         ~~`/best/hydroponic-nutrients-for-home-growers/`~~ (rebuilt 2026-11-17, "Best Hydroponic Nutrients: How to Choose by Crop & Type"; "best hydroponic nutrients" 260 / 20),
         `/reviews/masterblend-hydroponic-nutrients/` ("masterblend hydroponic nutrients" 210 / 22),
-        `/reviews/general-hydroponics-nutrients/` (170 / 23).
+        ~~`/reviews/general-hydroponics-nutrients/`~~ (rebuilt 2026-11-17, "General Hydroponics Nutrients: Flora Feed Chart, EC & pH"; 170 / 23).
 23. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions

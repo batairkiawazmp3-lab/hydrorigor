@@ -3,69 +3,264 @@ productId: "general-hydroponics-floraseries"
 evidenceBasis: "manufacturer-spec-only"
 evidenceClaims:
   - type: "manufacturer-specification"
-    summary: "General Hydroponics documents FloraSeries as a three-component base system with a stated addition order and separate current feed programs."
-    sourceRefs: ["gh-floraseries", "gh-floraseries-program"]
+    summary: "General Hydroponics publishes FloraSeries as a three-part base (FloraMicro 5-0-1, FloraGro 2-1-6, FloraBloom 0-5-4) with a Micro-first mixing order, weekly mL-per-gallon feed charts with EC targets, pH 5.5–6.5 and a 7–10 day solution change."
+    sourceRefs: ["gh-floraseries", "gh-floraseries-program", "gh-floraseries-basic-feedcharts", "gh-feedchart-usage-guide", "gh-floramicro", "gh-floragro", "gh-florabloom"]
+  - type: "third-party-evidence"
+    summary: "A University of Nevada, Reno greenhouse study grew lettuce and bok choy in float culture on the General Hydroponics Flora series; yields were similar from 300 to 500 ppm, and higher at 1200 ppm than at 400 ppm."
+    sourceRefs: ["unr-flora-leafy-greens"]
+  - type: "editorial-interpretation"
+    summary: "HydroRigor matches each crop's university EC range to the nearest FloraSeries chart row; General Hydroponics does not publish crop-specific rows."
+    sourceRefs: ["osu-ph-ec-guide", "tennessee-fruiting-crops", "psu-nutrient-programs"]
 acquisitionRelationship: "not-applicable"
-title: "General Hydroponics Nutrients: How the System Works"
-description: "Understand the documented FloraSeries three-part structure, mixing order, feed-chart boundary, and limits of manufacturer-only evidence."
+title: "General Hydroponics Nutrients: Flora Feed Chart, EC & pH"
+description: "FloraSeries: add Micro first, then Gro, then Bloom. Seedlings get 1.8 mL/gal of each (EC 0.4–0.5); keep pH 5.5–6.5 and change the tank every 7–10 days."
 route: "general-hydroponics-nutrients"
-verdict: "The three-part structure and mixing order are clearly documented, but manufacturer specifications alone do not support a HydroRigor performance recommendation."
-methodology: "This page reviews current General Hydroponics manufacturer documentation only; no product was acquired and no hands-on evaluation occurred."
+verdict: "A complete, well-documented three-part nutrient that suits home hydroponics if you are willing to measure three bottles: the chart gives a mL-per-gallon rate and an EC target for every week, and a university greenhouse study grew leafy greens with it. Leafy-green growers should pick chart rows by EC rather than by week, because the chart is written for flowering crops."
+methodology: "This page reviews General Hydroponics' feed charts, usage guide and product pages (read 2026-11-17), a University of Nevada, Reno greenhouse study that used the Flora series, and extension EC targets by crop. No product was acquired and no hands-on evaluation occurred."
 pros:
-  - "The manufacturer identifies a distinct role for each base component."
-  - "The current program page states a clear water-first mixing order."
+  - "Every week on the chart has a rate in mL per gallon and an EC range, so a meter can confirm the mix."
+  - "Three parts let you shift the balance from growth to fruiting without changing brands."
+  - "Liquid concentrates are easy to dose for a 1–5 gallon home reservoir."
+  - "A hardwater version of FloraMicro exists for water with more than 70 ppm calcium."
 cons:
-  - "Multiple components must be measured separately and used with the matching program."
-  - "Manufacturer documentation does not provide an independent comparison with other nutrient systems."
+  - "Three bottles to measure and add in order, every time you mix."
+  - "The chart is built around 18-hour and 12-hour light schedules and pot sizes, not lettuce or herbs."
+  - "No part is a complete feed on its own; FloraBloom has no nitrogen."
+  - "The chart's ppm column uses the 500 scale, which not every meter uses."
 author: "HydroRigor Editorial"
 publishDate: 2026-09-12
+updatedDate: 2026-11-17
 sources:
-  - id: "gh-floraseries"
-    title: "FloraSeries"
-    url: "https://generalhydroponics.com/collections/flora-series"
-    publisher: "General Hydroponics"
-    accessedDate: 2026-09-12
+  - id: "gh-floraseries-basic-feedcharts"
+    title: "FloraSeries 3-Part Weekly Basic and Growth Stage Basic Feedcharts"
+    url: "https://generalhydroponics.com/wp-content/uploads/FloraSeries-Basic-Feed-Charts-1.pdf"
+    publisher: "General Hydroponics (manufacturer)"
+    accessedDate: 2026-11-17
   - id: "gh-floraseries-program"
     title: "FloraSeries 3-Part Feed Program"
     url: "https://generalhydroponics.com/pages/flora-series-3-part-feed-program"
-    publisher: "General Hydroponics"
+    publisher: "General Hydroponics (manufacturer)"
+    accessedDate: 2026-11-17
+  - id: "gh-feedchart-usage-guide"
+    title: "Feedchart Usage Guide"
+    url: "https://generalhydroponics.com/resources/usage-guide-feedchart"
+    publisher: "General Hydroponics (manufacturer)"
+    accessedDate: 2026-11-17
+  - id: "gh-floramicro"
+    title: "FloraMicro Calcium & Chelated Micronutrient Base"
+    url: "https://generalhydroponics.com/products/gh-flora-micro"
+    publisher: "General Hydroponics (manufacturer)"
+    accessedDate: 2026-11-17
+  - id: "gh-floragro"
+    title: "FloraGro"
+    url: "https://generalhydroponics.com/floragro"
+    publisher: "General Hydroponics (manufacturer)"
+    accessedDate: 2026-11-17
+  - id: "gh-florabloom"
+    title: "FloraBloom"
+    url: "https://generalhydroponics.com/products/floraseries/florabloom/"
+    publisher: "General Hydroponics (manufacturer)"
+    accessedDate: 2026-11-17
+  - id: "gh-floraseries"
+    title: "FloraSeries"
+    url: "https://generalhydroponics.com/collections/flora-series"
+    publisher: "General Hydroponics (manufacturer)"
+    accessedDate: 2026-11-17
+  - id: "unr-flora-leafy-greens"
+    title: "Investigating the Effects of Hydroponic Media on Quality of Greenhouse Grown Leafy Greens"
+    url: "https://naes.agnt.unr.edu/PMS/Pubs/309_2015_01.pdf"
+    publisher: "University of Nevada, Reno (Ferguson, Saliga and Omaye), Int. J. Agr. Ext. 2(3), 2014"
+    accessedDate: 2026-11-17
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics (HLA-6722)"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-16
+  - id: "tennessee-fruiting-crops"
+    title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems (W 844-C)"
+    url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
+    publisher: "University of Tennessee Extension"
+    accessedDate: 2026-11-06
+  - id: "psu-nutrient-programs"
+    title: "Hydroponics Systems: Nutrient Solution Programs and Recipes"
+    url: "https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes"
+    publisher: "Penn State Extension"
+    accessedDate: 2026-11-17
+  - id: "mu-nutrient-solutions"
+    title: "Hydroponic Nutrient Solutions"
+    url: "https://extension.missouri.edu/publications/g6984"
+    publisher: "University of Missouri Extension"
     accessedDate: 2026-09-12
+  - id: "masterblend-mixing-instructions"
+    title: "4-18-38 Tomato Formula Mixing Instructions"
+    url: "https://www.masterblend.com/wp-content/uploads/2022/09/Masterblend-4-18-38-Mixing-Instructions-092922.pdf"
+    publisher: "Masterblend International (manufacturer)"
+    accessedDate: 2026-11-15
 affiliateDisclosure: false
 commercialDestinationIds: []
 structuredDataEnabled: false
 draft: false
 ---
 
-General Hydroponics describes FloraSeries as a three-part base nutrient system: FloraMicro, FloraGro, and FloraBloom. The manufacturer changes component proportions across its feed programs and specifies an addition order. That means the bottles are parts of a program, not interchangeable standalone doses.
+import KeyTargets from '../../components/content/KeyTargets.astro';
+
+**General Hydroponics FloraSeries is a three-component base nutrient system: FloraMicro, FloraGro and FloraBloom, used together.** Add FloraMicro to fresh water first, stir, then FloraGro, then FloraBloom, and never pour one concentrate into another. The manufacturer's Light feed chart starts seedlings at **1.8 mL of each part per gallon (EC 0.4–0.5)** and rises to **6.0, 5.6 and 4.2 mL per gallon (EC 1.4–1.7)** in late growth. Keep the solution at **pH 5.5–6.5**, below **75 °F (24 °C)**, and change it every **7–10 days**. It works for home growers, and a University of Nevada, Reno greenhouse study grew lettuce and bok choy on it. The catch is that the chart is written for flowering crops on light schedules, so for lettuce, herbs and tomatoes, pick the row whose EC matches your crop. The table below does that for you.
+
+<KeyTargets
+  title="FloraSeries: the key numbers"
+  source="General Hydroponics feedchart and usage guide"
+  items={[
+    { label: 'Seedlings', value: '1.8 mL/gal', note: 'of each part, EC 0.4–0.5' },
+    { label: 'Solution pH', value: '5.5–6.5' },
+    { label: 'Change solution', value: '7–10 days', note: 'top off with water between' },
+    { label: 'Solution temperature', value: 'below 75 °F', note: '24 °C' },
+  ]}
+/>
+
+## Quick answer
+
+| What | FloraSeries number | Source |
+| --- | --- | --- |
+| Mixing order | Water, then FloraMicro, FloraGro, FloraBloom, stirring between | GH program page |
+| Seedlings (Light, week 1) | 1.8 mL/gal of each part; EC 0.4–0.5 | GH weekly chart |
+| Leafy greens (Light, weeks 3–4) | Micro 4.9–6.0, Gro 4.6–5.6, Bloom 3.4–4.2 mL/gal; EC 1.2–1.7 | GH weekly chart |
+| Fruiting peak (Aggressive, early bloom) | Micro 7.6, Gro 6.6, Bloom 8.5 mL/gal; EC 2.0–2.4 | GH weekly chart |
+| Solution pH | 5.5–6.5 | GH usage guide |
+| Change solution | Every 7–10 days; top off with water between | GH usage guide |
+| Solution temperature | Below 75 °F (24 °C), aerated | GH usage guide |
+| Switch to Hardwater FloraMicro | Water calcium above 70 ppm | GH usage guide |
+| Opened bottle | Use within one growing season (unopened: about 2 years) | GH FloraMicro page |
+
+All chart amounts are per US gallon (3.79 L). The conversions on General Hydroponics' usage guide are 5 mL = 1 teaspoon and 2.5 mL = ½ teaspoon.
+
+## What is in each bottle
+
+Each part has a different job, and none of them is a complete feed alone.
+
+| Part | N-P-K | What it adds | Alone? |
+| --- | --- | --- | --- |
+| FloraMicro | 5-0-1 | Nitrogen, calcium, chelated micronutrients (boron, cobalt, copper, iron, manganese, molybdenum, zinc) | No |
+| FloraGro | 2-1-6 | Nitrogen (mostly nitrate), potassium, magnesium 0.5% | Not stated |
+| FloraBloom | 0-5-4 | Phosphorus, potassium, magnesium 1.5%, sulfur 1.0% | No: 0% nitrogen |
+
+The calcium is the reason for three bottles. Penn State and Missouri Extension both explain that calcium reacts with phosphates and sulfates to form solids that roots cannot use. That is why concentrated hydroponic nutrients keep calcium apart from phosphorus and sulfur. FloraMicro carries the calcium; FloraBloom carries the phosphorus and sulfur. Once both are diluted in a full reservoir, they stay in solution.
+
+General Hydroponics says plainly that FloraBloom has no nitrogen and would cause "severe nitrogen starvation" on its own. If a plant is yellowing while you feed "bloom" only, that is the first thing to check.
+
+## Mixing order, and where General Hydroponics contradicts itself
+
+![Six steps: fresh water first, then FloraMicro, FloraGro and FloraBloom one at a time with stirring, then check EC and adjust pH to 5.5–6.5 last; never mix two concentrates](/images/guides/gh-floraseries-mixing-order.svg)
+
+*The FloraSeries program page order: FloraMicro always goes into the water first, then FloraGro, then FloraBloom. Check EC before you touch pH.*
+
+Two General Hydroponics pages give slightly different orders after FloraMicro:
+
+| Page | Order after water |
+| --- | --- |
+| FloraSeries 3-Part Feed Program | FloraMicro, FloraGro, FloraBloom |
+| FloraGro product page (when adding supplements) | Silica first, calcium products and FloraMicro, then FloraBloom, then FloraGro |
+
+Both agree on what matters: FloraMicro first, one part at a time, fully stirred, and never two concentrates together. For the plain three-part mix, follow the program page (Micro, Gro, Bloom). If you add a silica product, the FloraGro page puts it in before everything else.
+
+## Which chart row to use for your crop
+
+The FloraSeries chart runs four growth weeks at 18 hours of light and nine bloom weeks at 12 hours. It sorts feed strength by irrigation frequency, pot size and planting density. None of that describes lettuce in a Kratky jar or basil in a deep water culture bucket. What every row does include is an EC range, and university guides give EC ranges by crop. So match the two.
+
+![Range bars for Light, Medium and Aggressive feed EC at each stage: seedlings 0.4–0.8, early growth 0.9–2.1, late growth 1.4–2.5, early bloom 1.4–2.4, late bloom 0.9–1.6, ripen 0.6–1.1; a shaded band marks lettuce at 1.2–1.8](/images/guides/gh-floraseries-ec-by-week.svg)
+
+*EC targets from the General Hydroponics weekly chart. The Light feed's growth weeks 3 and 4 fall inside Oklahoma State's lettuce range of 1.2–1.8.*
+
+HydroRigor picked these rows by matching Oklahoma State Extension's EC range for each crop (HLA-6722, Table 2) to the closest FloraSeries row. General Hydroponics does not publish crop-specific rows, so treat this as a starting point and let your EC meter have the final word.
+
+| Crop (EC range) | FloraSeries row | Micro / Gro / Bloom (mL/gal) | Row EC |
+| --- | --- | --- | --- |
+| Basil (1.0–1.6) | Light, growth week 2 to 3 | 3.6 / 3.4 / 2.6 to 4.9 / 4.6 / 3.4 | 0.9–1.4 |
+| Lettuce (1.2–1.8) | Light, growth week 3 to 4 | 4.9 / 4.6 / 3.4 to 6.0 / 5.6 / 4.2 | 1.2–1.7 |
+| Pepper (0.8–1.8) | Light growth, then Light early bloom | 5.3 / 4.6 / 6.0 at bloom | 1.4–1.7 |
+| Cucumber (1.7–2.0) | Medium, early bloom | 6.1 / 5.3 / 6.8 | 1.6–1.9 |
+| Spinach (1.8–2.3) | Medium, late growth | 6.8 / 6.4 / 4.8 | 1.6–2.0 |
+| Tomato (2.0–4.0) | Aggressive, early bloom | 7.6 / 6.6 / 8.5 | 2.0–2.4 |
+
+Two points to keep in mind. Leafy greens and herbs never flower on purpose, so they stay on the growth rows. And there is a cross-check: the Light feed's growth weeks list 95–150 ppm of total nitrogen, which sits inside Penn State's 100–150 ppm nitrogen for lettuce.
+
+For tomatoes, the University of Tennessee's fruiting-crop guide gives EC 0.5–1.0 for seedlings, 1.0–1.5 at transplanting and 2.0–3.0 for much of the season. That runs from the Light seedling row through Medium growth rows to the Aggressive bloom row. Oklahoma State's tomato range (2.0–4.0) goes higher than any FloraSeries row; the Aggressive chart tops out at EC 2.5.
+
+## How strong to mix: what the one university study found
+
+The University of Nevada, Reno grew Rex butterhead lettuce, Nevada Summer Crisp lettuce and bok choy in greenhouse float culture on the General Hydroponics Flora series (Ferguson, Saliga and Omaye, 2014).
+
+| Trial | Strengths compared | Result |
+| --- | --- | --- |
+| Cycle 1 | Flora at 1:1:1 to 300, 400 and 500 ppm total dissolved solids | Fresh weight similar at all three levels |
+| Cycle 2 | 400 ppm vs 1200 ppm (the study's "manufacturer recommended" level) | Bok choy 384.7 g vs 619.1 g; Summer Crisp 133.1 g vs 197.1 g; butterhead 131.3 g vs 150.9 g |
+
+So weak solutions grew acceptable greens, but the full-strength solution grew bigger heads, most of all for bok choy. An organic solution in the same trial yielded less than even the low Flora level. The paper does not state which ppm scale its meter used, so these ppm figures cannot be turned into EC. For a home grower, the practical reading is to start leafy greens at the Light rows and move toward the top of your crop's EC range if growth is slow. General Hydroponics' usage guide also says to use less concentrated solutions when growing conditions are more intense (hot, bright or fast-drying).
+
+## Step-by-step: a 5-gallon batch for lettuce
+
+1. **Test your water.** If it reads 200 ppm or more of dissolved salts, General Hydroponics says to get an analysis. Above 70 ppm calcium, use Hardwater FloraMicro. Missouri Extension suggests source water EC of 0.2–0.8, ideally below 1.0.
+2. **Fill the reservoir** with 5 gallons (about 19 L) of water below 75 °F (24 °C).
+3. **Shake each bottle.** Use a separate syringe or measuring cup for each part, or rinse between them.
+4. **Add FloraMicro.** At Light growth week 3 (4.9 mL/gal), that is 24.5 mL, about 5 teaspoons. Stir well.
+5. **Add FloraGro:** 4.6 mL/gal is 23 mL. Stir.
+6. **Add FloraBloom:** 3.4 mL/gal is 17 mL. Stir. (These three amounts are HydroRigor's arithmetic from the chart rate times 5 gallons.)
+7. **Check EC.** Expect about 1.2–1.4 plus whatever your water started with. Oklahoma State advises letting the reading settle for a couple of minutes.
+8. **Adjust pH last** to 5.5–6.5. Oklahoma State's advice is to adjust pH only after EC is right, adding pH down slowly and waiting several minutes between doses.
+9. **Top off with plain water** as the level drops, and **replace the whole solution every 7–10 days**.
+
+To scale any chart row to another reservoir size, the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) multiplies each part separately. Enter the three rates one at a time; it does not pick a FloraSeries row or predict EC. For crop targets, use the [pH and EC targets tool](/tools/ph-ec-targets/).
+
+## Where the sources differ
+
+| Topic | General Hydroponics | University source | What to do |
+| --- | --- | --- | --- |
+| Solution change | Every 7–10 days | Oklahoma State: about every 2 weeks; Tennessee: 1–2 weeks for small recirculating tanks | 7–10 days in a small home reservoir; stretch toward 2 weeks only if EC and pH hold steady |
+| Cucumber pH | 5.5–6.5 for all crops | Oklahoma State: cucumber 5.0–5.5 | Hold cucumbers at the low end, around 5.5 |
+| Tomato EC | Chart tops out at 2.5 | Oklahoma State 2.0–4.0; Tennessee 2.0–3.0 | Aggressive bloom rows (2.0–2.4) sit inside both ranges |
+| Hardwater trigger | Usage guide: over 70 ppm calcium; FloraMicro page also says over 200 ppm total | Missouri: calcium below 150 ppm for source water | Test your water; use Hardwater Micro above 70 ppm calcium |
+
+## How FloraSeries compares with other formats
+
+| | FloraSeries (liquid, 3 parts) | Masterblend 4-18-38 (dry, 3 parts) | One-part liquid |
+| --- | --- | --- | --- |
+| Measuring | mL per gallon, three bottles | Grams per gallon: 2.4 g 4-18-38, 1.5 g Epsom salt, 2.4 g calcium nitrate | One bottle |
+| Change the balance by stage | Yes, by changing the ratio | Limited | No |
+| Best fit | 1–5 gallon home systems, crops from greens to tomatoes | Larger reservoirs and a 0.1 g scale | Simplest start |
+
+For the dry option, read the [Masterblend review](/reviews/masterblend-hydroponic-nutrients/). For format trade-offs in general, see [powder vs liquid hydroponic nutrients](/nutrients-water/powder-vs-liquid-hydroponic-nutrients/). To compare types across brands, see the [best hydroponic nutrients guide](/best/hydroponic-nutrients-for-home-growers/).
+
+## Troubleshooting
+
+| Problem | Likely cause | Fix |
+| --- | --- | --- |
+| Cloudy or white solids after mixing | Two concentrates met before dilution, or parts added too fast | Remake the batch; add each part to the full water volume and stir between |
+| EC far above the chart row | Source water already high, or a mL/L rate used as mL/gal | Measure plain water first; check the chart says per gallon |
+| EC below the chart row | Under-dosed or one part skipped | Add the missing part in order, then re-check |
+| New growth yellowing on a "bloom only" feed | FloraBloom has no nitrogen | Use all three parts at the chart ratio |
+| Scale or deposits with hard tap water | Water calcium above 70 ppm | Switch to Hardwater FloraMicro, or use RO or rainwater |
+| Leaf edges burning in hot, bright weather | Solution too strong for the conditions | Drop to the Light row or dilute with water |
+| pH keeps drifting | Adjusted before EC was set, or old solution | Set EC first, then pH; change the solution on schedule |
+
+## FAQ
+
+**Can I use just FloraGro and FloraMicro for lettuce?**
+General Hydroponics' charts use all three parts in every growth week, including leafy-green rows. FloraBloom is the part that brings phosphorus and sulfur, so leaving it out changes the balance the chart was built on. Use all three.
+
+**Can FloraBloom be used alone during flowering?**
+No. It contains no nitrogen, and General Hydroponics warns it would cause severe nitrogen starvation used alone.
+
+**What ppm scale does the chart use?**
+The ppm column on the FloraSeries chart is the 500 scale. If your meter uses a different scale, compare EC in mS/cm instead; EC is the same on every meter.
+
+**Should I follow the "Flush" week?**
+The chart lists water only in the last bloom week. HydroRigor found no university source on flushing hydroponic vegetables, so this page takes no position.
+
+**How long does a bottle last?**
+General Hydroponics says unopened bottles are stable for about 2 years and opened bottles should be used within one growing season. Keep them sealed, upright and out of direct sun.
+
+**Is FloraSeries good for beginners?**
+Yes, if you own an EC meter and do not mind measuring three parts. If you want the fewest steps, a one-part nutrient is simpler. For more help choosing and mixing, see [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/), the [nutrient solution guide](/nutrients-water/hydroponic-nutrient-solution/) and [EC and pH by vegetable](/nutrients-water/hydroponic-nutrients-for-vegetables/).
 
 ## Evidence boundary
 
-This guide uses current General Hydroponics manufacturer pages accessed on the publication date. HydroRigor did not acquire or hands-on test FloraSeries. No independent performance comparison, product rating, price, availability, merchant destination, or affiliate link appears here.
-
-Manufacturer documentation can establish product identity and instructions. It cannot by itself establish that FloraSeries is better than another nutrient system.
-
-## The three base components
-
-The manufacturer describes FloraMicro as the calcium and micronutrient foundation, FloraGro as the vegetative component, and FloraBloom as the flowering and fruiting component. The complete program depends on using the components according to the selected current feed chart.
-
-Do not infer that one bottle is a complete nutrient because its name matches the current growth stage. Check the current program for every required component.
-
-## Mixing order is explicit
-
-The manufacturer directs users to add FloraMicro to fresh water first, mix thoroughly, then add FloraGro and FloraBloom in sequence, mixing between additions. It warns against combining concentrated components undiluted.
-
-Use clean separate measuring tools or rinse thoroughly between products. Refer to the current chart for rates; this article intentionally does not duplicate changing feed-chart quantities.
-
-## Choose the program before the dose
-
-General Hydroponics publishes several FloraSeries program variants. A rate from a three-part chart should not be combined casually with a different expanded program. Identify the program, plant stage, growing medium, and unit before measuring.
-
-Source-water chemistry and the crop’s real condition still matter. A manufacturer chart is a documented starting framework, not proof that the final reservoir contains the right balance for every water source.
-
-## Use the calculator narrowly
-
-After selecting the manufacturer’s exact liquid dose, HydroRigor’s [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) can scale each component separately to the reservoir volume. It does not choose a FloraSeries program, predict EC, calculate elemental ppm, or combine the three parts into one assumed dose.
-
-For general sequence and measurement controls, read [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/) and the [nutrient solution guide](/nutrients-water/hydroponic-nutrient-solution/).
-
-The evidence supports a description of how the documented system works. It does not support a HydroRigor recommendation.
+This page is based on General Hydroponics' own charts and product pages, one university greenhouse study and extension EC targets. HydroRigor did not buy or grow with FloraSeries, and this page gives no prices, ratings or shop links.
