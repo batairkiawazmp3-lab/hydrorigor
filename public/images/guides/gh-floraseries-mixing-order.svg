@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1180" width="640" height="1180" role="img" aria-labelledby="t d">
+  <title id="t">FloraSeries mixing order</title>
+  <desc id="d">Fill the reservoir with water, add FloraMicro and stir, add FloraGro and stir, add FloraBloom and stir, then check EC and adjust pH to 5.5 to 6.5. Never pour one concentrate into another.</desc>
+  <rect width="640" height="1180" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">FloraSeries mixing order</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">One part at a time, stirring between</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(General Hydroponics program page)</text>
+    <rect x="20" y="140" width="600" height="112" rx="18" fill="#E3EEF6" stroke="#9FC3DD" stroke-width="3"/>
+    <circle cx="66" cy="196" r="16" fill="#0F6B4F"/>
+    <text x="66" y="203" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="104" y="190" font-size="28" font-weight="800" fill="#0E1A14">Fill with water</text>
+    <text x="104" y="226" font-size="22" fill="#3F5248">Fresh water goes in first</text>
+    <path d="M320 254 v26" stroke="#5B6F64" stroke-width="4"/>
+    <path d="M308 268 l12 14 l12 -14" fill="none" stroke="#5B6F64" stroke-width="4"/>
+    <rect x="20" y="286" width="600" height="112" rx="18" fill="#FFFFFF" stroke="#0F6B4F" stroke-width="3"/>
+    <circle cx="66" cy="342" r="16" fill="#0F6B4F"/>
+    <text x="66" y="349" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="104" y="336" font-size="28" font-weight="800" fill="#0E1A14">FloraMicro</text>
+    <text x="104" y="372" font-size="22" fill="#3F5248">Calcium + micros, always first</text>
+    <path d="M320 400 v26" stroke="#5B6F64" stroke-width="4"/>
+    <path d="M308 414 l12 14 l12 -14" fill="none" stroke="#5B6F64" stroke-width="4"/>
+    <rect x="20" y="432" width="600" height="112" rx="18" fill="#FFFFFF" stroke="#0F6B4F" stroke-width="3"/>
+    <circle cx="66" cy="488" r="16" fill="#0F6B4F"/>
+    <text x="66" y="495" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="104" y="482" font-size="28" font-weight="800" fill="#0E1A14">FloraGro</text>
+    <text x="104" y="518" font-size="22" fill="#3F5248">Stir in fully</text>
+    <path d="M320 546 v26" stroke="#5B6F64" stroke-width="4"/>
+    <path d="M308 560 l12 14 l12 -14" fill="none" stroke="#5B6F64" stroke-width="4"/>
+    <rect x="20" y="578" width="600" height="112" rx="18" fill="#FFFFFF" stroke="#0F6B4F" stroke-width="3"/>
+    <circle cx="66" cy="634" r="16" fill="#0F6B4F"/>
+    <text x="66" y="641" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="104" y="628" font-size="28" font-weight="800" fill="#0E1A14">FloraBloom</text>
+    <text x="104" y="664" font-size="22" fill="#3F5248">Stir in fully</text>
+    <path d="M320 692 v26" stroke="#5B6F64" stroke-width="4"/>
+    <path d="M308 706 l12 14 l12 -14" fill="none" stroke="#5B6F64" stroke-width="4"/>
+    <rect x="20" y="724" width="600" height="112" rx="18" fill="#FFFFFF" stroke="#2E86AB" stroke-width="3"/>
+    <circle cx="66" cy="780" r="16" fill="#0F6B4F"/>
+    <text x="66" y="787" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="104" y="774" font-size="28" font-weight="800" fill="#0E1A14">Check EC</text>
+    <text x="104" y="810" font-size="22" fill="#3F5248">Match the chart row</text>
+    <path d="M320 838 v26" stroke="#5B6F64" stroke-width="4"/>
+    <path d="M308 852 l12 14 l12 -14" fill="none" stroke="#5B6F64" stroke-width="4"/>
+    <rect x="20" y="870" width="600" height="112" rx="18" fill="#FFFFFF" stroke="#2E86AB" stroke-width="3"/>
+    <circle cx="66" cy="926" r="16" fill="#0F6B4F"/>
+    <text x="66" y="933" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+    <text x="104" y="920" font-size="28" font-weight="800" fill="#0E1A14">Adjust pH last</text>
+    <text x="104" y="956" font-size="22" fill="#3F5248">Target 5.5–6.5</text>
+    <rect x="20" y="1020" width="600" height="104" rx="16" fill="#FDECEA" stroke="#D9534F" stroke-width="2"/>
+    <text x="44" y="1062" font-size="24" font-weight="800" fill="#8A1F1B">Never mix two concentrates</text>
+    <text x="44" y="1098" font-size="22" fill="#8A1F1B">Each part goes into the water</text>
+    <text x="20" y="1158" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>
