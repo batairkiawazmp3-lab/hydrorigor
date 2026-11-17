@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-17 (Nov 1–15; last update 3 h before check) | 6 | 493 | 1.2% | 37.8 | 97 | 32 | 35 indexed, 14 not indexed (unchanged, last update Nov 13) | Search Console trend chart (#84), indoor kits rebuild (#85, #86), best hydroponic nutrients rebuild (#87, #88); log only (this change) |
 | 2026-11-16 (Nov 1–14; last update 3 h before check) | 6 | 487 | 1.2% | 37.9 | 97 | 32 | 35 indexed, 14 not indexed (last update Nov 13) | Smart indoor systems rebuild (#77, #78), how to mix rebuild (#79), powder vs liquid rebuild (#80), vegetables nutrients rebuild (#81, #82); log only (this change) |
 | 2026-11-15 (Nov 1–13; last update 3.5 h before check) | 6 | 451 | 1.3% | 37.5 | 91 | 32 | 35 indexed, 13 not indexed (unchanged, last update Nov 9) | Organic nutrients rebuild (#75); log only (this change) |
 | 2026-11-14 (Nov 1–11; last update 4 h before check) | 6 | 366 | 1.6% | 35.5 | 84 | 29 | 35 indexed, 13 not indexed (unchanged, last update Nov 9) | Kratky guide (#69), nutrient solution rebuild (#70), pH meter guide (#71), Pinterest upload (#72), tomato seeds rebuild (#73); log only (this change) |
