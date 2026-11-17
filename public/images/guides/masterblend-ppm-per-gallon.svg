@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1090" width="640" height="1090" role="img" aria-labelledby="t d">
+  <title id="t">What the full Masterblend rate supplies</title>
+  <desc id="d">HydroRigor arithmetic from the Masterblend label at 2.4 g 4-18-38, 1.5 g Epsom salt and 2.4 g calcium nitrate per gallon: nitrogen about 124 ppm against the UF/IFAS tomato range of 70 to 150; phosphorus about 50 against 50; potassium about 200 against 120 to 200; magnesium about 42 against 40 to 50.</desc>
+  <rect width="640" height="1090" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">One gallon, full rate</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">ppm supplied vs UF/IFAS tomato targets</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">(HydroRigor arithmetic from the label)</text>
+    <rect x="20" y="150" width="600" height="190" rx="18" fill="#FFFFFF" stroke="#C9D6CE" stroke-width="2"/>
+    <text x="40" y="194" font-size="28" font-weight="800" fill="#0E1A14">Nitrogen</text>
+    <text x="600" y="194" font-size="28" font-weight="800" fill="#0F6B4F" text-anchor="end">124 ppm</text>
+    <rect x="40" y="232" width="560" height="24" rx="12" fill="#E8EEEA"/>
+    <rect x="196.8" y="222" width="179.2" height="44" rx="6" fill="#9FC3DD"/>
+    <circle cx="317.8" cy="244" r="10" fill="#0F6B4F" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="40" y="300" font-size="22" fill="#3F5248">Blue band: target 70–150</text>
+    <rect x="20" y="360" width="600" height="190" rx="18" fill="#FFFFFF" stroke="#C9D6CE" stroke-width="2"/>
+    <text x="40" y="404" font-size="28" font-weight="800" fill="#0E1A14">Phosphorus</text>
+    <text x="600" y="404" font-size="28" font-weight="800" fill="#0F6B4F" text-anchor="end">50 ppm</text>
+    <rect x="40" y="442" width="560" height="24" rx="12" fill="#E8EEEA"/>
+    <rect x="147.5" y="432" width="9.0" height="44" rx="6" fill="#9FC3DD"/>
+    <circle cx="152.0" cy="454" r="10" fill="#0F6B4F" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="40" y="510" font-size="22" fill="#3F5248">Blue band: target 50</text>
+    <rect x="20" y="570" width="600" height="190" rx="18" fill="#FFFFFF" stroke="#C9D6CE" stroke-width="2"/>
+    <text x="40" y="614" font-size="28" font-weight="800" fill="#0E1A14">Potassium</text>
+    <text x="600" y="614" font-size="28" font-weight="800" fill="#0F6B4F" text-anchor="end">200 ppm</text>
+    <rect x="40" y="652" width="560" height="24" rx="12" fill="#E8EEEA"/>
+    <rect x="308.8" y="642" width="179.2" height="44" rx="6" fill="#9FC3DD"/>
+    <circle cx="488.0" cy="664" r="10" fill="#0F6B4F" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="40" y="720" font-size="22" fill="#3F5248">Blue band: target 120–200</text>
+    <rect x="20" y="780" width="600" height="190" rx="18" fill="#FFFFFF" stroke="#C9D6CE" stroke-width="2"/>
+    <text x="40" y="824" font-size="28" font-weight="800" fill="#0E1A14">Magnesium</text>
+    <text x="600" y="824" font-size="28" font-weight="800" fill="#0F6B4F" text-anchor="end">42 ppm</text>
+    <rect x="40" y="862" width="560" height="24" rx="12" fill="#E8EEEA"/>
+    <rect x="129.6" y="852" width="22.4" height="44" rx="6" fill="#9FC3DD"/>
+    <circle cx="134.1" cy="874" r="10" fill="#0F6B4F" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="40" y="930" font-size="22" fill="#3F5248">Blue band: target 40–50</text>
+    <text x="40" y="1010" font-size="20" fill="#5B6F64">Scale 0 to 250 ppm</text>
+    <text x="20" y="1060" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

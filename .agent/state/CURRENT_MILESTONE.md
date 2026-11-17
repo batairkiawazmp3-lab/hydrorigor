@@ -90,13 +90,13 @@ impressions in 28 days).
 20. [x] `/nutrients-water/organic-hydroponic-nutrients/` — rebuilt 2026-11-15 ("Organic Hydroponic Nutrients: Yields, Problems & Fixes"). "organic hydroponic nutrients" 390 / 18.
 21. [x] `/systems/smart-indoor-hydroponic-systems/` — rebuilt 2026-11-15 ("Smart Indoor Hydroponic Systems: Light, Crops & Upkeep"); no brands or product picks
         ("click and grow" 5,400 / 35 is the nearest brand demand; add named units only if Click & Grow approves the owner).
-22. [ ] Remaining launch-guide rebuilds, one per run: ~~`/nutrients-water/how-to-mix-hydroponic-nutrients/`~~
+22. [x] Remaining launch-guide rebuilds (all done 2026-11-17), one per run: ~~`/nutrients-water/how-to-mix-hydroponic-nutrients/`~~
         (rebuilt 2026-11-15, "How to Mix Hydroponic Nutrients: Order, Rates & EC Check"; "mixing hydroponic nutrients" 140 / 19), ~~`/nutrients-water/powder-vs-liquid-hydroponic-nutrients/`~~
         (rebuilt 2026-11-16, "Powder vs Liquid Hydroponic Nutrients: Mixing, Storage & EC"; "hydroponic nutrients powder" 170 / 19), ~~`/nutrients-water/hydroponic-nutrients-for-vegetables/`~~
         (rebuilt 2026-11-16, "Hydroponic Nutrients for Vegetables: EC & pH by Crop"; "hydroponic nutrients vegetables" 140 / 15), ~~`/best/indoor-hydroponic-system-kits/`~~
         (rebuilt 2026-11-16, "Indoor Hydroponic System Kits: What's Included & What to Add"),
         ~~`/best/hydroponic-nutrients-for-home-growers/`~~ (rebuilt 2026-11-17, "Best Hydroponic Nutrients: How to Choose by Crop & Type"; "best hydroponic nutrients" 260 / 20),
-        `/reviews/masterblend-hydroponic-nutrients/` ("masterblend hydroponic nutrients" 210 / 22),
+        ~~`/reviews/masterblend-hydroponic-nutrients/`~~ (rebuilt 2026-11-17, "Masterblend Hydroponic Nutrients: Rates per Gallon & Mixing"; "masterblend hydroponic nutrients" 210 / 22),
         ~~`/reviews/general-hydroponics-nutrients/`~~ (rebuilt 2026-11-17, "General Hydroponics Nutrients: Flora Feed Chart, EC & pH"; 170 / 23).
 23. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.
 

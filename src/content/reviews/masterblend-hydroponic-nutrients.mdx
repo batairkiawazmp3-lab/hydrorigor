@@ -3,32 +3,113 @@ productId: "masterblend-4-18-38-tomato-formula"
 evidenceBasis: "manufacturer-spec-only"
 evidenceClaims:
   - type: "manufacturer-specification"
-    summary: "Masterblend documents the formula as one component in a defined water-first, separately dissolved nutrient preparation sequence."
-    sourceRefs: ["masterblend-mixing-instructions", "masterblend-hydroponics"]
+    summary: "Masterblend publishes 4-18-38 as one of three dry parts: per gallon 2.4 g 4-18-38, 1.5 g magnesium sulfate and 2.4 g calcium nitrate, dissolved in that order, at half rate for seedlings. The label gives the guaranteed analysis (N 4%, P2O5 18%, K2O 38%, Mg 0.5%, chelated micronutrients) and a maximum solubility of 0.42 kg per liter."
+    sourceRefs: ["masterblend-mixing-instructions", "masterblend-4-18-38-label", "masterblend-hydroponics"]
+  - type: "third-party-evidence"
+    summary: "Penn State Extension describes the 4-18-38 plus calcium nitrate plus magnesium sulfate program as a standard hydroponic tomato fertilizer approach, with calcium kept in its own stock tank; an Ask Extension expert advises mixing these salts by weight and EC rather than by volume, at pH 5.5–6.5."
+    sourceRefs: ["psu-nutrient-programs", "ask-extension-masterblend"]
+  - type: "editorial-interpretation"
+    summary: "HydroRigor's arithmetic from the label analysis puts the full rate at about 124 ppm nitrogen, 50 ppm phosphorus, 200 ppm potassium and 42 ppm magnesium, compared with UF/IFAS, Penn State and University of Missouri targets. Masterblend publishes no EC figure, so EC must be measured."
+    sourceRefs: ["ifas-hydroponic-tomato-formulation", "psu-nutrient-programs", "mu-sare-nutrient-solutions-class", "osu-ph-ec-guide"]
 acquisitionRelationship: "not-applicable"
-title: "Masterblend Hydroponic Nutrients: Beginner Setup Guide"
-description: "Understand what Masterblend's 4-18-38 documentation establishes, how the components are organized, and what remains unverified."
+title: "Masterblend Hydroponic Nutrients: Rates per Gallon & Mixing"
+description: "Masterblend: per gallon dissolve 2.4 g 4-18-38, then 1.5 g Epsom salt, then 2.4 g calcium nitrate; half rate for seedlings. Hold pH 5.5–6.5."
 route: "masterblend-hydroponic-nutrients"
-verdict: "The manufacturer documents a multi-component mixing process, but manufacturer specifications alone do not support a HydroRigor performance recommendation."
-methodology: "This page reviews current manufacturer instructions and product-system structure only; no product was acquired and no hands-on evaluation occurred."
+verdict: "A low-cost, well-documented dry nutrient that works for home hydroponics if you own a scale that reads to 0.1 g and an EC meter. The three parts make a complete solution whose nitrogen, phosphorus and potassium land close to university lettuce and tomato targets, but there is only one rate, no EC figure and no stage chart, so you set strength with your meter."
+methodology: "This page reviews Masterblend's 4-18-38 mixing instructions and product label, Penn State and University of Missouri Extension guidance on this kind of three-part dry program, an Ask Extension expert answer about mixing it, and extension crop targets. The nutrient figures are HydroRigor's arithmetic from the label analysis. No product was acquired and no hands-on evaluation occurred."
 pros:
-  - "The manufacturer publishes a component-specific mixing sequence."
-  - "The documented formulation identity makes the product scope traceable."
+  - "Complete when all three parts are used: nitrogen, phosphorus, potassium, calcium, magnesium and chelated micronutrients."
+  - "Published rates in grams for 1 to 100 gallons, plus a half rate for seedlings."
+  - "Full rate supplies nutrient levels close to UF/IFAS and Penn State targets for lettuce and tomatoes (HydroRigor's arithmetic)."
+  - "Dry powder carries far more nutrient per pound than a ready-to-use liquid and can be made into your own stock solutions."
 cons:
-  - "Manufacturer documentation alone does not establish comparative crop performance."
-  - "A multi-component program requires each part to be measured and mixed correctly."
+  - "Needs a scale that reads to 0.1 g for small reservoirs; spoons are not reliable."
+  - "One rate for every crop and stage; no feed chart and no EC target."
+  - "Three parts must be dissolved one at a time, and calcium nitrate must not meet the other two concentrated."
+  - "The label lists potassium chloride and boron, so source water should be tested before use."
 author: "HydroRigor Editorial"
 publishDate: 2026-09-12
+updatedDate: 2026-11-17
 sources:
   - id: "masterblend-mixing-instructions"
     title: "4-18-38 Tomato Formula Mixing Instructions"
     url: "https://www.masterblend.com/wp-content/uploads/2022/09/Masterblend-4-18-38-Mixing-Instructions-092922.pdf"
-    publisher: "Masterblend International"
-    accessedDate: 2026-09-12
+    publisher: "Masterblend International (manufacturer)"
+    accessedDate: 2026-11-15
+  - id: "masterblend-4-18-38-label"
+    title: "4-18-38 Tomato product label (bilingual, 15 kg)"
+    url: "https://www.mkrittenhouse.com/media/pdf/1821_4-18-38-LABEL.pdf"
+    publisher: "Masterblend International (manufacturer; label hosted by distributor M.K. Rittenhouse)"
+    accessedDate: 2026-11-17
   - id: "masterblend-hydroponics"
     title: "Fertilizers for Hydroponics"
     url: "https://www.masterblend.com/commercial-growing-applications/hydroponics/"
-    publisher: "Masterblend International"
+    publisher: "Masterblend International (manufacturer)"
+    accessedDate: 2026-09-12
+  - id: "ask-extension-masterblend"
+    title: "Hydroponic using a master blend mix (question 749434)"
+    url: "https://ask.extension.org/kb/faq.php?id=749434"
+    publisher: "Ask Extension (Cooperative Extension expert response, 2021-05-25)"
+    accessedDate: 2026-11-17
+  - id: "mu-sare-nutrient-solutions-class"
+    title: "Hydroponic Nutrient Solutions (class 2 slides, North Central SARE YENC20-145)"
+    url: "https://projects.sare.org/media/pdf/N/u/t/Nutrient-solutions-Class-2.pdf"
+    publisher: "University of Missouri Extension (J. C. Cabrera, Field Specialist in Horticulture)"
+    accessedDate: 2026-11-17
+  - id: "psu-nutrient-programs"
+    title: "Hydroponics Systems: Nutrient Solution Programs and Recipes"
+    url: "https://extension.psu.edu/hydroponics-systems-nutrient-solution-programs-and-recipes"
+    publisher: "Penn State Extension"
+    accessedDate: 2026-11-17
+  - id: "psu-plant-nutrition"
+    title: "Hydroponics Systems and Principles of Plant Nutrition"
+    url: "https://extension.psu.edu/hydroponics-systems-and-principles-of-plant-nutrition-essential-nutrients-function-deficiency-and-excess"
+    publisher: "Penn State Extension"
+    accessedDate: 2026-09-12
+  - id: "ifas-hydroponic-tomato-formulation"
+    title: "Nutrient Solution Formulation for Hydroponic (Perlite, Rockwool, NFT) Tomatoes in Florida (HS796)"
+    url: "https://ask.ifas.ufl.edu/publication/CV216"
+    publisher: "UF/IFAS Extension (G. J. Hochmuth, R. C. Hochmuth)"
+    accessedDate: 2026-11-06
+  - id: "ohio-state-tomato-nutrient-solution"
+    title: "Hydroponic Nutrient Solution for Optimized Greenhouse Tomato Production (HYG-1437)"
+    url: "https://cfaes.osu.edu/fact-sheet/hydroponic-nutrient-solution-optimized-greenhouse-tomato-production"
+    publisher: "The Ohio State University CFAES (M. Kroggel, C. Kubota)"
+    accessedDate: 2026-11-15
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-16
+  - id: "mu-nutrient-solutions"
+    title: "Hydroponic Nutrient Solutions"
+    url: "https://extension.missouri.edu/publications/g6984"
+    publisher: "University of Missouri Extension"
+    accessedDate: 2026-09-12
+  - id: "tennessee-fruiting-crops"
+    title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems"
+    url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
+    publisher: "University of Tennessee Extension"
+    accessedDate: 2026-11-06
+  - id: "purdue-fertilizer-mixing-tips"
+    title: "Taking Care of Plant Nutrition in Your High Tunnel – Fertilizer and Nutrient Solution Mixing Tips"
+    url: "https://vegcropshotline.org/article/taking-care-of-plant-nutrition-in-your-high-tunnel-fertilizer-and-nutrient-solution-mixing-tips/"
+    publisher: "Purdue Extension, Vegetable Crops Hotline issue 630 (P. Langenhoven), June 22, 2017"
+    accessedDate: 2026-11-16
+  - id: "ifas-kratky-set-and-forget"
+    title: "\"Set It and Forget It\" Hydroponic Lettuce (HS1488)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1488"
+    publisher: "UF/IFAS Extension (H. Eason)"
+    accessedDate: 2026-11-06
+  - id: "uky-hydroponic-lettuce"
+    title: "Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)"
+    url: "https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification"
+    accessedDate: 2026-11-03
+  - id: "ifas-lettuce-small-systems"
+    title: "Growing Lettuce in Small Hydroponic Systems"
+    url: "https://ask.ifas.ufl.edu/publication/HS1422"
+    publisher: "UF/IFAS Extension"
     accessedDate: 2026-09-12
 affiliateDisclosure: false
 commercialDestinationIds: []
@@ -36,34 +117,203 @@ structuredDataEnabled: false
 draft: false
 ---
 
-Masterblend 4-18-38 Tomato Formula is documented by its manufacturer as a water-soluble fertilizer component for hydroponic and other growing contexts. The important beginner point is that “Masterblend” does not describe one interchangeable dose: the exact formula, companion components, water volume, and current instructions define the program.
+import KeyTargets from '../../components/content/KeyTargets.astro';
+
+**Masterblend hydroponic nutrients are three dry parts used together: 4-18-38 Tomato Formula, magnesium sulfate (Epsom salt) and calcium nitrate.** Masterblend's mixing instructions give **2.4 g of 4-18-38, 1.5 g of magnesium sulfate and 2.4 g of calcium nitrate per US gallon** (3.79 L), dissolved in that order, each one completely before the next, and **half rates for seedlings** until they are well established. Weigh, do not scoop: an Ask Extension expert advises against mixing these products by volume. Masterblend publishes no EC or pH target, so check the mix with a meter and hold the solution at **pH 5.5–6.5** (University of Missouri Extension). By HydroRigor's arithmetic from the label, the full rate supplies about **124 ppm nitrogen, 50 ppm phosphorus and 200 ppm potassium**, which sits inside Penn State's 100–150 ppm nitrogen for lettuce and matches the UF/IFAS late-stage tomato levels for phosphorus and potassium.
+
+<KeyTargets
+  title="Masterblend: the key numbers"
+  source="Masterblend mixing instructions, University of Missouri Extension, HydroRigor arithmetic"
+  items={[
+    { label: 'Per gallon', value: '2.4 / 1.5 / 2.4 g', note: '4-18-38 / Epsom / Ca nitrate' },
+    { label: 'Seedlings', value: 'Half rate', note: 'until well established' },
+    { label: 'Solution pH', value: '5.5–6.5' },
+    { label: 'Nitrogen at full rate', value: 'about 124 ppm', note: 'HydroRigor arithmetic' },
+  ]}
+/>
+
+## Quick answer
+
+| What | Masterblend number | Source |
+| --- | --- | --- |
+| Parts | 4-18-38, magnesium sulfate (Epsom salt), calcium nitrate | Masterblend instructions |
+| Per gallon (3.79 L) | 2.4 g / 1.5 g / 2.4 g | Masterblend instructions |
+| Per 100 L (26.4 gal) | 63 g / 39 g / 63 g | Masterblend label |
+| Seedlings | Half rates until well established | Masterblend instructions |
+| Order | Water, then 4-18-38, then magnesium sulfate, then calcium nitrate, each fully dissolved | Masterblend instructions |
+| Measure by | Weight, not volume | Ask Extension |
+| Solution pH | 5.5–6.5 | Missouri Extension; Ask Extension |
+| EC | Not published; match your crop's range | Oklahoma State HLA-6722 |
+| Nitrogen at full rate | About 124 ppm | HydroRigor arithmetic from the label |
+| Change solution | Every 1–2 weeks in small recirculating tanks | Tennessee W 844-C |
+| Solution temperature | About 72–75 °F (22–24 °C) | Oklahoma State HLA-6722 |
+
+## What is in each bag
+
+The name "4-18-38" is the bag's grade: 4% nitrogen, 18% available phosphate (P2O5) and 38% soluble potash (K2O). The label adds magnesium and six micronutrients, most of them chelated.
+
+| Part | What it adds | Alone? |
+| --- | --- | --- |
+| 4-18-38 Tomato Formula | N 4% (3.5% nitrate), P2O5 18%, K2O 38%, Mg 0.5%, B 0.2%, Fe 0.4%, Mn 0.2%, Cu, Zn, Mo | No: no calcium, little nitrogen |
+| Magnesium sulfate | Magnesium and sulfur | No |
+| Calcium nitrate | Calcium and most of the nitrogen | No |
+
+The 4-18-38 carries no calcium, which is why the program has three bags. Purdue Extension notes that compound blends like this may need calcium nitrate or magnesium sulfate added, and Penn State describes exactly this program for hydroponic tomatoes: a 4-18-38 base "supplemented with calcium nitrate and magnesium sulfate." Calcium has to stay apart from phosphate and sulfate while they are concentrated, because, as University of Missouri Extension explains, they react to form solids roots cannot use. Diluted in the full reservoir, they stay in solution.
+
+The label lists **potassium chloride** among its sources, cautions that "some crops may be injured by application of Boron," and says to use it "only after a thorough water quality analysis." Test your water first.
+
+## How much to use: the rate table
+
+Masterblend gives rates in grams for set volumes and no spoon equivalents. The 5-gallon row is not on the maker's table; it is half the 10-gallon row.
+
+| Reservoir | 4-18-38 | Magnesium sulfate | Calcium nitrate |
+| --- | --- | --- | --- |
+| 1 gal (3.8 L) | 2.4 g | 1.5 g | 2.4 g |
+| 2 gal (7.6 L) | 4.5 g | 2.8 g | 4.5 g |
+| 5 gal (19 L) | 11.5 g | 7 g | 11.5 g |
+| 10 gal (38 L) | 23 g | 14 g | 23 g |
+| 25 gal (95 L) | 57 g | 35 g | 57 g |
+| 100 gal (379 L) | 227 g | 142 g | 227 g |
+
+*1–100 gallon rows from Masterblend's mixing instructions; the 5-gallon row is HydroRigor's arithmetic.*
+
+The label's metric rate, **63 g, 39 g and 63 g per 100 L**, works out to 2.4 g, 1.5 g and 2.4 g per gallon, so the two documents agree. For a metric reservoir that is about 0.63 g, 0.39 g and 0.63 g per liter.
+
+The label's lower "transplants" rate (47 g calcium nitrate and 31 g magnesium sulfate per 100 L) is written for watering, not a reservoir, so this page uses the mixing-instruction rates.
+
+**For seedlings, use half:** 1.2 g, 0.75 g and 1.2 g per gallon. At that size a kitchen scale that reads whole grams can be off by a large share of the dose; the [powder vs liquid guide](/nutrients-water/powder-vs-liquid-hydroponic-nutrients/) works through the error and why a 0.1 g scale is worth buying.
+
+## Mixing order, step by step
+
+![Six steps: fill the reservoir with water, dissolve 2.4 g of 4-18-38 per gallon, then 1.5 g of Epsom salt, then 2.4 g of calcium nitrate, check EC, and adjust pH to 5.5–6.5 last; never mix the dry parts together](/images/guides/masterblend-mixing-order.svg)
+
+*Masterblend's order: each part dissolves completely before the next goes in. EC is checked before pH (Oklahoma State Extension).*
+
+1. **Test your water** for EC, pH and alkalinity. Missouri Extension suggests source water EC of 0.2–0.8 (ideally below 1.0), alkalinity 40–160 ppm and calcium below 150 ppm.
+2. **Fill the reservoir** with the full volume of water. Masterblend's first step is to choose the final solution volume.
+3. **Weigh and dissolve the 4-18-38.** Stir until no grains remain.
+4. **Weigh and add the magnesium sulfate.** Stir until it has completely dissolved.
+5. **Weigh and add the calcium nitrate last.** Stir until it has completely dissolved.
+6. **Check EC.** Oklahoma State advises stirring and letting the reading settle, which may take a couple of minutes. Compare it with your crop's range in the table below.
+7. **Adjust pH last** to 5.5–6.5. Oklahoma State says to adjust pH only after EC is in range, adding pH down slowly and waiting several minutes between doses.
+8. **Top off with plain water** as the level drops, and replace the whole solution every 1–2 weeks (Tennessee) or about every 2 weeks (Oklahoma State).
+
+Never put the three dry parts into one container together, and never pour calcium nitrate into a strong solution of the other two. If you want an extra margin, dissolve the calcium nitrate in a separate bucket of water first: the Ask Extension expert and University of Missouri's class notes both dissolve calcium nitrate apart and combine once dissolved.
+
+## Is the full rate strong enough? What a gallon supplies
+
+Masterblend does not say what its solution contains in ppm, but the label analysis lets you work it out. HydroRigor multiplied each part's grams by its percentage and divided by 3.79 L. Phosphate and potash were converted to elemental phosphorus (×0.436) and potassium (×0.830), the standard factors; calcium nitrate was taken as 15.5% nitrogen (the grade University of Missouri uses), and Epsom salt as magnesium sulfate heptahydrate, about 9.9% magnesium.
+
+![Bar chart of the full Masterblend rate against targets: nitrogen about 124 ppm against UF/IFAS 70 to 150; phosphorus about 50 against 50; potassium about 200 against 120 to 200; magnesium about 42 against 40 to 50](/images/guides/masterblend-ppm-per-gallon.svg)
+
+*Masterblend amounts from its mixing instructions and label; ppm values are HydroRigor's arithmetic. Target ranges are the UF/IFAS HS796 tomato formula across its growth stages.*
+
+| Nutrient | Full rate (arithmetic) | Half rate | UF/IFAS tomato (HS796) | Other targets |
+| --- | --- | --- | --- | --- |
+| Nitrogen | about 124 ppm | about 62 ppm | 70 early to 150 late | Lettuce 100–150 (Penn State) |
+| Phosphorus | about 50 ppm | about 25 ppm | 50 | — |
+| Potassium | about 200 ppm | about 100 ppm | 120 early to 200 late | Tomato 200–350 (Missouri, after UConn) |
+| Magnesium | about 42 ppm | about 21 ppm | 40–50 | Tomato 30–60 (Missouri) |
+
+Calcium is missing from the table because neither Masterblend document states the calcium content of its calcium nitrate; check your bag's label.
+
+What this shows:
+
+- **Lettuce and leafy greens:** the full rate's nitrogen sits inside Penn State's 100–150 ppm for lettuce, a little under Missouri's 150 ppm lettuce recipe. The full rate suits lettuce, basil and other greens.
+- **Seedlings:** the half rate's nitrogen (about 62 ppm) sits close to UF/IFAS's advice to keep nitrogen at 60–70 ppm early to avoid overly vegetative ("bullish") tomato plants.
+- **Tomatoes in fruit:** phosphorus, potassium and magnesium match the UF/IFAS late stages, but Missouri's fruiting-stage recipes run nitrogen to 195–205 ppm, and Ohio State's tomato table raises potassium to 350 ppm. For large fruiting plants the single Masterblend rate sits at the low end, which is why Penn State says this program is adjusted by variety and stage. Raise strength only by EC, and see the [tomato nutrient guide](/nutrients-water/hydroponic-nutrients-for-tomatoes/) for stage-by-stage targets.
+
+## Which EC to aim for by crop
+
+Because Masterblend gives no EC, the meter decides. These are Oklahoma State Extension's ranges (HLA-6722, Table 2), plus UF/IFAS figures for lettuce. Measure your plain water first; the reading after mixing includes it.
+
+| Crop | EC (mS/cm) | pH | Source |
+| --- | --- | --- | --- |
+| Lettuce | 1.2–1.8 | 6.0–7.0 (Kentucky: 5.5–6.0) | Oklahoma State; UF/IFAS |
+| Lettuce, Kratky | about 1.25 | 5.5–6.0 | UF/IFAS HS1488 |
+| Basil | 1.0–1.6 | 5.5–6.0 | Oklahoma State |
+| Spinach | 1.8–2.3 | 6.0–7.0 | Oklahoma State |
+| Pepper | 0.8–1.8 | 5.5–6.0 | Oklahoma State |
+| Cucumber | 1.7–2.0 | 5.0–5.5 | Oklahoma State |
+| Strawberry | 1.8–2.2 | 6.0 | Oklahoma State |
+| Tomato | 2.0–4.0 (Tennessee: 2.0–3.0) | 6.0–6.5 | Oklahoma State; Tennessee |
+
+If EC is above the range, dilute with water; if it is below, add more of all three parts in the same 2.4 : 1.5 : 2.4 ratio. Oklahoma State gives the same rule for any fertilizer. For more crops, use the [pH and EC targets tool](/tools/ph-ec-targets/).
+
+## Making stock solutions from Masterblend
+
+Weighing three powders for every top-up gets old. Penn State says commercial growers commonly make stocks at 50, 100 or 200 times normal strength in **two tanks**: calcium nitrate in one, 4-18-38 plus magnesium sulfate in the other. Ohio State's tomato recipe keeps calcium separate at 100× for the same reason: gypsum and phosphate solids form otherwise.
+
+At 100×, one gallon of each stock would hold (HydroRigor's arithmetic from the per-gallon rate):
+
+| Stock | Per gallon of stock | Per liter |
+| --- | --- | --- |
+| A: 4-18-38 + magnesium sulfate | 240 g + 150 g | about 63 g + 40 g |
+| B: calcium nitrate | 240 g | about 63 g |
+
+That is well below the label's maximum solubility for 4-18-38 (0.42 kg per liter) and Penn State's figure of about 121 g of calcium nitrate per 100 mL of cold water. To use them, add equal amounts of A and B at 1 part stock to 100 parts water, about 38 mL of each per gallon (10 mL per liter), adding them to the water separately. Masterblend publishes no stock-solution rates, so mix a small test jar first, and keep stocks covered and dark: Purdue notes that chelates break down in daylight.
+
+## Step-by-step: a 5-gallon batch for lettuce
+
+1. Fill a bucket with 5 gallons (about 19 L) of water at about 72–75 °F (22–24 °C), the range Oklahoma State gives. UF/IFAS gives 65–80 °F for lettuce.
+2. Weigh 11.5 g of 4-18-38 and stir it in until dissolved.
+3. Weigh 7 g of magnesium sulfate and stir it in until dissolved.
+4. Weigh 11.5 g of calcium nitrate and stir it in until dissolved.
+5. Wait a couple of minutes and read EC. Aim for 1.2–1.8 (Oklahoma State, UF/IFAS). If you are starting seedlings, use half the amounts; Kentucky gives about 1.0 for lettuce seedlings and about 1.5 after.
+6. Adjust pH to 5.5–6.0 for lettuce (Kentucky) with small doses of pH down or up.
+7. Top off with plain water every few days. In a raft or bucket, Kentucky replaces the solution every 3–4 weeks for lettuce; in a small recirculating system, Tennessee suggests every 1–2 weeks.
+
+In a [Kratky jar or tub](/systems/kratky-hydroponics/), mix once and do not top up: UF/IFAS figures 1–1.5 gallons of solution per lettuce plant from seed to harvest. To scale another reservoir size, multiply each part's grams separately; the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) works in mL for liquid nutrients and does not weigh dry parts.
+
+## Where the sources differ
+
+| Topic | Masterblend | Other source | What to do |
+| --- | --- | --- | --- |
+| pH | Label: adjust to 6.4–7.7 (spray-tank watering) | Missouri and Ask Extension: 5.5–6.5 for hydroponics | Use 5.5–6.5 in a reservoir; the label figure is for watering soil or media |
+| Mixing | One container, in order | Ask Extension and Missouri: dissolve calcium nitrate apart, then combine | In-order is fine in full water; use a second bucket if you see cloudiness |
+| Strength | One rate for all crops | Ask Extension: under 400 ppm (meter scale not stated) | Use EC by crop (Oklahoma State), not a ppm number with an unknown scale |
+| Fruiting tomatoes | No stage rates | Missouri N 195–205 ppm; Ohio State K 350 ppm | Raise strength by EC toward Tennessee's 2.0–3.0 |
+| Change interval | Label: apply every 1–2 weeks (watering) | Tennessee 1–2 weeks; Oklahoma State about 2; Kentucky lettuce 3–4 | 1–2 weeks in small tanks; longer only if EC and pH hold |
+
+## Masterblend or a liquid nutrient?
+
+Masterblend suits a 5-gallon or larger reservoir and a 0.1 g scale. A liquid three-part such as FloraSeries is measured in milliliters and has a weekly chart with EC targets (see the [General Hydroponics review](/reviews/general-hydroponics-nutrients/)). To compare types by crop, see the [best hydroponic nutrients guide](/best/hydroponic-nutrients-for-home-growers/).
+
+## Troubleshooting
+
+| Problem | Likely cause | Fix |
+| --- | --- | --- |
+| Cloudy water or white solids | Calcium nitrate met the other parts concentrated, or was added before they dissolved | Remake the batch; dissolve calcium nitrate last or in its own bucket |
+| Grains at the bottom | Not fully dissolved, or very cold water | Stir longer before adding the next part; Purdue notes lukewarm water speeds dissolving |
+| EC far above your crop's range | Hard source water, or grams mismeasured | Measure plain water first; weigh on a 0.1 g scale |
+| EC low | One part skipped or under-weighed | Add the missing part, then re-check |
+| New leaves pale between the veins | Iron deficiency, often from high pH (Penn State) | Bring pH back to 5.5–6.5 |
+| Tipburn on lettuce, blossom-end rot on tomatoes | Calcium-related disorders (Penn State) | Never leave out the calcium nitrate |
+| pH climbs between checks | Alkaline source water | Oklahoma State: remove alkalinity with acid or RO water |
+| Leaf edges burn in hot, bright weather | Solution too strong | Dilute toward the bottom of your crop's EC range |
+
+## FAQ
+
+**Can I use Masterblend 4-18-38 by itself?**
+No. It contains no calcium and only a small share of the nitrogen. Use all three parts at the published ratio.
+
+**How many teaspoons is 2.4 grams?**
+No source gives a spoon conversion, and the Ask Extension expert advises against mixing these salts by volume. Use a scale.
+
+**What EC should Masterblend read?**
+Masterblend does not publish one. Mix the rate, read EC, and adjust toward your crop's range in the table above.
+
+**Is Masterblend good for lettuce?**
+By the label arithmetic, the full rate gives about 124 ppm nitrogen, inside Penn State's 100–150 ppm for lettuce. Check EC against 1.2–1.8.
+
+**Can I use regular Epsom salt?**
+Masterblend lists magnesium sulfate. This page's magnesium figure assumes standard Epsom salt (magnesium sulfate heptahydrate).
+
+**How do I store it?**
+Masterblend gives no shelf life. Keep bags sealed and dry; keep any stock solution covered and dark.
+
+For the general method, see [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/) and the [nutrient solution guide](/nutrients-water/hydroponic-nutrient-solution/); to choose a meter, see the [pH meter guide](/best/hydroponic-ph-meter/).
 
 ## Evidence boundary
 
-This guide is based only on identified Masterblend manufacturer documents accessed on the publication date. HydroRigor did not acquire or hands-on test the formula. No independent crop-performance comparison, price, availability, rating, or affiliate destination is presented.
-
-Because the evidence is manufacturer-only, the page can explain documented identity and mixing structure but cannot conclude that the product outperforms another nutrient program.
-
-## Understand the formula and the system
-
-The manufacturer’s 4-18-38 instructions treat the tomato formula, magnesium sulfate, and calcium nitrate as distinct components in a specified preparation sequence. The formula name is not the final mixed solution analysis and should not be used as a reason to omit a documented companion component.
-
-Confirm the package identity before mixing. Masterblend publishes multiple formulations for different applications, so directions for one formula should not be transferred to another.
-
-## Follow the current document, not a copied recipe
-
-The manufacturer’s instructions direct users to begin with water, dissolve the formula and magnesium sulfate in sequence, and add calcium nitrate separately after the earlier components have dissolved. Refer to the current source document for quantities and context rather than relying on a copied social post or an unlabeled scoop.
-
-Never combine dry or concentrated components together unless the current manufacturer directions explicitly require it. Use appropriate mass-measurement equipment for dry materials; do not convert grams to milliliters by assumption.
-
-## Water and crop context still matter
-
-The manufacturer identifies the formulation’s intended applications, but a product page cannot determine the composition of a user’s source water or the conditions of a particular crop and system. Water analysis, crop stage, recirculation, root-zone medium, and measurement practice remain separate parts of nutrient management.
-
-HydroRigor’s [pH and EC reference](/tools/ph-ec-targets/) presents accepted source-specific crop records. It does not turn a target into a Masterblend dose.
-
-## Calculator boundary
-
-The HydroRigor [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) supports liquid doses expressed in mL per liter or mL per US gallon. It does not calculate dry Masterblend masses. For this formula, use the manufacturer’s mass-based directions and appropriate weighing equipment.
-
-For general process controls, read [how to mix hydroponic nutrients](/nutrients-water/how-to-mix-hydroponic-nutrients/). This page remains a setup interpretation of manufacturer evidence, not a product recommendation.
+This page is based on Masterblend's own mixing instructions and label, extension guidance on this type of three-part dry program, and extension crop targets. The ppm figures are HydroRigor's arithmetic, not lab measurements. No university trial of the Masterblend brand was found for this page. HydroRigor did not buy or grow with Masterblend, and this page gives no prices, ratings or shop links.
