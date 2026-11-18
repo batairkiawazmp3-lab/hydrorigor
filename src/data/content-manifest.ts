@@ -89,6 +89,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['umass-ph-ec-pens', 'msu-calibrate-ph-ec', 'purdue-inhouse-ph-ec', 'osu-ph-ec-guide', 'uky-monitoring-ph-ec'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 26,
+    collection: 'articles',
+    category: 'systems',
+    title: 'What Is Hydroponics? How It Works, Systems & Key Numbers',
+    route: 'what-is-hydroponics',
+    primaryIntent: 'informational',
+    primaryTopic: 'what is a hydroponic system',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['osu-hydro-hints-overview', 'mu-hydroponic-farming', 'mu-nutrient-solutions', 'osu-ph-ec-guide', 'okstate-hydroponics-hla6442', 'vt-system-crop-comparisons', 'uky-hydroponic-lettuce', 'psu-plant-nutrition', 'illinois-hydroponics-at-home', 'ifas-kratky-set-and-forget', 'osu-hydro-hints-nft', 'osu-hydro-hints-buckets', 'barbosa-lettuce-water-energy-2015', 'hoagland-arnon-circular-347-1938'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

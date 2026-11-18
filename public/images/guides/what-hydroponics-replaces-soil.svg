@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1180" width="640" height="1180" role="img" aria-labelledby="t d">
+  <title id="t">What hydroponics replaces when there is no soil</title>
+  <desc id="d">A plant in a net pot above a reservoir, with the four jobs soil normally does and what does each job in hydroponics. Support: a net pot, foam raft or inert medium such as rockwool, coir or clay pebbles. Water and nutrients: a nutrient solution at pH 5.5 to 6.5, with EC set for the crop, for example 1.2 to 1.8 for lettuce. Oxygen: an air pump, an air gap or a thin film, aiming for 7 to 10 ppm dissolved oxygen and never below 4. Light: indoors, a grow light for about 12 to 16 hours a day.</desc>
+  <rect width="640" height="1180" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">What replaces the soil</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Soil does four jobs. Hydroponics</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">hands each one to something else.</text>
+    <!-- light -->
+    <rect x="200" y="140" width="240" height="26" rx="8" fill="#3F5248"/>
+    <path d="M230 172 L210 230 M280 172 L272 230 M360 172 L368 230 M410 172 L430 230" stroke="#E9C46A" stroke-width="5" stroke-linecap="round"/>
+    <!-- plant -->
+    <ellipse cx="290" cy="280" rx="44" ry="26" fill="#2E8B63"/>
+    <ellipse cx="350" cy="280" rx="44" ry="26" fill="#2E8B63"/>
+    <ellipse cx="320" cy="262" rx="36" ry="30" fill="#0F6B4F"/>
+    <rect x="316" y="286" width="8" height="34" fill="#0F6B4F"/>
+    <!-- raft/lid -->
+    <rect x="130" y="318" width="380" height="22" rx="4" fill="#FFFFFF" stroke="#0E1A14" stroke-width="3"/>
+    <!-- net pot -->
+    <path d="M286 312 L354 312 L344 384 L296 384 Z" fill="#E9C46A" stroke="#0E1A14" stroke-width="3"/>
+    <!-- reservoir -->
+    <rect x="142" y="390" width="356" height="170" fill="#BFE0EC"/>
+    <path d="M140 340 L140 562 L500 562 L500 340" fill="none" stroke="#0E1A14" stroke-width="5"/>
+    <!-- roots -->
+    <path d="M304 384 Q290 440 278 520 M318 384 Q314 450 312 536 M330 384 Q336 450 342 530 M340 384 Q356 440 366 512" fill="none" stroke="#8A6D3B" stroke-width="4"/>
+    <!-- air stone and bubbles -->
+    <rect x="410" y="536" width="54" height="14" rx="6" fill="#3F5248"/>
+    <circle cx="424" cy="510" r="6" fill="#FFFFFF" stroke="#3F5248" stroke-width="2"/>
+    <circle cx="444" cy="484" r="7" fill="#FFFFFF" stroke="#3F5248" stroke-width="2"/>
+    <circle cx="430" cy="452" r="6" fill="#FFFFFF" stroke="#3F5248" stroke-width="2"/>
+    <circle cx="448" cy="420" r="7" fill="#FFFFFF" stroke="#3F5248" stroke-width="2"/>
+    <!-- cards -->
+    <rect x="20" y="600" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="640" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">1. Support</text>
+    <text x="40" y="674" font-size="21" fill="#0E1A14">Net pot, foam raft or an inert</text>
+    <text x="40" y="704" font-size="21" fill="#0E1A14">medium: rockwool, coir, clay pebbles</text>
+    <rect x="20" y="744" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="784" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">2. Water and nutrients</text>
+    <text x="40" y="818" font-size="21" fill="#0E1A14">Nutrient solution, pH 5.5–6.5</text>
+    <text x="40" y="848" font-size="21" fill="#0E1A14">EC by crop: lettuce 1.2–1.8</text>
+    <rect x="20" y="888" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="928" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">3. Oxygen at the roots</text>
+    <text x="40" y="962" font-size="21" fill="#0E1A14">Air pump, air gap or thin film</text>
+    <text x="40" y="992" font-size="21" fill="#0E1A14">7–10 ppm dissolved oxygen, never below 4</text>
+    <rect x="20" y="1032" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="1072" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">4. Light (indoors)</text>
+    <text x="40" y="1106" font-size="21" fill="#0E1A14">Grow light, about 12–16 hours a day</text>
+    <text x="40" y="1136" font-size="21" fill="#0E1A14">Soil never supplied this one</text>
+  </g>
+</svg>

@@ -113,6 +113,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'kratky-hydroponics': 'lettuce-net-pots-clay',
   // No photo of a pH meter in the registry yet; a measuring beaker until an owner or Unsplash photo is added.
   'hydroponic-ph-meter': 'beaker-measure',
+  // A seed rooting in a glass of water: plant growth without soil, the page's subject.
+  'what-is-hydroponics': 'cutting-in-water',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

@@ -32,9 +32,9 @@ export const m06EditorialSources = [
     title: 'Controlled Environment Agriculture: Hydroponic Farming',
     publisher: 'University of Missouri Extension',
     url: 'https://extension.missouri.edu/publications/g6986',
-    accessedDate: '2026-09-12',
+    accessedDate: '2026-11-18',
     sourceType: 'university-extension',
-    locator: 'Types of hydroponic systems; crop fit; advantages and disadvantages; DWC (floating raft) is among the simpler systems to build and plants keep root contact with water if a pump stops',
+    locator: 'G6986 (J. Cabrera-Garcia, R. Milhollin, M. Ernst; April 2024, revised July 2024): "Hydroponic production is a method of growing plants without soil"; roots in solution on rafts or trays, or in soilless media (coir, rockwool, peat mixes); water-based versus media-based and closed (recirculating) versus open systems. Table 1 benefits: no seasonality, food safety, urban food access, higher yields per square foot than field production, resource efficiency except energy; challenges: high investment, high energy use, limited crops, higher production costs, specialized skills. Table 2 (water-based): water and fertilizer use lowest in aeroponics, then NFT, highest in DWC; DWC least construction cost and plant-loss risk, aeroponics most. NFT troughs at 1–2% slope, plants may wilt immediately if the pump fails; DWC depth 4–12 in, more forgiving for beginners because plants do not wilt immediately if the air pump fails; aeroponics needs high-quality water and pressurized misters; Dutch buckets for tomatoes, cucumbers and vining crops. Mixed-crop air temperature 65–75 °F, plant health falls significantly above 85 °F; relative humidity 50–60%; about 12–16 hours of light per day; leafy greens and tomatoes most popular (read 2026-11-18)',
   },
   {
     id: 'mu-nutrient-solutions',
@@ -455,9 +455,9 @@ export const m06EditorialSources = [
     title: 'Hydro hints: What is hydroponics? (EM 9453)',
     publisher: 'Oregon State University Extension Service',
     url: 'https://extension.oregonstate.edu/es/catalog/em-9453-hydro-hints-what-hydroponics',
-    accessedDate: '2026-11-06',
+    accessedDate: '2026-11-18',
     sourceType: 'university-extension',
-    locator: 'EM 9453 (May 2025): "the best system depends on your crops and space"; NFT for short-lived crops or vertical gardening, buckets for long-lived or vining plants, deep water culture for large spaces, ebb and flow for seedlings',
+    locator: 'EM 9453 (May 2025; M. Nelson, G. Langellotto, L. Nackley): hydroponics is "a method of growing plants in a nutrient-rich water solution without soil"; the term credited to William Frederick Gericke (UC Berkeley), who popularized it in the 1920s; solutions "typically salty and mildly acidic"; keep the solution cool and out of sunlight so it stays oxygenated (stagnant, low-oxygen conditions harm roots); food-grade materials, HDPE recommended; growing media optional; advantages list includes "Uses 100x less water for the same yield" (no method or source given), faster growth, higher planting densities; "Any plant can be grown hydroponically, but the best system depends on your crops and space"; NFT for short-lived crops or vertical gardening, buckets for long-lived or vining plants, deep water culture for large spaces, ebb and flow for seedlings or nursery crops; no pH, EC, temperature, oxygen or light figures (read 2026-11-18)',
   },
   {
     id: 'osu-hydro-hints-dwc',
@@ -818,6 +818,24 @@ export const m06EditorialSources = [
     accessedDate: '2026-11-17',
     sourceType: 'university-research',
     locator: 'Methods p. 228: float culture, three continuous-flow systems; Rex butterhead and Nevada Summer Crisp lettuce and bok choy; pH buffered to 6.0–6.4, water at least 18 °C; tap water about 100 ppm TDS. Cycle 1: General Hydroponics Flora series 1:1:1 at 300, 400 and 500 ppm TDS, no significant difference in any crop (Figure 4, p. 230). Cycle 2: Flora at 400 ppm (low) versus 1,200 ppm, described as the manufacturer\'s commercial rate (high), versus a self-made organic solution of potash, rock phosphate and fish meal; significant difference in every crop (Figure 5, pp. 230–231): mean wet weight high/organic/low bok choy 619.1/239.8/384.7 g, butterhead 150.9/73.8/131.3 g, Nevada 197.1/96.2/133.1 g; organic "did not yield as much as even the low level conventional solution"; rock phosphate was insoluble and phosphate mineralization low; high nutrient cost about 4 times the low level. EC not reported (read 2026-11-17)',
+  },
+  {
+    id: 'hoagland-arnon-circular-347-1938',
+    title: 'The Water-Culture Method for Growing Plants without Soil (Circular 347)',
+    publisher: 'California Agricultural Experiment Station, University of California (D. R. Hoagland and D. I. Arnon), December 1938',
+    url: 'https://ia801405.us.archive.org/24/items/waterculturemeth347hoag/waterculturemeth347hoag.pdf',
+    accessedDate: '2026-11-18',
+    sourceType: 'university-research',
+    locator: 'Foreword p. 1: W. F. Gericke adapted the water-culture method, until then used only for scientific studies, to commercial use; "extravagant claims" followed. p. 3: "the recently coined term, \'hydroponics\'"; "Wholly unfounded claims have been made by promoters". p. 8: essential elements nitrogen, phosphorus, potassium, sulfur, calcium, magnesium, iron, boron, manganese, copper and zinc, molybdenum possibly; special aeration of the solution important for many plants. p. 9: an adequate supply of air to the roots must be provided; bubbling air may be indispensable. p. 12: Berkeley greenhouse tomato trial, yield from soil-grown plants "not markedly different" from the tank method. p. 15: "There is no magic in the growth of plants in water culture". p. 16: no significant difference in mineral content, vitamins or flavor of tomatoes. p. 17: commercial success unlikely without expert supervision (read 2026-11-18)',
+  },
+  {
+    id: 'barbosa-lettuce-water-energy-2015',
+    title: 'Comparison of Land, Water, and Energy Requirements of Lettuce Grown Using Hydroponic vs. Conventional Agricultural Methods',
+    publisher: 'International Journal of Environmental Research and Public Health 12(6): 6879–6891 (G. L. Barbosa, R. U. Halden et al., Arizona State University), 2015',
+    url: 'https://www.mdpi.com/1660-4601/12/6/6879',
+    accessedDate: '2026-11-18',
+    sourceType: 'university-research',
+    locator: 'Abstract, Results and Table 1: modeled, not measured; a hypothetical 815 m² enclosed hydroponic greenhouse in Yuma, Arizona (engineering equations with literature values) against Arizona field lettuce (Yuma County crop budgets, USDA NASS). Yield 41 ± 6.1 kg/m²/y hydroponic vs 3.9 ± 0.21 conventional (11 ± 1.7 times higher); water 20 ± 3.8 L/kg/y vs 250 ± 25 (13 ± 2.7 times less); energy 90,000 ± 11,000 kJ/kg/y vs 1,100 ± 75 (82 ± 11 times more), mostly heating and cooling (74,000) and supplemental lighting (15,000); hydroponic inputs assume 24 plants/m², about 12 harvests a year; commercial scale optimized for maximum production; only direct energy counted (read 2026-11-18)',
   },
 ] as const satisfies readonly M06EditorialSource[];
 
