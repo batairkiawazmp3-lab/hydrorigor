@@ -14,10 +14,14 @@ Updated: 2026-11-17
 
 ## Open items for the owner
 
-- **GitHub Actions blocked (2026-11-13):** CI jobs on PR #66 were not started: "recent account
-  payments have failed or your spending limit needs to be increased" (GitHub Billing & plans).
-  Until billing is fixed no PR can go green, so Claude leaves PRs open instead of merging.
-  PR #66 (Search Console log + 4 internal links) passed every local check and is waiting.
+- **Dependency audit exception (approved by the owner 2026-11-18, expires 2026-12-18):** CI's
+  production audit (`npm run audit:prod`, now `scripts/audit-prod.mjs`) still fails on any high or
+  critical advisory except those in `audit-allowlist.json`. The one entry is GHSA-fc5q-39xc-vjpf
+  (picomatch ReDoS, `<=4.0.7`, no patched release yet); picomatch runs only at build time. Each run:
+  if `npm view picomatch version` shows a release newer than 4.0.7, refresh the lockfile in its own
+  PR and delete the entry. An expired entry fails CI on purpose; renew it only with the owner's OK.
+  Also pending: Astro 7.3.3 to 7.4.12 fixes two lower-severity Astro advisories (GHSA-mh32-jxcr-mh9f
+  low, GHSA-r3h5-4585-7x3w moderate); upgrade in its own PR with the full checks.
 - Email newsletter (Kit, form 10159921, set up by the owner 2026-11-08): the sign-up card on the
   home page and at the end of every guide posts straight to Kit (no Kit script; CSP
   `form-action` allows https://app.kit.com only). Owner: (1) once live, sign up once with your

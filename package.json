@@ -18,7 +18,7 @@
     "test:search": "node scripts/test-search.mjs",
     "test:links": "node scripts/validate-links.mjs",
     "test:security": "node scripts/validate-security.mjs",
-    "audit:prod": "npm audit --omit=dev --audit-level=high",
+    "audit:prod": "node scripts/audit-prod.mjs",
     "test:e2e": "playwright test tests/e2e/smoke.spec.mjs",
     "test:a11y": "playwright test tests/e2e/accessibility.spec.mjs",
     "test:lighthouse": "node scripts/run-lighthouse.mjs",
