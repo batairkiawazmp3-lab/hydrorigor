@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 918" width="640" height="918" role="img" aria-labelledby="t d">
+  <title id="t">If the power fails: how each hydroponic system copes</title>
+  <desc id="d">A ranking of hydroponic systems by how they cope with a pump or power failure, from safest to riskiest; it is an order, not measured times. Wick and Kratky: no pump, so they keep working. Deep water culture: roots stay in the solution and plants do not wilt immediately. Drip buckets: the larger root volume buffers better than NFT. NFT: plants may wilt quickly once the film stops. Aeroponics: the highest risk of losing plants.</desc>
+  <rect width="640" height="918" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">If the power fails</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Safest at the top, riskiest at the bottom</text>
+    <rect x="20" y="120" width="600" height="138" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="160" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Wick, Kratky</text>
+    <rect x="40" y="178" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="178" width="560" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="238" font-size="21" fill="#3F5248">No pump: keeps working</text>
+    <rect x="20" y="270" width="600" height="138" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="310" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Deep water culture</text>
+    <rect x="40" y="328" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="328" width="450" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="388" font-size="21" fill="#3F5248">Roots stay wet; no instant wilt</text>
+    <rect x="20" y="420" width="600" height="138" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="460" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Drip buckets</text>
+    <rect x="40" y="478" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="478" width="450" height="26" rx="13" fill="#E9C46A"/>
+    <text x="40" y="538" font-size="21" fill="#3F5248">Bigger root volume buffers</text>
+    <rect x="20" y="570" width="600" height="138" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="610" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">NFT</text>
+    <rect x="40" y="628" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="628" width="230" height="26" rx="13" fill="#D9822B"/>
+    <text x="40" y="688" font-size="21" fill="#3F5248">May wilt quickly</text>
+    <rect x="20" y="720" width="600" height="138" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="760" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Aeroponics</text>
+    <rect x="40" y="778" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="778" width="120" height="26" rx="13" fill="#B5452B"/>
+    <text x="40" y="838" font-size="21" fill="#3F5248">Highest plant-loss risk</text>
+    <text x="20" y="894" font-size="20" fill="#3F5248">A ranked order, not measured times</text>
+  </g>
+</svg>

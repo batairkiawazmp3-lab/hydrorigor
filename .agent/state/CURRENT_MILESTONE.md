@@ -100,7 +100,8 @@ impressions in 28 days).
         ~~`/reviews/general-hydroponics-nutrients/`~~ (rebuilt 2026-11-17, "General Hydroponics Nutrients: Flora Feed Chart, EC & pH"; 170 / 23).
 23. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.
         Done: ~~ID 26 `/systems/what-is-hydroponics/`~~ (published 2026-11-18, "What Is Hydroponics? How It Works, Systems & Key Numbers").
-        Next: ID 27 `types-of-hydroponic-systems`.
+        ~~ID 27 `/systems/types-of-hydroponic-systems/`~~ (published 2026-11-18, "Types of Hydroponic Systems: DWC, NFT, Drip & 5 More").
+        Next: ID 29 `nft-hydroponic-system` (ID 28 Kratky already published).
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the
