@@ -115,6 +115,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-ph-meter': 'beaker-measure',
   // A seed rooting in a glass of water: plant growth without soil, the page's subject.
   'what-is-hydroponics': 'cutting-in-water',
+  // A lettuce plant in a growing channel: one of the system types the page compares.
+  'types-of-hydroponic-systems': 'lettuce-channel-net-pot',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

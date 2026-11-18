@@ -101,6 +101,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['osu-hydro-hints-overview', 'mu-hydroponic-farming', 'mu-nutrient-solutions', 'osu-ph-ec-guide', 'okstate-hydroponics-hla6442', 'vt-system-crop-comparisons', 'uky-hydroponic-lettuce', 'psu-plant-nutrition', 'illinois-hydroponics-at-home', 'ifas-kratky-set-and-forget', 'osu-hydro-hints-nft', 'osu-hydro-hints-buckets', 'barbosa-lettuce-water-energy-2015', 'hoagland-arnon-circular-347-1938'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 27,
+    collection: 'articles',
+    category: 'systems',
+    title: 'Types of Hydroponic Systems: DWC, NFT, Drip & 5 More',
+    route: 'types-of-hydroponic-systems',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic system types',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['okstate-hydroponics-hla6442', 'osu-hydro-hints-overview', 'mu-hydroponic-farming', 'uga-home-hydroponics', 'ifas-kratky-set-and-forget', 'ctahr-kratky-vc1', 'kratky-suspended-pot-2004', 'vt-system-crop-comparisons', 'uky-hydroponic-lettuce', 'ifas-lettuce-small-systems', 'osu-hydro-hints-dwc', 'ifas-volusia-dwc-bucket', 'osu-hydro-hints-nft', 'purdue-hydroponics-opportunities-2016', 'sato-modified-nft-2007', 'osu-hydro-hints-ebb-flow', 'osu-hydro-hints-buckets', 'aces-greenhouse-tomato-anr2955', 'okstate-vertical-tower-hla6724', 'touliatos-vertical-lettuce-2016', 'osu-ph-ec-guide', 'illinois-hydroponics-at-home'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

@@ -14,7 +14,7 @@ Stages from the workbook's Publishing Sequence:
 | ID | Stage | Section | Collection | Working title | Primary keyword | Intent | Validation | US volume | Difficulty | Proposed route | Notes |
 | ---: | --- | --- | --- | --- | --- | --- | --- | ---: | ---: | --- | --- |
 | 26 | Stage 3 | systems | articles | What Is Hydroponics? How Soil-Free Growing Works | what is a hydroponic system | Informational | Suggestion-derived |  |  | `what-is-hydroponics` | Published 2026-11-18 as "What Is Hydroponics? How It Works, Systems & Key Numbers" |
-| 27 | Stage 3 | systems | articles | Types of Hydroponic Systems: DWC, NFT, Kratky, Drip and More | hydroponic system types | Informational | Suggestion-derived |  |  | `types-of-hydroponic-systems` |  |
+| 27 | Stage 3 | systems | articles | Types of Hydroponic Systems: DWC, NFT, Kratky, Drip and More | hydroponic system types | Informational | Suggestion-derived |  |  | `types-of-hydroponic-systems` | Published 2026-11-18 as "Types of Hydroponic Systems: DWC, NFT, Drip & 5 More" |
 | 28 | Stage 3 | systems | articles | Kratky Hydroponics: No-Pump Setup, Air Gap & Crops | kratky hydroponic system | Informational | Suggestion-derived |  |  | `kratky-hydroponics` | Published 2026-11-13 from the research pack (`docs/research/source-packs/kratky-hydroponics.md`) |
 | 29 | Stage 3 | systems | articles | NFT Hydroponic Systems: Complete Home Setup Guide | nft hydroponic system | Informational | Suggestion-derived |  |  | `nft-hydroponic-system` |  |
 | 30 | Stage 3 | systems | articles | Ebb and Flow Hydroponics Explained | hydroponic system ebb and flow | Informational | Suggestion-derived |  |  | `ebb-and-flow-hydroponics` |  |

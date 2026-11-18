@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1296" width="640" height="1296" role="img" aria-labelledby="t d">
+  <title id="t">The eight types of hydroponic systems, passive and active</title>
+  <desc id="d">Eight hydroponic system types in two groups. Passive, with no pump: wick, where a wick draws solution up into the medium; Kratky, a still tank where the falling level leaves an air gap. Active, with a pump: deep water culture, roots in aerated solution under a raft; NFT, a thin film flowing down a sloped channel; ebb and flow, a tray that floods and drains on a timer; drip, emitters feeding perlite or coir in buckets; aeroponics, roots hanging in air and misted; vertical towers, solution pumped to the top and trickling down.</desc>
+  <rect width="640" height="1296" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">8 types of hydroponic systems</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Sorted by one question: is there a pump?</text>
+    <rect x="20" y="112" width="600" height="44" rx="10" fill="#8A6D3B"/>
+    <text x="36" y="142" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">Passive: no pump, no power</text>
+    <rect x="20" y="170" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="186" width="86" height="86" rx="12" fill="#F1E7C9"/>
+    <rect x="48" y="238" width="62" height="22" fill="#5FA8C8"/>
+    <path d="M48 216 L48 260 L110 260 L110 216" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="58" y="200" width="42" height="22" fill="#E9C46A" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M79 222 L79 254" stroke="#8A6D3B" stroke-width="4"/>
+    <text x="142" y="214" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">1. Wick</text>
+    <text x="142" y="246" font-size="21" fill="#0E1A14">A wick draws solution</text>
+    <text x="142" y="274" font-size="21" fill="#3F5248">up into the medium</text>
+    <rect x="20" y="302" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="318" width="86" height="86" rx="12" fill="#F1E7C9"/>
+    <rect x="48" y="372" width="62" height="20" fill="#5FA8C8"/>
+    <path d="M48 348 L48 392 L110 392 L110 348" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="46" y="344" width="66" height="6" fill="#FFFFFF" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M76 350 L74 380 M82 350 L84 382" stroke="#8A6D3B" stroke-width="3"/>
+    <text x="142" y="346" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">2. Kratky</text>
+    <text x="142" y="378" font-size="21" fill="#0E1A14">Fill once; the level falls</text>
+    <text x="142" y="406" font-size="21" fill="#3F5248">and leaves an air gap</text>
+    <rect x="20" y="438" width="600" height="44" rx="10" fill="#0F6B4F"/>
+    <text x="36" y="468" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">Active: pump, timer or both</text>
+    <rect x="20" y="496" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="512" width="86" height="86" rx="12" fill="#E3F1F6"/>
+    <rect x="48" y="548" width="62" height="38" fill="#5FA8C8"/>
+    <path d="M48 542 L48 586 L110 586 L110 542" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="46" y="540" width="66" height="6" fill="#FFFFFF" stroke="#0E1A14" stroke-width="2"/>
+    <circle cx="96" cy="572" r="4" fill="#FFFFFF"/><circle cx="92" cy="560" r="4" fill="#FFFFFF"/>
+    <path d="M72 546 L70 578" stroke="#8A6D3B" stroke-width="3"/>
+    <text x="142" y="540" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">3. Deep water culture</text>
+    <text x="142" y="572" font-size="21" fill="#0E1A14">Roots in aerated solution</text>
+    <text x="142" y="600" font-size="21" fill="#3F5248">under a floating raft</text>
+    <rect x="20" y="628" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="644" width="86" height="86" rx="12" fill="#E3F1F6"/>
+    <path d="M44 674 L114 696" stroke="#0E1A14" stroke-width="10" stroke-linecap="round"/>
+    <path d="M46 677 L112 698" stroke="#5FA8C8" stroke-width="3"/>
+    <path d="M66 662 L66 674 M92 670 L92 684" stroke="#2E8B63" stroke-width="6"/>
+    <path d="M114 702 L114 718 L44 718 L44 684" fill="none" stroke="#3F5248" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="142" y="672" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">4. NFT</text>
+    <text x="142" y="704" font-size="21" fill="#0E1A14">A thin film flows down</text>
+    <text x="142" y="732" font-size="21" fill="#3F5248">a sloped channel</text>
+    <rect x="20" y="760" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="776" width="86" height="86" rx="12" fill="#E3F1F6"/>
+    <rect x="46" y="792" width="66" height="22" fill="#5FA8C8" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="56" y="828" width="46" height="24" fill="#5FA8C8" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M66 826 L66 816 M92 816 L92 826" stroke="#0E1A14" stroke-width="3"/>
+    <path d="M60 820 L66 814 L72 820 M86 820 L92 826 L98 820" fill="none" stroke="#0E1A14" stroke-width="2"/>
+    <text x="142" y="804" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">5. Ebb and flow</text>
+    <text x="142" y="836" font-size="21" fill="#0E1A14">A tray floods, then drains</text>
+    <text x="142" y="864" font-size="21" fill="#3F5248">back, on a timer</text>
+    <rect x="20" y="892" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="908" width="86" height="86" rx="12" fill="#E3F1F6"/>
+    <path d="M58 948 L64 982 L94 982 L100 948 Z" fill="#E9C46A" stroke="#0E1A14" stroke-width="3"/>
+    <path d="M44 924 L88 924 L88 938" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <circle cx="88" cy="944" r="3" fill="#5FA8C8"/>
+    <path d="M79 948 L79 928" stroke="#2E8B63" stroke-width="6"/>
+    <text x="142" y="936" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">6. Drip and buckets</text>
+    <text x="142" y="968" font-size="21" fill="#0E1A14">Emitters feed perlite or</text>
+    <text x="142" y="996" font-size="21" fill="#3F5248">coir in buckets or bags</text>
+    <rect x="20" y="1024" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="1040" width="86" height="86" rx="12" fill="#E3F1F6"/>
+    <rect x="48" y="1064" width="62" height="50" fill="#FFFFFF" stroke="#0E1A14" stroke-width="3"/>
+    <path d="M76 1064 L72 1096 M82 1064 L86 1098" stroke="#8A6D3B" stroke-width="3"/>
+    <circle cx="60" cy="1104" r="3" fill="#5FA8C8"/><circle cx="68" cy="1094" r="3" fill="#5FA8C8"/><circle cx="96" cy="1090" r="3" fill="#5FA8C8"/><circle cx="100" cy="1102" r="3" fill="#5FA8C8"/>
+    <path d="M72 1054 L72 1064 M86 1054 L86 1064" stroke="#2E8B63" stroke-width="6"/>
+    <text x="142" y="1068" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">7. Aeroponics</text>
+    <text x="142" y="1100" font-size="21" fill="#0E1A14">Roots hang in air</text>
+    <text x="142" y="1128" font-size="21" fill="#3F5248">and are misted</text>
+    <rect x="20" y="1156" width="600" height="118" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="36" y="1172" width="86" height="86" rx="12" fill="#E3F1F6"/>
+    <rect x="70" y="1180" width="18" height="66" fill="#FFFFFF" stroke="#0E1A14" stroke-width="3"/>
+    <path d="M88 1194 L102 1188 M88 1214 L102 1208 M70 1204 L56 1198 M70 1226 L56 1220" stroke="#2E8B63" stroke-width="6" stroke-linecap="round"/>
+    <path d="M79 1186 L79 1242" stroke="#5FA8C8" stroke-width="3"/>
+    <text x="142" y="1200" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">8. Vertical tower</text>
+    <text x="142" y="1232" font-size="21" fill="#0E1A14">Pumped to the top,</text>
+    <text x="142" y="1260" font-size="21" fill="#3F5248">trickles down past roots</text>
+  </g>
+</svg>
