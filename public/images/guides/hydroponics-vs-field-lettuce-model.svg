@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1010" width="640" height="1010" role="img" aria-labelledby="t d">
+  <title id="t">Modeled hydroponic greenhouse lettuce compared with Arizona field lettuce</title>
+  <desc id="d">Three comparison cards from Barbosa and colleagues, 2015, a modeled study, not a measured one. Yield: 41 kilograms per square meter per year in the hydroponic greenhouse against 3.9 in the field, about 11 times more. Water: 20 liters per kilogram against 250, about 13 times less. Energy: 90,000 kilojoules per kilogram against 1,100, about 82 times more, mostly for heating, cooling and lights.</desc>
+  <rect width="640" height="1010" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Hydroponic vs field lettuce</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">A modeled comparison, per year (Arizona)</text>
+    <!-- yield -->
+    <rect x="20" y="116" width="600" height="276" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="160" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0F6B4F">Yield: 11× more</text>
+    <text x="40" y="194" font-size="20" fill="#3F5248">kg of lettuce per m² per year</text>
+    <text x="40" y="240" font-size="21" fill="#0E1A14">Hydroponic</text>
+    <rect x="190" y="218" width="350" height="32" rx="6" fill="#0F6B4F"/>
+    <text x="552" y="242" font-size="21" font-weight="700" fill="#0E1A14">41</text>
+    <text x="40" y="300" font-size="21" fill="#0E1A14">Field</text>
+    <rect x="190" y="278" width="33" height="32" rx="6" fill="#8A6D3B"/>
+    <text x="236" y="302" font-size="21" font-weight="700" fill="#0E1A14">3.9</text>
+    <text x="40" y="360" font-size="20" fill="#3F5248">Greenhouse ran about 12 crops a year</text>
+    <!-- water -->
+    <rect x="20" y="408" width="600" height="276" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="452" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0F6B4F">Water: 13× less</text>
+    <text x="40" y="486" font-size="20" fill="#3F5248">liters of water per kg of lettuce</text>
+    <text x="40" y="532" font-size="21" fill="#0E1A14">Hydroponic</text>
+    <rect x="190" y="510" width="28" height="32" rx="6" fill="#0F6B4F"/>
+    <text x="230" y="534" font-size="21" font-weight="700" fill="#0E1A14">20</text>
+    <text x="40" y="592" font-size="21" fill="#0E1A14">Field</text>
+    <rect x="190" y="570" width="350" height="32" rx="6" fill="#8A6D3B"/>
+    <text x="552" y="594" font-size="21" font-weight="700" fill="#0E1A14">250</text>
+    <text x="40" y="652" font-size="20" fill="#3F5248">Water is recirculated, not lost to soil</text>
+    <!-- energy -->
+    <rect x="20" y="700" width="600" height="290" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="744" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#B5462E">Energy: 82× more</text>
+    <text x="40" y="778" font-size="20" fill="#3F5248">kJ of energy per kg of lettuce</text>
+    <text x="40" y="824" font-size="21" fill="#0E1A14">Hydroponic</text>
+    <rect x="190" y="802" width="300" height="32" rx="6" fill="#B5462E"/>
+    <text x="500" y="826" font-size="21" font-weight="700" fill="#0E1A14">90,000</text>
+    <text x="40" y="884" font-size="21" fill="#0E1A14">Field</text>
+    <rect x="190" y="862" width="6" height="32" rx="3" fill="#8A6D3B"/>
+    <text x="208" y="886" font-size="21" font-weight="700" fill="#0E1A14">1,100</text>
+    <text x="40" y="944" font-size="20" fill="#3F5248">Mostly heating, cooling and</text>
+    <text x="40" y="970" font-size="20" fill="#3F5248">grow lights</text>
+  </g>
+</svg>
