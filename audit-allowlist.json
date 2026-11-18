@@ -1,0 +1,12 @@
+{
+  "advisories": [
+    {
+      "id": "GHSA-fc5q-39xc-vjpf",
+      "package": "picomatch",
+      "severity": "high",
+      "reason": "ReDoS when an attacker supplies crafted extglob patterns. picomatch runs only at build time (Astro, Vite, tinyglobby) on the project's own patterns; the live site is static HTML and takes no glob input. No patched release exists (advisory covers <=4.0.7, the latest). Remove this entry when a fixed picomatch is published and the lockfile is refreshed.",
+      "approvedBy": "Najeeb (owner), 2026-11-18, in conversation",
+      "expires": "2026-12-18"
+    }
+  ]
+}
