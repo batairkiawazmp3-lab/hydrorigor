@@ -117,6 +117,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'what-is-hydroponics': 'cutting-in-water',
   // A lettuce plant in a growing channel: one of the system types the page compares.
   'types-of-hydroponic-systems': 'lettuce-channel-net-pot',
+  // Leafy greens and herbs in white NFT-style channels under LED lights: a home NFT system.
+  'nft-hydroponic-system': 'systems-home-nft-lights',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
