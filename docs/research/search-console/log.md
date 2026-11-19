@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-19 (Nov 1–17; last update 3 h before check) | 6 | 526 | 1.1% | 37.5 | 102 | 32 | 34 indexed, 15 not indexed (last update Nov 16; page with redirect 2 → 3) | What is hydroponics guide (#93, #95), types of systems guide (#96), Astro upgrade (#97), NFT guide (#98); log only (this change) |
 | 2026-11-17 (Nov 1–15; last update 3 h before check) | 6 | 493 | 1.2% | 37.8 | 97 | 32 | 35 indexed, 14 not indexed (unchanged, last update Nov 13) | Search Console trend chart (#84), indoor kits rebuild (#85, #86), best hydroponic nutrients rebuild (#87, #88); log only (this change) |
 | 2026-11-16 (Nov 1–14; last update 3 h before check) | 6 | 487 | 1.2% | 37.9 | 97 | 32 | 35 indexed, 14 not indexed (last update Nov 13) | Smart indoor systems rebuild (#77, #78), how to mix rebuild (#79), powder vs liquid rebuild (#80), vegetables nutrients rebuild (#81, #82); log only (this change) |
 | 2026-11-15 (Nov 1–13; last update 3.5 h before check) | 6 | 451 | 1.3% | 37.5 | 91 | 32 | 35 indexed, 13 not indexed (unchanged, last update Nov 9) | Organic nutrients rebuild (#75); log only (this change) |
@@ -35,10 +36,10 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 | 2026-11-08 | /systems/indoor-hydroponic-systems-for-home/ | Full rebuild (#42, 6 types compared); before: 4 impressions, position 82.8 (Nov 1–6) | 2026-11-22, 2026-12-06 |
 | 2026-11-07 | /systems/deep-water-culture-hydroponics/ | Full rebuild (#35); before: 17 impressions, position 60.9 (Nov 1–6) | 2026-11-21, 2026-12-05 |
 | 2026-11-07 | /systems/hydroponic-tower-garden/ | New guide (hydroponic tower 6,600 / 33) | 2026-11-21, 2026-12-05 |
-| 2026-11-05 | /crops/hydroponic-lettuce-seeds/ | Full rebuild | 2026-11-19, 2026-12-03 |
-| 2026-11-05 | /best/hydroponic-system-for-home-growers/ | Answer-first description; 4 new internal links | 2026-11-19 |
+| 2026-11-05 | /crops/hydroponic-lettuce-seeds/ | Full rebuild | 2026-11-19: no impressions before (Nov 1–3) or after (Nov 1–17) ▬; 2026-12-03 |
+| 2026-11-05 | /best/hydroponic-system-for-home-growers/ | Answer-first description; 4 new internal links | 2026-11-19: 3 → 36 impressions ▲, position 30.0 → 20.1 ▲ (Nov 1–3 → Nov 1–17) |
 | 2026-11-06 | /best/hydroponic-system-for-home-growers/ | Full rebuild (title, 2,480 words, 2 diagrams, 10 sources); baseline position 14 for "most effective hydroponic system" | 2026-11-20, 2026-12-04 |
-| 2026-11-05 | /systems/diy-hydroponic-system-for-beginners/ | 4 new internal links | 2026-11-19 |
+| 2026-11-05 | /systems/diy-hydroponic-system-for-beginners/ | 4 new internal links | 2026-11-19: 2 → 18 impressions ▲, position 90.0 → 41.3 ▲ (Nov 1–3 → Nov 1–17) |
 | 2026-11-06 | /systems/diy-hydroponic-system-for-beginners/ | Full rebuild (title, 2,130 words, 2 diagrams, 9 sources); baseline positions 81 and 99 | 2026-11-20, 2026-12-04 |
-| 2026-11-05 | /nutrients-water/hydroponic-nutrients-for-tomatoes/ | 1 new internal link | 2026-11-19 |
+| 2026-11-05 | /nutrients-water/hydroponic-nutrients-for-tomatoes/ | 1 new internal link | 2026-11-19: 2 → 39 impressions ▲, position 64.0 → 20.5 ▲ (Nov 1–3 → Nov 1–17) |
 | 2026-11-06 | /nutrients-water/hydroponic-nutrients-for-tomatoes/ | Full rebuild (title, stage tables, 2 diagrams, 10 sources); baseline positions 62 ("hydroponic fertilizer tomatoes") and 66 ("best hydroponic nutrients for tomatoes") | 2026-11-20, 2026-12-04 |
