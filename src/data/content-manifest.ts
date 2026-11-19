@@ -113,6 +113,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['okstate-hydroponics-hla6442', 'osu-hydro-hints-overview', 'mu-hydroponic-farming', 'uga-home-hydroponics', 'ifas-kratky-set-and-forget', 'ctahr-kratky-vc1', 'kratky-suspended-pot-2004', 'vt-system-crop-comparisons', 'uky-hydroponic-lettuce', 'ifas-lettuce-small-systems', 'osu-hydro-hints-dwc', 'ifas-volusia-dwc-bucket', 'osu-hydro-hints-nft', 'purdue-hydroponics-opportunities-2016', 'sato-modified-nft-2007', 'osu-hydro-hints-ebb-flow', 'osu-hydro-hints-buckets', 'aces-greenhouse-tomato-anr2955', 'okstate-vertical-tower-hla6724', 'touliatos-vertical-lettuce-2016', 'osu-ph-ec-guide', 'illinois-hydroponics-at-home'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 29,
+    collection: 'articles',
+    category: 'systems',
+    title: 'NFT Hydroponic System: Slope, Flow, Spacing & Setup',
+    route: 'nft-hydroponic-system',
+    primaryIntent: 'informational',
+    primaryTopic: 'nft hydroponic system',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['vt-nft-systems', 'aces-greenhouse-lettuce-anr2903', 'osu-hydro-hints-nft', 'mu-hydroponic-farming', 'purdue-hydroponics-opportunities-2016', 'sato-modified-nft-2007', 'okstate-hydroponics-hla6442', 'osu-ph-ec-guide', 'purdue-lettuce-ec-ho309', 'uky-hydroponic-lettuce', 'vt-system-crop-comparisons', 'ifas-lettuce-small-systems', 'egro-lettuce-tipburn-2023', 'osu-hydro-hints-buckets', 'liu-organic-nft-lettuce-2025', 'osu-hydro-hints-dwc', 'osu-hydro-hints-overview', 'ifas-kratky-set-and-forget', 'illinois-hydroponics-at-home'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 960" width="640" height="960" role="img" aria-labelledby="t d">
+  <title id="t">NFT hydroponic system: the numbers that set it up</title>
+  <desc id="d">A side view of a nutrient film technique channel. A pump in the reservoir sends 3 to 5 gallons per hour into the high end of the channel (Virginia Tech); commercial sources use up to 1 to 2 liters per minute. The channel slopes 1 to 2 percent down toward the drain, so about 1.2 to 2.4 inches of drop over 10 feet. Plants sit on 8-inch centers. A thin film of solution runs past the bare roots and drains back to the reservoir, which holds a quarter to 1 gallon per plant. Home channels are 4 to 12 feet long. Solution pH 5.5 to 6.2 and EC 1.2 to 2.0 for leafy greens.</desc>
+  <rect width="640" height="960" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">An NFT channel in numbers</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Side view, not to scale</text>
+    <!-- supply line -->
+    <text x="80" y="410" font-size="22" font-weight="700" fill="#1F6E8C">Inflow: 3–5 gal/h</text>
+    <text x="80" y="438" font-size="20" fill="#3F5248">per channel (up to 1–2 L/min)</text>
+    <path d="M60 470 L60 200 L96 200" fill="none" stroke="#1F6E8C" stroke-width="6"/>
+    <!-- channel sloped -->
+    <polygon points="90,196 600,256 600,296 90,236" fill="#FFFFFF" stroke="#3F5248" stroke-width="3"/>
+    <polygon points="96,226 596,284 596,292 96,234" fill="#7FC8E0"/>
+    <!-- plants -->
+    <g fill="#2E8B63">
+      <ellipse cx="170" cy="192" rx="34" ry="22"/>
+      <ellipse cx="290" cy="206" rx="34" ry="22"/>
+      <ellipse cx="410" cy="220" rx="34" ry="22"/>
+      <ellipse cx="530" cy="234" rx="34" ry="22"/>
+    </g>
+    <g stroke="#C9B37E" stroke-width="3">
+      <line x1="170" y1="212" x2="170" y2="232"/>
+      <line x1="290" y1="226" x2="290" y2="246"/>
+      <line x1="410" y1="240" x2="410" y2="260"/>
+      <line x1="530" y1="254" x2="530" y2="274"/>
+    </g>
+    <!-- spacing arrow -->
+    <line x1="170" y1="150" x2="290" y2="150" stroke="#0E1A14" stroke-width="2"/>
+    <polygon points="170,150 182,144 182,156" fill="#0E1A14"/>
+    <polygon points="290,150 278,144 278,156" fill="#0E1A14"/>
+    <text x="300" y="140" font-size="22" font-weight="700" fill="#0E1A14">8 in apart</text>
+    <text x="300" y="166" font-size="20" fill="#3F5248">(20 cm centers)</text>
+    <!-- drain -->
+    <path d="M598 296 L598 470" fill="none" stroke="#1F6E8C" stroke-width="6"/>
+    <!-- slope label -->
+    <text x="150" y="330" font-size="22" font-weight="700" fill="#0E1A14">Slope 1–2% downhill</text>
+    <text x="150" y="358" font-size="20" fill="#3F5248">1.2–2.4 in drop per 10 ft</text>
+    <!-- reservoir -->
+    <rect x="30" y="470" width="600" height="150" rx="14" fill="#FFFFFF" stroke="#3F5248" stroke-width="3"/>
+    <rect x="34" y="520" width="592" height="96" rx="10" fill="#BFE3EF"/>
+    <rect x="44" y="560" width="40" height="44" rx="6" fill="#1F6E8C"/>
+    <text x="100" y="508" font-size="22" font-weight="700" fill="#0E1A14">Reservoir: ¼–1 gal per plant</text>
+    <text x="100" y="580" font-size="20" fill="#0E1A14">Pump</text>
+    <text x="400" y="580" font-size="20" fill="#0E1A14">Drain returns</text>
+    <!-- number cards -->
+    <rect x="20" y="650" width="290" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="694" font-size="20" fill="#3F5248">Channel length</text>
+    <text x="40" y="738" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">4–12 ft</text>
+    <text x="40" y="766" font-size="20" fill="#3F5248">1.2–3.7 m</text>
+    <rect x="330" y="650" width="290" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="350" y="694" font-size="20" fill="#3F5248">Channel width</text>
+    <text x="350" y="738" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">4 in</text>
+    <text x="350" y="766" font-size="20" fill="#3F5248">or 2-in pipe at home</text>
+    <rect x="20" y="800" width="290" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="844" font-size="20" fill="#3F5248">Solution pH</text>
+    <text x="40" y="888" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">5.5–6.2</text>
+    <text x="40" y="916" font-size="20" fill="#3F5248">leafy greens</text>
+    <rect x="330" y="800" width="290" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="350" y="844" font-size="20" fill="#3F5248">EC (mS/cm)</text>
+    <text x="350" y="888" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">1.2–2.0</text>
+    <text x="350" y="916" font-size="20" fill="#3F5248">leafy greens</text>
+  </g>
+</svg>
