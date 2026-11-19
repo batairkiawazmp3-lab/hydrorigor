@@ -20,8 +20,11 @@ Updated: 2026-11-18
   (picomatch ReDoS, `<=4.0.7`, no patched release yet); picomatch runs only at build time. Each run:
   if `npm view picomatch version` shows a release newer than 4.0.7, refresh the lockfile in its own
   PR and delete the entry. An expired entry fails CI on purpose; renew it only with the owner's OK.
-  Also pending: Astro 7.3.3 to 7.4.12 fixes two lower-severity Astro advisories (GHSA-mh32-jxcr-mh9f
-  low, GHSA-r3h5-4585-7x3w moderate); upgrade in its own PR with the full checks.
+  On 2026-11-19 npm audit stopped reporting this advisory (picomatch is still 4.0.7; GitHub still
+  lists it as unreviewed), so the entry is currently unused; keep it until it expires in case it
+  returns. Astro upgraded 7.3.3 to 7.4.13 on 2026-11-19 (with @astrojs/markdown-satteri 0.4.10,
+  @astrojs/mdx 8.1.6, @astrojs/sitemap 3.7.6), clearing GHSA-mh32-jxcr-mh9f (low) and
+  GHSA-r3h5-4585-7x3w (moderate); `npm audit --omit=dev` reports 0 vulnerabilities.
 - Email newsletter (Kit, form 10159921, set up by the owner 2026-11-08): the sign-up card on the
   home page and at the end of every guide posts straight to Kit (no Kit script; CSP
   `form-action` allows https://app.kit.com only). Owner: (1) once live, sign up once with your
