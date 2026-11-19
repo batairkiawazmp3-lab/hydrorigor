@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 980" width="640" height="980" role="img" aria-labelledby="t d">
+  <title id="t">Ebb and flow: one flood and drain cycle</title>
+  <desc id="d">Two side views of an ebb and flow system. Flood: a timer switches on a pump in the reservoir below, and solution rises in the tray until it is about 1 inch below the top of the media; an overflow fitting sends any extra back down. The flood lasts about 10 to 30 minutes, depending on the source. Drain: the pump stops, the solution drains back to the reservoir, and air is pulled into the media. Flood again before the media dries out; start with once a day.</desc>
+  <rect width="640" height="980" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">One flood and drain cycle</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Side view; not to scale</text>
+
+    <!-- FLOOD panel -->
+    <rect x="20" y="112" width="600" height="400" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="152" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#1F6E8C">1. Flood: pump on</text>
+    <!-- plants -->
+    <path d="M150 220 q-20 -30 0 -50 q20 20 0 50z" fill="#2E8B63"/>
+    <path d="M300 220 q-20 -30 0 -50 q20 20 0 50z" fill="#2E8B63"/>
+    <path d="M450 220 q-20 -30 0 -50 q20 20 0 50z" fill="#2E8B63"/>
+    <!-- tray -->
+    <rect x="70" y="220" width="460" height="90" fill="#E6ECE4" stroke="#3F5248" stroke-width="3"/>
+    <rect x="72" y="244" width="456" height="64" fill="#9CCBDB"/>
+    <line x1="72" y1="244" x2="528" y2="244" stroke="#1F6E8C" stroke-width="3" stroke-dasharray="8 6"/>
+    <text x="40" y="350" font-size="21" fill="#0E1A14">Solution rises to about</text>
+    <text x="40" y="378" font-size="21" font-weight="700" fill="#0E1A14">1 in below the media top</text>
+    <!-- reservoir -->
+    <rect x="360" y="400" width="200" height="90" fill="#9CCBDB" stroke="#3F5248" stroke-width="3"/>
+    <text x="378" y="455" font-size="20" fill="#0E1A14">Reservoir</text>
+    <line x1="420" y1="310" x2="420" y2="400" stroke="#1F6E8C" stroke-width="6"/>
+    <path d="M408 330 l12 -16 l12 16z" fill="#1F6E8C"/>
+    <text x="40" y="430" font-size="21" fill="#0E1A14">Hold 10–30 min</text>
+    <text x="40" y="458" font-size="20" fill="#3F5248">Overflow returns</text>
+    <text x="40" y="484" font-size="20" fill="#3F5248">any extra</text>
+
+    <!-- DRAIN panel -->
+    <rect x="20" y="532" width="600" height="400" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="572" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#2E8B63">2. Drain: pump off</text>
+    <path d="M150 640 q-20 -30 0 -50 q20 20 0 50z" fill="#2E8B63"/>
+    <path d="M300 640 q-20 -30 0 -50 q20 20 0 50z" fill="#2E8B63"/>
+    <path d="M450 640 q-20 -30 0 -50 q20 20 0 50z" fill="#2E8B63"/>
+    <rect x="70" y="640" width="460" height="90" fill="#E6ECE4" stroke="#3F5248" stroke-width="3"/>
+    <rect x="72" y="716" width="456" height="12" fill="#9CCBDB"/>
+    <text x="40" y="770" font-size="21" fill="#0E1A14">Solution drains back;</text>
+    <text x="40" y="798" font-size="21" font-weight="700" fill="#0E1A14">air is drawn into the media</text>
+    <rect x="360" y="820" width="200" height="90" fill="#9CCBDB" stroke="#3F5248" stroke-width="3"/>
+    <text x="378" y="875" font-size="20" fill="#0E1A14">Reservoir</text>
+    <line x1="420" y1="730" x2="420" y2="820" stroke="#2E8B63" stroke-width="6"/>
+    <path d="M408 800 l12 16 l12 -16z" fill="#2E8B63"/>
+    <text x="40" y="850" font-size="21" fill="#0E1A14">Flood again before</text>
+    <text x="40" y="878" font-size="21" fill="#0E1A14">the media dries</text>
+    <text x="40" y="906" font-size="20" fill="#3F5248">Start: once a day</text>
+    <text x="20" y="964" font-size="20" fill="#3F5248">Oregon State EM 9458; Illinois; Virginia Tech</text>
+  </g>
+</svg>

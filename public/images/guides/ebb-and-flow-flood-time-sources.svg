@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820" width="640" height="820" role="img" aria-labelledby="t d">
+  <title id="t">How long to flood: what four sources say</title>
+  <desc id="d">A bar chart of flood length in minutes, scale 0 to 30. UMass Extension, greenhouse benches: hold the flood about 10 minutes, or until the media absorbs the solution. Virginia Tech trial: 12 minutes, once a day. University of Georgia study: the potting medium was saturated by wicking in about 15 to 20 minutes. Illinois Extension, home systems: a 20 to 30 minute flood cycle. Start near 15 minutes and check that the media glistens.</desc>
+  <rect width="640" height="820" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">How long to flood</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Minutes per flood; scale 0 to 30</text>
+    <!-- UMass 10 -->
+    <rect x="20" y="120" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="160" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">UMass (benches)</text>
+    <rect x="40" y="178" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="178" width="187" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="240" font-size="21" fill="#3F5248">About 10 min, ¾–1 in deep</text>
+    <!-- VT 12 -->
+    <rect x="20" y="276" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="316" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Virginia Tech (trial)</text>
+    <rect x="40" y="334" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="334" width="224" height="26" rx="13" fill="#1F6E8C"/>
+    <text x="40" y="396" font-size="21" fill="#3F5248">12 min, once a day</text>
+    <!-- UGA 15-20 -->
+    <rect x="20" y="432" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="472" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Univ. of Georgia (study)</text>
+    <rect x="40" y="490" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="490" width="280" height="26" rx="13" fill="#9CCBDB"/>
+    <rect x="320" y="490" width="93" height="26" rx="8" fill="#1F6E8C"/>
+    <text x="40" y="552" font-size="21" fill="#3F5248">Media saturated in 15–20 min</text>
+    <!-- Illinois 20-30 -->
+    <rect x="20" y="588" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="628" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Illinois (home)</text>
+    <rect x="40" y="646" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="646" width="373" height="26" rx="13" fill="#F3DFA0"/>
+    <rect x="413" y="646" width="187" height="26" rx="8" fill="#E9C46A"/>
+    <text x="40" y="708" font-size="21" fill="#3F5248">20–30 min flood cycle</text>
+    <text x="20" y="772" font-size="20" fill="#3F5248">Start near 15 min; stop when</text>
+    <text x="20" y="800" font-size="20" fill="#3F5248">the media glistens all the way up</text>
+  </g>
+</svg>

@@ -119,6 +119,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'types-of-hydroponic-systems': 'lettuce-channel-net-pot',
   // Leafy greens and herbs in white NFT-style channels under LED lights: a home NFT system.
   'nft-hydroponic-system': 'systems-home-nft-lights',
+  // Lettuce in net pots of expanded clay pebbles, the medium Illinois and Oregon State name for ebb and flow; no flood-tray photo in the registry yet.
+  'ebb-and-flow-hydroponics': 'lettuce-net-pots-clay',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
