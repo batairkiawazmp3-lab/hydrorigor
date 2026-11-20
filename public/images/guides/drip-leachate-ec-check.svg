@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 860" width="640" height="860" role="img" aria-labelledby="t d">
+  <title id="t">How to read the drain from a drip system</title>
+  <desc id="d">A check card for the solution that drains from a drip-fed pot or bag. Step 1, volume: collect the drain from one healthy plant for a day; it should be 10 to 20 percent of what was applied. Less than 10 percent means run longer; much more than 20 percent means run shorter. Step 2, EC: compare the drain EC with the feed EC. Within 1.0 is on target. Drain 1.0 or more lower means the plants need more fertilizer. Drain 1.0 or more higher means salts are building up, so irrigate more or lower the feed EC. Drain 3 to 4 units higher means flush with water, then go back to an adjusted solution.</desc>
+  <rect width="640" height="860" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Read the drain</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">One healthy plant, one full day</text>
+    <rect x="20" y="116" width="600" height="250" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="58" cy="156" r="22" fill="#1F6E8C"/>
+    <text x="50" y="164" font-size="22" font-weight="800" fill="#FFFFFF">1</text>
+    <text x="96" y="164" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Volume</text>
+    <rect x="40" y="196" width="560" height="44" rx="10" fill="#A8D5BA"/>
+    <text x="56" y="226" font-size="21" font-weight="700" fill="#0E1A14">10–20% of applied: on target</text>
+    <text x="40" y="282" font-size="21" fill="#3F5248">Under 10%: run longer</text>
+    <text x="40" y="316" font-size="21" fill="#3F5248">Well over 20%: run shorter</text>
+    <text x="40" y="350" font-size="20" fill="#3F5248">(UF/IFAS HS1274, CV264)</text>
+    <rect x="20" y="390" width="600" height="420" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="58" cy="430" r="22" fill="#1F6E8C"/>
+    <text x="50" y="438" font-size="22" font-weight="800" fill="#FFFFFF">2</text>
+    <text x="96" y="438" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Drain EC vs feed EC</text>
+    <rect x="40" y="470" width="560" height="64" rx="10" fill="#A8D5BA"/>
+    <text x="56" y="510" font-size="21" font-weight="700" fill="#0E1A14">Within 1.0: on target</text>
+    <rect x="40" y="548" width="560" height="64" rx="10" fill="#9CCBDB"/>
+    <text x="56" y="588" font-size="21" font-weight="700" fill="#0E1A14">1.0 lower: feed more fertilizer</text>
+    <rect x="40" y="626" width="560" height="64" rx="10" fill="#F3DFA0"/>
+    <text x="56" y="666" font-size="21" font-weight="700" fill="#0E1A14">1.0 higher: water more, weaker feed</text>
+    <rect x="40" y="704" width="560" height="64" rx="10" fill="#F2B8A2"/>
+    <text x="56" y="744" font-size="21" font-weight="700" fill="#0E1A14">3–4 higher: flush, then adjust</text>
+    <text x="20" y="844" font-size="20" fill="#3F5248">EC in mS/cm (dS/m); UF/IFAS HS1274</text>
+  </g>
+</svg>

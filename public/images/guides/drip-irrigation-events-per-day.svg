@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820" width="640" height="820" role="img" aria-labelledby="t d">
+  <title id="t">Drip irrigation events per day by stage and medium</title>
+  <desc id="d">Bar chart of drip irrigation events per day, scale 0 to 14. New transplants: 1 to 2 short events a day (UF/IFAS HS1274). Fine coconut fiber with mature plants: 6 to 8 events. Horticultural perlite with mature plants: a dozen or more, shown as 12 to 14. Rockwool tomato trial in Ontario: about 4 to 11 events a day on average across six strategies. Media that hold less water need shorter, more frequent events.</desc>
+  <rect width="640" height="820" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Drip events per day</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Scale 0 to 14 events a day</text>
+    <rect x="20" y="120" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="160" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">New transplants</text>
+    <rect x="40" y="178" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="178" width="80" height="26" rx="13" fill="#9CCBDB"/>
+    <text x="40" y="240" font-size="21" fill="#3F5248">1–2 short events (UF/IFAS)</text>
+    <rect x="20" y="276" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="316" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Fine coir, mature plants</text>
+    <rect x="40" y="334" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="334" width="240" height="26" rx="13" fill="#9CCBDB"/>
+    <rect x="280" y="334" width="80" height="26" rx="8" fill="#1F6E8C"/>
+    <text x="40" y="396" font-size="21" fill="#3F5248">6–8 events (UF/IFAS)</text>
+    <rect x="20" y="432" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="472" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Perlite, mature plants</text>
+    <rect x="40" y="490" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="490" width="480" height="26" rx="13" fill="#2E8B63"/>
+    <rect x="520" y="490" width="80" height="26" rx="8" fill="#A8D5BA"/>
+    <text x="40" y="552" font-size="21" fill="#3F5248">A dozen or more (UF/IFAS)</text>
+    <rect x="20" y="588" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="628" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Rockwool tomato trial</text>
+    <rect x="40" y="646" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="646" width="160" height="26" rx="13" fill="#F3DFA0"/>
+    <rect x="200" y="646" width="280" height="26" rx="8" fill="#E9C46A"/>
+    <text x="40" y="708" font-size="21" fill="#3F5248">About 4–11 a day (Ontario, 2005)</text>
+    <text x="20" y="772" font-size="20" fill="#3F5248">Media that hold less water need</text>
+    <text x="20" y="800" font-size="20" fill="#3F5248">shorter, more frequent events</text>
+  </g>
+</svg>

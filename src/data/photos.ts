@@ -123,6 +123,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'ebb-and-flow-hydroponics': 'lettuce-net-pots-clay',
   // Vine tomatoes trained up high wires: the indeterminate, single-stem crop Dutch buckets are built for; no bucket photo in the registry yet.
   'dutch-bucket-hydroponics': 'tomatoes-high-wire',
+  // A truss of greenhouse tomatoes, the long-season media crop drip systems are mostly used for; no drip-emitter photo in the registry yet.
+  'drip-hydroponic-system': 'tomato-truss',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

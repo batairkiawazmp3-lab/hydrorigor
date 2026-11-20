@@ -149,6 +149,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['osu-hydro-hints-buckets', 'ifas-perlite-tomato-cucumber-hs169', 'uky-irrigation-hydroponic-ccd-sp20', 'vt-system-crop-comparisons', 'yang-dutch-bucket-cucumber-substrates-2022', 'ifas-hydroponic-methods-part2-2025', 'mu-hydroponics-for-beginners', 'tennessee-fruiting-crops', 'aces-greenhouse-tomato-anr2955', 'utk-trust-tomato-density-2012', 'osu-ph-ec-guide', 'ifas-hydroponic-tomato-formulation', 'msstate-tomato-ph', 'msstate-blossom-end-rot', 'vt-management-basics-spes462', 'purdue-supplemental-light-lettuce', 'usu-indoor-tomatoes', 'mu-hydroponic-farming'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 32,
+    collection: 'articles',
+    category: 'systems',
+    title: 'Drip Hydroponic System: Emitters, Timing, Drain & Setup',
+    route: 'drip-hydroponic-system',
+    primaryIntent: 'informational',
+    primaryTopic: 'drip hydroponic system',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['ifas-water-nutrient-management-hs1274', 'ifas-greenhouse-irrigation-cv264', 'ifas-perlite-tomato-cucumber-hs169', 'aafc-rockwool-tomato-irrigation-2008', 'okstate-drip-irrigation-systems', 'okstate-hydroponics-hla6442', 'mu-hydroponic-farming', 'uky-irrigation-hydroponic-ccd-sp20', 'vt-system-crop-comparisons', 'osu-hydro-hints-buckets', 'ohio-state-tomato-nutrient-solution', 'osu-ph-ec-guide', 'tennessee-fruiting-crops', 'aces-greenhouse-tomato-anr2955', 'purdue-supplemental-light-lettuce'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
