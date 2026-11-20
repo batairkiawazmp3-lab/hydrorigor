@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 700" width="640" height="700" role="img" aria-labelledby="t d">
+  <title id="t">Water per full-grown tomato plant per day</title>
+  <desc id="d">Bar chart of water per full-grown tomato plant per day, in pints, scale 0 to 5. UF/IFAS winter: 2 to 3 pints, 0.9 to 1.4 liters. Alabama Extension: about 2 quarts, which is 4 pints or 1.9 liters. UF/IFAS warm spring days: 3 to 5 pints, 1.4 to 2.4 liters. At two stakes of 0.5 gallons per hour, 4 pints takes about 30 minutes of drip a day, split into several short runs.</desc>
+  <rect width="640" height="700" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Water per tomato a day</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Pints per full-grown plant; scale 0 to 5</text>
+    <rect x="20" y="120" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="160" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">UF/IFAS, winter</text>
+    <rect x="40" y="178" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="178" width="224" height="26" rx="13" fill="#9CCBDB"/>
+    <rect x="264" y="178" width="112" height="26" rx="8" fill="#1F6E8C"/>
+    <text x="40" y="240" font-size="21" fill="#3F5248">2–3 pints (0.9–1.4 L)</text>
+    <rect x="20" y="276" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="316" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Alabama Extension</text>
+    <rect x="40" y="334" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="334" width="448" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="396" font-size="21" fill="#3F5248">About 2 quarts = 4 pints (1.9 L)</text>
+    <rect x="20" y="432" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="472" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">UF/IFAS, warm days</text>
+    <rect x="40" y="490" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="490" width="336" height="26" rx="13" fill="#F3DFA0"/>
+    <rect x="376" y="490" width="224" height="26" rx="8" fill="#E9C46A"/>
+    <text x="40" y="552" font-size="21" fill="#3F5248">3–5 pints (1.4–2.4 L)</text>
+    <text x="20" y="618" font-size="20" fill="#3F5248">At 2 stakes × 0.5 gal/h, 4 pints is</text>
+    <text x="20" y="646" font-size="20" fill="#3F5248">about 30 min of drip a day, in short runs</text>
+  </g>
+</svg>

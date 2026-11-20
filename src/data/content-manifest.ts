@@ -137,6 +137,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['osu-hydro-hints-ebb-flow', 'umass-subirrigation-systems', 'uga-subirrigation-poinsettia-2000', 'illinois-hydroponics-handouts', 'vt-system-crop-comparisons', 'okstate-hydroponics-hla6442', 'osu-ph-ec-guide', 'osu-hydro-hints-overview', 'mu-hydroponic-farming', 'uky-hydroponic-lettuce', 'ifas-lettuce-small-systems', 'ifas-kratky-set-and-forget', 'illinois-hydroponics-at-home'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 31,
+    collection: 'articles',
+    category: 'systems',
+    title: 'Dutch Bucket Hydroponics: Setup, Drip Rates & Best Crops',
+    route: 'dutch-bucket-hydroponics',
+    primaryIntent: 'informational',
+    primaryTopic: 'dutch bucket hydroponics',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['osu-hydro-hints-buckets', 'ifas-perlite-tomato-cucumber-hs169', 'uky-irrigation-hydroponic-ccd-sp20', 'vt-system-crop-comparisons', 'yang-dutch-bucket-cucumber-substrates-2022', 'ifas-hydroponic-methods-part2-2025', 'mu-hydroponics-for-beginners', 'tennessee-fruiting-crops', 'aces-greenhouse-tomato-anr2955', 'utk-trust-tomato-density-2012', 'osu-ph-ec-guide', 'ifas-hydroponic-tomato-formulation', 'msstate-tomato-ph', 'msstate-blossom-end-rot', 'vt-management-basics-spes462', 'purdue-supplemental-light-lettuce', 'usu-indoor-tomatoes', 'mu-hydroponic-farming'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
