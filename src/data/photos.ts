@@ -121,6 +121,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'nft-hydroponic-system': 'systems-home-nft-lights',
   // Lettuce in net pots of expanded clay pebbles, the medium Illinois and Oregon State name for ebb and flow; no flood-tray photo in the registry yet.
   'ebb-and-flow-hydroponics': 'lettuce-net-pots-clay',
+  // Vine tomatoes trained up high wires: the indeterminate, single-stem crop Dutch buckets are built for; no bucket photo in the registry yet.
+  'dutch-bucket-hydroponics': 'tomatoes-high-wire',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

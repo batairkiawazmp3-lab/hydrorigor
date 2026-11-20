@@ -103,7 +103,8 @@ impressions in 28 days).
         ~~ID 27 `/systems/types-of-hydroponic-systems/`~~ (published 2026-11-18, "Types of Hydroponic Systems: DWC, NFT, Drip & 5 More").
         ~~ID 29 `/systems/nft-hydroponic-system/`~~ (published 2026-11-19, "NFT Hydroponic System: Slope, Flow, Spacing & Setup").
         ~~ID 30 `/systems/ebb-and-flow-hydroponics/`~~ (published 2026-11-19, "Ebb and Flow Hydroponics: Flood Timing, Media & Setup").
-        Next: ID 31 `dutch-bucket-hydroponics`.
+        ~~ID 31 `/systems/dutch-bucket-hydroponics/`~~ (published 2026-11-20, "Dutch Bucket Hydroponics: Setup, Drip Rates & Best Crops").
+        Next: ID 32 `drip-hydroponic-system`.
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the

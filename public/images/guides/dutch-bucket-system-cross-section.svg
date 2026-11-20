@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 940" width="640" height="940" role="img" aria-labelledby="t d">
+  <title id="t">How a Dutch bucket system works</title>
+  <desc id="d">Side view of a Dutch bucket system. A pump in the reservoir on the floor sends solution up a supply line to two drip stakes in each bucket, 0.5 gallons per hour each. The bucket holds perlite or another coarse medium around one tomato plant tied to a string. A screened outlet near the bottom, raised to leave a small pool, drains into a shared return line that slopes back to the reservoir. Aim for 10 to 15 percent of each irrigation to drain out.</desc>
+  <rect width="640" height="940" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">How a Dutch bucket works</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Feed by drip, drain back to the tank</text>
+    <!-- string to wire -->
+    <line x1="60" y1="120" x2="580" y2="120" stroke="#3F5248" stroke-width="4"/>
+    <text x="400" y="110" font-size="20" fill="#3F5248">Overhead wire</text>
+    <line x1="250" y1="120" x2="250" y2="330" stroke="#8A9A90" stroke-width="2" stroke-dasharray="6 6"/>
+    <!-- plant -->
+    <path d="M250 440 C248 380 252 330 250 180" stroke="#2E8B63" stroke-width="8" fill="none"/>
+    <ellipse cx="215" cy="230" rx="38" ry="16" fill="#2E8B63"/>
+    <ellipse cx="290" cy="280" rx="40" ry="16" fill="#2E8B63"/>
+    <ellipse cx="212" cy="330" rx="38" ry="16" fill="#2E8B63"/>
+    <ellipse cx="288" cy="380" rx="36" ry="15" fill="#2E8B63"/>
+    <circle cx="272" cy="310" r="13" fill="#D9534F"/>
+    <circle cx="290" cy="322" r="12" fill="#D9534F"/>
+    <!-- bucket -->
+    <path d="M150 440 L350 440 L335 640 L165 640 Z" fill="#FFFFFF" stroke="#0E1A14" stroke-width="4"/>
+    <path d="M156 470 L344 470 L335 610 L165 610 Z" fill="#E6ECE4"/>
+    <circle cx="190" cy="500" r="5" fill="#B8C4BC"/><circle cx="230" cy="530" r="5" fill="#B8C4BC"/><circle cx="280" cy="510" r="5" fill="#B8C4BC"/><circle cx="310" cy="560" r="5" fill="#B8C4BC"/><circle cx="210" cy="580" r="5" fill="#B8C4BC"/><circle cx="260" cy="590" r="5" fill="#B8C4BC"/>
+    <rect x="165" y="610" width="170" height="30" fill="#9CCBDB"/>
+    <text x="372" y="520" font-size="21" font-weight="700" fill="#0E1A14">Perlite or</text>
+    <text x="372" y="546" font-size="21" font-weight="700" fill="#0E1A14">coarse media</text>
+    <text x="118" y="684" font-size="20" fill="#3F5248">Small pool from</text>
+    <text x="118" y="708" font-size="20" fill="#3F5248">a raised outlet</text>
+    <!-- drip stakes -->
+    <line x1="195" y1="440" x2="205" y2="490" stroke="#1F6E8C" stroke-width="5"/>
+    <line x1="305" y1="440" x2="295" y2="490" stroke="#1F6E8C" stroke-width="5"/>
+    <!-- supply line -->
+    <path d="M100 840 L100 410 L305 410 L305 440" stroke="#1F6E8C" stroke-width="7" fill="none"/>
+    <path d="M195 410 L195 440" stroke="#1F6E8C" stroke-width="7" fill="none"/>
+    <text x="16" y="290" font-size="21" font-weight="700" fill="#1F6E8C">2 drip stakes,</text>
+    <text x="16" y="316" font-size="21" font-weight="700" fill="#1F6E8C">0.5 gal/h each</text>
+    <!-- outlet + return -->
+    <rect x="320" y="612" width="34" height="18" fill="#E9C46A" stroke="#0E1A14" stroke-width="2"/>
+    <path d="M354 621 L560 621 L560 760" stroke="#E9A23B" stroke-width="7" fill="none"/>
+    <text x="372" y="664" font-size="20" fill="#3F5248">Screened outlet</text>
+    <text x="372" y="688" font-size="20" fill="#3F5248">to shared return</text>
+    <!-- reservoir -->
+    <rect x="60" y="760" width="540" height="110" rx="10" fill="#3F5248"/>
+    <rect x="60" y="790" width="540" height="80" rx="6" fill="#1F6E8C"/>
+    <rect x="80" y="815" width="44" height="40" rx="6" fill="#E9C46A" stroke="#0E1A14" stroke-width="2"/>
+    <text x="140" y="842" font-size="21" font-weight="700" fill="#FFFFFF">Pump on a timer</text>
+    <text x="360" y="842" font-size="21" font-weight="700" fill="#FFFFFF">Reservoir</text>
+    <text x="20" y="912" font-size="21" font-weight="700" fill="#0E1A14">Aim for 10–15% to drain out</text>
+  </g>
+</svg>
