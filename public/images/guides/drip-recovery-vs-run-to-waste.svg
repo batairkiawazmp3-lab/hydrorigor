@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1000" width="640" height="1000" role="img" aria-labelledby="t d">
+  <title id="t">Recovery versus run-to-waste drip systems</title>
+  <desc id="d">Two drip systems side by side, one above the other. Top, recovery or closed: a pump in the reservoir sends solution through a filter to drip emitters in each pot of media; the drain flows back to the same reservoir, so the solution is reused and must be checked and refreshed. Bottom, run-to-waste or open: fresh solution is pumped through a filter to the emitters; 10 to 20 percent drains out of each pot into a collection tray and is not reused, so salts leave with it. Both need emitter openings of at least 0.05 inch and a filter.</desc>
+  <rect width="640" height="1000" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Two kinds of drip system</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Where the drain goes is the difference</text>
+
+    <!-- Panel 1: recovery -->
+    <rect x="20" y="112" width="600" height="410" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="152" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Recovery (closed)</text>
+    <text x="40" y="182" font-size="20" fill="#3F5248">Drain returns to the tank</text>
+    <!-- pots -->
+    <path d="M110 230 L190 230 L180 330 L120 330 Z" fill="#E6ECE4" stroke="#3F5248" stroke-width="3"/>
+    <path d="M270 230 L350 230 L340 330 L280 330 Z" fill="#E6ECE4" stroke="#3F5248" stroke-width="3"/>
+    <path d="M150 230 C150 210 140 200 130 196 M150 230 C152 208 165 200 176 196" stroke="#2E8B63" stroke-width="6" fill="none"/>
+    <path d="M310 230 C310 210 300 200 290 196 M310 230 C312 208 325 200 336 196" stroke="#2E8B63" stroke-width="6" fill="none"/>
+    <!-- supply line -->
+    <path d="M520 420 L520 214 L160 214" stroke="#1F6E8C" stroke-width="5" fill="none"/>
+    <line x1="160" y1="214" x2="160" y2="240" stroke="#1F6E8C" stroke-width="4"/>
+    <line x1="320" y1="214" x2="320" y2="240" stroke="#1F6E8C" stroke-width="4"/>
+    <rect x="504" y="270" width="32" height="44" rx="6" fill="#E9C46A" stroke="#3F5248" stroke-width="2"/>
+    <text x="440" y="300" font-size="20" fill="#3F5248">Filter</text>
+    <!-- drain back -->
+    <path d="M150 330 L150 360 L460 360 L460 400" stroke="#2E8B63" stroke-width="5" fill="none" stroke-dasharray="10 6"/>
+    <line x1="310" y1="330" x2="310" y2="360" stroke="#2E8B63" stroke-width="5" stroke-dasharray="10 6"/>
+    <!-- reservoir -->
+    <rect x="420" y="400" width="160" height="90" rx="10" fill="#9CCBDB" stroke="#1F6E8C" stroke-width="3"/>
+    <rect x="506" y="440" width="28" height="36" rx="4" fill="#1F6E8C"/>
+    <text x="436" y="430" font-size="20" font-weight="700" fill="#0E1A14">Reservoir</text>
+    <text x="40" y="420" font-size="20" fill="#3F5248">Solution is reused:</text>
+    <text x="40" y="450" font-size="20" fill="#3F5248">check pH and EC, and</text>
+    <text x="40" y="480" font-size="20" fill="#3F5248">refresh it on a schedule</text>
+
+    <!-- Panel 2: run to waste -->
+    <rect x="20" y="546" width="600" height="410" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="586" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Run-to-waste (open)</text>
+    <text x="40" y="616" font-size="20" fill="#3F5248">Drain is not reused</text>
+    <path d="M110 664 L190 664 L180 764 L120 764 Z" fill="#E6ECE4" stroke="#3F5248" stroke-width="3"/>
+    <path d="M270 664 L350 664 L340 764 L280 764 Z" fill="#E6ECE4" stroke="#3F5248" stroke-width="3"/>
+    <path d="M150 664 C150 644 140 634 130 630 M150 664 C152 642 165 634 176 630" stroke="#2E8B63" stroke-width="6" fill="none"/>
+    <path d="M310 664 C310 644 300 634 290 630 M310 664 C312 642 325 634 336 630" stroke="#2E8B63" stroke-width="6" fill="none"/>
+    <path d="M520 854 L520 648 L160 648" stroke="#1F6E8C" stroke-width="5" fill="none"/>
+    <line x1="160" y1="648" x2="160" y2="674" stroke="#1F6E8C" stroke-width="4"/>
+    <line x1="320" y1="648" x2="320" y2="674" stroke="#1F6E8C" stroke-width="4"/>
+    <rect x="504" y="704" width="32" height="44" rx="6" fill="#E9C46A" stroke="#3F5248" stroke-width="2"/>
+    <text x="440" y="734" font-size="20" fill="#3F5248">Filter</text>
+    <!-- trays -->
+    <rect x="96" y="778" width="108" height="20" rx="4" fill="#F3DFA0" stroke="#3F5248" stroke-width="2"/>
+    <rect x="256" y="778" width="108" height="20" rx="4" fill="#F3DFA0" stroke="#3F5248" stroke-width="2"/>
+    <text x="96" y="830" font-size="20" fill="#3F5248">Drain tray: 10–20%</text>
+    <rect x="420" y="854" width="160" height="80" rx="10" fill="#9CCBDB" stroke="#1F6E8C" stroke-width="3"/>
+    <rect x="506" y="888" width="28" height="34" rx="4" fill="#1F6E8C"/>
+    <text x="436" y="882" font-size="20" font-weight="700" fill="#0E1A14">Fresh tank</text>
+    <text x="40" y="880" font-size="20" fill="#3F5248">Salts leave with</text>
+    <text x="40" y="910" font-size="20" fill="#3F5248">the drain each run</text>
+    <text x="20" y="988" font-size="20" fill="#3F5248">Both: emitters 0.05 in or wider, plus a filter</text>
+  </g>
+</svg>

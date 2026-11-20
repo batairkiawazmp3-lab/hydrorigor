@@ -1,0 +1,294 @@
+---
+title: "Drip Hydroponic System: Emitters, Timing, Drain & Setup"
+description: "Drip systems feed media through emitters: openings 0.05 in+, a 150–200 mesh filter, several short runs a day and 10–20% drain. Setup, timing and fixes."
+route: "drip-hydroponic-system"
+publishDate: 2026-11-20
+updatedDate: 2026-11-20
+author: "HydroRigor Editorial"
+category: "systems"
+tags: ["systems", "drip", "run-to-waste", "recirculating", "tomatoes"]
+sources:
+  - id: "ifas-water-nutrient-management-hs1274"
+    title: "Water and Nutrient Management Guidelines for Greenhouse Hydroponic Vegetable Production in Florida (HS1274)"
+    url: "https://ask.ifas.ufl.edu/publication/HS1274"
+    publisher: "UF/IFAS Extension (R. C. Hochmuth, N. B. Parkell, W. L. Laughlin, S. C. Rider), 2015, reviewed 2025"
+    accessedDate: 2026-11-20
+  - id: "ifas-greenhouse-irrigation-cv264"
+    title: "Irrigation of Greenhouse Vegetables, Florida Greenhouse Vegetable Production Handbook, Vol 3 (CV264)"
+    url: "https://ask.ifas.ufl.edu/publication/CV264"
+    publisher: "UF/IFAS Extension (G. J. Hochmuth)"
+    accessedDate: 2026-11-20
+  - id: "ifas-perlite-tomato-cucumber-hs169"
+    title: "Keys to Successful Tomato and Cucumber Production in Perlite Media (HS169)"
+    url: "https://ask.ifas.ufl.edu/publication/HS169"
+    publisher: "UF/IFAS Extension (G. J. Hochmuth, R. C. Hochmuth)"
+    accessedDate: 2026-11-20
+  - id: "aafc-rockwool-tomato-irrigation-2008"
+    title: "Irrigation Strategies for Greenhouse Tomato Production on Rockwool"
+    url: "https://journals.ashs.org/view/journals/hortsci/43/2/article-p484.xml"
+    publisher: "HortScience 43(2):484 (Agriculture and Agri-Food Canada, Harrow, Ontario), 2008"
+    accessedDate: 2026-11-20
+  - id: "okstate-drip-irrigation-systems"
+    title: "Drip Irrigation Systems"
+    url: "https://extension.okstate.edu/fact-sheets/drip-irrigation-systems"
+    publisher: "Oklahoma State University Extension (S. Taghvaeian)"
+    accessedDate: 2026-11-20
+  - id: "okstate-hydroponics-hla6442"
+    title: "Hydroponics (HLA-6442)"
+    url: "https://pods.okstate.edu/fact-sheets/HLA-6442pod.pdf"
+    publisher: "Oklahoma State University Extension (A. Shrestha, B. Dunn)"
+    accessedDate: 2026-11-06
+  - id: "mu-hydroponic-farming"
+    title: "Controlled Environment Agriculture: Hydroponic Farming (G6986)"
+    url: "https://extension.missouri.edu/publications/g6986"
+    publisher: "University of Missouri Extension"
+    accessedDate: 2026-11-18
+  - id: "uky-irrigation-hydroponic-ccd-sp20"
+    title: "Irrigation in Hydroponic Systems: An Illustrated Overview (CCD-SP-20)"
+    url: "https://ccd.uky.edu/sites/default/files/2024-12/ccd-sp-20-irrigation-in-hydroponic-systems.pdf"
+    publisher: "University of Kentucky Center for Crop Diversification (A. Sharma, J. Knight), 2023"
+    accessedDate: 2026-11-20
+  - id: "vt-system-crop-comparisons"
+    title: "Hydroponic Production of Edible Crops: System and Crop Comparisons (SPES-466)"
+    url: "https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html"
+    publisher: "Virginia Cooperative Extension"
+    accessedDate: 2026-11-06
+  - id: "osu-hydro-hints-buckets"
+    title: "Hydro hints: Buckets (EM 9456)"
+    url: "https://extension.oregonstate.edu/catalog/pub/em-9456-hydro-hints-buckets"
+    publisher: "Oregon State University Extension Service (M. Nelson II, G. Langellotto, L. Nackley), 2025"
+    accessedDate: 2026-11-20
+  - id: "ohio-state-tomato-nutrient-solution"
+    title: "Hydroponic Nutrient Solution for Optimized Greenhouse Tomato Production (HYG-1437)"
+    url: "https://cfaes.osu.edu/fact-sheet/hydroponic-nutrient-solution-optimized-greenhouse-tomato-production"
+    publisher: "The Ohio State University CFAES (M. Kroggel, C. Kubota)"
+    accessedDate: 2026-11-15
+  - id: "osu-ph-ec-guide"
+    title: "Electrical Conductivity and pH Guide for Hydroponics (HLA-6722)"
+    url: "https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics"
+    publisher: "Oklahoma State University Extension"
+    accessedDate: 2026-11-16
+  - id: "tennessee-fruiting-crops"
+    title: "Tomatoes, Peppers and Cucumbers in Small-Scale and Soilless Hydroponics Systems (W 844-C)"
+    url: "https://uthort.tennessee.edu/wp-content/uploads/sites/228/2023/11/W844-C.pdf"
+    publisher: "University of Tennessee Extension"
+    accessedDate: 2026-11-06
+  - id: "aces-greenhouse-tomato-anr2955"
+    title: "Greenhouse Tomato Production (ANR-2955)"
+    url: "https://www.aces.edu/wp-content/uploads/2023/02/ANR-2955_GreenhouseTomatoProduction_022223L-G.pdf"
+    publisher: "Alabama Cooperative Extension System (Auburn University)"
+    accessedDate: 2026-11-10
+  - id: "purdue-supplemental-light-lettuce"
+    title: "Determining the Economic Value of Providing Supplemental Light to Lettuce During Winter Production (HO-283-W)"
+    url: "https://ag.purdue.edu/department/hla/extension/extension-publications-library/_docs/ho-283-w.pdf"
+    publisher: "Purdue University Extension"
+    accessedDate: 2026-11-08
+affiliateDisclosure: false
+commercialDestinationIds: []
+draft: false
+---
+
+import KeyTargets from '../../components/content/KeyTargets.astro';
+
+**A drip hydroponic system pumps nutrient solution through small emitters onto each plant's pot, bag or slab of media, in several short runs a day, and lets about 10–20% of each run drain out the bottom.** UF/IFAS gives the two rules that make one work: emitters and tubing with an opening of **at least 0.05 in (1.3 mm)**, behind a filter of **at least 150 mesh**, and a drain that is **10–20% of what you apply**, with its EC no more than **1.0 mS/cm** away from the feed. Mature tomatoes and cucumbers drink about **2–2.5 quarts (1.9–2.4 L) a day** at peak harvest, delivered in anything from **6–8 runs a day in fine coir to a dozen or more in perlite**.
+
+Oklahoma State calls drip **probably the most widely used hydroponic system**, and it is the usual choice for long-season crops such as tomatoes, peppers and cucumbers. The drain can go two ways: back to the reservoir (a recovery, or closed, system) or to waste (a non-recovery, or open, system). That choice decides most of how you run it.
+
+HydroRigor has not built or tested these systems; every figure below comes from a university, extension or peer-reviewed source listed at the end.
+
+<KeyTargets
+  title="Drip hydroponics: the key numbers"
+  source="UF/IFAS HS1274, CV264 and HS169, and Alabama ANR-2955"
+  items={[
+    { label: 'Emitter opening', value: '0.05 in+', note: '1.3 mm; filter 150 mesh or finer' },
+    { label: 'Drain per run', value: '10–20%', note: 'of the volume applied' },
+    { label: 'Drain EC', value: '±1.0', note: 'of the feed EC, mS/cm' },
+    { label: 'Mature tomato', value: '2–2.5 qt/day', note: '1.9–2.4 L at peak harvest' },
+  ]}
+/>
+
+## Quick answer: drip hydroponics in numbers
+
+| Question | Answer | Source |
+| --- | --- | --- |
+| How does it work? | A pump sends solution through a filter and drip line to emitters in each container of media | Oklahoma State HLA-6442; Kentucky CCD-SP-20 |
+| Two kinds | Recovery (drain returns to the tank) or run-to-waste (drain is not reused) | Missouri G6986; Kentucky CCD-SP-20 |
+| Media | Perlite, coconut fiber (coir), rockwool, pine bark, expanded clay | UF/IFAS HS1274; Oregon State EM 9456 |
+| Emitter opening | At least 0.05 in (1.3 mm) for tubing and emitters | UF/IFAS CV264 and HS169 |
+| Filter | At least 150 mesh (CV264); about 200 mesh (HS169) | UF/IFAS |
+| Emitter flow | 0.5 gal (1.9 L) per hour per stake in a home-scale trial; 2 L (about ½ gal) per hour in a rockwool trial | Virginia Tech SPES-466; AAFC 2008 |
+| Emitter evenness | Within 10–15% of each other (UF/IFAS); no more than 10% (Oklahoma State) | UF/IFAS HS169; Oklahoma State |
+| Per run | About 150 mL (⅓ pint) per slab or bag; an ounce or two (30–60 mL) for a young transplant | UF/IFAS CV264; HS1274 |
+| Runs per day | 1–2 at transplant; 6–8 in fine coir; a dozen or more in perlite | UF/IFAS HS1274 |
+| Drain | 10–20% of the volume applied | UF/IFAS HS1274 and CV264 |
+| Drain EC | Within 1.0 of the feed EC | UF/IFAS HS1274 and CV264 |
+| Water per mature plant | 2–2.5 quarts (1.9–2.4 L) a day for tomato or cucumber at peak; Alabama about 2 quarts | UF/IFAS HS1274; Alabama ANR-2955 |
+| Solution EC | Usually 1.5–3.5; source water 0.5 or less | UF/IFAS HS1274 |
+| Solution pH | 5.5–6.5 for drip-fed tomatoes | Ohio State HYG-1437 |
+| Light | DLI above 20 mol/m²/day for tomatoes | Purdue HO-283-W |
+
+## How a drip system works, and the two kinds
+
+Each plant sits in a container of free-draining media. A submersible pump in the reservoir pushes solution through a filter into a supply line, and small tubes or stakes carry it to an emitter at every plant. A timer switches the pump on for a short run several times a day. The solution soaks down through the media; what the roots don't hold drains from the bottom. Kentucky's illustrated overview describes the same parts and notes that drip lines and emitters are similar to field irrigation hardware.
+
+**Recovery (closed).** The drain is caught and flows back to the reservoir. Missouri sorts hydroponic systems into closed (recirculating) and open, and Kentucky notes closed systems reuse solution and cut fertilizer discharge, but that stored solution **must be monitored and refreshed periodically**. Dutch buckets are the best-known recovery drip system; our [Dutch bucket guide](/systems/dutch-bucket-hydroponics/) covers them in detail.
+
+**Run-to-waste (open, non-recovery).** Fresh solution goes in at every run and the drain is not reused. UF/IFAS notes that most small greenhouse operations in Florida work this way **because of the expense of sanitizing the solution for diseases and replenishing the nutrients**, and that in rockwool, perlite and bag culture the water usually comes straight from the well and is not recirculated. It uses more solution, but salts leave with each drain, so the root zone is easier to keep in balance. UF/IFAS suggests collecting the drain for other uses, such as feeding ornamental beds or lawns, rather than letting it run off.
+
+![Two drip systems, one above the other. Top, recovery or closed: a pump in the reservoir sends solution through a filter to drip emitters in each pot of media, and the drain flows back to the same reservoir, so the solution is reused and must be checked and refreshed. Bottom, run-to-waste or open: fresh solution is pumped through a filter to the emitters, and 10 to 20 percent drains out of each pot into a tray and is not reused. Both need emitter openings of at least 0.05 inch and a filter.](/images/guides/drip-recovery-vs-run-to-waste.svg)
+
+*The two kinds of drip system. Closed and open systems from Missouri G6986 and Kentucky CCD-SP-20; the 10–20% drain and 0.05 in opening from UF/IFAS HS1274 and CV264.*
+
+| | Recovery (closed) | Run-to-waste (open) |
+| --- | --- | --- |
+| Drain | Back to the reservoir | Collected and not reused |
+| Solution use | Lower | Higher |
+| Salts in the root zone | Build up in the tank; change it on a schedule | Leave with every drain |
+| Disease risk | Can spread through shared solution | Each plant gets fresh solution |
+| Best for | Home growers who want less waste | Long seasons in bags or slabs |
+| Source | Kentucky CCD-SP-20; Tennessee W 844-C | UF/IFAS HS1274 and CV264 |
+
+Tennessee advises changing small recirculating tanks **every one to two weeks** for fruiting crops, because large plants shift the balance quickly.
+
+## Emitters, filters and pressure
+
+This is where most drip problems start, and where most home-system pages say least.
+
+**Emitter opening.** UF/IFAS says emitters and tubing should have **at least a 0.05 in (1.3 mm) inner diameter**, especially for rockwool, bag or trough culture, because small openings clog. It prefers stake-mounted emitters because they are easy to inspect, and advises choosing emitters that deliver enough solution in a short time.
+
+**Flow.** Virginia Tech's home-scale trial ran drip stakes at **0.5 gal (1.9 L) per hour**. The Canadian rockwool trial (Agriculture and Agri-Food Canada, HortScience 2008) used drippers of **2 L (about ½ gal) per hour**. Oklahoma State's drip irrigation fact sheet, written for gardens and fields rather than hydroponics, says most point emitters deliver **½, 1, 2 or 4 gal per hour** at their design pressure. UF/IFAS (HS169) adds that a fairly high flow rate shortens run times and reduces clogging.
+
+**Filter.** UF/IFAS CV264 says the filter screen should be **at least 150 mesh**; HS169 suggests **about 200 mesh**. The finer screen catches smaller particles (200 mesh is a 0.0029 in, 74 µm opening, per Oklahoma State's conversion table) but needs cleaning more often. Either is within the advice; start at 150–200 and clean it whenever flow drops.
+
+**Pressure.** Oklahoma State gives typical drip-tube pressure as **6–12 psi**, and pressure-compensating emitters as even across **10–30 psi**. Every 2.31 ft (0.7 m) of height gives just 1 psi, so a tank on a shelf a couple of feet above the plants can't drive emitters evenly (our arithmetic from Oklahoma State's figure). That is why home drip systems use a pump.
+
+**Evenness.** UF/IFAS asks for emitters **within 10–15% of each other**; Oklahoma State sets **no more than 10%** between the highest and lowest. Check by timing each emitter into a cup for 15 seconds, as UF/IFAS suggests. For a small system the 10% figure is easy to meet once lines are flushed.
+
+## How long and how often to run the drip
+
+None of our sources gives one schedule for every system, because the right timing depends on the medium, the plant's size and the weather. UF/IFAS HS1274 gives the method instead: **run each event long enough to bring the media to full water-holding capacity plus about 10%, but not more than 20%, drain**; run often enough that the media never dries out.
+
+**How much per run.** UF/IFAS CV264 suggests about **150 mL (⅓ pint) into each rockwool slab or perlite bag per event**, setting flow rate and on-time to deliver it. For a young transplant, HS1274 says **an ounce or two (30–60 mL) per event** is often enough.
+
+**How often.** HS1274 says most soilless media need irrigating **several times a day**. New transplants need only **one or two short events**; with mature plants, **fine coconut fiber may need 6–8 events a day and horticultural perlite a dozen or more**. The difference comes from water-holding: HS1274 found a 3 gal (11 L) upright bag of fine coir holds about **1 gal (3.8 L)** of water, while perlite, pine bark and coarse coir hold **about half that**, so they need shorter, more frequent runs. UF/IFAS (HS169) irrigates young tomatoes and cucumbers in perlite **at least three times a day**.
+
+![Bar chart of drip irrigation events per day, scale 0 to 14. New transplants: 1 to 2 short events a day. Fine coconut fiber with mature plants: 6 to 8 events. Horticultural perlite with mature plants: a dozen or more. Rockwool tomato trial in Ontario: about 4 to 11 events a day on average. Media that hold less water need shorter, more frequent events.](/images/guides/drip-irrigation-events-per-day.svg)
+
+*Events per day by stage and medium. Transplant, coir and perlite figures from UF/IFAS HS1274; the rockwool range is the daily mean across six strategies in the Agriculture and Agri-Food Canada trial (HortScience 2008).*
+
+**When.** Start the first run **within 1–2 hours after dawn** (or lights-on, indoors) in warm months; HS1274 says night irrigation is not usually needed.
+
+**Putting numbers on it (our arithmetic).** A 0.5 gal/h stake delivers about 1 fl oz (31 mL) a minute, so CV264's 150 mL takes about **5 minutes** on one stake, or about 2½ minutes on two. A mature tomato using 2 quarts (1.9 L) a day, plus 15% drain, needs about 2.2 L: roughly **15 runs of 150 mL**, which fits UF/IFAS's "a dozen or more" for perlite. Fewer, longer runs suit coir. Timers need to set run times in **minutes and seconds**; HS1274 also suggests battery backup and enough programs to change the schedule as plants grow.
+
+**What the research found about timing.** In the Canadian rockwool trial, tomatoes watered when the slab dried to 70% water content, or after a 500 g (1.1 lb) weight loss, gave the best roots and the highest yields. Those plants got **1.84–2.24 L (about 2–2.4 quarts) a day** in about 4–11 runs and used 1.22–1.51 L (about 1.3–1.6 quarts) of it. Its drain was **27–34%**, higher than UF/IFAS's 10–20%. UF/IFAS explains the difference: Florida solutions are lower in concentration and irrigated more often, so they need less leachate than northern greenhouse programs. For a home grower using a moderate EC, 10–20% is the better starting point.
+
+## Read the drain: volume and EC
+
+The drain tells you whether the schedule is right. UF/IFAS HS1274 suggests a simple station: stand one healthy plant's pot in a drain dish (or set a slab in a cut length of large PVC pipe), make sure it never sits in its own drainage, and measure what comes out each day. To measure what went in, put an extra emitter into a 1 gal (3.8 L) jug, with the emitter tube end higher than the supply line so it doesn't siphon.
+
+![A check card for drip drainage. Step 1, volume: collect the drain from one healthy plant for a day; it should be 10 to 20 percent of what was applied. Under 10 percent, run longer; well over 20 percent, run shorter. Step 2, EC: compare drain EC with feed EC. Within 1.0 is on target. 1.0 lower means feed more fertilizer. 1.0 higher means salts are building, so irrigate more or weaken the feed. 3 to 4 units higher means flush with water, then return to an adjusted solution.](/images/guides/drip-leachate-ec-check.svg)
+
+*How to read the drain, from UF/IFAS HS1274 and CV264. EC in mS/cm, the same as dS/m.*
+
+| Drain reading | What it means | What to do | Source |
+| --- | --- | --- | --- |
+| 10–20% of the volume applied | On target | Keep the schedule | UF/IFAS HS1274 |
+| Under 10% | Not enough water reaching the plant | Longer or more runs | UF/IFAS HS1274; HS169 |
+| EC within 1.0 of the feed | On target | No change | UF/IFAS HS1274; CV264 |
+| EC 1.0 or more lower than the feed | Plants are using nutrients faster than you supply them | Raise the feed strength | UF/IFAS HS1274 |
+| EC 1.0 or more higher than the feed | Salts building in the media; irrigation too short | More water per day; check the stock tanks | UF/IFAS HS1274; CV264 |
+| EC 3–4 higher than the feed | Serious salt buildup | Flush with water, then go back to a lower-strength solution, not plain water for long | UF/IFAS HS1274 |
+
+## The nutrient solution
+
+UF/IFAS gives a final drip solution EC **usually in the range of 1.5–3.5 mS/cm**, from source water at **0.5 or less**. For tomatoes, Tennessee holds **2.0–3.0 for much of the season** after starting transplants at 1.0–1.5, and Alabama gives 2.0–2.5. Ohio State gives **pH 5.5–6.5** for drip-fed tomatoes. Oklahoma State's crop table gives narrower targets, and they differ by crop:
+
+| Crop | pH | EC (mS/cm) | Source |
+| --- | --- | --- | --- |
+| Tomato | 6.0–6.5 (Oklahoma State); 5.5–6.5 for drip (Ohio State) | 2.0–4.0; 2.0–3.0 (Tennessee); 2.0–2.5 (Alabama) | Oklahoma State HLA-6722; Ohio State; Tennessee; Alabama |
+| Cucumber | 5.0–5.5 | 1.7–2.0 | Oklahoma State HLA-6722 |
+| Pepper | 5.5–6.0 | 0.8–1.8 | Oklahoma State HLA-6722 |
+| Eggplant | 6.0 | 2.5–3.5 | Oklahoma State HLA-6722 |
+| Strawberry | 6.0 | 1.8–2.2 | Oklahoma State HLA-6722 |
+
+Where the sources differ: Oklahoma State's tomato pH (6.0–6.5) sits at the top of Ohio State's drip range (5.5–6.5); aiming near **6.0** keeps you inside both. UF/IFAS adds that tomatoes tolerate salts better than cucumbers, peppers or lettuce, so if crops share one tank, set the EC for the most sensitive. The [pH and EC targets tool](/tools/ph-ec-targets/) compares crops, and the [nutrient mixing calculator](/tools/nutrient-mixing-calculator/) works out amounts for a target EC. For feeding by stage, see [hydroponic nutrients for tomatoes](/nutrients-water/hydroponic-nutrients-for-tomatoes/).
+
+## Which crops and media suit drip
+
+Oklahoma State notes that longer-term crops are usually grown in non-recirculating media systems, while short crops such as lettuce go into NFT or flood-and-drain. In Virginia Tech's comparison trial, **tomatoes and peppers yielded best in media bags and worst in NFT**, while greens and herbs did best in NFT and deep water culture.
+
+| Crop | Fit for drip | Note | Source |
+| --- | --- | --- | --- |
+| Tomatoes | Best | Long season; best yields in media | Virginia Tech SPES-466; Oklahoma State HLA-6442 |
+| Cucumbers | Best | Less salt-tolerant; UF/IFAS drains about 20% for them | UF/IFAS HS169 |
+| Peppers, eggplant | Good | Best pepper yields in media | Virginia Tech SPES-466 |
+| Lettuce, herbs | Poor fit | Short crops grow better in NFT or DWC | Virginia Tech SPES-466; Oklahoma State HLA-6442 |
+
+| Medium | Water held | Runs | Source |
+| --- | --- | --- | --- |
+| Fine coconut fiber | About 1 gal per 3 gal bag | Fewer, longer (6–8 a day mature) | UF/IFAS HS1274 |
+| Perlite | About half of fine coir | Shorter, more often (a dozen or more) | UF/IFAS HS1274 |
+| Composted pine bark, coarse coir | About half of fine coir | Shorter, more often | UF/IFAS HS1274 |
+| Rockwool slabs | Not given | 4–11 a day in the trial | AAFC 2008 |
+
+UF/IFAS (HS169) calls reusing unsterilized perlite risky, because old roots can carry disease. For tomatoes, Purdue puts the light need at a **daily light integral above 20 mol/m²/day**, and Alabama gives **3.5–5 sq ft (0.33–0.46 m²) per plant**; see the [hydroponic tomatoes guide](/crops/hydroponic-tomatoes/) for pruning and support.
+
+## How to set up a drip system, step by step
+
+1. **Choose open or closed.** Run-to-waste is simpler to keep balanced; recovery uses less solution (Kentucky CCD-SP-20; UF/IFAS HS1274). For a closed system, place the reservoir lower than the plants so the drain returns by gravity.
+2. **Set out containers of fresh media.** Bags, pots or buckets of perlite, coir or rockwool, raised off a cold floor (UF/IFAS HS169).
+3. **Fit the pump and filter.** A submersible pump in the reservoir, then a screen or disc filter of 150–200 mesh (UF/IFAS CV264; HS169).
+4. **Lay the supply line and emitters.** One stake or emitter per plant (two for large plants), openings of at least 0.05 in (UF/IFAS CV264). Split a long line into smaller zones if flow is uneven.
+5. **Test with plain water.** Time each emitter into a cup for 15 seconds and check they are within 10% of each other (Oklahoma State; UF/IFAS HS169).
+6. **Set up a drain station.** One healthy plant on a drain dish and one extra emitter in a gallon jug (UF/IFAS HS1274).
+7. **Mix the solution.** EC 1.0–1.5 for transplants (Tennessee), source water 0.5 or less, pH 5.5–6.5 (Ohio State).
+8. **Program the timer.** One or two short runs a day at transplant (UF/IFAS HS1274), the first within 1–2 hours of lights-on.
+9. **Adjust weekly.** Add runs as plants grow until the drain is 10–20% and its EC within 1.0 of the feed.
+10. **Maintain.** Clean the filter, flush the lines (UF/IFAS HS169 opens flush valves weekly), change a recirculating tank every 1–2 weeks (Tennessee), and check the pump every day, since with no power there is no water.
+
+New to building? Our [DIY hydroponic system guide](/systems/diy-hydroponic-system-for-beginners/) lists parts for a first build, and the [types of hydroponic systems guide](/systems/types-of-hydroponic-systems/) compares drip with the other seven.
+
+## Troubleshooting drip systems
+
+| Problem | Likely cause | Fix | Source |
+| --- | --- | --- | --- |
+| One plant wilting, others fine | Clogged emitter | Clean or replace; filter 150–200 mesh; openings 0.05 in+ | UF/IFAS CV264; HS169 |
+| Flow falling across the season | Slime or mineral deposits | Oklahoma State (field systems): 2 ppm chlorine rinse to prevent slime, 30 ppm to clean; UF/IFAS: 1% acid at season end | Oklahoma State; UF/IFAS HS169 |
+| Plants at the end of the line get less | Pressure loss, zone too large | Pressure-compensating emitters; smaller zones | Oklahoma State; UF/IFAS CV264 |
+| Drain EC climbing; leaf edges burn | Too little drain, salts building | More water per day; flush if 3–4 above feed | UF/IFAS HS1274 |
+| Roots brown, plants wilt in wet media | Pooling and overwatering; roots lack oxygen | Shorter runs; never let pots sit in drainage | UF/IFAS CV264; HS1274 |
+| Blossom-end rot | Uneven watering, so calcium doesn't reach the fruit | Even out the runs; don't let media dry | Tennessee W 844-C |
+| Fruit cracking | Cool nights | Nights no lower than 60–62 °F (16–17 °C) for tomato and pepper | UF/IFAS HS1274 |
+| pH and EC drift fast (closed system) | Large plants, small tank | Change the tank every 1–2 weeks | Tennessee W 844-C |
+
+## Frequently asked questions
+
+### What is a drip hydroponic system?
+
+A system that feeds nutrient solution through emitters onto each plant's container of media in short timed runs. Oklahoma State calls it probably the most widely used hydroponic system.
+
+### What is the difference between recovery and non-recovery drip?
+
+Recovery (closed) systems return the drain to the reservoir and reuse it; non-recovery (run-to-waste) systems don't. UF/IFAS says most small Florida operations run to waste because sanitizing and rebalancing reused solution costs money (Missouri G6986; UF/IFAS HS1274).
+
+### How often should a drip system run?
+
+Several times a day. UF/IFAS gives 1–2 short runs for new transplants, 6–8 a day for mature plants in fine coir and a dozen or more in perlite, each long enough for 10–20% to drain.
+
+### How much should drain out?
+
+About 10–20% of the volume applied (UF/IFAS HS1274 and CV264), with its EC within 1.0 of the feed. UF/IFAS HS169 uses 10–15% for tomato and about 20% for cucumber.
+
+### What size emitters and filter do I need?
+
+UF/IFAS advises openings of at least 0.05 in (1.3 mm) and a filter of at least 150 mesh (CV264) or about 200 mesh (HS169).
+
+### Can a drip system run on gravity?
+
+Not evenly. Oklahoma State gives drip-tube pressures of 6–12 psi, and each 2.31 ft (0.7 m) of height gives only 1 psi, so home drip systems use a pump.
+
+### Is drip good for lettuce?
+
+It works, but Virginia Tech found greens and herbs did best in NFT and deep water culture, while tomatoes and peppers did best in media. See our [NFT guide](/systems/nft-hydroponic-system/) for lettuce.
+
+*Figures in this guide come from the university, extension and peer-reviewed sources listed below. HydroRigor has not grown or tested crops for this guide.*
