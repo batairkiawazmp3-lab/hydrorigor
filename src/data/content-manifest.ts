@@ -173,6 +173,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['tamu-lettuce-aeroponics-nft-2018', 'uga-arugula-lettuce-systems-2025', 'cornell-aeroponic-lettuce-irrigation-2021', 'ttu-aeroponic-lettuce-poster', 'tunio-aeroponic-nozzles-lettuce-2021', 'mu-hydroponic-farming', 'okstate-hydroponics-hla6442', 'vt-system-crop-comparisons', 'ifas-lettuce-small-systems', 'uky-hydroponic-lettuce', 'osu-ph-ec-guide'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 34,
+    collection: 'articles',
+    category: 'equipment',
+    title: 'Hydroponic Reservoir Size: Gallons per Plant by System',
+    route: 'hydroponic-reservoir-size',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic system reservoir',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['vt-nft-systems', 'umn-small-scale-hydroponics', 'ifas-kratky-set-and-forget', 'ctahr-kratky-vc1', 'kratky-noncirculating-lettuce', 'ifas-volusia-dwc-bucket', 'aces-greenhouse-tomato-anr2955', 'mu-high-tunnel-tomato-watering-g6462', 'okstate-vertical-tower-hla6724', 'umass-subirrigation-systems', 'uky-hydroponic-lettuce', 'gomez-basil-small-scale-2020', 'osu-hydro-hints-dwc', 'purdue-heated-solution-lettuce-2019', 'vt-system-crop-comparisons', 'ifas-lettuce-small-systems', 'osu-ph-ec-guide', 'gh-feedchart-usage-guide', 'illinois-hydroponics-handouts'],
+    toolLinks: ['/tools/nutrient-mixing-calculator/', '/tools/ph-ec-targets/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

@@ -140,7 +140,7 @@ export const sectionDefinitions = [
     title: 'Hydroponic equipment',
     description: 'Lights, pumps, air stones, meters and growing media: what each part does and what to look for.',
     eyebrow: 'Gear that does the work',
-    intro: 'Equipment guides are on the way. Until then, the system and nutrient guides explain what each setup needs.',
+    intro: 'Start with the reservoir: how many gallons each system needs per plant, and how to keep it cool, dark and topped up. Guides to lights, pumps, meters and media follow.',
     availability: 'Equipment guides for lights, pumps, meters, and growing media are being written. Until then, the system and nutrient guides cover what each setup needs.',
     groups: [
       {

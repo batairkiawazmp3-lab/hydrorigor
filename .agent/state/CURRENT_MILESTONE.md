@@ -106,7 +106,8 @@ impressions in 28 days).
         ~~ID 31 `/systems/dutch-bucket-hydroponics/`~~ (published 2026-11-20, "Dutch Bucket Hydroponics: Setup, Drip Rates & Best Crops").
         ~~ID 32 `/systems/drip-hydroponic-system/`~~ (published 2026-11-20, "Drip Hydroponic System: Emitters, Timing, Drain & Setup").
         ~~ID 33 `/systems/aeroponics-vs-hydroponics/`~~ (published 2026-11-21, "Aeroponics vs Hydroponics: Yields, Mist Timing & Risks").
-        Next: ID 34 `hydroponic-reservoir-size`.
+        ~~ID 34 `/equipment/hydroponic-reservoir-size/`~~ (published 2026-11-21, "Hydroponic Reservoir Size: Gallons per Plant by System"; first guide in the equipment section).
+        Next: ID 35 `hydroponic-water-pumps`.
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the

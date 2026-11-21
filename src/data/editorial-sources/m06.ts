@@ -999,6 +999,33 @@ export const m06EditorialSources = [
     sourceType: 'university-research',
     locator: 'Abstract and figure captions (Methods and Results tables not read): butter-head lettuce under aeroponics; four nozzles (high-pressure with air, low-pressure without air, ultrasonic) with droplet sizes 11.24, 26.35, 17.38 and 4.89 μm; "three nutrient solution spraying intervals of 30, 45 and 60 min" with "a 5 min spraying time"; the air-assisted nozzle (N1, 11.24 μm) showed significantly smaller changes in solution pH and EC and better P, K and Mg uptake; root-to-shoot ratio rose with longer intervals for N1 and N4; the ultrasonic nozzle "showed a nonsignificant effect on all measured parameters with respect to spraying intervals"; abstract endorses air-assisted misting at a 30 min interval and 5 min spraying time. Pressures, EC and pH values, light, temperature and days not read (read 2026-11-21)',
   },
+  {
+    id: 'umn-small-scale-hydroponics',
+    title: 'Small-scale hydroponics',
+    publisher: 'University of Minnesota Extension (N. Hoidal, A. Reardon, L. Worth, M. Rogers), reviewed 2022',
+    url: 'https://extension.umn.edu/gardening-minnesota/small-scale-hydroponics',
+    accessedDate: '2026-11-21',
+    sourceType: 'university-extension',
+    locator: 'Read 2026-11-21 (full page). Basic components: a system "can be as simple as a 5-gallon bucket or a plastic storage bin"; "The size of the plants you’d like to grow should dictate the size of your container"; several lettuce heads need a wider container. Maintenance, Changing water (DWC): how often to add water "will depend on how many plants you have"; keep about half of the roots submerged; any water added should include nutrients at label strength; complete change-out: a longer-season crop like tomatoes may need the solution switched out "once or twice"; set-and-forget only for short-lived crops such as lettuce (6 to 7 weeks); nutrient-rich water is prone to algal and bacterial growth. Aeration: Kratky roots 1/3 to 1/2 submerged; air stone for a single container. Preparing water: pH 5.4–7; test pH every few weeks (DWC) but weekly with EC in the NFT section. Small-scale NFT: table-top system of six 4-ft channels, 55 x 55 x 31 in, 36 plants; "based on our 25-gallon reservoir size", 8–10 oz per minute ideal for lettuce; check reservoir level twice a week and keep it at capacity; change the solution after every crop cycle; leafy greens rarely need a change, tomatoes one or two; higher temperature increases evaporation and supports algae; opaque materials and a lid on the reservoir against algae; 1 Tbsp household bleach per gallon (about 150–200 ppm) between plantings. No solution temperature, dissolved oxygen, EC target or water per plant',
+  },
+  {
+    id: 'mu-high-tunnel-tomato-watering-g6462',
+    title: 'Watering and Fertilizing Tomatoes in a High Tunnel (G6462)',
+    publisher: 'University of Missouri Extension (L. W. Jett; reviewed by J. Cabrera-Garcia and D. H. Trinklein), September 2017, reviewed March 2026',
+    url: 'https://extension.missouri.edu/publications/g6462',
+    accessedDate: '2026-11-21',
+    sourceType: 'university-extension',
+    locator: 'Watering: "An average of 2 to 2 1/2 quarts of water per plant per day will be needed as the fruit continues to grow"; more than 1,000 gallons per week for 300 plants; Table 1 is built on 68 ounces per plant per day. Soil-grown high-tunnel crop with drip; no reservoir size, solution volume, solution temperature or top-up guidance (read 2026-11-21)',
+  },
+  {
+    id: 'purdue-heated-solution-lettuce-2019',
+    title: 'Growing hydroponic lettuce using heated nutrient solution under cooler air temperature',
+    publisher: 'Purdue University Controlled Environment Agriculture (A. Miller and K. Nemali), March 13, 2019',
+    url: 'https://www.purdue.edu/hla/sites/cea/article/growing-hydroponic-lettuce-using-heated-nutrient-solution-under-cooler-air-temperature/',
+    accessedDate: '2026-11-21',
+    sourceType: 'university-research',
+    locator: 'Growth chamber, butterhead lettuce Rex, 28 days; air 60/55 °F (day/night); each reservoir "contained approximately 10 gallons of nutrient solution", heated with an aquarium heater; EC 1.8, pH 5.5–6.5, DLI about 11.5 over 16 h; fresh solution added twice a week; solution 60.5, 64.5, 66.3 and 71.4 °F; growth rose with solution temperature, maximum at 71.4 °F (71.5 °F in one sentence); heating efficiency highest at 66.3 °F; separate air study: 19.6 g vs 69.5 g per plant at 60/55 vs 70/65 °F air. No dissolved oxygen or volume-temperature figures (read 2026-11-21)',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

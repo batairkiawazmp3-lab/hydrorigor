@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1046" width="640" height="1046" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic reservoir gallons per plant by system</title>
+  <desc id="d">Reservoir gallons per plant, on a scale of 0 to 5 gallons. NFT, Virginia Tech: one quarter to 1 gallon per plant. Vertical tower, Oklahoma State: a 45 gallon tank for 28 plants, about 1.6 gallons each. Kratky lettuce, UF/IFAS: 1 to 1.5 gallons per plant. Kratky lettuce, University of Hawaii: 1.5 to 2 gallons per plant. Deep water culture basil trial, University of Florida: 2 gallons for four plants, about 0.5 each. Deep water culture tomato, UF/IFAS Volusia County: one 5 gallon bucket per plant. Tower and basil values are HydroRigor arithmetic.</desc>
+  <rect width="640" height="1046" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Gallons per plant</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Reservoir per plant, 0–5 gal scale</text>
+    <rect x="20" y="110" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="148" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">NFT, Virginia Tech</text>
+    <rect x="40" y="166" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="68" y="166" width="84" height="26" rx="13" fill="#1F6E8C"/>
+    <text x="40" y="224" font-size="21" fill="#3F5248">¼–1 gal per plant</text>
+    <rect x="20" y="256" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="294" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Tower, Oklahoma State</text>
+    <rect x="40" y="312" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="312" width="179" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="370" font-size="21" fill="#3F5248">45 gal ÷ 28 plants ≈ 1.6</text>
+    <rect x="20" y="402" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="440" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Kratky lettuce, UF/IFAS</text>
+    <rect x="40" y="458" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="152" y="458" width="56" height="26" rx="13" fill="#C9A23F"/>
+    <text x="40" y="516" font-size="21" fill="#3F5248">1–1.5 gal per plant</text>
+    <rect x="20" y="548" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="586" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Kratky lettuce, Hawai‘i</text>
+    <rect x="40" y="604" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="208" y="604" width="56" height="26" rx="13" fill="#C9A23F"/>
+    <text x="40" y="662" font-size="21" fill="#3F5248">1.5–2 gal per plant</text>
+    <rect x="20" y="694" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="732" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">DWC basil trial, Florida</text>
+    <rect x="40" y="750" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="750" width="56" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="808" font-size="21" fill="#3F5248">2 gal ÷ 4 plants ≈ 0.5</text>
+    <rect x="20" y="840" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="878" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">DWC tomato, UF/IFAS</text>
+    <rect x="40" y="896" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="896" width="560" height="26" rx="13" fill="#1F6E8C"/>
+    <text x="40" y="954" font-size="21" fill="#3F5248">5-gal bucket, 1 plant</text>
+    <text x="20" y="1022" font-size="20" fill="#3F5248">≈ values: HydroRigor arithmetic</text>
+  </g>
+</svg>

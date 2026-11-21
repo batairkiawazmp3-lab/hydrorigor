@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 950" width="640" height="950" role="img" aria-labelledby="t d">
+  <title id="t">Four steps to size a hydroponic reservoir</title>
+  <desc id="d">Step 1: count the plants the system holds when full. Step 2: multiply by gallons per plant: one quarter to 1 for NFT, 1 to 2 for Kratky lettuce, 5 per tomato in deep water culture. Step 3: check daily use; a fruiting tomato drinks 2 to 2 and a half quarts a day. Step 4: round up to an opaque container with a lid that you can move and drain.</desc>
+  <rect width="640" height="950" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Size a reservoir</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Four steps, any system</text>
+    <rect x="20" y="110" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="195" r="36" fill="#1F6E8C"/>
+    <text x="80" y="207" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">1</text>
+    <text x="140" y="182" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Count the plants</text>
+    <text x="140" y="224" font-size="21" fill="#3F5248">When the system is full</text>
+    <path d="M80 286 L80 314" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 306 L80 318 L90 306" fill="none" stroke="#2E8B63" stroke-width="4"/>
+    <rect x="20" y="320" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="405" r="36" fill="#1F6E8C"/>
+    <text x="80" y="417" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">2</text>
+    <text x="140" y="392" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Multiply by gal per plant</text>
+    <text x="140" y="434" font-size="21" fill="#3F5248">NFT ¼–1 · Kratky 1–2 · tomato 5</text>
+    <path d="M80 496 L80 524" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 516 L80 528 L90 516" fill="none" stroke="#2E8B63" stroke-width="4"/>
+    <rect x="20" y="530" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="615" r="36" fill="#1F6E8C"/>
+    <text x="80" y="627" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">3</text>
+    <text x="140" y="602" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Check daily use</text>
+    <text x="140" y="644" font-size="21" fill="#3F5248">Tomato: 2–2½ qt a day</text>
+    <path d="M80 706 L80 734" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 726 L80 738 L90 726" fill="none" stroke="#2E8B63" stroke-width="4"/>
+    <rect x="20" y="740" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="825" r="36" fill="#1F6E8C"/>
+    <text x="80" y="837" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">4</text>
+    <text x="140" y="812" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Round up</text>
+    <text x="140" y="854" font-size="21" fill="#3F5248">Opaque, lidded, movable</text>
+  </g>
+</svg>
