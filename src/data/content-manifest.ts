@@ -197,6 +197,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['vt-nft-systems', 'umn-small-scale-hydroponics', 'purdue-hydroponics-opportunities-2016', 'sato-modified-nft-2007', 'aces-greenhouse-lettuce-anr2903', 'tamu-lettuce-aeroponics-nft-2018', 'okstate-hydroponics-hla6442', 'okstate-vertical-tower-hla6724', 'illinois-hydroponics-handouts', 'umass-subirrigation-systems', 'osu-hydro-hints-ebb-flow', 'vt-system-crop-comparisons', 'okstate-drip-irrigation-systems', 'uga-arugula-lettuce-systems-2025', 'ifas-kratky-set-and-forget', 'ifas-water-nutrient-management-hs1274', 'liu-organic-nft-lettuce-2025', 'mu-hydroponic-farming', 'osu-hydro-hints-nft', 'ndsu-irrigation-water-pumps-ae1057', 'lsu-pump-curves-3241h', 'ifas-aquaculture-centrifugal-pumps-ae579', 'umaine-farm-electrical-safety-2311'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 36,
+    collection: 'articles',
+    category: 'equipment',
+    title: 'Air Pump for DWC Hydroponics: Sizing, Stones & Oxygen',
+    route: 'air-pump-for-dwc-hydroponics',
+    primaryIntent: 'informational',
+    primaryTopic: 'air pump for dwc hydroponics',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['vt-system-crop-comparisons', 'sdsu-small-scale-hydroponics-p00337', 'osu-hydro-hints-dwc', 'uky-hydroponic-lettuce', 'ifas-lettuce-small-systems', 'ohio-state-root-zone-leafy-greens-2019', 'uga-dissolved-oxygen-kale-arugula-2025', 'ifas-do-fish-production-fa27', 'ifas-volusia-dwc-bucket', 'illinois-hydroponics-at-home', 'mu-hydroponic-farming', 'tamu-aquaponics-presentation-sawyer', 'umaine-farm-electrical-safety-2311', 'ifas-kratky-set-and-forget'],
+    toolLinks: ['/tools/ph-ec-targets/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
