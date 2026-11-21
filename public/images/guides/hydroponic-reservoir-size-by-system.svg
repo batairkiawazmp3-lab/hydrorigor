@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 940" width="640" height="940" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic reservoir size by system</title>
+  <desc id="d">NFT: one quarter to 1 gallon per plant (Virginia Tech). Deep water culture: more than 1 gallon per lettuce plant, in a tank at least 12 inches deep (Kentucky). Kratky: 1 to 1.5 gallons per lettuce plant, enough for the whole crop (UF/IFAS). Ebb and flow: about half a gallon per square foot of tray (UMass). Drip-fed tomatoes: size from daily use, 2 to 2.5 quarts per plant per day at peak (UF/IFAS).</desc>
+  <rect width="640" height="940" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Reservoir size by system</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">1 gallon is about 3.8 liters</text>
+    <rect x="20" y="112" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="40" y="140" width="56" height="94" rx="8" fill="#E6ECE4" stroke="#3F5248" stroke-width="2"/>
+    <rect x="42" y="206" width="52" height="26" rx="6" fill="#9CCBDB"/>
+    <text x="120" y="160" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">NFT</text>
+    <text x="120" y="200" font-size="23" font-weight="700" fill="#1F6E8C">¼–1 gal per plant</text>
+    <text x="120" y="236" font-size="20" fill="#3F5248">Virginia Tech</text>
+    <rect x="20" y="276" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="40" y="304" width="56" height="94" rx="8" fill="#E6ECE4" stroke="#3F5248" stroke-width="2"/>
+    <rect x="42" y="336" width="52" height="60" rx="6" fill="#9CCBDB"/>
+    <text x="120" y="324" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Deep water culture</text>
+    <text x="120" y="364" font-size="23" font-weight="700" fill="#1F6E8C">Over 1 gal per lettuce</text>
+    <text x="120" y="400" font-size="20" fill="#3F5248">Tank 12 in+ deep · Kentucky</text>
+    <rect x="20" y="440" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="40" y="468" width="56" height="94" rx="8" fill="#E6ECE4" stroke="#3F5248" stroke-width="2"/>
+    <rect x="42" y="486" width="52" height="74" rx="6" fill="#9CCBDB"/>
+    <text x="120" y="488" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Kratky</text>
+    <text x="120" y="528" font-size="23" font-weight="700" fill="#1F6E8C">1–1.5 gal per lettuce</text>
+    <text x="120" y="564" font-size="20" fill="#3F5248">Whole crop, no top-up · UF/IFAS</text>
+    <rect x="20" y="604" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="40" y="660" width="56" height="40" rx="6" fill="#9CCBDB" stroke="#3F5248" stroke-width="2"/>
+    <text x="120" y="652" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Ebb and flow</text>
+    <text x="120" y="692" font-size="23" font-weight="700" fill="#1F6E8C">½ gal per sq ft of tray</text>
+    <text x="120" y="728" font-size="20" fill="#3F5248">UMass Extension</text>
+    <rect x="20" y="768" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="68" cy="842" r="26" fill="#E76F51"/>
+    <text x="120" y="816" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Drip tomatoes</text>
+    <text x="120" y="856" font-size="23" font-weight="700" fill="#1F6E8C">2–2.5 qt per plant a day</text>
+    <text x="120" y="892" font-size="20" fill="#3F5248">Size from daily use · UF/IFAS</text>
+  </g>
+</svg>

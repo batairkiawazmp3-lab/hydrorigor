@@ -127,6 +127,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'drip-hydroponic-system': 'tomato-truss',
   // Long white roots hanging below a lifted net pot: the bare root zone aeroponics mists and water culture submerges; no misting-chamber photo in the registry yet.
   'aeroponics-vs-hydroponics': 'dwc-net-pot-roots',
+  // Seedlings above a still water surface: the stored solution this guide sizes; no reservoir photo in the registry yet.
+  'hydroponic-reservoir-size': 'seedlings-floating-raft',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
