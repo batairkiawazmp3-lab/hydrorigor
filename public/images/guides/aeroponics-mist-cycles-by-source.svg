@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Aeroponic misting cycles used in four studies</title>
+  <desc id="d">Share of time the mist is on, by study. Texas A and M 2018: 20 seconds on, 30 off, so on 40 percent of the time. University of Georgia 2025: 3 minutes on, 12 off, 20 percent. Texas Tech poster: 30 seconds on with 4 minutes off for seedlings, 11 percent, and 8 minutes off in the vegetative stage, about 6 percent. Jiangsu University 2021: 5 minutes of spray repeated at 30, 45 or 60 minute intervals; 30 minutes worked best with an air-assisted nozzle. Percentages are HydroRigor arithmetic from each schedule. No source gives one schedule for home systems.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Mist on, by study</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Share of time the mist runs, 0–50%</text>
+
+    <rect x="20" y="110" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="150" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Texas A&amp;M, 2018</text>
+    <rect x="40" y="170" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="170" width="448" height="26" rx="13" fill="#1F6E8C"/>
+    <text x="40" y="236" font-size="21" fill="#3F5248">20 s on, 30 s off: 40%</text>
+
+    <rect x="20" y="280" width="600" height="150" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="320" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Univ. of Georgia, 2025</text>
+    <rect x="40" y="340" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="340" width="224" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="406" font-size="21" fill="#3F5248">3 min on, 12 min off: 20%</text>
+
+    <rect x="20" y="450" width="600" height="190" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="490" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Texas Tech poster</text>
+    <rect x="40" y="510" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="510" width="68" height="26" rx="13" fill="#E9C46A"/>
+    <rect x="110" y="510" width="56" height="26" rx="8" fill="#F3DFA0"/>
+    <text x="40" y="576" font-size="21" fill="#3F5248">30 s on, 4–8 min off</text>
+    <text x="40" y="606" font-size="21" fill="#3F5248">About 6–11%</text>
+
+    <rect x="20" y="660" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="700" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Jiangsu Univ., 2021</text>
+    <text x="40" y="740" font-size="21" fill="#3F5248">5 min spray every 30–60 min</text>
+    <text x="40" y="772" font-size="21" fill="#3F5248">30 min best, air-assisted nozzle</text>
+    <text x="20" y="870" font-size="20" fill="#3F5248">Percentages: HydroRigor arithmetic</text>
+  </g>
+</svg>

@@ -161,6 +161,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['ifas-water-nutrient-management-hs1274', 'ifas-greenhouse-irrigation-cv264', 'ifas-perlite-tomato-cucumber-hs169', 'aafc-rockwool-tomato-irrigation-2008', 'okstate-drip-irrigation-systems', 'okstate-hydroponics-hla6442', 'mu-hydroponic-farming', 'uky-irrigation-hydroponic-ccd-sp20', 'vt-system-crop-comparisons', 'osu-hydro-hints-buckets', 'ohio-state-tomato-nutrient-solution', 'osu-ph-ec-guide', 'tennessee-fruiting-crops', 'aces-greenhouse-tomato-anr2955', 'purdue-supplemental-light-lettuce'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 33,
+    collection: 'articles',
+    category: 'systems',
+    title: 'Aeroponics vs Hydroponics: Yields, Mist Timing & Risks',
+    route: 'aeroponics-vs-hydroponics',
+    primaryIntent: 'informational',
+    primaryTopic: 'aeroponics vs hydroponics',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['tamu-lettuce-aeroponics-nft-2018', 'uga-arugula-lettuce-systems-2025', 'cornell-aeroponic-lettuce-irrigation-2021', 'ttu-aeroponic-lettuce-poster', 'tunio-aeroponic-nozzles-lettuce-2021', 'mu-hydroponic-farming', 'okstate-hydroponics-hla6442', 'vt-system-crop-comparisons', 'ifas-lettuce-small-systems', 'uky-hydroponic-lettuce', 'osu-ph-ec-guide'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
