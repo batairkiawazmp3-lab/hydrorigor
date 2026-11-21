@@ -125,6 +125,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'dutch-bucket-hydroponics': 'tomatoes-high-wire',
   // A truss of greenhouse tomatoes, the long-season media crop drip systems are mostly used for; no drip-emitter photo in the registry yet.
   'drip-hydroponic-system': 'tomato-truss',
+  // Long white roots hanging below a lifted net pot: the bare root zone aeroponics mists and water culture submerges; no misting-chamber photo in the registry yet.
+  'aeroponics-vs-hydroponics': 'dwc-net-pot-roots',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

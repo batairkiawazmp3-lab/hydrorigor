@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 980" width="640" height="980" role="img" aria-labelledby="t d">
+  <title id="t">Where the roots sit: aeroponics, deep water culture and NFT</title>
+  <desc id="d">Three root zones stacked. Aeroponics: roots hang in a closed, dark chamber and nozzles mist them with nutrient solution on a timer, for example 3 minutes on and 12 off in a University of Georgia trial; if the pump stops, nothing wets the roots. Deep water culture: roots sit in a tank of solution kept at 7 to 10 ppm dissolved oxygen by an air pump. NFT: a thin film of solution flows down a channel sloped at about 1 percent. In all three the solution drains back to a reservoir and is reused.</desc>
+  <rect width="640" height="980" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Where the roots sit</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Same nutrients, different root zone</text>
+
+    <rect x="20" y="110" width="600" height="280" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="150" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Aeroponics</text>
+    <text x="40" y="180" font-size="20" fill="#3F5248">Roots in air, misted on a timer</text>
+    <rect x="60" y="200" width="300" height="20" rx="4" fill="#2E8B63"/>
+    <circle cx="130" cy="196" r="14" fill="#7BC47F"/>
+    <circle cx="290" cy="196" r="14" fill="#7BC47F"/>
+    <rect x="60" y="220" width="300" height="140" rx="8" fill="#1F2A24"/>
+    <path d="M130 220 L120 300 M130 220 L140 310 M130 220 L130 330" stroke="#F5F7F2" stroke-width="3" fill="none"/>
+    <path d="M290 220 L280 300 M290 220 L300 310 M290 220 L290 330" stroke="#F5F7F2" stroke-width="3" fill="none"/>
+    <circle cx="210" cy="345" r="7" fill="#9CCBDB"/>
+    <path d="M210 338 L180 290 M210 338 L210 285 M210 338 L240 290" stroke="#9CCBDB" stroke-width="3" stroke-dasharray="4 6" fill="none"/>
+    <text x="380" y="240" font-size="20" fill="#0E1A14">Mist nozzle</text>
+    <text x="380" y="268" font-size="20" fill="#0E1A14">UGA: 3 min on,</text>
+    <text x="380" y="296" font-size="20" fill="#0E1A14">12 min off</text>
+    <text x="380" y="336" font-size="20" font-weight="700" fill="#B5462F">Pump stops:</text>
+    <text x="380" y="364" font-size="20" font-weight="700" fill="#B5462F">roots dry</text>
+
+    <rect x="20" y="410" width="600" height="260" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="450" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Deep water culture</text>
+    <text x="40" y="480" font-size="20" fill="#3F5248">Roots in aerated solution</text>
+    <rect x="60" y="500" width="300" height="20" rx="4" fill="#2E8B63"/>
+    <circle cx="130" cy="496" r="14" fill="#7BC47F"/>
+    <circle cx="290" cy="496" r="14" fill="#7BC47F"/>
+    <rect x="60" y="520" width="300" height="130" rx="8" fill="#9CCBDB"/>
+    <path d="M130 520 L120 600 M130 520 L140 610 M130 520 L130 630" stroke="#F5F7F2" stroke-width="3" fill="none"/>
+    <path d="M290 520 L280 600 M290 520 L300 610 M290 520 L290 630" stroke="#F5F7F2" stroke-width="3" fill="none"/>
+    <circle cx="200" cy="630" r="6" fill="#FFFFFF"/>
+    <circle cx="214" cy="600" r="5" fill="#FFFFFF"/>
+    <circle cx="206" cy="570" r="4" fill="#FFFFFF"/>
+    <text x="380" y="545" font-size="20" fill="#0E1A14">Air stone</text>
+    <text x="380" y="573" font-size="20" fill="#0E1A14">Oxygen 7–10 ppm</text>
+    <text x="380" y="613" font-size="20" font-weight="700" fill="#2E8B63">Pump stops:</text>
+    <text x="380" y="641" font-size="20" font-weight="700" fill="#2E8B63">roots stay wet</text>
+
+    <rect x="20" y="690" width="600" height="260" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="730" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">NFT</text>
+    <text x="40" y="760" font-size="20" fill="#3F5248">Thin film flows past the roots</text>
+    <path d="M60 800 L360 840 L360 880 L60 840 Z" fill="#E6ECE4" stroke="#3F5248" stroke-width="2"/>
+    <path d="M60 834 L360 874" stroke="#1F6E8C" stroke-width="6"/>
+    <circle cx="130" cy="796" r="14" fill="#7BC47F"/>
+    <circle cx="290" cy="816" r="14" fill="#7BC47F"/>
+    <path d="M130 810 L125 842 M130 810 L138 844" stroke="#3F5248" stroke-width="3" fill="none"/>
+    <path d="M290 830 L285 864 M290 830 L298 866" stroke="#3F5248" stroke-width="3" fill="none"/>
+    <text x="380" y="825" font-size="20" fill="#0E1A14">Slope about 1%</text>
+    <text x="380" y="865" font-size="20" font-weight="700" fill="#B5462F">Pump stops:</text>
+    <text x="380" y="893" font-size="20" font-weight="700" fill="#B5462F">film drains</text>
+    <text x="40" y="930" font-size="20" fill="#3F5248">All three reuse the solution</text>
+  </g>
+</svg>

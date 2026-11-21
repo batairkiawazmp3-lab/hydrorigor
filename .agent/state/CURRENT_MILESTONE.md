@@ -105,7 +105,8 @@ impressions in 28 days).
         ~~ID 30 `/systems/ebb-and-flow-hydroponics/`~~ (published 2026-11-19, "Ebb and Flow Hydroponics: Flood Timing, Media & Setup").
         ~~ID 31 `/systems/dutch-bucket-hydroponics/`~~ (published 2026-11-20, "Dutch Bucket Hydroponics: Setup, Drip Rates & Best Crops").
         ~~ID 32 `/systems/drip-hydroponic-system/`~~ (published 2026-11-20, "Drip Hydroponic System: Emitters, Timing, Drain & Setup").
-        Next: ID 33 `aeroponics-vs-hydroponics`.
+        ~~ID 33 `/systems/aeroponics-vs-hydroponics/`~~ (published 2026-11-21, "Aeroponics vs Hydroponics: Yields, Mist Timing & Risks").
+        Next: ID 34 `hydroponic-reservoir-size`.
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the
