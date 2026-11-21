@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 980" width="640" height="980" role="img" aria-labelledby="t d">
+  <title id="t">Warm water holds less oxygen</title>
+  <desc id="d">Bar chart of dissolved oxygen in water. At 45 °F, saturated water holds 11.9 mg/L. At 68 °F, air-stone aeration keeps about 9 mg/L. At 90 °F, saturated water holds only 7.4 mg/L. A band marks the 7 to 10 ppm target and a line marks the 4 ppm minimum. An air pump cannot push water above saturation, so cool water is the main lever.</desc>
+  <rect width="640" height="980" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Warm water holds less oxygen</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Dissolved oxygen, mg/L (= ppm)</text>
+    <rect x="20" y="110" width="600" height="640" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="90" y="246" width="510" height="124" fill="#E3F1E8"/>
+    <text x="596" y="234" text-anchor="end" font-size="20" fill="#2E8B63">Target 7–10</text>
+    <path d="M90 494 L600 494" stroke="#B5462F" stroke-width="3" stroke-dasharray="10 8"/>
+    <path d="M90 140 L90 660 L600 660" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <rect x="130" y="167" width="110" height="493" fill="#1F6E8C"/>
+    <text x="185" y="155" text-anchor="middle" font-size="24" font-weight="800" fill="#0E1A14">11.9</text>
+    <rect x="290" y="287" width="110" height="373" fill="#2E8B63"/>
+    <text x="345" y="275" text-anchor="middle" font-size="24" font-weight="800" fill="#0E1A14">≈ 9</text>
+    <rect x="450" y="354" width="110" height="306" fill="#C9A23F"/>
+    <text x="505" y="342" text-anchor="middle" font-size="24" font-weight="800" fill="#0E1A14">7.4</text>
+    <rect x="466" y="462" width="134" height="30" rx="6" fill="#FFFFFF"/>
+    <text x="596" y="484" text-anchor="end" font-size="20" fill="#B5462F">Minimum 4</text>
+    <text x="185" y="694" text-anchor="middle" font-size="22" font-weight="700" fill="#0E1A14">45 °F</text>
+    <text x="345" y="694" text-anchor="middle" font-size="22" font-weight="700" fill="#0E1A14">68 °F</text>
+    <text x="505" y="694" text-anchor="middle" font-size="22" font-weight="700" fill="#0E1A14">90 °F</text>
+    <text x="185" y="726" text-anchor="middle" font-size="20" fill="#3F5248">7 °C</text>
+    <text x="345" y="726" text-anchor="middle" font-size="20" fill="#3F5248">20 °C</text>
+    <text x="505" y="726" text-anchor="middle" font-size="20" fill="#3F5248">32 °C</text>
+    <rect x="20" y="770" width="600" height="190" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="816" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Bubbles can't beat the limit</text>
+    <text x="40" y="856" font-size="21" fill="#3F5248">A bigger pump won't push water</text>
+    <text x="40" y="888" font-size="21" fill="#3F5248">above saturation. Keep it cool:</text>
+    <text x="40" y="920" font-size="21" fill="#3F5248">65–75 °F (18–24 °C).</text>
+  </g>
+</svg>

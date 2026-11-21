@@ -131,6 +131,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-reservoir-size': 'seedlings-floating-raft',
   // A pipe-frame system with lettuce and herbs: the channels and plumbing a recirculating pump feeds; no pump photo in the registry yet.
   'hydroponic-water-pumps': 'diy-pvc-nft-frame',
+  // Long white roots lifted from aerated water: the root health a DWC air pump protects; no air pump or air stone photo in the registry yet.
+  'air-pump-for-dwc-hydroponics': 'dwc-net-pot-roots',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
