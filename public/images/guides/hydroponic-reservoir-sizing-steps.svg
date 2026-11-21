@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Four steps to size a hydroponic reservoir</title>
+  <desc id="d">Step 1: plants times the rule for your system, for example NFT one quarter to 1 gallon per plant. Step 2: add the water used between top-ups, for example a mature tomato uses 2 to 2.5 quarts a day. Step 3: make sure the tank can take everything that drains back from channels or trays when the pump stops. Step 4: round up, and use an opaque, lidded, food-safe tank.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Size a tank in 4 steps</text>
+    <rect x="20" y="86" width="600" height="180" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="66" cy="132" r="26" fill="#1F6E8C"/>
+    <text x="57" y="141" font-size="26" font-weight="800" fill="#FFFFFF">1</text>
+    <text x="110" y="142" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Plants × system rule</text>
+    <text x="40" y="200" font-size="21" fill="#3F5248">NFT: ¼–1 gal per plant</text>
+    <text x="40" y="236" font-size="21" fill="#3F5248">DWC: over 1 gal per lettuce</text>
+    <rect x="20" y="282" width="600" height="180" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="66" cy="328" r="26" fill="#1F6E8C"/>
+    <text x="57" y="337" font-size="26" font-weight="800" fill="#FFFFFF">2</text>
+    <text x="110" y="338" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Add use between top-ups</text>
+    <text x="40" y="396" font-size="21" fill="#3F5248">Mature tomato: 2–2.5 qt a day</text>
+    <text x="40" y="432" font-size="21" fill="#3F5248">Times the days between top-ups</text>
+    <rect x="20" y="478" width="600" height="180" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="66" cy="524" r="26" fill="#1F6E8C"/>
+    <text x="57" y="533" font-size="26" font-weight="800" fill="#FFFFFF">3</text>
+    <text x="110" y="534" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Room for drain-back</text>
+    <text x="40" y="592" font-size="21" fill="#3F5248">Pump off: channels and trays</text>
+    <text x="40" y="628" font-size="21" fill="#3F5248">empty into the tank</text>
+    <rect x="20" y="674" width="600" height="180" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="66" cy="720" r="26" fill="#2E8B63"/>
+    <text x="57" y="729" font-size="26" font-weight="800" fill="#FFFFFF">4</text>
+    <text x="110" y="730" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Round up</text>
+    <text x="40" y="788" font-size="21" fill="#3F5248">Bigger buffers pH, EC, temperature</text>
+    <text x="40" y="824" font-size="21" fill="#3F5248">Opaque, lidded, food-safe</text>
+  </g>
+</svg>
