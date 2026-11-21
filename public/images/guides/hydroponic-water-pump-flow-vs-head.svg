@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1000" width="640" height="1000" role="img" aria-labelledby="t d">
+  <title id="t">How pump flow falls as head rises</title>
+  <desc id="d">An illustrative pump curve: flow on the horizontal axis, head (lift height) on the vertical axis. The pump gives its highest flow at zero head and no flow at its shut-off head. A dashed line marks your total head, the vertical lift plus friction; read across to the curve and down to find the flow you will actually get. 2.31 feet of head equals 1 psi. Not a specific pump.</desc>
+  <rect width="640" height="1000" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Flow falls as head rises</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Illustrative pump curve</text>
+    <rect x="20" y="110" width="600" height="560" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <path d="M110 150 L110 590 L590 590" fill="none" stroke="#0E1A14" stroke-width="3"/>
+    <path d="M110 190 C 260 205, 420 300, 560 590" fill="none" stroke="#1F6E8C" stroke-width="6"/>
+    <circle cx="110" cy="190" r="9" fill="#C9A23F"/>
+    <text x="126" y="180" font-size="21" fill="#0E1A14">Shut-off head: no flow</text>
+    <circle cx="560" cy="590" r="9" fill="#C9A23F"/>
+    <text x="600" y="656" text-anchor="end" font-size="21" fill="#0E1A14">Most flow, no lift</text>
+    <path d="M110 380 L452 380" stroke="#2E8B63" stroke-width="3" stroke-dasharray="10 8"/>
+    <path d="M452 380 L452 590" stroke="#2E8B63" stroke-width="3" stroke-dasharray="10 8"/>
+    <circle cx="452" cy="380" r="9" fill="#2E8B63"/>
+    <text x="126" y="366" font-size="21" fill="#2E8B63">Your total head</text>
+    <text x="452" y="624" text-anchor="middle" font-size="21" fill="#2E8B63">Your real flow</text>
+    <text x="200" y="656" text-anchor="middle" font-size="20" fill="#3F5248">Flow →</text>
+    <text x="70" y="390" text-anchor="middle" font-size="20" fill="#3F5248" transform="rotate(-90 70 390)">Head (lift) →</text>
+    <rect x="20" y="690" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="738" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Total head</text>
+    <text x="40" y="780" font-size="21" fill="#3F5248">Vertical lift + tubing friction</text>
+    <rect x="20" y="840" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="888" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">2.31 ft of head = 1 psi</text>
+    <text x="40" y="930" font-size="21" fill="#3F5248">North Dakota State; LSU AgCenter</text>
+  </g>
+</svg>
