@@ -129,6 +129,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'aeroponics-vs-hydroponics': 'dwc-net-pot-roots',
   // Seedlings above a still water surface: the stored solution this guide sizes; no reservoir photo in the registry yet.
   'hydroponic-reservoir-size': 'seedlings-floating-raft',
+  // A pipe-frame system with lettuce and herbs: the channels and plumbing a recirculating pump feeds; no pump photo in the registry yet.
+  'hydroponic-water-pumps': 'diy-pvc-nft-frame',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

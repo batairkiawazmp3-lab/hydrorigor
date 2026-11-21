@@ -107,7 +107,8 @@ impressions in 28 days).
         ~~ID 32 `/systems/drip-hydroponic-system/`~~ (published 2026-11-20, "Drip Hydroponic System: Emitters, Timing, Drain & Setup").
         ~~ID 33 `/systems/aeroponics-vs-hydroponics/`~~ (published 2026-11-21, "Aeroponics vs Hydroponics: Yields, Mist Timing & Risks").
         ~~ID 34 `/equipment/hydroponic-reservoir-size/`~~ (published 2026-11-21, "Hydroponic Reservoir Size: Gallons per Plant by System"; first equipment guide, `/equipment/` removed from `EMPTY_SECTION_PATHS`).
-        Next: ID 35 `hydroponic-water-pumps`.
+        ~~ID 35 `/equipment/hydroponic-water-pumps/`~~ (published 2026-11-21, "Hydroponic Water Pumps: GPH, Head Height & Sizing").
+        Next: ID 36 `air-pump-for-dwc-hydroponics`.
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the

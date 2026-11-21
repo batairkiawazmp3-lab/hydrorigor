@@ -185,6 +185,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['vt-nft-systems', 'vt-dwc-systems-spes464', 'uky-hydroponic-lettuce', 'ifas-kratky-set-and-forget', 'ctahr-kratky-vc1', 'umass-subirrigation-systems', 'umass-sizing-greenhouse-water', 'ifas-water-nutrient-management-hs1274', 'mu-high-tunnel-tomato-water-g6462', 'osu-hydro-hints-dwc', 'umn-small-scale-hydroponics', 'unh-home-hydroponics', 'ohio-state-root-zone-leafy-greens-2019', 'mu-nutrient-solutions', 'aces-greenhouse-lettuce-anr2903', 'okstate-algae-control-greenhouse'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 35,
+    collection: 'articles',
+    category: 'equipment',
+    title: 'Hydroponic Water Pumps: GPH, Head Height & Sizing',
+    route: 'hydroponic-water-pumps',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic system pumps',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['vt-nft-systems', 'umn-small-scale-hydroponics', 'purdue-hydroponics-opportunities-2016', 'sato-modified-nft-2007', 'aces-greenhouse-lettuce-anr2903', 'tamu-lettuce-aeroponics-nft-2018', 'okstate-hydroponics-hla6442', 'okstate-vertical-tower-hla6724', 'illinois-hydroponics-handouts', 'umass-subirrigation-systems', 'osu-hydro-hints-ebb-flow', 'vt-system-crop-comparisons', 'okstate-drip-irrigation-systems', 'uga-arugula-lettuce-systems-2025', 'ifas-kratky-set-and-forget', 'ifas-water-nutrient-management-hs1274', 'liu-organic-nft-lettuce-2025', 'mu-hydroponic-farming', 'osu-hydro-hints-nft', 'ndsu-irrigation-water-pumps-ae1057', 'lsu-pump-curves-3241h', 'ifas-aquaculture-centrifugal-pumps-ae579', 'umaine-farm-electrical-safety-2311'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
