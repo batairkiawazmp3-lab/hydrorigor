@@ -98,7 +98,15 @@ impressions in 28 days).
         ~~`/best/hydroponic-nutrients-for-home-growers/`~~ (rebuilt 2026-11-17, "Best Hydroponic Nutrients: How to Choose by Crop & Type"; "best hydroponic nutrients" 260 / 20),
         ~~`/reviews/masterblend-hydroponic-nutrients/`~~ (rebuilt 2026-11-17, "Masterblend Hydroponic Nutrients: Rates per Gallon & Mixing"; "masterblend hydroponic nutrients" 210 / 22),
         ~~`/reviews/general-hydroponics-nutrients/`~~ (rebuilt 2026-11-17, "General Hydroponics Nutrients: Flora Feed Chart, EC & pH"; 170 / 23).
-23. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.
+Moved to the top on 2026-11-22 by the daily Search Console check (rule: position 8–20 with 30+
+impressions in 28 days).
+
+23. [ ] `/best/hydroponic-system-for-home-growers/` — second strengthening pass (rebuilt 2026-11-06, #30;
+        first pass 2026-11-09): clearer direct answer, intent match for the queries it shows for
+        ("most effective hydroponic system" position 14.0), more internal links. Search Console
+        (Nov 1–20, checked 2026-11-22): 37 impressions, position 19.8, 0 clicks; previous check
+        36 impressions, position 20.1. Keep the title (changed 2026-11-06).
+24. [ ] New guides from the 100-article plan (IDs 26–55), in plan order, skipping IDs already done.
         Done: ~~ID 26 `/systems/what-is-hydroponics/`~~ (published 2026-11-18, "What Is Hydroponics? How It Works, Systems & Key Numbers").
         ~~ID 27 `/systems/types-of-hydroponic-systems/`~~ (published 2026-11-18, "Types of Hydroponic Systems: DWC, NFT, Drip & 5 More").
         ~~ID 29 `/systems/nft-hydroponic-system/`~~ (published 2026-11-19, "NFT Hydroponic System: Slope, Flow, Spacing & Setup").
