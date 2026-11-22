@@ -221,6 +221,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['okstate-soilless-growing-mediums', 'ifas-common-hydroponic-media-ep623', 'uky-selecting-growing-media-ccd-ta-02', 'ifas-water-nutrient-management-hs1274', 'ifas-greenhouse-irrigation-cv264', 'illinois-hydroponics-handouts', 'vt-nft-systems', 'osu-hydro-hints-ebb-flow', 'osu-hydro-hints-buckets', 'ifas-hydroponic-methods-part2-2025', 'ifas-perlite-tomato-cucumber-hs169', 'yang-dutch-bucket-cucumber-substrates-2022', 'wortman-vertical-strawberry-2016'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 37,
+    collection: 'articles',
+    category: 'equipment',
+    title: 'Hydroponic Net Pots: Sizes, Hole Saws, Depth & Reuse',
+    route: 'hydroponic-net-pots',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic net pots',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['ifas-floating-hydroponic-garden-hs943', 'kysu-hands-free-hydroponics', 'umn-small-scale-hydroponics', 'ifas-kratky-set-and-forget', 'ctahr-kratky-vc1', 'kratky-suspended-pot-2004', 'okstate-vertical-tower-hla6724', 'ifas-volusia-dwc-bucket', 'vt-nft-systems', 'uky-hydroponic-lettuce', 'tennessee-fruiting-crops', 'okstate-soilless-growing-mediums', 'osu-hydro-hints-buckets', 'isu-clean-disinfect-containers', 'ucanr-cleaning-plant-pots', 'okstate-algae-control-greenhouse', 'ucanr-kratky-starter-kits'],
+    toolLinks: ['/tools/ph-ec-targets/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 940" width="640" height="940" role="img" aria-labelledby="t d">
+  <title id="t">Net pot sizes by plant</title>
+  <desc id="d">Three net pots drawn to relative scale. 2-inch pot: lettuce, herbs and leafy greens in Kratky buckets and rafts. 3-inch pot: vertical towers and rafts. 6-inch pot: one tomato, pepper or cucumber in a 5-gallon bucket.</desc>
+  <rect width="640" height="940" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Net pot sizes</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Sizes used in extension builds</text>
+    <rect x="20" y="110" width="600" height="200" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="44" y="170" width="80" height="8" rx="3" fill="#1F6E8C"/>
+    <path d="M50 178 L118 178 L110 250 L58 250 Z" fill="#E3EEE7" stroke="#1F6E8C" stroke-width="4"/>
+    <text x="170" y="168" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">2 in</text>
+    <text x="170" y="210" font-size="21" fill="#3F5248">Lettuce, herbs, greens</text>
+    <text x="170" y="246" font-size="21" fill="#3F5248">Kratky buckets, rafts</text>
+    <rect x="20" y="330" width="600" height="240" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="34" y="390" width="120" height="8" rx="3" fill="#1F6E8C"/>
+    <path d="M40 398 L148 398 L136 506 L52 506 Z" fill="#E3EEE7" stroke="#1F6E8C" stroke-width="4"/>
+    <text x="190" y="398" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">3 in</text>
+    <text x="190" y="440" font-size="21" fill="#3F5248">Vertical towers</text>
+    <text x="190" y="476" font-size="21" fill="#3F5248">and rafts</text>
+    <rect x="20" y="590" width="600" height="330" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="34" y="640" width="240" height="10" rx="4" fill="#1F6E8C"/>
+    <path d="M40 650 L268 650 L244 870 L64 870 Z" fill="#E3EEE7" stroke="#1F6E8C" stroke-width="4"/>
+    <text x="300" y="676" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0E1A14">6 in</text>
+    <text x="300" y="718" font-size="21" fill="#3F5248">One tomato, pepper</text>
+    <text x="300" y="754" font-size="21" fill="#3F5248">or cucumber in a</text>
+    <text x="300" y="790" font-size="21" fill="#3F5248">5-gallon bucket</text>
+  </g>
+</svg>

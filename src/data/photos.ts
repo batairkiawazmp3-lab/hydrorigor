@@ -135,6 +135,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'air-pump-for-dwc-hydroponics': 'dwc-net-pot-roots',
   // Lettuce in mesh net pots filled with expanded clay pebbles: one of the media the page compares; no rockwool or coir photo in the registry yet.
   'hydroponic-growing-media': 'lettuce-net-pots-clay',
+  // A grower lifts a net pot to show the roots that grew through its slots into the water: the part the page is about.
+  'hydroponic-net-pots': 'dwc-net-pot-roots',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
