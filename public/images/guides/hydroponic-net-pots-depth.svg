@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">How deep a net pot sits in the solution</title>
+  <desc id="d">Cross-section of a net pot held by its lip in a foam raft 1½ inches thick, with a seedling plug inside and roots growing through the slots. In a floating raft, the bottom of the pot is level with the underside of the foam, at most 1/16 inch below. In a Kratky tank, the lower ½ to 1 inch of the pot sits in the solution at transplanting.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Net pot depth</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Only the bottom touches the solution</text>
+    <path d="M320 150 C300 120 270 115 250 125 C275 135 295 150 312 170 Z" fill="#2E8B63"/>
+    <path d="M320 150 C340 118 372 112 392 122 C366 134 346 150 328 170 Z" fill="#3FA374"/>
+    <rect x="312" y="150" width="16" height="45" fill="#2E8B63"/>
+    <rect x="20" y="230" width="600" height="60" fill="#FFFFFF" stroke="#9DB8A8" stroke-width="2"/>
+    <text x="40" y="268" font-size="21" fill="#3F5248">Foam raft, 1½ in</text>
+    <path d="M250 218 L390 218 L376 294 L264 294 Z" fill="#E3EEE7" stroke="#1F6E8C" stroke-width="4"/>
+    <rect x="236" y="208" width="168" height="14" rx="4" fill="#1F6E8C"/>
+    <rect x="282" y="200" width="76" height="76" rx="6" fill="#C9A66B"/>
+    <text x="320" y="242" text-anchor="middle" font-size="20" fill="#0E1A14">plug</text>
+    <rect x="20" y="292" width="600" height="298" fill="#CFE7F2"/>
+    <path d="M295 294 C290 380 275 450 265 540 M320 294 C322 400 318 480 325 570 M345 294 C355 380 368 460 375 545" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+    <text x="40" y="560" font-size="21" fill="#1F4E63">Nutrient solution</text>
+    <rect x="20" y="620" width="600" height="120" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="664" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Floating raft</text>
+    <text x="40" y="704" font-size="21" fill="#3F5248">Pot bottom level with foam, max 1/16 in</text>
+    <rect x="20" y="760" width="600" height="120" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="804" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Kratky tank</text>
+    <text x="40" y="844" font-size="21" fill="#3F5248">Lower ½–1 in of pot in solution</text>
+  </g>
+</svg>
