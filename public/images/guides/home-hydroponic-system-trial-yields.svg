@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1022" width="640" height="1022" role="img" aria-labelledby="t d">
+  <title id="t">Most effective system by crop: Virginia Tech trial yields</title>
+  <desc id="d">Bar chart of yields in Virginia Tech's side-by-side trial (SPES-466). Spinach: NFT 11.55 oz, DWC 8.74 oz, vertical media stack 3.37 oz. Parsley: DWC 4.63 oz, NFT 3.78 oz, vertical media stack 1.51 oz. Tomatoes: media bags 8.3 lb, Dutch buckets 7.8 lb, NFT 4.4 lb. Peppers: media bags 6.7 lb, Dutch buckets 5.9 lb, NFT 2.4 lb. Greens and herbs did best in water-based NFT and DWC; fruiting crops did best in media systems and worst in NFT. Each crop has its own scale.</desc>
+  <rect width="640" height="1022" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Which system yielded most?</text>
+  <text x="20" y="88" font-family="Inter, Arial, sans-serif" font-size="20" fill="#3F5248">Virginia Tech side-by-side trial (SPES-466)</text>
+  <text x="20" y="130" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">Spinach (greens)</text>
+  <text x="20" y="179" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">NFT</text>
+  <rect x="200" y="156" width="290" height="32" rx="6" fill="#0F6B4F"/>
+  <text x="500" y="179" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">11.55 oz</text>
+  <text x="20" y="227" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">DWC</text>
+  <rect x="200" y="204" width="219" height="32" rx="6" fill="#6FA68A"/>
+  <text x="429" y="227" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">8.74 oz</text>
+  <text x="20" y="275" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">Vertical stack</text>
+  <rect x="200" y="252" width="85" height="32" rx="6" fill="#B9CFC2"/>
+  <text x="295" y="275" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">3.37 oz</text>
+  <text x="20" y="338" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">Parsley (herb)</text>
+  <text x="20" y="387" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">DWC</text>
+  <rect x="200" y="364" width="290" height="32" rx="6" fill="#0F6B4F"/>
+  <text x="500" y="387" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">4.63 oz</text>
+  <text x="20" y="435" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">NFT</text>
+  <rect x="200" y="412" width="237" height="32" rx="6" fill="#6FA68A"/>
+  <text x="447" y="435" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">3.78 oz</text>
+  <text x="20" y="483" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">Vertical stack</text>
+  <rect x="200" y="460" width="95" height="32" rx="6" fill="#B9CFC2"/>
+  <text x="305" y="483" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">1.51 oz</text>
+  <text x="20" y="546" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">Tomatoes (fruiting)</text>
+  <text x="20" y="595" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">Media bags</text>
+  <rect x="200" y="572" width="290" height="32" rx="6" fill="#0F6B4F"/>
+  <text x="500" y="595" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">8.3 lb</text>
+  <text x="20" y="643" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">Dutch buckets</text>
+  <rect x="200" y="620" width="273" height="32" rx="6" fill="#6FA68A"/>
+  <text x="483" y="643" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">7.8 lb</text>
+  <text x="20" y="691" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">NFT</text>
+  <rect x="200" y="668" width="154" height="32" rx="6" fill="#B9CFC2"/>
+  <text x="364" y="691" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">4.4 lb</text>
+  <text x="20" y="754" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">Peppers (fruiting)</text>
+  <text x="20" y="803" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">Media bags</text>
+  <rect x="200" y="780" width="290" height="32" rx="6" fill="#0F6B4F"/>
+  <text x="500" y="803" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">6.7 lb</text>
+  <text x="20" y="851" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">Dutch buckets</text>
+  <rect x="200" y="828" width="255" height="32" rx="6" fill="#6FA68A"/>
+  <text x="465" y="851" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">5.9 lb</text>
+  <text x="20" y="899" font-family="Inter, Arial, sans-serif" font-size="21" fill="#0E1A14">NFT</text>
+  <rect x="200" y="876" width="104" height="32" rx="6" fill="#B9CFC2"/>
+  <text x="314" y="899" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#0E1A14">2.4 lb</text>
+  <text x="20" y="974" font-family="Inter, Arial, sans-serif" font-size="20" fill="#3F5248">Each crop has its own scale.</text>
+  <text x="20" y="1002" font-family="Inter, Arial, sans-serif" font-size="20" fill="#3F5248">One trial at one site; a ranking, not a forecast.</text>
+</svg>
