@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-22 (Nov 1–20; last update 5 h before check) | 6 | 561 | 1.1% | 36.8 | 105 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (was 45) | Air pump guide (#111), growing media guide (#112), net pots guide (#113, #114); home-growers strengthening pass moved to top of queue (this change) |
 | 2026-11-21 (Nov 1–19; last update 3 h before check) | 6 | 551 | 1.1% | 36.7 | 103 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16) | Drip guide (#104, #105), aeroponics vs hydroponics (#106), reservoir size (#107), water pumps (#109); log only (this change) |
 | 2026-11-20 (Nov 1–18; last update 2.5 h before check) | 6 | 541 | 1.1% | 36.8 | 102 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16) | Ebb and flow guide (#100), Dutch bucket guide (#101); log only (this change) |
 | 2026-11-19 (Nov 1–17; last update 3 h before check) | 6 | 526 | 1.1% | 37.5 | 102 | 32 | 34 indexed, 15 not indexed (last update Nov 16; page with redirect 2 → 3) | What is hydroponics guide (#93, #95), types of systems guide (#96), Astro upgrade (#97), NFT guide (#98); log only (this change) |
@@ -35,7 +36,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 | 2026-11-12 | /best/hydroponic-systems-for-beginners/ | Full rebuild (Kratky-first, 2 diagrams, 10 sources); before: 6 impressions, position 46.5 | 2026-11-26, 2026-12-10 |
 | 2026-11-09 | /crops/hydroponic-basil/ | New guide (hydroponic basil 880 / 11) | 2026-11-23, 2026-12-07 |
 | 2026-11-09 | /best/hydroponic-system-for-home-growers/ | Strengthening pass: crop-by-crop answer first, trial yields in the "most effective" FAQ, equipment table by system, kit and equipment FAQs, 2 new inbound links; before: 32 impressions, position 15.5 (Nov 1–7) | 2026-11-23, 2026-12-07 |
-| 2026-11-08 | /systems/indoor-hydroponic-systems-for-home/ | Full rebuild (#42, 6 types compared); before: 4 impressions, position 82.8 (Nov 1–6) | 2026-11-22, 2026-12-06 |
+| 2026-11-08 | /systems/indoor-hydroponic-systems-for-home/ | Full rebuild (#42, 6 types compared); before: 4 impressions, position 82.8 (Nov 1–6) | 2026-11-22: 4 → 24 impressions ▲, position 82.8 → 79.7 ▲ (Nov 1–6 → Nov 1–20); 2026-12-06 |
 | 2026-11-07 | /systems/deep-water-culture-hydroponics/ | Full rebuild (#35); before: 17 impressions, position 60.9 (Nov 1–6) | 2026-11-21: 17 → 54 impressions ▲, position 60.9 → 58.3 ▲ (Nov 1–6 → Nov 1–19); "dwc system" at 27.6 (8 impressions); 2026-12-05 |
 | 2026-11-07 | /systems/hydroponic-tower-garden/ | New guide (hydroponic tower 6,600 / 33) | 2026-11-21: 0 → 12 impressions ▲ (new page), position 28.3 (Nov 1–19); queries "hydroponic tower how it works" 46.0 and "how does a hydroponic tower work" 74.0 (1 impression each); 2026-12-05 |
 | 2026-11-05 | /crops/hydroponic-lettuce-seeds/ | Full rebuild | 2026-11-19: no impressions before (Nov 1–3) or after (Nov 1–17) ▬; 2026-12-03 |
