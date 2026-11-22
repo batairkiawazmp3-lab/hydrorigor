@@ -133,6 +133,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-water-pumps': 'diy-pvc-nft-frame',
   // Long white roots lifted from aerated water: the root health a DWC air pump protects; no air pump or air stone photo in the registry yet.
   'air-pump-for-dwc-hydroponics': 'dwc-net-pot-roots',
+  // Lettuce in mesh net pots filled with expanded clay pebbles: one of the media the page compares; no rockwool or coir photo in the registry yet.
+  'hydroponic-growing-media': 'lettuce-net-pots-clay',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

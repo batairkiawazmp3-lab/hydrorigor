@@ -1125,6 +1125,33 @@ export const m06EditorialSources = [
     sourceType: 'industry-technical',
     locator: 'Read 2026-11-21 (slide deck, no page numbers). Aeration sizing: CFM measures the volume of air flow; PSI is the pressure needed to deliver it; "Simple rule of thumb has 1 cfm per 300 Gallons" (fish tanks; other methods per pound of fish or per diffuser type, not detailed). Keeping Fish Healthy: battery-based aerators are available for power outages. More Handy Tips: make sure you have backup power for pumps and aerators. No DO figure; not a university study',
   },
+  {
+    id: 'okstate-soilless-growing-mediums',
+    title: 'Soilless Growing Mediums',
+    publisher: 'Oklahoma State University Extension (D. Thakulla, B. Dunn, B. Hu)',
+    url: 'https://extension.okstate.edu/fact-sheets/soilless-growing-mediums.html',
+    accessedDate: '2026-11-22',
+    sourceType: 'university-extension',
+    locator: 'Fact sheet (no number or date shown; read 2026-11-22). Characteristics: some media reused after pasteurizing at 180 °F for 30 minutes, or a 10% bleach soak for 20 minutes then several tap-water rinses; neutral pH and good CEC ideal. Table 1 (cost, lifespan, pH): mineral wool medium, renewable, basic; coconut fiber low/medium, short, neutral; expanded clay high, reusable, neutral; perlite low, reusable, neutral; vermiculite medium, reusable, basic; oasis cubes low, short, neutral; sand low, reusable, neutral; peat medium, short, acidic; pine bark low, short, acidic; gravel low, reusable, basic. Mineral wool: 18% to 25% air; initial pH 7.0 to 8.0, adjust to 5.5 to 6.0 or condition with a low-pH soak; steam sterilize slabs between crops, does not break down for three to four years; seed starting, cuttings and large crops such as tomatoes. Coconut coir: compressed bricks expand up to six times when soaked; slightly acidic in the text; rich in sodium and chlorine, wash and add calcium and magnesium. Expanded clay: pH about 7.0, poor water holding, drains and dries fast, reusable for many years after washing and sterilizing, floats for the first few months, suits ebb and flow and aquaponics, fairly expensive. Perlite: holds three to four times its weight of water, one of the best for oxygen, washes away in flood-and-flush systems, poor water retention alone in drip systems, dust is a respiratory hazard. Vermiculite: can waterlog alone, cannot be steam sterilized. Oasis cubes: no pre-soaking, can clog pump filters. Peat: pH 3.8 to 4.5, holds up to 10 times its dry weight. Expanded shale: holds up to 40% of its weight in water. Sand: very low water and nutrient holding, flush salts periodically',
+  },
+  {
+    id: 'ifas-common-hydroponic-media-ep623',
+    title: 'Common Media Used in Hydroponics (EP623)',
+    publisher: 'UF/IFAS Extension (M. G. Pinkerton, B. Whitman, H. Eason, C. Gómez)',
+    url: 'https://ask.ifas.ufl.edu/publication/EP623',
+    accessedDate: '2026-11-22',
+    sourceType: 'university-extension',
+    locator: 'Read 2026-11-22 (no date in text). Properties of Media: most plants need solution pH around 5.5–7. Commonly Used Media: coco coir pH 5.5–6.8, wash or rinse before use, neither fine nor chunky coir should be used in recirculating systems; composted pine bark pH about 6–7; rockwool pH 7–8.5, soaking to lower pH may be required, not reusable and not biodegradable; foam cubes not ideal for slow-growing crops; perlite neutral, no CEC, sterile, wear a mask for dust; sand 0.6–2.5 mm; gravel and pebbles 5–15 mm, common in ebb-and-flow and aquaponics, avoid calcareous gravel; expanded clay 1–18 mm, very expensive, mostly used by hobbyists; vermiculite pH 7–7.5; recirculating systems must avoid fine or loose particle media. Media Reuse: sand, gravel and pebbles, pumice and expanded clay can be reused after steam (above 180 °F) or chemical sterilization. Table 1 (CEC, pH, water-holding, aeration, reusable): coco coir moderate, slightly acidic, high, good, N; expanded clay high, neutral, low, good, Y; foam cubes none, neutral, high, good, N; perlite none, neutral, moderate, good, Y; rockwool none, slightly basic, high, good to fair, N; vermiculite low, basic, moderate, good, Y; peat moderate, slightly acidic, moderate, good, N; gravel low, variable, low, good, Y',
+  },
+  {
+    id: 'uky-selecting-growing-media-ccd-ta-02',
+    title: 'Selecting Growing Media for Soilless Systems (CCD-TA-02)',
+    publisher: 'University of Kentucky Center for Crop Diversification (C. Byrd, A. Sharma, Q. Ying), April 2025',
+    url: 'https://ccd.uky.edu/sites/default/files/2025-06/ccd-er-02_selecting-growing-media-for-soilless-systems.pdf',
+    accessedDate: '2026-11-22',
+    sourceType: 'university-extension',
+    locator: 'Educator resource (read 2026-11-22). p. 1: optimal pH generally 5.5 to 6.5 for hydroponic production; EC in mS/cm; water-holding capacity defined as field capacity minus permanent wilting point. Component table pp. 2–3: coco coir renewable, good water retention, aeration and CEC, may need buffering to remove excess salts, can break down and shrink; perlite good aeration, pH neutral, non-decomposing, limited water holding, floats, dust; rockwool high water holding and aeration, sterile and uniform, not biodegradable, needs precise fertigation, high cost, skin irritation; vermiculite high water retention and CEC, compacts over time; peat non-renewable, hydrophobic when dry; bark nitrogen tie-up. No numeric media properties',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

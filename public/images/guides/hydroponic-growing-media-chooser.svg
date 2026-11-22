@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 950" width="640" height="950" role="img" aria-labelledby="t d">
+  <title id="t">Choosing a hydroponic growing medium in four questions</title>
+  <desc id="d">Question 1: does the solution recirculate? Then keep out fine, loose media and use plugs or clay pebbles. Question 2: starting seeds? Use rockwool, foam, or peat or coir plugs. Question 3: drip buckets or bags? Use perlite, coco coir or a mix. Question 4: want to reuse the medium? Clay, gravel and perlite can be reused after sterilizing.</desc>
+  <rect width="640" height="950" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Choose a medium</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Four questions</text>
+    <rect x="20" y="110" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="195" r="36" fill="#1F6E8C"/>
+    <text x="80" y="207" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">1</text>
+    <text x="140" y="182" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Does it recirculate?</text>
+    <text x="140" y="224" font-size="21" fill="#3F5248">No fine, loose media: plugs or clay</text>
+    <path d="M80 286 L80 314" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 306 L80 318 L90 306" fill="none" stroke="#2E8B63" stroke-width="4"/>
+    <rect x="20" y="320" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="405" r="36" fill="#1F6E8C"/>
+    <text x="80" y="417" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">2</text>
+    <text x="140" y="392" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Starting seeds?</text>
+    <text x="140" y="434" font-size="21" fill="#3F5248">Rockwool, foam, peat or coir plugs</text>
+    <path d="M80 496 L80 524" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 516 L80 528 L90 516" fill="none" stroke="#2E8B63" stroke-width="4"/>
+    <rect x="20" y="530" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="615" r="36" fill="#1F6E8C"/>
+    <text x="80" y="627" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">3</text>
+    <text x="140" y="602" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Drip buckets or bags?</text>
+    <text x="140" y="644" font-size="21" fill="#3F5248">Perlite, coir or a mix</text>
+    <path d="M80 706 L80 734" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 726 L80 738 L90 726" fill="none" stroke="#2E8B63" stroke-width="4"/>
+    <rect x="20" y="740" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="825" r="36" fill="#1F6E8C"/>
+    <text x="80" y="837" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">4</text>
+    <text x="140" y="812" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Want to reuse it?</text>
+    <text x="140" y="854" font-size="21" fill="#3F5248">Clay, gravel, perlite: sterilize</text>
+  </g>
+</svg>
