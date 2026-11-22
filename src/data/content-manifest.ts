@@ -209,6 +209,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['vt-system-crop-comparisons', 'sdsu-small-scale-hydroponics-p00337', 'osu-hydro-hints-dwc', 'uky-hydroponic-lettuce', 'ifas-lettuce-small-systems', 'ohio-state-root-zone-leafy-greens-2019', 'uga-dissolved-oxygen-kale-arugula-2025', 'ifas-do-fish-production-fa27', 'ifas-volusia-dwc-bucket', 'illinois-hydroponics-at-home', 'mu-hydroponic-farming', 'tamu-aquaponics-presentation-sawyer', 'umaine-farm-electrical-safety-2311', 'ifas-kratky-set-and-forget'],
     toolLinks: ['/tools/ph-ec-targets/'],
   },
+  {
+    id: 38,
+    collection: 'articles',
+    category: 'equipment',
+    title: 'Hydroponic Growing Media: Rockwool, Coir, Clay & Perlite',
+    route: 'hydroponic-growing-media',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic growing media',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['okstate-soilless-growing-mediums', 'ifas-common-hydroponic-media-ep623', 'uky-selecting-growing-media-ccd-ta-02', 'ifas-water-nutrient-management-hs1274', 'ifas-greenhouse-irrigation-cv264', 'illinois-hydroponics-handouts', 'vt-nft-systems', 'osu-hydro-hints-ebb-flow', 'osu-hydro-hints-buckets', 'ifas-hydroponic-methods-part2-2025', 'ifas-perlite-tomato-cucumber-hs169', 'yang-dutch-bucket-cucumber-substrates-2022', 'wortman-vertical-strawberry-2016'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

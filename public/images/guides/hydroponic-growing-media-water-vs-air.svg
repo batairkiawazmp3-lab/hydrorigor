@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1046" width="640" height="1046" role="img" aria-labelledby="t d">
+  <title id="t">Water holding and reuse of six hydroponic media</title>
+  <desc id="d">Water holding rated high, moderate or low, with reuse. Coco coir: high, not reusable. Rockwool: high, 18 to 25 percent air, single use per UF/IFAS. Vermiculite: moderate to high, can waterlog alone. Perlite: moderate, holds 3 to 4 times its weight in water, reusable after sterilizing. Expanded clay: low, drains fast, reusable. Gravel: low, reusable. Ratings from UF/IFAS EP623, Oklahoma State and Kentucky; bars show the rating, not a measurement.</desc>
+  <rect width="640" height="1046" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Water held, by medium</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Low · moderate · high (source ratings)</text>
+    <rect x="20" y="110" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="148" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Coco coir</text>
+    <rect x="40" y="166" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="166" width="560" height="26" rx="13" fill="#C9A23F"/>
+    <text x="40" y="224" font-size="21" fill="#3F5248">High water · not reusable</text>
+    <rect x="20" y="256" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="294" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Rockwool</text>
+    <rect x="40" y="312" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="312" width="560" height="26" rx="13" fill="#1F6E8C"/>
+    <text x="40" y="370" font-size="21" fill="#3F5248">High · 18–25% air · single use</text>
+    <rect x="20" y="402" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="440" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Vermiculite</text>
+    <rect x="40" y="458" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="458" width="466" height="26" rx="13" fill="#C9A23F"/>
+    <text x="40" y="516" font-size="21" fill="#3F5248">Moderate–high · can waterlog</text>
+    <rect x="20" y="548" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="586" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Perlite</text>
+    <rect x="40" y="604" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="604" width="373" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="662" font-size="21" fill="#3F5248">Holds 3–4× its weight · reusable</text>
+    <rect x="20" y="694" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="732" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Expanded clay</text>
+    <rect x="40" y="750" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="750" width="186" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="808" font-size="21" fill="#3F5248">Low · drains fast · reusable</text>
+    <rect x="20" y="840" width="600" height="130" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="878" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0E1A14">Gravel</text>
+    <rect x="40" y="896" width="560" height="26" rx="13" fill="#E6ECE4"/>
+    <rect x="40" y="896" width="186" height="26" rx="13" fill="#2E8B63"/>
+    <text x="40" y="954" font-size="21" fill="#3F5248">Low · reusable</text>
+    <text x="20" y="1022" font-size="20" fill="#3F5248">UF/IFAS EP623; Oklahoma State</text>
+  </g>
+</svg>
