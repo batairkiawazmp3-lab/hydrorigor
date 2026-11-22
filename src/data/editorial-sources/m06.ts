@@ -70,7 +70,7 @@ export const m06EditorialSources = [
     url: 'https://ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-466/spes-466.html',
     accessedDate: '2026-11-06',
     sourceType: 'university-extension',
-    locator: 'SPES-466NP (Sperry et al., July 2023); crop/system fit and trial limitations; DWC dissolved oxygen 7–10 ppm, minimum 4 ppm; Dutch bucket drip stakes at 0.5 gph; flood and drain once a day for 12 minutes; Tables 3–5 yields (greens and herbs best in NFT and DWC; tomatoes and peppers best in media bags, lowest in NFT); DLI at least 17 mol/day for greens and herbs',
+    locator: 'SPES-466NP (Sperry et al., July 2023); crop/system fit and trial limitations; DWC dissolved oxygen 7–10 ppm, minimum 4 ppm; Dutch bucket drip stakes at 0.5 gph; flood and drain once a day for 12 minutes; Tables 3–5 yields (greens and herbs best in NFT and DWC; tomatoes and peppers best in media bags, lowest in NFT); DLI at least 17 mol/day for greens and herbs; trials ran during COVID-19 restrictions and the tomato/pepper harvest was cut short (re-read 2026-11-22)',
   },
   {
     id: 'vt-nft-systems',

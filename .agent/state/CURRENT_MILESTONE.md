@@ -101,7 +101,7 @@ impressions in 28 days).
 Moved to the top on 2026-11-22 by the daily Search Console check (rule: position 8–20 with 30+
 impressions in 28 days).
 
-23. [ ] `/best/hydroponic-system-for-home-growers/` — second strengthening pass (rebuilt 2026-11-06, #30;
+23. [x] `/best/hydroponic-system-for-home-growers/` — second strengthening pass done 2026-11-22 (answer leads with yield by crop, "what most effective means" section with Missouri water/fertilizer and plant-loss ranking, trial-yield bar chart, links to 12 system and equipment guides, US/metric units, tightened to about 2,450 words). Was: second strengthening pass (rebuilt 2026-11-06, #30;
         first pass 2026-11-09): clearer direct answer, intent match for the queries it shows for
         ("most effective hydroponic system" position 14.0), more internal links. Search Console
         (Nov 1–20, checked 2026-11-22): 37 impressions, position 19.8, 0 clicks; previous check
