@@ -138,6 +138,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   // A grower lifts a net pot to show the roots that grew through its slots into the water: the part the page is about.
   'hydroponic-net-pots': 'dwc-net-pot-roots',
   // Seedlings held with their roots and growing plugs exposed: the starter-plug role rockwool and coir share; no rockwool cube or coir brick photo in the registry yet.
+  // Lettuce in net pots of expanded clay pebbles: the medium this page covers.
+  'leca-hydroponics': 'lettuce-net-pots-clay',
   'rockwool-vs-coco-coir': 'seedlings-roots-hand',
 };
 

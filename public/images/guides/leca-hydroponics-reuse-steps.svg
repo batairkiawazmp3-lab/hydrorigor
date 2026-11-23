@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Cleaning LECA for reuse in four steps</title>
+  <desc id="d">Step 1: pull out old roots and plant debris. Step 2: wash the pebbles. Step 3: sterilize at 180 degrees Fahrenheit (82 Celsius) for 30 minutes, or soak in 10 percent bleach for 20 minutes. Step 4: rinse several times in tap water before replanting.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Reuse LECA</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Four steps between crops</text>
+
+    <rect x="20" y="110" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="195" r="36" fill="#1F6E8C"/>
+    <text x="80" y="207" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">1</text>
+    <text x="140" y="182" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Remove old roots</text>
+    <text x="140" y="224" font-size="21" fill="#3F5248">Pick out plant debris</text>
+    <path d="M80 286 L80 314" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 306 L80 318 L90 306" fill="none" stroke="#2E8B63" stroke-width="4"/>
+
+    <rect x="20" y="320" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="405" r="36" fill="#1F6E8C"/>
+    <text x="80" y="417" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">2</text>
+    <text x="140" y="392" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Wash</text>
+    <text x="140" y="434" font-size="21" fill="#3F5248">Rinse off grit and residue</text>
+    <path d="M80 496 L80 524" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 516 L80 528 L90 516" fill="none" stroke="#2E8B63" stroke-width="4"/>
+
+    <rect x="20" y="530" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="615" r="36" fill="#1F6E8C"/>
+    <text x="80" y="627" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">3</text>
+    <text x="140" y="596" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Sterilize</text>
+    <text x="140" y="636" font-size="21" fill="#3F5248">180 °F (82 °C), 30 minutes</text>
+    <text x="140" y="672" font-size="21" fill="#3F5248">or 10% bleach, 20 minutes</text>
+    <path d="M80 706 L80 734" stroke="#2E8B63" stroke-width="4"/>
+    <path d="M70 726 L80 738 L90 726" fill="none" stroke="#2E8B63" stroke-width="4"/>
+
+    <rect x="20" y="740" width="600" height="140" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <circle cx="80" cy="810" r="36" fill="#1F6E8C"/>
+    <text x="80" y="822" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">4</text>
+    <text x="140" y="800" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Rinse several times</text>
+    <text x="140" y="840" font-size="21" fill="#3F5248">Tap water, then replant</text>
+  </g>
+</svg>
