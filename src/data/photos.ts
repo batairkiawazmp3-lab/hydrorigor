@@ -137,6 +137,7 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-growing-media': 'lettuce-net-pots-clay',
   // A grower lifts a net pot to show the roots that grew through its slots into the water: the part the page is about.
   'hydroponic-net-pots': 'dwc-net-pot-roots',
+  'rockwool-vs-coco-coir': 'seedlings-roots-hand',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

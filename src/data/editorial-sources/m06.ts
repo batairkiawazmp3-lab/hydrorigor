@@ -1188,6 +1188,33 @@ export const m06EditorialSources = [
     sourceType: 'university-extension',
     locator: 'Read 2026-11-22. Supplies: unscented household bleach, 5–9% sodium hypochlorite, not splashless. Preparation: one part bleach to 9 parts water (1/2 gallon of bleach plus 4 1/2 gallons of water in a 5-gallon bucket, or 1 3/4 cups of bleach plus 1 gallon of water); use the bleach solution within 24 hours. Cleaning: wash pots in soapy water and rinse; soak in the bleach solution for at least 10 minutes; scour off mineral deposits; store clean pots off the ground. Not specific to net pots or hydroponics',
   },
+  {
+    id: 'xiong-coir-rockwool-peat-tomato-2017',
+    title: 'Comparison of Coconut Coir, Rockwool, and Peat Cultivations for Tomato Production: Nutrient Balance, Plant Growth and Fruit Quality',
+    publisher: 'J. Xiong, Y. Tian, J. Wang, W. Liu, Q. Chen (China Agricultural University; Beijing Academy of Agriculture and Forestry Sciences); Frontiers in Plant Science 8:1327 (2017)',
+    url: 'https://doi.org/10.3389/fpls.2017.01327',
+    accessedDate: '2026-11-23',
+    sourceType: 'university-research',
+    locator: 'Full-text PDF from frontiersin.org (read 2026-11-23; supplementary tables not read). Methods: climate-controlled greenhouse, Beijing, 11 Oct 2014 to 26 May 2015, average 14.0–23.0 °C; tomato Lucius F1; slabs 100 x 20 x 7.5 cm, 30 cm plant spacing, 2.4 plants/m2; rockwool (Grodan), coir (Jiffy), peat-vermiculite 2:1; closed system, drip 1.5 L/h, one dripper per plant, drainage 20–50% per irrigation; solution EC 2.3 dS/m, tank discarded every 2 months. Table 1 (RC / CC / PVC): EC 0.06 / 0.10 / 1.10 dS/m; pH 6.5 / 6.1 / 7.1; K 178 / 1560 / 246 mg/kg; Ca 279 / 58 / 1668; Mg 216 / 55 / 636; porosity 89.2 / 85.6 / 66.0%; water porosity 84.1 / 80.0 / 64.0%; air porosity 5.1 / 5.6 / 2.0%; bulk density 0.08 / 0.2 / 0.4 g/cm3. Table 3: total yield 67.5 (c) / 84.9 (a) / 76.9 (b) t/ha; fruit weight 66.8 / 74.0 / 75.1 g; blossom-end rot 21.2 (a) / 19.5 (ab) / 16.9 (b)%. Table 2 uncredited nutrient (g/m2): N 42.5 / 29.6 / 34.6; K 49.6 / 26.5 / 41.9. Results: fruit quality differences generally not obvious; photosynthesis and biomass higher in CC than RC. Conclusion: coir "could be widely used in tomato production"; BER still a challenge in coir',
+  },
+  {
+    id: 'he-rockwool-coir-cucumber-2022',
+    title: 'Comparison of rockwool and coir for greenhouse cucumber production: chemical element, plant growth, and fruit quality',
+    publisher: 'L. He, X. Ding, H. Jin, H. Zhang, J. Cui, J. Chu, R. Li, Q. Zhou, J. Yu (Shanghai Academy of Agricultural Sciences and others); Heliyon 8(10):e10930 (2022)',
+    url: 'https://doi.org/10.1016/j.heliyon.2022.e10930',
+    accessedDate: '2026-11-23',
+    sourceType: 'university-research',
+    locator: 'PMC9573875 full text (read 2026-11-23). Sec. 2.1: cucumber Deltastar, greenhouse in Shanghai, autumn 2020; rockwool slab (Grodan) vs coir slab of 50% 0–6 mm and 50% 10–20 mm coir. Sec. 3.1 and Fig. 2D: coir yield per plant significantly higher (7.7% higher); LAI significantly higher; plant height about 3.9–4.1% higher; no difference in gas exchange. Table 1 leaf (rockwool vs coir, g/kg DW): Ca 40.40 vs 54.67; Mg 6.80 vs 9.43; S 8.20 vs 10.53. Abstract: substrate P, K, Ca, Mg, Cl, Zn and B higher in coir; drainage Fe, Cu and Mn lower; coir a potential replacement for rockwool to improve sustainability. No water use, pH or EC results reported',
+  },
+  {
+    id: 'ua-strawberry-substrates',
+    title: 'Hydroponic Strawberry Substrates',
+    publisher: 'University of Arizona CEAC Hydroponic Strawberry Information Website (updated August 8, 2013)',
+    url: 'https://cales.arizona.edu/strawberry/Hydroponic_Strawberry_Information_Website/Substrates.html',
+    accessedDate: '2026-11-23',
+    sourceType: 'university-research',
+    locator: 'Substrate basics (read 2026-11-23): strawberry needs high root-zone oxygen and high porosity; 2008 small trial of granulated rockwool, 100% coconut coir, 50% coco + 50% perlite, 70% coco + 30% perlite: growth and yield restricted in 100% coir, greater in rockwool and the highest-perlite mix; bio-based substrates vary by source, so test a small amount first; current mix 50% perlite, 25% coir, 25% peat (peat for pH, high-pH source water); substrate pH 5.5–6.0 to keep root zone about 6.0–6.5; root-zone EC not above 1.0 dS/m; under 500 mL water per plant per day; 2 or more liters of substrate per plant; taller containers drain better. No yield figures',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

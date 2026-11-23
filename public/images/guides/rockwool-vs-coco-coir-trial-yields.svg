@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 860" width="640" height="860" role="img" aria-labelledby="t d">
+  <title id="t">Rockwool versus coco coir in two slab trials</title>
+  <desc id="d">Tomato, Xiong and others 2017: rockwool slabs yielded 67.5 tonnes per hectare and coco coir slabs 84.9, about 26 percent more. Cucumber, He and others 2022: coir slabs yielded 7.7 percent more per plant than rockwool. Strawberry, University of Arizona 2008: growth and yield were restricted in 100 percent coir and greater in rockwool and high-perlite mixes.</desc>
+  <rect width="640" height="860" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Rockwool vs coir in trials</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Fruit yield, same nutrient solution</text>
+
+    <rect x="20" y="110" width="600" height="250" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="150" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Tomato (Xiong 2017)</text>
+    <text x="40" y="182" font-size="20" fill="#3F5248">Tonnes per hectare</text>
+    <text x="40" y="232" font-size="21" fill="#0E1A14">Rockwool</text>
+    <rect x="170" y="208" width="318" height="36" rx="6" fill="#8A9A91"/>
+    <text x="500" y="234" font-size="22" font-weight="700" fill="#0E1A14">67.5</text>
+    <text x="40" y="302" font-size="21" fill="#0E1A14">Coco coir</text>
+    <rect x="170" y="278" width="400" height="36" rx="6" fill="#2E8B63"/>
+    <text x="180" y="304" font-size="22" font-weight="700" fill="#FFFFFF">84.9</text>
+    <text x="40" y="344" font-size="20" fill="#3F5248">About 26% more in coir</text>
+
+    <rect x="20" y="380" width="600" height="220" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="420" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Cucumber (He 2022)</text>
+    <text x="40" y="452" font-size="20" fill="#3F5248">Yield per plant, rockwool = 100</text>
+    <text x="40" y="502" font-size="21" fill="#0E1A14">Rockwool</text>
+    <rect x="170" y="478" width="371" height="36" rx="6" fill="#8A9A91"/>
+    <text x="552" y="504" font-size="22" font-weight="700" fill="#0E1A14">100</text>
+    <text x="40" y="568" font-size="21" fill="#0E1A14">Coco coir</text>
+    <rect x="170" y="544" width="400" height="36" rx="6" fill="#2E8B63"/>
+    <text x="180" y="570" font-size="22" font-weight="700" fill="#FFFFFF">107.7</text>
+
+    <rect x="20" y="620" width="600" height="210" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="660" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0E1A14">Strawberry (Arizona 2008)</text>
+    <text x="40" y="700" font-size="21" fill="#0E1A14">100% coir: growth restricted</text>
+    <text x="40" y="740" font-size="21" fill="#0E1A14">Rockwool, high-perlite mix: better</text>
+    <text x="40" y="790" font-size="20" fill="#3F5248">Small trial; no yield figures given</text>
+  </g>
+</svg>

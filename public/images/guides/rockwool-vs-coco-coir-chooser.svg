@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Rockwool or coco coir: which to use for each job</title>
+  <desc id="d">Starting seeds for deep water culture, Kratky or NFT: rockwool cubes, soaked at pH 5.5 to 6.0. Drip buckets, bags or slabs for tomatoes and cucumbers: coco coir, rinsed or buffered, watered more often in small amounts. Strawberries or any crop that needs air at the roots: coir mixed with perlite, not 100 percent coir. Recirculating systems: no loose coir, only plugs. Neither medium is reused at home.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Rockwool or coir?</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Pick by the job</text>
+
+    <rect x="20" y="110" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="110" width="14" height="170" rx="7" fill="#1F6E8C"/>
+    <text x="56" y="152" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Seeds for DWC, Kratky, NFT</text>
+    <text x="56" y="196" font-size="23" font-weight="700" fill="#1F6E8C">Rockwool cubes</text>
+    <text x="56" y="236" font-size="20" fill="#3F5248">Soak at pH 5.5–6.0 first</text>
+
+    <rect x="20" y="300" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="300" width="14" height="170" rx="7" fill="#2E8B63"/>
+    <text x="56" y="342" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Tomato, cucumber in bags</text>
+    <text x="56" y="386" font-size="23" font-weight="700" fill="#2E8B63">Coco coir slabs or bags</text>
+    <text x="56" y="426" font-size="20" fill="#3F5248">Rinse or buffer; water often</text>
+
+    <rect x="20" y="490" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="490" width="14" height="170" rx="7" fill="#B7791F"/>
+    <text x="56" y="532" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Strawberries, towers</text>
+    <text x="56" y="576" font-size="23" font-weight="700" fill="#B7791F">Coir mixed with perlite</text>
+    <text x="56" y="616" font-size="20" fill="#3F5248">Not 100% coir</text>
+
+    <rect x="20" y="680" width="600" height="190" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="680" width="14" height="190" rx="7" fill="#8A9A91"/>
+    <text x="56" y="722" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Recirculating systems</text>
+    <text x="56" y="766" font-size="23" font-weight="700" fill="#0E1A14">Plugs only, no loose coir</text>
+    <text x="56" y="806" font-size="20" fill="#3F5248">Neither medium is reused</text>
+    <text x="56" y="840" font-size="20" fill="#3F5248">at home</text>
+  </g>
+</svg>
