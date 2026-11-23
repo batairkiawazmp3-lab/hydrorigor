@@ -245,6 +245,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['xiong-coir-rockwool-peat-tomato-2017', 'he-rockwool-coir-cucumber-heliyon-2022', 'arizona-ceac-strawberry-substrates', 'okstate-soilless-growing-mediums', 'ifas-common-hydroponic-media-ep623', 'uky-selecting-growing-media-ccd-ta-02', 'ifas-water-nutrient-management-hs1274', 'illinois-hydroponics-handouts', 'vt-nft-systems', 'aafc-rockwool-tomato-irrigation-2008'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 40,
+    collection: 'articles',
+    category: 'equipment',
+    title: 'LECA for Hydroponics: pH, Best Systems, Rinsing & Reuse',
+    route: 'leca-hydroponics',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic leca',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['okstate-soilless-growing-mediums', 'ifas-common-hydroponic-media-ep623', 'illinois-hydroponics-handouts', 'slezak-vegetables-expanded-clay-2011', 'pickens-leca-thesis-2008', 'osu-hydro-hints-ebb-flow', 'osu-hydro-hints-buckets', 'umass-subirrigation-systems', 'vt-nft-systems', 'uky-selecting-growing-media-ccd-ta-02'],
+    toolLinks: ['/tools/ph-ec-targets/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

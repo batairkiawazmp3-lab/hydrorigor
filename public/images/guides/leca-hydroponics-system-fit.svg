@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Where LECA works in hydroponics</title>
+  <desc id="d">Good fit: ebb and flow trays, Dutch buckets and aquaponics media beds, because expanded clay drains fast, rarely clogs and is reusable. Possible: around a plug in a net pot for DWC or Kratky, though no source tested it. Poor fit: seed starting, where Virginia Tech lists rockwool, foam or peat and coir cubes instead, and NFT channels, where UF/IFAS says to avoid loose media in recirculating systems. Drawbacks: holds little water, floats for the first few months and costs more than most media.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Where LECA fits</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Expanded clay by system</text>
+
+    <rect x="20" y="110" width="600" height="250" rx="16" fill="#FFFFFF" stroke="#2E8B63" stroke-width="3"/>
+    <text x="44" y="152" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#2E8B63">Good fit</text>
+    <circle cx="56" cy="196" r="8" fill="#2E8B63"/>
+    <text x="78" y="204" font-size="22" fill="#0E1A14">Ebb and flow trays</text>
+    <circle cx="56" cy="246" r="8" fill="#2E8B63"/>
+    <text x="78" y="254" font-size="22" fill="#0E1A14">Dutch buckets</text>
+    <circle cx="56" cy="296" r="8" fill="#2E8B63"/>
+    <text x="78" y="304" font-size="22" fill="#0E1A14">Aquaponics media beds</text>
+    <text x="44" y="342" font-size="20" fill="#3F5248">Drains fast, rarely clogs</text>
+
+    <rect x="20" y="380" width="600" height="170" rx="16" fill="#FFFFFF" stroke="#B7791F" stroke-width="3"/>
+    <text x="44" y="422" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#B7791F">Possible</text>
+    <text x="44" y="468" font-size="22" fill="#0E1A14">Around a plug in a net pot</text>
+    <text x="44" y="508" font-size="20" fill="#3F5248">DWC, Kratky: not tested</text>
+
+    <rect x="20" y="570" width="600" height="300" rx="16" fill="#FFFFFF" stroke="#B4483C" stroke-width="3"/>
+    <text x="44" y="612" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#B4483C">Poor fit</text>
+    <text x="44" y="656" font-size="22" fill="#0E1A14">Seed starting</text>
+    <text x="44" y="698" font-size="22" fill="#0E1A14">NFT channels</text>
+    <text x="44" y="752" font-size="20" fill="#3F5248">Watch for: low water holding,</text>
+    <text x="44" y="786" font-size="20" fill="#3F5248">floats for months,</text>
+    <text x="44" y="820" font-size="20" fill="#3F5248">roots bind in buckets, cost</text>
+  </g>
+</svg>

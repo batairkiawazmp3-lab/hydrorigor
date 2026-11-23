@@ -120,7 +120,8 @@ impressions in 28 days).
         ~~ID 38 `/equipment/hydroponic-growing-media/`~~ (published 2026-11-22, "Hydroponic Growing Media: Rockwool, Coir, Clay & Perlite"; taken out of order by an owner-started run so it would not clash with the morning run on ID 37).
         ~~ID 37 `/equipment/hydroponic-net-pots/`~~ (published 2026-11-22, "Hydroponic Net Pots: Sizes, Hole Saws, Depth & Reuse").
         ~~ID 39 `/equipment/rockwool-vs-coco-coir/`~~ (published 2026-11-23, "Rockwool vs Coco Coir: pH, Water, Yield & Which to Use").
-        Next: ID 40.
+        ~~ID 40 `/equipment/leca-hydroponics/`~~ (published 2026-11-23, "LECA for Hydroponics: pH, Best Systems, Rinsing & Reuse"; shipped by a run whose ID 39 draft was overtaken by #117).
+        Next: ID 42 (ID 41, basil, was published 2026-11-09).
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the
