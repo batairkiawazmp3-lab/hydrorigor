@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Rockwool and coco coir compared</title>
+  <desc id="d">Rockwool: start pH 7 to 8.5, soak at 5.5 to 6.0; total porosity 89.2 percent; air porosity 5.1 percent; not reusable per UF/IFAS; not biodegradable. Coco coir: pH 5.5 to 6.8, rinse or buffer; total porosity 85.6 percent; air porosity 5.6 percent; not reusable; renewable.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Rockwool vs coco coir</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">Key properties side by side</text>
+    <rect x="20" y="110" width="290" height="760" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="330" y="110" width="290" height="760" rx="16" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="110" width="290" height="70" rx="16" fill="#1F6E8C"/>
+    <rect x="330" y="110" width="290" height="70" rx="16" fill="#8A5A2B"/>
+    <text x="165" y="155" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF">Rockwool</text>
+    <text x="475" y="155" text-anchor="middle" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF">Coco coir</text>
+    <text x="40" y="230" font-size="20" fill="#3F5248">Start pH</text>
+    <text x="40" y="268" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">7–8.5</text>
+    <text x="40" y="300" font-size="20" fill="#3F5248">Soak at 5.5–6.0</text>
+    <text x="350" y="230" font-size="20" fill="#3F5248">pH</text>
+    <text x="350" y="268" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">5.5–6.8</text>
+    <text x="350" y="300" font-size="20" fill="#3F5248">Rinse or buffer</text>
+    <text x="40" y="380" font-size="20" fill="#3F5248">Total porosity</text>
+    <text x="40" y="418" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">89.2%</text>
+    <text x="350" y="380" font-size="20" fill="#3F5248">Total porosity</text>
+    <text x="350" y="418" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">85.6%</text>
+    <text x="40" y="500" font-size="20" fill="#3F5248">Air porosity</text>
+    <text x="40" y="538" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">5.1%</text>
+    <text x="350" y="500" font-size="20" fill="#3F5248">Air porosity</text>
+    <text x="350" y="538" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">5.6%</text>
+    <text x="40" y="620" font-size="20" fill="#3F5248">Reuse</text>
+    <text x="40" y="656" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0E1A14">No (UF/IFAS)</text>
+    <text x="350" y="620" font-size="20" fill="#3F5248">Reuse</text>
+    <text x="350" y="656" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0E1A14">No</text>
+    <text x="40" y="740" font-size="20" fill="#3F5248">Disposal</text>
+    <text x="40" y="776" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Not biodegradable</text>
+    <text x="350" y="740" font-size="20" fill="#3F5248">Disposal</text>
+    <text x="350" y="776" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E1A14">Renewable</text>
+    <text x="40" y="840" font-size="20" fill="#3F5248">Wear gloves</text>
+    <text x="350" y="840" font-size="20" fill="#3F5248">Salts: wash first</text>
+  </g>
+</svg>
