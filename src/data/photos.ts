@@ -143,6 +143,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'rockwool-vs-coco-coir': 'seedlings-roots-hand',
   // A young tomato plant, a close relative grown the same way (staked, fruiting, long season); no pepper photo in the registry yet.
   'hydroponic-peppers': 'young-tomato-plant',
+  // Vine crops trained up high wires: the same string-and-wire training this page describes; no cucumber photo in the registry yet.
+  'hydroponic-cucumbers': 'tomatoes-high-wire',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

@@ -1287,6 +1287,33 @@ export const m06EditorialSources = [
     sourceType: 'government',
     locator: 'Abstract and Introduction read verbatim 2026-11-23 (methods and results not verified, so no figures from them are used). Introduction: pepper is susceptible to photoperiod-related injury; pepper leaves are less affected by continuous lighting than tomato, but a reduction in pepper yield is still observed under continuous lighting (citing Demers et al. 1998); short internodes limit winter bell pepper under supplemental light. Control treatment 16 h light, 8 h dark',
   },
+  {
+    id: 'ifas-greenhouse-cucumber-cv268',
+    title: 'Greenhouse Cucumber Production (Florida Greenhouse Vegetable Production Handbook, Vol. 3)',
+    publisher: 'UF/IFAS Extension (R. C. Hochmuth)',
+    url: 'https://ask.ifas.ufl.edu/publication/CV268',
+    accessedDate: '2026-11-23',
+    sourceType: 'university-extension',
+    locator: 'CV268 HTML page read 2026-11-23 (no publication date printed). Introduction: grows best at 80–85 °F; no lower than 65 °F for sustained maximum production; avoid prolonged temperatures above 95 °F; standard European seedless fruit 12–14 in, about 1 lb. Selecting Cultivars: European seedless and mini (beit-alpha) types are parthenocarpic, grow gynoecious cultivars; minis especially susceptible to powdery mildew. Establishment: germination optimum 84 °F, then lowered to 77 °F; 2–3 days to germinate; overplant 10–15%; transplant at three or four true leaves. Nutrient Programs: solution pH between 5.5 and 6.0; high solution temperatures reduce dissolved oxygen in NFT; no EC given. Spacing and Training: 5–7 sq ft per plant in good sunlight, more in the northern US; vertical cordon single rows 4–5 ft apart with plants 12–18 in apart; double rows 18–24 in in the row; V-cordon plants about 12 in apart. Pruning: umbrella system, laterals removed until the main stem reaches the wire, growing point removed one or two leaves above the wire, two upper laterals trained down; fruit removed on the basal 24–30 in of the main stem; thin to one fruit per node except mini and beit-alpha types. Fruit Development: greatest growth days 6–14 after bloom opens; spring commercial size by about day 11. Harvesting: three or four times per week; 1–3 lb per plant per week at peak; 20–25 lb per plant over a normal 12-week harvest; minis 5–8 in. Diseases listed: gummy stem blight, gray mold, downy and powdery mildew, mosaic viruses, Pythium root rot in NFT. Storage about 55 °F, chilling injury below 50 °F. No days to first harvest, light intensity, container size or water use',
+  },
+  {
+    id: 'aces-greenhouse-cucumber-anr2926',
+    title: 'Greenhouse Cucumber Production (ANR-2926)',
+    publisher: 'Alabama Cooperative Extension System (C. Blanchard, J. Pickens, D. Wells, Auburn University), September 2022',
+    url: 'https://www.aces.edu/blog/topics/crop-production/greenhouse-cucumber-production/',
+    accessedDate: '2026-11-23',
+    sourceType: 'university-extension',
+    locator: 'ANR-2926 web version read 2026-11-23. Grow best at 80–85 °F; below 65 °F decreases growth and yield (the upper threshold number is missing on the page); humidity 60–70%, above 70% raises disease pressure. English and Beit Alpha types are parthenocarpic. Nutrition: EC 2.0–2.5 and pH 5.5–6.5; 150–200 ppm N solutions; seedlings half strength 50–100 ppm N; Table 1 by crop age N/K ppm: 0–14 days 60–80/50–70, flowering to harvest 100–120/140–160, after first harvest 120–140/160–180. Spacing: single-row vertical cordon 12–18 in, rows 4–5 ft; double row 18–24 in; V-cordon 12–16 in; density may be cut 25% or more in winter; southern trellis 6–8 ft. Containers: 3- or 5-gallon pots; 10–25% leachate. Light: at optimum light (DLI 30 or greater) about 10 days from fruit set to marketable fruit. Pruning: no flowers until the sixth or seventh true leaf; umbrella system with no fruit on the bottom 30 in; intact-growing-point methods raised yields 7–43% over umbrella-type methods across studies. Timing: harvest as little as 7 weeks from seeding; daily harvest to hold size. English fruit 12–14 in, 300–400 g; Beit Alpha 6–8 in, 80–120 g. Yield 20–25 lb per plant over a 12-week spring harvest. Problems: bitterness from overripe fruit left on the plant; misshapen or curled fruit from lack of water, low potassium, fruit caught on clips, or over-fruiting',
+  },
+  {
+    id: 'uaf-greenhouse-cucumbers-hga00434',
+    title: 'Growing Cucumbers in Greenhouses (HGA-00434)',
+    publisher: 'University of Alaska Fairbanks Cooperative Extension Service (M. Karlsson; originally W. Vandre), reviewed November 2024',
+    url: 'https://www.uaf.edu/ces/publications/database/gardening/growing-cucumbers-greenhouses.php',
+    accessedDate: '2026-11-23',
+    sourceType: 'university-extension',
+    locator: 'HGA-00434 web page read 2026-11-23. Types: European seedless 12–24 in at harvest; American slicers 7–8 in; seedless (parthenocarpic) varieties produce only female flowers and pollination is not necessary or desired; seeded varieties need pollination (hand pollination with a soft brush). Seeding: germination 80–82 °F for seedless, 70–75 °F for seeded; seedlings 70–75 °F day, at least 65 °F night, a minimum of 14 hours of light; sow ½–1 in deep. The Greenhouse Environment: transplants ready two to three weeks after seeding; 5–8 gallons of media per one or two plants; 12–18 in between plants, rows 4–5 ft; day 75–80 °F, night not below 60 °F; harvest starts 50–70 days after seeding. Fertilizing: about 1 quart of solution per plant per day when small, 1–2 gallons per day for a mature fruiting plant; concentration starts low and rises as plants grow; no pH or EC target. Trellising and Pruning: umbrella system on a 7 ft wire (6–8 ft in the text); remove laterals, flowers and fruit in the lower five to seven leaf axils; seedless types support one fruit per node. Pests: high humidity and excess nitrogen promote powdery mildew; poor ventilation increases gray mold; inadequate pollination of seeded types gives misshapen fruit; whiteflies the most difficult pest. Harvest: leaving mature fruit on the plant reduces production; store 45–50 °F. No yields, light intensity or EC',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(
