@@ -30,7 +30,7 @@ Stages from the workbook's Publishing Sequence:
 | 40 | Stage 3 | equipment | articles | LECA for Hydroponics: When It Works Best | hydroponic leca | Informational | Editorial gap |  |  | `leca-hydroponics` | Published 2026-11-23 as "LECA for Hydroponics: pH, Best Systems, Rinsing & Reuse" |
 | 41 | Stage 3 | crops | articles | Hydroponic Basil: pH, EC, Light & Harvest Guide | hydroponic basil | Informational | Metric-validated | 880 | 11 | `hydroponic-basil` | Published 2026-11-09 from the research pack (`docs/research/source-packs/hydroponic-basil.md`) |
 | 42 | Stage 3 | crops | articles | How to Grow Peppers Hydroponically Indoors | hydroponic peppers | Informational | Suggestion-derived |  |  | `hydroponic-peppers` | Published 2026-11-23 as "Hydroponic Peppers: pH, EC, Temperature & Harvest Guide" |
-| 43 | Stage 3 | crops | articles | How to Grow Cucumbers Hydroponically Indoors | hydroponic cucumbers | Informational | Editorial gap |  |  | `hydroponic-cucumbers` |  |
+| 43 | Stage 3 | crops | articles | How to Grow Cucumbers Hydroponically Indoors | hydroponic cucumbers | Informational | Editorial gap |  |  | `hydroponic-cucumbers` | Published 2026-11-23 as "Hydroponic Cucumbers: pH, EC, Temperature & Pruning Guide" |
 | 44 | Stage 3 | crops | articles | How to Grow Microgreens Hydroponically | microgreen hydroponic system | Informational | Suggestion-derived |  |  | `hydroponic-microgreens` |  |
 | 45 | Stage 3 | crops | articles | Best Herbs for Hydroponic Systems | hydroponic system for herbs | Commercial | Suggestion-derived |  |  | `best-herbs-for-hydroponics` |  |
 | 46 | Stage 3 | crops | articles | How to Grow Spinach Hydroponically | hydroponic spinach | Informational | Editorial gap |  |  | `hydroponic-spinach` |  |

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 980" width="640" height="980" role="img" aria-labelledby="t d">
+  <title id="t">Umbrella pruning for a seedless cucumber</title>
+  <desc id="d">A single main stem grows up a string to an overhead wire 6 to 8 feet high. Side shoots on the main stem are removed as they appear. Fruit, flowers and side shoots on the bottom 24 to 30 inches, about the lower five to seven leaf nodes, are removed. Keep one fruit per leaf node on seedless types. When the stem passes the wire by one or two leaves, pinch the tip and train the top two side shoots over the wire and down.</desc>
+  <rect width="640" height="980" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Umbrella pruning</text>
+    <text x="20" y="86" font-size="20" fill="#3F5248">One stem up, two laterals down</text>
+    <path d="M40 170 L600 170" stroke="#3F5248" stroke-width="6"/>
+    <text x="400" y="150" font-size="21" font-weight="700" fill="#0E1A14">Wire, 6–8 ft</text>
+    <path d="M200 900 L200 160" stroke="#2E8B63" stroke-width="10" stroke-linecap="round"/>
+    <path d="M200 160 C240 140 280 150 300 190 L300 520" stroke="#2E8B63" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M200 160 C160 140 120 150 100 190 L100 520" stroke="#2E8B63" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="200" cy="150" r="12" fill="#C2533A"/>
+    <text x="330" y="232" font-size="21" fill="#0E1A14">Pinch tip 1–2 leaves</text>
+    <text x="330" y="258" font-size="21" fill="#0E1A14">past the wire</text>
+    <text x="330" y="330" font-size="21" fill="#0E1A14">Two laterals hang</text>
+    <text x="330" y="356" font-size="21" fill="#0E1A14">down and fruit</text>
+    <g fill="#5FA36F">
+      <ellipse cx="225" cy="420" rx="22" ry="11"/>
+      <ellipse cx="175" cy="500" rx="22" ry="11"/>
+      <ellipse cx="225" cy="580" rx="22" ry="11"/>
+      <ellipse cx="175" cy="660" rx="22" ry="11"/>
+      <ellipse cx="225" cy="760" rx="22" ry="11"/>
+      <ellipse cx="175" cy="840" rx="22" ry="11"/>
+    </g>
+    <g fill="#2E6B3F">
+      <rect x="210" y="430" width="10" height="56" rx="5"/>
+      <rect x="180" y="510" width="10" height="56" rx="5"/>
+      <rect x="210" y="590" width="10" height="56" rx="5"/>
+      <rect x="290" y="300" width="10" height="56" rx="5"/>
+      <rect x="100" y="380" width="10" height="56" rx="5"/>
+    </g>
+    <text x="330" y="470" font-size="21" fill="#0E1A14">One fruit per node</text>
+    <text x="330" y="496" font-size="21" fill="#0E1A14">on the main stem</text>
+    <rect x="60" y="700" width="280" height="200" fill="#C2533A" fill-opacity="0.14" stroke="#C2533A" stroke-width="3" stroke-dasharray="10 8"/>
+    <text x="360" y="760" font-size="21" font-weight="700" fill="#9A3B26">Strip bottom 24–30 in</text>
+    <text x="360" y="788" font-size="21" fill="#0E1A14">No fruit or shoots</text>
+    <text x="360" y="816" font-size="21" fill="#0E1A14">(lower 5–7 nodes)</text>
+    <path d="M40 905 L600 905" stroke="#8A6A4A" stroke-width="6"/>
+    <text x="20" y="950" font-size="20" fill="#3F5248">Container or slab</text>
+  </g>
+</svg>

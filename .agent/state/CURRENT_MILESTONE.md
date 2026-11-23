@@ -122,7 +122,8 @@ impressions in 28 days).
         ~~ID 39 `/equipment/rockwool-vs-coco-coir/`~~ (published 2026-11-23, "Rockwool vs Coco Coir: pH, Water, Yield & Which to Use").
         ~~ID 40 `/equipment/leca-hydroponics/`~~ (published 2026-11-23, "LECA for Hydroponics: pH, Best Systems, Rinsing & Reuse"; shipped by a run whose ID 39 draft was overtaken by #117).
         ~~ID 42 `/crops/hydroponic-peppers/`~~ (published 2026-11-23, "Hydroponic Peppers: pH, EC, Temperature & Harvest Guide").
-        Next: ID 43 (cucumbers).
+        ~~ID 43 `/crops/hydroponic-cucumbers/`~~ (published 2026-11-23, "Hydroponic Cucumbers: pH, EC, Temperature & Pruning Guide").
+        Next: ID 44 (microgreens).
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the

@@ -269,6 +269,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['osu-ph-ec-guide', 'tennessee-fruiting-crops', 'jovicich-pepper-density-trellis-2004', 'ifas-shade-pepper-hs1113', 'okstate-pepper-production', 'vt-peppers-spes-684', 'runkle-lighting-greenhouse-vegetables-2011', 'lanoue-pepper-far-red-2022', 'ifas-water-nutrient-management-hs1274', 'vt-system-crop-comparisons', 'sdsu-small-scale-hydroponics-p00337', 'ifas-volusia-dwc-bucket', 'osu-hydro-hints-buckets', 'msstate-blossom-end-rot'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 43,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Cucumbers: pH, EC, Temperature & Pruning Guide',
+    route: 'hydroponic-cucumbers',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic cucumbers',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['ifas-greenhouse-cucumber-cv268', 'aces-greenhouse-cucumber-anr2926', 'uaf-greenhouse-cucumbers-hga00434', 'osu-ph-ec-guide', 'tennessee-fruiting-crops', 'runkle-lighting-greenhouse-vegetables-2011', 'ifas-water-nutrient-management-hs1274', 'ifas-perlite-tomato-cucumber-hs169', 'yang-dutch-bucket-cucumber-substrates-2022', 'he-rockwool-coir-cucumber-heliyon-2022', 'mu-hydroponics-for-beginners', 'ifas-volusia-dwc-bucket'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
