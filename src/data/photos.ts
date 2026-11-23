@@ -141,6 +141,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   // Lettuce in net pots of expanded clay pebbles: the medium this page covers.
   'leca-hydroponics': 'lettuce-net-pots-clay',
   'rockwool-vs-coco-coir': 'seedlings-roots-hand',
+  // A young tomato plant, a close relative grown the same way (staked, fruiting, long season); no pepper photo in the registry yet.
+  'hydroponic-peppers': 'young-tomato-plant',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

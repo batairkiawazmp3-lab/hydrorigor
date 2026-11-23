@@ -257,6 +257,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['okstate-soilless-growing-mediums', 'ifas-common-hydroponic-media-ep623', 'illinois-hydroponics-handouts', 'slezak-vegetables-expanded-clay-2011', 'pickens-leca-thesis-2008', 'osu-hydro-hints-ebb-flow', 'osu-hydro-hints-buckets', 'umass-subirrigation-systems', 'vt-nft-systems', 'uky-selecting-growing-media-ccd-ta-02'],
     toolLinks: ['/tools/ph-ec-targets/'],
   },
+  {
+    id: 42,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Peppers: pH, EC, Temperature & Harvest Guide',
+    route: 'hydroponic-peppers',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic peppers',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['osu-ph-ec-guide', 'tennessee-fruiting-crops', 'jovicich-pepper-density-trellis-2004', 'ifas-shade-pepper-hs1113', 'okstate-pepper-production', 'vt-peppers-spes-684', 'runkle-lighting-greenhouse-vegetables-2011', 'lanoue-pepper-far-red-2022', 'ifas-water-nutrient-management-hs1274', 'vt-system-crop-comparisons', 'sdsu-small-scale-hydroponics-p00337', 'ifas-volusia-dwc-bucket', 'osu-hydro-hints-buckets', 'msstate-blossom-end-rot'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
