@@ -233,6 +233,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['ifas-floating-hydroponic-garden-hs943', 'kysu-hands-free-hydroponics', 'umn-small-scale-hydroponics', 'ifas-kratky-set-and-forget', 'ctahr-kratky-vc1', 'kratky-suspended-pot-2004', 'okstate-vertical-tower-hla6724', 'ifas-volusia-dwc-bucket', 'vt-nft-systems', 'uky-hydroponic-lettuce', 'tennessee-fruiting-crops', 'okstate-soilless-growing-mediums', 'osu-hydro-hints-buckets', 'isu-clean-disinfect-containers', 'ucanr-cleaning-plant-pots', 'okstate-algae-control-greenhouse', 'ucanr-kratky-starter-kits'],
     toolLinks: ['/tools/ph-ec-targets/'],
   },
+  {
+    id: 39,
+    collection: 'articles',
+    category: 'equipment',
+    title: 'Rockwool vs Coco Coir: pH, Water, Yield & Which to Use',
+    route: 'rockwool-vs-coco-coir',
+    primaryIntent: 'informational',
+    primaryTopic: 'rockwool vs coco coir hydroponics',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['xiong-coir-rockwool-peat-tomato-2017', 'he-rockwool-coir-cucumber-heliyon-2022', 'arizona-ceac-strawberry-substrates', 'okstate-soilless-growing-mediums', 'ifas-common-hydroponic-media-ep623', 'uky-selecting-growing-media-ccd-ta-02', 'ifas-water-nutrient-management-hs1274', 'illinois-hydroponics-handouts', 'vt-nft-systems', 'aafc-rockwool-tomato-irrigation-2008'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
