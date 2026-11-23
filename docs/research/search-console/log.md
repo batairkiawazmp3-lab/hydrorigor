@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-23 (Nov 1–21; last update 4 h before check) | 6 | 580 | 1% | 36.7 | 107 | 33 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (unchanged, last read Nov 13) | Home-growers second strengthening pass (#116), rockwool vs coco coir (#117), LECA (#119), peppers (#120); log only (this change) |
 | 2026-11-22 (Nov 1–20; last update 5 h before check) | 6 | 561 | 1.1% | 36.8 | 105 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (was 45) | Air pump guide (#111), growing media guide (#112), net pots guide (#113, #114); home-growers strengthening pass moved to top of queue (this change) |
 | 2026-11-21 (Nov 1–19; last update 3 h before check) | 6 | 551 | 1.1% | 36.7 | 103 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16) | Drip guide (#104, #105), aeroponics vs hydroponics (#106), reservoir size (#107), water pumps (#109); log only (this change) |
 | 2026-11-20 (Nov 1–18; last update 2.5 h before check) | 6 | 541 | 1.1% | 36.8 | 102 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16) | Ebb and flow guide (#100), Dutch bucket guide (#101); log only (this change) |
@@ -25,6 +26,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-22 | /best/hydroponic-system-for-home-growers/ | Second strengthening pass (#116: yield-by-crop answer first, "what most effective means" section, trial-yield chart, links to 12 guides); before: 37 impressions, position 19.8 (Nov 1–20) | 2026-12-06, 2026-12-20 |
 | 2026-11-16 | /nutrients-water/hydroponic-nutrients-for-vegetables/ | Full rebuild (EC and pH by crop, shared-tank table, 2 charts, 9 sources) | 2026-11-30, 2026-12-14 |
 | 2026-11-15 | /nutrients-water/organic-hydroponic-nutrients/ | Full rebuild (#75: yields vs mineral nutrients, causes and fixes, 2 diagrams); before: 43 impressions, position 60.8 (Nov 1–13) | 2026-11-29, 2026-12-13 |
 | 2026-11-14 | /crops/hydroponic-tomato-seeds/ | Full rebuild (seed by space, micro-dwarf trial data, 2 diagrams, 8 sources) | 2026-11-28, 2026-12-12 |
@@ -34,8 +36,8 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 | 2026-11-13 | /reviews/masterblend-hydroponic-nutrients/ | 1 new internal link (powder vs liquid guide); before: 14 impressions, position 9.8 (Nov 1–10) | 2026-11-27 |
 | 2026-11-13 | /best/hydroponic-nutrients-for-home-growers/ | 1 new internal link (powder vs liquid guide); before: 10 impressions, position 48.6 (Nov 1–10) | 2026-11-27 |
 | 2026-11-12 | /best/hydroponic-systems-for-beginners/ | Full rebuild (Kratky-first, 2 diagrams, 10 sources); before: 6 impressions, position 46.5 | 2026-11-26, 2026-12-10 |
-| 2026-11-09 | /crops/hydroponic-basil/ | New guide (hydroponic basil 880 / 11) | 2026-11-23, 2026-12-07 |
-| 2026-11-09 | /best/hydroponic-system-for-home-growers/ | Strengthening pass: crop-by-crop answer first, trial yields in the "most effective" FAQ, equipment table by system, kit and equipment FAQs, 2 new inbound links; before: 32 impressions, position 15.5 (Nov 1–7) | 2026-11-23, 2026-12-07 |
+| 2026-11-09 | /crops/hydroponic-basil/ | New guide (hydroponic basil 880 / 11) | 2026-11-23: no impressions yet (Nov 1–21) ▬; 2026-12-07 |
+| 2026-11-09 | /best/hydroponic-system-for-home-growers/ | Strengthening pass: crop-by-crop answer first, trial yields in the "most effective" FAQ, equipment table by system, kit and equipment FAQs, 2 new inbound links; before: 32 impressions, position 15.5 (Nov 1–7) | 2026-11-23: 32 → 37 impressions ▲, position 15.5 → 19.8 ▼ (Nov 1–7 → Nov 1–21); 2026-12-07 |
 | 2026-11-08 | /systems/indoor-hydroponic-systems-for-home/ | Full rebuild (#42, 6 types compared); before: 4 impressions, position 82.8 (Nov 1–6) | 2026-11-22: 4 → 24 impressions ▲, position 82.8 → 79.7 ▲ (Nov 1–6 → Nov 1–20); 2026-12-06 |
 | 2026-11-07 | /systems/deep-water-culture-hydroponics/ | Full rebuild (#35); before: 17 impressions, position 60.9 (Nov 1–6) | 2026-11-21: 17 → 54 impressions ▲, position 60.9 → 58.3 ▲ (Nov 1–6 → Nov 1–19); "dwc system" at 27.6 (8 impressions); 2026-12-05 |
 | 2026-11-07 | /systems/hydroponic-tower-garden/ | New guide (hydroponic tower 6,600 / 33) | 2026-11-21: 0 → 12 impressions ▲ (new page), position 28.3 (Nov 1–19); queries "hydroponic tower how it works" 46.0 and "how does a hydroponic tower work" 74.0 (1 impression each); 2026-12-05 |
