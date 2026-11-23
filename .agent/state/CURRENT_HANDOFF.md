@@ -79,9 +79,14 @@ Updated: 2026-11-23
   batches. Do not upload any of those files again. For later guides:
   `node scripts/pinterest-csv.mjs --only <route> --start <date after 2026-12-24>` and list the file
   here; dates in the past are rejected.
-- Bing Webmaster Tools (owner, about 5 minutes): sign in at bing.com/webmasters and choose
-  "Import from Google Search Console" so the site and sitemap are verified without DNS changes.
-  IndexNow submissions already run after every deploy (`.github/workflows/indexnow.yml`).
+- Bing Webmaster Tools: done by the owner on 2026-11-20 (hydrorigor.com verified; sitemap-index.xml
+  status Success; IndexNow shows 79 self-submitted URLs). IndexNow submissions keep running after
+  every deploy (`.github/workflows/indexnow.yml`).
+- Pinterest website claim: completed by the owner on 2026-11-20 (tag in `src/components/seo/SEO.astro`;
+  removing it unclaims the site).
+- Pins dated 2026-12-16 to 2026-12-27 (12 guides, drip through cucumbers) are merged in one file for
+  upload; the owner approved Claude uploading them in his Chrome on 2026-11-23, pending Chrome being
+  open. Do not upload them from a scheduled run.
 - Author profiles: send real LinkedIn / organisation URLs to add as `sameAs` in `src/data/authors.ts`.
 - Search Console: Claude reads it in the owner's Chrome (Claude extension, Google account
   authuser=0, property `sc-domain:hydrorigor.com`). A daily scheduled check (13:55 PKT) logs figures in
