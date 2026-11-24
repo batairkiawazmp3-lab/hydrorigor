@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-24 (Nov 1–22; last update 3 h before check) | 6 | 599 | 1% | 36.5 | 111 | 33 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (unchanged, last read Nov 13) | Cucumbers guide (#122), Bing and Pinterest claim handoff (#123), microgreens guide (#124); log only (this change) |
 | 2026-11-23 (Nov 1–21; last update 4 h before check) | 6 | 580 | 1% | 36.7 | 107 | 33 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (unchanged, last read Nov 13) | Home-growers second strengthening pass (#116), rockwool vs coco coir (#117), LECA (#119), peppers (#120); log only (this change) |
 | 2026-11-22 (Nov 1–20; last update 5 h before check) | 6 | 561 | 1.1% | 36.8 | 105 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (was 45) | Air pump guide (#111), growing media guide (#112), net pots guide (#113, #114); home-growers strengthening pass moved to top of queue (this change) |
 | 2026-11-21 (Nov 1–19; last update 3 h before check) | 6 | 551 | 1.1% | 36.7 | 103 | 32 | 34 indexed, 15 not indexed (unchanged, last update Nov 16) | Drip guide (#104, #105), aeroponics vs hydroponics (#106), reservoir size (#107), water pumps (#109); log only (this change) |
