@@ -293,6 +293,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['vt-microgreens-spes-756', 'psu-growing-microgreens', 'psu-abcs-of-microgreens', 'ifas-microgreens-hs1164', 'usu-grow-your-own-microgreens', 'umd-microgreens-indoors', 'alberta-commercial-microgreens', 'moraru-microgreens-hydroponic-protocol-2022', 'sfa-home-growing-kit'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 45,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Best Herbs for Hydroponics: pH, EC, Light & Easiest Picks',
+    route: 'best-herbs-for-hydroponics',
+    primaryIntent: 'commercial research',
+    primaryTopic: 'hydroponic system for herbs',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['isu-growing-herbs-indoors', 'currey-herbs-ec-dli-2019', 'currey-herb-nutrition-producegrower-2024', 'osu-ph-ec-guide', 'vt-nft-systems', 'vt-system-crop-comparisons', 'walters-basil-dli-temperature-2023', 'gomez-basil-small-scale-2020', 'walters-basil-density-2015', 'osu-hydro-hints-ebb-flow', 'sfa-home-growing-kit', 'ifas-tabletop-hydroponics'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

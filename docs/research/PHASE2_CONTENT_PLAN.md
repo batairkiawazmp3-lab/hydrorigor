@@ -32,7 +32,7 @@ Stages from the workbook's Publishing Sequence:
 | 42 | Stage 3 | crops | articles | How to Grow Peppers Hydroponically Indoors | hydroponic peppers | Informational | Suggestion-derived |  |  | `hydroponic-peppers` | Published 2026-11-23 as "Hydroponic Peppers: pH, EC, Temperature & Harvest Guide" |
 | 43 | Stage 3 | crops | articles | How to Grow Cucumbers Hydroponically Indoors | hydroponic cucumbers | Informational | Editorial gap |  |  | `hydroponic-cucumbers` | Published 2026-11-23 as "Hydroponic Cucumbers: pH, EC, Temperature & Pruning Guide" |
 | 44 | Stage 3 | crops | articles | How to Grow Microgreens Hydroponically | microgreen hydroponic system | Informational | Suggestion-derived |  |  | `hydroponic-microgreens` | Published 2026-11-24 as "Hydroponic Microgreens: Seed Rates, Light, EC & Harvest Days" |
-| 45 | Stage 3 | crops | articles | Best Herbs for Hydroponic Systems | hydroponic system for herbs | Commercial | Suggestion-derived |  |  | `best-herbs-for-hydroponics` |  |
+| 45 | Stage 3 | crops | articles | Best Herbs for Hydroponic Systems | hydroponic system for herbs | Commercial | Suggestion-derived |  |  | `best-herbs-for-hydroponics` | Published 2026-11-24 as "Best Herbs for Hydroponics: pH, EC, Light & Easiest Picks" |
 | 46 | Stage 3 | crops | articles | How to Grow Spinach Hydroponically | hydroponic spinach | Informational | Editorial gap |  |  | `hydroponic-spinach` |  |
 | 47 | Stage 3 | crops | articles | How to Grow Kale Hydroponically | hydroponic kale | Informational | Editorial gap |  |  | `hydroponic-kale` |  |
 | 48 | Stage 3 | crops | articles | How to Grow Green Onions Hydroponically | hydroponic green onions | Informational | Suggestion-derived |  |  | `hydroponic-green-onions` |  |

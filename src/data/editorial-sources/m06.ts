@@ -745,7 +745,7 @@ export const m06EditorialSources = [
     url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10688745/',
     accessedDate: '2026-11-07',
     sourceType: 'university-research',
-    locator: "Results and Discussion, sweet basil 'Nufar': optimal mean daily temperature for fresh mass rose from 32.6 to 35.5 °C as DLI increased from 6 to 11 mol/m²/day; branch number increased as DLI rose from 5.5 to 13.2 mol/m²/day; marketable size about three weeks after transplant; base temperature about 11 °C (citing Walters and Currey)",
+    locator: "Results and Discussion, sweet basil 'Nufar': optimal mean daily temperature for fresh mass rose from 32.6 to 35.5 °C as DLI increased from 6 to 11 mol/m²/day; branch number increased as DLI rose from 5.5 to 13.2 mol/m²/day; marketable size about three weeks after transplant; base temperature about 11 °C (citing Walters and Currey); re-read 2026-11-24: Materials and methods, flood tables (Hydrofarm) in glass greenhouses at target mean daily temperatures of 23, 26, 29, 32 or 35 °C and DLI 5–19 mol/m²/day; spearmint and sweet basil transplanted two weeks, purple basil three, sage four weeks after sowing or sticking; harvested three weeks after transplant (spearmint, sweet basil), four (purple basil), five (sage); Results, spearmint: fresh mass rose 60 g as DLI rose from 6.1 to 19.4 at 23.0 °C and 32 g at 35.1 °C; sage: at 22.8 °C, DLI 4.9 to 18.3 gave a 2.4-fold (40.6 g) increase, fresh mass increased as DLI increased or temperature decreased; purple basil fresh mass rose from 21.8 to 97.4 g as DLI rose from 5.0 to 18.7. No EC, pH or spacing given",
   },
   {
     id: 'walters-basil-density-2015',
@@ -1385,6 +1385,33 @@ export const m06EditorialSources = [
     accessedDate: '2026-11-24',
     sourceType: 'university-research',
     locator: 'Read via PMC9103178 2026-11-24; Sections 3.1–3.3.1 and Table 3 read verbatim, later sections not verified and not used. Section 3.3.1 and Table 3 (food safety, review of studies): E. coli O157:H7 survived and grew on radish microgreens in soil-substitute and hydroponic systems, and contaminated seed led to whole-plant contamination (Xiao et al. 2015); hydroponic pads gave the highest share of Salmonella-positive samples (Reed et al. 2018); a norovirus surrogate stayed infectious in recirculated hydroponic water up to 12 days (Wang and Kniel 2016); "sanitization of the harvested product is not likely to be an effective control strategy"; adding mineral nutrients increases yields. Table 1 (protocol settings for basil, lettuce, Brussels sprouts) not used as targets because they are trial parameters, not recommendations',
+  },
+  {
+    id: 'currey-herbs-ec-dli-2019',
+    title: 'Nutrient Solution Strength Does Not Interact with the Daily Light Integral to Affect Hydroponic Cilantro, Dill, and Parsley Growth and Tissue Mineral Nutrient Concentrations',
+    publisher: 'Agronomy 9(7):389 (Currey, Walters and Flax; Iowa State University, 2019)',
+    url: 'https://doi.org/10.3390/agronomy9070389',
+    accessedDate: '2026-11-24',
+    sourceType: 'university-research',
+    locator: "Read via mdpi.com HTML 2026-11-24 (Methods, Results and Abstract text verified; image-only tables not used). Section 2: cilantro 'Santo', dill 'Fernleaf', parsley 'Giant of Italy' sown two seeds per cell and thinned to one, transplanted 3 weeks after sowing into NFT troughs (10 cm wide, 3% slope) on 20-cm centers, 25 plants per square meter; target DLI 7.0 or 18.0 mol/m²/day with a 16-h photoperiod; air 22 °C constant; solution 22.0 °C, dissolved oxygen 8.3 mg/L; EC 0.5, 1.0, 2.0, 3.0 or 4.0 dS/m adjusted daily; pH adjusted to 6.0; harvested 4 weeks after transplant. Abstract and Results: EC had no effect on fresh or dry mass of any species; raising DLI from 7 to 18 increased fresh mass of cilantro, dill and parsley by 154%, 241% and 120%; all three can be grown across EC 0.5–4.0",
+  },
+  {
+    id: 'currey-herb-nutrition-producegrower-2024',
+    title: 'Nutrition solutions: EC and pH affect mineral nutrient dynamics in culinary herb production',
+    publisher: 'Produce Grower, September 2024 (C. J. Currey, Iowa State University)',
+    url: 'https://producegrower.com/article/fresh-cut-culinary-herb-production-mineral-nutrients-hydroponic-systems-production-primer',
+    accessedDate: '2026-11-24',
+    sourceType: 'university-research',
+    locator: 'Article text read 2026-11-24 (no tables). EC: solution ECs from 0.5 to 4.0 mS/cm did not affect yields of basil, parsley, dill and cilantro; 4.0 is a waste of fertilizer; 0.5 may let nutrient imbalances develop more quickly. pH: generally maintained between 5.5 and 6.0; raising pH much beyond 7.0 to 7.5 can suppress growth and yields; newer Ohio State and Iowa State research found pH 4.0–4.5 caused no micronutrient toxicity or growth limits and may suppress Pythium. Basil has a higher-than-average magnesium requirement and calcium-heavy fertilizers can suppress magnesium uptake (no figure). No temperature, light, spacing or harvest figures',
+  },
+  {
+    id: 'isu-growing-herbs-indoors',
+    title: 'Growing Herbs Indoors',
+    publisher: 'Iowa State University Extension and Outreach, Yard and Garden (A. Steil), last reviewed November 2023',
+    url: 'https://yardandgarden.extension.iastate.edu/how-to/growing-herbs-indoors',
+    accessedDate: '2026-11-24',
+    sourceType: 'university-extension',
+    locator: 'Web page read 2026-11-24. Best Herbs for Growing Indoors: parsley, mint, chives, basil, oregano, cilantro, thyme; rosemary, sage, lemon balm, marjoram, chervil and bay laurel can succeed indoors but have higher than normal light requirements and/or significant pests (like spider mites). Growing Conditions: most herbs need around eight hours of direct light a day indoors; typical indoor temperatures are ideal. Providing More Light: some tolerate as little as six hours of direct light, most want eight or more; lights within 6 to 12 inches of the leaves; timer 12 to 16 hours a day. Fertilizer: half or quarter strength all-purpose fertilizer, spring through summer, none in winter. Harvesting Indoor Herbs: annuals, leave about 4 to 6 inches of stem for later growth; perennials such as chives, mint, oregano and thyme, remove the top one-third of growth; after several harvests discard old annual herbs and start new plants from seed. No pH, EC, PPFD or spacing',
   },
 ] as const satisfies readonly M06EditorialSource[];
 
