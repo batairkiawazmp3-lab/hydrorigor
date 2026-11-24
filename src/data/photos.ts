@@ -145,6 +145,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-peppers': 'young-tomato-plant',
   // Vine crops trained up high wires: the same string-and-wire training this page describes; no cucumber photo in the registry yet.
   'hydroponic-cucumbers': 'tomatoes-high-wire',
+  // Dense young seedlings under an LED bar: the nearest registry match to a microgreen tray; no microgreens photo yet.
+  'hydroponic-microgreens': 'led-lettuce-seedlings',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

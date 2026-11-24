@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1004" width="640" height="1004" role="img" aria-labelledby="t d">
+  <title id="t">Microgreen seed per 10 by 20 inch tray, by crop</title>
+  <desc id="d">Utah State Extension seed rates per 1020 tray: arugula 10 grams; basil, broccoli, kale and cilantro 28 grams; radish 42 grams; sunflower 48 grams; pea 150 grams. Penn State and the University of Maryland use 10 to 15 grams of small seed per tray.</desc>
+  <rect width="640" height="1004" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Seed per tray</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Grams per 10 × 20 in tray (Utah State)</text>
+    <text x="40" y="150" font-size="22" font-weight="700" fill="#0E1A14">Arugula</text>
+    <rect x="40" y="162" width="27" height="34" rx="6" fill="#2E8B63"/>
+    <text x="81" y="188" font-size="22" font-weight="700" fill="#0E1A14">10 g</text>
+    <text x="40" y="238" font-size="22" font-weight="700" fill="#0E1A14">Basil</text>
+    <rect x="40" y="250" width="75" height="34" rx="6" fill="#2E8B63"/>
+    <text x="129" y="276" font-size="22" font-weight="700" fill="#0E1A14">28 g</text>
+    <text x="40" y="326" font-size="22" font-weight="700" fill="#0E1A14">Broccoli</text>
+    <rect x="40" y="338" width="75" height="34" rx="6" fill="#2E8B63"/>
+    <text x="129" y="364" font-size="22" font-weight="700" fill="#0E1A14">28 g</text>
+    <text x="40" y="414" font-size="22" font-weight="700" fill="#0E1A14">Kale</text>
+    <rect x="40" y="426" width="75" height="34" rx="6" fill="#2E8B63"/>
+    <text x="129" y="452" font-size="22" font-weight="700" fill="#0E1A14">28 g</text>
+    <text x="40" y="502" font-size="22" font-weight="700" fill="#0E1A14">Cilantro</text>
+    <rect x="40" y="514" width="75" height="34" rx="6" fill="#2E8B63"/>
+    <text x="129" y="540" font-size="22" font-weight="700" fill="#0E1A14">28 g</text>
+    <text x="40" y="590" font-size="22" font-weight="700" fill="#0E1A14">Radish</text>
+    <rect x="40" y="602" width="112" height="34" rx="6" fill="#1F6E8C"/>
+    <text x="166" y="628" font-size="22" font-weight="700" fill="#0E1A14">42 g</text>
+    <text x="40" y="678" font-size="22" font-weight="700" fill="#0E1A14">Sunflower</text>
+    <rect x="40" y="690" width="128" height="34" rx="6" fill="#1F6E8C"/>
+    <text x="182" y="716" font-size="22" font-weight="700" fill="#0E1A14">48 g</text>
+    <text x="40" y="766" font-size="22" font-weight="700" fill="#0E1A14">Pea</text>
+    <rect x="40" y="778" width="400" height="34" rx="6" fill="#C2533A"/>
+    <text x="454" y="804" font-size="22" font-weight="700" fill="#0E1A14">150 g</text>
+    <rect x="20" y="874" width="600" height="96" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="914" font-size="21" font-weight="700" fill="#0E1A14">Penn State and Maryland:</text>
+    <text x="40" y="948" font-size="21" fill="#3F5248">10–15 g of small seed per tray</text>
+  </g>
+</svg>
