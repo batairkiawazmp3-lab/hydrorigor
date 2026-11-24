@@ -147,6 +147,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-cucumbers': 'tomatoes-high-wire',
   // Dense young seedlings under an LED bar: the nearest registry match to a microgreen tray; no microgreens photo yet.
   'hydroponic-microgreens': 'led-lettuce-seedlings',
+  // Leafy greens and herbs in white channels under LED lights: a home herb system; no single-herb close-up in the registry yet.
+  'best-herbs-for-hydroponics': 'systems-home-nft-lights',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
