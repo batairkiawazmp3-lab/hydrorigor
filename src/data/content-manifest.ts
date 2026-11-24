@@ -281,6 +281,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['ifas-greenhouse-cucumber-cv268', 'aces-greenhouse-cucumber-anr2926', 'uaf-greenhouse-cucumbers-hga00434', 'osu-ph-ec-guide', 'tennessee-fruiting-crops', 'runkle-lighting-greenhouse-vegetables-2011', 'ifas-water-nutrient-management-hs1274', 'ifas-perlite-tomato-cucumber-hs169', 'yang-dutch-bucket-cucumber-substrates-2022', 'he-rockwool-coir-cucumber-heliyon-2022', 'mu-hydroponics-for-beginners', 'ifas-volusia-dwc-bucket'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 44,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Microgreens: Seed Rates, Light, EC & Harvest Days',
+    route: 'hydroponic-microgreens',
+    primaryIntent: 'informational',
+    primaryTopic: 'microgreen hydroponic system',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['vt-microgreens-spes-756', 'psu-growing-microgreens', 'psu-abcs-of-microgreens', 'ifas-microgreens-hs1164', 'usu-grow-your-own-microgreens', 'umd-microgreens-indoors', 'alberta-commercial-microgreens', 'moraru-microgreens-hydroponic-protocol-2022', 'sfa-home-growing-kit'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
