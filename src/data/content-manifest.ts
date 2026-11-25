@@ -341,6 +341,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['kane-onion-nutrient-ph-2006', 'santos-green-onion-solution-2021', 'won-welsh-onion-water-culture-2005', 'sare-scallions-harvest-manual-2025', 'bc-green-bunching-onions', 'osu-onions-bunching', 'ucmg-santa-clara-bunching-onions', 'ucmg-riverside-scallions-2021', 'umn-scallions-home-gardens', 'gao-welsh-onion-led-2020', 'isu-growing-herbs-indoors', 'osu-ph-ec-guide', 'osu-hydro-hints-dwc', 'vt-dwc-systems-spes464'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 49,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Cilantro: pH, EC, Light & Bolting Guide',
+    route: 'hydroponic-cilantro',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic cilantro',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['currey-herbs-ec-dli-2019', 'currey-herb-nutrition-producegrower-2024', 'msu-herbs-photoperiod-producegrower-2021', 'tomitaka-coriander-daylength-2001', 'kim-coriander-blue-light-2025', 'omafra-cilantro-coriander', 'ucanr-cilantro-production-7236', 'usu-cilantro-coriander-garden-2018', 'oregonstate-cilantro-coriander', 'isu-growing-herbs-indoors', 'vt-nft-systems', 'vt-system-crop-comparisons', 'osu-hydro-hints-ebb-flow', 'usu-grow-your-own-microgreens'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

@@ -128,7 +128,8 @@ impressions in 28 days).
         ~~ID 47 `/crops/hydroponic-kale/`~~ (published 2026-11-25, "Hydroponic Kale: pH, EC, Light & Harvest Guide"; taken by an owner-started session while the morning run took ID 46).
         ~~ID 46 `/crops/hydroponic-spinach/`~~ (published 2026-11-25, "Hydroponic Spinach: pH, EC, Temperature & Bolting Guide").
         ~~ID 48 `/crops/hydroponic-green-onions/`~~ (published 2026-11-25, "Hydroponic Green Onions: pH, Spacing, Regrowth & Harvest").
-        Next: ID 49 (hydroponic cilantro).
+        ~~ID 49 `/crops/hydroponic-cilantro/`~~ (published 2026-11-25, "Hydroponic Cilantro: pH, EC, Light & Bolting Guide").
+        Next: ID 50 (hydroponic mint).
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the
