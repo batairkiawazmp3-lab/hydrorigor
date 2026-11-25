@@ -126,7 +126,8 @@ impressions in 28 days).
         ~~ID 44 `/crops/hydroponic-microgreens/`~~ (published 2026-11-24, "Hydroponic Microgreens: Seed Rates, Light, EC & Harvest Days").
         ~~ID 45 `/crops/best-herbs-for-hydroponics/`~~ (published 2026-11-24, "Best Herbs for Hydroponics: pH, EC, Light & Easiest Picks").
         ~~ID 47 `/crops/hydroponic-kale/`~~ (published 2026-11-25, "Hydroponic Kale: pH, EC, Light & Harvest Guide"; taken by an owner-started session while the morning run took ID 46).
-        Next: ID 46 (hydroponic spinach) if not yet done, then ID 48.
+        ~~ID 46 `/crops/hydroponic-spinach/`~~ (published 2026-11-25, "Hydroponic Spinach: pH, EC, Temperature & Bolting Guide").
+        Next: ID 48 (hydroponic green onions).
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the

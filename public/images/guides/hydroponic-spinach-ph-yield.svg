@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" width="640" height="760" role="img" aria-labelledby="t d">
+  <title id="t">Spinach growth by solution pH</title>
+  <desc id="d">Fresh shoot mass per spinach plant after about three weeks: 0.88 g at pH 4.0, 3.8 g at pH 4.5 and 7.3 g at pH 5.5, from a HortScience growth-chamber study. Recommended band pH 5.8 to 6.5.</desc>
+  <rect width="640" height="760" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Spinach hates acid</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Fresh shoot mass per plant, grams</text>
+    <line x1="60" y1="560" x2="600" y2="560" stroke="#3F5248" stroke-width="2"/>
+    <rect x="90" y="539" width="120" height="21" rx="4" fill="#C2533A"/>
+    <text x="150" y="525" font-size="24" font-weight="700" fill="#0E1A14" text-anchor="middle">0.88 g</text>
+    <text x="150" y="596" font-size="22" font-weight="700" fill="#0E1A14" text-anchor="middle">pH 4.0</text>
+    <rect x="260" y="469" width="120" height="91" rx="4" fill="#D9925C"/>
+    <text x="320" y="455" font-size="24" font-weight="700" fill="#0E1A14" text-anchor="middle">3.8 g</text>
+    <text x="320" y="596" font-size="22" font-weight="700" fill="#0E1A14" text-anchor="middle">pH 4.5</text>
+    <rect x="430" y="385" width="120" height="175" rx="4" fill="#2E8B63"/>
+    <text x="490" y="371" font-size="24" font-weight="700" fill="#0E1A14" text-anchor="middle">7.3 g</text>
+    <text x="490" y="596" font-size="22" font-weight="700" fill="#0E1A14" text-anchor="middle">pH 5.5</text>
+    <text x="20" y="160" font-size="22" fill="#3F5248">About 3 weeks of growth</text>
+    <text x="20" y="192" font-size="22" fill="#3F5248">in a growth chamber</text>
+    <rect x="20" y="640" width="600" height="100" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="680" font-size="22" font-weight="700" fill="#0E1A14">Aim for pH 5.8–6.5</text>
+    <text x="40" y="714" font-size="20" fill="#3F5248">Cornell 5.8; Oklahoma State 6.0–7.0</text>
+  </g>
+</svg>

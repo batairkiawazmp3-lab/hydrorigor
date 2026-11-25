@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic spinach: seed to harvest</title>
+  <desc id="d">Baby leaf, Cornell: sow in place at high density, germinate 2 days dark at 77 °F, first cut 12 to 16 days from seeding, then cut about weekly. Full leaf, University of Georgia: seedlings 2 to 3 weeks, transplant 6 inches apart into a raft, harvest 3 to 4 weeks after transplant.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Seed to harvest</text>
+    <text x="20" y="96" font-size="24" font-weight="700" fill="#2E8B63">Baby leaf (Cornell)</text>
+    <line x1="50" y1="130" x2="50" y2="400" stroke="#2E8B63" stroke-width="4"/>
+    <circle cx="50" cy="140" r="14" fill="#2E8B63"/>
+    <text x="80" y="148" font-size="22" fill="#0E1A14">Sow dense, in place</text>
+    <circle cx="50" cy="220" r="14" fill="#2E8B63"/>
+    <text x="80" y="228" font-size="22" fill="#0E1A14">2 days dark, 77 °F</text>
+    <circle cx="50" cy="300" r="14" fill="#2E8B63"/>
+    <text x="80" y="308" font-size="22" font-weight="700" fill="#0E1A14">First cut: day 12–16</text>
+    <circle cx="50" cy="380" r="14" fill="#2E8B63"/>
+    <text x="80" y="388" font-size="22" fill="#0E1A14">Regrow, cut weekly</text>
+    <text x="20" y="490" font-size="24" font-weight="700" fill="#1F6E8C">Full leaf (UGA)</text>
+    <line x1="50" y1="524" x2="50" y2="790" stroke="#1F6E8C" stroke-width="4"/>
+    <circle cx="50" cy="534" r="14" fill="#1F6E8C"/>
+    <text x="80" y="542" font-size="22" fill="#0E1A14">Seedlings 2–3 weeks</text>
+    <circle cx="50" cy="614" r="14" fill="#1F6E8C"/>
+    <text x="80" y="622" font-size="22" fill="#0E1A14">Transplant 6 in apart</text>
+    <circle cx="50" cy="694" r="14" fill="#1F6E8C"/>
+    <text x="80" y="702" font-size="22" font-weight="700" fill="#0E1A14">Harvest 3–4 weeks later</text>
+    <circle cx="50" cy="774" r="14" fill="#1F6E8C"/>
+    <text x="80" y="782" font-size="22" fill="#0E1A14">5–7 weeks from seed</text>
+    <rect x="20" y="820" width="600" height="60" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="858" font-size="20" fill="#3F5248">Light: DLI about 17, 14–16 h a day</text>
+  </g>
+</svg>

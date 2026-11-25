@@ -1512,6 +1512,42 @@ export const m06EditorialSources = [
     sourceType: 'university-extension',
     locator: 'Web page read 2026-11-24. Best Herbs for Growing Indoors: parsley, mint, chives, basil, oregano, cilantro, thyme; rosemary, sage, lemon balm, marjoram, chervil and bay laurel can succeed indoors but have higher than normal light requirements and/or significant pests (like spider mites). Growing Conditions: most herbs need around eight hours of direct light a day indoors; typical indoor temperatures are ideal. Providing More Light: some tolerate as little as six hours of direct light, most want eight or more; lights within 6 to 12 inches of the leaves; timer 12 to 16 hours a day. Fertilizer: half or quarter strength all-purpose fertilizer, spring through summer, none in winter. Harvesting Indoor Herbs: annuals, leave about 4 to 6 inches of stem for later growth; perennials such as chives, mint, oregano and thyme, remove the top one-third of growth; after several harvests discard old annual herbs and start new plants from seed. No pH, EC, PPFD or spacing',
   },
+  {
+    id: 'cornell-cea-spinach-2005',
+    title: 'A Commercially Viable Controlled Environment Agriculture (CEA) Spinach Production System: Final Report',
+    publisher: 'Cornell University, Department of Biological and Environmental Engineering (L. D. Albright, project director, with D. S. de Villiers, R. W. Langhans and others), prepared for NYSERDA, June 2005',
+    url: 'https://cea.cals.cornell.edu/files/2019/07/Spinachfinal-report.pdf',
+    accessedDate: '2026-11-25',
+    sourceType: 'university-research',
+    locator: 'Read 2026-11-25 through a fetch tool (verbatim text front matter to Chapter 6 p. 6-3; rest of Chapter 6 not verified and not used). Summary p. S-1: root zone and aerial temperatures between 20 and 25 C (cultivar dependent); pond solution cooled to 20 C to limit pathogen growth; DLI 17 mol/m2 (cultivar and leaf size); plant density 1500 plants/m2; respacing 9 days after seeding (large leaf); crop cycle 14 to 16 days; photoperiod long enough to trigger bolting raises productivity; 48 h incubation at 25 C before flotation. Ch. 1: Pythium aphanidermatum the main pathogen of spinach roots (p. 1-1); every transplant collapsed after 5 days (p. 1-1); over 250 zoospores/mL gave weight deficits of more than 25% (p. 1-6); by day 28 no white roots at 24 C inoculated vs 50% at 18 C (p. 1-12); 18 C greatly slows the disease (p. 1-15); solution cooled to 18 C for large leaf (p. 1-21); optimal root temperature for baby spinach about 24 C (p. 1-20); Eagle shoot FW +32% at 25 C vs 20 C pond (p. 1-19). Ch. 2 p. 2-15: DO above 7.0 mg/L, target pH 5.8, EC about 1200 uS/cm; p. 2-52 de-hulled seed 48 h dark humid at 25 C, intact seed about 12 h more. Ch. 3: tipburn not a major issue (p. 3-1); baby leaf about 1500 plants/m2 sown at final density (p. 3-1); first cutting 12 to 16 days from seeding, repeat cuts about weekly (p. 3-2); fresh weight best at 25 C, worst at 35 C (badly stunted), 20 C best leaf shape (pp. 3-27, 3-33); half-strength mix about 1300 uS/cm (p. 3-56); 24-h light 18 to 25% heavier than 16-h (p. 3-84); Alrite under 24 h bolted by day 17, not a useful option (pp. 3-58, 3-98); harvest no later than 14 days under about 18 mol/m2/day (p. 3-72). Ch. 4 p. 4-2: Japanese cultivars very bolting-prone above 13 h photoperiod; northern cultivars (Eagle) less prone even beyond 16 h',
+  },
+  {
+    id: 'uga-greenhouse-spinach-c1304',
+    title: 'How to Grow Greenhouse Spinach During Georgia Summers Using Hydroponics (Circular 1304)',
+    publisher: 'University of Georgia Cooperative Extension (R. S. Ferrarezi and K. Qin), November 8, 2024',
+    url: 'https://fieldreport.caes.uga.edu/publications/C1304/how-to-grow-greenhouse-spinach-during-georgia-summers-using-hydroponics/',
+    accessedDate: '2026-11-25',
+    sourceType: 'university-extension',
+    locator: 'Web page read 2026-11-25. Introduction: optimal 65–70 °F (18–21 °C) for germination and 60–77 °F (15–25 °C) for growth; summer greenhouse air 90–95 °F; high temperature and light cause bolting. Improve Germination, Table 1: 22 cultivars, only Banjo (66%) and Sunangel (57%) above 50%; Kona 7%; priming e.g. 0.3% hydrogen peroxide for 18 h. Select Cultivar: Kona, Sunangel higher yield; SV3580VC higher yield and sweetness; Lizard, Space lower yield (no yield figures). Use an Appropriate System: DWC trays, 1 3/4-in holes 6 in apart, 150 ppm N, seedlings 2–3 weeks before transplant, harvested after 3–4 weeks. No pH, EC, DO, solution temperature or Pythium figures',
+  },
+  {
+    id: 'hortsci-spinach-acidic-solution-2021',
+    title: 'High Nutrient Concentrations of Hydroponic Solution Can Improve Growth and Nutrient Uptake of Spinach (Spinacia oleracea L.) Grown in Acidic Nutrient Solution',
+    publisher: 'HortScience 56(6):687, doi:10.21273/HORTSCI15777-21',
+    url: 'https://journals.ashs.org/view/journals/hortsci/56/6/article-p687.xml',
+    accessedDate: '2026-11-25',
+    sourceType: 'university-research',
+    locator: "HTML read 2026-11-25 (tables not in the fetched text; authors not shown). Abstract: 'Corvair' spinach in DWC growth chambers at pH 4.0, 4.5, 5.0 or 5.5, then pH 4.5 vs 5.5 at EC 1.4 vs 3.4 dS/m; harvest after 19 to 20 days. Results Expt. 1: fresh shoot mass 0.88 g (12%) at pH 4.0 and 3.8 g (52%) at pH 4.5 vs 7.3 g per plant at pH 5.5. Introduction: many hydroponic operations avoid spinach because of Pythium susceptibility (citing Mattson 2018). No solution temperature value in the text",
+  },
+  {
+    id: 'clemson-hgic-spinach-1320',
+    title: 'Spinach (HGIC 1320)',
+    publisher: 'Clemson Cooperative Extension, Home & Garden Information Center (P. Smith, D. Shaughnessy, R. F. Polomski; revised by J. Ballew, May 2020)',
+    url: 'https://hgic.clemson.edu/factsheet/spinach/',
+    accessedDate: '2026-11-25',
+    sourceType: 'university-extension',
+    locator: 'Web page read 2026-11-25 (soil-grown crop). Planting: high temperatures and long days cause bolting; optimum soil temperature for germination 70 °F, above 85 °F inhibits germination. Harvest & Storage: about 37 to 45 days after planting; harvest leaves 3 to 6 inches long, picking outer leaves first. Recommended Cultivars: Bloomsdale semi-savoy, slow bolting; Whale savoy, downy mildew resistant, slow bolting. No hydroponic pH or EC',
+  },
 ] as const satisfies readonly M06EditorialSource[];
 
 export const m06EditorialSourceById = new Map(

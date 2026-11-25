@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 820" width="640" height="820" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic spinach temperature targets</title>
+  <desc id="d">Germination 65 to 70 °F (18 to 21 °C). Air 68 to 77 °F (20 to 25 °C). Nutrient solution 64 to 68 °F (18 to 20 °C) to slow Pythium root rot. Air at 95 °F (35 °C) badly stunted plants.</desc>
+  <rect width="640" height="820" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Warm leaves, cool roots</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Spinach temperature targets</text>
+    <rect x="20" y="120" width="600" height="140" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="120" width="16" height="140" rx="6" fill="#D9925C"/>
+    <text x="56" y="164" font-size="22" font-weight="700" fill="#3F5248">Germination</text>
+    <text x="56" y="214" font-size="34" font-weight="800" fill="#0E1A14">65–70 °F</text>
+    <text x="56" y="244" font-size="20" fill="#3F5248">18–21 °C, UGA</text>
+    <rect x="20" y="290" width="600" height="140" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="290" width="16" height="140" rx="6" fill="#2E8B63"/>
+    <text x="56" y="334" font-size="22" font-weight="700" fill="#3F5248">Air</text>
+    <text x="56" y="384" font-size="34" font-weight="800" fill="#0E1A14">68–77 °F</text>
+    <text x="56" y="414" font-size="20" fill="#3F5248">20–25 °C, Cornell</text>
+    <rect x="20" y="460" width="600" height="140" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="460" width="16" height="140" rx="6" fill="#1F6E8C"/>
+    <text x="56" y="504" font-size="22" font-weight="700" fill="#3F5248">Nutrient solution</text>
+    <text x="56" y="554" font-size="34" font-weight="800" fill="#0E1A14">64–68 °F</text>
+    <text x="56" y="584" font-size="20" fill="#3F5248">18–20 °C, slows Pythium</text>
+    <rect x="20" y="630" width="600" height="160" rx="12" fill="#FBEAE5" stroke="#C2533A" stroke-width="2"/>
+    <text x="40" y="676" font-size="22" font-weight="700" fill="#C2533A">Too hot</text>
+    <text x="40" y="722" font-size="26" font-weight="800" fill="#0E1A14">Air 95 °F: stunted</text>
+    <text x="40" y="762" font-size="20" fill="#3F5248">Warm water favors root rot</text>
+  </g>
+</svg>
