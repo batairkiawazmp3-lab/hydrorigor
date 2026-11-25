@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 880" width="640" height="880" role="img" aria-labelledby="t d">
+  <title id="t">What green onion feeding trials found</title>
+  <desc id="d">Kane et al. 2006: more biomass at pH 6.5 than 5.8; half-strength Hoagland's preferred. Santos et al. 2021: 50 to 100 percent strength grew better than 125 percent, which cut leaf number and weight. Won et al. 2005: Yamazaki's solution best for young Welsh onion in water culture. No trial gave an EC.</desc>
+  <rect width="640" height="880" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Green onion feeding</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">What three trials found</text>
+    <text x="20" y="150" font-size="22" font-weight="700" fill="#0E1A14">Solution pH</text>
+    <rect x="20" y="166" width="200" height="40" rx="6" fill="#9DBFAE"/>
+    <text x="34" y="194" font-size="22" font-weight="700" fill="#0E1A14">pH 5.8</text>
+    <rect x="20" y="216" width="360" height="40" rx="6" fill="#2E8B63"/>
+    <text x="34" y="244" font-size="22" font-weight="700" fill="#FFFFFF">pH 6.5: more biomass</text>
+    <text x="20" y="286" font-size="20" fill="#3F5248">Kane et al. 2006</text>
+    <text x="20" y="350" font-size="22" font-weight="700" fill="#0E1A14">Nutrient strength</text>
+    <rect x="20" y="366" width="400" height="40" rx="6" fill="#2E8B63"/>
+    <text x="34" y="394" font-size="22" font-weight="700" fill="#FFFFFF">50–100%: better growth</text>
+    <rect x="20" y="416" width="260" height="40" rx="6" fill="#C2533A"/>
+    <text x="34" y="444" font-size="22" font-weight="700" fill="#FFFFFF">125%: fewer leaves</text>
+    <text x="20" y="486" font-size="20" fill="#3F5248">Santos et al. 2021</text>
+    <text x="20" y="550" font-size="22" font-weight="700" fill="#0E1A14">Best recipes</text>
+    <text x="20" y="588" font-size="22" fill="#0E1A14">Half-strength Hoagland's</text>
+    <text x="20" y="618" font-size="20" fill="#3F5248">Kane et al. 2006</text>
+    <text x="20" y="660" font-size="22" fill="#0E1A14">Yamazaki's (Welsh onion)</text>
+    <text x="20" y="690" font-size="20" fill="#3F5248">Won et al. 2005</text>
+    <rect x="20" y="740" width="600" height="110" rx="12" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <text x="40" y="782" font-size="22" font-weight="700" fill="#0E1A14">No published EC target</text>
+    <text x="40" y="818" font-size="20" fill="#3F5248">Hold pH 6.0–6.5, half to full strength</text>
+  </g>
+</svg>

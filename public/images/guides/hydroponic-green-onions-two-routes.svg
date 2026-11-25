@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 940" width="640" height="940" role="img" aria-labelledby="t d">
+  <title id="t">Two routes to hydroponic green onions</title>
+  <desc id="d">From seed: sow 7 to 9 seeds per plug, germinate at 61 to 75 °F, transplant clumps 2 inches apart, first cut at 6 inches tall, about 60 to 80 days from planting. From scraps: keep 2 to 3 inches of the white end, stand in 2 inches of water changed daily, new growth in 3 days, 5 to 7 inches in about a week, regrow about 2 times.</desc>
+  <rect width="640" height="940" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Seed or scraps?</text>
+    <text x="20" y="100" font-size="24" font-weight="700" fill="#2E8B63">From seed</text>
+    <line x1="50" y1="134" x2="50" y2="454" stroke="#2E8B63" stroke-width="4"/>
+    <circle cx="50" cy="144" r="14" fill="#2E8B63"/>
+    <text x="80" y="152" font-size="22" fill="#0E1A14">7–9 seeds per plug</text>
+    <circle cx="50" cy="224" r="14" fill="#2E8B63"/>
+    <text x="80" y="232" font-size="22" fill="#0E1A14">Germinate 61–75 °F</text>
+    <circle cx="50" cy="304" r="14" fill="#2E8B63"/>
+    <text x="80" y="312" font-size="22" fill="#0E1A14">Clumps 2 in apart</text>
+    <circle cx="50" cy="384" r="14" fill="#2E8B63"/>
+    <text x="80" y="392" font-size="22" font-weight="700" fill="#0E1A14">First cut at 6 in tall</text>
+    <circle cx="50" cy="454" r="14" fill="#2E8B63"/>
+    <text x="80" y="462" font-size="22" fill="#0E1A14">About 60–80 days</text>
+    <text x="20" y="540" font-size="24" font-weight="700" fill="#1F6E8C">From scraps</text>
+    <line x1="50" y1="574" x2="50" y2="894" stroke="#1F6E8C" stroke-width="4"/>
+    <circle cx="50" cy="584" r="14" fill="#1F6E8C"/>
+    <text x="80" y="592" font-size="22" fill="#0E1A14">Keep 2–3 in of the base</text>
+    <circle cx="50" cy="664" r="14" fill="#1F6E8C"/>
+    <text x="80" y="672" font-size="22" fill="#0E1A14">2 in of water, daily change</text>
+    <circle cx="50" cy="744" r="14" fill="#1F6E8C"/>
+    <text x="80" y="752" font-size="22" fill="#0E1A14">New growth in 3 days</text>
+    <circle cx="50" cy="824" r="14" fill="#1F6E8C"/>
+    <text x="80" y="832" font-size="22" font-weight="700" fill="#0E1A14">5–7 in in about a week</text>
+    <circle cx="50" cy="894" r="14" fill="#1F6E8C"/>
+    <text x="80" y="902" font-size="22" fill="#0E1A14">Regrows about 2 times</text>
+  </g>
+</svg>

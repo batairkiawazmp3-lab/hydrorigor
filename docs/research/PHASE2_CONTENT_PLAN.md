@@ -35,7 +35,7 @@ Stages from the workbook's Publishing Sequence:
 | 45 | Stage 3 | crops | articles | Best Herbs for Hydroponic Systems | hydroponic system for herbs | Commercial | Suggestion-derived |  |  | `best-herbs-for-hydroponics` | Published 2026-11-24 as "Best Herbs for Hydroponics: pH, EC, Light & Easiest Picks" |
 | 46 | Stage 3 | crops | articles | How to Grow Spinach Hydroponically | hydroponic spinach | Informational | Editorial gap |  |  | `hydroponic-spinach` | Published 2026-11-25 as "Hydroponic Spinach: pH, EC, Temperature & Bolting Guide" |
 | 47 | Stage 3 | crops | articles | How to Grow Kale Hydroponically | hydroponic kale | Informational | Editorial gap |  |  | `hydroponic-kale` | Published 2026-11-25 as "Hydroponic Kale: pH, EC, Light & Harvest Guide" |
-| 48 | Stage 3 | crops | articles | How to Grow Green Onions Hydroponically | hydroponic green onions | Informational | Suggestion-derived |  |  | `hydroponic-green-onions` |  |
+| 48 | Stage 3 | crops | articles | How to Grow Green Onions Hydroponically | hydroponic green onions | Informational | Suggestion-derived |  |  | `hydroponic-green-onions` | Published 2026-11-25 as "Hydroponic Green Onions: pH, Spacing, Regrowth & Harvest" |
 | 49 | Stage 3 | crops | articles | How to Grow Cilantro Hydroponically | hydroponic cilantro | Informational | Editorial gap |  |  | `hydroponic-cilantro` |  |
 | 50 | Stage 3 | crops | articles | How to Grow Mint Hydroponically | hydroponic mint | Informational | Editorial gap |  |  | `hydroponic-mint` |  |
 | 51 | Stage 3 | crops | articles | Hydroponic Strawberry Yield per Plant: What Affects Production | hydroponic strawberries yield per plant | Informational | Suggestion-derived |  |  | `hydroponic-strawberry-yield` |  |
