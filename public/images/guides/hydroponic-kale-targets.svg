@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1290" width="640" height="1290" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic kale targets</title>
+  <desc id="d">Hydroponic kale targets: solution pH 5.8; EC 1.5 to 2.1; DLI 17 mol per square meter per day; air 69 °F day and 56 °F night; a standard air stone gives enough oxygen; baby leaf about 13 days from seed; full plants 4 weeks after transplant.</desc>
+  <rect width="640" height="1290" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">Hydroponic kale targets</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">From university trials and guides</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">Details and sources in the text</text>
+    <rect x="20" y="140" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE0D6" stroke-width="2"/>
+    <text x="44" y="180" font-size="22" fill="#5B6F64">Solution pH</text>
+    <text x="44" y="222" font-size="32" font-weight="800" fill="#0F6B4F">5.8</text>
+    <text x="44" y="254" font-size="20" fill="#5B6F64">Ohio State and UF/IFAS set points</text>
+    <rect x="20" y="290" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE0D6" stroke-width="2"/>
+    <text x="44" y="330" font-size="22" fill="#5B6F64">EC</text>
+    <text x="44" y="372" font-size="32" font-weight="800" fill="#0F6B4F">1.5–2.1</text>
+    <text x="44" y="404" font-size="20" fill="#5B6F64">Cornell 1.5, UF 2.0, best 2.1 in Ohio</text>
+    <rect x="20" y="440" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE0D6" stroke-width="2"/>
+    <text x="44" y="480" font-size="22" fill="#5B6F64">Light (DLI)</text>
+    <text x="44" y="522" font-size="32" font-weight="800" fill="#0F6B4F">17 mol/m²/day</text>
+    <text x="44" y="554" font-size="20" fill="#5B6F64">Cornell, for baby-leaf kale</text>
+    <rect x="20" y="590" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE0D6" stroke-width="2"/>
+    <text x="44" y="630" font-size="22" fill="#5B6F64">Air, day/night</text>
+    <text x="44" y="672" font-size="32" font-weight="800" fill="#0F6B4F">69/56 °F</text>
+    <text x="44" y="704" font-size="20" fill="#5B6F64">Ohio State NFT trial</text>
+    <rect x="20" y="740" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE0D6" stroke-width="2"/>
+    <text x="44" y="780" font-size="22" fill="#5B6F64">Dissolved oxygen</text>
+    <text x="44" y="822" font-size="32" font-weight="800" fill="#0F6B4F">Air stone is enough</text>
+    <text x="44" y="854" font-size="20" fill="#5B6F64">UGA, 2025</text>
+    <rect x="20" y="890" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE0D6" stroke-width="2"/>
+    <text x="44" y="930" font-size="22" fill="#5B6F64">Baby leaf</text>
+    <text x="44" y="972" font-size="32" font-weight="800" fill="#0F6B4F">~13 days</text>
+    <text x="44" y="1004" font-size="20" fill="#5B6F64">from seed, Cornell</text>
+    <rect x="20" y="1040" width="600" height="128" rx="16" fill="#FFFFFF" stroke="#CFE0D6" stroke-width="2"/>
+    <text x="44" y="1080" font-size="22" fill="#5B6F64">Full plants</text>
+    <text x="44" y="1122" font-size="32" font-weight="800" fill="#0F6B4F">4 weeks</text>
+    <text x="44" y="1154" font-size="20" fill="#5B6F64">after transplant, Ohio State</text>
+    <text x="20" y="1268" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

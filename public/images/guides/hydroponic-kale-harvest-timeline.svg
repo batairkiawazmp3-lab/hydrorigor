@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1140" width="640" height="1140" role="img" aria-labelledby="t d">
+  <title id="t">Kale harvest timeline</title>
+  <desc id="d">Kale timeline: sow on day 0, seeds germinate in about 3 days; baby leaf is ready about day 13; transplant seedlings at week 3; first full harvest about week 7, 4 weeks after transplant; then cut again every 13 to 22 days. Cut outer leaves only, no more than one third of the plant, and leave the center.</desc>
+  <rect width="640" height="1140" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#0E1A14">From seed to repeat harvests</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Days from sowing; trials differ</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">Details and sources in the text</text>
+    <circle cx="70" cy="200" r="16" fill="#0F6B4F"/>
+    <path d="M70 216 V324" stroke="#9FC3B0" stroke-width="4"/>
+    <text x="104" y="180" font-size="20" fill="#5B6F64">Day 0</text>
+    <text x="104" y="214" font-size="28" font-weight="800" fill="#0E1A14">Sow</text>
+    <text x="104" y="246" font-size="20" fill="#5B6F64">Seeds germinate in about 3 days</text>
+    <circle cx="70" cy="340" r="16" fill="#0F6B4F"/>
+    <path d="M70 356 V464" stroke="#9FC3B0" stroke-width="4"/>
+    <text x="104" y="320" font-size="20" fill="#5B6F64">~Day 13</text>
+    <text x="104" y="354" font-size="28" font-weight="800" fill="#0E1A14">Baby leaf</text>
+    <text x="104" y="386" font-size="20" fill="#5B6F64">Cut whole trays (Cornell)</text>
+    <circle cx="70" cy="480" r="16" fill="#0F6B4F"/>
+    <path d="M70 496 V604" stroke="#9FC3B0" stroke-width="4"/>
+    <text x="104" y="460" font-size="20" fill="#5B6F64">Week 3</text>
+    <text x="104" y="494" font-size="28" font-weight="800" fill="#0E1A14">Transplant</text>
+    <text x="104" y="526" font-size="20" fill="#5B6F64">Seedlings into the system</text>
+    <circle cx="70" cy="620" r="16" fill="#0F6B4F"/>
+    <path d="M70 636 V744" stroke="#9FC3B0" stroke-width="4"/>
+    <text x="104" y="600" font-size="20" fill="#5B6F64">~Week 7</text>
+    <text x="104" y="634" font-size="28" font-weight="800" fill="#0E1A14">First full harvest</text>
+    <text x="104" y="666" font-size="20" fill="#5B6F64">4 weeks after transplant</text>
+    <circle cx="70" cy="760" r="16" fill="#0F6B4F"/>
+    <text x="104" y="740" font-size="20" fill="#5B6F64">Every 2–3 wk</text>
+    <text x="104" y="774" font-size="28" font-weight="800" fill="#0E1A14">Cut again</text>
+    <text x="104" y="806" font-size="20" fill="#5B6F64">13–22 days apart (UF/IFAS)</text>
+    <rect x="20" y="860" width="600" height="186" rx="16" fill="#E7F3EA" stroke="#9FC3B0" stroke-width="2"/>
+    <text x="44" y="902" font-size="24" font-weight="800" fill="#0F6B4F">How to cut so it regrows</text>
+    <text x="44" y="942" font-size="22" fill="#3F5248">Take outer leaves only</text>
+    <text x="44" y="976" font-size="22" fill="#3F5248">No more than 1/3 of the plant</text>
+    <text x="44" y="1010" font-size="22" fill="#3F5248">Leave the center and 5+ leaves</text>
+    <text x="20" y="1118" font-size="20" fill="#5B6F64">HydroRigor · hydrorigor.com</text>
+  </g>
+</svg>

@@ -305,6 +305,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['isu-growing-herbs-indoors', 'currey-herbs-ec-dli-2019', 'currey-herb-nutrition-producegrower-2024', 'osu-ph-ec-guide', 'vt-nft-systems', 'vt-system-crop-comparisons', 'walters-basil-dli-temperature-2023', 'gomez-basil-small-scale-2020', 'walters-basil-density-2015', 'osu-hydro-hints-ebb-flow', 'sfa-home-growing-kit', 'ifas-tabletop-hydroponics'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 47,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Kale: pH, EC, Light & Harvest Guide',
+    route: 'hydroponic-kale',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic kale',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['yang-kale-collard-ec-2024', 'yost-leafy-greens-ec-dli-2021', 'mattson-hydroponic-leafy-greens-gpn-2016', 'ifas-svaec-kale-cultivars-2015', 'asu-kale-ph-response', 'wortman-ec-ph-ebb-flow-2015', 'baumbauer-lettuce-kale-spinach-dli-2019', 'uga-dissolved-oxygen-kale-arugula-2025', 'tamu-collards-kale', 'uga-ghop-kale', 'ncsu-crop-guide-kale', 'oregonstate-kale'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
