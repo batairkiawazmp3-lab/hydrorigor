@@ -154,6 +154,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-spinach': 'tower-garden-greens',
   // Long white roots under a net pot: a DWC plant like the green onion setup; no green onion photo in the registry yet.
   'hydroponic-green-onions': 'dwc-net-pot-roots',
+  // Leafy greens and herbs in NFT channels under LEDs: the system type of the Iowa State cilantro trial; no cilantro photo in the registry yet.
+  'hydroponic-cilantro': 'systems-home-nft-lights',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

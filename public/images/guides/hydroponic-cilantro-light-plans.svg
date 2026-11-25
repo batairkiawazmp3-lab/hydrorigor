@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Two lighting plans for hydroponic cilantro</title>
+  <desc id="d">16 hours a day: DLI 18 at about 310 micromoles per square meter per second, 154 percent more fresh mass than DLI 7, flower buds from about day 49. 12 hours a day: delays flowering, needs about 395 micromoles for DLI 17, suits picking over several weeks.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Cilantro light: two plans</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Yield versus bolting</text>
+    <rect x="20" y="120" width="600" height="340" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="120" width="600" height="64" rx="14" fill="#2E8B63"/>
+    <text x="40" y="162" font-size="26" font-weight="800" fill="#FFFFFF">16 hours a day</text>
+    <text x="40" y="226" font-size="22" font-weight="700" fill="#0E1A14">DLI 18 at about 310 µmol</text>
+    <text x="40" y="264" font-size="22" fill="#0E1A14">+154% fresh mass vs DLI 7</text>
+    <text x="40" y="294" font-size="20" fill="#3F5248">Currey et al. 2019</text>
+    <text x="40" y="344" font-size="22" fill="#C2533A" font-weight="700">Buds from about day 49</text>
+    <text x="40" y="374" font-size="20" fill="#3F5248">Tomitaka et al. 2001</text>
+    <text x="40" y="426" font-size="22" font-weight="700" fill="#0E1A14">Best for: one cut at 7 weeks</text>
+    <rect x="20" y="500" width="600" height="340" rx="14" fill="#FFFFFF" stroke="#CFE3D6" stroke-width="2"/>
+    <rect x="20" y="500" width="600" height="64" rx="14" fill="#1F5E7A"/>
+    <text x="40" y="542" font-size="26" font-weight="800" fill="#FFFFFF">12 hours or less</text>
+    <text x="40" y="606" font-size="22" font-weight="700" fill="#0E1A14">Delays flowering</text>
+    <text x="40" y="636" font-size="20" fill="#3F5248">Michigan State 2021</text>
+    <text x="40" y="686" font-size="22" font-weight="700" fill="#0E1A14">DLI 17 needs about 395 µmol</text>
+    <text x="40" y="716" font-size="20" fill="#3F5248">Virginia Tech DLI target</text>
+    <text x="40" y="766" font-size="22" fill="#0E1A14">Stronger lamp needed</text>
+    <text x="40" y="806" font-size="22" font-weight="700" fill="#0E1A14">Best for: picking for weeks</text>
+    <text x="20" y="880" font-size="20" fill="#3F5248">µmol = µmol/m²/s at leaf height</text>
+  </g>
+</svg>
