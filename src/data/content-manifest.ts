@@ -306,6 +306,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
   {
+    id: 46,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Spinach: pH, EC, Temperature & Bolting Guide',
+    route: 'hydroponic-spinach',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic spinach',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['cornell-cea-spinach-2005', 'uga-greenhouse-spinach-c1304', 'hortsci-spinach-acidic-solution-2021', 'clemson-hgic-spinach-1320', 'osu-ph-ec-guide', 'vt-system-crop-comparisons', 'vt-nft-systems', 'osu-hydro-hints-dwc', 'osu-hydro-hints-nft', 'ohio-state-root-zone-leafy-greens-2019'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
+  {
     id: 47,
     collection: 'articles',
     category: 'crops',

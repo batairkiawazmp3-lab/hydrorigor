@@ -150,6 +150,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   // Leafy greens and herbs in white channels under LED lights: a home herb system; no single-herb close-up in the registry yet.
   'best-herbs-for-hydroponics': 'systems-home-nft-lights',
   'hydroponic-kale': 'red-veined-chard',
+  // Leafy greens in tower pockets: the nearest registry match to a spinach crop; no spinach photo yet.
+  'hydroponic-spinach': 'tower-garden-greens',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
