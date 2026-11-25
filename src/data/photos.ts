@@ -152,6 +152,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-kale': 'red-veined-chard',
   // Leafy greens in tower pockets: the nearest registry match to a spinach crop; no spinach photo yet.
   'hydroponic-spinach': 'tower-garden-greens',
+  // Long white roots under a net pot: a DWC plant like the green onion setup; no green onion photo in the registry yet.
+  'hydroponic-green-onions': 'dwc-net-pot-roots',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

@@ -329,6 +329,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['yang-kale-collard-ec-2024', 'yost-leafy-greens-ec-dli-2021', 'mattson-hydroponic-leafy-greens-gpn-2016', 'ifas-svaec-kale-cultivars-2015', 'asu-kale-ph-response', 'wortman-ec-ph-ebb-flow-2015', 'baumbauer-lettuce-kale-spinach-dli-2019', 'uga-dissolved-oxygen-kale-arugula-2025', 'tamu-collards-kale', 'uga-ghop-kale', 'ncsu-crop-guide-kale', 'oregonstate-kale'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 48,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Green Onions: pH, Spacing, Regrowth & Harvest',
+    route: 'hydroponic-green-onions',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic green onions',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['kane-onion-nutrient-ph-2006', 'santos-green-onion-solution-2021', 'won-welsh-onion-water-culture-2005', 'sare-scallions-harvest-manual-2025', 'bc-green-bunching-onions', 'osu-onions-bunching', 'ucmg-santa-clara-bunching-onions', 'ucmg-riverside-scallions-2021', 'umn-scallions-home-gardens', 'gao-welsh-onion-led-2020', 'isu-growing-herbs-indoors', 'osu-ph-ec-guide', 'osu-hydro-hints-dwc', 'vt-dwc-systems-spes464'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
