@@ -149,6 +149,7 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-microgreens': 'led-lettuce-seedlings',
   // Leafy greens and herbs in white channels under LED lights: a home herb system; no single-herb close-up in the registry yet.
   'best-herbs-for-hydroponics': 'systems-home-nft-lights',
+  'hydroponic-kale': 'red-veined-chard',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
