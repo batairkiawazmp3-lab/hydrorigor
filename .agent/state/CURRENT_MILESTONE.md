@@ -129,7 +129,8 @@ impressions in 28 days).
         ~~ID 46 `/crops/hydroponic-spinach/`~~ (published 2026-11-25, "Hydroponic Spinach: pH, EC, Temperature & Bolting Guide").
         ~~ID 48 `/crops/hydroponic-green-onions/`~~ (published 2026-11-25, "Hydroponic Green Onions: pH, Spacing, Regrowth & Harvest").
         ~~ID 49 `/crops/hydroponic-cilantro/`~~ (published 2026-11-25, "Hydroponic Cilantro: pH, EC, Light & Bolting Guide").
-        Next: ID 50 (hydroponic mint).
+        ~~ID 50 `/crops/hydroponic-mint/`~~ (published 2026-11-26, "Hydroponic Mint: pH, EC, Cuttings & Harvest Guide").
+        Next: ID 51 (hydroponic strawberry yield per plant).
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the

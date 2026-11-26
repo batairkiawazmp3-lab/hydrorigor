@@ -37,7 +37,7 @@ Stages from the workbook's Publishing Sequence:
 | 47 | Stage 3 | crops | articles | How to Grow Kale Hydroponically | hydroponic kale | Informational | Editorial gap |  |  | `hydroponic-kale` | Published 2026-11-25 as "Hydroponic Kale: pH, EC, Light & Harvest Guide" |
 | 48 | Stage 3 | crops | articles | How to Grow Green Onions Hydroponically | hydroponic green onions | Informational | Suggestion-derived |  |  | `hydroponic-green-onions` | Published 2026-11-25 as "Hydroponic Green Onions: pH, Spacing, Regrowth & Harvest" |
 | 49 | Stage 3 | crops | articles | How to Grow Cilantro Hydroponically | hydroponic cilantro | Informational | Editorial gap |  |  | `hydroponic-cilantro` | Published 2026-11-25 as "Hydroponic Cilantro: pH, EC, Light & Bolting Guide" |
-| 50 | Stage 3 | crops | articles | How to Grow Mint Hydroponically | hydroponic mint | Informational | Editorial gap |  |  | `hydroponic-mint` |  |
+| 50 | Stage 3 | crops | articles | How to Grow Mint Hydroponically | hydroponic mint | Informational | Editorial gap |  |  | `hydroponic-mint` | Published 2026-11-26 as "Hydroponic Mint: pH, EC, Cuttings & Harvest Guide" |
 | 51 | Stage 3 | crops | articles | Hydroponic Strawberry Yield per Plant: What Affects Production | hydroponic strawberries yield per plant | Informational | Suggestion-derived |  |  | `hydroponic-strawberry-yield` |  |
 | 52 | Stage 3 | crops | articles | Hydroponic Strawberry Nutrient Schedule by Growth Stage | hydroponic strawberries nutrients | Informational | Suggestion-derived |  |  | `hydroponic-strawberry-nutrient-schedule` |  |
 | 53 | Stage 3 | nutrients | articles | Hydroponic Lettuce pH and EC Targets | hydroponic lettuce ph | Informational | Suggestion-derived |  |  | `hydroponic-lettuce-ph-ec` |  |
