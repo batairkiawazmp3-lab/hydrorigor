@@ -353,6 +353,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['currey-herbs-ec-dli-2019', 'currey-herb-nutrition-producegrower-2024', 'msu-herbs-photoperiod-producegrower-2021', 'tomitaka-coriander-daylength-2001', 'kim-coriander-blue-light-2025', 'omafra-cilantro-coriander', 'ucanr-cilantro-production-7236', 'usu-cilantro-coriander-garden-2018', 'oregonstate-cilantro-coriander', 'isu-growing-herbs-indoors', 'vt-nft-systems', 'vt-system-crop-comparisons', 'osu-hydro-hints-ebb-flow', 'usu-grow-your-own-microgreens'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 50,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Mint: pH, EC, Cuttings & Harvest Guide',
+    route: 'hydroponic-mint',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic mint',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['tabatabaie-peppermint-ec-tjaf-2007', 'tabatabaie-peppermint-ec-actahort-2007', 'hazrati-mint-ngs-2024', 'janpen-japanese-mint-dwc-2019', 'aktsoglou-mint-protein-hydrolysate-2021', 'kasampalis-mint-salinity-2021', 'clade-spearmint-nutrient-disorders-2025', 'walters-basil-dli-temperature-2023', 'usu-mint-in-the-garden-2020', 'ndsu-field-to-fork-mint', 'isu-growing-herbs-indoors', 'mu-nutrient-solutions', 'vt-nft-systems', 'vt-system-crop-comparisons', 'osu-hydro-hints-ebb-flow'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

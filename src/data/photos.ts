@@ -156,6 +156,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-green-onions': 'dwc-net-pot-roots',
   // Leafy greens and herbs in NFT channels under LEDs: the system type of the Iowa State cilantro trial; no cilantro photo in the registry yet.
   'hydroponic-cilantro': 'systems-home-nft-lights',
+  // Cuttings rooting in glass tubes: mint is grown from rooted cuttings; no mint photo in the registry yet.
+  'hydroponic-mint': 'test-tube-cuttings',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

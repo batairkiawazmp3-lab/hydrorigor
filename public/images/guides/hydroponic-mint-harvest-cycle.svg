@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 940" width="640" height="940" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic mint from cutting to repeat harvests</title>
+  <desc id="d">Root a cutting in water. Transplant a rooted shoot about 4 inches long. First cut 3 weeks after transplant in a flood-table trial, or 37 to 49 days in an NFT trial. Regrowth cuts every 30 to 46 days. Cut before flowering, because bloom lowers oil and flavor.</desc>
+  <rect width="640" height="940" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Mint: cut and regrow</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">From cutting to repeat harvests</text>
+    <line x1="80" y1="140" x2="80" y2="860" stroke="#9DBFAE" stroke-width="6"/>
+    <circle cx="80" cy="160" r="16" fill="#2E8B63"/>
+    <text x="120" y="156" font-size="24" font-weight="800" fill="#0E1A14">Root a cutting</text>
+    <text x="120" y="188" font-size="20" fill="#3F5248">In water until roots show</text>
+    <text x="120" y="216" font-size="20" fill="#3F5248">NDSU Extension</text>
+    <circle cx="80" cy="300" r="16" fill="#2E8B63"/>
+    <text x="120" y="296" font-size="24" font-weight="800" fill="#0E1A14">Transplant</text>
+    <text x="120" y="328" font-size="20" fill="#3F5248">Rooted shoot, 4 in (10 cm)</text>
+    <text x="120" y="356" font-size="20" fill="#3F5248">Kasampalis et al. 2021</text>
+    <rect x="40" y="410" width="580" height="300" rx="14" fill="#FFFFFF" stroke="#2E8B63" stroke-width="3"/>
+    <circle cx="80" cy="450" r="16" fill="#1F5E7A"/>
+    <text x="120" y="446" font-size="24" font-weight="800" fill="#0E1A14">First cut</text>
+    <text x="120" y="478" font-size="20" fill="#3F5248">3 weeks: flood-table trial</text>
+    <text x="120" y="506" font-size="20" fill="#3F5248">37–49 days: NFT trial</text>
+    <text x="120" y="534" font-size="20" fill="#3F5248">Walters 2023; Hazrati 2024</text>
+    <circle cx="80" cy="610" r="16" fill="#1F5E7A"/>
+    <text x="120" y="606" font-size="24" font-weight="800" fill="#0E1A14">Regrowth cuts</text>
+    <text x="120" y="638" font-size="20" fill="#3F5248">Every 30–46 days</text>
+    <text x="120" y="666" font-size="20" fill="#3F5248">Hazrati et al. 2024</text>
+    <circle cx="80" cy="790" r="16" fill="#C2533A"/>
+    <text x="120" y="786" font-size="24" font-weight="800" fill="#C2533A">Before it flowers</text>
+    <text x="120" y="818" font-size="20" fill="#3F5248">Bloom lowers oil and flavor</text>
+    <text x="120" y="846" font-size="20" fill="#3F5248">Utah State Extension</text>
+    <text x="20" y="910" font-size="20" fill="#3F5248">The second cut gave the most</text>
+  </g>
+</svg>
