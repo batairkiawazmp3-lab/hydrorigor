@@ -109,7 +109,7 @@ impressions in 28 days).
 Moved to the top on 2026-11-26 by the daily Search Console check (rule: position 8–20 with 30+
 impressions in 28 days).
 
-24. [ ] `/nutrients-water/hydroponic-nutrients-for-tomatoes/` — strengthening pass (rebuilt 2026-11-06,
+24. [x] `/nutrients-water/hydroponic-nutrients-for-tomatoes/` — strengthening pass done 2026-11-26 ("Hydroponic Nutrients for Tomatoes: Best Fertilizer, EC & pH": answer leads with the best fertilizer format, new "Best hydroponic fertilizer for tomatoes" section with a format table, label-check diagram, 4-18-38 rates and label arithmetic, FloraSeries EC compared with tomato targets, two new troubleshooting rows, links to 15 guides and tools, about 2,480 words). Was: strengthening pass (rebuilt 2026-11-06,
         "Hydroponic Nutrients for Tomatoes: EC, pH & Feeding by Stage"): clearer direct answer, intent
         match for the tomato-fertilizer queries it shows for ("best hydroponic nutrients for tomatoes"
         3 impressions at 62.3, "hydroponic fertilizer tomatoes" 2 at 63.0, "tomato hydroponic nutrients"

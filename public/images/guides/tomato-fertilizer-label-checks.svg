@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1010" width="640" height="1010" role="img" aria-labelledby="t d">
+  <title id="t">Four label checks for a hydroponic tomato fertilizer</title>
+  <desc id="d">Four checks before buying a hydroponic fertilizer for tomatoes. 1, low nitrogen and high potassium, for example a 4-18-38 base, not an all-purpose 20-20-20. 2, calcium supplied in a separate part or stock, usually calcium nitrate, so it does not form solids with sulfate or phosphate. 3, a complete formula with chelated micronutrients such as iron, manganese and zinc listed on the label. 4, the feeding chart or label rate reaches EC 2.0 to 3.0 mS/cm for fruiting plants; check it with a meter.</desc>
+  <rect width="640" height="1010" fill="#F5F7F2"/>
+  <text x="20" y="54" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Tomato fertilizer: 4 checks</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="88" font-size="20" fill="#3F5248">Read the label before you buy. Mississippi</text>
+    <text x="20" y="114" font-size="20" fill="#3F5248">State, Penn State, Tennessee W 844-C</text>
+
+    <rect x="20" y="146" width="600" height="190" rx="18" fill="#DCEFE3" stroke="#3F5248" stroke-width="3"/>
+    <circle cx="74" cy="200" r="30" fill="#2F6B4F"/>
+    <text x="74" y="210" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="124" y="198" font-size="26" font-weight="800" fill="#0E1A14">Low N, high K</text>
+    <text x="124" y="236" font-size="22" fill="#0E1A14">A tomato base such as 4-18-38</text>
+    <text x="124" y="268" font-size="22" fill="#0E1A14">Not all-purpose 20-20-20</text>
+    <path d="M124 300 L600 300" stroke="#3F5248" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="124" y="324" font-size="20" fill="#3F5248">Mississippi State Extension</text>
+
+    <rect x="20" y="356" width="600" height="190" rx="18" fill="#E3EEF6" stroke="#3F5248" stroke-width="3"/>
+    <circle cx="74" cy="410" r="30" fill="#2F5E7A"/>
+    <text x="74" y="420" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="124" y="408" font-size="26" font-weight="800" fill="#0E1A14">Calcium kept apart</text>
+    <text x="124" y="446" font-size="22" fill="#0E1A14">Calcium nitrate in its own</text>
+    <text x="124" y="478" font-size="22" fill="#0E1A14">part, bag or stock tank</text>
+    <path d="M124 510 L600 510" stroke="#3F5248" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="124" y="534" font-size="20" fill="#3F5248">Penn State Extension</text>
+
+    <rect x="20" y="566" width="600" height="190" rx="18" fill="#F4ECD8" stroke="#3F5248" stroke-width="3"/>
+    <circle cx="74" cy="620" r="30" fill="#8A6A1F"/>
+    <text x="74" y="630" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="124" y="618" font-size="26" font-weight="800" fill="#0E1A14">Complete formula</text>
+    <text x="124" y="656" font-size="22" fill="#0E1A14">Chelated iron, manganese</text>
+    <text x="124" y="688" font-size="22" fill="#0E1A14">and zinc on the label</text>
+    <path d="M124 720 L600 720" stroke="#3F5248" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="124" y="744" font-size="20" fill="#3F5248">Penn State Extension</text>
+
+    <rect x="20" y="776" width="600" height="190" rx="18" fill="#F1E1DC" stroke="#3F5248" stroke-width="3"/>
+    <circle cx="74" cy="830" r="30" fill="#8A3F2B"/>
+    <text x="74" y="840" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="124" y="828" font-size="26" font-weight="800" fill="#0E1A14">Reaches EC 2.0–3.0</text>
+    <text x="124" y="866" font-size="22" fill="#0E1A14">At the fruiting rate on its</text>
+    <text x="124" y="898" font-size="22" fill="#0E1A14">chart; confirm with a meter</text>
+    <path d="M124 930 L600 930" stroke="#3F5248" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="124" y="954" font-size="20" fill="#3F5248">University of Tennessee W 844-C</text>
+  </g>
+</svg>
