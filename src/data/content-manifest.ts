@@ -365,6 +365,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['tabatabaie-peppermint-ec-tjaf-2007', 'tabatabaie-peppermint-ec-actahort-2007', 'hazrati-mint-ngs-2024', 'janpen-japanese-mint-dwc-2019', 'aktsoglou-mint-protein-hydrolysate-2021', 'kasampalis-mint-salinity-2021', 'clade-spearmint-nutrient-disorders-2025', 'walters-basil-dli-temperature-2023', 'usu-mint-in-the-garden-2020', 'ndsu-field-to-fork-mint', 'isu-growing-herbs-indoors', 'mu-nutrient-solutions', 'vt-nft-systems', 'vt-system-crop-comparisons', 'osu-hydro-hints-ebb-flow'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 51,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Strawberry Yield per Plant: Varieties & Light',
+    route: 'hydroponic-strawberry-yield',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic strawberries yield per plant',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['paparozzi-strawberry-cultivars-greenhouse-2018', 'illinois-strawberry-observations', 'cornell-strawberry-light-fgn-2020', 'sare-one22-417-delaware-strawberries', 'park-albion-photoperiod-ppfd-2023', 'ries-park-strawberry-far-red-2024', 'hutchinson-strawberry-systems-2025', 'cornell-indoor-strawberry-basics', 'ua-strawberry-environment', 'umn-day-neutral-strawberries'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [
