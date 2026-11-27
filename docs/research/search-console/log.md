@@ -5,6 +5,7 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Checked | Clicks | Impressions | CTR | Avg position | Queries | Pages with impressions | Indexed pages | Shipped that week |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-11-27 (Nov 1–25; last update 3.5 h before check) | 6 | 718 | 0.8% | 38.7 | 146 | 41 | 44 indexed, 19 not indexed (was 34 / 15; last update Nov 23; new reason "Crawled - currently not indexed" 3, discovered 10 → 11); sitemap 69 discovered (was 56, last read Nov 24) | Tomato nutrients strengthening pass (#135), strawberry yield guide (#136, #137); log only (this change) |
 | 2026-11-26 (Nov 1–24; last update 3 h before check) | 6 | 682 | 0.9% | 38 | 139 | 40 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (unchanged, last read Nov 24) | Herbs (#126), kale (#127), spinach (#128), green onions (#130), cilantro (#131), mint (#132) guides; tomato nutrients strengthening pass moved to top of queue, links to what-is-hydroponics (this change) |
 | 2026-11-24 (Nov 1–22; last update 3 h before check) | 6 | 599 | 1% | 36.5 | 111 | 33 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (unchanged, last read Nov 13) | Cucumbers guide (#122), Bing and Pinterest claim handoff (#123), microgreens guide (#124); log only (this change) |
 | 2026-11-23 (Nov 1–21; last update 4 h before check) | 6 | 580 | 1% | 36.7 | 107 | 33 | 34 indexed, 15 not indexed (unchanged, last update Nov 16); sitemap 56 discovered (unchanged, last read Nov 13) | Home-growers second strengthening pass (#116), rockwool vs coco coir (#117), LECA (#119), peppers (#120); log only (this change) |
@@ -28,16 +29,17 @@ Figures are copied from Search Console (web search, last 28 days unless noted); 
 
 | Shipped | Page | Change | Check after |
 | --- | --- | --- | --- |
+| 2026-11-26 | /nutrients-water/hydroponic-nutrients-for-tomatoes/ | Strengthening pass (#135: title "Hydroponic Nutrients for Tomatoes: Best Fertilizer, EC & pH", best-fertilizer answer first, label-check diagram, links to 15 guides and tools); before: 44 impressions, position 20.0 (Nov 1–24) | 2026-12-10, 2026-12-24 |
 | 2026-11-22 | /best/hydroponic-system-for-home-growers/ | Second strengthening pass (#116: yield-by-crop answer first, "what most effective means" section, trial-yield chart, links to 12 guides); before: 37 impressions, position 19.8 (Nov 1–20) | 2026-12-06, 2026-12-20 |
 | 2026-11-16 | /nutrients-water/hydroponic-nutrients-for-vegetables/ | Full rebuild (EC and pH by crop, shared-tank table, 2 charts, 9 sources) | 2026-11-30, 2026-12-14 |
 | 2026-11-15 | /nutrients-water/organic-hydroponic-nutrients/ | Full rebuild (#75: yields vs mineral nutrients, causes and fixes, 2 diagrams); before: 43 impressions, position 60.8 (Nov 1–13) | 2026-11-29, 2026-12-13 |
 | 2026-11-14 | /crops/hydroponic-tomato-seeds/ | Full rebuild (seed by space, micro-dwarf trial data, 2 diagrams, 8 sources) | 2026-11-28, 2026-12-12 |
 | 2026-11-14 | /best/hydroponic-ph-meter/ | New guide (ph meter hydroponics 590 / 15) | 2026-11-28, 2026-12-12 |
-| 2026-11-13 | /nutrients-water/hydroponic-nutrients-for-vegetables/ | 3 new internal links (nutrients, nutrient solution, lettuce guides); before: 13 impressions, position 57.6 (Nov 1–10) | 2026-11-27 |
-| 2026-11-13 | /nutrients-water/organic-hydroponic-nutrients/ | 1 new internal link (nutrient solution guide); before: 10 impressions, position 36.5 (Nov 1–10) | 2026-11-27 |
-| 2026-11-13 | /reviews/masterblend-hydroponic-nutrients/ | 1 new internal link (powder vs liquid guide); before: 14 impressions, position 9.8 (Nov 1–10) | 2026-11-27 |
-| 2026-11-13 | /best/hydroponic-nutrients-for-home-growers/ | 1 new internal link (powder vs liquid guide); before: 10 impressions, position 48.6 (Nov 1–10) | 2026-11-27 |
-| 2026-11-12 | /best/hydroponic-systems-for-beginners/ | Full rebuild (Kratky-first, 2 diagrams, 10 sources); before: 6 impressions, position 46.5 | 2026-11-26, 2026-12-10 |
+| 2026-11-13 | /nutrients-water/hydroponic-nutrients-for-vegetables/ | 3 new internal links (nutrients, nutrient solution, lettuce guides); before: 13 impressions, position 57.6 (Nov 1–10) | 2026-11-27: 13 → 19 impressions ▲, position 57.6 → 59.1 ▼ (Nov 1–10 → Nov 1–25) |
+| 2026-11-13 | /nutrients-water/organic-hydroponic-nutrients/ | 1 new internal link (nutrient solution guide); before: 10 impressions, position 36.5 (Nov 1–10) | 2026-11-27: 10 → 48 impressions ▲, position 36.5 → 64.5 ▼ (Nov 1–10 → Nov 1–25; the 2026-11-15 rebuild also applies) |
+| 2026-11-13 | /reviews/masterblend-hydroponic-nutrients/ | 1 new internal link (powder vs liquid guide); before: 14 impressions, position 9.8 (Nov 1–10) | 2026-11-27: 14 → 16 impressions ▲, position 9.8 → 9.6 ▲ (Nov 1–10 → Nov 1–25) |
+| 2026-11-13 | /best/hydroponic-nutrients-for-home-growers/ | 1 new internal link (powder vs liquid guide); before: 10 impressions, position 48.6 (Nov 1–10) | 2026-11-27: 10 → 32 impressions ▲, position 48.6 → 33.7 ▲ (Nov 1–10 → Nov 1–25; the 2026-11-17 rebuild also applies) |
+| 2026-11-12 | /best/hydroponic-systems-for-beginners/ | Full rebuild (Kratky-first, 2 diagrams, 10 sources); before: 6 impressions, position 46.5 | 2026-11-27 (checked a day late): 6 → 74 impressions ▲, position 46.5 → 21.0 ▲ (before → Nov 1–25); 2026-12-10 |
 | 2026-11-09 | /crops/hydroponic-basil/ | New guide (hydroponic basil 880 / 11) | 2026-11-23: no impressions yet (Nov 1–21) ▬; 2026-12-07 |
 | 2026-11-09 | /best/hydroponic-system-for-home-growers/ | Strengthening pass: crop-by-crop answer first, trial yields in the "most effective" FAQ, equipment table by system, kit and equipment FAQs, 2 new inbound links; before: 32 impressions, position 15.5 (Nov 1–7) | 2026-11-23: 32 → 37 impressions ▲, position 15.5 → 19.8 ▼ (Nov 1–7 → Nov 1–21); 2026-12-07 |
 | 2026-11-08 | /systems/indoor-hydroponic-systems-for-home/ | Full rebuild (#42, 6 types compared); before: 4 impressions, position 82.8 (Nov 1–6) | 2026-11-22: 4 → 24 impressions ▲, position 82.8 → 79.7 ▲ (Nov 1–6 → Nov 1–20); 2026-12-06 |
