@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 958" width="640" height="958" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic strawberry fruit per plant in university trials</title>
+  <desc id="d">Fruit per plant in kilograms: Nebraska Portola 0.74, Cornell Cabrillo under LED 0.53, Nebraska Chandler 0.46, Nebraska Albion 0.43, Cornell Albion under LED 0.34, Illinois Monterey 0.34, Illinois Albion 0.22, Cornell Albion on daylight only 0.16.</desc>
+  <rect width="640" height="958" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Strawberry yield per plant</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Fruit per plant over one season (kg)</text>
+    <text x="20" y="150" font-size="22" font-weight="800" fill="#0E1A14">Nebraska Portola: 0.74 kg</text>
+    <rect x="20" y="164" width="600" height="40" rx="8" fill="#2E8B63"/>
+    <text x="20" y="246" font-size="22" font-weight="800" fill="#0E1A14">Cornell Cabrillo, LED: 0.53 kg</text>
+    <rect x="20" y="260" width="430" height="40" rx="8" fill="#2E8B63"/>
+    <text x="20" y="342" font-size="22" font-weight="800" fill="#0E1A14">Nebraska Chandler: 0.46 kg</text>
+    <rect x="20" y="356" width="373" height="40" rx="8" fill="#9DBFAE"/>
+    <text x="20" y="438" font-size="22" font-weight="800" fill="#0E1A14">Nebraska Albion: 0.43 kg</text>
+    <rect x="20" y="452" width="349" height="40" rx="8" fill="#9DBFAE"/>
+    <text x="20" y="534" font-size="22" font-weight="800" fill="#0E1A14">Cornell Albion, LED: 0.34 kg</text>
+    <rect x="20" y="548" width="276" height="40" rx="8" fill="#9DBFAE"/>
+    <text x="20" y="630" font-size="22" font-weight="800" fill="#0E1A14">Illinois Monterey: 0.34 kg</text>
+    <rect x="20" y="644" width="276" height="40" rx="8" fill="#9DBFAE"/>
+    <text x="20" y="726" font-size="22" font-weight="800" fill="#0E1A14">Illinois Albion: 0.22 kg</text>
+    <rect x="20" y="740" width="178" height="40" rx="8" fill="#D9A23A"/>
+    <text x="20" y="822" font-size="22" font-weight="800" fill="#0E1A14">Cornell Albion, daylight: 0.16 kg</text>
+    <rect x="20" y="836" width="130" height="40" rx="8" fill="#C2533A"/>
+    <text x="20" y="934" font-size="20" fill="#3F5248">Paparozzi 2018; Cornell 2020; Illinois 2023</text>
+  </g>
+</svg>

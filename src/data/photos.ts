@@ -158,6 +158,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-cilantro': 'systems-home-nft-lights',
   // Cuttings rooting in glass tubes: mint is grown from rooted cuttings; no mint photo in the registry yet.
   'hydroponic-mint': 'test-tube-cuttings',
+  // Ripe and unripe fruit hanging from a raised gutter: shows fruit load per plant; no home-grow strawberry photo yet.
+  'hydroponic-strawberry-yield': 'strawberries-hanging-close',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
