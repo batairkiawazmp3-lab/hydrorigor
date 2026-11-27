@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">What extra potassium did to hydroponic strawberries</title>
+  <desc id="d">Arizona State raised potassium from 117 to 348 milligrams per liter, lifting EC from 1.0 to 1.9, with nitrogen held at 77. San Andreas lost 45 percent of fruit mass and 34 percent of fruit number. Monterey yield did not change. Berries got smaller in both. Leaf calcium fell 37 and 29 percent.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">A fruiting K boost?</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">K 117 → 348 mg/L, EC 1.0 → 1.9</text>
+    <text x="20" y="150" font-size="22" font-weight="800" fill="#0E1A14">San Andreas, fruit mass</text>
+    <rect x="20" y="168" width="560" height="44" rx="8" fill="#2E8B63"/>
+    <text x="36" y="198" font-size="20" font-weight="700" fill="#FFFFFF">117 mg/L K: 100%</text>
+    <rect x="20" y="224" width="308" height="44" rx="8" fill="#C2533A"/>
+    <text x="36" y="254" font-size="20" font-weight="700" fill="#FFFFFF">348 mg/L: −45%</text>
+    <text x="20" y="320" font-size="22" font-weight="800" fill="#0E1A14">San Andreas, fruit number</text>
+    <rect x="20" y="338" width="560" height="44" rx="8" fill="#2E8B63"/>
+    <text x="36" y="368" font-size="20" font-weight="700" fill="#FFFFFF">117 mg/L K: 100%</text>
+    <rect x="20" y="394" width="370" height="44" rx="8" fill="#C2533A"/>
+    <text x="36" y="424" font-size="20" font-weight="700" fill="#FFFFFF">348 mg/L: −34%</text>
+    <rect x="20" y="476" width="600" height="104" rx="14" fill="#FFFFFF" stroke="#9DBFAE" stroke-width="3"/>
+    <text x="40" y="516" font-size="22" font-weight="800" fill="#0E1A14">Monterey</text>
+    <text x="40" y="556" font-size="20" fill="#3F5248">yield unchanged</text>
+    <rect x="20" y="600" width="600" height="104" rx="14" fill="#FFFFFF" stroke="#D9A23A" stroke-width="3"/>
+    <text x="40" y="640" font-size="22" font-weight="800" fill="#0E1A14">Both varieties</text>
+    <text x="40" y="680" font-size="20" fill="#3F5248">smaller, more acidic berries</text>
+    <rect x="20" y="724" width="600" height="104" rx="14" fill="#FFFFFF" stroke="#C2533A" stroke-width="3"/>
+    <text x="40" y="764" font-size="22" font-weight="800" fill="#0E1A14">Leaf calcium</text>
+    <text x="40" y="804" font-size="20" fill="#3F5248">down 37% and 29%</text>
+    <text x="20" y="872" font-size="20" fill="#3F5248">Ries, Meng and Park, HortScience 2025</text>
+  </g>
+</svg>

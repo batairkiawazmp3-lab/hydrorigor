@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1060" width="640" height="1060" role="img" aria-labelledby="t d">
+  <title id="t">Hydroponic strawberry feeding schedule by stage</title>
+  <desc id="d">Four stages. Runner plugs: 50 to 100 milligrams per liter nitrogen. Establishment, weeks 0 to 3: Yamazaki strawberry solution at EC 1.0 with 77 milligrams per liter nitrogen and 117 potassium; remove flowers and runners. Growth and first flowers, weeks 3 to 7: same solution, EC 1.0 to 1.2. Fruiting, from about week 7: same solution, EC 1.0 to 1.2, no potassium boost; flush when root-zone EC passes 1.2. pH 5.5 to 6.0 throughout.</desc>
+  <rect width="640" height="1060" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Feeding by stage</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">One solution, held steady; pH 5.5–6.0</text>
+    <line x1="44" y1="130" x2="44" y2="960" stroke="#9DBFAE" stroke-width="6"/>
+    <circle cx="44" cy="160" r="16" fill="#9DBFAE"/>
+    <rect x="80" y="118" width="540" height="168" rx="14" fill="#FFFFFF" stroke="#9DBFAE" stroke-width="3"/>
+    <text x="102" y="156" font-size="22" font-weight="800" fill="#0E1A14">Runner plugs</text>
+    <text x="102" y="196" font-size="26" font-weight="800" fill="#2E5E48">50–100 mg/L N</text>
+    <text x="102" y="232" font-size="20" fill="#3F5248">weak feed while roots form</text>
+    <text x="102" y="264" font-size="20" fill="#3F5248">USDA-ARS 2024</text>
+    <circle cx="44" cy="356" r="16" fill="#2E8B63"/>
+    <rect x="80" y="314" width="540" height="200" rx="14" fill="#FFFFFF" stroke="#2E8B63" stroke-width="3"/>
+    <text x="102" y="352" font-size="22" font-weight="800" fill="#0E1A14">Weeks 0–3: establish</text>
+    <text x="102" y="392" font-size="26" font-weight="800" fill="#2E5E48">EC 1.0</text>
+    <text x="102" y="428" font-size="20" fill="#3F5248">Yamazaki: 77 N, 117 K mg/L</text>
+    <text x="102" y="462" font-size="20" fill="#3F5248">pick off flowers and runners</text>
+    <text x="102" y="494" font-size="20" fill="#3F5248">Arizona State 2025</text>
+    <circle cx="44" cy="584" r="16" fill="#2E8B63"/>
+    <rect x="80" y="542" width="540" height="168" rx="14" fill="#FFFFFF" stroke="#2E8B63" stroke-width="3"/>
+    <text x="102" y="580" font-size="22" font-weight="800" fill="#0E1A14">Weeks 3–7: grow, flower</text>
+    <text x="102" y="620" font-size="26" font-weight="800" fill="#2E5E48">EC 1.0–1.2</text>
+    <text x="102" y="656" font-size="20" fill="#3F5248">same solution</text>
+    <text x="102" y="688" font-size="20" fill="#3F5248">Arizona; Ohio State; Cornell</text>
+    <circle cx="44" cy="780" r="16" fill="#C2533A"/>
+    <rect x="80" y="738" width="540" height="200" rx="14" fill="#FFFFFF" stroke="#C2533A" stroke-width="3"/>
+    <text x="102" y="776" font-size="22" font-weight="800" fill="#0E1A14">Week 7 on: fruit</text>
+    <text x="102" y="816" font-size="26" font-weight="800" fill="#2E5E48">EC 1.0–1.2, no K boost</text>
+    <text x="102" y="852" font-size="20" fill="#3F5248">flush if root zone tops 1.2</text>
+    <text x="102" y="886" font-size="20" fill="#3F5248">drain 20–30% in substrate</text>
+    <text x="102" y="918" font-size="20" fill="#3F5248">Ohio State; Arizona State</text>
+    <text x="20" y="1000" font-size="20" fill="#3F5248">Weeks from transplant. First ripe fruit</text>
+    <text x="20" y="1032" font-size="20" fill="#3F5248">about 7 weeks after potting (Nebraska).</text>
+  </g>
+</svg>

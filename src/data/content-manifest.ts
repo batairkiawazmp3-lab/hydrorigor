@@ -377,6 +377,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['paparozzi-strawberry-cultivars-greenhouse-2018', 'illinois-strawberry-observations', 'cornell-strawberry-light-fgn-2020', 'sare-one22-417-delaware-strawberries', 'park-albion-photoperiod-ppfd-2023', 'ries-park-strawberry-far-red-2024', 'hutchinson-strawberry-systems-2025', 'cornell-indoor-strawberry-basics', 'ua-strawberry-environment', 'umn-day-neutral-strawberries'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 52,
+    collection: 'articles',
+    category: 'crops',
+    title: 'Hydroponic Strawberry Nutrient Schedule: EC & pH by Stage',
+    route: 'hydroponic-strawberry-nutrient-schedule',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic strawberries nutrients',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['ries-meng-park-strawberry-potassium-2025', 'yafuso-boldt-strawberry-dwc-protocol-2024', 'osu-indoor-berry-fertigation', 'ua-strawberry-irrigation', 'ua-strawberry-tip-burn', 'jun-maehyang-nutrient-strength-2013', 'nakro-strawberry-k-n-balance-2023', 'cdfa-strawberry-fertilization-guidelines', 'cornell-indoor-strawberry-basics', 'hutchinson-strawberry-systems-2025', 'osu-ph-ec-guide', 'sare-one22-417-delaware-strawberries', 'paparozzi-strawberry-cultivars-greenhouse-2018', 'ries-park-strawberry-far-red-2024', 'park-albion-photoperiod-ppfd-2023'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

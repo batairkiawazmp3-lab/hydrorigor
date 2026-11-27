@@ -160,6 +160,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-mint': 'test-tube-cuttings',
   // Ripe and unripe fruit hanging from a raised gutter: shows fruit load per plant; no home-grow strawberry photo yet.
   'hydroponic-strawberry-yield': 'strawberries-hanging-close',
+  // Ripe strawberries over a raised growing gutter: a fed, fruiting hydroponic crop; no home-grow strawberry photo yet.
+  'hydroponic-strawberry-nutrient-schedule': 'strawberries-gutter',
 };
 
 /** Banner photo for each section landing, keyed by section id. */
