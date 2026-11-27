@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Strawberry EC targets by source</title>
+  <desc id="d">EC ranges on a scale from 0 to 2.5. University of Arizona and Ohio State: 1.0 or less. Korea, Maehyang trial: 0.8 to 1.2. University of Georgia trial: 0.75 to 1.25. Cornell: 1.2. Oklahoma State, a general crop table: 1.8 to 2.2. Arizona State potassium trial: 1.0 to 1.9. Most sources sit near 1.0 to 1.2; Oklahoma State is the outlier.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">EC: what sources say</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">mS/cm (dS/m); shaded band 1.0–1.2</text>
+    <rect x="260" y="120" width="44" height="640" fill="#DCEBE2"/>
+    <line x1="40" y1="760" x2="600" y2="760" stroke="#3F5248" stroke-width="2"/>
+    <text x="32" y="796" font-size="20" fill="#3F5248">0</text>
+    <text x="246" y="796" font-size="20" fill="#3F5248">1.0</text>
+    <text x="466" y="796" font-size="20" fill="#3F5248">2.0</text>
+    <text x="40" y="150" font-size="22" font-weight="800" fill="#0E1A14">Arizona, Ohio State</text>
+    <rect x="40" y="166" width="220" height="30" rx="8" fill="#2E8B63"/>
+    <text x="272" y="190" font-size="20" fill="#3F5248">≤1.0</text>
+    <text x="40" y="250" font-size="22" font-weight="800" fill="#0E1A14">Korea trial (winter)</text>
+    <rect x="216" y="266" width="88" height="30" rx="8" fill="#2E8B63"/>
+    <text x="316" y="290" font-size="20" fill="#3F5248">0.8–1.2</text>
+    <text x="40" y="350" font-size="22" font-weight="800" fill="#0E1A14">Georgia trial</text>
+    <rect x="205" y="366" width="110" height="30" rx="8" fill="#2E8B63"/>
+    <text x="326" y="390" font-size="20" fill="#3F5248">0.75–1.25</text>
+    <text x="40" y="450" font-size="22" font-weight="800" fill="#0E1A14">Cornell</text>
+    <rect x="296" y="466" width="16" height="30" rx="4" fill="#2E8B63"/>
+    <text x="324" y="490" font-size="20" fill="#3F5248">1.2</text>
+    <text x="40" y="550" font-size="22" font-weight="800" fill="#0E1A14">Arizona State K trial</text>
+    <rect x="260" y="566" width="198" height="30" rx="8" fill="#D9A23A"/>
+    <text x="462" y="590" font-size="20" fill="#3F5248">1.0–1.9</text>
+    <text x="40" y="650" font-size="22" font-weight="800" fill="#0E1A14">Oklahoma State</text>
+    <rect x="436" y="666" width="88" height="30" rx="8" fill="#C2533A"/>
+    <text x="534" y="690" font-size="20" fill="#3F5248">1.8–2.2</text>
+    <text x="20" y="848" font-size="20" fill="#3F5248">Gold: higher EC cut yield in one variety.</text>
+    <text x="20" y="878" font-size="20" fill="#3F5248">Red: general table covering many crops.</text>
+  </g>
+</svg>

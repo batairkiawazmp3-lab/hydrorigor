@@ -141,7 +141,8 @@ impressions in 28 days).
         ~~ID 49 `/crops/hydroponic-cilantro/`~~ (published 2026-11-25, "Hydroponic Cilantro: pH, EC, Light & Bolting Guide").
         ~~ID 50 `/crops/hydroponic-mint/`~~ (published 2026-11-26, "Hydroponic Mint: pH, EC, Cuttings & Harvest Guide").
         ~~ID 51 `/crops/hydroponic-strawberry-yield/`~~ (published 2026-11-27, "Hydroponic Strawberry Yield per Plant: Varieties & Light").
-        Next: ID 52 (hydroponic strawberry nutrient schedule by growth stage).
+        ~~ID 52 `/crops/hydroponic-strawberry-nutrient-schedule/`~~ (published 2026-11-27, "Hydroponic Strawberry Nutrient Schedule: EC & pH by Stage").
+        Next: ID 53 (hydroponic lettuce pH and EC targets).
 
 Any page that the daily Search Console check finds at positions 8–20 with 30+ impressions
 goes to the top of this queue (ranking work); pages already in the top 10 with CTR below the
