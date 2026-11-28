@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" width="640" height="900" role="img" aria-labelledby="t d">
+  <title id="t">Lettuce pH targets by source</title>
+  <desc id="d">pH ranges on a scale from 5.0 to 7.5. University of Kentucky: 5.5 to 6.0. Alabama Extension: 5.6 to 6.0. Virginia Extension, NFT greens: 5.5 to 6.2. Ohio State and USDA trial, equal yield: 5.8 to 6.2. Oklahoma State, a general crop table: 6.0 to 7.0. Cornell trial: pH 7.0 gave 26 percent less fresh weight than pH 5.8. Most sources overlap at 5.8 to 6.0.</desc>
+  <rect width="640" height="900" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Lettuce pH: what sources say</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">Shaded band: 5.8–6.0, where all overlap</text>
+    <rect x="219" y="120" width="45" height="640" fill="#DCEBE2"/>
+    <line x1="40" y1="760" x2="600" y2="760" stroke="#3F5248" stroke-width="2"/>
+    <text x="24" y="796" font-size="20" fill="#3F5248">5.0</text>
+    <text x="248" y="796" font-size="20" fill="#3F5248">6.0</text>
+    <text x="472" y="796" font-size="20" fill="#3F5248">7.0</text>
+    <text x="40" y="150" font-size="22" font-weight="800" fill="#0E1A14">Kentucky</text>
+    <rect x="152" y="166" width="112" height="30" rx="8" fill="#2E8B63"/>
+    <text x="276" y="190" font-size="20" fill="#3F5248">5.5–6.0</text>
+    <text x="40" y="250" font-size="22" font-weight="800" fill="#0E1A14">Alabama</text>
+    <rect x="174" y="266" width="90" height="30" rx="8" fill="#2E8B63"/>
+    <text x="276" y="290" font-size="20" fill="#3F5248">5.6–6.0</text>
+    <text x="40" y="350" font-size="22" font-weight="800" fill="#0E1A14">Virginia (NFT greens)</text>
+    <rect x="152" y="366" width="157" height="30" rx="8" fill="#2E8B63"/>
+    <text x="320" y="390" font-size="20" fill="#3F5248">5.5–6.2</text>
+    <text x="40" y="450" font-size="22" font-weight="800" fill="#0E1A14">Ohio State trial</text>
+    <rect x="219" y="466" width="90" height="30" rx="8" fill="#2E8B63"/>
+    <text x="320" y="490" font-size="20" fill="#3F5248">5.8–6.2 equal yield</text>
+    <text x="40" y="550" font-size="22" font-weight="800" fill="#0E1A14">Oklahoma State</text>
+    <rect x="264" y="566" width="224" height="30" rx="8" fill="#C2533A"/>
+    <text x="498" y="590" font-size="20" fill="#3F5248">6.0–7.0</text>
+    <text x="40" y="650" font-size="22" font-weight="800" fill="#0E1A14">Cornell trial</text>
+    <circle cx="219" cy="681" r="13" fill="#2E8B63"/>
+    <circle cx="488" cy="681" r="13" fill="#C2533A"/>
+    <line x1="232" y1="681" x2="475" y2="681" stroke="#3F5248" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="290" y="720" font-size="20" fill="#3F5248">pH 7.0: 26% lighter heads</text>
+    <text x="20" y="848" font-size="20" fill="#3F5248">Red: general table, or the pH that cut yield.</text>
+    <text x="20" y="878" font-size="20" fill="#3F5248">Aim for 5.8–6.0; act below 5.5 or above 6.2.</text>
+  </g>
+</svg>

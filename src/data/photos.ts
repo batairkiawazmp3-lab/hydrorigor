@@ -162,6 +162,8 @@ export const guidePhotoKeys: Record<string, PhotoKey> = {
   'hydroponic-strawberry-yield': 'strawberries-hanging-close',
   // Ripe strawberries over a raised growing gutter: a fed, fruiting hydroponic crop; no home-grow strawberry photo yet.
   'hydroponic-strawberry-nutrient-schedule': 'strawberries-gutter',
+  // Butterhead lettuce heads, the lettuce type in both pH and EC trials cited; no home-grow photo yet.
+  'hydroponic-lettuce-ph-ec': 'butterhead-lettuce-hands',
 };
 
 /** Banner photo for each section landing, keyed by section id. */

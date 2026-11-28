@@ -389,6 +389,18 @@ export const phase2ContentItems: readonly ContentItem[] = [
     sourceIds: ['ries-meng-park-strawberry-potassium-2025', 'yafuso-boldt-strawberry-dwc-protocol-2024', 'osu-indoor-berry-fertigation', 'ua-strawberry-irrigation', 'ua-strawberry-tip-burn', 'jun-maehyang-nutrient-strength-2013', 'nakro-strawberry-k-n-balance-2023', 'cdfa-strawberry-fertilization-guidelines', 'cornell-indoor-strawberry-basics', 'hutchinson-strawberry-systems-2025', 'osu-ph-ec-guide', 'sare-one22-417-delaware-strawberries', 'paparozzi-strawberry-cultivars-greenhouse-2018', 'ries-park-strawberry-far-red-2024', 'park-albion-photoperiod-ppfd-2023'],
     toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
   },
+  {
+    id: 53,
+    collection: 'articles',
+    category: 'nutrients',
+    title: 'Hydroponic Lettuce pH & EC: Targets, ppm & Fixes',
+    route: 'hydroponic-lettuce-ph-ec',
+    primaryIntent: 'informational',
+    primaryTopic: 'hydroponic lettuce ph',
+    metricStatus: 'NOT_MEASURED',
+    sourceIds: ['samarakoon-lettuce-ec-ph-tipburn-2020', 'anderson-butterhead-ph-alkalinity-2017', 'uky-hydroponic-lettuce', 'purdue-lettuce-ec-ho309', 'aces-greenhouse-lettuce-anr2903', 'vt-nft-systems', 'ifas-lettuce-small-systems', 'osu-ph-ec-guide', 'kratky-noncirculating-lettuce', 'wortman-ec-ph-ebb-flow-2015', 'egro-lettuce-tipburn-2023'],
+    toolLinks: ['/tools/ph-ec-targets/', '/tools/nutrient-mixing-calculator/'],
+  },
 ];
 
 export const contentItems: readonly ContentItem[] = [

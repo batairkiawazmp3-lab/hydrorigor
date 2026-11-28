@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 980" width="640" height="980" role="img" aria-labelledby="t d">
+  <title id="t">Lettuce EC ladder</title>
+  <desc id="d">EC levels for hydroponic lettuce from low to high, in mS/cm. 1.0: seedlings and plugs, University of Kentucky. 1.3: Purdue's pick across 24 varieties. 1.4: least tipburn in the Ohio State trial, but 75 grams lighter Green Butter heads than at 1.8. 1.2 to 1.8: the usual growing range from UF/IFAS and Oklahoma State. 1.8: heaviest heads in the Ohio State trial, with more tipburn. Above about 2.5: Kentucky says adjust. 2.9 to 3.9: less growth in the Purdue trial.</desc>
+  <rect width="640" height="980" fill="#F5F7F2"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="20" y="52" font-family="Plus Jakarta Sans, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#0E1A14">Lettuce EC ladder</text>
+    <text x="20" y="88" font-size="20" fill="#3F5248">mS/cm (dS/m); not to scale, low at the bottom</text>
+    <rect x="20" y="120" width="130" height="96" rx="12" fill="#C2533A"/>
+    <text x="85" y="178" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">2.9–3.9</text>
+    <text x="170" y="160" font-size="22" font-weight="800" fill="#0E1A14">Too strong</text>
+    <text x="170" y="192" font-size="20" fill="#3F5248">Less growth (Purdue)</text>
+    <rect x="20" y="236" width="130" height="96" rx="12" fill="#D9A23A"/>
+    <text x="85" y="294" font-size="26" font-weight="800" fill="#0E1A14" text-anchor="middle">2.5+</text>
+    <text x="170" y="276" font-size="22" font-weight="800" fill="#0E1A14">Act now</text>
+    <text x="170" y="308" font-size="20" fill="#3F5248">Dilute (Kentucky)</text>
+    <rect x="20" y="352" width="130" height="96" rx="12" fill="#2E8B63"/>
+    <text x="85" y="410" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1.8</text>
+    <text x="170" y="392" font-size="22" font-weight="800" fill="#0E1A14">Heaviest heads</text>
+    <text x="170" y="424" font-size="20" fill="#3F5248">More tipburn (Ohio State)</text>
+    <rect x="20" y="468" width="130" height="96" rx="12" fill="#2E8B63"/>
+    <text x="85" y="526" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1.2–1.8</text>
+    <text x="170" y="508" font-size="22" font-weight="800" fill="#0E1A14">Growing range</text>
+    <text x="170" y="540" font-size="20" fill="#3F5248">UF/IFAS, Oklahoma State</text>
+    <rect x="20" y="584" width="130" height="96" rx="12" fill="#2E8B63"/>
+    <text x="85" y="642" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1.4</text>
+    <text x="170" y="624" font-size="22" font-weight="800" fill="#0E1A14">Least tipburn</text>
+    <text x="170" y="656" font-size="20" fill="#3F5248">Smaller heads (Ohio State)</text>
+    <rect x="20" y="700" width="130" height="96" rx="12" fill="#2E8B63"/>
+    <text x="85" y="758" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="middle">1.3</text>
+    <text x="170" y="740" font-size="22" font-weight="800" fill="#0E1A14">Purdue's pick</text>
+    <text x="170" y="772" font-size="20" fill="#3F5248">24 varieties, NFT and raft</text>
+    <rect x="20" y="816" width="130" height="96" rx="12" fill="#DCEBE2"/>
+    <text x="85" y="874" font-size="26" font-weight="800" fill="#0E1A14" text-anchor="middle">1.0</text>
+    <text x="170" y="856" font-size="22" font-weight="800" fill="#0E1A14">Seedlings</text>
+    <text x="170" y="888" font-size="20" fill="#3F5248">Plugs and cubes (Kentucky)</text>
+    <text x="20" y="950" font-size="20" fill="#3F5248">Tipburn trouble? Drop toward 1.4.</text>
+  </g>
+</svg>
