@@ -149,9 +149,9 @@ export const m06EditorialSources = [
     title: 'Hydroponic Lettuce Production in Controlled Environments (CCD-CP-63)',
     publisher: 'University of Kentucky Center for Crop Diversification',
     url: 'https://ccd.uky.edu/sites/default/files/2026-02/ccd-cp-63_hydrolettuce-updated_accessible.pdf',
-    accessedDate: '2026-11-03',
+    accessedDate: '2026-11-28',
     sourceType: 'university-extension',
-    locator: 'Lettuce pH 5.5-6.0, EC about 1.5 (1.0 seedlings), DLI 12-17, PPFD, air temperature (days up to 75 °F, nights up to 65 °F), humidity, dissolved oxygen 6-8 ppm in DWC, timeline (germination about 3 days, transplant 14-21 days after seeding at 3-4 true leaves, harvest 21-35 days after transplanting), spacing (raft at least 12 in deep, 3-4 plants per sq ft), top up every few days and replace every 3-4 weeks, tipburn and bolting; p. 9 Table 2 DWC row: high volume (>4 L/plant, >1 gal/plant), frame at least 12 in deep, PVC or food-safe plastic liner; p. 8: reservoir topped up every few days to replace lost volume and stabilize concentration; a full or partial solution replacement generally recommended every 3 to 4 weeks (re-read 2026-11-21)',
+    locator: 'Lettuce pH 5.5-6.0, EC about 1.5 (1.0 seedlings), DLI 12-17, PPFD, air temperature (days up to 75 °F, nights up to 65 °F), humidity, dissolved oxygen 6-8 ppm in DWC, timeline (germination about 3 days, transplant 14-21 days after seeding at 3-4 true leaves, harvest 21-35 days after transplanting), spacing (raft at least 12 in deep, 3-4 plants per sq ft), top up every few days and replace every 3-4 weeks, tipburn and bolting; p. 9 Table 2 DWC row: high volume (>4 L/plant, >1 gal/plant), frame at least 12 in deep, PVC or food-safe plastic liner; p. 8: reservoir topped up every few days to replace lost volume and stabilize concentration; a full or partial solution replacement generally recommended every 3 to 4 weeks (re-read 2026-11-21); re-read 2026-11-28 (CCD-CP-63, Sharma, Leonberger, Gauthier and Ying, 2025): p. 5 Fertigation: acidification often needed to bring irrigation water to pH 5.5–6.0; Kentucky water typically alkaline, pH over 7.0, alkalinity around 80 ppm as CaCO3; Table 1 example recipe at EC about 1.5 mS/cm, as printed N 150, P 39, K 162, Ca 139, Mg 47, Fe 1.3, Mn 0.38, Zn 0.11, B 0.38, Cu 0.11 ppm; p. 6: propagation substrate and seedlings at EC 1.0, pH 5.5–6.0; p. 8: adjust when substrate leachate pH is below 5.5 or above 7.0, or EC below 0.8 or above about 2.5 mS/cm',
   },
   {
     id: 'kratky-noncirculating-lettuce',
@@ -1898,6 +1898,24 @@ export const m06EditorialSources = [
     accessedDate: '2026-11-27',
     sourceType: 'government',
     locator: 'Web page read 2026-11-27 (first part verbatim; references only through a summary; uptake curve image not read). K Nutrition: fruits accumulate more K than all other plant organs combined; seasonal uptake 290 lb K2O/acre (240 lb K), about 140 lb K removed in fruit; deficiency browns upper margins of older leaves and gives light-colored, pulpy, insipid fruit. Leaf analysis, high-yielding Albion fields (% dry matter): pre-harvest N 3.1–3.8, P 0.5–0.9, K 1.8–2.2; main harvest N 2.4–3.0, P 0.3–0.4, K 1.3–1.8. Petiole nitrate-N above 1,000 ppm pre-harvest and above 400 ppm during harvest likely adequate. Soil-grown field data',
+  },
+  {
+    id: 'samarakoon-lettuce-ec-ph-tipburn-2020',
+    title: 'Effects of Electrical Conductivity, pH, and Foliar Application of Calcium Chloride on Yield and Tipburn of Lactuca sativa Grown Using the Nutrient–Film Technique',
+    publisher: 'HortScience 55(8):1265–1271 (U. Samarakoon, J. Palmer, P. Ling and J. Altland, The Ohio State University and USDA Agricultural Research Service, Wooster, OH), 2020, doi:10.21273/HORTSCI15070-20',
+    url: 'https://doi.org/10.21273/HORTSCI15070-20',
+    accessedDate: '2026-11-28',
+    sourceType: 'university-research',
+    locator: 'Full text read 2026-11-28 through the USDA-ARS PDF copy (figure bar values not readable; only figures printed in the text used). Methods p. 1266: Salanova Red Butter, Green Butter and Red Oakleaf in NFT, Wooster OH double-poly greenhouse, 40% shade, average 24 ± 0.8 °C, DLI 12.3 ± 4.3; harvest 4 weeks after transplant; Expt 1 EC 1.4, 1.6, 1.8, 2.0 at pH 5.8; Expt 2 pH 5.8, 6.0, 6.2, 6.4 at EC 1.8; Expt 3 CaCl2 foliar Ca 0, 200, 400, 800 mg/L twice weekly; tipburn scale 0–4. Results p. 1267: maximum fresh weight at or above EC 1.8 for Green Butter (263 ± 14 g) and Red Butter (202 ± 8 g), at or above 1.6 for Red Oakleaf (183 ± 6 g); no change 1.8 to 2.0; Green Butter 75 g less at 1.4 than 1.8; tipburn minimum 1.2 at EC 1.4, 2.7 at 1.8; N, K, Ca, S below sufficiency under EC 1.6. p. 1268: pH main effect on fresh weight not significant; abstract: maximum yield at pH 6.0 and 6.2; yield at 6.4 below 5.8 for Red Oakleaf and Red Butter; leaf Ca fell linearly with pH and was deficient above 6.2; Fe, Mn, Zn, Mo decreased with pH; tipburn did not vary with pH (average 1.6). CaCl2 400–800 mg/L cut tipburn 2.5 to 0.75 with 25–30 g less fresh weight; Ca in leaves did not rise above EC 1.6, so adding Ca to the solution may not help. Discussion p. 1268–1269: growers may need EC 1.4 where tipburn is a problem; yield comparable across pH 5.8–6.2',
+  },
+  {
+    id: 'anderson-butterhead-ph-alkalinity-2017',
+    title: 'Growth and Tissue Elemental Composition Response of Butterhead Lettuce (Lactuca sativa, cv. Flandria) to Hydroponic Conditions at Different pH and Alkalinity',
+    publisher: 'Horticulturae 3(3):41 (T. S. Anderson, M. R. Martini, D. De Villiers and M. B. Timmons, Cornell University), 2017, doi:10.3390/horticulturae3030041',
+    url: 'https://doi.org/10.3390/horticulturae3030041',
+    accessedDate: '2026-11-28',
+    sourceType: 'university-research',
+    locator: 'MDPI HTML read in part 2026-11-28 (Introduction, Methods and Abstract verbatim; Results tables and Discussion not read and not used). Abstract: averaged across three trials, pH 7.0 treatments (H7, HA7) produced 26% less shoot fresh weight and 18% less dry weight than pH 5.8 (H5); pH 7.0 lower in Cu, N, Mo, Sr, higher in Ba, Mg, Na, Zn; no differences in Ca, Fe, K, Mn, P, S. Introduction: moderately low pH (e.g. 5.8) keeps most ions available, higher pH (>6.5) can cause nutrient deprivation through precipitation; pH affects availability of iron and phosphorus; highly alkaline make-up water raises pH and may reduce Fe, K and P availability. Section 2: deep-water raft tanks, greenhouse with HPS, harvested at 35 days of age; Section 2.3: pH adjusted daily with KOH or HNO3; HA7 municipal water started at 120 ± 8 mg/L CaCO3 alkalinity and was consumed over the first few days; EC 1300–1500 µS/cm; Section 2.6: pH measured twice daily',
   },
 ] as const satisfies readonly M06EditorialSource[];
 
